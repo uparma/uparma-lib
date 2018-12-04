@@ -1,8 +1,6 @@
 [
     {
-        // "<internal ID, numeric, continous>"
         "_id" : 42,
-        // <paramter name translations>
         "msgfplus_style_1"  : "-t",
         "xtandem_style_1"   : "spectrum, parent monoisotopic mass error units",
         "msfragger_style_1" : "precursor_mass_units",
@@ -10,7 +8,6 @@
         "psi_ms_style_1"    : ["MS:1001412", "MS:1001413"],
         "ursgal_style_1"    : "precursor_mass_tolerance_unit",
         "description"       : "Precursor mass tolerance unit",
-        // <paramtervalue translations>
         "value_translations" : {
             "msgfplus_style_1" : {"da"  : "Da"},
             "xtandem_style_1" : {"da"  : "Daltons"},
@@ -25,10 +22,6 @@
         "msgfplus_style_1"  : "-minLength",
         "msfragger_style_1" : "digest_min_length",
         "psi_ms_style_1"    : "MS:1002322",
-        // this parameter maps on multiple SearchGUI parameters
-        // one solution to deal with this would be a list
-        // depending on how SearchGUI deals with e.g. setting msgf_min_pep_length
-        // without actually running msgfplus
         "searchgui_style_1" : [
             "-myrimatch_min_pep_length",
             "-msgf_min_pep_length",
@@ -36,16 +29,12 @@
             "-tide_min_pep_length",
             "-andromeda_min_pep_length"
         ],
-        // a second solution would be a format string
-        // where the engine (that will be used) is filled in by SearchGUI
         "searchgui_style_2" : "-{engine}_min_pep_length",
         "ursgal_style_1" : "min_pep_length",
         "description" : "Minimum peptide length",
         "value_translations":{},
         "value_type" : "int"
     },
-    // <definition of engine styles/versions>
-    // required for each style
     {
         "msgfplus_style_1" : {
             "name" : "MS-GF+",
