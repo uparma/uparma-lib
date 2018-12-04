@@ -1,0 +1,20 @@
+[
+    {
+        "name" : "pyqms_style_1",
+        "versions": [
+            "pyqms_0_9_1",
+            "pyqms_1_0_0"
+        ],
+    },
+    {
+        "name": "xtandem_style_1",
+        "versions": [
+            "xtandem_cyclone_2010",
+            "xtandem_jackhammer",
+            "xtandem_piledriver",
+            "xtandem_sledgehammer",
+            "xtandem_vengeance",
+            "xtandem_alanine",
+        ]
+    }
+]
