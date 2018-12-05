@@ -2,7 +2,7 @@
     "msgfplus_style_1" : {
         "name" : "MS-GF+",
         "version" : [
-            "v2018.01.20",
+            "v2018.01.30",
             "v2018.06.28",
             "v2018.09.12"
         ],
@@ -26,5 +26,22 @@
     "searchgui_style_1" : {},
     "searchgui_style_2" : {},
     "psi_ms_style_1" : {},
-    "xtandem_style_1" : {}
+    "xtandem_style_1" : {
+        "name": "X!Tandem",
+        "version":[
+            "vengeance",
+            "alanine"
+        ],
+        "reference": ""
+    },
+    "masamanda_style_1": {
+        "name": "MS Amanda",
+        "version":[
+            "2_0_0_9695",
+            "2_0_0_9706",
+            "2_0_0_10695",
+        ]
+    }
 }
+
+

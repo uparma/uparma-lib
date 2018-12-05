@@ -1,0 +1,21 @@
+[
+     {  
+        "_id"               : 1337,
+        "ursgal_style_1"    : "max_mod_alternatives",
+        "xtandem_style_1"   : "protein, ptm complexity",
+        "value_translation" : {},
+        "value_type"        : "int",
+        "description"       : "Maximal number of variable modification alternatives, given as C in 2^C"
+    },
+    {
+        "_id"               : 1,
+        "ursgal_style_1"    : "max_num_mods",
+        "kojak_style_1"     : "max_num_mods",
+        "msgfplus_style_1"  : "NumMods",
+        "myrimatch_style_1" : "MaxDynamicMods",
+        "msamanda_style_1"  : "MaxNoDynModifs",
+        "value_translation" : {},
+        "uvalue_type"       : "int",
+        "description"       : "Maximal number of modifications per peptide"
+    }
+]

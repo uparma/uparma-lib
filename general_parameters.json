@@ -1,0 +1,21 @@
+[
+    {
+        "_id": 123,
+        "msgfplus_style_1"  : "-minLength",
+        "msfragger_style_1" : "digest_min_length",
+        "psi_ms_style_1"    : "MS:1002322",
+        "searchgui_style_1" : [
+            "-myrimatch_min_pep_length",
+            "-msgf_min_pep_length",
+            "-omssa_min_pep_length",
+            "-tide_min_pep_length",
+            "-andromeda_min_pep_length"
+        ],
+        "searchgui_style_2" : "-{engine}_min_pep_length",
+        "ursgal_style_1" : "min_pep_length",
+        "description" : "Minimum peptide length",
+        "value_translations":{},
+        "value_type" : "int"
+    }
+
+ ]
