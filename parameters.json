@@ -1,0 +1,57 @@
+[
+    {
+        "_id"               : 1,
+        "ursgal_style_1"    : "max_num_mods",
+        "kojak_style_1"     : "max_num_mods",
+        "msgfplus_style_1"  : "NumMods",
+        "myrimatch_style_1" : "MaxDynamicMods",
+        "msamanda_style_1"  : "MaxNoDynModifs",
+        "value_translation" : {},
+        "uvalue_type"       : "int",
+        "description"       : "Maximal number of modifications per peptide"
+    },
+    {
+        "_id": 123,
+        "msgfplus_style_1"  : "-minLength",
+        "msfragger_style_1" : "digest_min_length",
+        "psi_ms_style_1"    : "MS:1002322",
+        "searchgui_style_1" : [
+            "-myrimatch_min_pep_length",
+            "-msgf_min_pep_length",
+            "-omssa_min_pep_length",
+            "-tide_min_pep_length",
+            "-andromeda_min_pep_length"
+        ],
+        "searchgui_style_2" : "-{engine}_min_pep_length",
+        "ursgal_style_1" : "min_pep_length",
+        "description" : "Minimum peptide length",
+        "value_translations":{},
+        "value_type" : "int"
+    },
+    {
+        "_id" : 42,
+        "msgfplus_style_1"  : "-t",
+        "xtandem_style_1"   : "spectrum, parent monoisotopic mass error units",
+        "msfragger_style_1" : "precursor_mass_units",
+        "searchgui_style_1" : "-prec_ppm",
+        "psi_ms_style_1"    : ["MS:1001412", "MS:1001413"],
+        "ursgal_style_1"    : "precursor_mass_tolerance_unit",
+        "description"       : "Precursor mass tolerance unit",
+        "value_translations" : {
+            "msgfplus_style_1" : {"da"  : "Da"},
+            "xtandem_style_1" : {"da"  : "Daltons"},
+            "msfragger_style_1" : {"ppm" : 1, "da"  : 0},
+            "searchgui_style_1": {"ppm" : 1, "da"  : 0},
+            "psi_ms_style_1" : {"da": "UO:0000221", "ppm": "UO:0000169"}
+        },
+        "value_type": "str"
+    },
+    {  
+        "_id"               : 1337,
+        "ursgal_style_1"    : "max_mod_alternatives",
+        "xtandem_style_1"   : "protein, ptm complexity",
+        "value_translation" : {},
+        "value_type"        : "int",
+        "description"       : "Maximal number of variable modification alternatives, given as C in 2^C"
+    }
+ ]
