@@ -31,7 +31,7 @@ Team
 # Core team:
 
 - Johannes Leufken
-- Stefan Schulz
+- Stefan Schulze
 - Christian Fufezan
 
 # Contributors:
