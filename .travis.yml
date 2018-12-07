@@ -3,4 +3,4 @@ python:
   - "3.6"
 sudo: false
 
-script: ./test_jsons.py
+script: ./tests/test_jsons.py
