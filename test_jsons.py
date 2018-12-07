@@ -19,7 +19,7 @@ def jsons_are_readable(rcode, jsons):
     Read and validate jsons are formatted correctly
     """
     local_rcode = 0
-    for json_file in glob.glob(os.path.join('.','*.json')):
+    for json_file in glob.glob(os.path.join('./jsons/','*.json')):
         json_file_basename = os.path.basename(json_file)
         try:
             jsons[json_file_basename] = json.load(open(json_file,'r'))
