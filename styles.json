@@ -1,47 +1,72 @@
-{
-    "msgfplus_style_1" : {
+[
+    {
+        "style" : "msgfplus_style_1",
         "name" : "MS-GF+",
-        "version" : [
+        "versions" : [
             "v2018.01.30",
             "v2018.06.28",
             "v2018.09.12"
         ],
-        "reference" : "Kim S, Mischerikow N, Bandeira N, Navarro JD, Wich L, 'Mohammed S, Heck AJ, Pevzner PA. (2010) The Generating Function of CID, ETD, and CID/ETD Pairs of Tandem Mass Spectra: Applications to Database Search."
+        "reference" : [
+            "Kim S, Mischerikow N, Bandeira N, Navarro JD, Wich L, 'Mohammed S, Heck AJ, Pevzner PA. (2010) The Generating Function of CID, ETD, and CID/ETD Pairs of Tandem Mass Spectra: Applications to Database Search."
+            ]
     },
-    "msfragger_style_1" : {
+    {
+        "style" : "msfragger_style_1",
         "name" : "MSFragger",
-        "version" : [
+        "versions" : [
             "20170103"
         ],
-        "reference" : "Kong, A. T., Leprevost, F. V, Avtonomov, D. M., Mellacheruvu, D., and Nesvizhskii, A. I. (2017) MSFragger: ultrafast and comprehensive peptide identification in mass spectrometry-based proteomics. Nature Methods 14"
+        "reference" : [
+            "Kong, A. T., Leprevost, F. V, Avtonomov, D. M., Mellacheruvu, D., and Nesvizhskii, A. I. (2017) MSFragger: ultrafast and comprehensive peptide identification in mass spectrometry-based proteomics. Nature Methods 14"
+        ]
     },
-    "ursgal_style_1" : {
+    {
+        "style": "ursgal_style_1",
         "name" : "Ursgal",
-        "version" : [
+        "versions" : [
             "0.6.0",
             "0.6.1"
         ],
-        "reference" : "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794."
+        "reference" : [
+            "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794."
+        ]
     },
-    "searchgui_style_1" : {},
-    "searchgui_style_2" : {},
-    "psi_ms_style_1" : {},
-    "xtandem_style_1" : {
+    {
+        "style" : "searchgui_style_1",
+        "name": "SearchGUI",
+        "versions": [
+        ],
+        "reference": [
+            "Barsnes H, Vaudel M (2018) SearchGUI: A Highly Adaptable Common Interface for Proteomics Search and de Novo Engines. J Proteome Res. 17, 2552-2555"
+        ]
+    },
+    {
+        "style": "psi_ms_style_1"
+    },
+    {
+        "style": "xtandem_style_1",
         "name": "X!Tandem",
-        "version":[
+        "versions":[
             "vengeance",
             "alanine"
         ],
-        "reference": ""
+        "reference": [
+            "Craig R, Beavis RC. (2004) TANDEM: matching proteins with tandem mass spectra, Bioinformatics 20, 1466-7"
+        ]
     },
-    "masamanda_style_1": {
+    {
+        "style" : "masamanda_style_1",
         "name": "MS Amanda",
-        "version":[
+        "versions":[
             "2_0_0_9695",
             "2_0_0_9706",
             "2_0_0_10695"
+        ],
+        "reference": [
+            "Dorfer V, Pichler P, Stranzl T, Stadlmann J, Taus T, Winkler S, Mechtler K. (2014) MS Amanda, a universal identification algorithm optimized for high accuracy tandem mass spectra. J Proteome Res. 13, 3679-84"
         ]
     }
-}
+]
 
 
