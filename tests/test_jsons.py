@@ -3,6 +3,19 @@ import json
 import glob
 import os
 
+parameters_defined_fields = [
+    '_id',
+    'value_translations',
+    'value_type',
+    'description',
+]
+
+styles_defined_fields = [
+    'style',
+    'name',
+    'versions',
+    'reference',
+]
 
 def uprint(msg, ok=True):
     if ok:
@@ -49,12 +62,74 @@ def parameter_ids_are_unique(rcode, jsons):
     rcode += local_rcode
     return jsons, rcode
 
-
-def styles_are_consistent(rcode, jsons):
+def param_styles_exist_in_styles(rcode, jsons):
+    '''
+    Check if all styles in parameters.json are defined in styles.json
+    '''
     local_rcode = 0
-    if False:
-        local_rcode = 4
+    all_styles = set()
+    for style in jsons['styles.json']:
+        all_styles.add(style['style'])
+    for pos, entry in enumerate(jsons['parameters.json']):
+        for field in entry.keys():
+            if field not in parameters_defined_fields:
+                if field not in all_styles:
+                    uprint(
+                        'Style {0} (in _id {_id}) is not defined in styles.json'.format(
+                            field,
+                            **entry
+                        ),
+                        ok=False
+                    )
+                    local_rcode = 4
+    if local_rcode == 0:
+        uprint('All styles in parameters.json are defined in styles.json')
+    rcode += local_rcode
+    return jsons, rcode
 
+def params_have_defined_fields(rcode, jsons):
+    '''
+    Check if each entry in parameters.json has all defined fields (listed in parameters_defined_fields).
+    NOTE:
+        Not checking if additional/undefined fields are present
+    '''
+    local_rcode = 0
+    for entry in jsons['parameters.json']:
+        for field in parameters_defined_fields:
+            if field not in entry.keys():
+                uprint(
+                    'Parameter {_id} is missing {0}'.format(
+                        field,
+                        **entry,
+                    ),
+                    ok=False
+                )
+                local_rcode = 8
+    if local_rcode == 0:
+        uprint('All parameters have all defined fields')
+    rcode += local_rcode
+    return jsons, rcode
+
+def styles_have_defined_fields(rcode, jsons):
+    '''
+    Check if each entry in styles.json has all defined fields (listed in styles_defined_fields).
+    NOTE:
+        Not checking if additional/undefined fields are present
+    '''
+    local_rcode = 0
+    for entry in jsons['styles.json']:
+        for field in styles_defined_fields:
+            if field not in entry.keys():
+                uprint(
+                    'Style {style} is missing {0}'.format(
+                        field,
+                        **entry,
+                    ),
+                    ok=False
+                )
+                local_rcode = 16
+    if local_rcode == 0:
+        uprint('All styles have all defined fields')
     rcode += local_rcode
     return jsons, rcode
 
@@ -65,7 +140,7 @@ def styles_have_citation(rcode, jsons):
             if len(entry.get('reference', '')) == 0:
                 # Better> could be nice citation regex!
                 uprint('Style {name} haz no reference!'.format(**entry), ok=False)
-                local_rcode = 8
+                local_rcode = 32
     if local_rcode == 0:
         uprint('All styles af references')
     rcode += local_rcode
@@ -73,13 +148,15 @@ def styles_have_citation(rcode, jsons):
 
 def main():
     """
-    Check over all integrity of uparma jsons
+    Check overall integrity of uparma jsons
     """
     rcode = 0 # success
     jsons = {}
     jsons, rcode = jsons_are_readable(rcode, jsons)
     jsons, rcode = parameter_ids_are_unique(rcode, jsons)
-    jsons, rcode = styles_are_consistent(rcode, jsons)
+    jsons, rcode = param_styles_exist_in_styles(rcode, jsons)
+    jsons, rcode = params_have_defined_fields(rcode, jsons)
+    jsons, rcode = styles_have_defined_fields(rcode, jsons)
     jsons, rcode = styles_have_citation(rcode, jsons)
     return rcode
 

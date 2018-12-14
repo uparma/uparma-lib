@@ -2,12 +2,11 @@
     {
         "_id"               : 1,
         "ursgal_style_1"    : "max_num_mods",
-        "kojak_style_1"     : "max_num_mods",
         "msgfplus_style_1"  : "NumMods",
-        "myrimatch_style_1" : "MaxDynamicMods",
         "msamanda_style_1"  : "MaxNoDynModifs",
-        "value_translation" : {},
-        "uvalue_type"       : "int",
+        "psi_ms_style_1"    : "MS:1002320",
+        "value_translations" : {},
+        "value_type"       : "int",
         "description"       : "Maximal number of modifications per peptide"
     },
     {
@@ -34,24 +33,66 @@
         "xtandem_style_1"   : "spectrum, parent monoisotopic mass error units",
         "msfragger_style_1" : "precursor_mass_units",
         "searchgui_style_1" : "-prec_ppm",
-        "psi_ms_style_1"    : ["MS:1001412", "MS:1001413"],
         "ursgal_style_1"    : "precursor_mass_tolerance_unit",
         "description"       : "Precursor mass tolerance unit",
         "value_translations" : {
             "msgfplus_style_1" : {"da"  : "Da"},
             "xtandem_style_1" : {"da"  : "Daltons"},
             "msfragger_style_1" : {"ppm" : 1, "da"  : 0},
-            "searchgui_style_1": {"ppm" : 1, "da"  : 0},
-            "psi_ms_style_1" : {"da": "UO:0000221", "ppm": "UO:0000169"}
+            "searchgui_style_1": {"ppm" : 1, "da"  : 0}
         },
         "value_type": "str"
+    },
+    {
+        "_id" : 43,
+        "msgfplus_style_1"  : "-t",
+        "xtandem_style_1"   : "spectrum, parent monoisotopic mass error minus",
+        "msfragger_style_1" : "precursor_mass_tolerance",
+        "msamanda_style_1"  : "ms1_tol",
+        "ursgal_style_1"    : "precursor_mass_tolerance_minus",
+        "description"       : "Lower precursor mass tolerance",
+        "value_translations" : {
+        },
+        "value_type": "int"
+    },
+    {
+        "_id" : 44,
+        "msgfplus_style_1"  : "-t",
+        "xtandem_style_1"   : "spectrum, parent monoisotopic mass error plus",
+        "msfragger_style_1" : "precursor_mass_units",
+        "msamanda_style_1"  : "ms1_tol",
+        "ursgal_style_1"    : "precursor_mass_tolerance_plus",
+        "description"       : "Upper precursor mass tolerance",
+        "value_translations" : {
+        },
+        "value_type": "int"
     },
     {  
         "_id"               : 1337,
         "ursgal_style_1"    : "max_mod_alternatives",
         "xtandem_style_1"   : "protein, ptm complexity",
-        "value_translation" : {},
+        "value_translations" : {},
         "value_type"        : "int",
         "description"       : "Maximal number of variable modification alternatives, given as C in 2^C"
+    },
+    {  
+        "_id"               : 4473,
+        "ursgal_style_1"    : "score_ion_list",
+        "searchgui_style_1" : [
+            "-fi",
+            "-ri"
+        ],
+        "xtandem_style_1"   : [
+            "scoring, x ions",
+            "scoring, y ions",
+            "scoring, z ions",
+            "scoring, a ions",
+            "scoring, b ions",
+            "scoring, c ions"
+        ],
+        "msamanda_style_1"  : "series",
+        "value_translations": {},
+        "value_type"        : "list",
+        "description"       : "List of ion types that are taken into account by the respective search engine."
     }
  ]

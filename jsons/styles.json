@@ -42,7 +42,20 @@
         ]
     },
     {
-        "style": "psi_ms_style_1"
+        "style" : "searchgui_style_2",
+        "name": "SearchGUI",
+        "versions": [
+        ],
+        "reference": [
+            "Barsnes H, Vaudel M (2018) SearchGUI: A Highly Adaptable Common Interface for Proteomics Search and de Novo Engines. J Proteome Res. 17, 2552-2555"
+        ]
+    },
+    {
+        "style": "psi_ms_style_1",
+        "name": "PSI MS",
+        "versions":[
+        ],
+        "reference":""
     },
     {
         "style": "xtandem_style_1",
@@ -56,7 +69,7 @@
         ]
     },
     {
-        "style" : "masamanda_style_1",
+        "style" : "msamanda_style_1",
         "name": "MS Amanda",
         "versions":[
             "2_0_0_9695",
