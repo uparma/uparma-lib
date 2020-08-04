@@ -8,6 +8,7 @@ parameters_defined_fields = [
     'value_translations',
     'value_type',
     'description',
+    'triggers_rerun'
 ]
 
 styles_defined_fields = [
