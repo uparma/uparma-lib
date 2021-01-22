@@ -4,10 +4,16 @@ import glob
 import os
 
 parameters_defined_fields = [
-    '_id',
-    'value_translations',
-    'value_type',
-    'description',
+    "_id",
+    "name",
+    "triggers_rerun",
+    "description",
+    "default_value",
+    "value_type",
+    "tag",
+    "value_translations",
+    "key_translations"
+
 ]
 
 styles_defined_fields = [
