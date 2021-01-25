@@ -2,6 +2,7 @@
 import json
 import glob
 import os
+from collections import defaultdict as ddict
 
 parameters_defined_fields = [
     "_id",
@@ -158,6 +159,31 @@ def styles_have_citation(rcode, jsons):
     rcode += local_rcode
     return jsons, rcode
 
+def key_translations_are_unique(rcode, jsons):
+    local_rcode = 0
+    key_translations = {}
+
+    for entry in jsons['parameters.json']:
+        for style, translated_key in entry['key_translations'].items():
+            if style not in key_translations.keys():
+                key_translations[style] = ddict(list)
+            # print(style, translated_key)
+            if isinstance(translated_key, list):
+                translated_key = tuple(translated_key)
+            key_translations[style][translated_key].append(entry["name"])
+
+
+    for style in key_translations.keys():
+        for translated_key, names in key_translations[style].items():
+            if len(names) > 1:
+                uprint(f"Style {style} has translated key {translated_key} that maps,", ok=False)
+                uprint(f"    onto multiple names {names} hence no mapping can be done.", ok=False)
+                local_rcode = 2**6
+
+    if local_rcode == 0:
+        uprint('All mapped keys are unique')
+    rcode += local_rcode
+    return jsons, rcode
 
 def main():
     """
@@ -171,6 +197,7 @@ def main():
     jsons, rcode = params_have_defined_fields(rcode, jsons)
     jsons, rcode = styles_have_defined_fields(rcode, jsons)
     jsons, rcode = styles_have_citation(rcode, jsons)
+    jsons, rcode = key_translations_are_unique(rcode, jsons)
     return rcode
 
 
