@@ -877,9 +877,6 @@
       "pepnovo_style_1": "base_mz",
       "pipi_style_1": "base_mz",
       "novor_style_1": "base_mz",
-      "pyqms_style_1": "REL_MZ_RANGE",
-      "sugarpy_run_style_1": "REL_MZ_RANGE",
-      "sugarpy_plot_style_1": "REL_MZ_RANGE",
       "deepnovo_style_1": "base_mz",
       "tag_graph_style_1": "base_mz",
       "glycopeptide_fragmentor_style_1": "base_mz",
@@ -4103,7 +4100,6 @@
       "generate_target_decoy_style_1": "enzyme",
       "kojak_style_1": "enzyme",
       "moda_style_1": "Enzyme",
-      "msamanda_style_1": "enzyme specificity",
       "msgfplus_style_1": "-e",
       "myrimatch_style_1": "CleavageRules",
       "novor_style_1": "enzyme",
@@ -4151,8 +4147,7 @@
     ],
     "value_translations": {},
     "key_translations": {
-      "ursgal_style_1": "forbidden_cterm_mods",
-      "xtandem_style_1": "residue, potential modification mass"
+      "ursgal_style_1": "forbidden_cterm_mods"
     }
   },
   {
@@ -4224,10 +4219,7 @@
     "value_translations": {},
     "key_translations": {
       "ursgal_style_1": "frag_mass_tolerance",
-      "moda_style_1": "FragTolerance",
       "msamanda_style_1": "ms2_tol",
-      "myrimatch_style_1": "FragmentMzTolerance",
-      "novor_style_1": "fragmentIonErrorTol",
       "omssa_style_1": "-to",
       "pepnovo_style_1": "-fragment_tolerance",
       "xtandem_style_1": "spectrum, fragment monoisotopic mass error",
@@ -4235,16 +4227,11 @@
       "msfragger_style_2": "fragment_mass_tolerance",
       "msfragger_style_3": "fragment_mass_tolerance",
       "pipi_style_1": "ms2_tolerance",
-      "pyqms_style_1": "REL_MZ_RANGE",
-      "sugarpy_run_style_1": "REL_MZ_RANGE",
-      "sugarpy_plot_style_1": "REL_MZ_RANGE",
       "ptminer_style_1": "fragment_tol",
       "pglyco_db_style_1": "search_fragment_tolerance",
       "pnovo_style_1": "frag_tol",
       "tag_graph_style_1": "ppmstd",
-      "deepnovo_style_1": "AA_MATCH_PRECISION",
-      "glycopeptide_fragmentor_style_1": "frag_mass_tolerance",
-      "ptmshepherd_style_1": "spectra_ppmtol"
+      "glycopeptide_fragmentor_style_1": "frag_mass_tolerance"
     }
   },
   {
@@ -4348,10 +4335,7 @@
     },
     "key_translations": {
       "ursgal_style_1": "frag_mass_tolerance_unit",
-      "moda_style_1": "FragTolerance",
       "msamanda_style_1": "ms2_tol unit",
-      "myrimatch_style_1": "FragmentMzTolerance",
-      "novor_style_1": "fragmentIonErrorTol",
       "omssa_style_1": "frag_mass_tolerance_unit",
       "pepnovo_style_1": "frag_mass_tolerance_unit",
       "xtandem_style_1": "spectrum, fragment monoisotopic mass error units",
@@ -4359,16 +4343,11 @@
       "msfragger_style_2": "fragment_mass_units",
       "msfragger_style_3": "fragment_mass_units",
       "pipi_style_1": "frag_mass_tolerance_unit",
-      "pyqms_style_1": "REL_MZ_RANGE",
-      "sugarpy_run_style_1": "REL_MZ_RANGE",
-      "sugarpy_plot_style_1": "REL_MZ_RANGE",
       "ptminer_style_1": "fragment_tol_type",
       "pglyco_db_style_1": "search_fragment_tolerance_type",
       "pnovo_style_1": "frag_tol_type_ppm",
       "tag_graph_style_1": "frag_mass_tolerance_unit",
-      "deepnovo_style_1": "AA_MATCH_PRECISION",
-      "glycopeptide_fragmentor_style_1": "frag_mass_tolerance_unit",
-      "ptmshepherd_style_1": "spectra_ppmtol"
+      "glycopeptide_fragmentor_style_1": "frag_mass_tolerance_unit"
     }
   },
   {
@@ -6673,8 +6652,7 @@
     "key_translations": {
       "ursgal_style_1": "max_mod_size",
       "moda_style_1": "MaxModSize",
-      "pipi_style_1": "max_ptm_mass",
-      "ptminer_style_1": "precursor_matching_tolerance"
+      "pipi_style_1": "max_ptm_mass"
     }
   },
   {
@@ -6815,8 +6793,7 @@
     ],
     "value_translations": {},
     "key_translations": {
-      "ursgal_style_1": "max_num_per_mod_name_specific",
-      "xtandem_style_1": "residue, potential modification mass"
+      "ursgal_style_1": "max_num_per_mod_name_specific"
     }
   },
   {
@@ -6851,9 +6828,7 @@
     "value_translations": {},
     "key_translations": {
       "ursgal_style_1": "max_pep_length",
-      "msgfplus_style_1": "-maxLength",
       "myrimatch_style_1": "MaxPeptideLength",
-      "omssa_style_1": "-nox",
       "msfragger_style_1": "digest_max_length",
       "msfragger_style_2": "digest_max_length",
       "msfragger_style_3": "digest_max_length",
@@ -6875,9 +6850,7 @@
     "value_translations": {},
     "key_translations": {
       "ursgal_style_1": "max_pep_var",
-      "msgfplus_style_1": "-maxLength",
       "myrimatch_style_1": "MaxPeptideVariants",
-      "omssa_style_1": "-nox",
       "msfragger_style_1": "max_variable_mods_combinations",
       "msfragger_style_2": "max_variable_mods_combinations",
       "msfragger_style_3": "max_variable_mods_combinations"
@@ -6942,8 +6915,7 @@
     "key_translations": {
       "ursgal_style_1": "min_mod_size",
       "moda_style_1": "MinModSize",
-      "pipi_style_1": "min_ptm_mass",
-      "ptminer_style_1": "precursor_matching_tolerance"
+      "pipi_style_1": "min_ptm_mass"
     }
   },
   {
@@ -8620,31 +8592,11 @@
     "value_translations": {},
     "key_translations": {
       "ursgal_style_1": "precursor_mass_tolerance_minus",
-      "kojak_style_1": "ppm_tolerance_pre",
-      "moda_style_1": "PPMTolerance",
-      "msamanda_style_1": "ms1_tol",
-      "msgfplus_style_1": "-t",
-      "myrimatch_style_1": "MonoPrecursorMzTolerance",
-      "novor_style_1": "precursorErrorTol",
-      "omssa_style_1": "-te",
-      "pepnovo_style_1": "-pm_tolerance",
       "unify_csv_style_1": "precursor_mass_tolerance_minus",
       "xtandem_style_1": "spectrum, parent monoisotopic mass error minus",
       "msfragger_style_1": "precursor_mass_lower",
       "msfragger_style_2": "precursor_mass_lower",
-      "msfragger_style_3": "precursor_mass_lower",
-      "pipi_style_1": "ms1_tolerance",
-      "pyqms_style_1": "REL_MZ_RANGE",
-      "sugarpy_run_style_1": "REL_MZ_RANGE",
-      "sugarpy_plot_style_1": "REL_MZ_RANGE",
-      "ptminer_style_1": "precursor_tol",
-      "pglyco_db_style_1": "search_precursor_tolerance",
-      "deepnovo_style_1": [
-        "precursor_mass_tolerance",
-        "precursor_mass_ppm"
-      ],
-      "pnovo_style_1": "pep_tol",
-      "ptmshepherd_style_1": "precursor_tol"
+      "msfragger_style_3": "precursor_mass_lower"
     }
   },
   {
@@ -8661,32 +8613,12 @@
     "value_translations": {},
     "key_translations": {
       "ursgal_style_1": "precursor_mass_tolerance_plus",
-      "kojak_style_1": "ppm_tolerance_pre",
-      "moda_style_1": "PPMTolerance",
-      "msamanda_style_1": "ms1_tol",
-      "msgfplus_style_1": "-t",
-      "myrimatch_style_1": "MonoPrecursorMzTolerance",
-      "novor_style_1": "precursorErrorTol",
-      "omssa_style_1": "-te",
-      "pepnovo_style_1": "-pm_tolerance",
       "unify_csv_style_1": " precursor_mass_tolerance_minus",
       "xtandem_style_1": "spectrum, parent monoisotopic mass error plus",
       "msfragger_style_1": "precursor_mass_upper",
       "msfragger_style_2": "precursor_mass_upper",
       "msfragger_style_3": "precursor_mass_upper",
-      "pipi_style_1": "ms1_tolerance",
-      "pyqms_style_1": "REL_MZ_RANGE",
-      "sugarpy_run_style_1": "REL_MZ_RANGE",
-      "sugarpy_plot_style_1": "REL_MZ_RANGE",
-      "ptminer_style_1": "precursor_tol",
-      "pglyco_db_style_1": "search_precursor_tolerance",
-      "deepnovo_style_1": [
-        "precursor_mass_tolerance",
-        "precursor_mass_ppm"
-      ],
-      "pnovo_style_1": "pep_tol",
-      "flash_lfq_style_1": "--ppm",
-      "ptmshepherd_style_1": "precursor_tol"
+      "flash_lfq_style_1": "--ppm"
     }
   },
   {
@@ -8820,11 +8752,7 @@
     },
     "key_translations": {
       "ursgal_style_1": "precursor_mass_tolerance_unit",
-      "moda_style_1": "PPMTolerance",
       "msamanda_style_1": "ms1_tol unit",
-      "msgfplus_style_1": "-t",
-      "myrimatch_style_1": "MonoPrecursorMzTolerance",
-      "novor_style_1": "precursorErrorTol",
       "omssa_style_1": "-teppm",
       "pepnovo_style_1": "precursor_mass_tolerance_unit",
       "xtandem_style_1": "spectrum, parent monoisotopic mass error units",
@@ -8832,15 +8760,8 @@
       "msfragger_style_2": "precursor_mass_units",
       "msfragger_style_3": "precursor_mass_units",
       "pipi_style_1": "ms1_tolerance_unit",
-      "pyqms_style_1": "REL_MZ_RANGE",
-      "sugarpy_run_style_1": "REL_MZ_RANGE",
-      "sugarpy_plot_style_1": "REL_MZ_RANGE",
       "ptminer_style_1": "precursor_tol_type",
       "pglyco_db_style_1": "search_precursor_tolerance_type",
-      "deepnovo_style_1": [
-        "precursor_mass_tolerance",
-        "precursor_mass_ppm"
-      ],
       "pnovo_style_1": "pep_tol_type_ppm",
       "ptmshepherd_style_1": "precursor_mass_units"
     }
@@ -8907,7 +8828,6 @@
     "value_translations": {},
     "key_translations": {
       "ursgal_style_1": "precursor_max_charge",
-      "msamanda_style_1": "considered_charges",
       "msgfplus_style_1": "-maxCharge",
       "myrimatch_style_1": "NumChargeStates",
       "omssa_style_1": "-zh",
@@ -8935,7 +8855,6 @@
       "ursgal_style_1": "precursor_max_mass",
       "kojak_style_1": "precursor_max_mass",
       "myrimatch_style_1": "MaxPeptideMass",
-      "xtandem_style_1": "spectrum, minimum parent m+h",
       "msfragger_style_1": "precursor_max_mass",
       "msfragger_style_2": "precursor_max_mass",
       "msfragger_style_3": "precursor_max_mass",
@@ -8957,7 +8876,6 @@
     "value_translations": {},
     "key_translations": {
       "ursgal_style_1": "precursor_min_charge",
-      "msamanda_style_1": "considered_charges",
       "msgfplus_style_1": "-minCharge",
       "omssa_style_1": "-zl",
       "msfragger_style_1": "precursor_min_charge",
@@ -8984,7 +8902,6 @@
       "ursgal_style_1": "precursor_min_mass",
       "kojak_style_1": "precursor_min_mass",
       "myrimatch_style_1": "MinPeptideMass",
-      "xtandem_style_1": "spectrum, minimum parent m+h",
       "msfragger_style_1": "precursor_min_mass",
       "msfragger_style_2": "precursor_min_mass",
       "msfragger_style_3": "precursor_min_mass",
@@ -9596,7 +9513,6 @@
     "key_translations": {
       "ursgal_style_1": "semi_enzyme",
       "moda_style_1": "enzyme_constraint_min_number_termini",
-      "msamanda_style_1": "enzyme specificity",
       "msgfplus_style_1": "-ntt",
       "myrimatch_style_1": "MinTerminiCleavages",
       "omssa_style_1": "semi_enzyme",

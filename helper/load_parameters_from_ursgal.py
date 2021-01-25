@@ -1,12 +1,13 @@
 import ursgal.uparams_short as param_s
-import ursgal.uparams as param
+import ursgal
 import json
 from pathlib import Path
 
-json_path = Path(__file__).parent.joinpath("new_parameters.json")
+param_json_path = Path(__file__).parent.joinpath("new_parameters.json")
+styles_json_path = Path(__file__).parent.joinpath("new_styles.json")
 
 new_params = []
-uparams = param.ursgal_params
+uparams = ursgal.uparams.ursgal_params
 
 tags_per_param = {0: 0, 1: 0, 2: 0, 3: 0}
 params_per_tag = {}
@@ -68,8 +69,91 @@ for idx, ursgal_key in enumerate(uparams):
 
     new_params.append(summary)
 
-fout = open(str(json_path), "w")
+# kick out all duplicate entries.
+# analyse the data to ensure that all key_translations are unique
+key_to_names = {}
+duplicates = set()
+for param in new_params:
+    for style, key_t in param["key_translations"].items():
+        try:
+            key_to_names[style][key_t].append((param["name"], param["_id"]))
+            # name is in multiple parameters
+            duplicates.add((style, key_t))
+        except KeyError:
+            if not style in key_to_names:
+                key_to_names[style] = {}
+
+            key_to_names[style][key_t] = [(param["name"], param["_id"])]
+
+# report duplicates and remove from new_params
+if len(duplicates) > 0:
+    print("ERROR: key translations found in multiple parameters")
+    for d in duplicates:
+        names = []
+        for name_id in key_to_names[d[0]][d[1]]:
+            names.append(name_id[0])
+            print(f"removing: {d}, from {name_id}")
+            assert d[0] in new_params[name_id[1] - 1]["key_translations"]
+            del new_params[name_id[1] - 1]["key_translations"][d[0]]
+
+        # print(f"style: {d[0]}, key: {d[1]} found in {d}")
+    print("\nAll instances have been removed from parameters.json")
+
+fout = open(str(param_json_path), "w")
 fout.write(json.dumps(new_params, indent=2))
+fout.close()
+
+# now fetch the style data
+uc = ursgal.UController()
+new_styles_dict = {
+    "ursgal_style_1": {
+        "style": "ursgal_style_1",
+        "name": "Ursgal",
+        "versions": [
+            "0.6.0",
+            "0.6.1"
+        ],
+        "reference": [
+            "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794."
+        ]
+    },
+    "ucontroller_style_1": {
+        "style": "ucontroller_style_1",
+        "name": "Ursgal Controller",
+        "versions": [
+            "0.6.0",
+            "0.6.1"
+        ],
+        "reference": [
+            "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794."
+        ]
+    }
+}
+# iterate over the unode data
+for style in uc.unodes:
+    if style.startswith("_"):
+        continue
+    meta = uc.unodes[style]["META_INFO"]
+    utrans = meta["utranslation_style"]
+    if utrans in styles:
+        # this matches to a loaded style
+        if utrans in new_styles_dict:
+            # already found so add new versions only
+            new_styles_dict[utrans]["versions"].append(meta["version"])
+        else:
+            new_styles_dict[utrans] = {
+                "style": meta["utranslation_style"],
+                "name": meta["name"],
+                "versions": [meta["version"]],
+                "reference": meta["citation"]
+            }
+
+new_styles = []
+for s, meta in new_styles_dict.items():
+    new_styles.append(meta)
+
+fout = open(str(styles_json_path), "w")
+fout.write(json.dumps(new_styles, indent=2))
 fout.close()
 
 print("Finished")
