@@ -159,7 +159,7 @@ def styles_have_citation(rcode, jsons):
     rcode += local_rcode
     return jsons, rcode
 
-def uvalue_translations_are_unique(rcode, jsons):
+def key_translations_are_unique(rcode, jsons):
     local_rcode = 0
     key_translations = {}
 
@@ -197,7 +197,7 @@ def main():
     jsons, rcode = params_have_defined_fields(rcode, jsons)
     jsons, rcode = styles_have_defined_fields(rcode, jsons)
     jsons, rcode = styles_have_citation(rcode, jsons)
-    jsons, rcode = uvalue_translations_are_unique(rcode, jsons)
+    jsons, rcode = key_translations_are_unique(rcode, jsons)
     return rcode
 
 
