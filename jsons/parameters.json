@@ -3024,104 +3024,6 @@
           "trypsin_p, KR/C"
         ]
       ],
-      "msamanda_style_1": [
-        [
-          "argc",
-          "R;after;P"
-        ],
-        [
-          "aspn",
-          "D;before;"
-        ],
-        [
-          "chymotrypsin",
-          "FMWY;after;P"
-        ],
-        [
-          "chymotrypsin_p",
-          "FMWY;after;"
-        ],
-        [
-          "clostripain",
-          "R;after;"
-        ],
-        [
-          "cnbr",
-          "M;after;P"
-        ],
-        [
-          "elastase",
-          "AGILV;after;P"
-        ],
-        [
-          "formic_acid",
-          "D;after;P"
-        ],
-        [
-          "gluc",
-          "DE;after;P"
-        ],
-        [
-          "gluc_bicarb",
-          "E;after;P"
-        ],
-        [
-          "iodosobenzoate",
-          "W;after;"
-        ],
-        [
-          "lysc",
-          "K;after;P"
-        ],
-        [
-          "lysc_gluc",
-          "DEK;after;P"
-        ],
-        [
-          "lysc_p",
-          "K;after;"
-        ],
-        [
-          "lysn",
-          "K;before;"
-        ],
-        [
-          "lysn_promisc",
-          "AKRS;before;"
-        ],
-        [
-          "nonspecific",
-          ";;"
-        ],
-        [
-          "pepsina",
-          "FL;after;"
-        ],
-        [
-          "protein_endopeptidase",
-          "P;after;"
-        ],
-        [
-          "staph_protease",
-          "E;after;"
-        ],
-        [
-          "trypsin",
-          "KR;after;P"
-        ],
-        [
-          "trypsin_cnbr",
-          "KRM;after;P"
-        ],
-        [
-          "trypsin_gluc",
-          "DEKR;after;P"
-        ],
-        [
-          "trypsin_p",
-          "KR;after;"
-        ]
-      ],
       "msgfplus_style_1": [
         [
           "alpha_lp",
@@ -4247,18 +4149,6 @@
     ],
     "value_translations": {
       "msamanda_style_1": [
-        [
-          "da",
-          "Da"
-        ]
-      ],
-      "myrimatch_style_1": [
-        [
-          "da",
-          "Da"
-        ]
-      ],
-      "novor_style_1": [
         [
           "da",
           "Da"
@@ -8639,24 +8529,6 @@
           "Da"
         ]
       ],
-      "msgfplus_style_1": [
-        [
-          "da",
-          "Da"
-        ]
-      ],
-      "myrimatch_style_1": [
-        [
-          "da",
-          "Da"
-        ]
-      ],
-      "novor_style_1": [
-        [
-          "da",
-          "Da"
-        ]
-      ],
       "omssa_style_1": [
         [
           "da",
@@ -9437,16 +9309,6 @@
         [
           true,
           1
-        ]
-      ],
-      "msamanda_style_1": [
-        [
-          false,
-          "Full"
-        ],
-        [
-          true,
-          "Semi"
         ]
       ],
       "msgfplus_style_1": [

@@ -3,6 +3,7 @@ import ursgal
 import json
 from pathlib import Path
 
+# new files are generated in the helper directory with this code
 param_json_path = Path(__file__).parent.joinpath("new_parameters.json")
 styles_json_path = Path(__file__).parent.joinpath("new_styles.json")
 
@@ -95,6 +96,10 @@ if len(duplicates) > 0:
             print(f"removing: {d}, from {name_id}")
             assert d[0] in new_params[name_id[1] - 1]["key_translations"]
             del new_params[name_id[1] - 1]["key_translations"][d[0]]
+
+            # also remove the style from the value_translations if present
+            if d[0] in new_params[name_id[1] - 1]["value_translations"]:
+                del new_params[name_id[1] - 1]["value_translations"][d[0]]
 
         # print(f"style: {d[0]}, key: {d[1]} found in {d}")
     print("\nAll instances have been removed from parameters.json")
