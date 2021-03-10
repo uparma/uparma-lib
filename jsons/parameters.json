@@ -6639,14 +6639,7 @@
     "tag": [
       "scoring"
     ],
-    "value_translations": {
-      "omssa_style_1": [
-        [
-          "all",
-          0
-        ]
-      ]
-    },
+    "value_translations": {},
     "key_translations": {
       "ursgal_style_1": "max_num_of_ions_per_series_to_search",
       "omssa_style_1": "-sp"
