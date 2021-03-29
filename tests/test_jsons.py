@@ -230,7 +230,7 @@ def main():
     jsons, rcode = styles_have_defined_fields(rcode, jsons)
     jsons, rcode = styles_have_citation(rcode, jsons)
     jsons, rcode = key_translations_are_unique(rcode, jsons)
-    jsons, rcode = key_translations_in_list_form_have_single_entries(rcode, jsons)
+    # jsons, rcode = key_translations_in_list_form_have_single_entries(rcode, jsons)
     return rcode
 
 
