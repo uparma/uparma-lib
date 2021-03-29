@@ -51,7 +51,7 @@
     "versions": [
       "1.0.0"
     ],
-    "reference": ""
+    "reference": "Ursgal2 Team"
   },
   {
     "style": "csv2ssl_style_1",
@@ -59,7 +59,7 @@
     "versions": [
       "1.0.0"
     ],
-    "reference": ""
+    "reference": "Ursgal2 Team"
   },
   {
     "style": "deepnovo_style_1",
@@ -76,7 +76,7 @@
     "versions": [
       "1.0.0"
     ],
-    "reference": ""
+    "reference": "Ursgal2 Team"
   },
   {
     "style": "flash_lfq_style_1",
@@ -92,7 +92,7 @@
     "versions": [
       "1.0.0"
     ],
-    "reference": ""
+    "reference": "Ursgal2 Team"
   },
   {
     "style": "get_ftp_style_1",
@@ -116,7 +116,7 @@
     "versions": [
       "1.0.0"
     ],
-    "reference": ""
+    "reference": "Ursgal2 Team"
   },
   {
     "style": "kojak_style_1",
@@ -148,7 +148,7 @@
     "versions": [
       "1.0.0"
     ],
-    "reference": ""
+    "reference": "Ursgal2 Team"
   },
   {
     "style": "moda_style_1",
@@ -226,7 +226,7 @@
       "v2019.07.03",
       "v9979"
     ],
-    "reference": ""
+    "reference": "Ursgal2 Team"
   },
   {
     "style": "myrimatch_style_1",
@@ -349,7 +349,7 @@
     "versions": [
       "1.0"
     ],
-    "reference": ""
+    "reference": "Ursgal2 Team"
   },
   {
     "style": "ptmshepherd_style_1",
@@ -381,7 +381,7 @@
     "versions": [
       "1.0.0"
     ],
-    "reference": ""
+    "reference": "Ursgal2 Team"
   },
   {
     "style": "sugarpy_plot_style_1",
@@ -389,7 +389,7 @@
     "versions": [
       "1.0.0"
     ],
-    "reference": ""
+    "reference": "Ursgal2 Team"
   },
   {
     "style": "sugarpy_run_style_1",
@@ -397,7 +397,7 @@
     "versions": [
       "1.0.0"
     ],
-    "reference": ""
+    "reference": "Ursgal2 Team"
   },
   {
     "style": "svm_style_1",
@@ -405,7 +405,7 @@
     "versions": [
       "1.0.0"
     ],
-    "reference": ""
+    "reference": "Ursgal2 Team"
   },
   {
     "style": "tag_graph_style_1",
@@ -454,7 +454,7 @@
     "versions": [
       "1.0.0"
     ],
-    "reference": ""
+    "reference": "Ursgal2 Team"
   },
   {
     "style": "xtandem_style_1",
@@ -468,5 +468,13 @@
       "Vengeance"
     ],
     "reference": "Craig R, Beavis RC. (2004) TANDEM: matching proteins with tandem mass spectra."
+  },
+  {
+    "style": "_test_node_style_1",
+    "name": "test_node_style_1",
+    "versions": [
+      "1.0.0"
+    ],
+    "reference": "Ursgal2 Team"
   }
 ]
