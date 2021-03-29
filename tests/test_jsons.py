@@ -150,21 +150,20 @@ def styles_have_citation(rcode, jsons):
         if len(entry.get("versions", [])) != 0:
             if len(entry.get("reference", "")) == 0:
                 # Better> could be nice citation regex!
-                uprint(
-                    "Style {name} haz no reference!".format(**entry), ok=False
-                )
+                uprint("Style {name} haz no reference!".format(**entry), ok=False)
                 local_rcode = 32
     if local_rcode == 0:
         uprint("All styles af references")
     rcode += local_rcode
     return jsons, rcode
 
+
 def key_translations_are_unique(rcode, jsons):
     local_rcode = 0
     key_translations = {}
 
-    for entry in jsons['parameters.json']:
-        for style, translated_key in entry['key_translations'].items():
+    for entry in jsons["parameters.json"]:
+        for style, translated_key in entry["key_translations"].items():
             if style not in key_translations.keys():
                 key_translations[style] = ddict(list)
             # print(style, translated_key)
@@ -172,18 +171,51 @@ def key_translations_are_unique(rcode, jsons):
                 translated_key = tuple(translated_key)
             key_translations[style][translated_key].append(entry["name"])
 
-
     for style in key_translations.keys():
         for translated_key, names in key_translations[style].items():
             if len(names) > 1:
-                uprint(f"Style {style} has translated key {translated_key} that maps,", ok=False)
-                uprint(f"    onto multiple names {names} hence no mapping can be done.", ok=False)
-                local_rcode = 2**6
+                uprint(
+                    f"Style {style} has translated key {translated_key} that maps,",
+                    ok=False,
+                )
+                uprint(
+                    f"    onto multiple names {names} hence no mapping can be done.",
+                    ok=False,
+                )
+                local_rcode = 2 ** 6
 
     if local_rcode == 0:
-        uprint('All mapped keys are unique')
+        uprint("All mapped keys are unique")
     rcode += local_rcode
     return jsons, rcode
+
+
+def key_translations_in_list_form_have_single_entries(rcode, jsons):
+    local_rcode = 0
+    list_entries = set()
+    single_entries = set()
+
+    for entry in jsons["parameters.json"]:
+        for style, translated_key in entry["key_translations"].items():
+            if isinstance(translated_key, list):
+                for e in translated_key:
+                    list_entries.add((style, e))
+            else:
+                single_entries.add((style, translated_key))
+    overlap = list_entries - single_entries
+    if len(overlap) == 0:
+        uprint(f"all key translations in list form have single entries as well", ok=True)
+    else:
+        uprint("Those list key translations do not exist as single entries:", ok=False)
+        for e in sorted(list(overlap)):
+            uprint(
+                f"{e}",
+                ok=False,
+            )
+        local_rcode = 2 ** 7
+    rcode += local_rcode
+    return jsons, rcode
+
 
 def main():
     """
@@ -198,6 +230,7 @@ def main():
     jsons, rcode = styles_have_defined_fields(rcode, jsons)
     jsons, rcode = styles_have_citation(rcode, jsons)
     jsons, rcode = key_translations_are_unique(rcode, jsons)
+    jsons, rcode = key_translations_in_list_form_have_single_entries(rcode, jsons)
     return rcode
 
 
