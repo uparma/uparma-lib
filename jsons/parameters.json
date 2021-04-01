@@ -8479,7 +8479,8 @@
       "xtandem_style_1": "spectrum, parent monoisotopic mass error minus",
       "msfragger_style_1": "precursor_mass_lower",
       "msfragger_style_2": "precursor_mass_lower",
-      "msfragger_style_3": "precursor_mass_lower"
+      "msfragger_style_3": "precursor_mass_lower",
+      "omssa_style_1": "-te_part1"
     }
   },
   {
@@ -8501,7 +8502,8 @@
       "msfragger_style_1": "precursor_mass_upper",
       "msfragger_style_2": "precursor_mass_upper",
       "msfragger_style_3": "precursor_mass_upper",
-      "flash_lfq_style_1": "--ppm"
+      "flash_lfq_style_1": "--ppm",
+      "omssa_style_1": "-te_part2"
     }
   },
   {
