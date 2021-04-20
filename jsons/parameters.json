@@ -9781,7 +9781,8 @@
       "myrimatch_style_1": "MinPeptideMass",
       "pglyco_db_style_1": "min_peptide_weight",
       "pnovo_style_1": "mass_lower_bound",
-      "ursgal_style_1": "precursor_min_mass"
+      "ursgal_style_1": "precursor_min_mass",
+      "xtandem_style_1": "spectrum, minimum parent m+h"
     },
     "name": "precursor_min_mass",
     "tag": [
