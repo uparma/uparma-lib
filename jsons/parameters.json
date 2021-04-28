@@ -9122,6 +9122,30 @@
         [
           "default",
           "default"
+        ],
+        [
+          ".pepXML",
+          ".pepXML"
+        ],
+        [
+          ".mgf",
+          ".mgf"
+        ],
+        [
+          ".mzml",
+          ".mzml"
+        ],
+        [
+          "indexed_mzml",
+          "indexed_mzml"
+        ],
+        [
+          "parquet",
+          "parquet"
+        ],
+        [
+          ".mzid",
+          ".mzid"
         ]
       ],
       "xtandem_style_1": [
