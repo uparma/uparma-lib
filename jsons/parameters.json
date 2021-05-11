@@ -10482,6 +10482,7 @@
     "description": "Allows semi-enzymatic peptide ends",
     "key_translations": {
       "moda_style_1": "enzyme_constraint_min_number_termini",
+      "msamanda_style_1": "semi_enzyme_specificity",
       "msfragger_style_1": "num_enzyme_termini",
       "msfragger_style_2": "num_enzyme_termini",
       "msfragger_style_3": "num_enzyme_termini",
@@ -10507,6 +10508,16 @@
         [
           true,
           1
+        ]
+      ],
+      "msamanda_style_1": [
+        [
+          false,
+          "Full"
+        ],
+        [
+          true,
+          "Semi"
         ]
       ],
       "msfragger_style_1": [
