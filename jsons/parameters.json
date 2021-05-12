@@ -10518,11 +10518,11 @@
       "msamanda_style_1": [
         [
           false,
-          "Full"
+          "FULL"
         ],
         [
           true,
-          "Semi"
+          "SEMI"
         ]
       ],
       "msfragger_style_1": [
