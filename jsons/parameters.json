@@ -3069,7 +3069,7 @@
   },
   {
     "_id": 70,
-    "default_value": "deisotope_with_singleton_charge_one",
+    "default_value": "perform_deisotoping",
     "description": "Perform Deisotoping for MS2 spectra. Options are: \"none\", \"deisotope_with_singleton_charge_one\", \"perform_deisotoping\"",
     "key_translations": {
       "msamanda_style_1": "PerformDeisotoping",
