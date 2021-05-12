@@ -7549,6 +7549,7 @@
     "default_value": 40,
     "description": "Maximal length of a peptide",
     "key_translations": {
+      "msamanda_style_1": "MaximumPepLength",
       "msfragger_style_1": "digest_max_length",
       "msfragger_style_2": "digest_max_length",
       "msfragger_style_3": "digest_max_length",
