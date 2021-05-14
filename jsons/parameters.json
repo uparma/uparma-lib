@@ -3069,7 +3069,7 @@
   },
   {
     "_id": 70,
-    "default_value": "deisotope_with_singleton_charge_one",
+    "default_value": "perform_deisotoping",
     "description": "Perform Deisotoping for MS2 spectra. Options are: \"none\", \"deisotope_with_singleton_charge_one\", \"perform_deisotoping\"",
     "key_translations": {
       "msamanda_style_1": "PerformDeisotoping",
@@ -3293,6 +3293,7 @@
       "generate_target_decoy_style_1": "enzyme",
       "kojak_style_1": "enzyme",
       "moda_style_1": "Enzyme",
+      "msamanda_style_1": "enzyme_specificity",
       "msfragger_style_1": "enzyme",
       "msfragger_style_2": "enzyme",
       "msfragger_style_3": "enzyme",
@@ -3556,6 +3557,103 @@
         [
           "trypsin_p",
           "trypsin_p, KR/C"
+        ]
+      ],
+      "msamanda_style_1": [
+        [
+          "argc",
+          "R;after;P"
+        ],
+        [
+          "aspn",
+          "D;before;"
+        ],
+        [
+          "chymotrypsin",
+          "FMWY;after;P"
+        ],
+        [
+          "chymotrypsin_p",
+          "FMWY;after;"
+        ],
+        [
+          "clostripain",
+          "R;after;"
+        ],
+        [
+          "cnbr",
+          "M;after;P"
+        ],
+        [
+          "elastase",
+          "AGILV;after;P"
+        ],
+        [
+          "formic_acid",
+          "D;after;P"
+        ],
+        [
+          "gluc", "DE;after;P"
+        ],
+        [
+          "gluc_bicarb",
+          "E;after;P"
+        ],
+        [
+          "iodosobenzoate",
+          "W;after;"
+        ],
+        [
+          "lysc",
+          "K;after;P"
+        ],
+        [
+          "lysc_gluc",
+          "DEK;after;P"
+        ],
+        [
+          "lysc_p",
+          "K;after;"
+        ],
+        [
+          "lysn",
+          "K;before;"
+        ],
+        [
+          "lysn_promisc",
+          "AKRS;before;"
+        ],
+        [
+          "nonspecific",
+          ";;"
+        ],
+        [
+          "pepsina",
+          "FL;after;"
+        ],
+        [
+          "protein_endopeptidase",
+          "P;after;"
+        ],
+        [
+          "staph_protease",
+          "E;after;"
+        ],
+        [
+          "trypsin",
+          "KR;after;P"
+        ],
+        [
+          "trypsin_cnbr",
+          "KRM;after;P"
+        ],
+        [
+          "trypsin_gluc",
+          "DEKR;after;P"
+        ],
+        [
+          "trypsin_p",
+          "KR;after;"
         ]
       ],
       "msfragger_style_1": [
@@ -7451,6 +7549,7 @@
     "default_value": 40,
     "description": "Maximal length of a peptide",
     "key_translations": {
+      "msamanda_style_1": "MaximumPepLength",
       "msfragger_style_1": "digest_max_length",
       "msfragger_style_2": "digest_max_length",
       "msfragger_style_3": "digest_max_length",
@@ -9490,6 +9589,7 @@
     "default_value": 5,
     "description": "Lower precursor mass tolerance; maximum negative deviation of measured from calculated parent ion mass.",
     "key_translations": {
+      "msamanda_style_1": "ms1_tol_part1",
       "msfragger_style_1": "precursor_mass_lower",
       "msfragger_style_2": "precursor_mass_lower",
       "msfragger_style_3": "precursor_mass_lower",
@@ -9513,6 +9613,7 @@
     "description": "Upper precursor mass tolerance; maximum positive deviation of measured from calculated parent ion mass.",
     "key_translations": {
       "flash_lfq_style_1": "--ppm",
+      "msamanda_style_1": "ms1_tol_part2",
       "msfragger_style_1": "precursor_mass_upper",
       "msfragger_style_2": "precursor_mass_upper",
       "msfragger_style_3": "precursor_mass_upper",
@@ -9727,6 +9828,7 @@
     "default_value": 5,
     "description": "Maximal accepted parent ion charge",
     "key_translations": {
+      "msamanda_style_1": "considered_charges_max",
       "msfragger_style_1": "precursor_max_charge",
       "msfragger_style_2": "precursor_max_charge",
       "msfragger_style_3": "precursor_max_charge",
@@ -9775,6 +9877,7 @@
     "default_value": 1,
     "description": "Minimal accepted parent ion charge",
     "key_translations": {
+      "msamanda_style_1": "considered_charges_min",
       "msfragger_style_1": "precursor_min_charge",
       "msfragger_style_2": "precursor_min_charge",
       "msfragger_style_3": "precursor_min_charge",
@@ -10384,6 +10487,7 @@
     "description": "Allows semi-enzymatic peptide ends",
     "key_translations": {
       "moda_style_1": "enzyme_constraint_min_number_termini",
+      "msamanda_style_1": "semi_enzyme_specificity",
       "msfragger_style_1": "num_enzyme_termini",
       "msfragger_style_2": "num_enzyme_termini",
       "msfragger_style_3": "num_enzyme_termini",
@@ -10409,6 +10513,16 @@
         [
           true,
           1
+        ]
+      ],
+      "msamanda_style_1": [
+        [
+          false,
+          "FULL"
+        ],
+        [
+          true,
+          "SEMI"
         ]
       ],
       "msfragger_style_1": [
