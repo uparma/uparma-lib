@@ -15019,7 +15019,7 @@
   },
   {
     "_id": 362,
-    "default_value": ".",
+    "default_value": "None",
     "description": "Specifies source_path of a file",
     "key_translations": {
       "ursgal_style_1": "source_path",
@@ -15035,7 +15035,7 @@
   },
   {
     "_id": 363,
-    "default_value": ".",
+    "default_value": "None",
     "description": "Specifies target_path of a file",
     "key_translations": {
       "ursgal_style_1": "target_path",
