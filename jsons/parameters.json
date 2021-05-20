@@ -7554,6 +7554,7 @@
       "msfragger_style_1": "digest_max_length",
       "msfragger_style_2": "digest_max_length",
       "msfragger_style_3": "digest_max_length",
+      "msgfplus_style_1": "-maxLength",
       "myrimatch_style_1": "MaxPeptideLength",
       "omssa_style_1": "-nox",
       "pglyco_db_style_1": "max_peptide_len",
