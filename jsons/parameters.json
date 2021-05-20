@@ -2173,6 +2173,7 @@
       "msfragger_style_1": "clip_nTerm_M",
       "msfragger_style_2": "clip_nTerm_M",
       "msfragger_style_3": "clip_nTerm_M",
+      "msgfplus_style_1": "-ignoreMetCleavage",
       "ursgal_style_1": "clip_nterm_m"
     },
     "name": "clip_nterm_m",
@@ -2200,6 +2201,16 @@
         ]
       ],
       "msfragger_style_3": [
+        [
+          false,
+          0
+        ],
+        [
+          true,
+          1
+        ]
+      ],
+      "msgfplus_style_1": [
         [
           false,
           0
