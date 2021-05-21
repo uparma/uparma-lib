@@ -7411,7 +7411,7 @@
     "key_translations": {
       "kojak_style_1": "max_num_mods",
       "msamanda_style_1": "MaxNoDynModifs",
-      "msgfplus_style_1": "NumMods",
+      "msgfplus_style_1": "-numMods",
       "myrimatch_style_1": "MaxDynamicMods",
       "pglyco_db_style_1": "max_var_modify_num",
       "ursgal_style_1": "max_num_mods"
