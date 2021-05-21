@@ -15108,4 +15108,18 @@
     },
     "value_type": "bool"
   },
+  {
+    "_id": 365,
+    "default_value": 1.007276466621,
+    "description": "Charge carrier mass (default is mass of a proton)",
+    "key_translations": {
+      "msgfplus_style_1": "-ccm",
+      "ursgal_style_1": "charge_carrier_mass"
+    },
+    "name": "charge_carrier_mass",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "float"
+  }
 ]
