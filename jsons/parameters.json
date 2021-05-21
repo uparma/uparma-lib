@@ -15070,5 +15070,42 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "str"
-  }
+  },
+  {
+    "_id": 364,
+    "default_value": false,
+    "description": "Verbose msgfplus output",
+    "key_translations": {
+      "msgfplus_style_1": "-verbose",
+      "ursgal_style_1": "msgfplus_verbose_output"
+    },
+    "name": "msgfplus_verbose_output",
+    "tag": [
+      "output"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {
+      "msgfplus_style_1": [
+        [
+          false,
+          0
+        ],
+        [
+          true,
+          1
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    "value_type": "bool"
+  },
 ]
