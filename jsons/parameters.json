@@ -3061,7 +3061,7 @@
       "kojak_style_1": "decoy_tag",
       "msfragger_style_2": "decoy_prefix",
       "msfragger_style_3": "decoy_prefix",
-      "msgfplus_style_1": "decoy_prefix",
+      "msgfplus_style_1": "-decoy",
       "myrimatch_style_1": "DecoyPrefix",
       "mzidentml_style_1": "-decoyRegex",
       "percolator_style_1": "-P",
