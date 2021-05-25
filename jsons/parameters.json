@@ -4789,6 +4789,7 @@
     "description": "Mass tolerance of measured and calculated fragment ions",
     "key_translations": {
       "glycopeptide_fragmentor_style_1": "frag_mass_tolerance",
+      "mascot_style_1": "ms_ms_tolerance",
       "msamanda_style_1": "ms2_tol",
       "msfragger_style_1": "fragment_mass_tolerance",
       "msfragger_style_2": "fragment_mass_tolerance",
