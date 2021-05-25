@@ -9637,6 +9637,7 @@
     "default_value": "ppm",
     "description": "Precursor mass tolerance unit: available in ppm (parts-per-millon), da (Dalton) or mmu (Milli mass unit)",
     "key_translations": {
+      "mascot_style_1": "pep_mass_tolerance_unit",
       "msamanda_style_1": "ms1_tol unit",
       "msfragger_style_1": "precursor_mass_units",
       "msfragger_style_2": "precursor_mass_units",
