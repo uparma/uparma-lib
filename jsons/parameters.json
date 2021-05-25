@@ -15058,5 +15058,21 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "str"
+  },
+  {
+    "_id": 364,
+    "default_value": 0,
+    "description": "Number of 13C peaks",
+    "key_translations": {
+      "mascot_style_1": "num_13C_peaks",
+      "ursgal_style_1": "mascot_num_13C_peaks",
+    },
+    "name": "target_path",
+    "tag": [
+      "copy_engine"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
   }
 ]
