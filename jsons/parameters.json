@@ -3293,6 +3293,7 @@
       "deepnovo_style_1": "cleavage_rule",
       "generate_target_decoy_style_1": "enzyme",
       "kojak_style_1": "enzyme",
+      "mascot_style_1": "enzyme",
       "moda_style_1": "Enzyme",
       "msamanda_style_1": "enzyme_specificity",
       "msfragger_style_1": "enzyme",
