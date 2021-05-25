@@ -7619,6 +7619,7 @@
         "hybrid_input_file",
         "db_input_file"
       ],
+      "mascot_style_1": "mgf_input_file",
       "moda_style_1": "Spectra",
       "msamanda_style_1": "mgf_input_file",
       "msgfplus_style_1": "-s",
