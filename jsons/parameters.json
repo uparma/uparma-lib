@@ -4819,6 +4819,7 @@
     "description": "Fragment mass tolerance unit: available in ppm (parts-per-millon), da (Dalton) or mmu (Milli mass unit)",
     "key_translations": {
       "glycopeptide_fragmentor_style_1": "frag_mass_tolerance_unit",
+      "mascot_style_1": "ms_ms_tolerance_unit",
       "msamanda_style_1": "ms2_tol unit",
       "msfragger_style_1": "fragment_mass_units",
       "msfragger_style_2": "fragment_mass_units",
