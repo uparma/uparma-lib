@@ -9778,6 +9778,7 @@
     "default_value": "monoisotopic",
     "description": "Precursor mass type: monoisotopic or average",
     "key_translations": {
+      "mascot_style_1": "mass_type",
       "msamanda_style_1": "monoisotopic",
       "myrimatch_style_1": "PrecursorMzToleranceRule",
       "omssa_style_1": "-tem",
