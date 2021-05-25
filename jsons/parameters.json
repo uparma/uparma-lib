@@ -7338,6 +7338,7 @@
     "key_translations": {
       "deepnovo_style_1": "num_missed_cleavage",
       "kojak_style_1": "max_missed_cleavages",
+      "mascot_style_1": "max_missed_cleavages",
       "moda_style_1": "MissedCleavage",
       "msamanda_style_1": "missed_cleavages",
       "msfragger_style_1": "allowed_missed_cleavage",
