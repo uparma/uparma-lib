@@ -2983,6 +2983,7 @@
       "compomics_utilities_style_1": "database",
       "deepnovo_style_1": "db_fasta_file",
       "kojak_style_1": "database",
+      "mascot_style_1": "database",
       "moda_style_1": "Fasta",
       "msamanda_style_1": "database",
       "msfragger_style_1": "database_name",
