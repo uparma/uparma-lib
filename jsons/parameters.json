@@ -15132,5 +15132,19 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "str"
+  },
+  {
+    "_id": 368,
+    "default_value": "Peptide",
+    "description": "Mascot report type",
+    "key_translations": {
+      "mascot_style_1": "REPTYPE",
+      "ursgal_style_1": "mascot_report_type",
+    },
+    "name": "mascot_report_type",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
   }
 ]
