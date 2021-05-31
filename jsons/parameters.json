@@ -8744,6 +8744,7 @@
     "default_value": 10,
     "description": "Maximum number of peptide spectrum matches to report for each spectrum",
     "key_translations": {
+      "mascot_style_1": "REPORT",
       "msamanda_style_1": "max_rank",
       "msfragger_style_1": "output_report_topN",
       "msfragger_style_2": "output_report_topN",
@@ -8761,7 +8762,14 @@
       "scoring"
     ],
     "triggers_rerun": true,
-    "value_translations": {},
+    "value_translations": {
+      "mascot_style_1": [
+        [
+          0,
+          "AUTO"
+        ]
+      ]
+    },
     "value_type": "int"
   },
   {
