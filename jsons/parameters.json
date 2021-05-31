@@ -815,6 +815,7 @@
     "default_value": false,
     "description": " Static mods are not considered ",
     "key_translations": {
+      "mascot_style_1": "MULTI_SITE_MODS",
       "msfragger_style_1": "allow_multiple_variable_mods_on_residue",
       "msfragger_style_2": "allow_multiple_variable_mods_on_residue",
       "msfragger_style_3": "allow_multiple_variable_mods_on_residue",
@@ -826,6 +827,16 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "mascot_style_1": [
+        [
+          false,
+          0
+        ],
+        [
+          true,
+          1
+        ]
+      ],
       "msfragger_style_1": [
         [
           false,
