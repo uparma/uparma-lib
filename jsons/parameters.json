@@ -3205,6 +3205,7 @@
     "default_value": false,
     "description": "Engine creates an own decoy database. Not recommended, because a target decoy database should be generated independently from the search engine, e.g. by using the uNode generate_target_decoy_1_0_0",
     "key_translations": {
+      "mascot_style_1": "DECOY"
       "msamanda_style_1": "generate_decoy",
       "msgfplus_style_1": "-tda",
       "pipi_style_1": "add_decoy",
