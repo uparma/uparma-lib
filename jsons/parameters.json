@@ -15146,5 +15146,19 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "str"
+  },
+  {
+    "_id": 369,
+    "default_value": 0,
+    "description": "Mascot Automatic Error Tolerant Search",
+    "key_translations": {
+      "mascot_style_1": "ERRORTOLERANT",
+      "ursgal_style_1": "mascot_error_tol_search",
+    },
+    "name": "mascot_error_tol_search",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "int"
   }
 ]
