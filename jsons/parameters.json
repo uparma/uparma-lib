@@ -15196,17 +15196,28 @@
     "value_type": "str"
   },
   {
-    "_id": 371,
-    "default_value": "None",
-    "description": "Mascot user email",
+    "_id": 372,
+    "default_value": false,
+    "description": "Should spectral libraries be included in the search",
     "key_translations": {
-      "mascot_style_1": "USEREMAIL",
-      "ursgal_style_1": "mascot_user_email",
+      "mascot_style_1": "LIBRARY_SEARCH",
+      "ursgal_style_1": "mascot_library_search",
     },
-    "name": "mascot_user_email",
+    "name": "mascot_library_search",
     "tag": [],
     "triggers_rerun": true,
-    "value_translations": {},
-    "value_type": "str"
+    "value_translations": {
+      "mascot_style_1": [
+        [
+          false,
+          0
+        ],
+        [
+          true,
+          1
+        ]
+      ]
+    },
+    "value_type": "int"
   }
 ]
