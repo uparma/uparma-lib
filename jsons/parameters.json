@@ -15105,4 +15105,18 @@
     },
     "value_type": "int"
   },
+  {
+    "_id": 366,
+    "default_value": "Mascot generic",
+    "description": "Format of the input MS/MS file",
+    "key_translations": {
+      "mascot_style_1": "FORMAT",
+      "ursgal_style_1": "mascot_search_file_format",
+    },
+    "name": "mascot_search_file_format",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
+  }
 ]
