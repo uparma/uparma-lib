@@ -15079,17 +15079,17 @@
   },
   {
     "_id": 364,
-    "default_value": 0,
-    "description": "Number of 13C peaks",
+    "default_value": [1,2,3,4,5,6],
+    "description": "NA translation frames",
     "key_translations": {
-      "mascot_style_1": "PEP_ISOTOPE_ERROR",
-      "ursgal_style_1": "mascot_num_13C_peaks",
+      "mascot_style_1": "FRAMES",
+      "ursgal_style_1": "mascot_frames",
     },
-    "name": "mascot_num_13C_peaks",
+    "name": "mascot_frames",
     "tag": [],
     "triggers_rerun": true,
     "value_translations": {},
-    "value_type": "str"
+    "value_type": "list"
   },
   {
     "_id": 365,
@@ -15175,6 +15175,20 @@
       "ursgal_style_1": "mascot_user_name",
     },
     "name": "mascot_user_name",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
+  },
+  {
+    "_id": 371,
+    "default_value": "None",
+    "description": "Mascot user email",
+    "key_translations": {
+      "mascot_style_1": "USEREMAIL",
+      "ursgal_style_1": "mascot_user_email",
+    },
+    "name": "mascot_user_email",
     "tag": [],
     "triggers_rerun": true,
     "value_translations": {},
