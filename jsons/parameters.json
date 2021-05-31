@@ -15161,7 +15161,7 @@
   },
   {
     "_id": 367,
-    "default_value": "MIS",
+    "default_value": "MS/MS Ion Search",
     "description": "Mascot search type",
     "key_translations": {
       "mascot_style_1": "SEARCH",
@@ -15170,7 +15170,22 @@
     "name": "mascot_search_type",
     "tag": [],
     "triggers_rerun": true,
-    "value_translations": {},
+    "value_translations": {
+      [
+        [
+          "MS/MS Ion Search",
+          "MIS"
+        ],
+        [
+          "Sequence Query",
+          "SQ"
+        ],
+        [
+          "Peptide Mass Fingerprint",
+          "PMF"
+        ]
+      ]
+    },
     "value_type": "str"
   },
   {
