@@ -15128,21 +15128,16 @@
   },
   {
     "_id": 365,
-    "default_value": 0,
-    "description": "Number of report hits",
+    "default_value": null,
+    "description": "Mass of the intact protein (in Da)",
     "key_translations": {
-      "mascot_style_1": "REPORT",
-      "ursgal_style_1": "mascot_num_report_hits",
+      "mascot_style_1": "SEG",
+      "ursgal_style_1": "mascot_protein_mass",
     },
-    "name": "mascot_num_report_hits",
+    "name": "mascot_protein_mass",
     "tag": [],
     "triggers_rerun": true,
-    "value_translations": {
-      "mascot_style_1": [
-        0,
-        "AUTO"
-      ]
-    },
+    "value_translations": {},
     "value_type": "int"
   },
   {
