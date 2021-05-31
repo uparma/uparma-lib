@@ -15118,5 +15118,19 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "str"
+  },
+  {
+    "_id": 367,
+    "default_value": "MIS",
+    "description": "Mascot search type",
+    "key_translations": {
+      "mascot_style_1": "SEARCH",
+      "ursgal_style_1": "mascot_search_type",
+    },
+    "name": "mascot_search_type",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
   }
 ]
