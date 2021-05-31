@@ -14986,6 +14986,7 @@
     ],
     "description": " The given mass range is used to remove precursor peaks. ",
     "key_translations": {
+      "mascot_style_1": "CUTOUT",
       "msfragger_style_3": "remove_precursor_range",
       "ursgal_style_1": "remove_precursor_range"
     },
