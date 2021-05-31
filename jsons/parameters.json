@@ -15160,5 +15160,20 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "int"
+  },
+  {
+    "_id": 370,
+    "default_value": "None",
+    "description": "Mascot username",
+    "key_translations": {
+      "mascot_style_1": "USERNAME",
+      "ursgal_style_1": "mascot_username",
+    },
+    "name": "mascot_username",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
   }
+
 ]
