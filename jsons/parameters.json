@@ -6546,6 +6546,7 @@
     "description": "Type of mass spectrometer (used to determine the scoring model)",
     "key_translations": {
       "kojak_style_1": "instrument",
+      "mascot_style_1": "INSTRUMENT",
       "moda_style_1": "Instrument",
       "msgfplus_style_1": "-inst",
       "novor_style_1": "massAnalyzer",
