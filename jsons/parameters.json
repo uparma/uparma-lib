@@ -3015,6 +3015,7 @@
     "default_value": "all",
     "description": "If a taxonomy ID is specified, only the corresponding protein sequences from the fasta database are included in the search.",
     "key_translations": {
+      "mascot_style_1": "TAXONOMY",
       "ursgal_style_1": "database_taxonomy",
       "xtandem_style_1": "taxon label"
     },
