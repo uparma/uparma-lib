@@ -15164,16 +15164,29 @@
   {
     "_id": 370,
     "default_value": "None",
-    "description": "Mascot username",
+    "description": "Mascot user name",
     "key_translations": {
       "mascot_style_1": "USERNAME",
-      "ursgal_style_1": "mascot_username",
+      "ursgal_style_1": "mascot_user_name",
     },
-    "name": "mascot_username",
+    "name": "mascot_user_name",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
+  },
+  {
+    "_id": 371,
+    "default_value": "None",
+    "description": "Mascot user email",
+    "key_translations": {
+      "mascot_style_1": "USEREMAIL",
+      "ursgal_style_1": "mascot_user_email",
+    },
+    "name": "mascot_user_email",
     "tag": [],
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "str"
   }
-
 ]
