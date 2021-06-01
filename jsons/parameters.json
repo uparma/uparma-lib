@@ -15179,6 +15179,20 @@
           "Peptide Mass Fingerprint",
           "PMF"
         ]
+      ],
+      "ursgal_style_1": [
+        [
+          "MS/MS Ion Search",
+          "MS/MS Ion Search"
+        ],
+        [
+          "Sequence Query",
+          "Sequence Query"
+        ],
+        [
+          "Peptide Mass Fingerprint",
+          "Peptide Mass Fingerprint"
+        ]
       ]
     },
     "value_type": "str"
@@ -15259,6 +15273,16 @@
         [
           true,
           1
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          true
         ]
       ]
     },
