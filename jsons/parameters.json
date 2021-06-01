@@ -3216,7 +3216,7 @@
     "default_value": false,
     "description": "Engine creates an own decoy database. Not recommended, because a target decoy database should be generated independently from the search engine, e.g. by using the uNode generate_target_decoy_1_0_0",
     "key_translations": {
-      "mascot_style_1": "DECOY"
+      "mascot_style_1": "DECOY",
       "msamanda_style_1": "generate_decoy",
       "msgfplus_style_1": "-tda",
       "pipi_style_1": "add_decoy",
@@ -15118,7 +15118,7 @@
     "description": "NA translation frames",
     "key_translations": {
       "mascot_style_1": "FRAMES",
-      "ursgal_style_1": "mascot_frames",
+      "ursgal_style_1": "mascot_frames"
     },
     "name": "mascot_frames",
     "tag": [],
@@ -15132,7 +15132,7 @@
     "description": "Mass of the intact protein (in Da)",
     "key_translations": {
       "mascot_style_1": "SEG",
-      "ursgal_style_1": "mascot_protein_mass",
+      "ursgal_style_1": "mascot_protein_mass"
     },
     "name": "mascot_protein_mass",
     "tag": [],
@@ -15146,7 +15146,7 @@
     "description": "Format of the input MS/MS file",
     "key_translations": {
       "mascot_style_1": "FORMAT",
-      "ursgal_style_1": "mascot_search_file_format",
+      "ursgal_style_1": "mascot_search_file_format"
     },
     "name": "mascot_search_file_format",
     "tag": [],
@@ -15160,7 +15160,7 @@
     "description": "Mascot search type",
     "key_translations": {
       "mascot_style_1": "SEARCH",
-      "ursgal_style_1": "mascot_search_type",
+      "ursgal_style_1": "mascot_search_type"
     },
     "name": "mascot_search_type",
     "tag": [],
@@ -15189,7 +15189,7 @@
     "description": "Mascot report type",
     "key_translations": {
       "mascot_style_1": "REPTYPE",
-      "ursgal_style_1": "mascot_report_type",
+      "ursgal_style_1": "mascot_report_type"
     },
     "name": "mascot_report_type",
     "tag": [],
@@ -15203,7 +15203,7 @@
     "description": "Mascot Automatic Error Tolerant Search",
     "key_translations": {
       "mascot_style_1": "ERRORTOLERANT",
-      "ursgal_style_1": "mascot_error_tol_search",
+      "ursgal_style_1": "mascot_error_tol_search"
     },
     "name": "mascot_error_tol_search",
     "tag": [],
@@ -15217,7 +15217,7 @@
     "description": "Mascot user name",
     "key_translations": {
       "mascot_style_1": "USERNAME",
-      "ursgal_style_1": "mascot_user_name",
+      "ursgal_style_1": "mascot_user_name"
     },
     "name": "mascot_user_name",
     "tag": [],
@@ -15231,7 +15231,7 @@
     "description": "Mascot user email",
     "key_translations": {
       "mascot_style_1": "USEREMAIL",
-      "ursgal_style_1": "mascot_user_email",
+      "ursgal_style_1": "mascot_user_email"
     },
     "name": "mascot_user_email",
     "tag": [],
@@ -15245,7 +15245,7 @@
     "description": "Should spectral libraries be included in the search",
     "key_translations": {
       "mascot_style_1": "LIBRARY_SEARCH",
-      "ursgal_style_1": "mascot_library_search",
+      "ursgal_style_1": "mascot_library_search"
     },
     "name": "mascot_library_search",
     "tag": [],
