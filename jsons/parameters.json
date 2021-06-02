@@ -15227,7 +15227,7 @@
   },
   {
     "_id": 370,
-    "default_value": "None",
+    "default_value": null,
     "description": "Mascot user name",
     "key_translations": {
       "mascot_style_1": "USERNAME",
@@ -15241,7 +15241,7 @@
   },
   {
     "_id": 371,
-    "default_value": "None",
+    "default_value": null,
     "description": "Mascot user email",
     "key_translations": {
       "mascot_style_1": "USEREMAIL",
