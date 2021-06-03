@@ -8768,6 +8768,12 @@
           0,
           "AUTO"
         ]
+      ],
+      "ursgal_style_1": [
+        [
+          0,
+          0
+        ]
       ]
     },
     "value_type": "int"
