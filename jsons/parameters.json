@@ -3229,6 +3229,16 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "mascot_style_1": [
+        [
+          false,
+          "0"
+        ],
+        [
+          true,
+          "1"
+        ]
+      ],
       "msamanda_style_1": [
         [
           false,
