@@ -15129,7 +15129,7 @@
     "value_type": "str"
   },
   {
-    "_id": 364,
+    "_id": 366,
     "default_value": [1,2,3,4,5,6],
     "description": "NA translation frames",
     "key_translations": {
@@ -15143,7 +15143,7 @@
     "value_type": "list"
   },
   {
-    "_id": 365,
+    "_id": 367,
     "default_value": null,
     "description": "Mass of the intact protein (in Da)",
     "key_translations": {
@@ -15157,7 +15157,7 @@
     "value_type": "int"
   },
   {
-    "_id": 366,
+    "_id": 368,
     "default_value": "Mascot generic",
     "description": "Format of the input MS/MS file",
     "key_translations": {
@@ -15171,7 +15171,7 @@
     "value_type": "str"
   },
   {
-    "_id": 367,
+    "_id": 369,
     "default_value": "MS/MS Ion Search",
     "description": "Mascot search type",
     "key_translations": {
@@ -15214,7 +15214,7 @@
     "value_type": "str"
   },
   {
-    "_id": 368,
+    "_id": 370,
     "default_value": "Peptide",
     "description": "Mascot report type",
     "key_translations": {
@@ -15228,7 +15228,7 @@
     "value_type": "str"
   },
   {
-    "_id": 369,
+    "_id": 371,
     "default_value": 0,
     "description": "Mascot Automatic Error Tolerant Search",
     "key_translations": {
@@ -15242,7 +15242,7 @@
     "value_type": "int"
   },
   {
-    "_id": 370,
+    "_id": 372,
     "default_value": null,
     "description": "Mascot user name",
     "key_translations": {
@@ -15256,7 +15256,7 @@
     "value_type": "str"
   },
   {
-    "_id": 371,
+    "_id": 373,
     "default_value": null,
     "description": "Mascot user email",
     "key_translations": {
@@ -15270,7 +15270,7 @@
     "value_type": "str"
   },
   {
-    "_id": 372,
+    "_id": 374,
     "default_value": false,
     "description": "Should spectral libraries be included in the search",
     "key_translations": {
