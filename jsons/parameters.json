@@ -3035,7 +3035,20 @@
       "database"
     ],
     "triggers_rerun": true,
-    "value_translations": {},
+    "value_translations": {
+      "mascot_style_1": [
+        [
+          "all",
+          "All entries"
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          "all",
+          "all"
+        ]
+      ]
+    },
     "value_type": "str"
   },
   {
