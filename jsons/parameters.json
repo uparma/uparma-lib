@@ -15303,5 +15303,19 @@
       ]
     },
     "value_type": "int"
+  },
+  {
+    "_id": 375,
+    "default_value": 1.01,
+    "description": "Mascot formVersion. Make sure it matches the version of your config in Mascot.dat",
+    "key_translations": {
+      "mascot_style_1": "FORMVER",
+      "ursgal_style_1": "mascot_formversion"
+    },
+    "name": "mascot_formversion",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
   }
 ]
