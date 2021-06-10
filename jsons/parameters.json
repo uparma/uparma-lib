@@ -15315,11 +15315,11 @@
         ]
       ]
     },
-    "value_type": "int"
+    "value_type": "bool"
   },
   {
     "_id": 375,
-    "default_value": 1.01,
+    "default_value": "1.01",
     "description": "Mascot formVersion. Make sure it matches the version of your config in Mascot.dat",
     "key_translations": {
       "mascot_style_1": "FORMVER",
