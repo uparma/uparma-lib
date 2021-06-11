@@ -10362,10 +10362,7 @@
       "conversion"
     ],
     "triggers_rerun": true,
-    "value_translations": {
-      "mzml2mgf_style_1": [],
-      "ursgal_style_1": []
-    },
+    "value_translations": {},
     "value_type": "int"
   },
   {
