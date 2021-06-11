@@ -2173,6 +2173,7 @@
       "msfragger_style_1": "clip_nTerm_M",
       "msfragger_style_2": "clip_nTerm_M",
       "msfragger_style_3": "clip_nTerm_M",
+      "msgfplus_style_1": "-ignoreMetCleavage",
       "ursgal_style_1": "clip_nterm_m"
     },
     "name": "clip_nterm_m",
@@ -2200,6 +2201,16 @@
         ]
       ],
       "msfragger_style_3": [
+        [
+          false,
+          0
+        ],
+        [
+          true,
+          1
+        ]
+      ],
+      "msgfplus_style_1": [
         [
           false,
           0
@@ -3050,6 +3061,7 @@
       "kojak_style_1": "decoy_tag",
       "msfragger_style_2": "decoy_prefix",
       "msfragger_style_3": "decoy_prefix",
+      "msgfplus_style_1": "-decoy",
       "myrimatch_style_1": "DecoyPrefix",
       "mzidentml_style_1": "-decoyRegex",
       "percolator_style_1": "-P",
@@ -7399,7 +7411,7 @@
     "key_translations": {
       "kojak_style_1": "max_num_mods",
       "msamanda_style_1": "MaxNoDynModifs",
-      "msgfplus_style_1": "NumMods",
+      "msgfplus_style_1": "-numMods",
       "myrimatch_style_1": "MaxDynamicMods",
       "pglyco_db_style_1": "max_var_modify_num",
       "ursgal_style_1": "max_num_mods"
@@ -7553,6 +7565,7 @@
       "msfragger_style_1": "digest_max_length",
       "msfragger_style_2": "digest_max_length",
       "msfragger_style_3": "digest_max_length",
+      "msgfplus_style_1": "-maxLength",
       "myrimatch_style_1": "MaxPeptideLength",
       "omssa_style_1": "-nox",
       "pglyco_db_style_1": "max_peptide_len",
@@ -9593,6 +9606,7 @@
       "msfragger_style_1": "precursor_mass_lower",
       "msfragger_style_2": "precursor_mass_lower",
       "msfragger_style_3": "precursor_mass_lower",
+      "msgfplus_style_1": "-t_minus",
       "omssa_style_1": "-te_part1",
       "unify_csv_style_1": "precursor_mass_tolerance_minus",
       "ursgal_style_1": "precursor_mass_tolerance_minus",
@@ -9617,6 +9631,7 @@
       "msfragger_style_1": "precursor_mass_upper",
       "msfragger_style_2": "precursor_mass_upper",
       "msfragger_style_3": "precursor_mass_upper",
+      "msgfplus_style_1": "-t_plus",
       "omssa_style_1": "-te_part2",
       "unify_csv_style_1": " precursor_mass_tolerance_minus",
       "ursgal_style_1": "precursor_mass_tolerance_plus",
@@ -9640,6 +9655,7 @@
       "msfragger_style_1": "precursor_mass_units",
       "msfragger_style_2": "precursor_mass_units",
       "msfragger_style_3": "precursor_mass_units",
+      "msgfplus_style_1": "-t_unit",
       "omssa_style_1": "-teppm",
       "pepnovo_style_1": "precursor_mass_tolerance_unit",
       "pglyco_db_style_1": "search_precursor_tolerance_type",
@@ -9691,6 +9707,12 @@
         [
           "da",
           0
+        ]
+      ],
+      "msgfplus_style_1": [
+        [
+          "da",
+          "Da"
         ]
       ],
       "omssa_style_1": [
@@ -15048,5 +15070,56 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "str"
+  },
+  {
+    "_id": 364,
+    "default_value": false,
+    "description": "Verbose msgfplus output",
+    "key_translations": {
+      "msgfplus_style_1": "-verbose",
+      "ursgal_style_1": "msgfplus_verbose_output"
+    },
+    "name": "msgfplus_verbose_output",
+    "tag": [
+      "output"
+    ],
+    "triggers_rerun": false,
+    "value_translations": {
+      "msgfplus_style_1": [
+        [
+          false,
+          0
+        ],
+        [
+          true,
+          1
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    "value_type": "bool"
+  },
+  {
+    "_id": 365,
+    "default_value": 1.007276466621,
+    "description": "Charge carrier mass (default is mass of a proton)",
+    "key_translations": {
+      "msgfplus_style_1": "-ccm",
+      "ursgal_style_1": "charge_carrier_mass"
+    },
+    "name": "charge_carrier_mass",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "float"
   }
 ]
