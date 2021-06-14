@@ -5249,12 +5249,13 @@
   {
     "_id": 95,
     "default_value": null,
-    "description": "ftp download URL, will fail if it is not set by the user\n    '' : None",
+    "description": "host/url of server to upload/download to/from,  will fail if it is not set by the user\n    '' : None",
     "key_translations": {
       "get_ftp_style_1": "ftp_url",
-      "ursgal_style_1": "ftp_url"
+      "mascot_style_1": "hostname",
+      "ursgal_style_1": "host"
     },
-    "name": "ftp_url",
+    "name": "host",
     "tag": [
       "download"
     ],
