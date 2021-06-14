@@ -15164,6 +15164,57 @@
     "value_type": "str"
   },
   {
+    "_id": 364,
+    "default_value": false,
+    "description": "Verbose msgfplus output",
+    "key_translations": {
+      "msgfplus_style_1": "-verbose",
+      "ursgal_style_1": "msgfplus_verbose_output"
+    },
+    "name": "msgfplus_verbose_output",
+    "tag": [
+      "output"
+    ],
+    "triggers_rerun": false,
+    "value_translations": {
+      "msgfplus_style_1": [
+        [
+          false,
+          0
+        ],
+        [
+          true,
+          1
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    "value_type": "bool"
+  },
+  {
+    "_id": 365,
+    "default_value": 1.007276466621,
+    "description": "Charge carrier mass (default is mass of a proton)",
+    "key_translations": {
+      "msgfplus_style_1": "-ccm",
+      "ursgal_style_1": "charge_carrier_mass"
+    },
+    "name": "charge_carrier_mass",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "float"
+  },
+  {
     "_id": 366,
     "default_value": [1,2,3,4,5,6],
     "description": "NA translation frames",
@@ -15352,56 +15403,5 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "str"
-  },
-  {
-    "_id": 364,
-    "default_value": false,
-    "description": "Verbose msgfplus output",
-    "key_translations": {
-      "msgfplus_style_1": "-verbose",
-      "ursgal_style_1": "msgfplus_verbose_output"
-    },
-    "name": "msgfplus_verbose_output",
-    "tag": [
-      "output"
-    ],
-    "triggers_rerun": false,
-    "value_translations": {
-      "msgfplus_style_1": [
-        [
-          false,
-          0
-        ],
-        [
-          true,
-          1
-        ]
-      ],
-      "ursgal_style_1": [
-        [
-          false,
-          false
-        ],
-        [
-          true,
-          true
-        ]
-      ]
-    },
-    "value_type": "bool"
-  },
-  {
-    "_id": 365,
-    "default_value": 1.007276466621,
-    "description": "Charge carrier mass (default is mass of a proton)",
-    "key_translations": {
-      "msgfplus_style_1": "-ccm",
-      "ursgal_style_1": "charge_carrier_mass"
-    },
-    "name": "charge_carrier_mass",
-    "tag": [],
-    "triggers_rerun": true,
-    "value_translations": {},
-    "value_type": "float"
   }
 ]
