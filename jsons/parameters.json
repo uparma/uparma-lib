@@ -15403,5 +15403,47 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "str"
+  },
+  {
+    "_id": 376,
+    "default_value": null,
+    "description": "Stringyfied path to .ssh key (identity file) for server access",
+    "key_translations": {
+      "mascot_style_1": "-i",
+      "ursgal_style_1": "identity_file"
+    },
+    "name": "identity_file",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
+  },
+  {
+    "_id": 377,
+    "default_value": null,
+    "description": "Stringyfied path to mascot exe on the mascot server.",
+    "key_translations": {
+      "mascot_style_1": "mascot_exe_path",
+      "ursgal_style_1": "mascot_exe_path"
+    },
+    "name": "mascot_exe_path",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
+  },
+  {
+    "_id": 378,
+    "default_value": null,
+    "description": "Stringyfied path to data folder on the mascot server.",
+    "key_translations": {
+      "mascot_style_1": "mascot_data_path",
+      "ursgal_style_1": "mascot_data_path"
+    },
+    "name": "mascot_data_path",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
   }
 ]
