@@ -5182,12 +5182,13 @@
   {
     "_id": 91,
     "default_value": null,
-    "description": "Login name/user for the ftp server e.g. \"PASS00269\" in peptideatlas.orgftp download\n    '' : None",
+    "description": "Login name/user for the any server e.g. \"PASS00269\" in peptideatlas.orgftp download\n    '' : None",
     "key_translations": {
       "get_ftp_style_1": "ftp_login",
-      "ursgal_style_1": "ftp_login"
+      "mascot_style_1": "username",
+      "ursgal_style_1": "username_login"
     },
-    "name": "ftp_login",
+    "name": "username_login",
     "tag": [
       "download"
     ],
