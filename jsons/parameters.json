@@ -9973,6 +9973,7 @@
     "default_value": "ppm",
     "description": "Precursor mass tolerance unit: available in ppm (parts-per-millon), da (Dalton) or mmu (Milli mass unit)",
     "key_translations": {
+      "comet_style_1": "peptide_mass_units",
       "mascot_style_1": "TOLU",
       "msamanda_style_1": "ms1_tol unit",
       "msfragger_style_1": "precursor_mass_units",
@@ -9996,6 +9997,20 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "comet_style_1": [
+        [
+          "da",
+          0
+        ],
+        [
+          "mmu",
+          1
+        ],
+        [
+          "ppm",
+          2
+        ]
+      ],
       "mascot_style_1": [
         [
           "da",
