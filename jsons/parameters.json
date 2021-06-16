@@ -5206,6 +5206,7 @@
     "default_value": "monoisotopic",
     "description": "Fragment mass type: monoisotopic or average",
     "key_translations": {
+      "comet_style_1": "mass_type_fragment",
       "omssa_style_1": "-tom",
       "ursgal_style_1": "frag_mass_type",
       "xtandem_style_1": "spectrum, fragment mass type"
@@ -5217,6 +5218,16 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "comet_style_1": [
+        [
+          "average",
+          0
+        ],
+        [
+          "monoisotopic",
+          1
+        ]
+      ],
       "omssa_style_1": [
         [
           "average",
