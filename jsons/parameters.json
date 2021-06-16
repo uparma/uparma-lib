@@ -10135,6 +10135,7 @@
     "default_value": "monoisotopic",
     "description": "Precursor mass type: monoisotopic or average",
     "key_translations": {
+      "comet_style_1": "mass_type_parent",
       "mascot_style_1": "MASS",
       "msamanda_style_1": "monoisotopic",
       "myrimatch_style_1": "PrecursorMzToleranceRule",
@@ -10147,6 +10148,16 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "comet_style_1": [
+        [
+          "average",
+          0
+        ],
+        [
+          "monoisotopic",
+          1
+        ]
+      ],
       "msamanda_style_1": [
         [
           "average",
