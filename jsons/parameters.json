@@ -3201,6 +3201,7 @@
     "default_value": null,
     "description": "Path to database file containing protein sequences in fasta format.",
     "key_translations": {
+      "comet_style_1": "database_name",
       "compomics_utilities_style_1": "database",
       "deepnovo_style_1": "db_fasta_file",
       "kojak_style_1": "database",
