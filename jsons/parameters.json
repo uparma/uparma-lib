@@ -15447,5 +15447,19 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "str"
+  },
+  {
+    "_id": 379,
+    "default_value": null,
+    "description": "Port to connect to on the remote host",
+    "key_translations": {
+      "mascot_style_1": "-p",
+      "ursgal_style_1": "port"
+    },
+    "name": "port",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
   }
 ]
