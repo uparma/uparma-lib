@@ -3051,6 +3051,7 @@
     "default_value": -1,
     "description": "Number of used cpus/threads\n\n    -1 : 'max - 1'\n    >0 : cpu num",
     "key_translations": {
+      "comet_style_1": "num_threads",
       "flash_lfq_style_1": "--thr",
       "kojak_style_1": "cpus",
       "moda_style_1": "-@",
@@ -3074,6 +3075,12 @@
     ],
     "triggers_rerun": false,
     "value_translations": {
+      "comet_style_1": [
+        [
+          -1,
+          "max - 1"
+        ]
+      ],
       "kojak_style_1": [
         [
           -1,
