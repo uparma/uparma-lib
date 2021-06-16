@@ -9920,6 +9920,7 @@
     "default_value": 5,
     "description": "Lower precursor mass tolerance; maximum negative deviation of measured from calculated parent ion mass.",
     "key_translations": {
+      "comet_style_1": "peptide_mass_tolerance_part1",
       "mascot_style_1": "TOL_part1",
       "msamanda_style_1": "ms1_tol_part1",
       "msfragger_style_1": "precursor_mass_lower",
@@ -9945,6 +9946,7 @@
     "default_value": 5,
     "description": "Upper precursor mass tolerance; maximum positive deviation of measured from calculated parent ion mass.",
     "key_translations": {
+      "comet_style_1": "peptide_mass_tolerance_part2",
       "flash_lfq_style_1": "--ppm",
       "mascot_style_1": "TOL_part2",
       "msamanda_style_1": "ms1_tol_part2",
