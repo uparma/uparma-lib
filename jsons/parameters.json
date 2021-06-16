@@ -5186,9 +5186,9 @@
     "key_translations": {
       "get_ftp_style_1": "ftp_login",
       "mascot_style_1": "username",
-      "ursgal_style_1": "username_login"
+      "ursgal_style_1": "login_name"
     },
-    "name": "username_login",
+    "name": "login_name",
     "tag": [
       "download"
     ],
