@@ -15976,5 +15976,19 @@
       ]
     },
     "value_type": "str"
+  },
+  {
+    "_id": 381,
+    "default_value": null,
+    "description": "A full or relative path to the OBO file used with a PEFF search. Ignored if peff_format = 0",
+    "key_translations": {
+      "msgfplus_style_1": "peff_obo",
+      "ursgal_style_1": "peff_obo_path"
+    },
+    "name": "peff_obo_path",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
   }
 ]
