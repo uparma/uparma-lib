@@ -7345,15 +7345,26 @@
     "default_value": true,
     "description": "Activate (True) or deactivate (False) output for percolator",
     "key_translations": {
+      "comet_style_1": "output_percolatorfile",
       "kojak_style_1": "kojak_export_percolator",
-      "ursgal_style_1": "kojak_export_percolator"
+      "ursgal_style_1": "export_percolator"
     },
-    "name": "kojak_export_percolator",
+    "name": "export_percolator",
     "tag": [
       "output"
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "comet_style_1": [
+        [
+          true,
+          1
+        ],
+        [
+          false,
+          0
+        ]
+      ],
       "kojak_style_1": [
         [
           true,
