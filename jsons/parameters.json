@@ -16444,5 +16444,42 @@
       ]
     },
     "value_type": "bool"
+  },
+  {
+    "_id": 386,
+    "default_value": false,
+    "description": "Controls whether to output search results to standard out (i.e. to the screen unless otherwise directed) in SQT format.",
+    "key_translations": {
+      "comet_style_1": "output_sqtstream",
+      "ursgal_style_1": "export_sqtstream"
+    },
+    "name": "export_sqtstream",
+    "tag": [
+      "output"
+    ],
+    "triggers_rerun": false,
+    "value_translations": {
+      "comet_style_1": [
+        [
+          true,
+          1
+        ],
+        [
+          false,
+          0
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          true,
+          true
+        ],
+        [
+          false,
+          false
+        ]
+      ]
+    },
+    "value_type": "bool"
   }
 ]
