@@ -16481,5 +16481,42 @@
       ]
     },
     "value_type": "bool"
+  },
+  {
+    "_id": 387,
+    "default_value": false,
+    "description": "Controls whether to output search results into a tab-delimited text file (.txt).",
+    "key_translations": {
+      "comet_style_1": "output_txtfile",
+      "ursgal_style_1": "export_txtfile"
+    },
+    "name": "export_txtfile",
+    "tag": [
+      "output"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {
+      "comet_style_1": [
+        [
+          true,
+          1
+        ],
+        [
+          false,
+          0
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          true,
+          true
+        ],
+        [
+          false,
+          false
+        ]
+      ]
+    },
+    "value_type": "bool"
   }
 ]
