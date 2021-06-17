@@ -10945,9 +10945,10 @@
   },
   {
     "_id": 254,
-    "default_value": false,
+    "default_value": "full",
     "description": "Allows semi-enzymatic peptide ends",
     "key_translations": {
+      "comet_style_1": "num_enzyme_termini",
       "moda_style_1": "enzyme_constraint_min_number_termini",
       "msamanda_style_1": "semi_enzyme_specificity",
       "msfragger_style_1": "num_enzyme_termini",
@@ -10967,98 +10968,124 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
-      "moda_style_1": [
+      "comet_style_1": [
         [
-          false,
+          "full",
           2
         ],
         [
-          true,
+          "semi",
+          1
+        ],
+        [
+          "C-term unspecific",
+          8
+        ],
+        [
+          "N-term unspecific",
+          9
+        ]
+      ],
+      "moda_style_1": [
+        [
+          "full",
+          2
+        ],
+        [
+          "semi",
           1
         ]
       ],
       "msamanda_style_1": [
         [
-          false,
+          "full",
           "FULL"
         ],
         [
-          true,
+          "semi",
           "SEMI"
         ]
       ],
       "msfragger_style_1": [
         [
-          true,
+          "semi",
           1
         ],
         [
-          false,
+          "full",
           2
         ]
       ],
       "msfragger_style_2": [
         [
-          true,
+          "semi",
           1
         ],
         [
-          false,
+          "full",
           2
         ]
       ],
       "msfragger_style_3": [
         [
-          true,
+          "semi",
           1
         ],
         [
-          false,
+          "full",
           2
         ]
       ],
       "msgfplus_style_1": [
         [
-          false,
+          "full",
           2
         ],
         [
-          true,
+          "semi",
           1
         ]
       ],
       "myrimatch_style_1": [
         [
-          false,
+          "full",
           2
         ],
         [
-          true,
+          "semi",
           1
         ]
       ],
       "ursgal_style_1": [
         [
-          false,
-          false
+          "full",
+          "full"
         ],
         [
-          true,
-          true
+          "semi",
+          "semi"
+        ],
+        [
+          "C-term unspecific",
+          "C-term unspecific"
+        ],
+        [
+          "N-term unspecific",
+          "N-term unspecific"
         ]
       ],
       "xtandem_style_1": [
         [
-          false,
-          "no"
+          "semi",
+          "yes"
         ],
         [
-          true,
-          "yes"
+          "full",
+          "no"
         ]
       ]
     },
-    "value_type": "bool"
+    "value_type": "str"
   },
   {
     "_id": 255,
