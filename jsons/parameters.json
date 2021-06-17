@@ -16370,5 +16370,42 @@
       ]
     },
     "value_type": "bool"
+  },
+  {
+    "_id": 384,
+    "default_value": true,
+    "description": "Controls whether to output search results in an mzIdentML file.",
+    "key_translations": {
+      "comet_style_1": "output_mzidentmlfile",
+      "ursgal_style_1": "export_mzidentmlfile"
+    },
+    "name": "export_mzidentmlfile",
+    "tag": [
+      "output"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {
+      "comet_style_1": [
+        [
+          true,
+          1
+        ],
+        [
+          false,
+          0
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          true,
+          true
+        ],
+        [
+          false,
+          false
+        ]
+      ]
+    },
+    "value_type": "bool"
   }
 ]
