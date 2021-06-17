@@ -7297,15 +7297,26 @@
     "default_value": false,
     "description": "Activate (True) or deactivate (False) output as pepXML",
     "key_translations": {
+      "comet_style_1": "output_pepxmlfile",
       "kojak_style_1": "kojak_export_pepXML",
-      "ursgal_style_1": "kojak_export_pepxml"
+      "ursgal_style_1": "export_pepxml"
     },
-    "name": "kojak_export_pepxml",
+    "name": "export_pepxml",
     "tag": [
       "output"
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "comet_style_1": [
+        [
+          true,
+          1
+        ],
+        [
+          false,
+          0
+        ]
+      ],
       "kojak_style_1": [
         [
           true,
