@@ -16518,5 +16518,42 @@
       ]
     },
     "value_type": "bool"
+  },
+  {
+    "_id": 388,
+    "default_value": true,
+    "description": "A boolean flag this determines whether or not the expectation score (E-value) is reported in .out and SQT formats. Note that the E-value is always reported in pepXML output.",
+    "key_translations": {
+      "comet_style_1": "print_expect_score",
+      "ursgal_style_1": "print_expect_score"
+    },
+    "name": "print_expect_score",
+    "tag": [
+      "output"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {
+      "comet_style_1": [
+        [
+          true,
+          1
+        ],
+        [
+          false,
+          0
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          true,
+          true
+        ],
+        [
+          false,
+          false
+        ]
+      ]
+    },
+    "value_type": "bool"
   }
 ]
