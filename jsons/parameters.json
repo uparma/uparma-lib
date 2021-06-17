@@ -10875,6 +10875,16 @@
     ],
     "description": "List of ion types that are taken into account by the respective search engine.Availabel ion types: a, b, c, x, y, z, -h2o, -nh3, b1, c_terminal, imm (immonium),int (internal), z+1, z+2, b~ (b+HexNAx), y~ (y+HexNAc), Y",
     "key_translations": {
+      "comet_style_1": [
+        "use_A_ions",
+        "use_B_ions",
+        "use_C_ions",
+        "use_X_ions",
+        "use_Y_ions",
+        "use_Z_ions",
+        "use_Z1_ions",
+        "use_NL_ions"
+      ],
       "kojak_style_1": [
         "ion_series_X",
         "ion_series_Y",
