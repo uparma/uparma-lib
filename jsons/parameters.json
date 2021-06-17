@@ -7371,10 +7371,11 @@
     "default_value": 0.0,
     "description": "fragment_bin_offset and fragment_bin_size\ninfluence algorithm precision and memory usage.\nThey should be set appropriately for the data analyzed.\nFor ion trap ms/ms:  1.0005 size, 0.4 offset\nFor high res ms/ms:    0.03 size, 0.0 offset",
     "key_translations": {
+      "comet_style_1": "fragment_bin_offset",
       "kojak_style_1": "kojak_fragment_bin_offset",
-      "ursgal_style_1": "kojak_fragment_bin_offset"
+      "ursgal_style_1": "fragment_bin_offset"
     },
-    "name": "kojak_fragment_bin_offset",
+    "name": "fragment_bin_offset",
     "tag": [
       "accuracy",
       "hardware_resources"
