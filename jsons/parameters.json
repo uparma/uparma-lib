@@ -16407,5 +16407,42 @@
       ]
     },
     "value_type": "bool"
+  },
+  {
+    "_id": 385,
+    "default_value": false,
+    "description": "Controls whether to output search results into an SQT file (.sqt).",
+    "key_translations": {
+      "comet_style_1": "output_sqtfile",
+      "ursgal_style_1": "export_sqtfile"
+    },
+    "name": "export_sqtfile",
+    "tag": [
+      "output"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {
+      "comet_style_1": [
+        [
+          true,
+          1
+        ],
+        [
+          false,
+          0
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          true,
+          true
+        ],
+        [
+          false,
+          false
+        ]
+      ]
+    },
+    "value_type": "bool"
   }
 ]
