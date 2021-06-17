@@ -16299,5 +16299,42 @@
       ]
     },
     "value_type": "str"
+  },
+  {
+    "_id": 383,
+    "default_value": false,
+    "description": "Controls whether the analyzed peptides must contain at least one variable modification. If True only modified peptides will be considered. Default is false, thus both modified and unmodified will be analyzed.",
+    "key_translations": {
+      "comet_style_1": "require_variable_mod",
+      "ursgal_style_1": "require_variable_mod"
+    },
+    "name": "require_variable_mod",
+    "tag": [
+      "modifications"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {
+      "comet_style_1": [
+        [
+          false,
+          0
+        ],
+        [
+          true,
+          1
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    "value_type": "bool"
   }
 ]
