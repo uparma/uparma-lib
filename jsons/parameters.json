@@ -9837,7 +9837,7 @@
     "default_value": "0,1",
     "description": "Error range for incorrect carbon isotope parent ion assignment (13C)",
     "key_translations": {
-      "comet_style_1": ,
+      "comet_style_1": "isotope_error",
       "kojak_style_1": "precursor_isotope_range",
       "mascot_style_1": "PEP_ISOTOPE_ERROR",
       "msfragger_style_1": "isotope_error",
