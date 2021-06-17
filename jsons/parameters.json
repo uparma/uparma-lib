@@ -7686,6 +7686,7 @@
     "default_value": 2,
     "description": "Maximum number of missed cleavages per peptide",
     "key_translations": {
+      "comet_style_1": "allowed_missed_cleavage",
       "deepnovo_style_1": "num_missed_cleavage",
       "kojak_style_1": "max_missed_cleavages",
       "mascot_style_1": "PFA",
