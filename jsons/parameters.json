@@ -7752,6 +7752,7 @@
     "default_value": 3,
     "description": "Maximal number of modifications per peptide",
     "key_translations": {
+      "comet_style_1": "max_variable_mods_in_peptide",
       "kojak_style_1": "max_num_mods",
       "msamanda_style_1": "MaxNoDynModifs",
       "msgfplus_style_1": "-numMods",
