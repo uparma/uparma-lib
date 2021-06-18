@@ -646,6 +646,7 @@
     "default_value": 2,
     "description": "MS level on which that is taken into account, e.g. for spectrum extraction, matching of evidences, etc.",
     "key_translations": {
+      "comet_style_1": "ms_level",
       "mzml2mgf_style_1": "ms_level",
       "pipi_style_1": "ms_level",
       "pyqms_style_1": "ms_level",
