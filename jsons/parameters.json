@@ -16773,5 +16773,21 @@
       ]
     },
     "value_type": "bool"
+  },
+  {
+    "_id": 391,
+    "default_value": null,
+    "description": "This parameter controls whether the output text file, as controlled by the parameter output_txtfile, will have a default \".txt\" file extension or a custom extension specified by this parameter.",
+    "key_translations": {
+      "comet_style_1": "text_file_extension",
+      "ursgal_style_1": "text_file_extension"
+    },
+    "name": "text_file_extension",
+    "tag": [
+      "output"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
   }
 ]
