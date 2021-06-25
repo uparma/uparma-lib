@@ -7894,6 +7894,7 @@
     "default_value": 3,
     "description": " Maximum number of residues that can be occupied by each variable modification (maximum of 5) ",
     "key_translations": {
+      "comet_style_1": "max_variable_mods_in_peptide",
       "msamanda_style_1": "MaxNoModifs",
       "msfragger_style_1": "max_variable_mods_per_mod",
       "msfragger_style_2": "max_variable_mods_per_mod",
