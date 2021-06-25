@@ -928,6 +928,7 @@
     "default_value": 2000,
     "description": "sets the number of spectra loaded into memory as a batch",
     "key_translations": {
+      "comet_style_1": "spectrum_batch_size",
       "deepnovo_style_1": "buffer_size",
       "msamanda_style_1": "LoadedSpectraAtOnce",
       "ursgal_style_1": "batch_size_spectra"
