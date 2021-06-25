@@ -7944,6 +7944,7 @@
     "default_value": 40,
     "description": "Maximal length of a peptide",
     "key_translations": {
+      "comet_style_1": "peptide_length_range_max",
       "msamanda_style_1": "MaximumPepLength",
       "msfragger_style_1": "digest_max_length",
       "msfragger_style_2": "digest_max_length",
@@ -8089,6 +8090,7 @@
     "default_value": 6,
     "description": "Minimal length of a peptide",
     "key_translations": {
+      "comet_style_1": "peptide_length_range_min",
       "msamanda_style_1": "MinimumPepLength",
       "msfragger_style_1": "digest_min_length",
       "msfragger_style_2": "digest_min_length",
