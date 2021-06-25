@@ -16731,5 +16731,42 @@
       ]
     },
     "value_type": "str"
+  },
+  {
+    "_id": 390,
+    "default_value": true,
+    "description": "A boolean flag which defines if isoleucin and leucin should be treated the same in terms of peptide identification (default is true).",
+    "key_translations": {
+      "comet_style_1": "equal_I_and_L",
+      "ursgal_style_1": "equal_isoleucin_leucin"
+    },
+    "name": "equal_isoleucin_leucin",
+    "tag": [
+      "output"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {
+      "comet_style_1": [
+        [
+          true,
+          1
+        ],
+        [
+          false,
+          0
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          true,
+          true
+        ],
+        [
+          false,
+          false
+        ]
+      ]
+    },
+    "value_type": "bool"
   }
 ]
