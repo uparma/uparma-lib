@@ -2381,6 +2381,7 @@
     "default_value": false,
     "description": " Specifies the trimming of a protein N-terminal methionine as a variable modification ",
     "key_translations": {
+      "comet_style_1": "clip_nterm_methionine",
       "msfragger_style_1": "clip_nTerm_M",
       "msfragger_style_2": "clip_nTerm_M",
       "msfragger_style_3": "clip_nTerm_M",
@@ -2391,6 +2392,16 @@
     "tag": [],
     "triggers_rerun": true,
     "value_translations": {
+      "comet_style_1": [
+        [
+          false,
+          0
+        ],
+        [
+          true,
+          1
+        ]
+      ],
       "msfragger_style_1": [
         [
           false,
