@@ -15540,6 +15540,7 @@
     "default_value": [],
     "description": "List of mass offsets at which modification peaks will be checked for (e.g. [0, 79.9663])",
     "key_translations": {
+      "comet_style_1": "mass_offsets",
       "ptmshepherd_style_1": "mass_offsets",
       "ursgal_style_1": "mass_offset_list"
     },
