@@ -5316,6 +5316,7 @@
     "default_value": 4,
     "description": "Maximum fragment ion charge to search.",
     "key_translations": {
+      "comet_style_1": "max_fragment_charge",
       "msfragger_style_1": "max_fragment_charge",
       "msfragger_style_2": "max_fragment_charge",
       "msfragger_style_3": "max_fragment_charge",
