@@ -5100,6 +5100,7 @@
     ],
     "description": " Removes peaks in this m/z range prior to matching. Given as list [min_clear_mz, max_clear_mz]. Useful for iTRAQ/TMT experiments, i.e. [0.0, 150.0]. ",
     "key_translations": {
+      "comet_style_1": "clear_mz_range",
       "msfragger_style_1": "clear_mz_range",
       "msfragger_style_2": "clear_mz_range",
       "msfragger_style_3": "clear_mz_range",
