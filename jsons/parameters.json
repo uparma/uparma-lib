@@ -3302,6 +3302,7 @@
     "default_value": "decoy_",
     "description": "decoy-specific tag to differentiate between targets and decoys",
     "key_translations": {
+      "comet_style_1": "decoy_prefix",
       "generate_target_decoy_style_1": "decoy_tag",
       "kojak_style_1": "decoy_tag",
       "msfragger_style_2": "decoy_prefix",
