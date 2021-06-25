@@ -8158,6 +8158,7 @@
     "default_value": 5,
     "description": "Mimimum number of peaks in the spectrum to be considered. MSFragger default: 15",
     "key_translations": {
+      "comet_style_1": "minimum_peaks",
       "msfragger_style_1": "minimum_peaks",
       "msfragger_style_2": "minimum_peaks",
       "msfragger_style_3": "minimum_peaks",
