@@ -5324,6 +5324,7 @@
     "default_value": "hcd",
     "description": "Used fragmentation method, e.g. collision-induced dissociation (cid), electron-capture dissociation (ecd), electron-transfer dissociation (etd), Higher-energy C-trap dissociation (hcd)",
     "key_translations": {
+      "comet_style_1": "activation_method",
       "msgfplus_style_1": "-m",
       "novor_style_1": "fragmentation",
       "pnovo_style_1": "activation_type",
