@@ -16792,5 +16792,20 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "str"
-  }
+  },
+  {
+    "_id": 392,
+    "default_value": 0,
+    "description": "This parameter controls how the peptide_mass_tolerance parameter is applied. That tolerance can be applied to the singly charged peptide mass (default=0) or it can be applied to the precursor m/z (1).",
+    "key_translations": {
+      "comet_style_1": "precursor_tolerance_type",
+      "ursgal_style_1": "precursor_tolerance_type"
+    },
+    "name": "precursor_tolerance_type",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "int"
+  },
+
 ]
