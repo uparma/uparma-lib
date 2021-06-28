@@ -16820,5 +16820,22 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "int"
+  },
+  {
+    "_id": 394,
+    "default_value": [
+      600.0,
+      8000.0
+    ],
+    "description": "Defines the mass range of peptides to search (based on MH+ or the singly protonated mass).",
+    "key_translations": {
+      "comet_style_1": "digest_mass_range",
+      "ursgal_style_1": "digest_mass_range"
+    },
+    "name": "digest_mass_range",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "list"
   }
 ]
