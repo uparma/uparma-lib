@@ -16879,5 +16879,19 @@
     "triggers_rerun": false,
     "value_translations": {},
     "value_type": "int"
+  },
+  {
+    "_id": 398,
+    "default_value": 0,
+    "description": "This parameter is used to search nucleotide sequence databases. It controls how the nucleotides are translated specifically which sets of reading frames are translated. Valid values are 0 through 9.",
+    "key_translations": {
+      "comet_style_1": "nucleotide_reading_frame",
+      "ursgal_style_1": "nucleotide_reading_frame"
+    },
+    "name": "nucleotide_reading_frame",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "int"
   }
 ]
