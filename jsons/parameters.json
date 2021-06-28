@@ -16893,5 +16893,41 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "int"
+  },
+  {
+    "_id": 399,
+    "default_value": false,
+    "description": "This parameter enables using the old character based modification encodings instead mass based encodings in the SQT output files. This parameter affects SQT output files only.",
+    "key_translations": {
+      "comet_style_1": "old_mods_encoding",
+      "ursgal_style_1": "old_mods_encoding"
+    },
+    "name": "old_mods_encoding",
+    "tag": [],
+    "triggers_rerun": false,
+    "value_translations": {
+      "comet_style_1": [
+        [
+          true,
+          1
+        ],
+        [
+          false,
+          0
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          true,
+          true
+        ],
+        [
+          false,
+          false
+        ]
+      ]
+
+    },
+    "value_type": "bool"
   }
 ]
