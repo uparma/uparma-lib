@@ -16837,5 +16837,19 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "list"
+  },
+  {
+    "_id": 395,
+    "default_value": 20,
+    "description": "This parameter defines the maximum number of proteins (identifiers/accessions) to report. If set to -1, there will be no limit on the number of reported additional proteins.",
+    "key_translations": {
+      "comet_style_1": "max_duplicate_proteins",
+      "ursgal_style_1": "max_duplicate_proteins"
+    },
+    "name": "max_duplicate_proteins",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "int"
   }
 ]
