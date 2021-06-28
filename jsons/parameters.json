@@ -16851,5 +16851,19 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "int"
+  },
+  {
+    "_id": 396,
+    "default_value": 0,
+    "description": "This parameter sets the maximum indexed database search run time for a scan/query.",
+    "key_translations": {
+      "comet_style_1": "max_index_runtime",
+      "ursgal_style_1": "max_index_runtime"
+    },
+    "name": "max_index_runtime",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "int"
   }
 ]
