@@ -16807,5 +16807,18 @@
     "value_translations": {},
     "value_type": "int"
   },
-
+  {
+    "_id": 393,
+    "default_value": 0,
+    "description": "This parameter specifies how theoretical fragment ion peaks are represented.",
+    "key_translations": {
+      "comet_style_1": "theoretical_fragment_ions",
+      "ursgal_style_1": "theoretical_fragment_ions"
+    },
+    "name": "theoretical_fragment_ions",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "int"
+  }
 ]
