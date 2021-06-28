@@ -10830,8 +10830,9 @@
   {
     "_id": 248,
     "default_value": null,
-    "description": "Exclusively spectra included during mzml2mgf conversion",
+    "description": "Exclusively spectra included from the mzml, e.g. during mzml2mgf conversion",
     "key_translations": {
+      "comet_style_1": "scan_range",
       "mzml2mgf_style_1": "scan_inclusion_list",
       "ursgal_style_1": "scan_inclusion_list"
     },
