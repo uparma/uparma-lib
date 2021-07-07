@@ -484,5 +484,13 @@
       "1.0.0"
     ],
     "reference": "Ursgal2 Team"
+  },
+  {
+    "style": "mascot_style_1",
+    "name": "mascot_style_1",
+    "versions": [
+      "1.0.0"
+    ],
+    "reference": "Perkins DN, Pappin DJ, Creasy DM, Cottrell JS. Probability-based protein identification by searching sequence databases using mass spectrometry data. Electrophoresis. 1999 Dec;20(18):3551-67. doi: 10.1002/(SICI)1522-2683(19991201)20:18<3551::AID-ELPS3551>3.0.CO;2-2. PMID: 10612281."
   }
 ]

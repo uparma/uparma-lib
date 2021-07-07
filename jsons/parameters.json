@@ -815,6 +815,7 @@
     "default_value": false,
     "description": " Static mods are not considered ",
     "key_translations": {
+      "mascot_style_1": "MULTI_SITE_MODS",
       "msfragger_style_1": "allow_multiple_variable_mods_on_residue",
       "msfragger_style_2": "allow_multiple_variable_mods_on_residue",
       "msfragger_style_3": "allow_multiple_variable_mods_on_residue",
@@ -826,6 +827,16 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "mascot_style_1": [
+        [
+          false,
+          0
+        ],
+        [
+          true,
+          1
+        ]
+      ],
       "msfragger_style_1": [
         [
           false,
@@ -2994,6 +3005,7 @@
       "compomics_utilities_style_1": "database",
       "deepnovo_style_1": "db_fasta_file",
       "kojak_style_1": "database",
+      "mascot_style_1": "DB",
       "moda_style_1": "Fasta",
       "msamanda_style_1": "database",
       "msfragger_style_1": "database_name",
@@ -3025,6 +3037,7 @@
     "default_value": "all",
     "description": "If a taxonomy ID is specified, only the corresponding protein sequences from the fasta database are included in the search.",
     "key_translations": {
+      "mascot_style_1": "TAXONOMY",
       "ursgal_style_1": "database_taxonomy",
       "xtandem_style_1": "taxon label"
     },
@@ -3033,7 +3046,20 @@
       "database"
     ],
     "triggers_rerun": true,
-    "value_translations": {},
+    "value_translations": {
+      "mascot_style_1": [
+        [
+          "all",
+          "All entries"
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          "all",
+          "all"
+        ]
+      ]
+    },
     "value_type": "str"
   },
   {
@@ -3215,6 +3241,7 @@
     "default_value": false,
     "description": "Engine creates an own decoy database. Not recommended, because a target decoy database should be generated independently from the search engine, e.g. by using the uNode generate_target_decoy_1_0_0",
     "key_translations": {
+      "mascot_style_1": "DECOY",
       "msamanda_style_1": "generate_decoy",
       "msgfplus_style_1": "-tda",
       "pipi_style_1": "add_decoy",
@@ -3227,6 +3254,16 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "mascot_style_1": [
+        [
+          false,
+          "0"
+        ],
+        [
+          true,
+          "1"
+        ]
+      ],
       "msamanda_style_1": [
         [
           false,
@@ -3304,6 +3341,7 @@
       "deepnovo_style_1": "cleavage_rule",
       "generate_target_decoy_style_1": "enzyme",
       "kojak_style_1": "enzyme",
+      "mascot_style_1": "CLE",
       "moda_style_1": "Enzyme",
       "msamanda_style_1": "enzyme_specificity",
       "msfragger_style_1": "enzyme",
@@ -4800,6 +4838,7 @@
     "description": "Mass tolerance of measured and calculated fragment ions",
     "key_translations": {
       "glycopeptide_fragmentor_style_1": "frag_mass_tolerance",
+      "mascot_style_1": "ITOL",
       "msamanda_style_1": "ms2_tol",
       "msfragger_style_1": "fragment_mass_tolerance",
       "msfragger_style_2": "fragment_mass_tolerance",
@@ -4829,6 +4868,7 @@
     "description": "Fragment mass tolerance unit: available in ppm (parts-per-millon), da (Dalton) or mmu (Milli mass unit)",
     "key_translations": {
       "glycopeptide_fragmentor_style_1": "frag_mass_tolerance_unit",
+      "mascot_style_1": "ITOLU",
       "msamanda_style_1": "ms2_tol unit",
       "msfragger_style_1": "fragment_mass_units",
       "msfragger_style_2": "fragment_mass_units",
@@ -4850,6 +4890,12 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "mascot_style_1": [
+        [
+          "da",
+          "Da"
+        ]
+      ],
       "msamanda_style_1": [
         [
           "da",
@@ -5136,12 +5182,13 @@
   {
     "_id": 91,
     "default_value": null,
-    "description": "Login name/user for the ftp server e.g. \"PASS00269\" in peptideatlas.orgftp download\n    '' : None",
+    "description": "Login name/user for the any server e.g. \"PASS00269\" in peptideatlas.orgftp download\n    '' : None",
     "key_translations": {
       "get_ftp_style_1": "ftp_login",
-      "ursgal_style_1": "ftp_login"
+      "mascot_style_1": "username",
+      "ursgal_style_1": "login_name"
     },
-    "name": "ftp_login",
+    "name": "login_name",
     "tag": [
       "download"
     ],
@@ -5202,12 +5249,13 @@
   {
     "_id": 95,
     "default_value": null,
-    "description": "ftp download URL, will fail if it is not set by the user\n    '' : None",
+    "description": "host/url of server to upload/download to/from,  will fail if it is not set by the user\n    '' : None",
     "key_translations": {
       "get_ftp_style_1": "ftp_url",
-      "ursgal_style_1": "ftp_url"
+      "mascot_style_1": "hostname",
+      "ursgal_style_1": "host"
     },
-    "name": "ftp_url",
+    "name": "host",
     "tag": [
       "download"
     ],
@@ -6546,6 +6594,7 @@
     "description": "Type of mass spectrometer (used to determine the scoring model)",
     "key_translations": {
       "kojak_style_1": "instrument",
+      "mascot_style_1": "INSTRUMENT",
       "moda_style_1": "Instrument",
       "msgfplus_style_1": "-inst",
       "novor_style_1": "massAnalyzer",
@@ -7347,6 +7396,7 @@
     "key_translations": {
       "deepnovo_style_1": "num_missed_cleavage",
       "kojak_style_1": "max_missed_cleavages",
+      "mascot_style_1": "PFA",
       "moda_style_1": "MissedCleavage",
       "msamanda_style_1": "missed_cleavages",
       "msfragger_style_1": "allowed_missed_cleavage",
@@ -7627,6 +7677,7 @@
         "hybrid_input_file",
         "db_input_file"
       ],
+      "mascot_style_1": "COM",
       "moda_style_1": "Spectra",
       "msamanda_style_1": "mgf_input_file",
       "msgfplus_style_1": "-s",
@@ -7909,6 +7960,10 @@
       "deepnovo_style_1": "modifications",
       "flash_lfq_style_1": "modifications",
       "kojak_style_1": "modifications",
+      "mascot_style_1": [
+        "MODS",
+        "IT_MODS"
+      ],
       "moda_style_1": "ADD",
       "msamanda_style_1": "modifications",
       "msfragger_style_1": "modifications",
@@ -8730,6 +8785,7 @@
     "default_value": 10,
     "description": "Maximum number of peptide spectrum matches to report for each spectrum",
     "key_translations": {
+      "mascot_style_1": "REPORT",
       "msamanda_style_1": "max_rank",
       "msfragger_style_1": "output_report_topN",
       "msfragger_style_2": "output_report_topN",
@@ -8747,7 +8803,20 @@
       "scoring"
     ],
     "triggers_rerun": true,
-    "value_translations": {},
+    "value_translations": {
+      "mascot_style_1": [
+        [
+          0,
+          "AUTO"
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
     "value_type": "int"
   },
   {
@@ -9447,9 +9516,10 @@
   {
     "_id": 222,
     "default_value": "0,1",
-    "description": "Error range for incorrect carbon isotope parent ion assignment",
+    "description": "Error range for incorrect carbon isotope parent ion assignment (13C)",
     "key_translations": {
       "kojak_style_1": "precursor_isotope_range",
+      "mascot_style_1": "PEP_ISOTOPE_ERROR",
       "msfragger_style_1": "isotope_error",
       "msfragger_style_2": "isotope_error",
       "msfragger_style_3": "isotope_error",
@@ -9480,6 +9550,20 @@
         [
           "0,2",
           "2"
+        ]
+      ],
+      "mascot_style_1": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0,1",
+          "0-1"
+        ],
+        [
+          "0,2",
+          "0-2"
         ]
       ],
       "msfragger_style_1": [
@@ -9602,6 +9686,7 @@
     "default_value": 5,
     "description": "Lower precursor mass tolerance; maximum negative deviation of measured from calculated parent ion mass.",
     "key_translations": {
+      "mascot_style_1": "TOL_part1",
       "msamanda_style_1": "ms1_tol_part1",
       "msfragger_style_1": "precursor_mass_lower",
       "msfragger_style_2": "precursor_mass_lower",
@@ -9627,6 +9712,7 @@
     "description": "Upper precursor mass tolerance; maximum positive deviation of measured from calculated parent ion mass.",
     "key_translations": {
       "flash_lfq_style_1": "--ppm",
+      "mascot_style_1": "TOL_part2",
       "msamanda_style_1": "ms1_tol_part2",
       "msfragger_style_1": "precursor_mass_upper",
       "msfragger_style_2": "precursor_mass_upper",
@@ -9651,6 +9737,7 @@
     "default_value": "ppm",
     "description": "Precursor mass tolerance unit: available in ppm (parts-per-millon), da (Dalton) or mmu (Milli mass unit)",
     "key_translations": {
+      "mascot_style_1": "TOLU",
       "msamanda_style_1": "ms1_tol unit",
       "msfragger_style_1": "precursor_mass_units",
       "msfragger_style_2": "precursor_mass_units",
@@ -9673,6 +9760,12 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "mascot_style_1": [
+        [
+          "da",
+          "Da"
+        ]
+      ],
       "msamanda_style_1": [
         [
           "da",
@@ -9791,6 +9884,7 @@
     "default_value": "monoisotopic",
     "description": "Precursor mass type: monoisotopic or average",
     "key_translations": {
+      "mascot_style_1": "MASS",
       "msamanda_style_1": "monoisotopic",
       "myrimatch_style_1": "PrecursorMzToleranceRule",
       "omssa_style_1": "-tem",
@@ -9850,6 +9944,7 @@
     "default_value": 5,
     "description": "Maximal accepted parent ion charge",
     "key_translations": {
+      "mascot_style_1": "CHARGE_max",
       "msamanda_style_1": "considered_charges_max",
       "msfragger_style_1": "precursor_max_charge",
       "msfragger_style_2": "precursor_max_charge",
@@ -9899,6 +9994,7 @@
     "default_value": 1,
     "description": "Minimal accepted parent ion charge",
     "key_translations": {
+      "mascot_style_1": "CHARGE_min",
       "msamanda_style_1": "considered_charges_min",
       "msfragger_style_1": "precursor_min_charge",
       "msfragger_style_2": "precursor_min_charge",
@@ -14979,6 +15075,7 @@
     ],
     "description": " The given mass range is used to remove precursor peaks. ",
     "key_translations": {
+      "mascot_style_1": "CUTOUT",
       "msfragger_style_3": "remove_precursor_range",
       "ursgal_style_1": "remove_precursor_range"
     },
@@ -15118,5 +15215,251 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "float"
+  },
+  {
+    "_id": 366,
+    "default_value": [1,2,3,4,5,6],
+    "description": "NA translation frames",
+    "key_translations": {
+      "mascot_style_1": "FRAMES",
+      "ursgal_style_1": "mascot_frames"
+    },
+    "name": "mascot_frames",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "list"
+  },
+  {
+    "_id": 367,
+    "default_value": null,
+    "description": "Mass of the intact protein (in Da)",
+    "key_translations": {
+      "mascot_style_1": "SEG",
+      "ursgal_style_1": "mascot_protein_mass"
+    },
+    "name": "mascot_protein_mass",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "int"
+  },
+  {
+    "_id": 368,
+    "default_value": "Mascot generic",
+    "description": "Format of the input MS/MS file",
+    "key_translations": {
+      "mascot_style_1": "FORMAT",
+      "ursgal_style_1": "mascot_search_file_format"
+    },
+    "name": "mascot_search_file_format",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
+  },
+  {
+    "_id": 369,
+    "default_value": "MS/MS Ion Search",
+    "description": "Mascot search type",
+    "key_translations": {
+      "mascot_style_1": "SEARCH",
+      "ursgal_style_1": "mascot_search_type"
+    },
+    "name": "mascot_search_type",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {
+      "mascot_style_1": [
+        [
+          "MS/MS Ion Search",
+          "MIS"
+        ],
+        [
+          "Sequence Query",
+          "SQ"
+        ],
+        [
+          "Peptide Mass Fingerprint",
+          "PMF"
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          "MS/MS Ion Search",
+          "MS/MS Ion Search"
+        ],
+        [
+          "Sequence Query",
+          "Sequence Query"
+        ],
+        [
+          "Peptide Mass Fingerprint",
+          "Peptide Mass Fingerprint"
+        ]
+      ]
+    },
+    "value_type": "str"
+  },
+  {
+    "_id": 370,
+    "default_value": "Peptide",
+    "description": "Mascot report type",
+    "key_translations": {
+      "mascot_style_1": "REPTYPE",
+      "ursgal_style_1": "mascot_report_type"
+    },
+    "name": "mascot_report_type",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
+  },
+  {
+    "_id": 371,
+    "default_value": 0,
+    "description": "Mascot Automatic Error Tolerant Search",
+    "key_translations": {
+      "mascot_style_1": "ERRORTOLERANT",
+      "ursgal_style_1": "mascot_error_tol_search"
+    },
+    "name": "mascot_error_tol_search",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "int"
+  },
+  {
+    "_id": 372,
+    "default_value": null,
+    "description": "Mascot user name",
+    "key_translations": {
+      "mascot_style_1": "USERNAME",
+      "ursgal_style_1": "mascot_user_name"
+    },
+    "name": "mascot_user_name",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
+  },
+  {
+    "_id": 373,
+    "default_value": null,
+    "description": "Mascot user email",
+    "key_translations": {
+      "mascot_style_1": "USEREMAIL",
+      "ursgal_style_1": "mascot_user_email"
+    },
+    "name": "mascot_user_email",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
+  },
+  {
+    "_id": 374,
+    "default_value": false,
+    "description": "Should spectral libraries be included in the search",
+    "key_translations": {
+      "mascot_style_1": "LIBRARY_SEARCH",
+      "ursgal_style_1": "mascot_library_search"
+    },
+    "name": "mascot_library_search",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {
+      "mascot_style_1": [
+        [
+          false,
+          0
+        ],
+        [
+          true,
+          1
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    "value_type": "bool"
+  },
+  {
+    "_id": 375,
+    "default_value": "1.01",
+    "description": "Mascot formVersion. Make sure it matches the version of your config in Mascot.dat",
+    "key_translations": {
+      "mascot_style_1": "FORMVER",
+      "ursgal_style_1": "mascot_formversion"
+    },
+    "name": "mascot_formversion",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
+  },
+  {
+    "_id": 376,
+    "default_value": null,
+    "description": "Stringyfied path to .ssh key (identity file) for server access",
+    "key_translations": {
+      "mascot_style_1": "-i",
+      "ursgal_style_1": "identity_file"
+    },
+    "name": "identity_file",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
+  },
+  {
+    "_id": 377,
+    "default_value": null,
+    "description": "Stringyfied path to mascot exe on the mascot server.",
+    "key_translations": {
+      "mascot_style_1": "mascot_exe_path",
+      "ursgal_style_1": "mascot_exe_path"
+    },
+    "name": "mascot_exe_path",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
+  },
+  {
+    "_id": 378,
+    "default_value": null,
+    "description": "Stringyfied path to data folder on the mascot server.",
+    "key_translations": {
+      "mascot_style_1": "mascot_data_path",
+      "ursgal_style_1": "mascot_data_path"
+    },
+    "name": "mascot_data_path",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
+  },
+  {
+    "_id": 379,
+    "default_value": null,
+    "description": "Port to connect to on the remote host",
+    "key_translations": {
+      "mascot_style_1": "-p",
+      "ursgal_style_1": "port"
+    },
+    "name": "port",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
   }
 ]
