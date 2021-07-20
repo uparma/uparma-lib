@@ -7830,6 +7830,7 @@
     "default_value": 6,
     "description": " Maximum number of potential modification sites for a specific modification per peptide. Peptides with a higher number are discarded, due to a too high complexity. ",
     "key_translations": {
+      "comet_style_1": "max_num_mod_sites",
       "msamanda_style_1": "MaxNumberModSites",
       "ursgal_style_1": "max_num_mod_sites"
     },
