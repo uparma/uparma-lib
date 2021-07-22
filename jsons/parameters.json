@@ -16968,5 +16968,19 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "int"
+  },
+  {
+    "_id": 403,
+    "default_value": [],
+    "description": "Controls whether or not precursor neutral loss peaks are considered in the xcorr scoring.",
+    "key_translations": {
+      "comet_style_1": "precursor_NL_ions",
+      "ursgal_style_1": "precursor_NL_ions"
+    },
+    "name": "precursor_NL_ions",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "list"
   }
 ]
