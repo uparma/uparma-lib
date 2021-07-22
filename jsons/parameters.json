@@ -9388,40 +9388,17 @@
   },
   {
     "_id": 202,
-    "default_value": false,
-    "description": "Omssa: verbose info print",
+    "default_value": [],
+    "description": "Controls whether or not precursor neutral loss peaks are considered in the xcorr scoring.",
     "key_translations": {
-      "omssa_style_1": "-ni",
-      "ursgal_style_1": "omssa_verbose"
+      "comet_style_1": "precursor_NL_ions",
+      "ursgal_style_1": "precursor_NL_ions"
     },
-    "name": "omssa_verbose",
-    "tag": [
-      "output"
-    ],
+    "name": "precursor_NL_ions",
+    "tag": [],
     "triggers_rerun": true,
-    "value_translations": {
-      "omssa_style_1": [
-        [
-          false,
-          ""
-        ],
-        [
-          true,
-          "-ni"
-        ]
-      ],
-      "ursgal_style_1": [
-        [
-          false,
-          false
-        ],
-        [
-          true,
-          true
-        ]
-      ]
-    },
-    "value_type": "bool"
+    "value_translations": {},
+    "value_type": "list"
   },
   {
     "_id": 203,
@@ -10738,64 +10715,17 @@
   },
   {
     "_id": 241,
-    "default_value": "2",
-    "description": "Verbose qvality output (range from 0 = no processing info to 5 = all)",
+    "default_value": 0,
+    "description": "This parameter controls whether or not Comet reports the deltaCn value calculated between the top two peptides (\"explicit_deltacn = 1\") or between the top peptide and the first dissimilar peptide (default behavior, \"explicit_deltacn = 0\").",
     "key_translations": {
-      "qvality_style_1": "-v",
-      "ursgal_style_1": "qvality_verbose"
+      "comet_style_1": "explicit_deltacn",
+      "ursgal_style_1": "explicit_deltacn"
     },
-    "name": "qvality_verbose",
-    "tag": [
-      "output"
-    ],
+    "name": "explicit_deltacn",
+    "tag": [],
     "triggers_rerun": true,
-    "value_translations": {
-      "qvality_style_1": [
-        [
-          "1",
-          1
-        ],
-        [
-          "2",
-          2
-        ],
-        [
-          "3",
-          3
-        ],
-        [
-          "4",
-          4
-        ],
-        [
-          "5",
-          5
-        ]
-      ],
-      "ursgal_style_1": [
-        [
-          "1",
-          "1"
-        ],
-        [
-          "2",
-          "2"
-        ],
-        [
-          "3",
-          "3"
-        ],
-        [
-          "4",
-          "4"
-        ],
-        [
-          "5",
-          "5"
-        ]
-      ]
-    },
-    "value_type": "select"
+    "value_translations": {},
+    "value_type": "int"
   },
   {
     "_id": 242,
@@ -15879,40 +15809,19 @@
   },
   {
     "_id": 364,
-    "default_value": false,
-    "description": "Verbose msgfplus output",
+    "default_value": 0.0,
+    "description": "A floating point number indicating the minimum intensity value for input the input peaks.",
     "key_translations": {
-      "msgfplus_style_1": "-verbose",
-      "ursgal_style_1": "msgfplus_verbose_output"
+      "comet_style_1": "minimum_intensity",
+      "ursgal_style_1": "minimum_intensity"
     },
-    "name": "msgfplus_verbose_output",
+    "name": "minimum_intensity",
     "tag": [
-      "output"
+      "spectrum"
     ],
-    "triggers_rerun": false,
-    "value_translations": {
-      "msgfplus_style_1": [
-        [
-          false,
-          0
-        ],
-        [
-          true,
-          1
-        ]
-      ],
-      "ursgal_style_1": [
-        [
-          false,
-          false
-        ],
-        [
-          true,
-          true
-        ]
-      ]
-    },
-    "value_type": "bool"
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "float"
   },
   {
     "_id": 365,
@@ -17014,49 +16923,5 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "float"
-  },
-  {
-    "_id": 401,
-    "default_value": 0.0,
-    "description": "A floating point number indicating the minimum intensity value for input the input peaks.",
-    "key_translations": {
-      "comet_style_1": "minimum_intensity",
-      "ursgal_style_1": "minimum_intensity"
-    },
-    "name": "minimum_intensity",
-    "tag": [
-      "spectrum"
-    ],
-    "triggers_rerun": true,
-    "value_translations": {},
-    "value_type": "float"
-  },
-  {
-    "_id": 402,
-    "default_value": 0,
-    "description": "This parameter controls whether or not Comet reports the deltaCn value calculated between the top two peptides (\"explicit_deltacn = 1\") or between the top peptide and the first dissimilar peptide (default behavior, \"explicit_deltacn = 0\").",
-    "key_translations": {
-      "comet_style_1": "explicit_deltacn",
-      "ursgal_style_1": "explicit_deltacn"
-    },
-    "name": "explicit_deltacn",
-    "tag": [],
-    "triggers_rerun": true,
-    "value_translations": {},
-    "value_type": "int"
-  },
-  {
-    "_id": 403,
-    "default_value": [],
-    "description": "Controls whether or not precursor neutral loss peaks are considered in the xcorr scoring.",
-    "key_translations": {
-      "comet_style_1": "precursor_NL_ions",
-      "ursgal_style_1": "precursor_NL_ions"
-    },
-    "name": "precursor_NL_ions",
-    "tag": [],
-    "triggers_rerun": true,
-    "value_translations": {},
-    "value_type": "list"
   }
 ]
