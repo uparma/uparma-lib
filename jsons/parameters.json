@@ -16169,7 +16169,7 @@
     "default_value": null,
     "description": "A full or relative path to the OBO file used with a PEFF search. Ignored if peff_format = 0",
     "key_translations": {
-      "msgfplus_style_1": "peff_obo",
+      "comet_style_1": "peff_obo",
       "ursgal_style_1": "peff_obo_path"
     },
     "name": "peff_obo_path",
