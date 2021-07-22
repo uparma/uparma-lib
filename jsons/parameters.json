@@ -10836,7 +10836,7 @@
           null,
           null
         ]
-      ],
+      ]
     },
     "value_type": "list"
   },
@@ -16954,5 +16954,19 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "float"
+  },
+  {
+    "_id": 402,
+    "default_value": 0,
+    "description": "This parameter controls whether or not Comet reports the deltaCn value calculated between the top two peptides (\"explicit_deltacn = 1\") or between the top peptide and the first dissimilar peptide (default behavior, \"explicit_deltacn = 0\").",
+    "key_translations": {
+      "comet_style_1": "explicit_deltacn",
+      "ursgal_style_1": "explicit_deltacn"
+    },
+    "name": "explicit_deltacn",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "int"
   }
 ]
