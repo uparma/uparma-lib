@@ -11510,9 +11510,10 @@
   },
   {
     "_id": 268,
-    "default_value": true,
+    "default_value": 0,
     "description": "Does not correct precursor charge.",
     "key_translations": {
+      "comet_style_1": "override_charge",
       "msfragger_style_1": "override_charge",
       "msfragger_style_2": "override_charge",
       "msfragger_style_3": "override_charge",
@@ -11525,49 +11526,8 @@
       "spectrum"
     ],
     "triggers_rerun": true,
-    "value_translations": {
-      "msfragger_style_1": [
-        [
-          true,
-          0
-        ],
-        [
-          false,
-          1
-        ]
-      ],
-      "msfragger_style_2": [
-        [
-          true,
-          0
-        ],
-        [
-          false,
-          1
-        ]
-      ],
-      "msfragger_style_3": [
-        [
-          true,
-          0
-        ],
-        [
-          false,
-          1
-        ]
-      ],
-      "ursgal_style_1": [
-        [
-          true,
-          true
-        ],
-        [
-          false,
-          false
-        ]
-      ]
-    },
-    "value_type": "bool"
+    "value_translations": {},
+    "value_type": "int"
   },
   {
     "_id": 269,
