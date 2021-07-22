@@ -16938,5 +16938,21 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "float"
+  },
+  {
+    "_id": 401,
+    "default_value": 0.0,
+    "description": "A floating point number indicating the minimum intensity value for input the input peaks.",
+    "key_translations": {
+      "comet_style_1": "minimum_intensity",
+      "ursgal_style_1": "minimum_intensity"
+    },
+    "name": "minimum_intensity",
+    "tag": [
+      "spectrum"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "float"
   }
 ]
