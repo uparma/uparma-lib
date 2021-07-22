@@ -15709,6 +15709,7 @@
     "default_value": "off",
     "description": "Remove precursor peaks from spectrum. Options are: \"off\", \"remove_precursor_charge\" (removes peaks with same charge as precursor), \"remove_all_charges\" (removes peaks of all charges)",
     "key_translations": {
+      "comet_style_1": "remove_precursor_peak",
       "msfragger_style_3": "remove_precursor_peak",
       "ursgal_style_1": "remove_precursor_peak"
     },
@@ -15718,6 +15719,24 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "comet_style_3": [
+        [
+          "off",
+          0
+        ],
+        [
+          "remove_precursor_charge",
+          1
+        ],
+        [
+          "remove_all_charges",
+          2
+        ],
+        [
+          "remove_phosphate_NL",
+          3
+        ]
+      ],
       "msfragger_style_3": [
         [
           "off",
