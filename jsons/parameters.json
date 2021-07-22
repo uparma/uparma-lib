@@ -10824,7 +10824,19 @@
       "conversion"
     ],
     "triggers_rerun": true,
-    "value_translations": {},
+    "value_translations": {
+      "comet_style_1": [
+        [
+          null,
+          "0 0"
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          null,
+          null
+        ],
+    },
     "value_type": "list"
   },
   {
