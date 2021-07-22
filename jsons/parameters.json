@@ -8910,40 +8910,116 @@
   },
   {
     "_id": 184,
-    "default_value": false,
-    "description": "Verbose mzidentml_lib output",
+    "default_value": 0,
+    "description": "Parameter controlling verbose behavior. In general 0=false, 1=true. For qvality range from 0 = no processing info to 5 = all.",
     "key_translations": {
+      "comet_style_1": "peff_verbose_output",
+      "msgfplus_style_1": "-verbose",
       "mzidentml_style_1": "-verboseOutput",
-      "ursgal_style_1": "mzidentml_verbose_output"
+      "omssa_style_1": "-ni",
+      "qvality_style_1": "-v",
+      "ursgal_style_1": "verbose_behavior"
     },
-    "name": "mzidentml_verbose_output",
+    "name": "verbose_behavior",
     "tag": [
       "output"
     ],
-    "triggers_rerun": true,
+    "triggers_rerun": false,
     "value_translations": {
+      "comet_style_1": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "msgfplus_style_1": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
       "mzidentml_style_1": [
         [
-          false,
+          0,
           "false"
         ],
         [
-          true,
+          1,
           "true"
+        ]
+      ],
+      "omssa_style_1": [
+        [
+          0,
+          ""
+        ],
+        [
+          1,
+          "-ni"
+        ]
+      ],
+      "qvality_style_1": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          5
         ]
       ],
       "ursgal_style_1": [
         [
-          false,
-          false
+          0,
+          0
         ],
         [
-          true,
-          true
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          5
         ]
       ]
     },
-    "value_type": "bool"
+    "value_type": "int"
   },
   {
     "_id": 185,
