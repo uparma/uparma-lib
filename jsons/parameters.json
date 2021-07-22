@@ -10835,7 +10835,8 @@
         [
           null,
           null
-        ],
+        ]
+      ],
     },
     "value_type": "list"
   },
@@ -16921,5 +16922,21 @@
 
     },
     "value_type": "bool"
+  },
+  {
+    "_id": 400,
+    "default_value": 1.5,
+    "description": "This parameter specifies the mass tolerance (in Da) around each precursor m/z that would be removed when the remove_precursor_peak option is invoked.",
+    "key_translations": {
+      "comet_style_1": "remove_precursor_tolerance",
+      "ursgal_style_1": "remove_precursor_tolerance"
+    },
+    "name": "remove_precursor_tolerance",
+    "tag": [
+      "spectrum"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "float"
   }
 ]
