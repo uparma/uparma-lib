@@ -16792,7 +16792,7 @@
   },
   {
     "_id": 391,
-    "default_value": null,
+    "default_value": "",
     "description": "This parameter controls whether the output text file, as controlled by the parameter output_txtfile, will have a default \".txt\" file extension or a custom extension specified by this parameter.",
     "key_translations": {
       "comet_style_1": "text_file_extension",
