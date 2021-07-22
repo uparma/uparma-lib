@@ -10340,7 +10340,7 @@
     "default_value": 5,
     "description": "Maximal accepted parent ion charge",
     "key_translations": {
-      "comet_style_1": "precursor_charge_max",
+      "comet_style_1": "max_precursor_charge",
       "mascot_style_1": "CHARGE_max",
       "msamanda_style_1": "considered_charges_max",
       "msfragger_style_1": "precursor_max_charge",
