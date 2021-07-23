@@ -5353,6 +5353,44 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "comet_style_1": [
+        [
+          "all",
+          "ALL"
+        ],
+        [
+          "cid",
+          "CID"
+        ],
+        [
+          "ecd",
+          "ECD"
+        ],
+        [
+          "etd",
+          "ETD"
+        ],
+        [
+          "etd+sa",
+          "ETD+SA"
+        ],
+        [
+          "pqd",
+          "PQD"
+        ],
+        [
+          "hcd",
+          "HCD"
+        ],
+        [
+          "irmpd",
+          "IRMPD"
+        ],
+        [
+          "sid",
+          "SID"
+        ]
+      ],
       "msgfplus_style_1": [
         [
           "cid",
@@ -5393,16 +5431,40 @@
       ],
       "ursgal_style_1": [
         [
+          "all",
+          "all"
+        ],
+        [
           "cid",
           "cid"
+        ],
+        [
+          "ecd",
+          "ecd"
         ],
         [
           "etd",
           "etd"
         ],
         [
+          "etd+sa",
+          "ETD+SA"
+        ],
+        [
+          "pqd",
+          "pqd"
+        ],
+        [
           "hcd",
           "hcd"
+        ],
+        [
+          "irmpd",
+          "irmpd"
+        ],
+        [
+          "sid",
+          "sid"
         ]
       ]
     },
