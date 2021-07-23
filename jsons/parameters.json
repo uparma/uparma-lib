@@ -15775,7 +15775,7 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
-      "comet_style_3": [
+      "comet_style_1": [
         [
           "off",
           0
@@ -15819,6 +15819,10 @@
         [
           "remove_all_charges",
           "remove_all_charges"
+        ],
+        [
+          "remove_phosphate_NL",
+          "remove_phosphate_NL"
         ]
       ]
     },
