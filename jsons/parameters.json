@@ -5287,7 +5287,8 @@
       "pglyco_fdr_style_1": "header_translations",
       "pipi_style_1": "header_translations",
       "tag_graph_style_1": "header_translations",
-      "ursgal_style_1": "header_translations"
+      "ursgal_style_1": "header_translations",
+      "xtandem_style_1": "header_translations"
     },
     "name": "header_translations",
     "tag": [
@@ -5295,6 +5296,17 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "xtandem_style_1": [
+        ["X!Tandem:delta", "delta",]
+        ["X!Tandem:nextscore", "nextscore"],
+        ["X!Tandem:y_score", "y_score"],
+        ["X!Tandem:y_ions", "y_ions"],
+        ["X!Tandem:b_score", "b_score"],
+        ["X!Tandem:b_ions", "b_ions"],
+        ["Sequence", "seq"],
+        ["Charge", "z"],
+        ["X!Tandem:Hyperscore", "hyperscore"],
+      ],
       "deepnovo_style_1": [
         [
           "DeepNovo:aaScore",
