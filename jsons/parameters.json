@@ -5297,7 +5297,7 @@
     "triggers_rerun": true,
     "value_translations": {
       "xtandem_style_1": [
-        ["X!Tandem:delta", "delta",],
+        ["X!Tandem:delta", "delta"],
         ["X!Tandem:nextscore", "nextscore"],
         ["X!Tandem:y_score", "y_score"],
         ["X!Tandem:y_ions", "y_ions"],
