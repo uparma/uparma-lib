@@ -5305,7 +5305,7 @@
         ["X!Tandem:b_ions", "b_ions"],
         ["Sequence", "seq"],
         ["Charge", "z"],
-        ["X!Tandem:Hyperscore", "hyperscore"],
+        ["X!Tandem:Hyperscore", "hyperscore"]
       ],
       "deepnovo_style_1": [
         [
