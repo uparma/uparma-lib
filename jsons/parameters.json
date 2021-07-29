@@ -10410,7 +10410,7 @@
   },
   {
     "_id": 246,
-    "default_value": None,
+    "default_value": "None",
     "description": "name of the pickle that is used to map the retention time",
     "key_translations": {
       "mgf_to_rt_lookup_style_1": "rt_pickle_name",
