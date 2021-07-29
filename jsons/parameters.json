@@ -15889,7 +15889,8 @@
     "default_value": "xtandem_alanine",
     "description": "Engine used to select 1% FDR PSMs for initial training set",
     "key_translations": {
-      "peptide_forest_style_1": "-i"
+      "peptide_forest_style_1": "-i",
+      "ursgal_style_1": "initial_engine"
     },
     "name": "initial_engine",
     "tag": ["validation", "peptide_forest"],
