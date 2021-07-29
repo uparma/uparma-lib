@@ -11784,6 +11784,7 @@
     "description": "Name of the column that is used for validation, e.g. by qvality and percolator. If None is defined, default values are used\n    'None' : None",
     "key_translations": {
       "add_estimated_fdr_style_1": "validation_score_field",
+      "peptide_forest_style_1": "validation_score_field",
       "percolator_style_1": "validation_score_field",
       "ptminer_style_1": "validation_score_field",
       "qvality_style_1": "validation_score_field",
