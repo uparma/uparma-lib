@@ -16960,8 +16960,8 @@
     "default_value": 100,
     "description": "This parameter controls the number of peptide search results that are stored internally. Depending on what post-processing tools are used, one may want to set this to the same value as num_output_lines (id193).",
     "key_translations": {
-      "comet_style_1": "num_results",
-      "ursgal_style_1": "num_results"
+      "comet_style_1": "comet_internal_num_results",
+      "ursgal_style_1": "comet_internal_num_results"
     },
     "name": "num_results",
     "tag": [],
