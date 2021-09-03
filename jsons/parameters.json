@@ -16930,7 +16930,7 @@
   {
     "_id": 396,
     "default_value": 20,
-    "description": "This parameter defines the maximum number of proteins (identifiers/accessions) to report. If set to -1, there will be no limit on the number of reported additional proteins.",
+    "description": "For non-proteotypic peptides, this parameter defines the maximum number of proteins (identifiers/accessions) to report. If set to -1, there will be no limit on the number of reported additional proteins. If set to 3 and a peptide is identified, which is present in 7 total protein sequences, there is one (first) reference protein and 6 additional duplicate proteins. This parameter controls how many of those 6 additional duplicate proteins are reported - in this case 2.",
     "key_translations": {
       "comet_style_1": "max_duplicate_proteins",
       "ursgal_style_1": "max_duplicate_proteins"
