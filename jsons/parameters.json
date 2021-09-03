@@ -11138,10 +11138,10 @@
       "myrimatch_style_1": "MinTerminiCleavages",
       "omssa_style_1": "semi_enzyme",
       "unify_csv_style_1": "semi_enzyme",
-      "ursgal_style_1": "semi_enzyme",
+      "ursgal_style_1": "enzyme_specificity",
       "xtandem_style_1": "protein, cleavage semi"
     },
-    "name": "semi_enzyme",
+    "name": "enzyme_specificity",
     "tag": [
       "cleavage",
       "protein"
