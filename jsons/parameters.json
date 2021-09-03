@@ -16944,7 +16944,7 @@
   {
     "_id": 397,
     "default_value": 0,
-    "description": "This parameter sets the maximum indexed database search run time for a scan/query.",
+    "description": "This parameter sets the maximum indexed database search run time for a scan/query in milliseconds. If set to 0, there is no limit to the search time.",
     "key_translations": {
       "comet_style_1": "max_index_runtime",
       "ursgal_style_1": "max_index_runtime"
@@ -16971,7 +16971,7 @@
   },
   {
     "_id": 399,
-    "default_value": 0,
+    "default_value": "protein sequence database",
     "description": "This parameter is used to search nucleotide sequence databases. It controls how the nucleotides are translated specifically which sets of reading frames are translated. Valid values are 0 through 9.",
     "key_translations": {
       "comet_style_1": "nucleotide_reading_frame",
@@ -16980,8 +16980,93 @@
     "name": "nucleotide_reading_frame",
     "tag": [],
     "triggers_rerun": true,
-    "value_translations": {},
-    "value_type": "int"
+    "value_translations": {
+      "comet_style_1": [
+        [
+          "protein sequence database",
+          0
+        ],
+        [
+          "1st forward reading frame",
+          1
+        ],
+        [
+          "2nd forward reading frame",
+          2
+        ],
+        [
+          "3rd forward reading frame",
+          3
+        ],
+        [
+          "1st reverse reading frame",
+          4
+        ],
+        [
+          "2nd reverse reading frame",
+          5
+        ],
+        [
+          "3rd reverse reading frame",
+          6
+        ],
+        [
+          "all 3 forward reading frames",
+          7
+        ],
+        [
+          "all 3 reverse reading frames",
+          8
+        ],
+        [
+          "all 6 reading frames",
+          9
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          "protein sequence database",
+          "protein sequence database"
+        ],
+        [
+          "1st forward reading frame",
+          "1st forward reading frame"
+        ],
+        [
+          "2nd forward reading frame",
+          "2nd forward reading frame"
+        ],
+        [
+          "3rd forward reading frame",
+          "3rd forward reading frame"
+        ],
+        [
+          "1st reverse reading frame",
+          "1st reverse reading frame"
+        ],
+        [
+          "2nd reverse reading frame",
+          "2nd reverse reading frame"
+        ],
+        [
+          "3rd reverse reading frame",
+          "3rd reverse reading frame"
+        ],
+        [
+          "all 3 forward reading frames",
+          "all 3 forward reading frames"
+        ],
+        [
+          "all 3 reverse reading frames",
+          "all 3 reverse reading frames"
+        ],
+        [
+          "all 6 reading frames",
+          "all 6 reading frames"
+        ]
+      ]
+    },
+    "value_type": "str"
   },
   {
     "_id": 400,
