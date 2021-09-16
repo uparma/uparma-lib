@@ -11236,6 +11236,16 @@
           1
         ]
       ],
+      "omssa_style_1": [
+        [
+          "full",
+          false
+        ],
+        [
+          "semi",
+          true
+        ]
+      ]
       "ursgal_style_1": [
         [
           "full",
