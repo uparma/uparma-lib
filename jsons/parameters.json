@@ -15913,5 +15913,27 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "str"
+  },
+  {
+    "_id": 381,
+    "default_value": [],
+    "description": "list of additional unimod xml files",
+    "key_translations": {
+      "ursgal_style_1": "unimod_xml_file_list",
+      "xtandem_style_1": "unimod_xml_file_list",
+      "msfragger_style_3": "unimod_xml_file_list",
+      "msamanda_style_1": "unimod_xml_file_list",
+      "msgfplus_style_1": "unimod_xml_file_list",
+      "omssa_style_1": "unimod_xml_file_list",
+      "unify_csv_style_1": "unimod_xml_file_list"
+    },
+    "name": "unimod_xml_file_list",
+    "tag": [
+      "modifications"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {
+    },
+    "value_type": "list"
   }
 ]
