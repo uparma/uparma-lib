@@ -16218,6 +16218,28 @@
   },
   {
     "_id": 381,
+    "default_value": [],
+    "description": "list of additional unimod xml files",
+    "key_translations": {
+      "ursgal_style_1": "unimod_xml_file_list",
+      "xtandem_style_1": "unimod_xml_file_list",
+      "msfragger_style_3": "unimod_xml_file_list",
+      "msamanda_style_1": "unimod_xml_file_list",
+      "msgfplus_style_1": "unimod_xml_file_list",
+      "omssa_style_1": "unimod_xml_file_list",
+      "unify_csv_style_1": "unimod_xml_file_list"
+    },
+    "name": "unimod_xml_file_list",
+    "tag": [
+      "modifications"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {
+    },
+    "value_type": "list"
+  },
+  {
+    "_id": 382,
     "default_value": "FASTA",
     "description": "Defines PSI Extended Fasta Format (PEFF). Default is 0 = normal fasta",
     "key_translations": {
@@ -16284,7 +16306,7 @@
     "value_type": "str"
   },
   {
-    "_id": 382,
+    "_id": 383,
     "default_value": null,
     "description": "A full or relative path to the OBO file used with a PEFF search. Ignored if peff_format = 0",
     "key_translations": {
@@ -16298,7 +16320,7 @@
     "value_type": "str"
   },
   {
-    "_id": 383,
+    "_id": 384,
     "default_value": false,
     "description": "Controls whether the analyzed peptides must contain at least one variable modification. If True only modified peptides will be considered. Default is false, thus both modified and unmodified will be analyzed.",
     "key_translations": {
@@ -16335,7 +16357,7 @@
     "value_type": "bool"
   },
   {
-    "_id": 384,
+    "_id": 385,
     "default_value": true,
     "description": "Controls whether to output search results in an mzIdentML file.",
     "key_translations": {
@@ -16372,7 +16394,7 @@
     "value_type": "bool"
   },
   {
-    "_id": 385,
+    "_id": 386,
     "default_value": false,
     "description": "Controls whether to output search results into an SQT file (.sqt).",
     "key_translations": {
@@ -16409,7 +16431,7 @@
     "value_type": "bool"
   },
   {
-    "_id": 386,
+    "_id": 387,
     "default_value": false,
     "description": "Controls whether to output search results to standard out (i.e. to the screen unless otherwise directed) in SQT format.",
     "key_translations": {
@@ -16446,7 +16468,7 @@
     "value_type": "bool"
   },
   {
-    "_id": 387,
+    "_id": 388,
     "default_value": false,
     "description": "Controls whether to output search results into a tab-delimited text file (.txt).",
     "key_translations": {
@@ -16483,7 +16505,7 @@
     "value_type": "bool"
   },
   {
-    "_id": 388,
+    "_id": 389,
     "default_value": true,
     "description": "A boolean flag this determines whether or not the expectation score (E-value) is reported in .out and SQT formats. Note that the E-value is always reported in pepXML output.",
     "key_translations": {
@@ -16520,7 +16542,7 @@
     "value_type": "bool"
   },
   {
-    "_id": 389,
+    "_id": 390,
     "default_value": "None",
     "description": "Sample enzyme: Rule of protein cleavagePossible cleavages are :\n    argc           -> [R]|{P}\n    aspn           -> [X]|[D]\n    aspn_gluc\n    chymotrypsin   -> [FMWY]|{P}\n    chymotrypsin_p -> [FMWY]|[X]\n    cnbr           -> [M]|{P}\n    elastase       -> [AGILV]|{P}\n    formic_acid    -> [D]|{P}\n    gluc\n    lysc\n    lysc_p\n    lysn\n    no_cleavage\n    nonspecific\n    pepsina\n    semi_chymotrypsin\n    semi_gluc\n    semi_tryptic\n    thermolysin_p\n    top_down\n    trypsin\n    trypsin_chymotrypsin\n    trypsin_cnbr\n    trypsin_p\n    lysc_gluc",
     "key_translations": {
@@ -16683,7 +16705,7 @@
     "value_type": "str"
   },
   {
-    "_id": 390,
+    "_id": 391,
     "default_value": true,
     "description": "A boolean flag which defines if isoleucin and leucin should be treated the same in terms of peptide identification (default is true).",
     "key_translations": {
@@ -16720,7 +16742,7 @@
     "value_type": "bool"
   },
   {
-    "_id": 391,
+    "_id": 392,
     "default_value": "",
     "description": "This parameter controls whether the output text file, as controlled by the parameter output_txtfile, will have a default \".txt\" file extension or a custom extension specified by this parameter.",
     "key_translations": {
@@ -16736,7 +16758,7 @@
     "value_type": "str"
   },
   {
-    "_id": 392,
+    "_id": 393,
     "default_value": 0,
     "description": "This parameter controls how the peptide_mass_tolerance parameter is applied. That tolerance can be applied to the singly charged peptide mass (default=0) or it can be applied to the precursor m/z (1).",
     "key_translations": {
@@ -16750,7 +16772,7 @@
     "value_type": "int"
   },
   {
-    "_id": 393,
+    "_id": 394,
     "default_value": 0,
     "description": "This parameter specifies how theoretical fragment ion peaks are represented.",
     "key_translations": {
@@ -16764,7 +16786,7 @@
     "value_type": "int"
   },
   {
-    "_id": 394,
+    "_id": 395,
     "default_value": [
       600.0,
       8000.0
@@ -16781,7 +16803,7 @@
     "value_type": "list"
   },
   {
-    "_id": 395,
+    "_id": 396,
     "default_value": 20,
     "description": "For non-proteotypic peptides, this parameter defines the maximum number of proteins (identifiers/accessions) to report. If set to -1, there will be no limit on the number of reported additional proteins. If set to 3 and a peptide is identified, which is present in 7 total protein sequences, there is one (first) reference protein and 6 additional duplicate proteins. This parameter controls how many of those 6 additional duplicate proteins are reported - in this case 2.",
     "key_translations": {
@@ -16795,7 +16817,7 @@
     "value_type": "int"
   },
   {
-    "_id": 396,
+    "_id": 397,
     "default_value": 0,
     "description": "This parameter sets the maximum indexed database search run time for a scan/query in milliseconds. If set to 0, there is no limit to the search time.",
     "key_translations": {
@@ -16809,7 +16831,7 @@
     "value_type": "int"
   },
   {
-    "_id": 397,
+    "_id": 398,
     "default_value": 100,
     "description": "This parameter controls the number of peptide search results that are stored internally. Depending on what post-processing tools are used, one may want to set this to the same value as num_output_lines (id193).",
     "key_translations": {
@@ -16823,7 +16845,7 @@
     "value_type": "int"
   },
   {
-    "_id": 398,
+    "_id": 399,
     "default_value": "protein sequence database",
     "description": "This parameter is used to search nucleotide sequence databases. It controls how the nucleotides are translated specifically which sets of reading frames are translated. Valid values are 0 through 9.",
     "key_translations": {
@@ -16922,7 +16944,7 @@
     "value_type": "str"
   },
   {
-    "_id": 399,
+    "_id": 400,
     "default_value": 1.5,
     "description": "This parameter specifies the mass tolerance (in Da) around each precursor m/z that would be removed when the remove_precursor_peak option is invoked.",
     "key_translations": {
