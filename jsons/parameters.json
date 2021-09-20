@@ -8353,19 +8353,25 @@
   {
     "_id": 163,
     "default_value": [
-                {
-                    "aa": "M",
-                    "type": "opt",
-                    "position": "any",
-                    "name": "Oxidation"
-                },
-                {
-                    "aa": "*",
-                    "type": "opt",
-                    "position": "Prot-N-term",
-                    "name": "Acetyl"
-                }
-            ],
+      {
+        "aa": "M",
+        "type": "opt",
+        "position": "any",
+         "name": "Oxidation"
+      },
+      {
+        "aa": "C",
+        "type": "fix",
+        "position": "any",
+        "name": "Carbamidomethyl"
+      },
+      {
+        "aa": "*",
+        "type": "opt",
+        "position": "Prot-N-term",
+        "name": "Acetyl"
+      }
+    ],
     "description": "Modifications are given as a list of dictionaries, one for each amino acid. The default keys are: 'amino acid, type, position, name or id'. aa - specify the modified amino acid as a single letter, use '*' if the amino acid is variable. type - specify if it is a fixed (fix) or potential (opt) modification. position - specify the position within the protein/peptide (Prot-N-term, Prot-C-term), use 'any' if the positon is variable. name or id: specify the unimod PSI-MS Name or unimod Accession # (see unimod.org). Additionally, userdefined modifications are supported, where the chemical composition needs to be given under the key 'composition' to be then mapped to unimod name or id using e.g. the package unimod_mapper. When using with a proteomics frameworks such as ursgal2, the modifications are not translated between different search engines. Instead, ursgal2 provides wrapper nodes to each engine containing the logic how modifications have to be processed and passed over to individual engines and nodes.",
     "key_translations": {
       "comet_style_1": [
