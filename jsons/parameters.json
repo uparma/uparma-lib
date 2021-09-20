@@ -8166,7 +8166,7 @@
   },
   {
     "_id": 163,
-    "default_value": "modifications": [
+    "default_value": "modifications" [
       {
         "aa": "M",
         "type": "opt",
