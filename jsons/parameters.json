@@ -16544,7 +16544,7 @@
   {
     "_id": 390,
     "default_value": "None",
-    "description": "This parameter is only relevant for pepXML output and is used solely to annotate additional information in the output. It does not influence the search. Default value is 'None', which is translated to 0.",
+    "description": "This parameter is only relevant for pepXML output and is used solely to annotate additional information in the output. It does not influence the search. The sample enzyme could be different from the search enzyme i.e. the sample enzyme is 'trypsin' yet the search enzyme is 'No-enzyme' for a non-specific search. Hence the need for this separate parameter.Default value is 'None', which is translated to 0.",
     "key_translations": {
       "comet_style_1": "sample_enzyme_number",
       "ursgal_style_1": "sample_enzyme"
@@ -16759,7 +16759,7 @@
   },
   {
     "_id": 393,
-    "default_value": 0,
+    "default_value": "singly_charged_peptide_mass",
     "description": "This parameter controls how the peptide_mass_tolerance parameter is applied. That tolerance can be applied to the singly charged peptide mass (default=0) or it can be applied to the precursor m/z (1).",
     "key_translations": {
       "comet_style_1": "precursor_tolerance_type",
@@ -16768,8 +16768,29 @@
     "name": "precursor_tolerance_type",
     "tag": [],
     "triggers_rerun": true,
-    "value_translations": {},
-    "value_type": "int"
+    "value_translations": {
+      "comet_style_1": [
+        [
+          "singly_charged_peptide_mass",
+          0
+        ],
+        [
+          "precursor_mz",
+          1
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          "singly_charged_peptide_mass",
+          "singly_charged_peptide_mass"
+        ],
+        [
+          "precursor_mz",
+          "precursor_mz"
+        ]
+      ]
+    },
+    "value_type": "str"
   },
   {
     "_id": 394,
