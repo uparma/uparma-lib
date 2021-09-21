@@ -16308,7 +16308,7 @@
   {
     "_id": 383,
     "default_value": null,
-    "description": "A full or relative path to the OBO file used with a PEFF search. Ignored if peff_format = 0",
+    "description": "A full or relative path to the OBO file used with a PEFF search. Ignored if peff_format = 0. There is no default for this parameter if it is missing.",
     "key_translations": {
       "comet_style_1": "peff_obo",
       "ursgal_style_1": "peff_obo_path"
