@@ -10539,6 +10539,7 @@
     "default_value": 7000,
     "description": "Maximal parent ion mass in Da. Adjusted to default used by MSFragger",
     "key_translations": {
+      "comet_style_1": "digest_mass_range_max",
       "deepnovo_style_1": "MZ_MAX",
       "kojak_style_1": "precursor_max_mass",
       "msfragger_style_1": "precursor_max_mass",
@@ -10589,6 +10590,7 @@
     "default_value": 400,
     "description": "Minimal parent ion mass",
     "key_translations": {
+      "comet_style_1": "digest_mass_range_min",
       "kojak_style_1": "precursor_min_mass",
       "msfragger_style_1": "precursor_min_mass",
       "msfragger_style_2": "precursor_min_mass",
@@ -16665,23 +16667,6 @@
   },
   {
     "_id": 390,
-    "default_value": [
-      600.0,
-      8000.0
-    ],
-    "description": "Defines the mass range of peptides to search (based on MH+ or the singly protonated mass).",
-    "key_translations": {
-      "comet_style_1": "digest_mass_range",
-      "ursgal_style_1": "digest_mass_range"
-    },
-    "name": "digest_mass_range",
-    "tag": [],
-    "triggers_rerun": true,
-    "value_translations": {},
-    "value_type": "list"
-  },
-  {
-    "_id": 391,
     "default_value": 20,
     "description": "For non-proteotypic peptides, this parameter defines the maximum number of proteins (identifiers/accessions) to report. If set to -1, there will be no limit on the number of reported additional proteins. If set to 3 and a peptide is identified, which is present in 7 total protein sequences, there is one (first) reference protein and 6 additional duplicate proteins. This parameter controls how many of those 6 additional duplicate proteins are reported - in this case 2.",
     "key_translations": {
@@ -16695,7 +16680,7 @@
     "value_type": "int"
   },
   {
-    "_id": 392,
+    "_id": 391,
     "default_value": 0,
     "description": "This parameter sets the maximum indexed database search run time for a scan/query in milliseconds. If set to 0, there is no limit to the search time.",
     "key_translations": {
@@ -16709,7 +16694,7 @@
     "value_type": "int"
   },
   {
-    "_id": 393,
+    "_id": 392,
     "default_value": 100,
     "description": "This parameter controls the number of peptide search results that are stored internally. Depending on what post-processing tools are used, one may want to set this to the same value as num_output_lines (id193).",
     "key_translations": {
@@ -16723,7 +16708,7 @@
     "value_type": "int"
   },
   {
-    "_id": 394,
+    "_id": 393,
     "default_value": "protein sequence database",
     "description": "This parameter is used to search nucleotide sequence databases. It controls how the nucleotides are translated specifically which sets of reading frames are translated. Valid values are 0 through 9.",
     "key_translations": {
@@ -16822,7 +16807,7 @@
     "value_type": "str"
   },
   {
-    "_id": 395,
+    "_id": 394,
     "default_value": 1.5,
     "description": "This parameter specifies the mass tolerance (in Da) around each precursor m/z that would be removed when the remove_precursor_peak option is invoked.",
     "key_translations": {
