@@ -16544,7 +16544,7 @@
   {
     "_id": 390,
     "default_value": "None",
-    "description": "Sample enzyme: Rule of protein cleavagePossible cleavages are :\n    argc           -> [R]|{P}\n    aspn           -> [X]|[D]\n    aspn_gluc\n    chymotrypsin   -> [FMWY]|{P}\n    chymotrypsin_p -> [FMWY]|[X]\n    cnbr           -> [M]|{P}\n    elastase       -> [AGILV]|{P}\n    formic_acid    -> [D]|{P}\n    gluc\n    lysc\n    lysc_p\n    lysn\n    no_cleavage\n    nonspecific\n    pepsina\n    semi_chymotrypsin\n    semi_gluc\n    semi_tryptic\n    thermolysin_p\n    top_down\n    trypsin\n    trypsin_chymotrypsin\n    trypsin_cnbr\n    trypsin_p\n    lysc_gluc",
+    "description": "This parameter is only relevant for pepXML output and is used solely to annotate additional information in the output. It does not influence the search. Default value is 'None', which is translated to 0.",
     "key_translations": {
       "comet_style_1": "sample_enzyme_number",
       "ursgal_style_1": "sample_enzyme"
