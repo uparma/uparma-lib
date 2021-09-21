@@ -15855,7 +15855,7 @@
           2
         ],
         [
-          "remove_phosphate_NL",
+          "remove_phosphate_nl",
           3
         ]
       ],
@@ -15887,8 +15887,8 @@
           "remove_all_charges"
         ],
         [
-          "remove_phosphate_NL",
-          "remove_phosphate_NL"
+          "remove_phosphate_nl",
+          "remove_phosphate_nl"
         ]
       ]
     },
