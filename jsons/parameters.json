@@ -16240,7 +16240,7 @@
   },
   {
     "_id": 382,
-    "default_value": "FASTA",
+    "default_value": "fasta",
     "description": "Defines PSI Extended Fasta Format (PEFF). Default is 0 = normal fasta",
     "key_translations": {
       "comet_style_1": "peff_format",
@@ -16252,54 +16252,54 @@
     "value_translations": {
       "comet_style_1": [
         [
-          "FASTA",
+          "fasta",
           0
         ],
         [
-          "PSI-MOD",
+          "psi-mod",
           1
         ],
         [
-          "Unimod",
+          "unimod",
           2
         ],
         [
-          "PSI-MOD_skip_aa",
+          "psi-mod_skip_aa",
           3
         ],
         [
-          "Unimod_skip_aa",
+          "unimod_skip_aa",
           4
         ],
         [
-          "AA_skip_peff_mod",
+          "aa_skip_peff_mod",
           5
         ]
       ],
       "ursgal_style_1": [
         [
-          "FASTA",
-          "FASTA"
+          "fasta",
+          "fasta"
         ],
         [
-          "PSI-MOD",
-          "PSI-MOD"
+          "psi-mod",
+          "psi-mod"
         ],
         [
-          "Unimod",
-          "Unimod"
+          "unimod",
+          "unimod"
         ],
         [
-          "PSI-MOD_skip_aa",
-          "PSI-MOD_skip_aa"
+          "psi-mod_skip_aa",
+          "psi-mod_skip_aa"
         ],
         [
-          "Unimod_skip_aa",
-          "Unimod_skip_aa"
+          "unimod_skip_aa",
+          "unimod_skip_aa"
         ],
         [
-          "AA_skip_peff_mod",
-          "AA_skip_peff_mod"
+          "aa_skip_peff_mod",
+          "aa_skip_peff_mod"
         ]
       ]
     },
