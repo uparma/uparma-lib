@@ -15929,7 +15929,7 @@
   {
     "_id": 364,
     "default_value": 0.0,
-    "description": "A floating point number indicating the minimum intensity value for input the input peaks.",
+    "description": "A floating point number indicating the minimum intensity value for the input peaks.",
     "key_translations": {
       "comet_style_1": "minimum_intensity",
       "ursgal_style_1": "minimum_intensity"
