@@ -16359,154 +16359,6 @@
   {
     "_id": 385,
     "default_value": true,
-    "description": "Controls whether to output search results in an mzIdentML file.",
-    "key_translations": {
-      "comet_style_1": "output_mzidentmlfile",
-      "ursgal_style_1": "export_mzidentmlfile"
-    },
-    "name": "export_mzidentmlfile",
-    "tag": [
-      "output"
-    ],
-    "triggers_rerun": true,
-    "value_translations": {
-      "comet_style_1": [
-        [
-          true,
-          1
-        ],
-        [
-          false,
-          0
-        ]
-      ],
-      "ursgal_style_1": [
-        [
-          true,
-          true
-        ],
-        [
-          false,
-          false
-        ]
-      ]
-    },
-    "value_type": "bool"
-  },
-  {
-    "_id": 386,
-    "default_value": false,
-    "description": "Controls whether to output search results into an SQT file (.sqt).",
-    "key_translations": {
-      "comet_style_1": "output_sqtfile",
-      "ursgal_style_1": "export_sqtfile"
-    },
-    "name": "export_sqtfile",
-    "tag": [
-      "output"
-    ],
-    "triggers_rerun": true,
-    "value_translations": {
-      "comet_style_1": [
-        [
-          true,
-          1
-        ],
-        [
-          false,
-          0
-        ]
-      ],
-      "ursgal_style_1": [
-        [
-          true,
-          true
-        ],
-        [
-          false,
-          false
-        ]
-      ]
-    },
-    "value_type": "bool"
-  },
-  {
-    "_id": 387,
-    "default_value": false,
-    "description": "Controls whether to output search results to standard out (i.e. to the screen unless otherwise directed) in SQT format.",
-    "key_translations": {
-      "comet_style_1": "output_sqtstream",
-      "ursgal_style_1": "export_sqtstream"
-    },
-    "name": "export_sqtstream",
-    "tag": [
-      "output"
-    ],
-    "triggers_rerun": false,
-    "value_translations": {
-      "comet_style_1": [
-        [
-          true,
-          1
-        ],
-        [
-          false,
-          0
-        ]
-      ],
-      "ursgal_style_1": [
-        [
-          true,
-          true
-        ],
-        [
-          false,
-          false
-        ]
-      ]
-    },
-    "value_type": "bool"
-  },
-  {
-    "_id": 388,
-    "default_value": false,
-    "description": "Controls whether to output search results into a tab-delimited text file (.txt).",
-    "key_translations": {
-      "comet_style_1": "output_txtfile",
-      "ursgal_style_1": "export_txtfile"
-    },
-    "name": "export_txtfile",
-    "tag": [
-      "output"
-    ],
-    "triggers_rerun": true,
-    "value_translations": {
-      "comet_style_1": [
-        [
-          true,
-          1
-        ],
-        [
-          false,
-          0
-        ]
-      ],
-      "ursgal_style_1": [
-        [
-          true,
-          true
-        ],
-        [
-          false,
-          false
-        ]
-      ]
-    },
-    "value_type": "bool"
-  },
-  {
-    "_id": 389,
-    "default_value": true,
     "description": "A boolean flag this determines whether or not the expectation score (E-value) is reported in .out and SQT formats. Note that the E-value is always reported in pepXML output.",
     "key_translations": {
       "comet_style_1": "print_expect_score",
@@ -16542,7 +16394,7 @@
     "value_type": "bool"
   },
   {
-    "_id": 390,
+    "_id": 386,
     "default_value": "None",
     "description": "This parameter is only relevant for pepXML output and is used solely to annotate additional information in the output. It does not influence the search. The sample enzyme could be different from the search enzyme i.e. the sample enzyme is 'trypsin' yet the search enzyme is 'No-enzyme' for a non-specific search. Hence the need for this separate parameter.Default value is 'None', which is translated to 0.",
     "key_translations": {
@@ -16705,7 +16557,7 @@
     "value_type": "str"
   },
   {
-    "_id": 391,
+    "_id": 387,
     "default_value": true,
     "description": "A boolean flag which defines if isoleucin and leucin should be treated the same in terms of peptide identification (default is true).",
     "key_translations": {
@@ -16742,23 +16594,7 @@
     "value_type": "bool"
   },
   {
-    "_id": 392,
-    "default_value": "",
-    "description": "This parameter controls whether the output text file, as controlled by the parameter output_txtfile, will have a default \".txt\" file extension or a custom extension specified by this parameter.",
-    "key_translations": {
-      "comet_style_1": "text_file_extension",
-      "ursgal_style_1": "text_file_extension"
-    },
-    "name": "text_file_extension",
-    "tag": [
-      "output"
-    ],
-    "triggers_rerun": false,
-    "value_translations": {},
-    "value_type": "str"
-  },
-  {
-    "_id": 393,
+    "_id": 388,
     "default_value": "singly_charged_peptide_mass",
     "description": "This parameter controls how the peptide_mass_tolerance parameter is applied. That tolerance can be applied to the singly charged peptide mass (default=0) or it can be applied to the precursor m/z (1).",
     "key_translations": {
@@ -16793,7 +16629,7 @@
     "value_type": "str"
   },
   {
-    "_id": 394,
+    "_id": 389,
     "default_value": "mass_bin",
     "description": "This parameter specifies how theoretical fragment ion peaks are represented. A value of 0 indicates that the fast correlation score will be a sum of the intensities at each theortical fragment mass bin and half the intensity of each flanking bin. A value of 1 indicates that the fast correlation score will be the sum of the intensities at each theoretical fragment mass bin. ",
     "key_translations": {
@@ -16828,7 +16664,7 @@
     "value_type": "int"
   },
   {
-    "_id": 395,
+    "_id": 390,
     "default_value": [
       600.0,
       8000.0
@@ -16845,7 +16681,7 @@
     "value_type": "list"
   },
   {
-    "_id": 396,
+    "_id": 391,
     "default_value": 20,
     "description": "For non-proteotypic peptides, this parameter defines the maximum number of proteins (identifiers/accessions) to report. If set to -1, there will be no limit on the number of reported additional proteins. If set to 3 and a peptide is identified, which is present in 7 total protein sequences, there is one (first) reference protein and 6 additional duplicate proteins. This parameter controls how many of those 6 additional duplicate proteins are reported - in this case 2.",
     "key_translations": {
@@ -16859,7 +16695,7 @@
     "value_type": "int"
   },
   {
-    "_id": 397,
+    "_id": 392,
     "default_value": 0,
     "description": "This parameter sets the maximum indexed database search run time for a scan/query in milliseconds. If set to 0, there is no limit to the search time.",
     "key_translations": {
@@ -16873,7 +16709,7 @@
     "value_type": "int"
   },
   {
-    "_id": 398,
+    "_id": 393,
     "default_value": 100,
     "description": "This parameter controls the number of peptide search results that are stored internally. Depending on what post-processing tools are used, one may want to set this to the same value as num_output_lines (id193).",
     "key_translations": {
@@ -16887,7 +16723,7 @@
     "value_type": "int"
   },
   {
-    "_id": 399,
+    "_id": 394,
     "default_value": "protein sequence database",
     "description": "This parameter is used to search nucleotide sequence databases. It controls how the nucleotides are translated specifically which sets of reading frames are translated. Valid values are 0 through 9.",
     "key_translations": {
@@ -16986,7 +16822,7 @@
     "value_type": "str"
   },
   {
-    "_id": 400,
+    "_id": 395,
     "default_value": 1.5,
     "description": "This parameter specifies the mass tolerance (in Da) around each precursor m/z that would be removed when the remove_precursor_peak option is invoked.",
     "key_translations": {
