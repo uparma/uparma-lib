@@ -10350,8 +10350,8 @@
   },
   {
     "_id": 233,
-    "default_value": null,
-    "description": "    'None' : None",
+    "default_value": "",
+    "description": "prefix to add in front of filenames",
     "key_translations": {
       "ucontroller_style_1": "prefix",
       "ursgal_style_1": "prefix"
@@ -10362,7 +10362,7 @@
     ],
     "triggers_rerun": true,
     "value_translations": {},
-    "value_type": null
+    "value_type": "str"
   },
   {
     "_id": 234,
