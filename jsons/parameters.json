@@ -15925,7 +15925,8 @@
       "msamanda_style_1": "unimod_xml_file_list",
       "msgfplus_style_1": "unimod_xml_file_list",
       "omssa_style_1": "unimod_xml_file_list",
-      "unify_csv_style_1": "unimod_xml_file_list"
+      "unify_csv_style_1": "unimod_xml_file_list",
+      "flash_lfq_style_1": "unimod_xml_file_list"
     },
     "name": "unimod_xml_file_list",
     "tag": [
