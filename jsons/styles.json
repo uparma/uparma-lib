@@ -500,5 +500,13 @@
       "1.0.0"
     ],
     "reference": "M. Dennison, T. Ranff, J. Bédorf, S. Schulze, N, Zinn, M. Bantscheff,  J.J.R.M. van Heugten, C. Fufezan, In review"
+  },
+  {
+    "style": "comet_style_1",
+    "name": "comet_style_1",
+    "versions": [
+      "1.0.0"
+    ],
+    "reference": "Eng JK, Jahan TA, Hoopmann MR. Comet: an open-source MS/MS sequence database search tool. Proteomics. 2013 Jan;13(1):22-4. doi: 10.1002/pmic.201200439. Epub 2012 Dec 4. PMID: 23148064."
   }
 ]

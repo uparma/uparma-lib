@@ -646,6 +646,7 @@
     "default_value": 2,
     "description": "MS level on which that is taken into account, e.g. for spectrum extraction, matching of evidences, etc.",
     "key_translations": {
+      "comet_style_1": "ms_level",
       "mzml2mgf_style_1": "ms_level",
       "pipi_style_1": "ms_level",
       "pyqms_style_1": "ms_level",
@@ -927,6 +928,7 @@
     "default_value": 2000,
     "description": "sets the number of spectra loaded into memory as a batch",
     "key_translations": {
+      "comet_style_1": "spectrum_batch_size",
       "deepnovo_style_1": "buffer_size",
       "msamanda_style_1": "LoadedSpectraAtOnce",
       "ursgal_style_1": "batch_size_spectra"
@@ -2380,6 +2382,7 @@
     "default_value": false,
     "description": " Specifies the trimming of a protein N-terminal methionine as a variable modification ",
     "key_translations": {
+      "comet_style_1": "clip_nterm_methionine",
       "msfragger_style_1": "clip_nTerm_M",
       "msfragger_style_2": "clip_nTerm_M",
       "msfragger_style_3": "clip_nTerm_M",
@@ -2390,6 +2393,16 @@
     "tag": [],
     "triggers_rerun": true,
     "value_translations": {
+      "comet_style_1": [
+        [
+          false,
+          0
+        ],
+        [
+          true,
+          1
+        ]
+      ],
       "msfragger_style_1": [
         [
           false,
@@ -3051,6 +3064,7 @@
     "default_value": -1,
     "description": "Number of used cpus/threads\n\n    -1 : 'max - 1'\n    >0 : cpu num",
     "key_translations": {
+      "comet_style_1": "num_threads",
       "flash_lfq_style_1": "--thr",
       "kojak_style_1": "cpus",
       "moda_style_1": "-@",
@@ -3074,6 +3088,12 @@
     ],
     "triggers_rerun": false,
     "value_translations": {
+      "comet_style_1": [
+        [
+          -1,
+          "max - 1"
+        ]
+      ],
       "kojak_style_1": [
         [
           -1,
@@ -3201,6 +3221,7 @@
     "default_value": null,
     "description": "Path to database file containing protein sequences in fasta format.",
     "key_translations": {
+      "comet_style_1": "database_name",
       "compomics_utilities_style_1": "database",
       "deepnovo_style_1": "db_fasta_file",
       "kojak_style_1": "database",
@@ -3282,6 +3303,7 @@
     "default_value": "decoy_",
     "description": "decoy-specific tag to differentiate between targets and decoys",
     "key_translations": {
+      "comet_style_1": "decoy_prefix",
       "generate_target_decoy_style_1": "decoy_tag",
       "kojak_style_1": "decoy_tag",
       "msfragger_style_2": "decoy_prefix",
@@ -3440,6 +3462,7 @@
     "default_value": false,
     "description": "Engine creates an own decoy database. Not recommended, because a target decoy database should be generated independently from the search engine, e.g. by using the uNode generate_target_decoy_1_0_0",
     "key_translations": {
+      "comet_style_1": "decoy_search",
       "mascot_style_1": "DECOY",
       "msamanda_style_1": "generate_decoy",
       "msgfplus_style_1": "-tda",
@@ -3453,6 +3476,16 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "comet_style_1": [
+        [
+          false,
+          "0"
+        ],
+        [
+          true,
+          "1"
+        ]
+      ],
       "mascot_style_1": [
         [
           false,
@@ -3537,6 +3570,7 @@
     "default_value": "trypsin",
     "description": "Enzyme: Rule of protein cleavagePossible cleavages are :\n    argc           -> [R]|{P}\n    aspn           -> [X]|[D]\n    aspn_gluc\n    chymotrypsin   -> [FMWY]|{P}\n    chymotrypsin_p -> [FMWY]|[X]\n    cnbr           -> [M]|{P}\n    elastase       -> [AGILV]|{P}\n    formic_acid    -> [D]|{P}\n    gluc\n    lysc\n    lysc_p\n    lysn\n    no_cleavage\n    nonspecific\n    pepsina\n    semi_chymotrypsin\n    semi_gluc\n    semi_tryptic\n    thermolysin_p\n    top_down\n    trypsin\n    trypsin_chymotrypsin\n    trypsin_cnbr\n    trypsin_p\n    lysc_gluc",
     "key_translations": {
+      "comet_style_1": "search_enzyme_number",
       "deepnovo_style_1": "cleavage_rule",
       "generate_target_decoy_style_1": "enzyme",
       "kojak_style_1": "enzyme",
@@ -3568,6 +3602,52 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "comet_style_1": [
+        [
+          "None",
+          "0"
+        ],
+        [
+          "trypsin",
+          "1"
+        ],
+        [
+          "trypsin/p",
+          "2"
+        ],
+        [
+          "lysc",
+          "3"
+        ],
+        [
+          "lysn",
+          "4"
+        ],
+        [
+          "argc",
+          "5"
+        ],
+        [
+          "aspn",
+          "6"
+        ],
+        [
+          "cnbr",
+          "7"
+        ],
+        [
+          "gluc",
+          "8"
+        ],
+        [
+          "pepsina",
+          "9"
+        ],
+        [
+          "chymotrypsin",
+          "10"
+        ]
+      ],
       "deepnovo_style_1": [
         [
           "argc",
@@ -5020,6 +5100,7 @@
     ],
     "description": " Removes peaks in this m/z range prior to matching. Given as list [min_clear_mz, max_clear_mz]. Useful for iTRAQ/TMT experiments, i.e. [0.0, 150.0]. ",
     "key_translations": {
+      "comet_style_1": "clear_mz_range",
       "msfragger_style_1": "clear_mz_range",
       "msfragger_style_2": "clear_mz_range",
       "msfragger_style_3": "clear_mz_range",
@@ -5187,6 +5268,7 @@
     "default_value": "monoisotopic",
     "description": "Fragment mass type: monoisotopic or average",
     "key_translations": {
+      "comet_style_1": "mass_type_fragment",
       "omssa_style_1": "-tom",
       "ursgal_style_1": "frag_mass_type",
       "xtandem_style_1": "spectrum, fragment mass type"
@@ -5198,6 +5280,16 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "comet_style_1": [
+        [
+          "average",
+          0
+        ],
+        [
+          "monoisotopic",
+          1
+        ]
+      ],
       "omssa_style_1": [
         [
           "average",
@@ -5226,6 +5318,7 @@
     "default_value": 4,
     "description": "Maximum fragment ion charge to search.",
     "key_translations": {
+      "comet_style_1": "max_fragment_charge",
       "msfragger_style_1": "max_fragment_charge",
       "msfragger_style_2": "max_fragment_charge",
       "msfragger_style_3": "max_fragment_charge",
@@ -5246,6 +5339,7 @@
     "default_value": "hcd",
     "description": "Used fragmentation method, e.g. collision-induced dissociation (cid), electron-capture dissociation (ecd), electron-transfer dissociation (etd), Higher-energy C-trap dissociation (hcd)",
     "key_translations": {
+      "comet_style_1": "activation_method",
       "msgfplus_style_1": "-m",
       "novor_style_1": "fragmentation",
       "pnovo_style_1": "activation_type",
@@ -5259,6 +5353,44 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "comet_style_1": [
+        [
+          "all",
+          "ALL"
+        ],
+        [
+          "cid",
+          "CID"
+        ],
+        [
+          "ecd",
+          "ECD"
+        ],
+        [
+          "etd",
+          "ETD"
+        ],
+        [
+          "etd+sa",
+          "ETD+SA"
+        ],
+        [
+          "pqd",
+          "PQD"
+        ],
+        [
+          "hcd",
+          "HCD"
+        ],
+        [
+          "irmpd",
+          "IRMPD"
+        ],
+        [
+          "sid",
+          "SID"
+        ]
+      ],
       "msgfplus_style_1": [
         [
           "cid",
@@ -5299,16 +5431,40 @@
       ],
       "ursgal_style_1": [
         [
+          "all",
+          "all"
+        ],
+        [
           "cid",
           "cid"
+        ],
+        [
+          "ecd",
+          "ecd"
         ],
         [
           "etd",
           "etd"
         ],
         [
+          "etd+sa",
+          "ETD+SA"
+        ],
+        [
+          "pqd",
+          "pqd"
+        ],
+        [
           "hcd",
           "hcd"
+        ],
+        [
+          "irmpd",
+          "irmpd"
+        ],
+        [
+          "sid",
+          "sid"
         ]
       ]
     },
@@ -5385,7 +5541,7 @@
   {
     "_id": 91,
     "default_value": null,
-    "description": "Login name/user for the any server e.g. \"PASS00269\" in peptideatlas.orgftp download\n    '' : None",
+    "description": "Login name/user for any server e.g. \"PASS00269\" in peptideatlas.orgftp download\n    '' : None",
     "key_translations": {
       "get_ftp_style_1": "ftp_login",
       "mascot_style_1": "username",
@@ -7220,15 +7376,26 @@
     "default_value": false,
     "description": "Activate (True) or deactivate (False) output as pepXML",
     "key_translations": {
+      "comet_style_1": "output_pepxmlfile",
       "kojak_style_1": "kojak_export_pepXML",
-      "ursgal_style_1": "kojak_export_pepxml"
+      "ursgal_style_1": "export_pepxml"
     },
-    "name": "kojak_export_pepxml",
+    "name": "export_pepxml",
     "tag": [
       "output"
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "comet_style_1": [
+        [
+          true,
+          1
+        ],
+        [
+          false,
+          0
+        ]
+      ],
       "kojak_style_1": [
         [
           true,
@@ -7257,15 +7424,26 @@
     "default_value": true,
     "description": "Activate (True) or deactivate (False) output for percolator",
     "key_translations": {
+      "comet_style_1": "output_percolatorfile",
       "kojak_style_1": "kojak_export_percolator",
-      "ursgal_style_1": "kojak_export_percolator"
+      "ursgal_style_1": "export_percolator"
     },
-    "name": "kojak_export_percolator",
+    "name": "export_percolator",
     "tag": [
       "output"
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "comet_style_1": [
+        [
+          true,
+          1
+        ],
+        [
+          false,
+          0
+        ]
+      ],
       "kojak_style_1": [
         [
           true,
@@ -7294,10 +7472,11 @@
     "default_value": 0.0,
     "description": "fragment_bin_offset and fragment_bin_size\ninfluence algorithm precision and memory usage.\nThey should be set appropriately for the data analyzed.\nFor ion trap ms/ms:  1.0005 size, 0.4 offset\nFor high res ms/ms:    0.03 size, 0.0 offset",
     "key_translations": {
+      "comet_style_1": "fragment_bin_offset",
       "kojak_style_1": "kojak_fragment_bin_offset",
-      "ursgal_style_1": "kojak_fragment_bin_offset"
+      "ursgal_style_1": "fragment_bin_offset"
     },
-    "name": "kojak_fragment_bin_offset",
+    "name": "fragment_bin_offset",
     "tag": [
       "accuracy",
       "hardware_resources"
@@ -7311,10 +7490,11 @@
     "default_value": 0.03,
     "description": "fragment_bin_offset and fragment_bin_size\ninfluence algorithm precision and memory usage.\nThey should be set appropriately for the data analyzed.\nFor ion trap ms/ms:  1.0005 size, 0.4 offset\nFor high res ms/ms:    0.03 size, 0.0 offset",
     "key_translations": {
+      "comet_style_1": "fragment_bin_tol",
       "kojak_style_1": "kojak_fragment_bin_size",
-      "ursgal_style_1": "kojak_fragment_bin_size"
+      "ursgal_style_1": "fragment_bin_size"
     },
-    "name": "kojak_fragment_bin_size",
+    "name": "fragment_bin_size",
     "tag": [
       "accuracy",
       "hardware_resources"
@@ -7609,6 +7789,7 @@
     "default_value": 2,
     "description": "Maximum number of missed cleavages per peptide",
     "key_translations": {
+      "comet_style_1": "allowed_missed_cleavage",
       "deepnovo_style_1": "num_missed_cleavage",
       "kojak_style_1": "max_missed_cleavages",
       "mascot_style_1": "PFA",
@@ -7674,6 +7855,7 @@
     "default_value": 3,
     "description": "Maximal number of modifications per peptide",
     "key_translations": {
+      "comet_style_1": "max_variable_mods_in_peptide",
       "kojak_style_1": "max_num_mods",
       "msamanda_style_1": "MaxNoDynModifs",
       "msgfplus_style_1": "-numMods",
@@ -7710,6 +7892,7 @@
     "default_value": 6,
     "description": " Maximum number of potential modification sites for a specific modification per peptide. Peptides with a higher number are discarded, due to a too high complexity. ",
     "key_translations": {
+      "comet_style_1": "max_num_mod_sites",
       "msamanda_style_1": "MaxNumberModSites",
       "ursgal_style_1": "max_num_mod_sites"
     },
@@ -7826,6 +8009,7 @@
     "default_value": 40,
     "description": "Maximal length of a peptide",
     "key_translations": {
+      "comet_style_1": "peptide_length_range_max",
       "msamanda_style_1": "MaximumPepLength",
       "msfragger_style_1": "digest_max_length",
       "msfragger_style_2": "digest_max_length",
@@ -7971,6 +8155,7 @@
     "default_value": 6,
     "description": "Minimal length of a peptide",
     "key_translations": {
+      "comet_style_1": "peptide_length_range_min",
       "msamanda_style_1": "MinimumPepLength",
       "msfragger_style_1": "digest_min_length",
       "msfragger_style_2": "digest_min_length",
@@ -8035,6 +8220,7 @@
     "default_value": 5,
     "description": "Mimimum number of peaks in the spectrum to be considered. MSFragger default: 15",
     "key_translations": {
+      "comet_style_1": "minimum_peaks",
       "msfragger_style_1": "minimum_peaks",
       "msfragger_style_2": "minimum_peaks",
       "msfragger_style_3": "minimum_peaks",
@@ -8186,8 +8372,49 @@
         "name": "Acetyl"
       }
     ],
-    "description": "Modifications are given as a list of strings, each representing the modification of one amino acid. The string consists of four informations seperated by comma: \n\n    'amino acid, type, position, unimod name or id'\n\n    amino acid  : specify the modified amino acid as a single letter, use '*' if the amino acid is variable\n    type        : specify if it is a fixed (fix) or potential (opt) modification\n    position    : specify the position within the protein/peptide (Prot-N-term, Prot-C-term), use 'any' if the positon is variable\n    unimod name or id: specify the unimod PSI-MS Name or unimod Accession # (see unimod.org)\n\nExamples:\n\n    [ 'M,opt,any,Oxidation' ] - potential oxidation of Met at any position within a peptide\n    [ '*,opt,Prot-N-term,Acetyl' ] - potential acetylation of any amino acid at the N-terminus of a protein\n    [ 'S,opt,any,Phospho' ] - potential phosphorylation of Serine at any position within a peptide\n    [ 'C,fix,any,Carbamidomethyl', 'N,opt,any,Deamidated', 'Q,opt,any,Deamidated' ] - fixed carbamidomethylation of Cys and potential deamidation of Asn and/or Gln at any position within a peptide\n\nAdditionally, userdefined modifications can be given and are written to a userdefined_unimod.xml in ursgal/kb/ext. Userdefined modifications need to have a unique name instead of the unimod name the chemical composition needs to be given as a Hill notation on the fifth position in the string\n\nExample:\n\n[ 'S,opt,any,New_mod,C2H5N1O3' ]",
+    "description": "Modifications are given as a list of dictionaries, one for each amino acid. The default keys are: 'amino acid, type, position, name or id'. aa - specify the modified amino acid as a single letter, use '*' if the amino acid is variable. type - specify if it is a fixed (fix) or potential (opt) modification. position - specify the position within the protein/peptide (Prot-N-term, Prot-C-term), use 'any' if the positon is variable. name or id: specify the unimod PSI-MS Name or unimod Accession # (see unimod.org). Additionally, userdefined modifications are supported, where the chemical composition needs to be given under the key 'composition' to be then mapped to unimod name or id using e.g. the package unimod_mapper. When using with a proteomics frameworks such as ursgal2, the modifications are not translated between different search engines. Instead, ursgal2 provides wrapper nodes to each engine containing the logic how modifications have to be processed and passed over to individual engines and nodes.",
     "key_translations": {
+      "comet_style_1": [
+        "variable_mod01",
+        "variable_mod02",
+        "variable_mod03",
+        "variable_mod04",
+        "variable_mod05",
+        "variable_mod06",
+        "variable_mod07",
+        "variable_mod08",
+        "variable_mod09",
+        "add_Cterm_peptide",
+        "add_Nterm_peptide",
+        "add_Cterm_protein",
+        "add_Nterm_protein",
+        "add_G_glycine",
+        "add_A_alanine",
+        "add_S_serine",
+        "add_P_proline",
+        "add_V_valine",
+        "add_T_threonine",
+        "add_C_cysteine",
+        "add_L_leucine",
+        "add_I_isoleucine",
+        "add_N_asparagine",
+        "add_D_aspartic_acid",
+        "add_Q_glutamine",
+        "add_K_lysine",
+        "add_E_glutamic_acid",
+        "add_M_methionine",
+        "add_H_histidine",
+        "add_F_phenylalanine",
+        "add_U_selenocysteine",
+        "add_R_arginine",
+        "add_Y_tyrosine",
+        "add_W_tryptophan",
+        "add_O_pyrrolysine",
+        "add_B_user_amino_acid",
+        "add_J_user_amino_acid",
+        "add_X_user_amino_acid",
+        "add_Z_user_amino_acid"
+      ],
       "deepnovo_style_1": "modifications",
       "flash_lfq_style_1": "modifications",
       "kojak_style_1": "modifications",
@@ -8801,40 +9028,116 @@
   },
   {
     "_id": 184,
-    "default_value": false,
-    "description": "Verbose mzidentml_lib output",
+    "default_value": 0,
+    "description": "Parameter controlling verbose behavior. In general 0=false, 1=true. For qvality range from 0 = no processing info to 5 = all.",
     "key_translations": {
+      "comet_style_1": "peff_verbose_output",
+      "msgfplus_style_1": "-verbose",
       "mzidentml_style_1": "-verboseOutput",
-      "ursgal_style_1": "mzidentml_verbose_output"
+      "omssa_style_1": "-ni",
+      "qvality_style_1": "-v",
+      "ursgal_style_1": "verbose_behavior"
     },
-    "name": "mzidentml_verbose_output",
+    "name": "verbose_behavior",
     "tag": [
       "output"
     ],
-    "triggers_rerun": true,
+    "triggers_rerun": false,
     "value_translations": {
+      "comet_style_1": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "msgfplus_style_1": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
       "mzidentml_style_1": [
         [
-          false,
+          0,
           "false"
         ],
         [
-          true,
+          1,
           "true"
+        ]
+      ],
+      "omssa_style_1": [
+        [
+          0,
+          ""
+        ],
+        [
+          1,
+          "-ni"
+        ]
+      ],
+      "qvality_style_1": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          5
         ]
       ],
       "ursgal_style_1": [
         [
-          false,
-          false
+          0,
+          0
         ],
         [
-          true,
-          true
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          5
         ]
       ]
     },
-    "value_type": "bool"
+    "value_type": "int"
   },
   {
     "_id": 185,
@@ -9016,6 +9319,7 @@
     "default_value": 10,
     "description": "Maximum number of peptide spectrum matches to report for each spectrum",
     "key_translations": {
+      "comet_style_1": "num_output_lines",
       "mascot_style_1": "REPORT",
       "msamanda_style_1": "max_rank",
       "msfragger_style_1": "output_report_topN",
@@ -9202,40 +9506,17 @@
   },
   {
     "_id": 202,
-    "default_value": false,
-    "description": "Omssa: verbose info print",
+    "default_value": [],
+    "description": "Controls whether or not precursor neutral loss peaks are considered in the xcorr scoring.",
     "key_translations": {
-      "omssa_style_1": "-ni",
-      "ursgal_style_1": "omssa_verbose"
+      "comet_style_1": "precursor_nl_ions",
+      "ursgal_style_1": "precursor_nl_ions"
     },
-    "name": "omssa_verbose",
-    "tag": [
-      "output"
-    ],
+    "name": "precursor_nl_ions",
+    "tag": [],
     "triggers_rerun": true,
-    "value_translations": {
-      "omssa_style_1": [
-        [
-          false,
-          ""
-        ],
-        [
-          true,
-          "-ni"
-        ]
-      ],
-      "ursgal_style_1": [
-        [
-          false,
-          false
-        ],
-        [
-          true,
-          true
-        ]
-      ]
-    },
-    "value_type": "bool"
+    "value_translations": {},
+    "value_type": "list"
   },
   {
     "_id": 203,
@@ -9749,6 +10030,7 @@
     "default_value": "0,1",
     "description": "Error range for incorrect carbon isotope parent ion assignment (13C)",
     "key_translations": {
+      "comet_style_1": "isotope_error",
       "kojak_style_1": "precursor_isotope_range",
       "mascot_style_1": "PEP_ISOTOPE_ERROR",
       "msfragger_style_1": "isotope_error",
@@ -9769,6 +10051,32 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "comet_style_1": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0,1",
+          "1"
+        ],
+        [
+          "0,2",
+          "2"
+        ],
+        [
+          "0,3",
+          "3"
+        ],
+        [
+          "-8,8",
+          "4"
+        ],
+        [
+          "-1,3",
+          "5"
+        ]
+      ],
       "kojak_style_1": [
         [
           "0",
@@ -9917,6 +10225,7 @@
     "default_value": 5,
     "description": "Lower precursor mass tolerance; maximum negative deviation of measured from calculated parent ion mass.",
     "key_translations": {
+      "comet_style_1": "peptide_mass_tolerance_part1",
       "mascot_style_1": "TOL_part1",
       "msamanda_style_1": "ms1_tol_part1",
       "msfragger_style_1": "precursor_mass_lower",
@@ -9942,6 +10251,7 @@
     "default_value": 5,
     "description": "Upper precursor mass tolerance; maximum positive deviation of measured from calculated parent ion mass.",
     "key_translations": {
+      "comet_style_1": "peptide_mass_tolerance_part2",
       "flash_lfq_style_1": "--ppm",
       "mascot_style_1": "TOL_part2",
       "msamanda_style_1": "ms1_tol_part2",
@@ -9968,6 +10278,7 @@
     "default_value": "ppm",
     "description": "Precursor mass tolerance unit: available in ppm (parts-per-millon), da (Dalton) or mmu (Milli mass unit)",
     "key_translations": {
+      "comet_style_1": "peptide_mass_units",
       "mascot_style_1": "TOLU",
       "msamanda_style_1": "ms1_tol unit",
       "msfragger_style_1": "precursor_mass_units",
@@ -9991,6 +10302,20 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "comet_style_1": [
+        [
+          "da",
+          0
+        ],
+        [
+          "mmu",
+          1
+        ],
+        [
+          "ppm",
+          2
+        ]
+      ],
       "mascot_style_1": [
         [
           "da",
@@ -10115,6 +10440,7 @@
     "default_value": "monoisotopic",
     "description": "Precursor mass type: monoisotopic or average",
     "key_translations": {
+      "comet_style_1": "mass_type_parent",
       "mascot_style_1": "MASS",
       "msamanda_style_1": "monoisotopic",
       "myrimatch_style_1": "PrecursorMzToleranceRule",
@@ -10127,6 +10453,16 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "comet_style_1": [
+        [
+          "average",
+          0
+        ],
+        [
+          "monoisotopic",
+          1
+        ]
+      ],
       "msamanda_style_1": [
         [
           "average",
@@ -10175,6 +10511,7 @@
     "default_value": 5,
     "description": "Maximal accepted parent ion charge",
     "key_translations": {
+      "comet_style_1": "max_precursor_charge",
       "mascot_style_1": "CHARGE_max",
       "msamanda_style_1": "considered_charges_max",
       "msfragger_style_1": "precursor_max_charge",
@@ -10202,6 +10539,7 @@
     "default_value": 7000,
     "description": "Maximal parent ion mass in Da. Adjusted to default used by MSFragger",
     "key_translations": {
+      "comet_style_1": "digest_mass_range_max",
       "deepnovo_style_1": "MZ_MAX",
       "kojak_style_1": "precursor_max_mass",
       "msfragger_style_1": "precursor_max_mass",
@@ -10225,6 +10563,7 @@
     "default_value": 1,
     "description": "Minimal accepted parent ion charge",
     "key_translations": {
+      "comet_style_1": "precursor_charge_min",
       "mascot_style_1": "CHARGE_min",
       "msamanda_style_1": "considered_charges_min",
       "msfragger_style_1": "precursor_min_charge",
@@ -10251,6 +10590,7 @@
     "default_value": 400,
     "description": "Minimal parent ion mass",
     "key_translations": {
+      "comet_style_1": "digest_mass_range_min",
       "kojak_style_1": "precursor_min_mass",
       "msfragger_style_1": "precursor_min_mass",
       "msfragger_style_2": "precursor_min_mass",
@@ -10495,64 +10835,17 @@
   },
   {
     "_id": 241,
-    "default_value": "2",
-    "description": "Verbose qvality output (range from 0 = no processing info to 5 = all)",
+    "default_value": 0,
+    "description": "This parameter controls whether or not Comet reports the deltaCn value calculated between the top two peptides (\"explicit_deltacn = 1\") or between the top peptide and the first dissimilar peptide (default behavior, \"explicit_deltacn = 0\").",
     "key_translations": {
-      "qvality_style_1": "-v",
-      "ursgal_style_1": "qvality_verbose"
+      "comet_style_1": "explicit_deltacn",
+      "ursgal_style_1": "explicit_deltacn"
     },
-    "name": "qvality_verbose",
-    "tag": [
-      "output"
-    ],
+    "name": "explicit_deltacn",
+    "tag": [],
     "triggers_rerun": true,
-    "value_translations": {
-      "qvality_style_1": [
-        [
-          "1",
-          1
-        ],
-        [
-          "2",
-          2
-        ],
-        [
-          "3",
-          3
-        ],
-        [
-          "4",
-          4
-        ],
-        [
-          "5",
-          5
-        ]
-      ],
-      "ursgal_style_1": [
-        [
-          "1",
-          "1"
-        ],
-        [
-          "2",
-          "2"
-        ],
-        [
-          "3",
-          "3"
-        ],
-        [
-          "4",
-          "4"
-        ],
-        [
-          "5",
-          "5"
-        ]
-      ]
-    },
-    "value_type": "select"
+    "value_translations": {},
+    "value_type": "int"
   },
   {
     "_id": 242,
@@ -10663,8 +10956,9 @@
   {
     "_id": 248,
     "default_value": null,
-    "description": "Exclusively spectra included during mzml2mgf conversion",
+    "description": "Exclusively spectra included from the mzml, e.g. during mzml2mgf conversion",
     "key_translations": {
+      "comet_style_1": "scan_range",
       "mzml2mgf_style_1": "scan_inclusion_list",
       "ursgal_style_1": "scan_inclusion_list"
     },
@@ -10754,6 +11048,16 @@
     ],
     "description": "List of ion types that are taken into account by the respective search engine.Availabel ion types: a, b, c, x, y, z, -h2o, -nh3, b1, c_terminal, imm (immonium),int (internal), z+1, z+2, b~ (b+HexNAx), y~ (y+HexNAc), Y",
     "key_translations": {
+      "comet_style_1": [
+        "use_A_ions",
+        "use_B_ions",
+        "use_C_ions",
+        "use_X_ions",
+        "use_Y_ions",
+        "use_Z_ions",
+        "use_Z1_ions",
+        "use_NL_ions"
+      ],
       "kojak_style_1": [
         "ion_series_X",
         "ion_series_Y",
@@ -10829,9 +11133,10 @@
   },
   {
     "_id": 254,
-    "default_value": false,
+    "default_value": "full",
     "description": "Allows semi-enzymatic peptide ends",
     "key_translations": {
+      "comet_style_1": "num_enzyme_termini",
       "moda_style_1": "enzyme_constraint_min_number_termini",
       "msamanda_style_1": "semi_enzyme_specificity",
       "msfragger_style_1": "num_enzyme_termini",
@@ -10841,108 +11146,144 @@
       "myrimatch_style_1": "MinTerminiCleavages",
       "omssa_style_1": "semi_enzyme",
       "unify_csv_style_1": "semi_enzyme",
-      "ursgal_style_1": "semi_enzyme",
+      "ursgal_style_1": "enzyme_specificity",
       "xtandem_style_1": "protein, cleavage semi"
     },
-    "name": "semi_enzyme",
+    "name": "enzyme_specificity",
     "tag": [
       "cleavage",
       "protein"
     ],
     "triggers_rerun": true,
     "value_translations": {
-      "moda_style_1": [
+      "comet_style_1": [
         [
-          false,
+          "full",
           2
         ],
         [
-          true,
+          "semi",
+          1
+        ],
+        [
+          "C-term unspecific",
+          8
+        ],
+        [
+          "N-term unspecific",
+          9
+        ]
+      ],
+      "moda_style_1": [
+        [
+          "full",
+          2
+        ],
+        [
+          "semi",
           1
         ]
       ],
       "msamanda_style_1": [
         [
-          false,
+          "full",
           "FULL"
         ],
         [
-          true,
+          "semi",
           "SEMI"
         ]
       ],
       "msfragger_style_1": [
         [
-          true,
+          "semi",
           1
         ],
         [
-          false,
+          "full",
           2
         ]
       ],
       "msfragger_style_2": [
         [
-          true,
+          "semi",
           1
         ],
         [
-          false,
+          "full",
           2
         ]
       ],
       "msfragger_style_3": [
         [
-          true,
+          "semi",
           1
         ],
         [
-          false,
+          "full",
           2
         ]
       ],
       "msgfplus_style_1": [
         [
-          false,
+          "full",
           2
         ],
         [
-          true,
+          "semi",
           1
         ]
       ],
       "myrimatch_style_1": [
         [
-          false,
+          "full",
           2
         ],
         [
-          true,
+          "semi",
           1
+        ]
+      ],
+      "omssa_style_1": [
+        [
+          "full",
+          false
+        ],
+        [
+          "semi",
+          true
         ]
       ],
       "ursgal_style_1": [
         [
-          false,
-          false
+          "full",
+          "full"
         ],
         [
-          true,
-          true
+          "semi",
+          "semi"
+        ],
+        [
+          "C-term unspecific",
+          "C-term unspecific"
+        ],
+        [
+          "N-term unspecific",
+          "N-term unspecific"
         ]
       ],
       "xtandem_style_1": [
         [
-          false,
-          "no"
+          "semi",
+          "yes"
         ],
         [
-          true,
-          "yes"
+          "full",
+          "no"
         ]
       ]
     },
-    "value_type": "bool"
+    "value_type": "str"
   },
   {
     "_id": 255,
@@ -11293,9 +11634,10 @@
   },
   {
     "_id": 268,
-    "default_value": true,
+    "default_value": "yes",
     "description": "Does not correct precursor charge.",
     "key_translations": {
+      "comet_style_1": "override_charge",
       "msfragger_style_1": "override_charge",
       "msfragger_style_2": "override_charge",
       "msfragger_style_3": "override_charge",
@@ -11309,48 +11651,74 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
-      "msfragger_style_1": [
+      "comet_style_1": [
         [
-          true,
+          "yes",
           0
         ],
         [
-          false,
+          "no",
+          1
+        ],
+        [
+          "search_in_range",
+          2
+        ],
+        [
+          "overwrite_unknown",
+          3
+        ]
+      ],
+      "msfragger_style_1": [
+        [
+          "yes",
+          0
+        ],
+        [
+          "no",
           1
         ]
       ],
       "msfragger_style_2": [
         [
-          true,
+          "yes",
           0
         ],
         [
-          false,
+          "no",
           1
         ]
       ],
       "msfragger_style_3": [
         [
-          true,
+          "yes",
           0
         ],
         [
-          false,
+          "no",
           1
         ]
       ],
       "ursgal_style_1": [
         [
-          true,
-          true
+          "yes",
+          "yes"
         ],
         [
-          false,
-          false
+          "no",
+          "no"
+        ],
+        [
+          "search_in_range",
+          "search_in_range"
+        ],
+        [
+          "overwrite_unknown",
+          "overwrite_unknown"
         ]
       ]
     },
-    "value_type": "bool"
+    "value_type": "select"
   },
   {
     "_id": 269,
@@ -15343,6 +15711,7 @@
     "default_value": [],
     "description": "List of mass offsets at which modification peaks will be checked for (e.g. [0, 79.9663])",
     "key_translations": {
+      "comet_style_1": "mass_offsets",
       "ptmshepherd_style_1": "mass_offsets",
       "ursgal_style_1": "mass_offset_list"
     },
@@ -15531,6 +15900,7 @@
     "default_value": "off",
     "description": "Remove precursor peaks from spectrum. Options are: \"off\", \"remove_precursor_charge\" (removes peaks with same charge as precursor), \"remove_all_charges\" (removes peaks of all charges)",
     "key_translations": {
+      "comet_style_1": "remove_precursor_peak",
       "msfragger_style_3": "remove_precursor_peak",
       "ursgal_style_1": "remove_precursor_peak"
     },
@@ -15540,6 +15910,24 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "comet_style_1": [
+        [
+          "off",
+          0
+        ],
+        [
+          "remove_precursor_charge",
+          1
+        ],
+        [
+          "remove_all_charges",
+          2
+        ],
+        [
+          "remove_phosphate_nl",
+          3
+        ]
+      ],
       "msfragger_style_3": [
         [
           "off",
@@ -15566,6 +15954,10 @@
         [
           "remove_all_charges",
           "remove_all_charges"
+        ],
+        [
+          "remove_phosphate_nl",
+          "remove_phosphate_nl"
         ]
       ]
     },
@@ -15605,40 +15997,19 @@
   },
   {
     "_id": 364,
-    "default_value": false,
-    "description": "Verbose msgfplus output",
+    "default_value": 0.0,
+    "description": "A floating point number indicating the minimum intensity value for the input peaks.",
     "key_translations": {
-      "msgfplus_style_1": "-verbose",
-      "ursgal_style_1": "msgfplus_verbose_output"
+      "comet_style_1": "minimum_intensity",
+      "ursgal_style_1": "minimum_intensity"
     },
-    "name": "msgfplus_verbose_output",
+    "name": "minimum_intensity",
     "tag": [
-      "output"
+      "spectrum"
     ],
-    "triggers_rerun": false,
-    "value_translations": {
-      "msgfplus_style_1": [
-        [
-          false,
-          0
-        ],
-        [
-          true,
-          1
-        ]
-      ],
-      "ursgal_style_1": [
-        [
-          false,
-          false
-        ],
-        [
-          true,
-          true
-        ]
-      ]
-    },
-    "value_type": "bool"
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "float"
   },
   {
     "_id": 365,
@@ -15936,5 +16307,587 @@
     "value_translations": {
     },
     "value_type": "list"
+  },
+  {
+    "_id": 382,
+    "default_value": "fasta",
+    "description": "Defines PSI Extended Fasta Format (PEFF). Default is 0 = normal fasta",
+    "key_translations": {
+      "comet_style_1": "peff_format",
+      "ursgal_style_1": "database_format"
+    },
+    "name": "database_format",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {
+      "comet_style_1": [
+        [
+          "fasta",
+          0
+        ],
+        [
+          "psi-mod",
+          1
+        ],
+        [
+          "unimod",
+          2
+        ],
+        [
+          "psi-mod_skip_aa",
+          3
+        ],
+        [
+          "unimod_skip_aa",
+          4
+        ],
+        [
+          "aa_skip_peff_mod",
+          5
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          "fasta",
+          "fasta"
+        ],
+        [
+          "psi-mod",
+          "psi-mod"
+        ],
+        [
+          "unimod",
+          "unimod"
+        ],
+        [
+          "psi-mod_skip_aa",
+          "psi-mod_skip_aa"
+        ],
+        [
+          "unimod_skip_aa",
+          "unimod_skip_aa"
+        ],
+        [
+          "aa_skip_peff_mod",
+          "aa_skip_peff_mod"
+        ]
+      ]
+    },
+    "value_type": "str"
+  },
+  {
+    "_id": 383,
+    "default_value": null,
+    "description": "A full or relative path to the OBO file used with a PEFF search. Ignored if peff_format = 0. There is no default for this parameter if it is missing.",
+    "key_translations": {
+      "comet_style_1": "peff_obo",
+      "ursgal_style_1": "peff_obo_path"
+    },
+    "name": "peff_obo_path",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
+  },
+  {
+    "_id": 384,
+    "default_value": false,
+    "description": "Controls whether the analyzed peptides must contain at least one variable modification. If True only modified peptides will be considered. Default is false, thus both modified and unmodified will be analyzed.",
+    "key_translations": {
+      "comet_style_1": "require_variable_mod",
+      "ursgal_style_1": "require_variable_mod"
+    },
+    "name": "require_variable_mod",
+    "tag": [
+      "modifications"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {
+      "comet_style_1": [
+        [
+          false,
+          0
+        ],
+        [
+          true,
+          1
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    "value_type": "bool"
+  },
+  {
+    "_id": 385,
+    "default_value": true,
+    "description": "A boolean flag this determines whether or not the expectation score (E-value) is reported in .out and SQT formats. Note that the E-value is always reported in pepXML output.",
+    "key_translations": {
+      "comet_style_1": "print_expect_score",
+      "ursgal_style_1": "print_expect_score"
+    },
+    "name": "print_expect_score",
+    "tag": [
+      "output"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {
+      "comet_style_1": [
+        [
+          true,
+          1
+        ],
+        [
+          false,
+          0
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          true,
+          true
+        ],
+        [
+          false,
+          false
+        ]
+      ]
+    },
+    "value_type": "bool"
+  },
+  {
+    "_id": 386,
+    "default_value": "None",
+    "description": "This parameter is only relevant for pepXML output and is used solely to annotate additional information in the output. It does not influence the search. The sample enzyme could be different from the search enzyme i.e. the sample enzyme is 'trypsin' yet the search enzyme is 'No-enzyme' for a non-specific search. Hence the need for this separate parameter.Default value is 'None', which is translated to 0.",
+    "key_translations": {
+      "comet_style_1": "sample_enzyme_number",
+      "ursgal_style_1": "sample_enzyme"
+    },
+    "name": "sample_enzyme",
+    "tag": [
+      "cleavage",
+      "database",
+      "protein"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {
+      "comet_style_1": [
+        [
+          "None",
+          "0"
+        ],
+        [
+          "trypsin",
+          "1"
+        ],
+        [
+          "trypsin/p",
+          "2"
+        ],
+        [
+          "lysc",
+          "3"
+        ],
+        [
+          "lysn",
+          "4"
+        ],
+        [
+          "argc",
+          "5"
+        ],
+        [
+          "aspn",
+          "6"
+        ],
+        [
+          "cnbr",
+          "7"
+        ],
+        [
+          "gluc",
+          "8"
+        ],
+        [
+          "pepsina",
+          "9"
+        ],
+        [
+          "chymotrypsin",
+          "10"
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          "None",
+          "None"
+        ],
+        [
+          "argc",
+          "argc"
+        ],
+        [
+          "aspn",
+          "aspn"
+        ],
+        [
+          "chymotrypsin",
+          "chymotrypsin"
+        ],
+        [
+          "chymotrypsin_p",
+          "chymotrypsin_p"
+        ],
+        [
+          "clostripain",
+          "clostripain"
+        ],
+        [
+          "cnbr",
+          "cnbr"
+        ],
+        [
+          "elastase",
+          "elastase"
+        ],
+        [
+          "formic_acid",
+          "formic_acid"
+        ],
+        [
+          "gluc",
+          "gluc"
+        ],
+        [
+          "gluc_bicarb",
+          "gluc_bicarb"
+        ],
+        [
+          "iodosobenzoate",
+          "iodosobenzoate"
+        ],
+        [
+          "lysc",
+          "lysc"
+        ],
+        [
+          "lysc_gluc",
+          "lysc_gluc"
+        ],
+        [
+          "lysc_p",
+          "lysc_p"
+        ],
+        [
+          "lysn",
+          "lysn"
+        ],
+        [
+          "lysn_promisc",
+          "lysn_promisc"
+        ],
+        [
+          "pepsina",
+          "pepsina"
+        ],
+        [
+          "protein_endopeptidase",
+          "protein_endopeptidase"
+        ],
+        [
+          "staph_protease",
+          "staph_protease"
+        ],
+        [
+          "trypsin",
+          "trypsin"
+        ],
+        [
+          "trypsin_cnbr",
+          "trypsin_cnbr"
+        ],
+        [
+          "trypsin_gluc",
+          "trypsin_gluc"
+        ],
+        [
+          "trypsin_p",
+          "trypsin_p"
+        ]
+      ]
+    },
+    "value_type": "str"
+  },
+  {
+    "_id": 387,
+    "default_value": true,
+    "description": "A boolean flag which defines if isoleucin and leucin should be treated the same in terms of peptide identification (default is true).",
+    "key_translations": {
+      "comet_style_1": "equal_I_and_L",
+      "ursgal_style_1": "equal_isoleucin_leucin"
+    },
+    "name": "equal_isoleucin_leucin",
+    "tag": [
+      "output"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {
+      "comet_style_1": [
+        [
+          true,
+          1
+        ],
+        [
+          false,
+          0
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          true,
+          true
+        ],
+        [
+          false,
+          false
+        ]
+      ]
+    },
+    "value_type": "bool"
+  },
+  {
+    "_id": 388,
+    "default_value": "singly_charged_peptide_mass",
+    "description": "This parameter controls how the peptide_mass_tolerance parameter is applied. That tolerance can be applied to the singly charged peptide mass (default=0) or it can be applied to the precursor m/z (1).",
+    "key_translations": {
+      "comet_style_1": "precursor_tolerance_type",
+      "ursgal_style_1": "precursor_tolerance_type"
+    },
+    "name": "precursor_tolerance_type",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {
+      "comet_style_1": [
+        [
+          "singly_charged_peptide_mass",
+          0
+        ],
+        [
+          "precursor_mz",
+          1
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          "singly_charged_peptide_mass",
+          "singly_charged_peptide_mass"
+        ],
+        [
+          "precursor_mz",
+          "precursor_mz"
+        ]
+      ]
+    },
+    "value_type": "str"
+  },
+  {
+    "_id": 389,
+    "default_value": "mass_bin",
+    "description": "This parameter specifies how theoretical fragment ion peaks are represented. A value of 0 indicates that the fast correlation score will be a sum of the intensities at each theortical fragment mass bin and half the intensity of each flanking bin. A value of 1 indicates that the fast correlation score will be the sum of the intensities at each theoretical fragment mass bin. ",
+    "key_translations": {
+      "comet_style_1": "theoretical_fragment_ions",
+      "ursgal_style_1": "theoretical_fragment_ions"
+    },
+    "name": "theoretical_fragment_ions",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {
+      "comet_style_1": [
+        [
+          "mass_bin_flank",
+          0
+        ],
+        [
+          "mass_bin",
+          1
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          "mass_bin_flank",
+          "mass_bin_flank"
+        ],
+        [
+          "mass_bin",
+          "mass_bin"
+        ]
+      ]
+    },
+    "value_type": "int"
+  },
+  {
+    "_id": 390,
+    "default_value": 20,
+    "description": "For non-proteotypic peptides, this parameter defines the maximum number of proteins (identifiers/accessions) to report. If set to -1, there will be no limit on the number of reported additional proteins. If set to 3 and a peptide is identified, which is present in 7 total protein sequences, there is one (first) reference protein and 6 additional duplicate proteins. This parameter controls how many of those 6 additional duplicate proteins are reported - in this case 2.",
+    "key_translations": {
+      "comet_style_1": "max_duplicate_proteins",
+      "ursgal_style_1": "max_duplicate_proteins"
+    },
+    "name": "max_duplicate_proteins",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "int"
+  },
+  {
+    "_id": 391,
+    "default_value": 0,
+    "description": "This parameter sets the maximum indexed database search run time for a scan/query in milliseconds. If set to 0, there is no limit to the search time.",
+    "key_translations": {
+      "comet_style_1": "max_index_runtime",
+      "ursgal_style_1": "max_index_runtime"
+    },
+    "name": "max_index_runtime",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "int"
+  },
+  {
+    "_id": 392,
+    "default_value": 100,
+    "description": "This parameter controls the number of peptide search results that are stored internally. Depending on what post-processing tools are used, one may want to set this to the same value as num_output_lines (id193).",
+    "key_translations": {
+      "comet_style_1": "comet_internal_num_results",
+      "ursgal_style_1": "comet_internal_num_results"
+    },
+    "name": "num_results",
+    "tag": [],
+    "triggers_rerun": false,
+    "value_translations": {},
+    "value_type": "int"
+  },
+  {
+    "_id": 393,
+    "default_value": "protein sequence database",
+    "description": "This parameter is used to search nucleotide sequence databases. It controls how the nucleotides are translated specifically which sets of reading frames are translated. Valid values are 0 through 9.",
+    "key_translations": {
+      "comet_style_1": "nucleotide_reading_frame",
+      "ursgal_style_1": "nucleotide_reading_frame"
+    },
+    "name": "nucleotide_reading_frame",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {
+      "comet_style_1": [
+        [
+          "protein sequence database",
+          0
+        ],
+        [
+          "1st forward reading frame",
+          1
+        ],
+        [
+          "2nd forward reading frame",
+          2
+        ],
+        [
+          "3rd forward reading frame",
+          3
+        ],
+        [
+          "1st reverse reading frame",
+          4
+        ],
+        [
+          "2nd reverse reading frame",
+          5
+        ],
+        [
+          "3rd reverse reading frame",
+          6
+        ],
+        [
+          "all 3 forward reading frames",
+          7
+        ],
+        [
+          "all 3 reverse reading frames",
+          8
+        ],
+        [
+          "all 6 reading frames",
+          9
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          "protein sequence database",
+          "protein sequence database"
+        ],
+        [
+          "1st forward reading frame",
+          "1st forward reading frame"
+        ],
+        [
+          "2nd forward reading frame",
+          "2nd forward reading frame"
+        ],
+        [
+          "3rd forward reading frame",
+          "3rd forward reading frame"
+        ],
+        [
+          "1st reverse reading frame",
+          "1st reverse reading frame"
+        ],
+        [
+          "2nd reverse reading frame",
+          "2nd reverse reading frame"
+        ],
+        [
+          "3rd reverse reading frame",
+          "3rd reverse reading frame"
+        ],
+        [
+          "all 3 forward reading frames",
+          "all 3 forward reading frames"
+        ],
+        [
+          "all 3 reverse reading frames",
+          "all 3 reverse reading frames"
+        ],
+        [
+          "all 6 reading frames",
+          "all 6 reading frames"
+        ]
+      ]
+    },
+    "value_type": "str"
+  },
+  {
+    "_id": 394,
+    "default_value": 1.5,
+    "description": "This parameter specifies the mass tolerance (in Da) around each precursor m/z that would be removed when the remove_precursor_peak option is invoked.",
+    "key_translations": {
+      "comet_style_1": "remove_precursor_tolerance",
+      "ursgal_style_1": "remove_precursor_tolerance"
+    },
+    "name": "remove_precursor_tolerance",
+    "tag": [
+      "spectrum"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "float"
   }
 ]
