@@ -943,7 +943,7 @@
   },
   {
     "_id": 50,
-    "default_value": "None",
+    "default_value": null,
     "description": "Defines if bigger scores are better (or the other way round), for scores that should be validated (see validation_score_field) e.g. by percolator, qvality",
     "key_translations": {
       "add_estimated_fdr_style_1": "bigger_scores_better",
@@ -964,7 +964,7 @@
     "value_translations": {
       "add_estimated_fdr_style_1": [
         [
-          "None",
+          null,
           null
         ],
         [
@@ -1162,7 +1162,7 @@
       ],
       "percolator_style_1": [
         [
-          "None",
+          null,
           null
         ],
         [
@@ -1360,7 +1360,7 @@
       ],
       "peptide_forest_style_1": [
         [
-          "None",
+          null,
           null
         ],
         [
@@ -1558,7 +1558,7 @@
       ],
       "qvality_style_1": [
         [
-          "None",
+          null,
           null
         ],
         [
@@ -1756,7 +1756,7 @@
       ],
       "sanitize_csv_style_1": [
         [
-          "None",
+          null,
           null
         ],
         [
@@ -1954,7 +1954,7 @@
       ],
       "svm_style_1": [
         [
-          "None",
+          null,
           null
         ],
         [
@@ -2144,8 +2144,8 @@
       ],
       "ursgal_style_1": [
         [
-          "None",
-          "None"
+          null,
+          null
         ],
         [
           "msamanda_1_0_0_5242",
@@ -8322,7 +8322,7 @@
   },
   {
     "_id": 162,
-    "default_value": "None",
+    "default_value": null,
     "description": "MODa specific protocol to enable scoring parameters for labeled samples.",
     "key_translations": {
       "moda_style_1": "Protocol",
@@ -8337,14 +8337,14 @@
     "value_translations": {
       "moda_style_1": [
         [
-          "None",
+          null,
           "NONE"
         ]
       ],
       "ursgal_style_1": [
         [
-          "None",
-          "None"
+          null,
+          null
         ]
       ]
     },
@@ -10690,8 +10690,8 @@
   },
   {
     "_id": 233,
-    "default_value": null,
-    "description": "    'None' : None",
+    "default_value": "",
+    "description": "prefix to add in front of filenames",
     "key_translations": {
       "ucontroller_style_1": "prefix",
       "ursgal_style_1": "prefix"
@@ -10702,7 +10702,7 @@
     ],
     "triggers_rerun": true,
     "value_translations": {},
-    "value_type": "None"
+    "value_type": "str"
   },
   {
     "_id": 234,
@@ -10918,7 +10918,7 @@
   },
   {
     "_id": 246,
-    "default_value": "None",
+    "default_value": null,
     "description": "name of the pickle that is used to map the retention time",
     "key_translations": {
       "mgf_to_rt_lookup_style_1": "rt_pickle_name",
@@ -14323,7 +14323,7 @@
   },
   {
     "_id": 289,
-    "default_value": "None",
+    "default_value": null,
     "description": "Accuracy of identifications (ident_file) are used to calculate the machine_offset_in_ppm. If \"all\" is selected, the median of all identifications will be used, for \"peptide\" the median of each peptide will be used.",
     "key_translations": {
       "sugarpy_run_style_1": "use_median_accuracy",
@@ -15965,7 +15965,7 @@
   },
   {
     "_id": 362,
-    "default_value": "None",
+    "default_value": null,
     "description": "Specifies source_path of a file",
     "key_translations": {
       "ursgal_style_1": "source_path",
@@ -15981,7 +15981,7 @@
   },
   {
     "_id": 363,
-    "default_value": "None",
+    "default_value": null,
     "description": "Specifies target_path of a file",
     "key_translations": {
       "ursgal_style_1": "target_path",
