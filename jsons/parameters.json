@@ -16299,7 +16299,7 @@
       "omssa_style_1": "unimod_xml_file_list",
       "unify_csv_style_1": "unimod_xml_file_list",
       "ursgal_style_1": "unimod_xml_file_list",
-      "xtandem_style_1": "unimod_xml_file_list",
+      "xtandem_style_1": "unimod_xml_file_list"
     },
     "name": "unimod_xml_file_list",
     "tag": [
