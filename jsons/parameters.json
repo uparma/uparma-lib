@@ -4,13 +4,15 @@
     "default_value": [],
     "description": " ",
     "key_translations": {
+      "limma_style_1": "experimental_design",
       "flash_lfq_style_1": "experiment_setup\nFormat:\n{\"1\": {\"FileName\": <filename as in identfile>, \"Condition\":<str>, \"Biorep\": <int>, \"Fraction\": <int>, \"Techrep\": <int>},\n\"2\": ....\n}\n",
       "ursgal_style_1": "experiment_setup"
     },
     "name": "experiment_setup",
     "tag": [
-      "quantification"
+      "experimental_setup"
     ],
+    "is_parameter_collection": true,
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "list"
