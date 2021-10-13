@@ -16893,5 +16893,105 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "float"
+  },
+  {
+    "_id": 395,
+    "default_value": "FileName",
+    "description": "File Name as required by experimental_setup collection.",
+    "key_translations": {
+      "flash_lfq_style_1": "FileName",
+      "limma_style_1": "exp_setup_file_name",
+      "ursgal_style_1": "exp_setup_file_name"
+    },
+    "name": "exp_setup_file_name",
+    "tag": [
+      "experiment_setup"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
+  },
+  {
+    "_id": 396,
+    "default_value": "CTRL",
+    "description": "Experimental condition as required by experimental_setup collection.",
+    "key_translations": {
+      "flash_lfq_style_1": "Condition",
+      "limma_style_1": "Condition",
+      "ursgal_style_1": "exp_setup_condition"
+    },
+    "name": "exp_setup_condition",
+    "tag": [
+      "experiment_setup"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
+  },
+  {
+    "_id": 397,
+    "default_value": "labelfree",
+    "description": "Experimental label as required by experimental_setup collection.",
+    "key_translations": {
+      "limma_style_1": "Label",
+      "ursgal_style_1": "exp_setup_label"
+    },
+    "name": "exp_setup_label",
+    "tag": [
+      "experiment_setup"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
+  },
+  {
+    "_id": 398,
+    "default_value": 1,
+    "description": "Biological replicate ID as required by experimental_setup collection.",
+    "key_translations": {
+      "flash_lfq_style_1": "Biorep",
+      "limma_style_1": "BiologicalReplicate",
+      "ursgal_style_1": "exp_setup_bio_rep"
+    },
+    "name": "exp_setup_bio_rep",
+    "tag": [
+      "experiment_setup"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "int"
+  },
+  {
+    "_id": 399,
+    "default_value": 1,
+    "description": "Technical replicate ID as required by experimental_setup collection.",
+    "key_translations": {
+      "flash_lfq_style_1": "Techrep",
+      "limma_style_1": "TechnicalReplicate",
+      "ursgal_style_1": "exp_setup_tech_rep"
+    },
+    "name": "exp_setup_tech_rep",
+    "tag": [
+      "experiment_setup"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "int"
+  },
+  {
+    "_id": 400,
+    "default_value": 1,
+    "description": "Fraction ID as required by experimental_setup collection.",
+    "key_translations": {
+      "flash_lfq_style_1": "Fraction",
+      "ursgal_style_1": "exp_setup_fraction"
+    },
+    "name": "exp_setup_fraction",
+    "tag": [
+      "experiment_setup"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "int"
   }
 ]
