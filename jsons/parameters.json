@@ -16900,10 +16900,10 @@
     "description": "File Name as required by experimental_setup collection.",
     "key_translations": {
       "flash_lfq_style_1": "FileName",
-      "limma_style_1": "exp_setup_file_name",
-      "ursgal_style_1": "exp_setup_file_name"
+      "limma_style_1": "FileName",
+      "ursgal_style_1": "exp-setup_filename"
     },
-    "name": "exp_setup_file_name",
+    "name": "exp-setup_filename",
     "tag": [
       "experiment_setup"
     ],
@@ -16918,9 +16918,9 @@
     "key_translations": {
       "flash_lfq_style_1": "Condition",
       "limma_style_1": "Condition",
-      "ursgal_style_1": "exp_setup_condition"
+      "ursgal_style_1": "exp-setup_condition"
     },
-    "name": "exp_setup_condition",
+    "name": "exp-setup_condition",
     "tag": [
       "experiment_setup"
     ],
@@ -16934,9 +16934,9 @@
     "description": "Experimental label as required by experimental_setup collection.",
     "key_translations": {
       "limma_style_1": "Label",
-      "ursgal_style_1": "exp_setup_label"
+      "ursgal_style_1": "exp-setup_label"
     },
-    "name": "exp_setup_label",
+    "name": "exp-setup_label",
     "tag": [
       "experiment_setup"
     ],
@@ -16951,9 +16951,9 @@
     "key_translations": {
       "flash_lfq_style_1": "Biorep",
       "limma_style_1": "BiologicalReplicate",
-      "ursgal_style_1": "exp_setup_bio_rep"
+      "ursgal_style_1": "exp-setup_biological_replicate"
     },
-    "name": "exp_setup_bio_rep",
+    "name": "exp-setup_biological_replicate",
     "tag": [
       "experiment_setup"
     ],
@@ -16968,9 +16968,9 @@
     "key_translations": {
       "flash_lfq_style_1": "Techrep",
       "limma_style_1": "TechnicalReplicate",
-      "ursgal_style_1": "exp_setup_tech_rep"
+      "ursgal_style_1": "exp-setup_technical_replicate"
     },
-    "name": "exp_setup_tech_rep",
+    "name": "exp-setup_technical_replicate",
     "tag": [
       "experiment_setup"
     ],
@@ -16984,9 +16984,9 @@
     "description": "Fraction ID as required by experimental_setup collection.",
     "key_translations": {
       "flash_lfq_style_1": "Fraction",
-      "ursgal_style_1": "exp_setup_fraction"
+      "ursgal_style_1": "exp-setup_fraction"
     },
-    "name": "exp_setup_fraction",
+    "name": "exp-setup_fraction",
     "tag": [
       "experiment_setup"
     ],
