@@ -3,6 +3,7 @@ import json
 import glob
 import os
 from collections import defaultdict as ddict
+import hashlib
 
 parameters_defined_fields = [
     "_id",
@@ -52,20 +53,21 @@ def jsons_are_readable(rcode, jsons):
     return jsons, rcode
 
 
-def parameter_ids_are_unique(rcode, jsons):
+def parameter_dicts_are_unique(rcode, jsons):
     """
     Check if _ids are unique
     """
     local_rcode = 0
     all_ids = set()
     for pos, entry in enumerate(jsons["parameters.json"]):
-        if entry["_id"] in all_ids:
+        entry_hash = hashlib.sha256(json.dumps(entry).encode("utf-8")).hexdigest()
+        if entry_hash in all_ids:
             uprint(
-                "{_id} already exists in parameters.json".format(**entry),
+                f"{entry} already exists in parameters.json",
                 ok=False,
             )
             local_rcode = 2
-        all_ids.add(entry["_id"])
+        all_ids.add(entry_hash)
     if len(all_ids) == pos:
         uprint("All _ids are unique")
     rcode += local_rcode
@@ -84,7 +86,7 @@ def param_styles_exist_in_styles(rcode, jsons):
         for style in entry["key_translations"].keys():
             if style not in all_styles:
                 uprint(
-                    "Style {0} (in _id {_id}) is not defined in styles.json".format(
+                    "Style {0} (in entry name: {name}) is not defined in styles.json".format(
                         style, **entry
                     ),
                     ok=False,
@@ -107,7 +109,7 @@ def params_have_defined_fields(rcode, jsons):
         for field in parameters_defined_fields:
             if field not in entry.keys():
                 uprint(
-                    "Parameter {_id} is missing {0}".format(
+                    "Parameter {name} is missing {0}".format(
                         field,
                         **entry,
                     ),
@@ -204,7 +206,9 @@ def key_translations_in_list_form_have_single_entries(rcode, jsons):
                 single_entries.add((style, translated_key))
     overlap = list_entries - single_entries
     if len(overlap) == 0:
-        uprint(f"all key translations in list form have single entries as well", ok=True)
+        uprint(
+            f"all key translations in list form have single entries as well", ok=True
+        )
     else:
         uprint("Those list key translations do not exist as single entries:", ok=False)
         for e in sorted(list(overlap)):
@@ -224,7 +228,7 @@ def main():
     rcode = 0  # success
     jsons = {}
     jsons, rcode = jsons_are_readable(rcode, jsons)
-    jsons, rcode = parameter_ids_are_unique(rcode, jsons)
+    jsons, rcode = parameter_dicts_are_unique(rcode, jsons)
     jsons, rcode = param_styles_exist_in_styles(rcode, jsons)
     jsons, rcode = params_have_defined_fields(rcode, jsons)
     jsons, rcode = styles_have_defined_fields(rcode, jsons)

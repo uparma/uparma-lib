@@ -1,6 +1,5 @@
 [
   {
-    "_id": 1,
     "default_value": [],
     "description": " ",
     "key_translations": {
@@ -18,7 +17,6 @@
     "value_type": "list"
   },
   {
-    "_id": 2,
     "default_value": 5,
     "description": "isotopic distribution tolerance in ppm",
     "key_translations": {
@@ -34,7 +32,6 @@
     "value_type": "float"
   },
   {
-    "_id": 3,
     "default_value": false,
     "description": "normalize intensity results",
     "key_translations": {
@@ -50,7 +47,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 4,
     "default_value": false,
     "description": "integrate peak areas",
     "key_translations": {
@@ -66,7 +62,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 5,
     "default_value": false,
     "description": "use only precursor charge state",
     "key_translations": {
@@ -82,7 +77,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 6,
     "default_value": false,
     "description": "Quantify PSMs identified in other runs",
     "key_translations": {
@@ -98,7 +92,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 7,
     "default_value": 1,
     "description": "Max RT differenence in minutes of peptides to be considered for MBR",
     "key_translations": {
@@ -114,7 +107,6 @@
     "value_type": "float"
   },
   {
-    "_id": 8,
     "default_value": false,
     "description": "Require MS/MS match in condition to consider quantification",
     "key_translations": {
@@ -130,7 +122,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 9,
     "default_value": false,
     "description": "Perform Bayesian protein fold change analysis",
     "key_translations": {
@@ -146,7 +137,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 10,
     "default_value": false,
     "description": "Control condition for bayesian fold change analysis",
     "key_translations": {
@@ -162,7 +152,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 11,
     "default_value": 0.1,
     "description": "fold-change cutoff for Bayesian protein fold-change analysis",
     "key_translations": {
@@ -178,7 +167,6 @@
     "value_type": "float"
   },
   {
-    "_id": 12,
     "default_value": 3000,
     "description": "number of markov-chain monte carlo iterations for the Bayesian protein fold-change analysis",
     "key_translations": {
@@ -194,7 +182,6 @@
     "value_type": "int"
   },
   {
-    "_id": 13,
     "default_value": 1000,
     "description": "number of markov-chain monte carlo burn in iterations for the Bayesian protein fold-change analysis",
     "key_translations": {
@@ -210,7 +197,6 @@
     "value_type": "int"
   },
   {
-    "_id": 14,
     "default_value": false,
     "description": "use shared peptides for protein quantification",
     "key_translations": {
@@ -226,7 +212,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 15,
     "default_value": 10,
     "description": "Random seed for random number generators",
     "key_translations": {
@@ -242,7 +227,6 @@
     "value_type": "int"
   },
   {
-    "_id": 16,
     "default_value": false,
     "description": " Use the picked-protein algorithm to infer protein PEP and FDR in Percolator",
     "key_translations": {
@@ -258,7 +242,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 17,
     "default_value": "tdc",
     "description": " Method to assign FDR and PEP to PSMs",
     "key_translations": {
@@ -277,7 +260,6 @@
     "value_type": "select"
   },
   {
-    "_id": 18,
     "default_value": true,
     "description": "verbosity for pyqms",
     "key_translations": {
@@ -293,7 +275,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 19,
     "default_value": "{0:.3f}",
     "description": "Defines the standard format string when\n            formatting labeling percentile float",
     "key_translations": {
@@ -312,7 +293,6 @@
     "value_type": "str"
   },
   {
-    "_id": 20,
     "default_value": 0.001,
     "description": " Set minmal abundance for elements used when building isotopologue library ",
     "key_translations": {
@@ -330,7 +310,6 @@
     "value_type": "float"
   },
   {
-    "_id": 21,
     "default_value": 0.01,
     "description": " Defines the relative minimum peak intensity within an isotopologue to be considered for matching ",
     "key_translations": {
@@ -348,7 +327,6 @@
     "value_type": "float"
   },
   {
-    "_id": 22,
     "default_value": 0.5,
     "description": " Minimum percentile overlap for matching labeled peaks ",
     "key_translations": {
@@ -366,7 +344,6 @@
     "value_type": "float"
   },
   {
-    "_id": 23,
     "default_value": 2,
     "description": " Min number of matched isotopologues to consider for quantification ",
     "key_translations": {
@@ -386,7 +363,6 @@
     "value_type": "int"
   },
   {
-    "_id": 24,
     "default_value": 100000.0,
     "description": " Tranform intensity by this factor for quantification ",
     "key_translations": {
@@ -405,7 +381,6 @@
     "value_type": "float"
   },
   {
-    "_id": 25,
     "default_value": 2000,
     "description": " Highest considered mz for quantification ",
     "key_translations": {
@@ -424,7 +399,6 @@
     "value_type": "float"
   },
   {
-    "_id": 26,
     "default_value": 150,
     "description": " lowest considered mz for quantification ",
     "key_translations": {
@@ -443,7 +417,6 @@
     "value_type": "float"
   },
   {
-    "_id": 27,
     "default_value": 1000,
     "description": " Factor which will be multiplied with mz before conversion to integer ",
     "key_translations": {
@@ -462,7 +435,6 @@
     "value_type": "float"
   },
   {
-    "_id": 28,
     "default_value": 0.2,
     "description": " Relative intensity error range (for the most intense peak) ",
     "key_translations": {
@@ -481,7 +453,6 @@
     "value_type": "float"
   },
   {
-    "_id": 29,
     "default_value": 1000.0,
     "description": " Float to int conversion precision ",
     "key_translations": {
@@ -501,7 +472,6 @@
     "value_type": "float"
   },
   {
-    "_id": 30,
     "default_value": 5000,
     "description": " Max number of molecules in one matching bin. ",
     "key_translations": {
@@ -519,7 +489,6 @@
     "value_type": "int"
   },
   {
-    "_id": 31,
     "default_value": null,
     "description": " AA which are always SILAC labeled and not considered for calculating partially labeling percentile ",
     "key_translations": {
@@ -538,7 +507,6 @@
     "value_type": "list"
   },
   {
-    "_id": 32,
     "default_value": true,
     "description": " Build index for faster access ",
     "key_translations": {
@@ -556,7 +524,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 33,
     "default_value": "PEP",
     "description": " Field which is used for scoring in pyqms_1_0_0 ",
     "key_translations": {
@@ -573,7 +540,6 @@
     "value_type": "str"
   },
   {
-    "_id": 34,
     "default_value": null,
     "description": " Molecules to quantify. Can be either a list of strings or a csv file ",
     "key_translations": {
@@ -590,7 +556,6 @@
     "value_type": "list"
   },
   {
-    "_id": 35,
     "default_value": 0.7,
     "description": " minimum required pyQms m_score for a quant event to be evaluated ",
     "key_translations": {
@@ -609,7 +574,6 @@
     "value_type": "float"
   },
   {
-    "_id": 36,
     "default_value": null,
     "description": " Molecules to quantify. Can be either a list of strings or a csv file ",
     "key_translations": {
@@ -625,7 +589,6 @@
     "value_type": "list"
   },
   {
-    "_id": 37,
     "default_value": 0.4,
     "description": " weighting factor for pyQms mz score ",
     "key_translations": {
@@ -644,7 +607,6 @@
     "value_type": "float"
   },
   {
-    "_id": 38,
     "default_value": 2,
     "description": "MS level on which that is taken into account, e.g. for spectrum extraction, matching of evidences, etc.",
     "key_translations": {
@@ -665,7 +627,6 @@
     "value_type": "int"
   },
   {
-    "_id": 39,
     "default_value": [
       0.0
     ],
@@ -684,7 +645,6 @@
     "value_type": "list"
   },
   {
-    "_id": 40,
     "default_value": {
       "13C": 0.996,
       "15N": 0.994,
@@ -707,7 +667,6 @@
     "value_type": "dict"
   },
   {
-    "_id": 41,
     "default_value": null,
     "description": " Trivial name lookup mapping molecules to a trivial name ",
     "key_translations": {
@@ -724,7 +683,6 @@
     "value_type": "dict"
   },
   {
-    "_id": 42,
     "default_value": 1,
     "description": " Retention time border tolerance (in min) for curating RT windows ",
     "key_translations": {
@@ -743,7 +701,6 @@
     "value_type": "float"
   },
   {
-    "_id": 43,
     "default_value": "13312m",
     "description": "Set maximum Java heap size (used RAM)",
     "key_translations": {
@@ -765,7 +722,6 @@
     "value_type": "str"
   },
   {
-    "_id": 44,
     "default_value": {
       "J": {
         "original_aa": [
@@ -798,7 +754,6 @@
     "value_type": "dict"
   },
   {
-    "_id": 45,
     "default_value": false,
     "description": "If True, multiple PSMs for one spectrum can be reported if their score difference is below the threshold. If False, all PSMs for one spectrum are removed if the score difference between the best and secondbest PSM is not above the threshold, i.e. if there are conflicting PSMs with similar scores.",
     "key_translations": {
@@ -814,7 +769,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 46,
     "default_value": false,
     "description": " Static mods are not considered ",
     "key_translations": {
@@ -884,7 +838,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 47,
     "default_value": 1000,
     "description": "m/z value that is used as basis for the conversion from ppm to Da",
     "key_translations": {
@@ -908,7 +861,6 @@
     "value_type": "int"
   },
   {
-    "_id": 48,
     "default_value": 100000,
     "description": "Sets the number of sequences loaded in as a batch from the database file",
     "key_translations": {
@@ -926,7 +878,6 @@
     "value_type": "int"
   },
   {
-    "_id": 49,
     "default_value": 2000,
     "description": "sets the number of spectra loaded into memory as a batch",
     "key_translations": {
@@ -944,7 +895,6 @@
     "value_type": "int"
   },
   {
-    "_id": 50,
     "default_value": null,
     "description": "Defines if bigger scores are better (or the other way round), for scores that should be validated (see validation_score_field) e.g. by percolator, qvality",
     "key_translations": {
@@ -2346,7 +2296,6 @@
     "value_type": "select"
   },
   {
-    "_id": 51,
     "default_value": 17.00305,
     "description": "The mass added to the peptide C-terminus by protein cleavage",
     "key_translations": {
@@ -2363,7 +2312,6 @@
     "value_type": "float"
   },
   {
-    "_id": 52,
     "default_value": 1.00794,
     "description": "The mass added to the peptide N-terminus by protein cleavage",
     "key_translations": {
@@ -2380,7 +2328,6 @@
     "value_type": "float"
   },
   {
-    "_id": 53,
     "default_value": false,
     "description": " Specifies the trimming of a protein N-terminal methionine as a variable modification ",
     "key_translations": {
@@ -2459,7 +2406,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 54,
     "default_value": false,
     "description": "Compensate for very small database files.",
     "key_translations": {
@@ -2496,7 +2442,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 55,
     "default_value": "com.compomics.util.experiment.identification.protein_inference.executable.PeptideMapping",
     "description": "Default value accesses the PeptideMapper tool, other tools are not implemented/covered yet",
     "key_translations": {
@@ -2512,7 +2457,6 @@
     "value_type": "str"
   },
   {
-    "_id": 56,
     "default_value": "compomics_utilities_4_11_5",
     "description": "Defines the compomics version to use",
     "key_translations": {
@@ -2528,7 +2472,6 @@
     "value_type": "str"
   },
   {
-    "_id": 57,
     "default_value": true,
     "description": "Compress raw search result to .gz: True or False",
     "key_translations": {
@@ -2958,7 +2901,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 58,
     "default_value": false,
     "description": "Compute xcorr",
     "key_translations": {
@@ -2995,7 +2937,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 59,
     "default_value": 0.5,
     "description": "Probability of consecutive ion (used in correlation correction)",
     "key_translations": {
@@ -3011,7 +2952,6 @@
     "value_type": "float"
   },
   {
-    "_id": 60,
     "default_value": [
       "Sequence",
       "Modifications"
@@ -3030,7 +2970,6 @@
     "value_type": "list"
   },
   {
-    "_id": 61,
     "default_value": true,
     "description": "the number of unique hits for each identifier is given in separate columns for each raw file (file name as defiened in Spectrum Title)",
     "key_translations": {
@@ -3046,7 +2985,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 62,
     "default_value": false,
     "description": "If True, the header of the identifier column is \"rownames\". If False, the joined identifier header name will be used",
     "key_translations": {
@@ -3062,7 +3000,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 63,
     "default_value": -1,
     "description": "Number of used cpus/threads\n\n    -1 : 'max - 1'\n    >0 : cpu num",
     "key_translations": {
@@ -3184,7 +3121,6 @@
     "value_type": "int _uevaluation_req"
   },
   {
-    "_id": 64,
     "default_value": "nK  nK  138.0680742 BS3",
     "description": "Cross-link and mono-link masses allowed.\nMay have more than one of each parameter.\nFormat for cross_link is: \n\n**[amino acids] [amino acids] [mass mod] [identifier]**\n\nOne or more amino acids (uppercase only!!) can be specified for each linkage moiety. Use lowercase 'n' or 'c' to indicate protein N-terminus or C-terminus",
     "key_translations": {
@@ -3200,7 +3136,6 @@
     "value_type": "str"
   },
   {
-    "_id": 65,
     "default_value": null,
     "description": "Rules are defined as list of lists with three elements:\n\n1. the column name/csv fieldname,\n\n2. the rule,\n\n3. the value which should be compared\n\ne.g.: ['Is decoy', 'equals', 'false']",
     "key_translations": {
@@ -3219,7 +3154,6 @@
     "value_type": "list"
   },
   {
-    "_id": 66,
     "default_value": null,
     "description": "Path to database file containing protein sequences in fasta format.",
     "key_translations": {
@@ -3255,7 +3189,6 @@
     "value_type": "str"
   },
   {
-    "_id": 67,
     "default_value": "all",
     "description": "If a taxonomy ID is specified, only the corresponding protein sequences from the fasta database are included in the search.",
     "key_translations": {
@@ -3285,7 +3218,6 @@
     "value_type": "str"
   },
   {
-    "_id": 68,
     "default_value": "shuffle_peptide",
     "description": "Decoy database: creates a target decoy database based on shuffling of peptides (shuffle_peptide) or complete reversing the protein sequence (reverse_protein).",
     "key_translations": {
@@ -3301,7 +3233,6 @@
     "value_type": "select"
   },
   {
-    "_id": 69,
     "default_value": "decoy_",
     "description": "decoy-specific tag to differentiate between targets and decoys",
     "key_translations": {
@@ -3329,7 +3260,6 @@
     "value_type": "str"
   },
   {
-    "_id": 70,
     "default_value": "perform_deisotoping",
     "description": "Perform Deisotoping for MS2 spectra. Options are: \"none\", \"deisotope_with_singleton_charge_one\", \"perform_deisotoping\"",
     "key_translations": {
@@ -3381,7 +3311,6 @@
     "value_type": "select"
   },
   {
-    "_id": 71,
     "default_value": [
       "grouped_psms"
     ],
@@ -3399,7 +3328,6 @@
     "value_type": "list"
   },
   {
-    "_id": 72,
     "default_value": "cid_trypsin",
     "description": "PepNovo model used for de novo sequencing. Based on the enzyme and fragmentation type. Currently only CID_IT_TRYP available.",
     "key_translations": {
@@ -3429,7 +3357,6 @@
     "value_type": "select"
   },
   {
-    "_id": 73,
     "default_value": "default",
     "description": "Directory containing the model files de novo sequencing. Use \"default\" for the default folder of the engine (DeepNovo: <deepnovo_resources>/train.example; PepNovo: resources/<platform>/<architecture>/pepnovo_3_1)",
     "key_translations": {
@@ -3460,7 +3387,6 @@
     "value_type": "str"
   },
   {
-    "_id": 74,
     "default_value": false,
     "description": "Engine creates an own decoy database. Not recommended, because a target decoy database should be generated independently from the search engine, e.g. by using the uNode generate_target_decoy_1_0_0",
     "key_translations": {
@@ -3552,7 +3478,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 75,
     "default_value": true,
     "description": "Create folders for the output of engines that allow this option in their META_INFO ('create_own_folder' : True). True or False",
     "key_translations": {
@@ -3568,7 +3493,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 76,
     "default_value": "trypsin",
     "description": "Enzyme: Rule of protein cleavagePossible cleavages are :\n    argc           -> [R]|{P}\n    aspn           -> [X]|[D]\n    aspn_gluc\n    chymotrypsin   -> [FMWY]|{P}\n    chymotrypsin_p -> [FMWY]|[X]\n    cnbr           -> [M]|{P}\n    elastase       -> [AGILV]|{P}\n    formic_acid    -> [D]|{P}\n    gluc\n    lysc\n    lysc_p\n    lysn\n    no_cleavage\n    nonspecific\n    pepsina\n    semi_chymotrypsin\n    semi_gluc\n    semi_tryptic\n    thermolysin_p\n    top_down\n    trypsin\n    trypsin_chymotrypsin\n    trypsin_cnbr\n    trypsin_p\n    lysc_gluc",
     "key_translations": {
@@ -3924,7 +3848,8 @@
           "D;after;P"
         ],
         [
-          "gluc", "DE;after;P"
+          "gluc",
+          "DE;after;P"
         ],
         [
           "gluc_bicarb",
@@ -5031,7 +4956,6 @@
     "value_type": "select"
   },
   {
-    "_id": 77,
     "default_value": 0.01,
     "description": "Target PSMs with a lower FDR than this threshold will be used as a positive training set for SVM post-processing",
     "key_translations": {
@@ -5048,7 +4972,6 @@
     "value_type": "float"
   },
   {
-    "_id": 78,
     "default_value": [],
     "description": "List of modifications (unimod name) that are not allowed to occur at the C-terminus of a peptide, e.g. ['GG']",
     "key_translations": {
@@ -5063,7 +4986,6 @@
     "value_type": "list"
   },
   {
-    "_id": 79,
     "default_value": "I,U",
     "description": "Aminoacids that are not allowed during/taken into account during de_novo searches. Given as a string of comma seperated aminoacids (single letter code)",
     "key_translations": {
@@ -5079,7 +5001,6 @@
     "value_type": "str"
   },
   {
-    "_id": 80,
     "default_value": false,
     "description": "If set 'True', engines are forced to re-run although no node-related parameters have changed",
     "key_translations": {
@@ -5095,7 +5016,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 81,
     "default_value": [
       0.0,
       0.0
@@ -5119,7 +5039,6 @@
     "value_type": "list"
   },
   {
-    "_id": 82,
     "default_value": 20,
     "description": "Mass tolerance of measured and calculated fragment ions",
     "key_translations": {
@@ -5149,7 +5068,6 @@
     "value_type": "int"
   },
   {
-    "_id": 83,
     "default_value": "ppm",
     "description": "Fragment mass tolerance unit: available in ppm (parts-per-millon), da (Dalton) or mmu (Milli mass unit)",
     "key_translations": {
@@ -5266,7 +5184,6 @@
     "value_type": "select"
   },
   {
-    "_id": 84,
     "default_value": "monoisotopic",
     "description": "Fragment mass type: monoisotopic or average",
     "key_translations": {
@@ -5316,7 +5233,6 @@
     "value_type": "select"
   },
   {
-    "_id": 85,
     "default_value": 4,
     "description": "Maximum fragment ion charge to search.",
     "key_translations": {
@@ -5337,7 +5253,6 @@
     "value_type": "int"
   },
   {
-    "_id": 86,
     "default_value": "hcd",
     "description": "Used fragmentation method, e.g. collision-induced dissociation (cid), electron-capture dissociation (ecd), electron-transfer dissociation (etd), Higher-energy C-trap dissociation (hcd)",
     "key_translations": {
@@ -5473,7 +5388,6 @@
     "value_type": "select"
   },
   {
-    "_id": 87,
     "default_value": 150,
     "description": "Minimal considered fragment ion m/z",
     "key_translations": {
@@ -5490,7 +5404,6 @@
     "value_type": "int"
   },
   {
-    "_id": 88,
     "default_value": 1024,
     "description": "Blocksize for ftp download",
     "key_translations": {
@@ -5507,7 +5420,6 @@
     "value_type": "int"
   },
   {
-    "_id": 89,
     "default_value": null,
     "description": "ftp folder that should be downloaded",
     "key_translations": {
@@ -5524,7 +5436,6 @@
     "value_type": "str"
   },
   {
-    "_id": 90,
     "default_value": null,
     "description": "Only files with the defined file extension are downloaded with ftp download",
     "key_translations": {
@@ -5541,7 +5452,6 @@
     "value_type": "str"
   },
   {
-    "_id": 91,
     "default_value": null,
     "description": "Login name/user for any server e.g. \"PASS00269\" in peptideatlas.orgftp download\n    '' : None",
     "key_translations": {
@@ -5558,7 +5468,6 @@
     "value_type": "str"
   },
   {
-    "_id": 92,
     "default_value": null,
     "description": "Maximum number of files that will be downloaded\n     0 : No Limitation",
     "key_translations": {
@@ -5575,7 +5484,6 @@
     "value_type": "int"
   },
   {
-    "_id": 93,
     "default_value": null,
     "description": "Default ftp download path\n    '' : None",
     "key_translations": {
@@ -5592,7 +5500,6 @@
     "value_type": "str"
   },
   {
-    "_id": 94,
     "default_value": null,
     "description": "ftp download password\n    '' : None",
     "key_translations": {
@@ -5608,7 +5515,6 @@
     "value_type": "str_password"
   },
   {
-    "_id": 95,
     "default_value": null,
     "description": "host/url of server to upload/download to/from,  will fail if it is not set by the user\n    '' : None",
     "key_translations": {
@@ -5625,7 +5531,6 @@
     "value_type": "str"
   },
   {
-    "_id": 96,
     "default_value": null,
     "description": "Translate output headers into Ursgal unify_csv style headers\n    'None' : None",
     "key_translations": {
@@ -5654,15 +5559,42 @@
     "triggers_rerun": true,
     "value_translations": {
       "xtandem_style_1": [
-        ["X!Tandem:delta", "delta"],
-        ["X!Tandem:nextscore", "nextscore"],
-        ["X!Tandem:y_score", "y_score"],
-        ["X!Tandem:y_ions", "y_ions"],
-        ["X!Tandem:b_score", "b_score"],
-        ["X!Tandem:b_ions", "b_ions"],
-        ["Sequence", "seq"],
-        ["Charge", "z"],
-        ["X!Tandem:Hyperscore", "hyperscore"]
+        [
+          "X!Tandem:delta",
+          "delta"
+        ],
+        [
+          "X!Tandem:nextscore",
+          "nextscore"
+        ],
+        [
+          "X!Tandem:y_score",
+          "y_score"
+        ],
+        [
+          "X!Tandem:y_ions",
+          "y_ions"
+        ],
+        [
+          "X!Tandem:b_score",
+          "b_score"
+        ],
+        [
+          "X!Tandem:b_ions",
+          "b_ions"
+        ],
+        [
+          "Sequence",
+          "seq"
+        ],
+        [
+          "Charge",
+          "z"
+        ],
+        [
+          "X!Tandem:Hyperscore",
+          "hyperscore"
+        ]
       ],
       "deepnovo_style_1": [
         [
@@ -6768,7 +6700,6 @@
     "value_type": "str"
   },
   {
-    "_id": 97,
     "default_value": "Protein",
     "description": "The name of the annotation to plot in the heatmap",
     "key_translations": {
@@ -6785,7 +6716,6 @@
     "value_type": "str"
   },
   {
-    "_id": 98,
     "default_value": "classic",
     "description": "Box style for the heatmap",
     "key_translations": {
@@ -6801,7 +6731,6 @@
     "value_type": "str"
   },
   {
-    "_id": 99,
     "default_value": "Spectral",
     "description": "Color gradient for the heatmap",
     "key_translations": {
@@ -6817,7 +6746,6 @@
     "value_type": "str"
   },
   {
-    "_id": 100,
     "default_value": {},
     "description": "The position of each column in the heatmap is given as a dict with keys corresponding to the position and values correspondingto the column name, e.g: {\"0\" : \"Ratio1_2\", \"1\" : \"Ratio2_3\"}",
     "key_translations": {
@@ -6833,7 +6761,6 @@
     "value_type": "dict"
   },
   {
-    "_id": 101,
     "default_value": "_std",
     "description": "The suffix to identify the value error holding columns",
     "key_translations": {
@@ -6849,7 +6776,6 @@
     "value_type": "str"
   },
   {
-    "_id": 102,
     "default_value": "Protein",
     "description": "The name of the identifier to plot in the heatmap",
     "key_translations": {
@@ -6865,7 +6791,6 @@
     "value_type": "str"
   },
   {
-    "_id": 103,
     "default_value": 3,
     "description": "Maximum value for the color gradient",
     "key_translations": {
@@ -6881,7 +6806,6 @@
     "value_type": "int"
   },
   {
-    "_id": 104,
     "default_value": -3,
     "description": "Minimum vaue for the color gradient",
     "key_translations": {
@@ -6897,7 +6821,6 @@
     "value_type": "int"
   },
   {
-    "_id": 105,
     "default_value": "_mean",
     "description": "The suffix to identify the value columns, which should be plotted",
     "key_translations": {
@@ -6913,7 +6836,6 @@
     "value_type": "str"
   },
   {
-    "_id": 106,
     "default_value": ".u.json",
     "description": "Exension for helper files",
     "key_translations": {
@@ -6929,7 +6851,6 @@
     "value_type": "str"
   },
   {
-    "_id": 107,
     "default_value": null,
     "description": "Default http download path\n    '' : None",
     "key_translations": {
@@ -6946,7 +6867,6 @@
     "value_type": "str"
   },
   {
-    "_id": 108,
     "default_value": null,
     "description": "http download URL, will fail if it is not set by the user\n    '' : None",
     "key_translations": {
@@ -6962,7 +6882,6 @@
     "value_type": "str"
   },
   {
-    "_id": 109,
     "default_value": "q_exactive",
     "description": "Type of mass spectrometer (used to determine the scoring model)",
     "key_translations": {
@@ -7074,7 +6993,6 @@
     "value_type": "select"
   },
   {
-    "_id": 110,
     "default_value": [
       "Protein ID"
     ],
@@ -7092,7 +7010,6 @@
     "value_type": "list"
   },
   {
-    "_id": 111,
     "default_value": "positive",
     "description": "The ion mode that has been used for acquiring mass spectra (positive or negative)",
     "key_translations": {
@@ -7129,7 +7046,6 @@
     "value_type": "select"
   },
   {
-    "_id": 112,
     "default_value": 0.0,
     "description": "Low intensity cutoff as a fraction of max peak",
     "key_translations": {
@@ -7149,7 +7065,6 @@
     "value_type": "float"
   },
   {
-    "_id": 113,
     "default_value": 0.0,
     "description": "Minimum relative intensity (relative to base peak height) for the sum of all diagnostic fragment ion intensities",
     "key_translations": {
@@ -7165,7 +7080,6 @@
     "value_type": "float"
   },
   {
-    "_id": 114,
     "default_value": ".u.json",
     "description": "Exension for .json files",
     "key_translations": {
@@ -7181,7 +7095,6 @@
     "value_type": "str"
   },
   {
-    "_id": 115,
     "default_value": true,
     "description": "X!tandem searches for peptides broken between Asp (D) and Pro (P) for every enzyme. Therefore, it reports peptides that are not enzymatically cleaved. Specify, if those should be kept during unify_csv or removed.",
     "key_translations": {
@@ -7198,7 +7111,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 116,
     "default_value": "rbf",
     "description": "The kernel function of the support vector machine used for PSM post-processing ('rbf', 'linear', 'poly' or 'sigmoid')",
     "key_translations": {
@@ -7215,7 +7127,6 @@
     "value_type": "select"
   },
   {
-    "_id": 117,
     "default_value": false,
     "description": "MS1 are centroided data: True or False",
     "key_translations": {
@@ -7252,7 +7163,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 118,
     "default_value": 30000,
     "description": "MS1 resolution",
     "key_translations": {
@@ -7269,7 +7179,6 @@
     "value_type": "int"
   },
   {
-    "_id": 119,
     "default_value": true,
     "description": "MS2 are centroided data: True or False",
     "key_translations": {
@@ -7306,7 +7215,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 120,
     "default_value": 25000,
     "description": "MS2 resolution",
     "key_translations": {
@@ -7323,7 +7231,6 @@
     "value_type": "int"
   },
   {
-    "_id": 121,
     "default_value": [
       "Protein ID"
     ],
@@ -7341,7 +7248,6 @@
     "value_type": "list"
   },
   {
-    "_id": 122,
     "default_value": 0,
     "description": "To search differential modifications on cross-linked peptides: diff_mods_on_xl = 1",
     "key_translations": {
@@ -7358,7 +7264,6 @@
     "value_type": "int"
   },
   {
-    "_id": 123,
     "default_value": 0,
     "description": "Values between 0 and 1 to describe 18O APE \nFor example, 0.25 equals 25 APE",
     "key_translations": {
@@ -7374,7 +7279,6 @@
     "value_type": "float"
   },
   {
-    "_id": 124,
     "default_value": false,
     "description": "Activate (True) or deactivate (False) output as pepXML",
     "key_translations": {
@@ -7422,7 +7326,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 125,
     "default_value": true,
     "description": "Activate (True) or deactivate (False) output for percolator",
     "key_translations": {
@@ -7470,7 +7373,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 126,
     "default_value": 0.0,
     "description": "fragment_bin_offset and fragment_bin_size\ninfluence algorithm precision and memory usage.\nThey should be set appropriately for the data analyzed.\nFor ion trap ms/ms:  1.0005 size, 0.4 offset\nFor high res ms/ms:    0.03 size, 0.0 offset",
     "key_translations": {
@@ -7488,7 +7390,6 @@
     "value_type": "float"
   },
   {
-    "_id": 127,
     "default_value": 0.03,
     "description": "fragment_bin_offset and fragment_bin_size\ninfluence algorithm precision and memory usage.\nThey should be set appropriately for the data analyzed.\nFor ion trap ms/ms:  1.0005 size, 0.4 offset\nFor high res ms/ms:    0.03 size, 0.0 offset",
     "key_translations": {
@@ -7506,7 +7407,6 @@
     "value_type": "float"
   },
   {
-    "_id": 128,
     "default_value": 0,
     "description": "To search for mono-linked cross-linker on cross-linked peptides: mono_links_on_xl = 1",
     "key_translations": {
@@ -7523,7 +7423,6 @@
     "value_type": "int"
   },
   {
-    "_id": 129,
     "default_value": "2.08",
     "description": "Defines the output format of Kojak for Percolator",
     "key_translations": {
@@ -7539,7 +7438,6 @@
     "value_type": "str"
   },
   {
-    "_id": 130,
     "default_value": "supplement",
     "description": "prefer precursor mono mass predicted by instrument software.\nAvailable values:\n\n    ignore_previous: previous predictions are ignored\n\n    only_previous: only previous predictions are used\n\n    supplement: predictions are supplemented with additional analysis",
     "key_translations": {
@@ -7584,7 +7482,6 @@
     "value_type": "select"
   },
   {
-    "_id": 131,
     "default_value": false,
     "description": "True, if spectrum should be processed by kojak",
     "key_translations": {
@@ -7621,7 +7518,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 132,
     "default_value": 300,
     "description": "number of top scoring single peptides to combine in relaxed analysis",
     "key_translations": {
@@ -7637,7 +7533,6 @@
     "value_type": "int"
   },
   {
-    "_id": 133,
     "default_value": 5,
     "description": "Max protein name for output. For kojak, this defines the number of character (0=off), for TagGraph the number of protein names",
     "key_translations": {
@@ -7654,7 +7549,6 @@
     "value_type": "int"
   },
   {
-    "_id": 134,
     "default_value": false,
     "description": "Generally speeds up analysis. Special cases cause reverse effect, thus this is allowed to be disabled. True if it should be used.",
     "key_translations": {
@@ -7691,7 +7585,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 135,
     "default_value": "14N",
     "description": "15N if the corresponding amino acid labeling was applied",
     "key_translations": {
@@ -7742,7 +7635,6 @@
     "value_type": "select"
   },
   {
-    "_id": 136,
     "default_value": 0.0,
     "description": "Machine offset, m/z values will be corected/shifted by the given value.",
     "key_translations": {
@@ -7763,7 +7655,6 @@
     "value_type": "float"
   },
   {
-    "_id": 137,
     "default_value": 150,
     "description": "Maximum number of peaks from a spectrum used.",
     "key_translations": {
@@ -7787,7 +7678,6 @@
     "value_type": "int"
   },
   {
-    "_id": 138,
     "default_value": 2,
     "description": "Maximum number of missed cleavages per peptide",
     "key_translations": {
@@ -7820,7 +7710,6 @@
     "value_type": "int"
   },
   {
-    "_id": 139,
     "default_value": 6,
     "description": "Maximal number of variable modification alternatives, given as C in 2^C",
     "key_translations": {
@@ -7836,7 +7725,6 @@
     "value_type": "int"
   },
   {
-    "_id": 140,
     "default_value": 200,
     "description": "Maximum modification size to consider (in Da)",
     "key_translations": {
@@ -7853,7 +7741,6 @@
     "value_type": "int"
   },
   {
-    "_id": 141,
     "default_value": 3,
     "description": "Maximal number of modifications per peptide",
     "key_translations": {
@@ -7874,7 +7761,6 @@
     "value_type": "int"
   },
   {
-    "_id": 142,
     "default_value": 5,
     "description": "Minimal number of modifications per peptide",
     "key_translations": {
@@ -7890,7 +7776,6 @@
     "value_type": "int"
   },
   {
-    "_id": 143,
     "default_value": 6,
     "description": " Maximum number of potential modification sites for a specific modification per peptide. Peptides with a higher number are discarded, due to a too high complexity. ",
     "key_translations": {
@@ -7907,7 +7792,6 @@
     "value_type": "int"
   },
   {
-    "_id": 144,
     "default_value": 1,
     "description": " Maximum number of same neutral losses per peptide regarding water and ammonia losses. ",
     "key_translations": {
@@ -7923,7 +7807,6 @@
     "value_type": "int"
   },
   {
-    "_id": 145,
     "default_value": 2,
     "description": " Maximum number of same neutral losses per peptide regarding modification specific losses.  ",
     "key_translations": {
@@ -7939,7 +7822,6 @@
     "value_type": "int"
   },
   {
-    "_id": 146,
     "default_value": 0,
     "description": "Max number of ions in each series being searched\n     0 : all",
     "key_translations": {
@@ -7955,7 +7837,6 @@
     "value_type": "int"
   },
   {
-    "_id": 147,
     "default_value": 3,
     "description": " Maximum number of residues that can be occupied by each variable modification (maximum of 5) ",
     "key_translations": {
@@ -7974,7 +7855,6 @@
     "value_type": "int"
   },
   {
-    "_id": 148,
     "default_value": {},
     "description": "Maximal number of modification sites per peptide for a specific modification, given as a dictionary: \n    {unimod_name : number}",
     "key_translations": {
@@ -7989,7 +7869,6 @@
     "value_type": "dict"
   },
   {
-    "_id": 149,
     "default_value": 1.0,
     "description": "Highest e-value for reported peptides",
     "key_translations": {
@@ -8007,7 +7886,6 @@
     "value_type": "float"
   },
   {
-    "_id": 150,
     "default_value": 40,
     "description": "Maximal length of a peptide",
     "key_translations": {
@@ -8033,7 +7911,6 @@
     "value_type": "int"
   },
   {
-    "_id": 151,
     "default_value": 1000,
     "description": "Maximal peptide variants, new default defined by msfragger",
     "key_translations": {
@@ -8053,7 +7930,6 @@
     "value_type": "int"
   },
   {
-    "_id": 152,
     "default_value": null,
     "description": "List of paths to input .mgf files\n    '' : None",
     "key_translations": {
@@ -8069,7 +7945,6 @@
     "value_type": "list"
   },
   {
-    "_id": 153,
     "default_value": null,
     "description": "Path to input .mgf file\n    '' : None",
     "key_translations": {
@@ -8099,7 +7974,6 @@
     "value_type": "str"
   },
   {
-    "_id": 154,
     "default_value": -200,
     "description": "Minimum modification size to consider (in Da)",
     "key_translations": {
@@ -8116,7 +7990,6 @@
     "value_type": "int"
   },
   {
-    "_id": 155,
     "default_value": -1e-10,
     "description": "Lowest score for reported peptides. If set to '-1e-10', default values fo each engine will be used.\n    -1e-10 = 'default'",
     "key_translations": {
@@ -8153,7 +8026,6 @@
     "value_type": "float"
   },
   {
-    "_id": 156,
     "default_value": 6,
     "description": "Minimal length of a peptide",
     "key_translations": {
@@ -8179,7 +8051,6 @@
     "value_type": "int"
   },
   {
-    "_id": 157,
     "default_value": 1,
     "description": "Minimum number of precursors that match a spectrum.",
     "key_translations": {
@@ -8196,7 +8067,6 @@
     "value_type": "int"
   },
   {
-    "_id": 158,
     "default_value": 4,
     "description": "Mimimum number of matched ions required for a peptide to be scored, MSFragger default: 4",
     "key_translations": {
@@ -8218,7 +8088,6 @@
     "value_type": "int"
   },
   {
-    "_id": 159,
     "default_value": 5,
     "description": "Mimimum number of peaks in the spectrum to be considered. MSFragger default: 15",
     "key_translations": {
@@ -8240,7 +8109,6 @@
     "value_type": "int"
   },
   {
-    "_id": 160,
     "default_value": "no_limit",
     "description": "Allowed number of modifications per peptide in ModA BlindMode. \nAvailable values:    no_modification\n    one_modification\n    no_limit",
     "key_translations": {
@@ -8285,7 +8153,6 @@
     "value_type": "select"
   },
   {
-    "_id": 161,
     "default_value": true,
     "description": "If True, fragment tolerance is set as the same as precursor tolerance, when the peptide mass is significantly small, such that fragment tolerance is larger than precursor tolerance",
     "key_translations": {
@@ -8323,7 +8190,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 162,
     "default_value": null,
     "description": "MODa specific protocol to enable scoring parameters for labeled samples.",
     "key_translations": {
@@ -8353,13 +8219,12 @@
     "value_type": "select"
   },
   {
-    "_id": 163,
     "default_value": [
       {
         "aa": "M",
         "type": "opt",
         "position": "any",
-         "name": "Oxidation"
+        "name": "Oxidation"
       },
       {
         "aa": "C",
@@ -8471,7 +8336,6 @@
     "value_type": "list"
   },
   {
-    "_id": 164,
     "default_value": "nK  156.0786",
     "description": "Cross-link and mono-link masses allowed. \nMay have more than one of each parameter. \nFormat for mono_link is: \n    [amino acids] [mass mod]\nOne or more amino acids (uppercase only!!) can be specified for each linkage moiety. Use lowercase 'n' or 'c' to indicate protein N-terminus or C-terminus",
     "key_translations": {
@@ -8487,7 +8351,6 @@
     "value_type": "str"
   },
   {
-    "_id": 165,
     "default_value": "0",
     "description": "MS-GF+ specific protocol identifier. Protocols are used to enable scoring parameters for enriched and/or labeled samples.",
     "key_translations": {
@@ -8541,7 +8404,6 @@
     "value_type": "select"
   },
   {
-    "_id": 166,
     "default_value": 50,
     "description": " Suppresses reporting of PSM if top hit has expectation greater than this threshold ",
     "key_translations": {
@@ -8560,7 +8422,6 @@
     "value_type": "int"
   },
   {
-    "_id": 167,
     "default_value": 0,
     "description": " Track top N unmodified peptide results separately from main results internally for boosting features. Should be set to a number greater than output_report_topN if zero bin boosting is desired. ",
     "key_translations": {
@@ -8579,7 +8440,6 @@
     "value_type": "int"
   },
   {
-    "_id": 168,
     "default_value": 0.0,
     "description": " Ranks a zero-bin hit above all non-zero-bin hit if it has expectation less than this value. ",
     "key_translations": {
@@ -8597,7 +8457,6 @@
     "value_type": "float"
   },
   {
-    "_id": 169,
     "default_value": 1.0,
     "description": " Multiplies expect value of PSMs in the zero-bin during results ordering (set to less than 1 for boosting) ",
     "key_translations": {
@@ -8615,7 +8474,6 @@
     "value_type": "float"
   },
   {
-    "_id": 170,
     "default_value": false,
     "description": " Inserts complementary ions corresponding to the top N most intense fragments in each experimental spectrum. Useful for recovery of modified peptides near C-terminal in open search. Should be set to 0 (disabled) otherwise. ",
     "key_translations": {
@@ -8675,7 +8533,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 171,
     "default_value": 2,
     "description": " Minimum number of matched peaks in PSM for inclusion in statistical modeling ",
     "key_translations": {
@@ -8694,7 +8551,6 @@
     "value_type": "int"
   },
   {
-    "_id": 172,
     "default_value": null,
     "description": " Determines which msgfplus mzid conversion node should be used e.g. \"msgfplus2csv_v2017_07_04\"",
     "key_translations": {
@@ -8787,7 +8643,6 @@
     "value_type": "str"
   },
   {
-    "_id": 173,
     "default_value": 2,
     "description": "Myrimatch ClassSizeMultiplier",
     "key_translations": {
@@ -8803,7 +8658,6 @@
     "value_type": "int"
   },
   {
-    "_id": 174,
     "default_value": 3,
     "description": "Myrimatch NumIntensityClasses",
     "key_translations": {
@@ -8819,7 +8673,6 @@
     "value_type": "int"
   },
   {
-    "_id": 175,
     "default_value": 3,
     "description": "Myrimatch NumMzFidelityClasses",
     "key_translations": {
@@ -8836,7 +8689,6 @@
     "value_type": "int"
   },
   {
-    "_id": 176,
     "default_value": 15,
     "description": "Myrimatch ProteinSamplingTime",
     "key_translations": {
@@ -8852,7 +8704,6 @@
     "value_type": "int"
   },
   {
-    "_id": 177,
     "default_value": true,
     "description": "Use Myrimatch UseSmartPlusThreeModel",
     "key_translations": {
@@ -8890,7 +8741,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 178,
     "default_value": 0.98,
     "description": "Myrimatch TicCutoffPercentage",
     "key_translations": {
@@ -8906,7 +8756,6 @@
     "value_type": "float"
   },
   {
-    "_id": 179,
     "default_value": false,
     "description": "Compress mzidentml_lib output files",
     "key_translations": {
@@ -8944,7 +8793,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 180,
     "default_value": "mzidentml_lib_1_6_10",
     "description": "mzidentml converter version: version name",
     "key_translations": {
@@ -8960,7 +8808,6 @@
     "value_type": "str"
   },
   {
-    "_id": 181,
     "default_value": "exportPSMs",
     "description": "Defines which paramters shoul be exporte by mzidentml_lib",
     "key_translations": {
@@ -8976,7 +8823,6 @@
     "value_type": "select"
   },
   {
-    "_id": 182,
     "default_value": "Mzid2Csv",
     "description": "Defines the mzidentml_lib function to be used. Note: only 'Mzid2Csv' is supported so far",
     "key_translations": {
@@ -8992,7 +8838,6 @@
     "value_type": "select"
   },
   {
-    "_id": 183,
     "default_value": false,
     "description": "Include fragmentation in mzidentml_lib output",
     "key_translations": {
@@ -9029,7 +8874,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 184,
     "default_value": 0,
     "description": "Parameter controlling verbose behavior. In general 0=false, 1=true. For qvality range from 0 = no processing info to 5 = all.",
     "key_translations": {
@@ -9142,7 +8986,6 @@
     "value_type": "int"
   },
   {
-    "_id": 185,
     "default_value": "mzml2mgf_2_0_0",
     "description": "mzml to mgf converter version: version name",
     "key_translations": {
@@ -9158,7 +9001,6 @@
     "value_type": "str"
   },
   {
-    "_id": 186,
     "default_value": false,
     "description": "Neutral losses enabled for spectrum algorithm: set  True or False",
     "key_translations": {
@@ -9196,7 +9038,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 187,
     "default_value": 0,
     "description": "Sets the centre of the window for ignoring neutral molecule losses.",
     "key_translations": {
@@ -9213,7 +9054,6 @@
     "value_type": "int"
   },
   {
-    "_id": 188,
     "default_value": 0,
     "description": "Neutral loss window: sets the width of the window for ignoring neutral molecule losses.",
     "key_translations": {
@@ -9230,7 +9070,6 @@
     "value_type": "int"
   },
   {
-    "_id": 189,
     "default_value": false,
     "description": "Used noise suppresssion",
     "key_translations": {
@@ -9267,7 +9106,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 190,
     "default_value": 2,
     "description": "Maximum number of PSMs (sorted by score, starting with the best scoring PSM) that are compared",
     "key_translations": {
@@ -9283,7 +9121,6 @@
     "value_type": "int"
   },
   {
-    "_id": 191,
     "default_value": 30,
     "description": "Maximum number of PSMs retained per spectrum",
     "key_translations": {
@@ -9301,7 +9138,6 @@
     "value_type": "int"
   },
   {
-    "_id": 192,
     "default_value": 7,
     "description": "Number of decimals for intensity (peak)",
     "key_translations": {
@@ -9317,7 +9153,6 @@
     "value_type": "int"
   },
   {
-    "_id": 193,
     "default_value": 10,
     "description": "Maximum number of peptide spectrum matches to report for each spectrum",
     "key_translations": {
@@ -9357,7 +9192,6 @@
     "value_type": "int"
   },
   {
-    "_id": 194,
     "default_value": 7,
     "description": "Number of decimals for m/z mass",
     "key_translations": {
@@ -9373,7 +9207,6 @@
     "value_type": "int"
   },
   {
-    "_id": 195,
     "default_value": false,
     "description": "Omssa: eliminate charge reduced precursors in spectra",
     "key_translations": {
@@ -9411,7 +9244,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 196,
     "default_value": 2,
     "description": "Omssa: number of peaks allowed in single charge window",
     "key_translations": {
@@ -9427,7 +9259,6 @@
     "value_type": "int"
   },
   {
-    "_id": 197,
     "default_value": 2,
     "description": "Omssa: number of peaks allowed in double charge window",
     "key_translations": {
@@ -9443,7 +9274,6 @@
     "value_type": "int"
   },
   {
-    "_id": 198,
     "default_value": 6,
     "description": "Omssa: number of m/z values corresponding to the most intense peaks that must include one match to the theoretical peptide",
     "key_translations": {
@@ -9459,7 +9289,6 @@
     "value_type": "int"
   },
   {
-    "_id": 199,
     "default_value": 128,
     "description": "Omssa: the maximum number of mass ladders to generate per database peptide",
     "key_translations": {
@@ -9475,7 +9304,6 @@
     "value_type": "int"
   },
   {
-    "_id": 200,
     "default_value": 1.0,
     "description": "Omssa: automatic mass tolerance adjustment fraction",
     "key_translations": {
@@ -9491,7 +9319,6 @@
     "value_type": "float"
   },
   {
-    "_id": 201,
     "default_value": 1446.94,
     "description": "Omssa: threshold in Da above which the mass of neutron should be added in exact mass search",
     "key_translations": {
@@ -9507,7 +9334,6 @@
     "value_type": "float"
   },
   {
-    "_id": 202,
     "default_value": [],
     "description": "Controls whether or not precursor neutral loss peaks are considered in the xcorr scoring.",
     "key_translations": {
@@ -9521,7 +9347,6 @@
     "value_type": "list"
   },
   {
-    "_id": 203,
     "default_value": 27,
     "description": "Omssa: single charge window in Da",
     "key_translations": {
@@ -9537,7 +9362,6 @@
     "value_type": "int"
   },
   {
-    "_id": 204,
     "default_value": 14,
     "description": "Omssa: double charge window in Da",
     "key_translations": {
@@ -9553,7 +9377,6 @@
     "value_type": "int"
   },
   {
-    "_id": 205,
     "default_value": 0.95,
     "description": "Omssa: fraction of peaks below precursor used to determine if spectrum is charge 1",
     "key_translations": {
@@ -9569,7 +9392,6 @@
     "value_type": "float"
   },
   {
-    "_id": 206,
     "default_value": true,
     "description": "Should charge plus one be determined algorithmically?",
     "key_translations": {
@@ -9607,7 +9429,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 207,
     "default_value": 2,
     "description": "Omssa: how should precursor charges be determined?, use a range",
     "key_translations": {
@@ -9623,7 +9444,6 @@
     "value_type": "int"
   },
   {
-    "_id": 208,
     "default_value": 3,
     "description": "Minimum precursor charge to start considering multiply charged products",
     "key_translations": {
@@ -9640,7 +9460,6 @@
     "value_type": "int"
   },
   {
-    "_id": 209,
     "default_value": true,
     "description": "Output probabilities for each amino acid.",
     "key_translations": {
@@ -9656,7 +9475,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 210,
     "default_value": true,
     "description": "Add features to the output of MSGF+",
     "key_translations": {
@@ -9693,7 +9511,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 211,
     "default_value": true,
     "description": "Output cumulative probabilities.",
     "key_translations": {
@@ -9709,7 +9526,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 212,
     "default_value": null,
     "description": "Path to output file\n    'None' : None",
     "key_translations": {
@@ -9741,7 +9557,6 @@
     "value_type": "str"
   },
   {
-    "_id": 213,
     "default_value": "default",
     "description": "Output file type. If set to 'default', default output file tzpes for each engine are used. Note: not every file type is supported by every engine and usin non-default types might cause problems during conversion to .csv.",
     "key_translations": {
@@ -9858,7 +9673,6 @@
     "value_type": "select"
   },
   {
-    "_id": 214,
     "default_value": false,
     "description": "Only print spectrum graph nodes with scores.",
     "key_translations": {
@@ -9874,7 +9688,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 215,
     "default_value": false,
     "description": "Prints spectrum graph scores after normalization and removal of negative scores.",
     "key_translations": {
@@ -9890,7 +9703,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 216,
     "default_value": true,
     "description": "Output Q-values",
     "key_translations": {
@@ -9927,7 +9739,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 217,
     "default_value": null,
     "description": "Returns peptide sequences of the specified length (only lengths 3-6 are allowed)\n    0 : None",
     "key_translations": {
@@ -9943,7 +9754,6 @@
     "value_type": "int"
   },
   {
-    "_id": 218,
     "default_value": "UPeptideMapper_v4",
     "description": "version 3 and 4 are the fastest and most memory efficient class versions, version 2 is the classic approach ",
     "key_translations": {
@@ -9959,7 +9769,6 @@
     "value_type": "str"
   },
   {
-    "_id": 219,
     "default_value": "upeptide_mapper_1_0_0",
     "description": " determines which upeptide mapper node should be used",
     "key_translations": {
@@ -9975,7 +9784,6 @@
     "value_type": "str"
   },
   {
-    "_id": 220,
     "default_value": 0.0,
     "description": "PIPI mz_bin_offset",
     "key_translations": {
@@ -9991,7 +9799,6 @@
     "value_type": "float"
   },
   {
-    "_id": 221,
     "default_value": "linear",
     "description": "charge dependency of precursor mass tolerance (none or linear)",
     "key_translations": {
@@ -10028,7 +9835,6 @@
     "value_type": "select"
   },
   {
-    "_id": 222,
     "default_value": "0,1",
     "description": "Error range for incorrect carbon isotope parent ion assignment (13C)",
     "key_translations": {
@@ -10223,7 +10029,6 @@
     "value_type": "select"
   },
   {
-    "_id": 223,
     "default_value": 5,
     "description": "Lower precursor mass tolerance; maximum negative deviation of measured from calculated parent ion mass.",
     "key_translations": {
@@ -10250,7 +10055,6 @@
     "value_type": "int"
   },
   {
-    "_id": 224,
     "default_value": 5,
     "description": "Upper precursor mass tolerance; maximum positive deviation of measured from calculated parent ion mass.",
     "key_translations": {
@@ -10277,7 +10081,6 @@
     "value_type": "int"
   },
   {
-    "_id": 225,
     "default_value": "ppm",
     "description": "Precursor mass tolerance unit: available in ppm (parts-per-millon), da (Dalton) or mmu (Milli mass unit)",
     "key_translations": {
@@ -10447,7 +10250,6 @@
     "value_type": "select"
   },
   {
-    "_id": 226,
     "default_value": "monoisotopic",
     "description": "Precursor mass type: monoisotopic or average",
     "key_translations": {
@@ -10518,7 +10320,6 @@
     "value_type": "select"
   },
   {
-    "_id": 227,
     "default_value": 5,
     "description": "Maximal accepted parent ion charge",
     "key_translations": {
@@ -10546,7 +10347,6 @@
     "value_type": "int"
   },
   {
-    "_id": 228,
     "default_value": 7000,
     "description": "Maximal parent ion mass in Da. Adjusted to default used by MSFragger",
     "key_translations": {
@@ -10570,7 +10370,6 @@
     "value_type": "int"
   },
   {
-    "_id": 229,
     "default_value": 1,
     "description": "Minimal accepted parent ion charge",
     "key_translations": {
@@ -10597,7 +10396,6 @@
     "value_type": "int"
   },
   {
-    "_id": 230,
     "default_value": 400,
     "description": "Minimal parent ion mass",
     "key_translations": {
@@ -10621,7 +10419,6 @@
     "value_type": "int"
   },
   {
-    "_id": 231,
     "default_value": 5,
     "description": "True precursor mass tolerance (window is +/- this value). Used for tie breaker of results (in spectrally ambiguous cases) and zero bin boosting in open searches (0 disables these features). This option is STRONGLY recommended for open searches.",
     "key_translations": {
@@ -10640,7 +10437,6 @@
     "value_type": "int"
   },
   {
-    "_id": 232,
     "default_value": "ppm",
     "description": "Mass tolerance units fo precursor_true_tolerance",
     "key_translations": {
@@ -10700,7 +10496,6 @@
     "value_type": "str"
   },
   {
-    "_id": 233,
     "default_value": "",
     "description": "prefix to add in front of filenames",
     "key_translations": {
@@ -10716,7 +10511,6 @@
     "value_type": "str"
   },
   {
-    "_id": 234,
     "default_value": "<|>",
     "description": "This delimiter seperates protein IDs/names in the unified csv",
     "key_translations": {
@@ -10735,7 +10529,6 @@
     "value_type": "str"
   },
   {
-    "_id": 235,
     "default_value": [
       "Spectrum Title",
       "Sequence",
@@ -10762,7 +10555,6 @@
     "value_type": "list"
   },
   {
-    "_id": 236,
     "default_value": {},
     "description": "Defines the column names which should have their different values merged into a single value when merging rows corresponding the same PSM Formatted as a dictionary with keys as the column names and values as a parameter to specify which one of the different values to take Available values:    max_value\n    min_value\n    most_frequent\n    avg_value",
     "key_translations": {
@@ -10779,7 +10571,6 @@
     "value_type": "dict"
   },
   {
-    "_id": 237,
     "default_value": ";",
     "description": "This delimiter seperates differing values for merged rows in the unified csv",
     "key_translations": {
@@ -10797,7 +10588,6 @@
     "value_type": "str"
   },
   {
-    "_id": 238,
     "default_value": 0,
     "description": "The relative crossvalidation step size used as treshhold before ending the iterations, qvality determines step size automatically when set to 0",
     "key_translations": {
@@ -10813,7 +10603,6 @@
     "value_type": "int"
   },
   {
-    "_id": 239,
     "default_value": 0,
     "description": "The relative step size used as treshhold before cross validation error is calculated, qvality determines step size automatically when set to 0",
     "key_translations": {
@@ -10829,7 +10618,6 @@
     "value_type": "int"
   },
   {
-    "_id": 240,
     "default_value": 500,
     "description": "Number of bins used in qvality",
     "key_translations": {
@@ -10845,7 +10633,6 @@
     "value_type": "int"
   },
   {
-    "_id": 241,
     "default_value": 0,
     "description": "This parameter controls whether or not Comet reports the deltaCn value calculated between the top two peptides (\"explicit_deltacn = 1\") or between the top peptide and the first dissimilar peptide (default behavior, \"explicit_deltacn = 0\").",
     "key_translations": {
@@ -10859,7 +10646,6 @@
     "value_type": "int"
   },
   {
-    "_id": 242,
     "default_value": ".csv",
     "description": "CSV suffix of raw indentification: this is the conversion result after CSV conversion but before adding retention time",
     "key_translations": {
@@ -10875,7 +10661,6 @@
     "value_type": "str"
   },
   {
-    "_id": 243,
     "default_value": true,
     "description": "If True, redundant PSMs (e.g. the same identification reported by multiple engines) for the same spectrum are removed. An identification is defined by psm_defining_colnames",
     "key_translations": {
@@ -10891,7 +10676,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 244,
     "default_value": true,
     "description": "Remove temporary files: True or False",
     "key_translations": {
@@ -10911,7 +10695,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 245,
     "default_value": 3,
     "description": "Masses of modifications are rounded in order to match them to their corresponding unimod name. Use this parameter to set the number of decimal places after rounding.",
     "key_translations": {
@@ -10928,7 +10711,6 @@
     "value_type": "int"
   },
   {
-    "_id": 246,
     "default_value": null,
     "description": "name of the pickle that is used to map the retention time",
     "key_translations": {
@@ -10949,7 +10731,6 @@
     "value_type": "str"
   },
   {
-    "_id": 247,
     "default_value": [],
     "description": "Spectra rejected during mzml2mgf conversion",
     "key_translations": {
@@ -10965,7 +10746,6 @@
     "value_type": "list"
   },
   {
-    "_id": 248,
     "default_value": null,
     "description": "Exclusively spectra included from the mzml, e.g. during mzml2mgf conversion",
     "key_translations": {
@@ -10982,7 +10762,6 @@
     "value_type": "list"
   },
   {
-    "_id": 249,
     "default_value": null,
     "description": "Include only the n-th spectrum during mzml2mgf conversion\n    1 : None",
     "key_translations": {
@@ -10998,7 +10777,6 @@
     "value_type": "int"
   },
   {
-    "_id": 250,
     "default_value": true,
     "description": "Use correlation correction to score?",
     "key_translations": {
@@ -11035,7 +10813,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 251,
     "default_value": 0.01,
     "description": "Minimum score difference between the best PSM and the first rejected PSM of one spectrum, default: 0.01",
     "key_translations": {
@@ -11052,7 +10829,6 @@
     "value_type": "float"
   },
   {
-    "_id": 252,
     "default_value": [
       "b",
       "y"
@@ -11105,7 +10881,6 @@
     "value_type": "list"
   },
   {
-    "_id": 253,
     "default_value": false,
     "description": "Search for potential single amino acid polymorphisms. 'True' might cause problems in the downstream processing of th result files (unify_csv, ...)",
     "key_translations": {
@@ -11143,7 +10918,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 254,
     "default_value": "full",
     "description": "Allows semi-enzymatic peptide ends",
     "key_translations": {
@@ -11297,7 +11071,6 @@
     "value_type": "str"
   },
   {
-    "_id": 255,
     "default_value": false,
     "description": "Show ursgal nodes that are in development: False or True",
     "key_translations": {
@@ -11313,7 +11086,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 256,
     "default_value": 100,
     "description": "Internal normalization for MS/MS spectrum: The highest peak (intensity) within a spectrum is set to given value and all other peaks are normalized to this peak. If the normalized value is less than 1 the peak is rejected.",
     "key_translations": {
@@ -11330,7 +11102,6 @@
     "value_type": "int"
   },
   {
-    "_id": 257,
     "default_value": "q-value",
     "description": " Name of the column that includes the scores that should be used for the .ssl file ",
     "key_translations": {
@@ -11347,7 +11118,6 @@
     "value_type": "str"
   },
   {
-    "_id": 258,
     "default_value": "PERCOLATOR QVALUE",
     "description": " Type of scores used for the .ssl file ",
     "key_translations": {
@@ -11364,7 +11134,6 @@
     "value_type": "select"
   },
   {
-    "_id": 259,
     "default_value": 1.0,
     "description": "Penalty parameter C of the error term of the post-processing SVM",
     "key_translations": {
@@ -11381,7 +11150,6 @@
     "value_type": "float"
   },
   {
-    "_id": 260,
     "default_value": "b",
     "description": "TEST/DEBUG: Internal Ursgal parameter 1 for debugging and testing.",
     "key_translations": {
@@ -11443,7 +11211,6 @@
     "value_type": "select"
   },
   {
-    "_id": 261,
     "default_value": "three",
     "description": "TEST/DEBUG: Internal Ursgal parameter 2 for debugging and testing.",
     "key_translations": {
@@ -11505,7 +11272,6 @@
     "value_type": "select"
   },
   {
-    "_id": 262,
     "default_value": false,
     "description": "True, if log10 scale has been used for score_diff_threshold.",
     "key_translations": {
@@ -11522,7 +11288,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 263,
     "default_value": "unify_csv_1_0_0",
     "description": "unify csv converter version: version name",
     "key_translations": {
@@ -11538,7 +11303,6 @@
     "value_type": "str"
   },
   {
-    "_id": 264,
     "default_value": false,
     "description": "Use pyQms for accurate calculation of isotopologue m/z. This will affect the accuracy (ppm) calculation as well. If True, unify_csv will be significantly slower. Please note that this does not work for any type of labeling yet.",
     "key_translations": {
@@ -11554,7 +11318,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 265,
     "default_value": "https://www.sas.upenn.edu/~sschulze/ursgal_resources/",
     "description": "URL that is used to prepare and install resources via corresponding scripts (prepare_resources.py and install_resources.py)",
     "key_translations": {
@@ -11570,7 +11333,6 @@
     "value_type": "str"
   },
   {
-    "_id": 266,
     "default_value": true,
     "description": "Use filter for low quality spectra.",
     "key_translations": {
@@ -11607,7 +11369,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 267,
     "default_value": false,
     "description": "X! TANDEM can use 'refinement' to improve the speed and accuracy of peptide modelling. This is not included in Ursgal, yet. See further: http://www.thegpm.org/TANDEM/api/refine.html",
     "key_translations": {
@@ -11644,7 +11405,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 268,
     "default_value": "yes",
     "description": "Does not correct precursor charge.",
     "key_translations": {
@@ -11732,7 +11492,6 @@
     "value_type": "select"
   },
   {
-    "_id": 269,
     "default_value": true,
     "description": "Does not correct precusor m/z.",
     "key_translations": {
@@ -11771,7 +11530,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 270,
     "default_value": "validated.csv",
     "description": "CSV suffix of validated identification files: string, CSV-file which contains PSMs validated with validation tools",
     "key_translations": {
@@ -11787,7 +11545,6 @@
     "value_type": "str"
   },
   {
-    "_id": 271,
     "default_value": false,
     "description": "Generalized target decoy competition, situations where PSMs known to more frequently be incorrect are mixed in with the correct PSMs",
     "key_translations": {
@@ -11824,7 +11581,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 272,
     "default_value": null,
     "description": "Defines the minimum score used for validation. If scores lower than this are produced, they are set to the minimum score. This is used to avoid huge gaps/jumps in the score distribution\n    'None' : None",
     "key_translations": {
@@ -12174,7 +11930,6 @@
     "value_type": "str"
   },
   {
-    "_id": 273,
     "default_value": null,
     "description": "Name of the column that is used for validation, e.g. by qvality and percolator. If None is defined, default values are used\n    'None' : None",
     "key_translations": {
@@ -14086,7 +13841,6 @@
     "value_type": "str"
   },
   {
-    "_id": 274,
     "default_value": [
       "Modifications",
       "Sequence"
@@ -14105,7 +13859,6 @@
     "value_type": "list"
   },
   {
-    "_id": 275,
     "default_value": {
       "font_size_header": 31,
       "font_size_major": 25,
@@ -14127,7 +13880,6 @@
     "value_type": "dict"
   },
   {
-    "_id": 276,
     "default_value": "",
     "description": "Header of visualization output (e.g. Venn diagram)",
     "key_translations": {
@@ -14144,7 +13896,6 @@
     "value_type": "str"
   },
   {
-    "_id": 277,
     "default_value": {},
     "description": "Specifies colors for the datasets that should be visualized. Given as a dict in which the key represents the position of the corresponding dataset in the list, e.g.: {\"0\" : \"#e41a1c\", \"1\" : \"#377eb8\"}",
     "key_translations": {
@@ -14160,7 +13911,6 @@
     "value_type": "dict"
   },
   {
-    "_id": 278,
     "default_value": {},
     "description": "Specifies labels for the datasets that should be visualized. Given as a dict in which the key represents the position of the corresponding dataset in the list, e.g.: {\"0\" : \"LabelA\", \"1\" : \"LabelB\"}",
     "key_translations": {
@@ -14176,7 +13926,6 @@
     "value_type": "dict"
   },
   {
-    "_id": 279,
     "default_value": 0.35,
     "description": "Opacity used in visualization plots (e.g. Venn diagram)",
     "key_translations": {
@@ -14192,7 +13941,6 @@
     "value_type": "float"
   },
   {
-    "_id": 280,
     "default_value": {
       "x_axis": 600,
       "y_axis": 400
@@ -14211,7 +13959,6 @@
     "value_type": "dict"
   },
   {
-    "_id": 281,
     "default_value": {
       "height": 900,
       "width": 1200
@@ -14230,7 +13977,6 @@
     "value_type": "dict"
   },
   {
-    "_id": 282,
     "default_value": 2.0,
     "description": "Stroke width used in visualization plots (e.g. Venn diagram)",
     "key_translations": {
@@ -14246,7 +13992,6 @@
     "value_type": "float"
   },
   {
-    "_id": 283,
     "default_value": 249,
     "description": "Combined PEPs are computed by iterating a sliding window over the sorted PSMs. Each PSM receives a PEP based on the target/decoy ratio of the surrounding PEPs. This parameter defines the window size.",
     "key_translations": {
@@ -14263,7 +14008,6 @@
     "value_type": "int"
   },
   {
-    "_id": 284,
     "default_value": 6,
     "description": "word length used to index peptide mapper, smaller word len requires more memory",
     "key_translations": {
@@ -14280,7 +14024,6 @@
     "value_type": "int"
   },
   {
-    "_id": 285,
     "default_value": false,
     "description": "Writes rejected results if True",
     "key_translations": {
@@ -14296,7 +14039,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 286,
     "default_value": "xtandem2csv_1_0_0",
     "description": " Determines which X!tandem conversion node should be used e.g. \"xtandem2csv_1_0_0\"",
     "key_translations": {
@@ -14312,7 +14054,6 @@
     "value_type": "str"
   },
   {
-    "_id": 287,
     "default_value": false,
     "description": "Interpretation of peptide phosphorylation models.",
     "key_translations": {
@@ -14349,7 +14090,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 288,
     "default_value": [
       "HexNAc",
       "HexNAc(2)"
@@ -14369,7 +14109,6 @@
     "value_type": "list"
   },
   {
-    "_id": 289,
     "default_value": null,
     "description": "Accuracy of identifications (ident_file) are used to calculate the machine_offset_in_ppm. If \"all\" is selected, the median of all identifications will be used, for \"peptide\" the median of each peptide will be used.",
     "key_translations": {
@@ -14385,7 +14124,6 @@
     "value_type": "select"
   },
   {
-    "_id": 290,
     "default_value": 3,
     "description": "Minimum number of monosaccharides per glycan",
     "key_translations": {
@@ -14401,7 +14139,6 @@
     "value_type": "int"
   },
   {
-    "_id": 291,
     "default_value": 15,
     "description": "Maximum number of monosaccharides per glycan",
     "key_translations": {
@@ -14418,7 +14155,6 @@
     "value_type": "int"
   },
   {
-    "_id": 292,
     "default_value": {
       "Hex": "C6H10O5",
       "HexNAc": "C8H13NO5",
@@ -14441,7 +14177,6 @@
     "value_type": "dict"
   },
   {
-    "_id": 293,
     "default_value": null,
     "description": "List of paths to the mzML input files",
     "key_translations": {
@@ -14460,7 +14195,6 @@
     "value_type": "list"
   },
   {
-    "_id": 294,
     "default_value": null,
     "description": "Path to the SugarPy results .pkl",
     "key_translations": {
@@ -14476,7 +14210,6 @@
     "value_type": "str"
   },
   {
-    "_id": 295,
     "default_value": null,
     "description": "Path to the SugarPy results .csv",
     "key_translations": {
@@ -14492,7 +14225,6 @@
     "value_type": "str"
   },
   {
-    "_id": 296,
     "default_value": 2,
     "description": " Min number of spectra in which a molecule needs to be matched in order to consider it for further processing ",
     "key_translations": {
@@ -14509,7 +14241,6 @@
     "value_type": "int"
   },
   {
-    "_id": 297,
     "default_value": 5,
     "description": " Max number of glycoforms reported per spectrum for each peptide ",
     "key_translations": {
@@ -14526,7 +14257,6 @@
     "value_type": "int"
   },
   {
-    "_id": 298,
     "default_value": 1.0,
     "description": " Min SugarPy score to be considered for output ",
     "key_translations": {
@@ -14545,7 +14275,6 @@
     "value_type": "float"
   },
   {
-    "_id": 299,
     "default_value": 0.6,
     "description": " Min subtree coverage to be considered for output ",
     "key_translations": {
@@ -14564,7 +14293,6 @@
     "value_type": "float"
   },
   {
-    "_id": 300,
     "default_value": [
       "plot_glycan_elution_profile"
     ],
@@ -14583,7 +14311,6 @@
     "value_type": "list"
   },
   {
-    "_id": 301,
     "default_value": [
       "matched",
       "unmatched",
@@ -14604,7 +14331,6 @@
     "value_type": "list"
   },
   {
-    "_id": 302,
     "default_value": [],
     "description": " List of subtree formulas (hill notation) that should not be plotted. Formulas include the complete molecule, i.e. peptide and glycan ",
     "key_translations": {
@@ -14621,7 +14347,6 @@
     "value_type": "list"
   },
   {
-    "_id": 303,
     "default_value": "no_subtrees",
     "description": " Defines if/how subtrees should be taken into account for plotting molecule elution profiles in SugarPy. Available are: \"no_subtrees\", \"sum_subtrees\", \"individual_subtrees\" ",
     "key_translations": {
@@ -14638,7 +14363,6 @@
     "value_type": "select"
   },
   {
-    "_id": 304,
     "default_value": {},
     "description": " The dict contains all peptidoforms (Peptide#Unimod:Pos) as keys and a dict with the glycans (keys) and {'charges':set(), 'file_names':set()} (value) as values. It can be auto generated from a SugarPy results .csv (use uparam sugarpy_results_file to specify). Don't use sugarpy_results_file and sugarpy_plot_molecule_dict at the same time! ",
     "key_translations": {
@@ -14655,7 +14379,6 @@
     "value_type": "dict"
   },
   {
-    "_id": 305,
     "default_value": {
       "labels": "rgb(0, 0, 200)",
       "matched": "rgb(0, 200, 0)",
@@ -14676,7 +14399,6 @@
     "value_type": "dict"
   },
   {
-    "_id": 306,
     "default_value": "retention_time",
     "description": " Defines the values used for the x-axis. Available are: \"retention_time\", \"spectrum_id\" ",
     "key_translations": {
@@ -14693,7 +14415,6 @@
     "value_type": "select"
   },
   {
-    "_id": 307,
     "default_value": "top_scores",
     "description": " Defines the score type used for the y-axis. Available are: \"top_scores\", \"sum_scores\" ",
     "key_translations": {
@@ -14710,7 +14431,6 @@
     "value_type": "select"
   },
   {
-    "_id": 308,
     "default_value": {},
     "description": " The dict defines plotly layout options. Checkout https://plot.ly/python/reference/#layout for all available options ",
     "key_translations": {
@@ -14726,7 +14446,6 @@
     "value_type": "dict"
   },
   {
-    "_id": 309,
     "default_value": "End(HexNAc)Hex(5)HexNAc(3)NeuAc(1)dHex(1)",
     "description": "Glycan (given in the SugarPy Hill noation format) that will be used for matching glycopeptide fragment ions in MS2 spectra from non-glycosylated peptides ",
     "key_translations": {
@@ -14743,7 +14462,6 @@
     "value_type": "str"
   },
   {
-    "_id": 310,
     "default_value": 3,
     "description": " Min number of oxonium ions that need to be matched in an MS/MS spectrum, to be accepted as containing oxonium ions (i.e. considered as glycopeptide) ",
     "key_translations": {
@@ -14760,7 +14478,6 @@
     "value_type": "int"
   },
   {
-    "_id": 311,
     "default_value": 1,
     "description": " Min number of Y-ions that need to be matched in an MS/MS spectrum, to be accepted as containing Y-ions (i.e. considered as glycopeptide) ",
     "key_translations": {
@@ -14777,7 +14494,6 @@
     "value_type": "int"
   },
   {
-    "_id": 312,
     "default_value": null,
     "description": "Path to the Ursgal results .csv containing all PSMs in the unified format",
     "key_translations": {
@@ -14793,7 +14509,6 @@
     "value_type": "str"
   },
   {
-    "_id": 313,
     "default_value": false,
     "description": "Contaminants are added automatically to the database by the search engine. PIPI uses the same contaminants database as MaxQuant",
     "key_translations": {
@@ -14830,7 +14545,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 314,
     "default_value": false,
     "description": "The user can retrieve a csv file containing results from the venn diagram",
     "key_translations": {
@@ -14846,7 +14560,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 315,
     "default_value": {
       "ID": null
     },
@@ -14864,7 +14577,6 @@
     "value_type": "dict"
   },
   {
-    "_id": 316,
     "default_value": null,
     "description": "Convert a single aminoacid in a sequence motif into another characeter using a string \"new_aa,motif,position_to_be_replaced\" where new_aa is the new character, motif is the regular expression that identifies the sequenc motif and position_to_be_replaced is the position in the motif that should be replaced (e.g. use \"J,N[^P][ST],0\" to convert N-X-S/T into J-X-S/T",
     "key_translations": {
@@ -14880,7 +14592,6 @@
     "value_type": "str"
   },
   {
-    "_id": 317,
     "default_value": {
       "-F": "raw",
       "-m": "1",
@@ -14900,7 +14611,6 @@
     "value_type": "dict"
   },
   {
-    "_id": 318,
     "default_value": {
       "-e": null,
       "-m": 0
@@ -14929,7 +14639,6 @@
     "value_type": "dict"
   },
   {
-    "_id": 319,
     "default_value": "transferred",
     "description": "specifying the fdr method to use",
     "key_translations": {
@@ -14974,7 +14683,6 @@
     "value_type": "str"
   },
   {
-    "_id": 320,
     "default_value": true,
     "description": "specifying whether positions for mass shifts should be determined or not",
     "key_translations": {
@@ -15011,7 +14719,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 321,
     "default_value": true,
     "description": "specifying whether the prior probability should be used or not",
     "key_translations": {
@@ -15048,7 +14755,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 322,
     "default_value": true,
     "description": "specifying whether mass shifts should be annotated or not",
     "key_translations": {
@@ -15086,7 +14792,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 323,
     "default_value": true,
     "description": "specifying whether this is an open search or not",
     "key_translations": {
@@ -15123,7 +14828,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 324,
     "default_value": "bi_directional",
     "description": " Defines the direction for DeepNovo ",
     "key_translations": {
@@ -15168,7 +14872,6 @@
     "value_type": "select"
   },
   {
-    "_id": 325,
     "default_value": true,
     "description": " DeepNovo uses intensity ",
     "key_translations": {
@@ -15184,7 +14887,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 326,
     "default_value": true,
     "description": " DeepNovo uses shared weights ",
     "key_translations": {
@@ -15200,7 +14902,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 327,
     "default_value": false,
     "description": " DeepNovo uses lstm ",
     "key_translations": {
@@ -15216,7 +14917,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 328,
     "default_value": false,
     "description": " DeepNovo builds the knapsack matrix ",
     "key_translations": {
@@ -15232,7 +14932,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 329,
     "default_value": true,
     "description": " DeepNovo builds beam search ",
     "key_translations": {
@@ -15248,7 +14947,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 330,
     "default_value": 5,
     "description": " Number of optimal paths to search during decoding ",
     "key_translations": {
@@ -15264,7 +14962,6 @@
     "value_type": "int"
   },
   {
-    "_id": 331,
     "default_value": "search_denovo",
     "description": " Defines the search mode for DeepNovo ",
     "key_translations": {
@@ -15285,7 +14982,6 @@
     "value_type": "select"
   },
   {
-    "_id": 332,
     "default_value": "default",
     "description": "Path to the knapsack matrix for DeepNovo. Use \"default\" for the default file location in the resources",
     "key_translations": {
@@ -15301,7 +14997,6 @@
     "value_type": "str"
   },
   {
-    "_id": 333,
     "default_value": 2,
     "description": " p-value threshold applied to output by TagGraph ",
     "key_translations": {
@@ -15318,7 +15013,6 @@
     "value_type": "int"
   },
   {
-    "_id": 334,
     "default_value": 0.01,
     "description": " FDR threshold applied to output by TagGraph ",
     "key_translations": {
@@ -15335,7 +15029,6 @@
     "value_type": "float"
   },
   {
-    "_id": 335,
     "default_value": null,
     "description": "Path to the unified de novo results used as input for TagGraph",
     "key_translations": {
@@ -15351,7 +15044,6 @@
     "value_type": "str"
   },
   {
-    "_id": 336,
     "default_value": "default",
     "description": "Path to pickled (python-serialized) probabilistic model file. Use \"default\" for the default file location in the resources",
     "key_translations": {
@@ -15367,7 +15059,6 @@
     "value_type": "str"
   },
   {
-    "_id": 337,
     "default_value": "default",
     "description": "Path to pickled (python-serialized) model configuration file. Use \"default\" for the default file location in the resources",
     "key_translations": {
@@ -15383,7 +15074,6 @@
     "value_type": "str"
   },
   {
-    "_id": 338,
     "default_value": "default",
     "description": "Path to pickled (python-serialized) unimod dictionary. Use \"default\" for the default file location in the resources",
     "key_translations": {
@@ -15399,7 +15089,6 @@
     "value_type": "str"
   },
   {
-    "_id": 339,
     "default_value": 0.1,
     "description": " Maximum absolute deviation (Da) between experimental and database modification mass ",
     "key_translations": {
@@ -15415,7 +15104,6 @@
     "value_type": "float"
   },
   {
-    "_id": 340,
     "default_value": 200,
     "description": " Maximum number of times a de novo-produced substring can occur in the protein sequence database for TagGraph to consider it as a modified peptide match",
     "key_translations": {
@@ -15431,7 +15119,6 @@
     "value_type": "int"
   },
   {
-    "_id": 341,
     "default_value": 400,
     "description": " Maximum number of times a de novo-produced substring can occur in the protein sequence database for TagGraph to consider it as a modified peptide match",
     "key_translations": {
@@ -15447,7 +15134,6 @@
     "value_type": "int"
   },
   {
-    "_id": 342,
     "default_value": 20,
     "description": " Number of iterations in initial EM over all results",
     "key_translations": {
@@ -15463,7 +15149,6 @@
     "value_type": "int"
   },
   {
-    "_id": 343,
     "default_value": 100,
     "description": " Maximum number of expectation maximization iterations for FDR assignment",
     "key_translations": {
@@ -15479,7 +15164,6 @@
     "value_type": "int"
   },
   {
-    "_id": 344,
     "default_value": 0.0,
     "description": " Only peaks above the given signal to noise (S/N) threshold will be accepted ",
     "key_translations": {
@@ -15495,7 +15179,6 @@
     "value_type": "float"
   },
   {
-    "_id": 345,
     "default_value": false,
     "description": " Perform mass calibration ",
     "key_translations": {
@@ -15544,7 +15227,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 346,
     "default_value": false,
     "description": " Write an MGF with spectra corrected by the calibrated masses ",
     "key_translations": {
@@ -15581,7 +15263,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 347,
     "default_value": true,
     "description": " Generate and use mass difference fragment index in addition to the regular fragment index for search. This allows shifted fragment ions - fragment ions with mass increased by the calculated mass difference, to be included in scoring. ",
     "key_translations": {
@@ -15641,7 +15322,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 348,
     "default_value": 5000,
     "description": "Number of bins per dalton to be used for mass shift binning. That means 5000 bins correspond to a bin size of 0.0002 Da ",
     "key_translations": {
@@ -15658,7 +15338,6 @@
     "value_type": "int"
   },
   {
-    "_id": 349,
     "default_value": 3,
     "description": "Number of bins on each side of a bin that the weight of the bin is smoothed across. This smoothing traces a normal distribution.",
     "key_translations": {
@@ -15675,7 +15354,6 @@
     "value_type": "int"
   },
   {
-    "_id": 350,
     "default_value": {
       "peakpicking_mass_units": 0,
       "peakpicking_promRatio": 0.3,
@@ -15701,7 +15379,6 @@
     "value_type": "dict"
   },
   {
-    "_id": 351,
     "default_value": "peptides_entire_dataset",
     "description": "Background of peptides against which localization enrichment scores are calculated",
     "key_translations": {
@@ -15754,7 +15431,6 @@
     "value_type": "select"
   },
   {
-    "_id": 352,
     "default_value": [],
     "description": "List of mass offsets at which modification peaks will be checked for (e.g. [0, 79.9663])",
     "key_translations": {
@@ -15771,7 +15447,6 @@
     "value_type": "list"
   },
   {
-    "_id": 353,
     "default_value": [],
     "description": "List of engines that should be preferred when sanitizing results. In combination with \"accept_conflicting_psms\"=True, conflicting PSMs for only the preferred engine are selected. If no PSMs for that engine exist, the second preferred engine is used, and so on",
     "key_translations": {
@@ -15788,7 +15463,6 @@
     "value_type": "list"
   },
   {
-    "_id": 354,
     "default_value": "off",
     "description": "\"off\" corresponds to a standard MSFragger search, \"labile\" allows to specify delta masses that are searched for, and \"nglycan\" additionally checks for N-glycosylation motifs",
     "key_translations": {
@@ -15804,7 +15478,6 @@
     "value_type": "select"
   },
   {
-    "_id": 355,
     "default_value": "",
     "description": "Only used in MSFragger labile mode, specifies which amino acids are allowed to contain a labile modification",
     "key_translations": {
@@ -15833,7 +15506,6 @@
     "value_type": "str"
   },
   {
-    "_id": 356,
     "default_value": {
       "chemical_formulas": [],
       "glycans": [],
@@ -15856,7 +15528,6 @@
     "value_type": "dict"
   },
   {
-    "_id": 357,
     "default_value": {
       "chemical_formulas": [],
       "glycans": [],
@@ -15879,7 +15550,6 @@
     "value_type": "dict"
   },
   {
-    "_id": 358,
     "default_value": {
       "chemical_formulas": [],
       "glycans": [],
@@ -15902,7 +15572,6 @@
     "value_type": "dict"
   },
   {
-    "_id": 359,
     "default_value": [
       0.0,
       0.0
@@ -15922,7 +15591,6 @@
     "value_type": "list"
   },
   {
-    "_id": 360,
     "default_value": [
       -1.5,
       1.5
@@ -15943,7 +15611,6 @@
     "value_type": "list"
   },
   {
-    "_id": 361,
     "default_value": "off",
     "description": "Remove precursor peaks from spectrum. Options are: \"off\", \"remove_precursor_charge\" (removes peaks with same charge as precursor), \"remove_all_charges\" (removes peaks of all charges)",
     "key_translations": {
@@ -16011,7 +15678,6 @@
     "value_type": "select"
   },
   {
-    "_id": 362,
     "default_value": null,
     "description": "Specifies source_path of a file",
     "key_translations": {
@@ -16027,7 +15693,6 @@
     "value_type": "str"
   },
   {
-    "_id": 363,
     "default_value": null,
     "description": "Specifies target_path of a file",
     "key_translations": {
@@ -16043,7 +15708,6 @@
     "value_type": "str"
   },
   {
-    "_id": 364,
     "default_value": 0.0,
     "description": "A floating point number indicating the minimum intensity value for the input peaks.",
     "key_translations": {
@@ -16059,7 +15723,6 @@
     "value_type": "float"
   },
   {
-    "_id": 365,
     "default_value": 1.007276466621,
     "description": "Charge carrier mass (default is mass of a proton)",
     "key_translations": {
@@ -16073,8 +15736,14 @@
     "value_type": "float"
   },
   {
-    "_id": 366,
-    "default_value": [1,2,3,4,5,6],
+    "default_value": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
     "description": "NA translation frames",
     "key_translations": {
       "mascot_style_1": "FRAMES",
@@ -16087,7 +15756,6 @@
     "value_type": "list"
   },
   {
-    "_id": 367,
     "default_value": null,
     "description": "Mass of the intact protein (in Da)",
     "key_translations": {
@@ -16101,7 +15769,6 @@
     "value_type": "int"
   },
   {
-    "_id": 368,
     "default_value": "Mascot generic",
     "description": "Format of the input MS/MS file",
     "key_translations": {
@@ -16115,7 +15782,6 @@
     "value_type": "str"
   },
   {
-    "_id": 369,
     "default_value": "MS/MS Ion Search",
     "description": "Mascot search type",
     "key_translations": {
@@ -16158,7 +15824,6 @@
     "value_type": "str"
   },
   {
-    "_id": 370,
     "default_value": "Peptide",
     "description": "Mascot report type",
     "key_translations": {
@@ -16172,7 +15837,6 @@
     "value_type": "str"
   },
   {
-    "_id": 371,
     "default_value": 0,
     "description": "Mascot Automatic Error Tolerant Search",
     "key_translations": {
@@ -16186,7 +15850,6 @@
     "value_type": "int"
   },
   {
-    "_id": 372,
     "default_value": null,
     "description": "Mascot user name",
     "key_translations": {
@@ -16200,7 +15863,6 @@
     "value_type": "str"
   },
   {
-    "_id": 373,
     "default_value": null,
     "description": "Mascot user email",
     "key_translations": {
@@ -16214,7 +15876,6 @@
     "value_type": "str"
   },
   {
-    "_id": 374,
     "default_value": false,
     "description": "Should spectral libraries be included in the search",
     "key_translations": {
@@ -16249,7 +15910,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 375,
     "default_value": "1.01",
     "description": "Mascot formVersion. Make sure it matches the version of your config in Mascot.dat",
     "key_translations": {
@@ -16263,7 +15923,6 @@
     "value_type": "str"
   },
   {
-    "_id": 376,
     "default_value": null,
     "description": "Stringyfied path to .ssh key (identity file) for server access",
     "key_translations": {
@@ -16277,7 +15936,6 @@
     "value_type": "str"
   },
   {
-    "_id": 377,
     "default_value": null,
     "description": "Stringyfied path to mascot exe on the mascot server.",
     "key_translations": {
@@ -16291,7 +15949,6 @@
     "value_type": "str"
   },
   {
-    "_id": 378,
     "default_value": null,
     "description": "Stringyfied path to data folder on the mascot server.",
     "key_translations": {
@@ -16305,7 +15962,6 @@
     "value_type": "str"
   },
   {
-    "_id": 379,
     "default_value": null,
     "description": "Port to connect to on the remote host",
     "key_translations": {
@@ -16319,7 +15975,6 @@
     "value_type": "str"
   },
   {
-    "_id": 380,
     "default_value": "xtandem_alanine",
     "description": "Engine used to select 1% FDR PSMs for initial training set",
     "key_translations": {
@@ -16327,13 +15982,15 @@
       "ursgal_style_1": "initial_engine"
     },
     "name": "initial_engine",
-    "tag": ["validation", "peptide_forest"],
+    "tag": [
+      "validation",
+      "peptide_forest"
+    ],
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "str"
   },
   {
-    "_id": 381,
     "default_value": [],
     "description": "list of additional unimod xml files",
     "key_translations": {
@@ -16353,12 +16010,10 @@
       "modifications"
     ],
     "triggers_rerun": true,
-    "value_translations": {
-    },
+    "value_translations": {},
     "value_type": "list"
   },
   {
-    "_id": 382,
     "default_value": "fasta",
     "description": "Defines PSI Extended Fasta Format (PEFF). Default is 0 = normal fasta",
     "key_translations": {
@@ -16425,7 +16080,6 @@
     "value_type": "str"
   },
   {
-    "_id": 383,
     "default_value": null,
     "description": "A full or relative path to the OBO file used with a PEFF search. Ignored if peff_format = 0. There is no default for this parameter if it is missing.",
     "key_translations": {
@@ -16439,7 +16093,6 @@
     "value_type": "str"
   },
   {
-    "_id": 384,
     "default_value": false,
     "description": "Controls whether the analyzed peptides must contain at least one variable modification. If True only modified peptides will be considered. Default is false, thus both modified and unmodified will be analyzed.",
     "key_translations": {
@@ -16476,7 +16129,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 385,
     "default_value": true,
     "description": "A boolean flag this determines whether or not the expectation score (E-value) is reported in .out and SQT formats. Note that the E-value is always reported in pepXML output.",
     "key_translations": {
@@ -16513,7 +16165,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 386,
     "default_value": "None",
     "description": "This parameter is only relevant for pepXML output and is used solely to annotate additional information in the output. It does not influence the search. The sample enzyme could be different from the search enzyme i.e. the sample enzyme is 'trypsin' yet the search enzyme is 'No-enzyme' for a non-specific search. Hence the need for this separate parameter.Default value is 'None', which is translated to 0.",
     "key_translations": {
@@ -16676,7 +16327,6 @@
     "value_type": "str"
   },
   {
-    "_id": 387,
     "default_value": true,
     "description": "A boolean flag which defines if isoleucin and leucin should be treated the same in terms of peptide identification (default is true).",
     "key_translations": {
@@ -16713,7 +16363,6 @@
     "value_type": "bool"
   },
   {
-    "_id": 388,
     "default_value": "singly_charged_peptide_mass",
     "description": "This parameter controls how the peptide_mass_tolerance parameter is applied. That tolerance can be applied to the singly charged peptide mass (default=0) or it can be applied to the precursor m/z (1).",
     "key_translations": {
@@ -16748,7 +16397,6 @@
     "value_type": "str"
   },
   {
-    "_id": 389,
     "default_value": "mass_bin",
     "description": "This parameter specifies how theoretical fragment ion peaks are represented. A value of 0 indicates that the fast correlation score will be a sum of the intensities at each theortical fragment mass bin and half the intensity of each flanking bin. A value of 1 indicates that the fast correlation score will be the sum of the intensities at each theoretical fragment mass bin. ",
     "key_translations": {
@@ -16783,7 +16431,6 @@
     "value_type": "int"
   },
   {
-    "_id": 390,
     "default_value": 20,
     "description": "For non-proteotypic peptides, this parameter defines the maximum number of proteins (identifiers/accessions) to report. If set to -1, there will be no limit on the number of reported additional proteins. If set to 3 and a peptide is identified, which is present in 7 total protein sequences, there is one (first) reference protein and 6 additional duplicate proteins. This parameter controls how many of those 6 additional duplicate proteins are reported - in this case 2.",
     "key_translations": {
@@ -16797,7 +16444,6 @@
     "value_type": "int"
   },
   {
-    "_id": 391,
     "default_value": 0,
     "description": "This parameter sets the maximum indexed database search run time for a scan/query in milliseconds. If set to 0, there is no limit to the search time.",
     "key_translations": {
@@ -16811,7 +16457,6 @@
     "value_type": "int"
   },
   {
-    "_id": 392,
     "default_value": 100,
     "description": "This parameter controls the number of peptide search results that are stored internally. Depending on what post-processing tools are used, one may want to set this to the same value as num_output_lines (id193).",
     "key_translations": {
@@ -16825,7 +16470,6 @@
     "value_type": "int"
   },
   {
-    "_id": 393,
     "default_value": "protein sequence database",
     "description": "This parameter is used to search nucleotide sequence databases. It controls how the nucleotides are translated specifically which sets of reading frames are translated. Valid values are 0 through 9.",
     "key_translations": {
@@ -16924,7 +16568,6 @@
     "value_type": "str"
   },
   {
-    "_id": 394,
     "default_value": 1.5,
     "description": "This parameter specifies the mass tolerance (in Da) around each precursor m/z that would be removed when the remove_precursor_peak option is invoked.",
     "key_translations": {
@@ -16940,7 +16583,6 @@
     "value_type": "float"
   },
   {
-    "_id": 395,
     "default_value": "FileName",
     "description": "File Name as required by experimental_setup collection.",
     "key_translations": {
@@ -16957,7 +16599,6 @@
     "value_type": "str"
   },
   {
-    "_id": 396,
     "default_value": "CTRL",
     "description": "Experimental condition as required by experimental_setup collection.",
     "key_translations": {
@@ -16974,7 +16615,6 @@
     "value_type": "str"
   },
   {
-    "_id": 397,
     "default_value": "labelfree",
     "description": "Experimental label as required by experimental_setup collection.",
     "key_translations": {
@@ -16990,7 +16630,6 @@
     "value_type": "str"
   },
   {
-    "_id": 398,
     "default_value": 1,
     "description": "Biological replicate ID as required by experimental_setup collection.",
     "key_translations": {
@@ -17007,7 +16646,6 @@
     "value_type": "int"
   },
   {
-    "_id": 399,
     "default_value": 1,
     "description": "Technical replicate ID as required by experimental_setup collection.",
     "key_translations": {
@@ -17024,7 +16662,6 @@
     "value_type": "int"
   },
   {
-    "_id": 400,
     "default_value": 1,
     "description": "Fraction ID as required by experimental_setup collection.",
     "key_translations": {
