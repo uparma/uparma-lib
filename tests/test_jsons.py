@@ -6,7 +6,6 @@ from collections import defaultdict as ddict
 import hashlib
 
 parameters_defined_fields = [
-    "_id",
     "name",
     "triggers_rerun",
     "description",
@@ -30,9 +29,9 @@ def uprint(msg, ok=True):
         indicator = "[   OK!   ]"
     else:
         indicator = "[ WARNING ]"
-    if len(msg) > 65:
-        msg = msg[:62] + "..."
-    print("{0:65}{1}".format(msg, indicator))
+    if len(msg) > 89:
+        msg = msg[:88] + "..."
+    print("{0:88}{1}".format(msg, indicator))
     return
 
 
@@ -63,7 +62,7 @@ def parameter_dicts_are_unique(rcode, jsons):
         entry_hash = hashlib.sha256(json.dumps(entry).encode("utf-8")).hexdigest()
         if entry_hash in all_ids:
             uprint(
-                f"{entry} already exists in parameters.json",
+                f"{name} already exists in parameters.json",
                 ok=False,
             )
             local_rcode = 2
