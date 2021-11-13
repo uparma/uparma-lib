@@ -5534,6 +5534,7 @@
     "default_value": null,
     "description": "Translate output headers into Ursgal unify_csv style headers\n    'None' : None",
     "key_translations": {
+      "comet_style_1": "header_translations",
       "deepnovo_style_1": "header_translations",
       "flash_lfq_style_1": "header_translations",
       "kojak_percolator_style_1": "header_translations",
@@ -5558,6 +5559,56 @@
     ],
     "triggers_rerun": true,
     "value_translations": {
+      "comet_style_1": [
+        [
+          "Charge",
+          "chargeState"
+        ],
+        [
+          "Comet:Score",
+          "Comet:spscore"
+        ],
+        [
+          "Comet:DeltaCn",
+          "Comet:deltacn"
+        ],
+        [
+          "Comet:XCorr",
+          "Comet:xcorr"
+        ],
+        [
+          "Comet:EValue",
+          "Comet:expectation value"
+        ],
+        [
+          "Comet:XCorr",
+          "Comet:xcorr"
+        ],
+        [
+          "Sequence",
+          "peptide_ref"
+        ],
+        [
+          "Exp m/z",
+          "experimentalMassToCharge"
+        ],
+        [
+          "Calc m/z",
+          "calculatedMassToCharge"
+        ],
+        [
+          "Comet:SpecEValue",
+          "SpecEValue"
+        ],
+        [
+          "Comet:Num Matched Ions",
+          "number of matched peaks"
+        ],
+        [
+          "Comet:Num Unmatched Ions",
+          "number of unmatched peaks"
+        ]
+      ],
       "xtandem_style_1": [
         [
           "X!Tandem:delta",
@@ -5752,16 +5803,8 @@
           "Charge"
         ],
         [
-          "Filename",
-          "Filename"
-        ],
-        [
           "Modifications",
           "Modifications"
-        ],
-        [
-          "proteinacc_start_stop_pre_post_;",
-          "Protein Accessions"
         ],
         [
           "Retention Time (s)",
@@ -5790,6 +5833,10 @@
         [
           "Exp m/z",
           "m/z"
+        ],
+        [
+          "Amanda:Num Matched Ions",
+          "Nr of matched peaks"
         ]
       ],
       "msfragger_style_1": [
@@ -6073,51 +6120,47 @@
       "msgfplus_style_1": [
         [
           "Charge",
-          "Charge"
+          "chargeState"
         ],
         [
           "MS-GF:DeNovoScore",
-          "DeNovoScore"
+          "MS-GF:DeNovoScore"
         ],
         [
           "MS-GF:EValue",
-          "EValue"
+          "MS-GF:EValue"
         ],
         [
           "MS-GF:RawScore",
-          "MSGFScore"
+          "MS-GF:RawScore"
         ],
         [
           "Sequence",
-          "Peptide"
+          "peptide_ref"
         ],
         [
           "Exp m/z",
-          "Precursor"
+          "experimentalMassToCharge"
         ],
         [
-          "proteinacc_start_stop_pre_post_;",
-          "Protein"
+          "Calc m/z",
+          "calculatedMassToCharge"
         ],
         [
           "Spectrum ID",
-          "ScanNum"
+          "scan number(s)"
         ],
         [
           "MS-GF:SpecEValue",
-          "SpecEValue"
-        ],
-        [
-          "Raw data location",
-          "SpecFile"
-        ],
-        [
-          "Raw data location",
-          "#SpecFile"
+          "MS-GF:SpecEValue"
         ],
         [
           "Spectrum Title",
-          "Title"
+          "spectrum title"
+        ],
+        [
+          "MS-GF:Num Matched Ions",
+          "NumMatchedMainIons"
         ]
       ],
       "novor_style_1": [
@@ -6176,10 +6219,6 @@
           " Charge"
         ],
         [
-          "proteinacc_start_stop_pre_post_;",
-          " Defline"
-        ],
-        [
           "OMSSA:evalue",
           " E-value"
         ],
@@ -6196,10 +6235,6 @@
           " Mods"
         ],
         [
-          "NIST score",
-          " NIST score"
-        ],
-        [
           "OMSSA:pvalue",
           " P-value"
         ],
@@ -6208,20 +6243,8 @@
           " Peptide"
         ],
         [
-          "Start",
-          " Start"
-        ],
-        [
-          "Stop",
-          " Stop"
-        ],
-        [
           "Calc m/z",
           " Theo Mass"
-        ],
-        [
-          "gi",
-          " gi"
         ],
         [
           "Spectrum ID",
