@@ -904,6 +904,7 @@
       "qvality_style_1": "-r",
       "sanitize_csv_style_1": "bigger_scores_better",
       "svm_style_1": "bigger_scores_better",
+      "unify_csv_style_1": "bigger_scores_better",
       "ursgal_style_1": "bigger_scores_better",
       "peptide_forest_style_1": "bigger_scores_better"
     },
@@ -2087,6 +2088,212 @@
         ],
         [
           "deepnovo_pointnovo",
+          true
+        ],
+        [
+          "tag_graph_1_8_0",
+          true
+        ]
+      ],
+      "unify_csv_style_1": [
+        [
+          "comet_2020_01_4",
+          false
+        ],
+        [
+          "msamanda_1_0_0_5242",
+          true
+        ],
+        [
+          "msamanda_1_0_0_5243",
+          true
+        ],
+        [
+          "msamanda_1_0_0_6299",
+          true
+        ],
+        [
+          "msamanda_1_0_0_6300",
+          true
+        ],
+        [
+          "msamanda_1_0_0_7503",
+          true
+        ],
+        [
+          "msamanda_1_0_0_7504",
+          true
+        ],
+        [
+          "msamanda_2_0_0_9706",
+          true
+        ],
+        [
+          "msamanda_2_0_0_9695",
+          true
+        ],
+        [
+          "msamanda_2_0_0_10695",
+          true
+        ],
+        [
+          "msamanda_2_0_0_11219",
+          true
+        ],
+        [
+          "msamanda_2_0_0_13723",
+          true
+        ],
+        [
+          "msamanda_2_0_0_14665",
+          true
+        ],
+        [
+          "msamanda_2_0_0_17442",
+          true
+        ],
+        [
+          "msgfplus_v2016_09_16",
+          false
+        ],
+        [
+          "msgfplus_v2017_01_27",
+          false
+        ],
+        [
+          "msgfplus_v2018_01_30",
+          false
+        ],
+        [
+          "msgfplus_v2018_06_28",
+          false
+        ],
+        [
+          "msgfplus_v2018_09_12",
+          false
+        ],
+        [
+          "msgfplus_v2019_01_22",
+          false
+        ],
+        [
+          "msgfplus_v2019_04_18",
+          false
+        ],
+        [
+          "msgfplus_v2019_07_03",
+          false
+        ],
+        [
+          "msgfplus_2021_03_22",
+          false
+        ],
+        [
+          "msgfplus_v9979",
+          false
+        ],
+        [
+          "myrimatch_2_1_138",
+          true
+        ],
+        [
+          "myrimatch_2_2_140",
+          true
+        ],
+        [
+          "omssa_2_1_9",
+          false
+        ],
+        [
+          "xtandem_cyclone_2010",
+          true
+        ],
+        [
+          "xtandem_jackhammer",
+          true
+        ],
+        [
+          "xtandem_piledriver",
+          true
+        ],
+        [
+          "xtandem_sledgehammer",
+          true
+        ],
+        [
+          "xtandem_vengeance",
+          true
+        ],
+        [
+          "xtandem_alanine",
+          true
+        ],
+        [
+          "msfragger_20170103",
+          true
+        ],
+        [
+          "msfragger_20171106",
+          true
+        ],
+        [
+          "msfragger_20190222",
+          true
+        ],
+        [
+          "msfragger_20190628",
+          true
+        ],
+        [
+          "msfragger_2_3",
+          true
+        ],
+        [
+          "msfragger_3_0",
+          true
+        ],
+        [
+          "mascot_x_x_x",
+          true
+        ],
+        [
+          "pipi_1_4_5",
+          true
+        ],
+        [
+          "pipi_1_4_6",
+          true
+        ],
+        [
+          "moda_v1_51",
+          true
+        ],
+        [
+          "moda_v1_61",
+          true
+        ],
+        [
+          "moda_v1_62",
+          true
+        ],
+        [
+          "pglyco_db_2_2_0",
+          true
+        ],
+        [
+          "pglyco_db_2_2_2",
+          true
+        ],
+        [
+          "deepnovo_0_0_1",
+          true
+        ],
+        [
+          "deepnovo_pointnovo",
+          true
+        ],
+        [
+          "pnovo_3_1_3",
           true
         ],
         [
@@ -12396,6 +12603,10 @@
       ],
       "peptide_forest_style_1": [
         [
+          "comet_2020_01_4",
+          "Comet:EValue"
+        ],
+        [
           "msamanda_1_0_0_5242",
           "Amanda:Score"
         ],
@@ -12441,6 +12652,10 @@
         ],
         [
           "msamanda_2_0_0_14665",
+          "Amanda:Score"
+        ],
+        [
+          "msamanda_2_0_0_17442",
           "Amanda:Score"
         ],
         [
@@ -12584,20 +12799,12 @@
           "pGlyco:TotalScore"
         ],
         [
-          "pglyco_db_2_2_2",
-          "pGlyco:TotalScore"
-        ],
-        [
           "deepnovo_0_0_1",
           "DeepNovo:score"
         ],
         [
           "deepnovo_pointnovo",
           "DeepNovo:score"
-        ],
-        [
-          "pnovo_3_1_3",
-          "pNovo:Score"
         ],
         [
           "tag_graph_1_8_0",
@@ -13450,6 +13657,10 @@
       ],
       "unify_csv_style_1": [
         [
+          "comet_2020_01_4",
+          "Comet:EValue"
+        ],
+        [
           "msamanda_1_0_0_5242",
           "Amanda:Score"
         ],
@@ -13495,6 +13706,10 @@
         ],
         [
           "msamanda_2_0_0_14665",
+          "Amanda:Score"
+        ],
+        [
+          "msamanda_2_0_0_17442",
           "Amanda:Score"
         ],
         [
@@ -13648,216 +13863,6 @@
         [
           "tag_graph_1_8_0",
           "TagGraph:: 1-log10 EM"
-        ]
-      ],
-      "ursgal_style_1": [
-        [
-          "msamanda_1_0_0_5242",
-          "msamanda_1_0_0_5242"
-        ],
-        [
-          "msamanda_1_0_0_5243",
-          "msamanda_1_0_0_5243"
-        ],
-        [
-          "msamanda_1_0_0_6299",
-          "msamanda_1_0_0_6299"
-        ],
-        [
-          "msamanda_1_0_0_6300",
-          "msamanda_1_0_0_6300"
-        ],
-        [
-          "msamanda_1_0_0_7503",
-          "msamanda_1_0_0_7503"
-        ],
-        [
-          "msamanda_1_0_0_7504",
-          "msamanda_1_0_0_7504"
-        ],
-        [
-          "msamanda_2_0_0_9706",
-          "msamanda_2_0_0_9706"
-        ],
-        [
-          "msamanda_2_0_0_9695",
-          "msamanda_2_0_0_9695"
-        ],
-        [
-          "msamanda_2_0_0_10695",
-          "msamanda_2_0_0_10695"
-        ],
-        [
-          "msamanda_2_0_0_11219",
-          "msamanda_2_0_0_11219"
-        ],
-        [
-          "msamanda_2_0_0_13723",
-          "msamanda_2_0_0_13723"
-        ],
-        [
-          "msamanda_2_0_0_14665",
-          "msamanda_2_0_0_14665"
-        ],
-        [
-          "msgfplus_v2016_09_16",
-          "msgfplus_v2016_09_16"
-        ],
-        [
-          "msgfplus_v2017_01_27",
-          "msgfplus_v2017_01_27"
-        ],
-        [
-          "msgfplus_v2018_01_30",
-          "msgfplus_v2018_01_30"
-        ],
-        [
-          "msgfplus_v2018_06_28",
-          "msgfplus_v2018_06_28"
-        ],
-        [
-          "msgfplus_v2018_09_12",
-          "msgfplus_v2018_09_12"
-        ],
-        [
-          "msgfplus_v2019_01_22",
-          "msgfplus_v2019_01_22"
-        ],
-        [
-          "msgfplus_v2019_04_18",
-          "msgfplus_v2019_04_18"
-        ],
-        [
-          "msgfplus_v2019_07_03",
-          "msgfplus_v2019_07_03"
-        ],
-        [
-          "msgfplus_2021_03_22",
-          "msgfplus_2021_03_22"
-        ],
-        [
-          "msgfplus_v9979",
-          "msgfplus_v9979"
-        ],
-        [
-          "myrimatch_2_1_138",
-          "myrimatch_2_1_138"
-        ],
-        [
-          "myrimatch_2_2_140",
-          "myrimatch_2_2_140"
-        ],
-        [
-          "novor_1_1beta",
-          "novor_1_1beta"
-        ],
-        [
-          "novor_1_05",
-          "novor_1_05"
-        ],
-        [
-          "omssa_2_1_9",
-          "omssa_2_1_9"
-        ],
-        [
-          "pepnovo_3_1",
-          "pepnovo_3_1"
-        ],
-        [
-          "xtandem_cyclone_2010",
-          "xtandem_cyclone_2010"
-        ],
-        [
-          "xtandem_jackhammer",
-          "xtandem_jackhammer"
-        ],
-        [
-          "xtandem_piledriver",
-          "xtandem_piledriver"
-        ],
-        [
-          "xtandem_sledgehammer",
-          "xtandem_sledgehammer"
-        ],
-        [
-          "xtandem_vengeance",
-          "xtandem_vengeance"
-        ],
-        [
-          "xtandem_alanine",
-          "xtandem_alanine"
-        ],
-        [
-          "msfragger_20170103",
-          "msfragger_20170103"
-        ],
-        [
-          "msfragger_20171106",
-          "msfragger_20171106"
-        ],
-        [
-          "msfragger_20190222",
-          "msfragger_20190222"
-        ],
-        [
-          "msfragger_20190628",
-          "msfragger_20190628"
-        ],
-        [
-          "msfragger_2_3",
-          "msfragger_2_3"
-        ],
-        [
-          "msfragger_3_0",
-          "msfragger_3_0"
-        ],
-        [
-          "mascot_x_x_x",
-          "mascot_x_x_x"
-        ],
-        [
-          "pipi_1_4_5",
-          "pipi_1_4_5"
-        ],
-        [
-          "pipi_1_4_6",
-          "pipi_1_4_6"
-        ],
-        [
-          "moda_v1_51",
-          "moda_v1_51"
-        ],
-        [
-          "moda_v1_61",
-          "moda_v1_61"
-        ],
-        [
-          "moda_v1_62",
-          "moda_v1_62"
-        ],
-        [
-          "pglyco_db_2_2_0",
-          "pglyco_db_2_2_0"
-        ],
-        [
-          "pglyco_db_2_2_2",
-          "pglyco_db_2_2_2"
-        ],
-        [
-          "deepnovo_0_0_1",
-          "deepnovo_0_0_1"
-        ],
-        [
-          "deepnovo_pointnovo",
-          "deepnovo_pointnovo"
-        ],
-        [
-          "pnovo_3_1_3",
-          "pnovo_3_1_3"
-        ],
-        [
-          "tag_graph_1_8_0",
-          "tag_graph_1_8_0"
         ]
       ]
     },
