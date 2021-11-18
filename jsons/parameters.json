@@ -16708,7 +16708,7 @@
     "default_value": null,
     "description": "pandas Query string to be applied to filter a dataframe",
     "key_translations": {
-      "csv_filter_style_1": "query",
+      "csv_filter_style_1": "query_string",
       "ursgal_style_1": "query_string"
     },
     "name": "query_string",
