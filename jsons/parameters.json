@@ -7333,6 +7333,20 @@
     "value_type": "select"
   },
   {
+    "default_value": "all",
+    "description": "Determines whether 'all' or 'any' found Sequences Pre/Post AA need to be cleaved correctly",
+    "key_translations": {
+      "unify_csv_style_1": "terminal_cleavage_site_integrity"
+    },
+    "name": "terminal_cleavage_site_integrity",
+    "tag": [
+      "cleavage"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
+  },
+  {
     "default_value": false,
     "description": "MS1 are centroided data: True or False",
     "key_translations": {
