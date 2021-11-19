@@ -7336,7 +7336,8 @@
     "default_value": "all",
     "description": "Determines whether 'all' or 'any' found Sequences Pre/Post AA need to be cleaved correctly",
     "key_translations": {
-      "unify_csv_style_1": "terminal_cleavage_site_integrity"
+      "unify_csv_style_1": "terminal_cleavage_site_integrity",
+      "ursgal_style_1": "terminal_cleavage_site_integrity"
     },
     "name": "terminal_cleavage_site_integrity",
     "tag": [
