@@ -4864,99 +4864,75 @@
       "unify_csv_style_1": [
         [
           "argc",
-          "R;C;P"
+          "(?<=R)(?![P])"
         ],
         [
           "aspn",
-          "D;N;"
+          "(?=D)"
         ],
         [
           "chymotrypsin",
-          "FMWY;C;P"
-        ],
-        [
-          "chymotrypsin_p",
-          "FMWY;C;"
+          "(?<=[F|W])(?![P])|(?<=[^P][Y])(?![P])"
         ],
         [
           "clostripain",
-          "R;C;"
+          "(?<=R)"
         ],
         [
           "cnbr",
-          "M;C;P"
-        ],
-        [
-          "elastase",
-          "AGILV;C;P"
+          "(?<=M)"
         ],
         [
           "formic_acid",
-          "D;C;P"
+          "(?<=D)"
         ],
         [
           "gluc",
-          "DE;C;P"
+          "(?<=[^E][D|E])(?![P])"
         ],
         [
           "gluc_bicarb",
-          "E;C;P"
+          "(?<=[^E][E])(?![P])"
         ],
         [
           "iodosobenzoate",
-          "W;C;"
+          "(?<=W)"
         ],
         [
           "lysc",
-          "K;C;P"
+          "(?<=K)"
         ],
         [
           "lysc_gluc",
-          "DEK;C;P"
-        ],
-        [
-          "lysc_p",
-          "K;C;"
+          "(?<=[^E][D|E])(?![P])|(?<=K)"
         ],
         [
           "lysn",
-          "K;N;"
-        ],
-        [
-          "lysn_promisc",
-          "AKRS;N;"
-        ],
-        [
-          "pepsina",
-          "FL;C;"
-        ],
-        [
-          "protein_endopeptidase",
-          "P;C;"
+          "(?=K)"
         ],
         [
           "staph_protease",
-          "E;C;"
+          "(?<=E)"
         ],
         [
           "trypsin",
-          "KR;C;P"
+          "(?<=[K|R])(?![P])"
         ],
         [
           "trypsin_cnbr",
-          "KRM;C;P"
+          "(?<=[K|R])(?![P])|(?<=M)"
         ],
         [
           "trypsin_gluc",
-          "DEKR;C;P"
+          "(?<=[K|R])(?![P])|(?<=[D|E])(?![P|E])"
         ],
         [
           "trypsin_p",
-          "KR;C;"
+          "(?<=[K|R])"
         ],
         [
           "nonspecific",
-          "ACDEFGHIKLMNPQRSTVWY;C;"
+          ".^"
         ]
       ],
       "ursgal_style_1": [
