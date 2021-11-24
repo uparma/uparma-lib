@@ -286,8 +286,16 @@
     "name": "Percolator",
     "versions": [
       "2.08",
+    ],
+    "reference": "K\u00e4ll L, Canterbury JD, Weston J, Noble WS, MacCoss MJ. (2007) Semi-supervised learning for peptide identification from shotgun proteomics datasets."
+  },
+  {
+    "style": "percolator_style_2",
+    "name": "Percolator",
+    "versions": [
       "3.2.0",
-      "3.4.0"
+      "3.4.0",
+      "3.5.0"
     ],
     "reference": "K\u00e4ll L, Canterbury JD, Weston J, Noble WS, MacCoss MJ. (2007) Semi-supervised learning for peptide identification from shotgun proteomics datasets."
   },
