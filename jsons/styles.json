@@ -285,11 +285,19 @@
     "style": "percolator_style_1",
     "name": "Percolator",
     "versions": [
-      "2.08",
-      "3.2.0",
-      "3.4.0"
+      "2.0.8"
     ],
     "reference": "K\u00e4ll L, Canterbury JD, Weston J, Noble WS, MacCoss MJ. (2007) Semi-supervised learning for peptide identification from shotgun proteomics datasets."
+  },
+  {
+    "style": "percolator_style_2",
+    "name": "Percolator",
+    "versions": [
+      "3.2.0",
+      "3.4.0",
+      "3.5.0"
+    ],
+    "reference": "The, M., MacCoss, M.J., Noble, W.S. et al. Fast and Accurate Protein False Discovery Rates on Large-Scale Proteomics Data Sets with Percolator 3.0. J. Am. Soc. Mass Spectrom. 27, 1719–1727 (2016). https://doi.org/10.1007/s13361-016-1460-7"
   },
   {
     "style": "pglyco_db_style_1",
