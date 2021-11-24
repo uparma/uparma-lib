@@ -16796,7 +16796,6 @@
     "default_value": 0,
     "description": " Only train an SVM on a subset of <x> PSMs, and use the resulting score vector to evaluate the other PSMs. Recommended when analyzing huge numbers (>1 million) of PSMs. When set to 0, all PSMs are used for training as normal. Default = 0.",
     "key_translations": {
-        "percolator_style_1": "--subset-max-train",
         "percolator_style_2": "--subset-max-train"
     },
     "name": "subset_max_train",
