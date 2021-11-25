@@ -17300,7 +17300,7 @@
     "description": "Maximal number of iterations. Default = 10.",
     "key_translations": {
         "percolator_style_1": "--maxiter",
-        "percolator_style_2": "--maxiter",
+        "percolator_style_2": "--maxiter"
     },
     "name": "maxiter",
     "tag": ["validation"],
