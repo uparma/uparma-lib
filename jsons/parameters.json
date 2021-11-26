@@ -257,9 +257,18 @@
         ],
         [
           "tdc",
-          "-Y",
+          "-Y"
       ],
-      "percolator_style_2": []
+      "percolator_style_2": [
+        [
+          "mix-max",
+          "-y"
+        ],
+        [
+          "tdc",
+          "-Y"
+      ],
+      ]
     },
     "name": "percolator_post_processing",
     "tag": [
