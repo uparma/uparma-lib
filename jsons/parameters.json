@@ -267,7 +267,7 @@
         [
           "tdc",
           "-Y"
-      ],
+        ]
       ]
     },
     "name": "percolator_post_processing",
