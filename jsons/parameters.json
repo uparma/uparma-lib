@@ -241,44 +241,36 @@
     "value_translations": {},
     "value_type": "bool"
   },
-  {
+   {
     "default_value": "tdc",
     "description": " Method to assign FDR and PEP to PSMs",
     "key_translations": {
-      "percolator_style_1": "percolator_post_processing",
+      "percolator_style_1": "percolator_post_processing_test",
       "percolator_style_2": "percolator_post_processing",
       "ursgal_style_1": "percolator_post_processing"
     },
     "value_translations": {
       "percolator_style_1": [
         [
-          "-y",
-          "mix-max"
+          "tdc",
+          "-Y"
         ],
         [
-          "-Y",
-          "tdc"
+          "mix-max",
+          "-y"
         ]
       ],
       "percolator_style_2": [
         [
-           "-y",
-          "mix-max"
+          "tdc",
+          "-Y"
         ],
         [
-          "-Y",
-          "tdc"
+          "mix-max",
+          "-y"
         ]
       ]
-    },
-    "name": "percolator_post_processing",
-    "tag": [
-      "validation"
-    ],
-    "triggers_rerun": true,
-    "value_translations": {},
-    "value_type": "select"
-  },
+   },
   {
     "default_value": true,
     "description": "verbosity for pyqms",
