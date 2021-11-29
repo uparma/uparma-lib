@@ -1135,6 +1135,10 @@
       ],
       "percolator_style_1": [
         [
+          "comet_2020_01_4",
+          false
+        ],
+        [
           "msamanda_1_0_0_5242",
           true
         ],
@@ -1180,6 +1184,10 @@
         ],
         [
           "msamanda_2_0_0_14665",
+          true
+        ],
+        [
+          "msamanda_2_0_0_17442",
           true
         ],
         [
@@ -1333,6 +1341,10 @@
       ],
       "percolator_style_2": [
         [
+          "comet_2020_01_4",
+          false
+        ],
+        [
           "msamanda_1_0_0_5242",
           true
         ],
@@ -1378,6 +1390,10 @@
         ],
         [
           "msamanda_2_0_0_14665",
+          true
+        ],
+        [
+          "msamanda_2_0_0_17442",
           true
         ],
         [
@@ -7660,7 +7676,7 @@
     "value_type": "select"
   },
   {
-    "default_value": "all",
+    "default_value": "any",
     "description": "Determines whether 'all' or 'any' found Sequences Pre/Post AA need to be cleaved correctly",
     "key_translations": {
       "unify_csv_style_1": "terminal_cleavage_site_integrity",
@@ -12714,6 +12730,10 @@
       ],
       "percolator_style_1": [
         [
+          "comet_2020_01_4",
+          "Comet:EValue"
+        ],
+        [
           "msamanda_1_0_0_5242",
           "Amanda:Score"
         ],
@@ -12759,6 +12779,10 @@
         ],
         [
           "msamanda_2_0_0_14665",
+          "Amanda:Score"
+        ],
+        [
+          "msamanda_2_0_0_17442",
           "Amanda:Score"
         ],
         [
@@ -12924,6 +12948,10 @@
       ],
       "percolator_style_2": [
         [
+          "comet_2020_01_4",
+          "Comet:EValue"
+        ],
+        [
           "msamanda_1_0_0_5242",
           "Amanda:Score"
         ],
@@ -12969,6 +12997,10 @@
         ],
         [
           "msamanda_2_0_0_14665",
+          "Amanda:Score"
+        ],
+        [
+          "msamanda_2_0_0_17442",
           "Amanda:Score"
         ],
         [
