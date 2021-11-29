@@ -271,7 +271,7 @@
           "-y"
         ]
       ]
-    }
+    },
     "triggers_rerun": true,
     "value_type": "select",
     "tag": [
