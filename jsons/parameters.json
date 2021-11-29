@@ -241,43 +241,42 @@
     "value_translations": {},
     "value_type": "bool"
   },
-  {
+   {
     "default_value": "tdc",
+    "name": "percolator_post_processing",
     "description": " Method to assign FDR and PEP to PSMs",
     "key_translations": {
-      "percolator_style_1": "",
-      "percolator_style_2": "",
+      "percolator_style_1": "percolator_post_processing",
+      "percolator_style_2": "percolator_post_processing",
       "ursgal_style_1": "percolator_post_processing"
     },
     "value_translations": {
       "percolator_style_1": [
         [
-          "mix-max",
-          "-y"
-        ],
-        [
           "tdc",
           "-Y"
+        ],
+        [
+          "mix-max",
+          "-y"
         ]
       ],
       "percolator_style_2": [
         [
-          "mix-max",
-          "-y"
-        ],
-        [
           "tdc",
           "-Y"
+        ],
+        [
+          "mix-max",
+          "-y"
         ]
       ]
     },
-    "name": "percolator_post_processing",
+    "triggers_rerun": true,
+    "value_type": "select",
     "tag": [
       "validation"
-    ],
-    "triggers_rerun": true,
-    "value_translations": {},
-    "value_type": "select"
+    ]
   },
   {
     "default_value": true,
