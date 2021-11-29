@@ -272,6 +272,11 @@
         ]
       ]
     }
+    "triggers_rerun": true,
+    "value_type": "select",
+    "tag": [
+      "validation"
+    ]
   },
   {
     "default_value": true,
