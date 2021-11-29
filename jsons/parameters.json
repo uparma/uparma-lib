@@ -252,22 +252,22 @@
     "value_translations": {
       "percolator_style_1": [
         [
-          "mix-max",
-          "-y"
+          "-y",
+          "mix-max"
         ],
         [
-          "tdc",
-          "-Y"
+          "-Y",
+          "tdc"
         ]
       ],
       "percolator_style_2": [
         [
-          "mix-max",
-          "-y"
+           "-y",
+          "mix-max"
         ],
         [
+          "-Y",
           "tdc",
-          "-Y"
         ]
       ]
     },
