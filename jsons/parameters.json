@@ -243,6 +243,7 @@
   },
    {
     "default_value": "tdc",
+    "name": "percolator_post_processing",
     "description": " Method to assign FDR and PEP to PSMs",
     "key_translations": {
       "percolator_style_1": "percolator_post_processing",
