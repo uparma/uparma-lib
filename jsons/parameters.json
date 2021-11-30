@@ -6123,10 +6123,6 @@
           "calculatedMassToCharge"
         ],
         [
-          "Comet:SpecEValue",
-          "SpecEValue"
-        ],
-        [
           "Comet:Num Matched Ions",
           "number of matched peaks"
         ],
