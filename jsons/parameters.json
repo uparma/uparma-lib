@@ -17443,7 +17443,7 @@
     "default_value": true,
     "description": "",
     "key_translations": {
-        "percolator_style_2": "--protein-report-duplicates"
+        "percolator_style_2": "--protein-report-duplicates",
         "ursgal_style_1": "report_protein_duplicates"
     },
     "name": "report_protein_duplicates",
