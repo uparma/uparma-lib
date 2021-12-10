@@ -3468,6 +3468,8 @@
       "ptmshepherd_style_1": "threads",
       "ucontroller_style_1": "cpus",
       "ursgal_style_1": "cpus",
+      "percolator_style_1": "cpus",
+      "percolator_style_2": "cpus",
       "xtandem_style_1": "spectrum, threads"
     },
     "name": "cpus",
@@ -3558,6 +3560,18 @@
         [
           -1,
           -1
+        ]
+      ],
+      "percolator_style_1": [
+        [
+          -1,
+          -1]
+        ,
+      ],
+      "percolator_style_2": [
+        [
+          -1,
+          -1,
         ]
       ],
       "xtandem_style_1": [
