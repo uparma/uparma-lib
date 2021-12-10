@@ -17297,7 +17297,7 @@
     "tag": ["validation"],
     "triggers_rerun": true,
     "value_translations": {},
-    "value_type": "list"
+    "value_type": "float"
   },
   {
     "default_value": null,
@@ -17310,7 +17310,7 @@
     "tag": ["validation"],
     "triggers_rerun": true,
     "value_translations": {},
-    "value_type": "list"
+    "value_type": "float"
   },
   {
     "default_value": 0.01,
@@ -17323,7 +17323,7 @@
     "tag": ["validation"],
     "triggers_rerun": true,
     "value_translations": {},
-    "value_type": "list"
+    "value_type": "float"
   },
   {
     "default_value": 0.01,
@@ -17336,7 +17336,7 @@
     "tag": ["validation"],
     "triggers_rerun": true,
     "value_translations": {},
-    "value_type": "list"
+    "value_type": "float"
   },
   {
     "default_value": 10,
@@ -17349,7 +17349,7 @@
     "tag": ["validation"],
     "triggers_rerun": true,
     "value_translations": {},
-    "value_type": "list"
+    "value_type": "int"
   },
   {
     "default_value": 0,
