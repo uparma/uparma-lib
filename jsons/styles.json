@@ -518,8 +518,8 @@
     "reference": "Eng JK, Jahan TA, Hoopmann MR. Comet: an open-source MS/MS sequence database search tool. Proteomics. 2013 Jan;13(1):22-4. doi: 10.1002/pmic.201200439. Epub 2012 Dec 4. PMID: 23148064."
   },
   {
-    "style": "limma_style_1",
-    "name": "limma_style_1",
+    "style": "pw-stats_style_1",
+    "name": "pw-stats_style_1",
     "versions": [
       "1.0.0"
     ],
@@ -528,6 +528,14 @@
   {
     "style": "csv_filter_style_1",
     "name": "csv_filter_style_1",
+    "versions": [
+      "1.0.0"
+    ],
+    "reference": "Ursgal2 Team"
+  },
+  {
+    "style": "volcano_style_1",
+    "name": "volcano_style_1",
     "versions": [
       "1.0.0"
     ],

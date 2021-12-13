@@ -3,7 +3,7 @@
     "default_value": [],
     "description": " ",
     "key_translations": {
-      "limma_style_1": "experimental_design",
+      "pw-stats_style_1": "experimental_design",
       "flash_lfq_style_1": "experiment_setup\nFormat:\n{\"1\": {\"FileName\": <filename as in identfile>, \"Condition\":<str>, \"Biorep\": <int>, \"Fraction\": <int>, \"Techrep\": <int>},\n\"2\": ....\n}\n",
       "ursgal_style_1": "experiment_setup"
     },
@@ -17196,7 +17196,7 @@
     "description": "File Name as required by experimental_setup collection.",
     "key_translations": {
       "flash_lfq_style_1": "FileName",
-      "limma_style_1": "FileName",
+      "pw-stats_style_1": "FileName",
       "ursgal_style_1": "exp-setup_filename"
     },
     "name": "exp-setup_filename",
@@ -17212,7 +17212,7 @@
     "description": "Experimental condition as required by experimental_setup collection.",
     "key_translations": {
       "flash_lfq_style_1": "Condition",
-      "limma_style_1": "Condition",
+      "pw-stats_style_1": "Condition",
       "ursgal_style_1": "exp-setup_condition"
     },
     "name": "exp-setup_condition",
@@ -17227,7 +17227,7 @@
     "default_value": "labelfree",
     "description": "Experimental label as required by experimental_setup collection.",
     "key_translations": {
-      "limma_style_1": "Label",
+      "pw-stats_style_1": "Label",
       "ursgal_style_1": "exp-setup_label"
     },
     "name": "exp-setup_label",
@@ -17243,7 +17243,7 @@
     "description": "Biological replicate ID as required by experimental_setup collection.",
     "key_translations": {
       "flash_lfq_style_1": "Biorep",
-      "limma_style_1": "BiologicalReplicate",
+      "pw-stats_style_1": "BiologicalReplicate",
       "ursgal_style_1": "exp-setup_biological_replicate"
     },
     "name": "exp-setup_biological_replicate",
@@ -17259,7 +17259,7 @@
     "description": "Technical replicate ID as required by experimental_setup collection.",
     "key_translations": {
       "flash_lfq_style_1": "Techrep",
-      "limma_style_1": "TechnicalReplicate",
+      "pw-stats_style_1": "TechnicalReplicate",
       "ursgal_style_1": "exp-setup_technical_replicate"
     },
     "name": "exp-setup_technical_replicate",
@@ -17274,6 +17274,7 @@
     "default_value": 1,
     "description": "Fraction ID as required by experimental_setup collection.",
     "key_translations": {
+      "pw-stats_style_1": "Fraction",
       "flash_lfq_style_1": "Fraction",
       "ursgal_style_1": "exp-setup_fraction"
     },
@@ -17465,5 +17466,118 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "bool"
+  },
+  {
+    "default_value": [],
+    "description": "Define the list of samples that should be compared. If left empty, all possible combinations of comparisons will be performed.",
+    "key_translations": {
+      "pw-stats_style_1": "comparisons_list",
+      "ursgal_style_1": "comparisons_list"
+    },
+    "name": "comparisons_list",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "list"
+  },
+  {
+    "default_value": "Index",
+    "description": "This param defines which column should be used as the row index for the dataframe. Coming from an initially big dataframe, which e.g. would contain Peptide, Protein, Sequence - this column would define the one to be used as df.index.",
+    "key_translations": {
+      "pw-stats_style_1": "column_of_interest",
+      "ursgal_style_1": "column_of_interest"
+    },
+    "name": "column_of_interest",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
+  },
+  {
+    "default_value": "benjamini-hochberg",
+    "description": "Select method that should be used for pvalue correction.",
+    "key_translations": {
+      "pw-stats_style_1": "pval_correction_method",
+      "ursgal_style_1": "pval_correction_method"
+    },
+    "name": "pval_correction_method",
+    "tag": [],
+    "triggers_rerun": true,
+    "value_translations": {
+      "pw-stats_style_1": [
+        [
+          "benjamini-hochberg",
+          "fdr_bh"
+        ]
+      ],
+      "ursgal_style_1": [
+        [
+          "benjamini-hochberg",
+          "benjamini-hochberg"
+        ]
+      ]
+    },
+    "value_type": "str"
+  },
+  {
+    "default_value": [],
+    "description": "Defines plot parameters for plotting nodes.",
+    "key_translations": {
+      "volcano_style_1": "plot_setup",
+      "ursgal_style_1": "plot_setup"
+    },
+    "name": "plot_setup",
+    "tag": [
+      "plot_setup"
+    ],
+    "is_parameter_collection": true,
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "list"
+  },
+  {
+    "default_value": true,
+    "description": "Should adjusted pvalue be used",
+    "key_translations": {
+      "volcano_style_1": "use_pvalue_adj",
+      "ursgal_style_1": "use_pvalue_adj"
+    },
+    "name": "use_pvalue_adj",
+    "tag": [
+      "plot_setup"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "bool"
+  },
+  {
+    "default_value": 0.05,
+    "description": "pvalue Threshold to be considered as significant",
+    "key_translations": {
+      "volcano_style_1": "pval_threshold",
+      "ursgal_style_1": "pvalue_significance_threshold"
+    },
+    "name": "pvalue_significance_threshold",
+    "tag": [
+      "plot_setup"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "float"
+  },
+  {
+    "default_value": 1.0,
+    "description": "Fold change Threshold to narrow down significantly regulated identifiers",
+    "key_translations": {
+      "volcano_style_1": "log2_fc_threshold",
+      "ursgal_style_1": "log2_foldchange_threshold"
+    },
+    "name": "log2_foldchange_threshold",
+    "tag": [
+      "plot_setup"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "float"
   }
 ]
