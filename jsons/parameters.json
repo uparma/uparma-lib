@@ -17484,7 +17484,7 @@
     "default_value": "Index",
     "description": "This param defines which column should be used as the row index for the dataframe. Coming from an initially big dataframe, which e.g. would contain Peptide, Protein, Sequence - this column would define the one to be used as df.index.",
     "key_translations": {
-      "limma_style_1": "column_of_interest",
+      "pw-stats_style_1": "column_of_interest",
       "ursgal_style_1": "column_of_interest"
     },
     "name": "column_of_interest",
