@@ -8881,6 +8881,7 @@
         "DynamicMods",
         "StaticMods"
       ],
+      "mzml2mgf_style_1": "modifictions",
       "novor_style_1": [
         "variableModifications",
         "fixedModifications"
@@ -16617,6 +16618,7 @@
       "msamanda_style_1": "unimod_xml_file_list",
       "msfragger_style_3": "unimod_xml_file_list",
       "msgfplus_style_1": "unimod_xml_file_list",
+      "mzml2mgf_style_1": "unimod_xml_file_list",
       "omssa_style_1": "unimod_xml_file_list",
       "unify_csv_style_1": "unimod_xml_file_list",
       "ursgal_style_1": "unimod_xml_file_list",
