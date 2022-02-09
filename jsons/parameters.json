@@ -8881,7 +8881,7 @@
         "DynamicMods",
         "StaticMods"
       ],
-      "mzml2mgf_style_1": "modifictions",
+      "mzml2mgf_style_1": "modifications",
       "novor_style_1": [
         "variableModifications",
         "fixedModifications"
