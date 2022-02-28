@@ -216,7 +216,8 @@
     "description": "Random seed for random number generators",
     "key_translations": {
       "flash_lfq_style_1": "--rns",
-      "ursgal_style_1": "random_seed"
+      "ursgal_style_1": "random_seed",
+      "generate_target_decoy_style_1": "random_seed"
     },
     "name": "random_seed",
     "tag": [
