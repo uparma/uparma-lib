@@ -16593,22 +16593,6 @@
     "value_type": "str"
   },
   {
-    "default_value": null,
-    "description": "Engine used to select 1% FDR PSMs for initial training set",
-    "key_translations": {
-      "peptide_forest_style_1": "-i",
-      "ursgal_style_1": "initial_engine"
-    },
-    "name": "initial_engine",
-    "tag": [
-      "validation",
-      "peptide_forest"
-    ],
-    "triggers_rerun": true,
-    "value_translations": {},
-    "value_type": "str"
-  },
-  {
     "default_value": [],
     "description": "list of additional unimod xml files",
     "key_translations": {
@@ -17588,5 +17572,101 @@
     "triggers_rerun": true,
     "value_translations": {},
     "value_type": "float"
+  },
+  {
+    "default_value": null,
+    "description": "Engine used to select 1% q-value PSMs for initial training set",
+    "key_translations": {
+      "peptide_forest_style_1": "initial_engine",
+      "ursgal_style_1": "initial_engine"
+    },
+    "name": "initial_engine",
+    "tag": [
+      "validation",
+      "peptide_forest"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "str"
+  },
+  {
+    "default_value": 0.01,
+    "description": "PSM q-value cutoff",
+    "key_translations": {
+      "peptide_forest_style_1": "q_cut",
+      "ursgal_style_1": "q_cut"
+    },
+    "name": "q_cut",
+    "tag": [
+      "validation",
+      "peptide_forest"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "float"
+  },
+  {
+    "default_value": 0.10,
+    "description": "PSM q-value cutoff for training",
+    "key_translations": {
+      "peptide_forest_style_1": "q_cut_train",
+      "ursgal_style_1": "q_cut_train"
+    },
+    "name": "q_cut_train",
+    "tag": [
+      "validation",
+      "peptide_forest"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "float"
+  },
+  {
+    "default_value": 0.90,
+    "description": "fraction of true targets to assigned targets in a given dataset",
+    "key_translations": {
+      "peptide_forest_style_1": "sensitivity",
+      "ursgal_style_1": "sensitivity"
+    },
+    "name": "sensitivity",
+    "tag": [
+      "validation",
+      "peptide_forest"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "float"
+  },
+  {
+    "default_value": 10,
+    "description": "number of training epochs",
+    "key_translations": {
+      "peptide_forest_style_1": "n_train",
+      "ursgal_style_1": "n_train"
+    },
+    "name": "n_train",
+    "tag": [
+      "validation",
+      "peptide_forest"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "int"
+  },
+  {
+    "default_value": 10,
+    "description": "number of validation epochs",
+    "key_translations": {
+      "peptide_forest_style_1": "n_eval",
+      "ursgal_style_1": "n_test"
+    },
+    "name": "n_test",
+    "tag": [
+      "validation",
+      "peptide_forest"
+    ],
+    "triggers_rerun": true,
+    "value_translations": {},
+    "value_type": "int"
   }
 ]
