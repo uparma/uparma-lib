@@ -864,7 +864,6 @@
       "deepnovo_style_1": "base_mz",
       "glycopeptide_fragmentor_style_1": "base_mz",
       "moda_style_1": "base_mz",
-      "novor_style_1": "base_mz",
       "omssa_style_1": "base_mz",
       "pepnovo_style_1": "base_mz",
       "pipi_style_1": "base_mz",
@@ -5597,6 +5596,7 @@
       "msfragger_style_1": "fragment_mass_tolerance",
       "msfragger_style_2": "fragment_mass_tolerance",
       "msfragger_style_3": "fragment_mass_tolerance",
+      "novor_style_1": "fragmentIonErrorTol_part1",
       "omssa_style_1": "-to",
       "pepnovo_style_1": "-fragment_tolerance",
       "pglyco_db_style_1": "search_fragment_tolerance",
@@ -5626,6 +5626,7 @@
       "msfragger_style_1": "fragment_mass_units",
       "msfragger_style_2": "fragment_mass_units",
       "msfragger_style_3": "fragment_mass_units",
+      "novor_style_1": "fragmentIonErrorTol_part2",
       "omssa_style_1": "frag_mass_tolerance_unit",
       "pepnovo_style_1": "frag_mass_tolerance_unit",
       "pglyco_db_style_1": "search_fragment_tolerance_type",
@@ -10119,7 +10120,6 @@
       "msgfplus_style_1": "-o",
       "myrimatch_style_1": "output_file_incl_path",
       "mzidentml_style_1": "output_file_incl_path",
-      "novor_style_1": "output_file_incl_path",
       "omssa_style_1": "output_file_incl_path",
       "pepnovo_style_1": "output_file_incl_path",
       "percolator_style_1": "output_file_incl_path",
@@ -10623,6 +10623,7 @@
       "msfragger_style_1": "precursor_mass_lower",
       "msfragger_style_2": "precursor_mass_lower",
       "msfragger_style_3": "precursor_mass_lower",
+      "novor_style_1": "precursorErrorTol_part2",
       "msgfplus_style_1": "-t_minus",
       "omssa_style_1": "-te_part1",
       "unify_csv_style_1": "precursor_mass_tolerance_minus",
@@ -10650,6 +10651,7 @@
       "msfragger_style_2": "precursor_mass_upper",
       "msfragger_style_3": "precursor_mass_upper",
       "msgfplus_style_1": "-t_plus",
+      "novor_style_1": "precursorErrorTol_part1",
       "omssa_style_1": "-te_part2",
       "unify_csv_style_1": " precursor_mass_tolerance_minus",
       "ursgal_style_1": "precursor_mass_tolerance_plus",
@@ -10675,6 +10677,7 @@
       "msfragger_style_2": "precursor_mass_units",
       "msfragger_style_3": "precursor_mass_units",
       "msgfplus_style_1": "-t_unit",
+      "novor_style_1": "precursorErrorTol_part3",
       "omssa_style_1": "-teppm",
       "pepnovo_style_1": "precursor_mass_tolerance_unit",
       "pglyco_db_style_1": "search_precursor_tolerance_type",
@@ -10749,6 +10752,12 @@
         ]
       ],
       "msgfplus_style_1": [
+        [
+          "da",
+          "Da"
+        ]
+      ],
+      "novor_style_1": [
         [
           "da",
           "Da"
