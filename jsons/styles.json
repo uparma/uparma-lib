@@ -540,5 +540,13 @@
       "1.0.0"
     ],
     "reference": "Ursgal2 Team"
+  },
+  {
+    "style": "umap_style_1",
+    "name": "umap_style_1",
+    "versions": [
+      "1.0.0"
+    ],
+    "reference": "Ursgal2 Team"
   }
 ]
