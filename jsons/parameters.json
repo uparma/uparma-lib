@@ -2334,12 +2334,80 @@
         "value_type": "bool"
     },
     {
+        "default_value": "euclidean",
+        "description": "distance metric to use",
+        "key_translations": {
+            "umap_style_1": "metric",
+            "ursgal_style_1": "metric"
+        },
+        "name": "cluster_distance_metric",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": 0.1,
+        "description": "distance metric to use",
+        "key_translations": {
+            "umap_style_1": "min_distance",
+            "ursgal_style_1": "min_distance"
+        },
+        "name": "cluster_min_distance",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": 2,
+        "description": "number of components to use for embedding",
+        "key_translations": {
+            "umap_style_1": "n_components",
+            "ursgal_style_1": "n_components"
+        },
+        "name": "cluster_n_components",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": 15,
+        "description": "number of neighbours",
+        "key_translations": {
+            "umap_style_1": "n_neighbours",
+            "ursgal_style_1": "n_neighbours"
+        },
+        "name": "cluster_n_neighbours",
+        "tag": [
+            "plotting",
+            "embedding"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": [],
+        "description": "columns to use for colouring markers in a plot",
+        "key_translations": {
+            "umap_style_1": "colour_columns",
+            "ursgal_style_1": "colour_columns"
+        },
+        "name": "colour_columns",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
         "default_value": "Index",
         "description": "This param defines which column should be used as the row index for the dataframe. Coming from an initially big dataframe, which e.g. would contain Peptide, Protein, Sequence - this column would define the one to be used as df.index.",
         "key_translations": {
             "pw-stats_style_1": "column_of_interest",
             "ursgal_style_1": "column_of_interest",
-            "umap_style_1": "column_of_interest"
+            "umap_style_1": "index_columns"
         },
         "name": "column_of_interest",
         "tag": [],
@@ -3151,20 +3219,6 @@
             "filter_csv_style_1": [],
             "ursgal_style_1": []
         },
-        "value_type": "list"
-    },
-    {
-        "default_value": [],
-        "description": "columns containing the data to process",
-        "key_translations": {
-            "pw-stats_style_1": "data_columns",
-            "ursgal_style_1": "data_columns",
-            "umap_style_1": "data_columns"
-        },
-        "name": "data_columns",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {},
         "value_type": "list"
     },
     {
@@ -5936,6 +5990,20 @@
             ]
         },
         "value_type": "str"
+    },
+    {
+        "default_value": [],
+        "description": "columns containing the data to process",
+        "key_translations": {
+            "pw-stats_style_1": "feature_columns",
+            "ursgal_style_1": "feature_columns",
+            "umap_style_1": "feature_columns"
+        },
+        "name": "feature_columns",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "list"
     },
     {
         "default_value": {
@@ -8775,6 +8843,19 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "float"
+    },
+    {
+        "default_value": [],
+        "description": "columns to use for selecting different markers in a plot.",
+        "key_translations": {
+            "umap_style_1": "marker_columns",
+            "ursgal_style_1": "marker_columns"
+        },
+        "name": "marker_columns",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
     },
     {
         "default_value": 1000,
