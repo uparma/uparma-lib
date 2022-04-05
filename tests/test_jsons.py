@@ -220,6 +220,40 @@ def key_translations_in_list_form_have_single_entries(rcode, jsons):
     return jsons, rcode
 
 
+def nested_json_is_sorted(rcode, jsons):
+    local_rcode = 0
+    sortable_types = (list, dict)
+
+    def dynamic_sort(input, depth=0):
+        if isinstance(input, dict):
+            if any([isinstance(v, sortable_types) for v in input.values()]):
+                return dict(
+                    sorted(
+                        {
+                            k: dynamic_sort(v, depth + 1) for k, v in input.items()
+                        }.items()
+                    )
+                )
+        if isinstance(input, list):
+            if any([isinstance(v, sortable_types) for v in input]):
+                next_list = [dynamic_sort(v, depth + 1) for v in input]
+                if depth == 0:
+                    return list(sorted(next_list, key=lambda k: k["name"]))
+                elif not any(isinstance(n, dict) for n in next_list):
+                    return list(sorted(next_list))
+                else:
+                    return next_list
+        return input
+
+    if dynamic_sort(jsons["parameters.json"]) == jsons["parameters.json"]:
+        uprint(f"All nested objects are sorted in correct alphabetical order.", ok=True)
+    else:
+        uprint("parameters.json not sorted alphabetically. Run utils/sort.py", ok=False)
+        local_rcode = 2 ** 8
+    rcode += local_rcode
+    return jsons, rcode
+
+
 def main():
     """
     Check overall integrity of uparma jsons
@@ -233,6 +267,7 @@ def main():
     jsons, rcode = styles_have_defined_fields(rcode, jsons)
     jsons, rcode = styles_have_citation(rcode, jsons)
     jsons, rcode = key_translations_are_unique(rcode, jsons)
+    jsons, rcode = nested_json_is_sorted(rcode, jsons)
     # jsons, rcode = key_translations_in_list_form_have_single_entries(rcode, jsons)
     return rcode
 
