@@ -211,7 +211,6 @@
             "deepnovo_style_1": "base_mz",
             "glycopeptide_fragmentor_style_1": "base_mz",
             "moda_style_1": "base_mz",
-            "novor_style_1": "base_mz",
             "omssa_style_1": "base_mz",
             "pepnovo_style_1": "base_mz",
             "pipi_style_1": "base_mz",
@@ -2339,7 +2338,8 @@
         "description": "This param defines which column should be used as the row index for the dataframe. Coming from an initially big dataframe, which e.g. would contain Peptide, Protein, Sequence - this column would define the one to be used as df.index.",
         "key_translations": {
             "pw-stats_style_1": "column_of_interest",
-            "ursgal_style_1": "column_of_interest"
+            "ursgal_style_1": "column_of_interest",
+            "umap_style_1": "column_of_interest"
         },
         "name": "column_of_interest",
         "tag": [],
@@ -3151,6 +3151,20 @@
             "filter_csv_style_1": [],
             "ursgal_style_1": []
         },
+        "value_type": "list"
+    },
+    {
+        "default_value": [],
+        "description": "columns containing the data to process",
+        "key_translations": {
+            "pw-stats_style_1": "data_columns",
+            "ursgal_style_1": "data_columns",
+            "umap_style_1": "data_columns"
+        },
+        "name": "data_columns",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
         "value_type": "list"
     },
     {
@@ -6037,6 +6051,7 @@
             "msfragger_style_1": "fragment_mass_tolerance",
             "msfragger_style_2": "fragment_mass_tolerance",
             "msfragger_style_3": "fragment_mass_tolerance",
+            "novor_style_1": "fragmentIonErrorTol_part1",
             "omssa_style_1": "-to",
             "pepnovo_style_1": "-fragment_tolerance",
             "pglyco_db_style_1": "search_fragment_tolerance",
@@ -6066,6 +6081,7 @@
             "msfragger_style_1": "fragment_mass_units",
             "msfragger_style_2": "fragment_mass_units",
             "msfragger_style_3": "fragment_mass_units",
+            "novor_style_1": "fragmentIonErrorTol_part2",
             "omssa_style_1": "frag_mass_tolerance_unit",
             "pepnovo_style_1": "frag_mass_tolerance_unit",
             "pglyco_db_style_1": "search_fragment_tolerance_type",
@@ -7973,9 +7989,9 @@
     },
     {
         "default_value": null,
-        "description": "Engine used to select 1% FDR PSMs for initial training set",
+        "description": "Engine used to select 1% q-value PSMs for initial training set",
         "key_translations": {
-            "peptide_forest_style_1": "-i",
+            "peptide_forest_style_1": "initial_engine",
             "ursgal_style_1": "initial_engine"
         },
         "name": "initial_engine",
@@ -10893,6 +10909,38 @@
         "value_type": "list"
     },
     {
+        "default_value": 10,
+        "description": "number of validation epochs",
+        "key_translations": {
+            "peptide_forest_style_1": "n_eval",
+            "ursgal_style_1": "n_test"
+        },
+        "name": "n_test",
+        "tag": [
+            "validation",
+            "peptide_forest"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": 10,
+        "description": "number of training epochs",
+        "key_translations": {
+            "peptide_forest_style_1": "n_train",
+            "ursgal_style_1": "n_train"
+        },
+        "name": "n_train",
+        "tag": [
+            "validation",
+            "peptide_forest"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
         "default_value": false,
         "description": "Neutral losses enabled for spectrum algorithm: set  True or False",
         "key_translations": {
@@ -11571,7 +11619,6 @@
             "msgfplus_style_1": "-o",
             "myrimatch_style_1": "output_file_incl_path",
             "mzidentml_style_1": "output_file_incl_path",
-            "novor_style_1": "output_file_incl_path",
             "omssa_style_1": "output_file_incl_path",
             "pepnovo_style_1": "output_file_incl_path",
             "percolator_style_1": "output_file_incl_path",
@@ -12239,6 +12286,7 @@
             "msfragger_style_1": "precursor_mass_lower",
             "msfragger_style_2": "precursor_mass_lower",
             "msfragger_style_3": "precursor_mass_lower",
+            "novor_style_1": "precursorErrorTol_part2",
             "msgfplus_style_1": "-t_minus",
             "omssa_style_1": "-te_part1",
             "unify_csv_style_1": "precursor_mass_tolerance_minus",
@@ -12266,6 +12314,7 @@
             "msfragger_style_2": "precursor_mass_upper",
             "msfragger_style_3": "precursor_mass_upper",
             "msgfplus_style_1": "-t_plus",
+            "novor_style_1": "precursorErrorTol_part1",
             "omssa_style_1": "-te_part2",
             "unify_csv_style_1": " precursor_mass_tolerance_minus",
             "ursgal_style_1": "precursor_mass_tolerance_plus",
@@ -12291,6 +12340,7 @@
             "msfragger_style_2": "precursor_mass_units",
             "msfragger_style_3": "precursor_mass_units",
             "msgfplus_style_1": "-t_unit",
+            "novor_style_1": "precursorErrorTol_part3",
             "omssa_style_1": "-teppm",
             "pepnovo_style_1": "precursor_mass_tolerance_unit",
             "pglyco_db_style_1": "search_precursor_tolerance_type",
@@ -12365,6 +12415,12 @@
                 ]
             ],
             "msgfplus_style_1": [
+                [
+                    "da",
+                    "Da"
+                ]
+            ],
+            "novor_style_1": [
                 [
                     "da",
                     "Da"
@@ -13071,6 +13127,38 @@
         "value_type": "bool"
     },
     {
+        "default_value": 0.01,
+        "description": "PSM q-value cutoff",
+        "key_translations": {
+            "peptide_forest_style_1": "q_cut",
+            "ursgal_style_1": "q_cut"
+        },
+        "name": "q_cut",
+        "tag": [
+            "validation",
+            "peptide_forest"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "float"
+    },
+    {
+        "default_value": 0.1,
+        "description": "PSM q-value cutoff for training",
+        "key_translations": {
+            "peptide_forest_style_1": "q_cut_train",
+            "ursgal_style_1": "q_cut_train"
+        },
+        "name": "q_cut_train",
+        "tag": [
+            "validation",
+            "peptide_forest"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "float"
+    },
+    {
         "default_value": null,
         "description": " Molecules to quantify. Can be either a list of strings or a csv file ",
         "key_translations": {
@@ -13136,7 +13224,8 @@
         "description": "Random seed for random number generators",
         "key_translations": {
             "flash_lfq_style_1": "--rns",
-            "ursgal_style_1": "random_seed"
+            "ursgal_style_1": "random_seed",
+            "generate_target_decoy_style_1": "random_seed"
         },
         "name": "random_seed",
         "tag": [
@@ -13800,6 +13889,22 @@
             ]
         },
         "value_type": "bool"
+    },
+    {
+        "default_value": 0.9,
+        "description": "fraction of true targets to assigned targets in a given dataset",
+        "key_translations": {
+            "peptide_forest_style_1": "sensitivity",
+            "ursgal_style_1": "sensitivity"
+        },
+        "name": "sensitivity",
+        "tag": [
+            "validation",
+            "peptide_forest"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "float"
     },
     {
         "default_value": false,

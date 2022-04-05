@@ -24,7 +24,7 @@ def dynamic_sort(input, depth=0):
 
 
 if __name__ == "__main__":
-    # Write
+    # Read
     with open("jsons/parameters.json") as f:
         j = json.load(f)
     # Sort
