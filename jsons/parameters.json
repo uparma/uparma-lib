@@ -2335,12 +2335,12 @@
     },
     {
         "default_value": "euclidean",
-        "description": "distance metric to use",
+        "description": "distance metric",
         "key_translations": {
-            "umap_style_1": "metric",
-            "ursgal_style_1": "metric"
+            "umap_style_1": "linkage",
+            "ursgal_style_1": "linkage"
         },
-        "name": "cluster_distance_metric",
+        "name": "distance_metric",
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {},
@@ -2348,12 +2348,12 @@
     },
     {
         "default_value": 0.1,
-        "description": "distance metric to use",
+        "description": "minimum distance to neighbour",
         "key_translations": {
             "umap_style_1": "min_distance",
             "ursgal_style_1": "min_distance"
         },
-        "name": "cluster_min_distance",
+        "name": "min_distance",
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {},
@@ -5993,7 +5993,7 @@
     },
     {
         "default_value": [],
-        "description": "columns containing the data to process",
+        "description": "columns containing the features",
         "key_translations": {
             "pw-stats_style_1": "feature_columns",
             "ursgal_style_1": "feature_columns",
