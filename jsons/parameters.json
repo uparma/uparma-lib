@@ -2338,10 +2338,12 @@
         "description": "number of components to use for embedding",
         "key_translations": {
             "umap_style_1": "n_components",
-            "ursgal_style_1": "n_components"
+            "ursgal_style_1": "cluster_n_components"
         },
         "name": "cluster_n_components",
-        "tag": [],
+        "tag": [
+            "cluster"
+        ],
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "int"
@@ -2351,12 +2353,13 @@
         "description": "number of neighbours",
         "key_translations": {
             "umap_style_1": "n_neighbours",
-            "ursgal_style_1": "n_neighbours"
+            "ursgal_style_1": "cluster_n_neighbours"
         },
         "name": "cluster_n_neighbours",
         "tag": [
             "plotting",
-            "embedding"
+            "embedding",
+            "cluster"
         ],
         "triggers_rerun": true,
         "value_translations": {},
@@ -3813,7 +3816,7 @@
         "description": "distance metric",
         "key_translations": {
             "umap_style_1": "linkage",
-            "ursgal_style_1": "linkage"
+            "ursgal_style_1": "distance_metric"
         },
         "name": "distance_metric",
         "tag": [],
@@ -9615,7 +9618,9 @@
             "ursgal_style_1": "min_distance"
         },
         "name": "min_distance",
-        "tag": [],
+        "tag": [
+            "cluster"
+        ],
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "int"
