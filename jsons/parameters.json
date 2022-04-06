@@ -2402,20 +2402,6 @@
         "value_type": "int"
     },
     {
-        "default_value": "Index",
-        "description": "This param defines which column should be used as the row index for the dataframe. Coming from an initially big dataframe, which e.g. would contain Peptide, Protein, Sequence - this column would define the one to be used as df.index.",
-        "key_translations": {
-            "pw-stats_style_1": "column_of_interest",
-            "ursgal_style_1": "column_of_interest",
-            "umap_style_1": "index_columns"
-        },
-        "name": "column_of_interest",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "str"
-    },
-    {
         "default_value": [],
         "description": "Define the list of samples that should be compared. If left empty, all possible combinations of comparisons will be performed.",
         "key_translations": {
@@ -8035,6 +8021,20 @@
             "ursgal_style_1": "identity_file"
         },
         "name": "identity_file",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": "Index",
+        "description": "This param defines which column should be used as the row index for the dataframe. Coming from an initially big dataframe, which e.g. would contain Peptide, Protein, Sequence - this column would define the one to be used as df.index.",
+        "key_translations": {
+            "pw-stats_style_1": "index_columns",
+            "ursgal_style_1": "index_columns",
+            "umap_style_1": "index_columns"
+        },
+        "name": "index_columns",
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {},
