@@ -245,7 +245,7 @@ def nested_json_is_sorted(rcode, jsons):
                     return next_list
         return input
 
-    if dynamic_sort(jsons["parameters.json"]) == jsons["parameters.json"]:
+    if str(dynamic_sort(jsons["parameters.json"])) == str(jsons["parameters.json"]):
         uprint(f"All nested objects are sorted in correct alphabetical order.", ok=True)
     else:
         uprint("parameters.json not sorted alphabetically. Run utils/sort.py", ok=False)
