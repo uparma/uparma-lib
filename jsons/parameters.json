@@ -5893,21 +5893,6 @@
         "value_type": "bool"
     },
     {
-        "default_value": false,
-        "description": "The user can retrieve a csv file containing results from the venn diagram",
-        "key_translations": {
-            "ursgal_style_1": "extract_venndiagram_file",
-            "venndiagram_style_1": "extract_venndiagram_file"
-        },
-        "name": "extract_venndiagram_file",
-        "tag": [
-            "visualization"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "bool"
-    },
-    {
         "default_value": 0.01,
         "description": "Target PSMs with a lower FDR than this threshold will be used as a positive training set for SVM post-processing",
         "key_translations": {
@@ -5973,7 +5958,8 @@
         "key_translations": {
             "pw-stats_style_1": "feature_columns",
             "ursgal_style_1": "feature_columns",
-            "umap_style_1": "feature_columns"
+            "umap_style_1": "feature_columns",
+            "venndiagram_style_1": "feature_columns"
         },
         "name": "feature_columns",
         "tag": [],
@@ -17501,157 +17487,6 @@
             ]
         },
         "value_type": "int"
-    },
-    {
-        "default_value": {},
-        "description": "Specifies colors for the datasets that should be visualized. Given as a dict in which the key represents the position of the corresponding dataset in the list, e.g.: {\"0\" : \"#e41a1c\", \"1\" : \"#377eb8\"}",
-        "key_translations": {
-            "ursgal_style_1": "visualization_color_positions",
-            "venndiagram_style_1": "visualization_color_position"
-        },
-        "name": "visualization_color_positions",
-        "tag": [
-            "visualization"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "dict"
-    },
-    {
-        "default_value": [
-            "Modifications",
-            "Sequence"
-        ],
-        "description": "The specified csv column names are used for the visualization. E.g. for a Venn diagram the entries of these columns are used (merged) to determine overlapping results.",
-        "key_translations": {
-            "ursgal_style_1": "visualization_column_names",
-            "venndiagram_style_1": "visualization_column_names"
-        },
-        "name": "visualization_column_names",
-        "tag": [
-            "visualization"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "list"
-    },
-    {
-        "default_value": {
-            "font_size_header": 31,
-            "font_size_major": 25,
-            "font_size_minor": 20,
-            "font_size_venn": 20,
-            "font_type": "Helvetica"
-        },
-        "description": "Font used for visualization plots (e.g. Venn diagram), given as dict with keys: font_type, font_size_header, font_size_major, font_size_minor, font_size_venn",
-        "key_translations": {
-            "ursgal_style_1": "visualization_font",
-            "venndiagram_style_1": "visualization_font"
-        },
-        "name": "visualization_font",
-        "tag": [
-            "visualization"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "dict"
-    },
-    {
-        "default_value": "",
-        "description": "Header of visualization output (e.g. Venn diagram)",
-        "key_translations": {
-            "sugarpy_plot_style_1": "title",
-            "ursgal_style_1": "visualization_header",
-            "venndiagram_style_1": "header"
-        },
-        "name": "visualization_header",
-        "tag": [
-            "visualization"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "str"
-    },
-    {
-        "default_value": {},
-        "description": "Specifies labels for the datasets that should be visualized. Given as a dict in which the key represents the position of the corresponding dataset in the list, e.g.: {\"0\" : \"LabelA\", \"1\" : \"LabelB\"}",
-        "key_translations": {
-            "ursgal_style_1": "visualization_label_positions",
-            "venndiagram_style_1": "visualization_label_position"
-        },
-        "name": "visualization_label_positions",
-        "tag": [
-            "visualization"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "dict"
-    },
-    {
-        "default_value": 0.35,
-        "description": "Opacity used in visualization plots (e.g. Venn diagram)",
-        "key_translations": {
-            "ursgal_style_1": "visualization_opacity",
-            "venndiagram_style_1": "opacity"
-        },
-        "name": "visualization_opacity",
-        "tag": [
-            "visualization"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "float"
-    },
-    {
-        "default_value": {
-            "x_axis": 600,
-            "y_axis": 400
-        },
-        "description": "Scaling factor for visualization plots (e.g. Venn diagram), given as dict with keys: x_axis, y_axis",
-        "key_translations": {
-            "ursgal_style_1": "visualization_scaling_factors",
-            "venndiagram_style_1": "visualization_scaling_factors"
-        },
-        "name": "visualization_scaling_factors",
-        "tag": [
-            "visualization"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "dict"
-    },
-    {
-        "default_value": {
-            "height": 900,
-            "width": 1200
-        },
-        "description": "Size of visualization plots (e.g. Venn diagram), given as dict with keys: width, height",
-        "key_translations": {
-            "ursgal_style_1": "visualization_size",
-            "venndiagram_style_1": "visualization_size"
-        },
-        "name": "visualization_size",
-        "tag": [
-            "visualization"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "dict"
-    },
-    {
-        "default_value": 2.0,
-        "description": "Stroke width used in visualization plots (e.g. Venn diagram)",
-        "key_translations": {
-            "ursgal_style_1": "visualization_stroke_width",
-            "venndiagram_style_1": "stroke-width"
-        },
-        "name": "visualization_stroke_width",
-        "tag": [
-            "visualization"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "float"
     },
     {
         "default_value": 249,
