@@ -2938,21 +2938,6 @@
         "value_type": "float"
     },
     {
-        "default_value": null,
-        "description": "Convert a single aminoacid in a sequence motif into another characeter using a string \"new_aa,motif,position_to_be_replaced\" where new_aa is the new character, motif is the regular expression that identifies the sequenc motif and position_to_be_replaced is the position in the motif that should be replaced (e.g. use \"J,N[^P][ST],0\" to convert N-X-S/T into J-X-S/T",
-        "key_translations": {
-            "generate_target_decoy_style_1": "convert_aa_in_motif",
-            "ursgal_style_1": "convert_aa_in_motif"
-        },
-        "name": "convert_aa_in_motif",
-        "tag": [
-            "conversion"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "str"
-    },
-    {
         "default_value": false,
         "description": "If True, the header of the identifier column is \"rownames\". If False, the joined identifier header name will be used",
         "key_translations": {
@@ -4046,95 +4031,75 @@
             "generate_target_decoy_style_1": [
                 [
                     "argc",
-                    "R;C;P"
+                    "(?<=R)(?![P])"
                 ],
                 [
                     "aspn",
-                    "D;N;"
+                    "(?=D)"
                 ],
                 [
                     "chymotrypsin",
-                    "FMWY;C;P"
-                ],
-                [
-                    "chymotrypsin_p",
-                    "FMWY;C;"
+                    "(?<=[FWLY])(?![P])"
                 ],
                 [
                     "clostripain",
-                    "R;C;"
+                    "(?<=R)"
                 ],
                 [
                     "cnbr",
-                    "M;C;P"
-                ],
-                [
-                    "elastase",
-                    "AGILV;C;P"
+                    "(?<=M)"
                 ],
                 [
                     "formic_acid",
-                    "D;C;P"
+                    "(?<=D)"
                 ],
                 [
                     "gluc",
-                    "DE;C;P"
+                    "(?<=[DE])(?![P])"
                 ],
                 [
                     "gluc_bicarb",
-                    "E;C;P"
+                    "(?<=[E])(?![P])"
                 ],
                 [
                     "iodosobenzoate",
-                    "W;C;"
+                    "(?<=W)"
                 ],
                 [
                     "lysc",
-                    "K;C;P"
+                    "(?<=K)(?![P])"
                 ],
                 [
                     "lysc_gluc",
-                    "DEK;C;P"
-                ],
-                [
-                    "lysc_p",
-                    "K;C;"
+                    "(?<=[DE])(?![P])|(?<=K)"
                 ],
                 [
                     "lysn",
-                    "K;N;"
+                    "(?=K)"
                 ],
                 [
-                    "lysn_promisc",
-                    "AKRS;N;"
-                ],
-                [
-                    "pepsina",
-                    "FL;C;"
-                ],
-                [
-                    "protein_endopeptidase",
-                    "P;C;"
+                    "nonspecific",
+                    ".^"
                 ],
                 [
                     "staph_protease",
-                    "E;C;"
+                    "(?<=E)"
                 ],
                 [
                     "trypsin",
-                    "KR;C;P"
+                    "(?<=[KR])(?![P])"
                 ],
                 [
                     "trypsin_cnbr",
-                    "KRM;C;P"
+                    "(?<=[KR])(?![P])|(?<=M)"
                 ],
                 [
                     "trypsin_gluc",
-                    "DEKR;C;P"
+                    "(?<=[KRDE])(?![P])"
                 ],
                 [
                     "trypsin_p",
-                    "KR;C;"
+                    "(?<=[KR])"
                 ]
             ],
             "kojak_style_1": [
@@ -5202,7 +5167,7 @@
                 ],
                 [
                     "chymotrypsin",
-                    "(?<=[F|W])(?![P])|(?<=[^P][Y])(?![P])"
+                    "(?<=[FWLY])(?![P])"
                 ],
                 [
                     "clostripain",
@@ -5218,11 +5183,11 @@
                 ],
                 [
                     "gluc",
-                    "(?<=[^E][D|E])(?![P])"
+                    "(?<=[DE])(?![P])"
                 ],
                 [
                     "gluc_bicarb",
-                    "(?<=[^E][E])(?![P])"
+                    "(?<=[E])(?![P])"
                 ],
                 [
                     "iodosobenzoate",
@@ -5230,11 +5195,11 @@
                 ],
                 [
                     "lysc",
-                    "(?<=K)"
+                    "(?<=K)(?![P])"
                 ],
                 [
                     "lysc_gluc",
-                    "(?<=[^E][D|E])(?![P])|(?<=K)"
+                    "(?<=[DE])(?![P])|(?<=K)"
                 ],
                 [
                     "lysn",
@@ -5250,19 +5215,19 @@
                 ],
                 [
                     "trypsin",
-                    "(?<=[K|R])(?![P])"
+                    "(?<=[KR])(?![P])"
                 ],
                 [
                     "trypsin_cnbr",
-                    "(?<=[K|R])(?![P])|(?<=M)"
+                    "(?<=[KR])(?![P])|(?<=M)"
                 ],
                 [
                     "trypsin_gluc",
-                    "(?<=[K|R])(?![P])|(?<=[D|E])(?![P|E])"
+                    "(?<=[KRDE])(?![P])"
                 ],
                 [
                     "trypsin_p",
-                    "(?<=[K|R])"
+                    "(?<=[KR])"
                 ]
             ],
             "ursgal_style_1": [
