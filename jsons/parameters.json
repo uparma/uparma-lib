@@ -6582,1089 +6582,1089 @@
         "value_translations": {
             "comet_style_1": [
                 [
-                    "Calc m/z",
+                    "calc_mz",
                     "calculatedMassToCharge"
                 ],
                 [
-                    "Charge",
+                    "charge",
                     "chargeState"
                 ],
                 [
-                    "Comet:DeltaCn",
+                    "comet:deltacn",
                     "Comet:deltacn"
                 ],
                 [
-                    "Comet:EValue",
+                    "comet:e_value",
                     "Comet:expectation value"
                 ],
                 [
-                    "Comet:Num Matched Ions",
+                    "comet:num_matched_ions",
                     "number of matched peaks"
                 ],
                 [
-                    "Comet:Num Unmatched Ions",
+                    "comet:num_unmatched_ions",
                     "number of unmatched peaks"
                 ],
                 [
-                    "Comet:Score",
+                    "comet:score",
                     "Comet:spscore"
                 ],
                 [
-                    "Comet:XCorr",
+                    "comet:xcorr",
                     "Comet:xcorr"
                 ],
                 [
-                    "Comet:XCorr",
+                    "comet:xcorr",
                     "Comet:xcorr"
                 ],
                 [
-                    "Exp m/z",
+                    "exp_mz",
                     "experimentalMassToCharge"
                 ],
                 [
-                    "Sequence",
+                    "sequence",
                     "peptide_ref"
                 ]
             ],
             "deepnovo_style_1": [
                 [
-                    "Charge",
+                    "charge",
                     "precursor_charge"
                 ],
                 [
-                    "DeepNovo:aaScore",
+                    "deepnovo:aascore",
                     "predicted_position_score"
                 ],
                 [
-                    "DeepNovo:score",
+                    "deepnovo:score",
                     "predicted_score"
                 ],
                 [
-                    "Exp m/z",
+                    "exp_mz",
                     "precursor_mz"
                 ],
                 [
-                    "Sequence",
+                    "sequence",
                     "predicted_sequence"
                 ],
                 [
-                    "Spectrum ID",
+                    "spectrum id",
                     "scan"
                 ],
                 [
-                    "Spectrum ID",
+                    "spectrum id",
                     "scan_list_middle"
                 ]
             ],
             "flash_lfq_style_1": [
                 [
-                    "Accuracy (ppm)",
+                    "accuracy_ppm",
                     "Peak Apex Mass Error (ppm)"
                 ],
                 [
-                    "Calc mass",
+                    "calc_mass",
                     "Peptide Monoisotopic Mass"
                 ],
                 [
-                    "Charge",
+                    "charge",
                     "Precursor Charge"
                 ],
                 [
-                    "FlashLFQ:Base Sequences Mapped",
+                    "flashlfq:base_sequences_mapped",
                     "Base Sequences Mapped"
                 ],
                 [
-                    "FlashLFQ:Full Sequence",
+                    "flashlfq:full_sequence",
                     "Full Sequence"
                 ],
                 [
-                    "FlashLFQ:Full Sequences Mapped",
+                    "flashlfq:full_sequences_mapped",
                     "Full Sequences Mapped"
                 ],
                 [
-                    "FlashLFQ:MBR Score",
+                    "flashlfq:mbr_score",
                     "MBR Score"
                 ],
                 [
-                    "FlashLFQ:MS2 Retention Time",
+                    "flashlfq:ms2_retention_time",
                     "MS2 Retention Time"
                 ],
                 [
-                    "FlashLFQ:Num Charge States Observed",
+                    "flashlfq:num charge states observed",
                     "Num Charge States Observed"
                 ],
                 [
-                    "FlashLFQ:PSMs Mapped",
-                    "PSMs Mapped"
-                ],
-                [
-                    "FlashLFQ:Peak Charge",
+                    "flashlfq:peak_charge",
                     "Peak Charge"
                 ],
                 [
-                    "FlashLFQ:Peak Detection Type",
+                    "flashlfq:peak_detection_type",
                     "Peak Detection Type"
                 ],
                 [
-                    "FlashLFQ:Peak MZ",
-                    "Peak MZ"
-                ],
-                [
-                    "FlashLFQ:Peak RT Apex",
-                    "Peak RT Apex"
-                ],
-                [
-                    "FlashLFQ:Peak RT End",
-                    "Peak RT End"
-                ],
-                [
-                    "FlashLFQ:Peak RT Start",
-                    "Peak RT Start"
-                ],
-                [
-                    "FlashLFQ:Peak Split Valley RT",
-                    "Peak Split Valley RT"
-                ],
-                [
-                    "FlashLFQ:Peak intensity",
+                    "flashlfq:peak_intensity",
                     "Peak intensity"
                 ],
                 [
-                    "FlashLFQ:Theoretical MZ",
+                    "flashlfq:peak_mz",
+                    "Peak MZ"
+                ],
+                [
+                    "flashlfq:peak_rt_apex",
+                    "Peak RT Apex"
+                ],
+                [
+                    "flashlfq:peak_rt_end",
+                    "Peak RT End"
+                ],
+                [
+                    "flashlfq:peak_rt_start",
+                    "Peak RT Start"
+                ],
+                [
+                    "flashlfq:peak_split_valley_rt",
+                    "Peak Split Valley RT"
+                ],
+                [
+                    "flashlfq:psms mapped",
+                    "PSMs Mapped"
+                ],
+                [
+                    "flashlfq:theoretical_mz",
                     "Theoretical MZ"
                 ],
                 [
-                    "Protein ID",
+                    "protein_id",
                     "Protein Group"
                 ],
                 [
-                    "Raw Filename",
+                    "raw_filename",
                     "File Name"
                 ],
                 [
-                    "Sequence",
+                    "sequence",
                     "Base Sequence"
                 ]
             ],
             "kojak_percolator_style_1": [
                 [
-                    "Kojak:score",
+                    "kojak:score",
                     "score"
                 ],
                 [
-                    "PEP",
+                    "pep",
                     "posterior_error_prob"
                 ],
                 [
-                    "PSMId",
-                    "PSMId"
-                ],
-                [
-                    "Protein ID",
+                    "protein_id",
                     "proteinIds"
                 ],
                 [
-                    "Sequence",
-                    "peptide"
+                    "psmid",
+                    "PSMId"
                 ],
                 [
-                    "q-value",
+                    "q_value",
                     "q-value"
+                ],
+                [
+                    "sequence",
+                    "peptide"
                 ]
             ],
             "msamanda_style_1": [
                 [
-                    "Amanda:Num Matched Peaks",
+                    "amanda:num_matched_peaks",
                     "Nr of matched peaks"
                 ],
                 [
-                    "Amanda:Score",
+                    "amanda:score",
                     "Amanda Score"
                 ],
                 [
-                    "Amanda:Weighted Probability",
+                    "amanda:weighted_probability",
                     "Weighted Probability"
                 ],
                 [
-                    "Charge",
+                    "charge",
                     "Charge"
                 ],
                 [
-                    "Exp m/z",
+                    "exp_mz",
                     "m/z"
                 ],
                 [
-                    "Modifications",
+                    "modifications",
                     "Modifications"
                 ],
                 [
-                    "Rank",
+                    "rank",
                     "Rank"
                 ],
                 [
-                    "Retention Time (s)",
+                    "retention_time_seconds",
                     "RT"
                 ],
                 [
-                    "Sequence",
+                    "sequence",
                     "Sequence"
                 ],
                 [
-                    "Spectrum ID",
+                    "spectrum_id",
                     "Scan Number"
                 ],
                 [
-                    "Spectrum Title",
+                    "spectrum_title",
                     "Title"
                 ]
             ],
             "msfragger_style_1": [
                 [
-                    "Charge",
+                    "charge",
                     "Precursor charge"
                 ],
                 [
-                    "MSFragger:Hyperscore",
-                    "Hyperscore"
-                ],
-                [
-                    "MSFragger:Intercept of expectation model (expectation in log space)",
-                    "Intercept of expectation model (expectation in log space)"
-                ],
-                [
-                    "MSFragger:Matched fragment ions",
-                    "Matched fragment ions"
-                ],
-                [
-                    "MSFragger:Neutral mass of peptide",
-                    "Neutral mass of peptide"
-                ],
-                [
-                    "MSFragger:Next score",
-                    "Next score"
-                ],
-                [
-                    "MSFragger:Number of missed cleavages",
-                    "Number of missed cleavages"
-                ],
-                [
-                    "MSFragger:Number of tryptic termini",
-                    "Number of tryptic termini"
-                ],
-                [
-                    "MSFragger:Precursor neutral mass (Da)",
-                    "Precursor neutral mass (Da)"
-                ],
-                [
-                    "MSFragger:Slope of expectation model (expectation in log space)",
-                    "Slope of expectation model (expectation in log space)"
-                ],
-                [
-                    "MSFragger:Total possible number of matched theoretical fragment ions",
-                    "Total possible number of matched theoretical fragment ions"
-                ],
-                [
-                    "Mass Difference",
+                    "mass_difference",
                     "Mass difference"
                 ],
                 [
-                    "Modifications",
+                    "modifications",
                     "Variable modifications detected"
                 ],
                 [
-                    "Protein ID",
+                    "msfragger:hyperscore",
+                    "Hyperscore"
+                ],
+                [
+                    "msfragger:intercept_of_expectation_model_expectation_in_log_space",
+                    "Intercept of expectation model (expectation in log space)"
+                ],
+                [
+                    "msfragger:matched_fragment_ions",
+                    "Matched fragment ions"
+                ],
+                [
+                    "msfragger:neutral_mass_of_peptide",
+                    "Neutral mass of peptide"
+                ],
+                [
+                    "msfragger:next_score",
+                    "Next score"
+                ],
+                [
+                    "msfragger:number_of_missed_cleavages",
+                    "Number of missed cleavages"
+                ],
+                [
+                    "msfragger:number_of_tryptic_termini",
+                    "Number of tryptic termini"
+                ],
+                [
+                    "msfragger:precursor_neutral_mass_da",
+                    "Precursor neutral mass (Da)"
+                ],
+                [
+                    "msfragger:slope_of_expectation_model_(expectation_in_log_space)",
+                    "Slope of expectation model (expectation in log space)"
+                ],
+                [
+                    "msfragger:total_possible_number_of_matched_theoretical_fragment_ions",
+                    "Total possible number of matched theoretical fragment ions"
+                ],
+                [
+                    "protein_id",
                     "Protein"
                 ],
                 [
-                    "Rank",
+                    "rank",
                     "Hit rank"
                 ],
                 [
-                    "Retention Time (s)",
+                    "retention_time_seconds",
                     "Retention time (minutes)"
                 ],
                 [
-                    "Sequence",
+                    "sequence",
                     "Peptide Sequence"
                 ],
                 [
-                    "Sequence Post AA",
+                    "sequence_post_aa",
                     "Downstream Amino Acid"
                 ],
                 [
-                    "Sequence Pre AA",
+                    "sequence_pre_aa",
                     "Upstream Amino Acid"
                 ],
                 [
-                    "Spectrum ID",
+                    "spectrum_id",
                     "ScanID"
                 ]
             ],
             "msfragger_style_2": [
                 [
-                    "Charge",
+                    "charge",
                     "charge"
                 ],
                 [
-                    "MSFragger:Hyperscore",
-                    "hyperscore"
-                ],
-                [
-                    "MSFragger:Matched fragment ions",
-                    "num_matched_ions"
-                ],
-                [
-                    "MSFragger:Neutral mass of peptide",
-                    "calc_neutral_pep_mass"
-                ],
-                [
-                    "MSFragger:Next score",
-                    "nextscore"
-                ],
-                [
-                    "MSFragger:Number of missed cleavages",
-                    "num_missed_cleavages"
-                ],
-                [
-                    "MSFragger:Number of tryptic termini",
-                    "num_tol_term"
-                ],
-                [
-                    "MSFragger:Precursor neutral mass (Da)",
-                    "precursor_neutral_mass"
-                ],
-                [
-                    "MSFragger:Total possible number of matched theoretical fragment ions",
-                    "tot_num_ions"
-                ],
-                [
-                    "MSFragger:best_locs",
-                    "best_locs"
-                ],
-                [
-                    "MSFragger:best_score_with_delta_mass",
-                    "best_score_with_delta_mass"
-                ],
-                [
-                    "MSFragger:delta_score",
-                    "delta_score"
-                ],
-                [
-                    "MSFragger:expect score",
-                    "expectscore"
-                ],
-                [
-                    "MSFragger:score_without_delta_mass",
-                    "score_without_delta_mass"
-                ],
-                [
-                    "MSFragger:second_best_score_with_delta_mass",
-                    "second_best_score_with_delta_mass"
-                ],
-                [
-                    "Mass Difference",
+                    "mass_difference",
                     "massdiff"
                 ],
                 [
-                    "Modifications",
+                    "modifications",
                     "modification_info"
                 ],
                 [
-                    "Protein ID",
+                    "msfragger:best_locs",
+                    "best_locs"
+                ],
+                [
+                    "msfragger:best_score_with_delta_mass",
+                    "best_score_with_delta_mass"
+                ],
+                [
+                    "msfragger:delta_score",
+                    "delta_score"
+                ],
+                [
+                    "msfragger:expect_score",
+                    "expectscore"
+                ],
+                [
+                    "msfragger:hyperscore",
+                    "hyperscore"
+                ],
+                [
+                    "msfragger:matched_fragment_ions",
+                    "num_matched_ions"
+                ],
+                [
+                    "msfragger:neutral_mass_of_peptide",
+                    "calc_neutral_pep_mass"
+                ],
+                [
+                    "msfragger:next_score",
+                    "nextscore"
+                ],
+                [
+                    "msfragger:number_of_missed_cleavages",
+                    "num_missed_cleavages"
+                ],
+                [
+                    "msfragger:number_of_tryptic_termini",
+                    "num_tol_term"
+                ],
+                [
+                    "msfragger:precursor_neutral_mass_da",
+                    "precursor_neutral_mass"
+                ],
+                [
+                    "msfragger:score_without_delta_mass",
+                    "score_without_delta_mass"
+                ],
+                [
+                    "msfragger:second_best_score_with_delta_mass",
+                    "second_best_score_with_delta_mass"
+                ],
+                [
+                    "msfragger:total_possible_number_of_matched_theoretical_fragment_ions",
+                    "tot_num_ions"
+                ],
+                [
+                    "protein_id",
                     "protein"
                 ],
                 [
-                    "Rank",
+                    "rank",
                     "hit_rank"
                 ],
                 [
-                    "Retention Time (s)",
+                    "retention_time_seconds",
                     "retention_time"
                 ],
                 [
-                    "Sequence",
+                    "sequence",
                     "peptide"
                 ],
                 [
-                    "Sequence Post AA",
+                    "sequence_post_aa",
                     "peptide_next_aa"
                 ],
                 [
-                    "Sequence Pre AA",
+                    "sequence_pre_aa",
                     "peptide_prev_aa"
                 ],
                 [
-                    "Spectrum ID",
+                    "spectrum_id",
                     "scannum"
                 ]
             ],
             "msfragger_style_3": [
                 [
-                    "Charge",
+                    "charge",
                     "charge"
                 ],
                 [
-                    "MSFragger:Hyperscore",
-                    "hyperscore"
-                ],
-                [
-                    "MSFragger:Matched fragment ions",
-                    "num_matched_ions"
-                ],
-                [
-                    "MSFragger:Neutral mass of peptide",
-                    "calc_neutral_pep_mass"
-                ],
-                [
-                    "MSFragger:Next score",
-                    "nextscore"
-                ],
-                [
-                    "MSFragger:Number of missed cleavages",
-                    "num_missed_cleavages"
-                ],
-                [
-                    "MSFragger:Number of tryptic termini",
-                    "num_tol_term"
-                ],
-                [
-                    "MSFragger:Precursor neutral mass (Da)",
-                    "precursor_neutral_mass"
-                ],
-                [
-                    "MSFragger:Total possible number of matched theoretical fragment ions",
-                    "tot_num_ions"
-                ],
-                [
-                    "MSFragger:best_locs",
-                    "best_locs"
-                ],
-                [
-                    "MSFragger:best_score_with_delta_mass",
-                    "best_score_with_delta_mass"
-                ],
-                [
-                    "MSFragger:delta_score",
-                    "delta_score"
-                ],
-                [
-                    "MSFragger:expect score",
-                    "expectscore"
-                ],
-                [
-                    "MSFragger:score_without_delta_mass",
-                    "score_without_delta_mass"
-                ],
-                [
-                    "MSFragger:second_best_score_with_delta_mass",
-                    "second_best_score_with_delta_mass"
-                ],
-                [
-                    "Mass Difference",
+                    "mass_difference",
                     "massdiff"
                 ],
                 [
-                    "Modifications",
+                    "modifications",
                     "modification_info"
                 ],
                 [
-                    "Protein ID",
+                    "msfragger:best_locs",
+                    "best_locs"
+                ],
+                [
+                    "msfragger:best_score_with_delta_mass",
+                    "best_score_with_delta_mass"
+                ],
+                [
+                    "msfragger:delta_score",
+                    "delta_score"
+                ],
+                [
+                    "msfragger:expect_score",
+                    "expectscore"
+                ],
+                [
+                    "msfragger:hyperscore",
+                    "hyperscore"
+                ],
+                [
+                    "msfragger:matched_fragment_ions",
+                    "num_matched_ions"
+                ],
+                [
+                    "msfragger:neutral_mass_of_peptide",
+                    "calc_neutral_pep_mass"
+                ],
+                [
+                    "msfragger:next_score",
+                    "nextscore"
+                ],
+                [
+                    "msfragger:number_of_missed_cleavages",
+                    "num_missed_cleavages"
+                ],
+                [
+                    "msfragger:number_of_tryptic_termini",
+                    "num_tol_term"
+                ],
+                [
+                    "msfragger:precursor_neutral_mass_da",
+                    "precursor_neutral_mass"
+                ],
+                [
+                    "msfragger:score_without_delta_mass",
+                    "score_without_delta_mass"
+                ],
+                [
+                    "msfragger:second_best_score_with_delta_mass",
+                    "second_best_score_with_delta_mass"
+                ],
+                [
+                    "msfragger:total_possible_number_of_matched_theoretical_fragment_ions",
+                    "tot_num_ions"
+                ],
+                [
+                    "protein_id",
                     "protein"
                 ],
                 [
-                    "Rank",
+                    "rank",
                     "hit_rank"
                 ],
                 [
-                    "Retention Time (s)",
+                    "retention_time_seconds",
                     "retention_time"
                 ],
                 [
-                    "Sequence",
+                    "sequence",
                     "peptide"
                 ],
                 [
-                    "Sequence Post AA",
+                    "sequence_post_aa",
                     "peptide_next_aa"
                 ],
                 [
-                    "Sequence Pre AA",
+                    "sequence_pre_aa",
                     "peptide_prev_aa"
                 ],
                 [
-                    "Spectrum ID",
+                    "spectrum_id",
                     "scannum"
                 ]
             ],
             "msgfplus_style_1": [
                 [
-                    "Calc m/z",
+                    "calc_mz",
                     "calculatedMassToCharge"
                 ],
                 [
-                    "Charge",
+                    "charge",
                     "chargeState"
                 ],
                 [
-                    "Exp m/z",
+                    "exp_mz",
                     "experimentalMassToCharge"
                 ],
                 [
-                    "MS-GF:DeNovoScore",
+                    "ms-gf:denovoscore",
                     "MS-GF:DeNovoScore"
                 ],
                 [
-                    "MS-GF:EValue",
+                    "ms-gf:evalue",
                     "MS-GF:EValue"
                 ],
                 [
-                    "MS-GF:Num Matched Ions",
+                    "ms-gf:num_matched_ions",
                     "NumMatchedMainIons"
                 ],
                 [
-                    "MS-GF:RawScore",
+                    "ms-gf:raw_score",
                     "MS-GF:RawScore"
                 ],
                 [
-                    "MS-GF:SpecEValue",
+                    "ms-gf:spec_evalue",
                     "MS-GF:SpecEValue"
                 ],
                 [
-                    "Sequence",
+                    "sequence",
                     "peptide_ref"
                 ],
                 [
-                    "Spectrum ID",
+                    "spectrum_id",
                     "scan number(s)"
                 ],
                 [
-                    "Spectrum Title",
+                    "spectrum_title",
                     "spectrum title"
                 ]
             ],
             "novor_style_1": [
                 [
-                    "Calc mass",
+                    "calc_mass",
                     " pepMass(denovo)"
                 ],
                 [
-                    "Charge",
+                    "charge",
                     " z"
                 ],
                 [
-                    "Error (exp-calc)",
+                    "error_exp_calc",
                     " err(data-denovo)"
                 ],
                 [
-                    "Error (ppm)",
+                    "error_ppm",
                     " ppm(1e6*err/(mz*z))"
                 ],
                 [
-                    "Exp m/z",
+                    "exp_mz",
                     " mz(data)"
                 ],
                 [
-                    "Novor:aaScore",
+                    "novor:aascore",
                     " aaScore"
                 ],
                 [
-                    "Novor:id",
+                    "novor:id",
                     "# id"
                 ],
                 [
-                    "Novor:score",
+                    "novor:score",
                     " score"
                 ],
                 [
-                    "Retention Time (s)",
+                    "retention_time_(s)",
                     " RT"
                 ],
                 [
-                    "Sequence",
+                    "sequence",
                     " peptide"
                 ],
                 [
-                    "Spectrum ID",
+                    "spectrum_id",
                     " scanNum"
                 ]
             ],
             "omssa_style_1": [
                 [
-                    "Accession",
+                    "accession",
                     " Accession"
                 ],
                 [
-                    "Calc m/z",
+                    "calc_mz",
                     " Theo Mass"
                 ],
                 [
-                    "Charge",
+                    "charge",
                     " Charge"
                 ],
                 [
-                    "Exp m/z",
+                    "exp_mz",
                     " Mass"
                 ],
                 [
-                    "Modifications",
+                    "modifications",
                     " Mods"
                 ],
                 [
-                    "OMSSA:evalue",
+                    "omssa:evalue",
                     " E-value"
                 ],
                 [
-                    "OMSSA:pvalue",
+                    "omssa:pvalue",
                     " P-value"
                 ],
                 [
-                    "Sequence",
+                    "sequence",
                     " Peptide"
                 ],
                 [
-                    "Spectrum ID",
+                    "spectrum_id",
                     "Spectrum number"
                 ],
                 [
-                    "Spectrum Title",
+                    "spectrum_title",
                     " Filename/id"
                 ]
             ],
             "pepnovo_style_1": [
                 [
-                    "Calc mass(Da)",
+                    "calc_mass_da",
                     "[M+H]"
                 ],
                 [
-                    "Pepnovo:C-Gap",
-                    "C-Gap"
-                ],
-                [
-                    "Pepnovo:CumProb",
-                    "CumProb"
-                ],
-                [
-                    "Pepnovo:N-Gap",
-                    "N-Gap"
-                ],
-                [
-                    "Pepnovo:PnvScr",
-                    "PnvScr"
-                ],
-                [
-                    "Pepnovo:RnkScr",
-                    "RnkScr"
-                ],
-                [
-                    "Pepnovo:aaScore",
+                    "pepnovo:aa_score",
                     "output_aa_probs"
                 ],
                 [
-                    "Pepnovo:id",
+                    "pepnovo:c_gap",
+                    "C-Gap"
+                ],
+                [
+                    "pepnovo:cumprob",
+                    "CumProb"
+                ],
+                [
+                    "pepnovo:id",
                     "#Index"
+                ],
+                [
+                    "pepnovo:n_gap",
+                    "N-Gap"
+                ],
+                [
+                    "pepnovo:pnv_scr",
+                    "PnvScr"
+                ],
+                [
+                    "pepnovo:rnk_scr",
+                    "RnkScr"
                 ]
             ],
             "pglyco_db_style_1": [
                 [
-                    "Accuracy (ppm)",
+                    "accuracy_ppm",
                     "PPM"
                 ],
                 [
-                    "Calc Mass",
+                    "calc_mass",
                     "PeptideMH"
                 ],
                 [
-                    "Charge",
+                    "charge",
                     "Charge"
                 ],
                 [
-                    "CoreFuc",
-                    "CoreFuc"
-                ],
-                [
-                    "CoreMatched",
+                    "core_matched",
                     "CoreMatched"
                 ],
                 [
-                    "Exp Mass",
+                    "corefuc",
+                    "CoreFuc"
+                ],
+                [
+                    "exp_mass",
                     "PrecursorMH"
                 ],
                 [
-                    "Exp m/z",
+                    "exp_mz",
                     "PrecursorMZ"
                 ],
                 [
-                    "GlyDecoy",
+                    "gly_decoy",
                     "GlyDecoy"
                 ],
                 [
-                    "GlyIonRatio",
+                    "gly_ion_ratio",
                     "GlyIonRatio"
                 ],
                 [
-                    "Glycan",
+                    "glycan",
                     "Glycan(H,N,A,G,F)"
                 ],
                 [
-                    "Glycan Fragments",
+                    "glycan_fragments",
                     "GlyFrag"
                 ],
                 [
-                    "Glycan ID",
+                    "glycan_id",
                     "GlyID"
                 ],
                 [
-                    "Glycan Mass",
+                    "glycan_mass",
                     "GlyMass"
                 ],
                 [
-                    "Glycosite",
+                    "glyco_site",
                     "GlySite"
                 ],
                 [
-                    "Mass Difference",
+                    "mass_difference",
                     "MassDeviation"
                 ],
                 [
-                    "Modifications",
+                    "modifications",
                     "Mod"
                 ],
                 [
-                    "PepDecoy",
+                    "pep_decoy",
                     "PepDecoy"
                 ],
                 [
-                    "PepIonRatio",
+                    "pep_ion_ratio",
                     "PepIonRatio"
                 ],
                 [
-                    "Plausible Glycan Structure",
-                    "PlausibleStruct"
-                ],
-                [
-                    "Rank",
-                    "Rank"
-                ],
-                [
-                    "Raw Filename",
-                    "RawName"
-                ],
-                [
-                    "Retention Time (s)",
-                    "RT"
-                ],
-                [
-                    "Sequence",
-                    "Peptide"
-                ],
-                [
-                    "Spectrum ID",
-                    "Scan"
-                ],
-                [
-                    "Spectrum Title",
-                    "GlySpec"
-                ],
-                [
-                    "Spectrum Title",
-                    "PepSpec"
-                ],
-                [
-                    "pGlyco:GlyScore",
+                    "pglyco:gly_score",
                     "GlyScore"
                 ],
                 [
-                    "pGlyco:PepScore",
+                    "pglyco:pep_score",
                     "PepScore"
                 ],
                 [
-                    "pGlyco:TotalScore",
+                    "pglyco:total_score",
                     "TotalScore"
+                ],
+                [
+                    "plausible_glycan_structure",
+                    "PlausibleStruct"
+                ],
+                [
+                    "rank",
+                    "Rank"
+                ],
+                [
+                    "raw_filename",
+                    "RawName"
+                ],
+                [
+                    "retention_time_seconds",
+                    "RT"
+                ],
+                [
+                    "sequence",
+                    "Peptide"
+                ],
+                [
+                    "spectrum_id",
+                    "Scan"
+                ],
+                [
+                    "spectrum_title",
+                    "GlySpec"
+                ],
+                [
+                    "spectrum_title",
+                    "PepSpec"
                 ]
             ],
             "pglyco_fdr_style_1": [
                 [
-                    "Accuracy (ppm)",
+                    "accuracy_ppm",
                     "PPM"
                 ],
                 [
-                    "Calc Mass",
+                    "calc_mass",
                     "PeptideMH"
                 ],
                 [
-                    "Charge",
+                    "charge",
                     "Charge"
                 ],
                 [
-                    "CoreFuc",
-                    "CoreFuc"
-                ],
-                [
-                    "CoreMatched",
+                    "core_matched",
                     "CoreMatched"
                 ],
                 [
-                    "Exp Mass",
+                    "corefuc",
+                    "CoreFuc"
+                ],
+                [
+                    "exp_mass",
                     "PrecursorMH"
                 ],
                 [
-                    "Exp m/z",
+                    "exp_mz",
                     "PrecursorMZ"
                 ],
                 [
-                    "GlyDecoy",
-                    "GlyDecoy"
-                ],
-                [
-                    "GlyIonRatio",
+                    "gly_ion_ratio",
                     "GlyIonRatio"
                 ],
                 [
-                    "Glycan",
+                    "glycan",
                     "Glycan(H,N,A,G,F)"
                 ],
                 [
-                    "Glycan FDR",
+                    "glycan_fdr",
                     "GlycanFDR"
                 ],
                 [
-                    "Glycan Fragments",
+                    "glycan_fragments",
                     "GlyFrag"
                 ],
                 [
-                    "Glycan ID",
+                    "glycan_id",
                     "GlyID"
                 ],
                 [
-                    "Glycan Mass",
+                    "glycan_mass",
                     "GlyMass"
                 ],
                 [
-                    "Glycosite",
+                    "glycosite",
                     "GlySite"
                 ],
                 [
-                    "Mass Difference",
+                    "glydecoy",
+                    "GlyDecoy"
+                ],
+                [
+                    "mass_difference",
                     "MassDeviation"
                 ],
                 [
-                    "Modifications",
+                    "modifications",
                     "Mod"
                 ],
                 [
-                    "PepDecoy",
+                    "pep_decoy",
                     "PepDecoy"
                 ],
                 [
-                    "PepIonRatio",
+                    "pep_ion_ratio",
                     "PepIonRatio"
                 ],
                 [
-                    "Peptide FDR",
+                    "peptide_fdr",
                     "PeptideFDR"
                 ],
                 [
-                    "Plausible Glycan Structure",
-                    "PlausibleStruct"
-                ],
-                [
-                    "Rank",
-                    "Rank"
-                ],
-                [
-                    "Raw Filename",
-                    "RawName"
-                ],
-                [
-                    "Retention Time (s)",
-                    "RT"
-                ],
-                [
-                    "Sequence",
-                    "Peptide"
-                ],
-                [
-                    "Spectrum ID",
-                    "Scan"
-                ],
-                [
-                    "Spectrum Title",
-                    "GlySpec"
-                ],
-                [
-                    "Spectrum Title",
-                    "PepSpec"
-                ],
-                [
-                    "pGlyco:GlyScore",
+                    "pglyco:gly_score",
                     "GlyScore"
                 ],
                 [
-                    "pGlyco:PepScore",
+                    "pglyco:pep_score",
                     "PepScore"
                 ],
                 [
-                    "pGlyco:TotalScore",
+                    "pglyco:total_score",
                     "TotalScore"
+                ],
+                [
+                    "plausible_glycan_structure",
+                    "PlausibleStruct"
                 ],
                 [
                     "q-value",
                     "TotalFDR"
+                ],
+                [
+                    "rank",
+                    "Rank"
+                ],
+                [
+                    "raw_filename",
+                    "RawName"
+                ],
+                [
+                    "retention_time_seconds",
+                    "RT"
+                ],
+                [
+                    "sequence",
+                    "Peptide"
+                ],
+                [
+                    "spectrum_id",
+                    "Scan"
+                ],
+                [
+                    "spectrum_title",
+                    "GlySpec"
+                ],
+                [
+                    "spectrum_title",
+                    "PepSpec"
                 ]
             ],
             "pipi_style_1": [
                 [
-                    "A-Score",
+                    "a_score",
                     "A_score"
                 ],
                 [
-                    "Calc m/z",
+                    "calc_mz",
                     "theo_mass"
                 ],
                 [
-                    "Charge",
+                    "charge",
                     "charge"
                 ],
                 [
-                    "Exp m/z",
+                    "exp_mz",
                     "exp_mass"
                 ],
                 [
-                    "Label",
+                    "label",
                     "labelling"
                 ],
                 [
-                    "PIPI:MS1_pearson_correlation_coefficient",
-                    "MS1_pearson_correlation_coefficient"
-                ],
-                [
-                    "PIPI:abs_ppm",
+                    "pipi:abs_ppm",
                     "abs_ppm"
                 ],
                 [
-                    "PIPI:delta_C_n",
+                    "pipi:delta_c_n",
                     "delta_C_n"
                 ],
                 [
-                    "PIPI:isotope_correction",
+                    "pipi:isotope_correction",
                     "isotope_correction"
                 ],
                 [
-                    "PIPI:other_PTM_patterns",
+                    "pipi:ms1_pearson_correlation_coefficient",
+                    "MS1_pearson_correlation_coefficient"
+                ],
+                [
+                    "pipi:other_ptm_patterns",
                     "other_PTM_patterns"
                 ],
                 [
-                    "PIPI:score",
+                    "pipi:score",
                     "score"
                 ],
                 [
-                    "Protein ID",
+                    "protein_id",
                     "protein_ID"
                 ],
                 [
-                    "Sequence",
+                    "sequence",
                     "peptide"
                 ],
                 [
-                    "Spectrum ID",
+                    "spectrum_id",
                     "scan_num"
                 ],
                 [
-                    "Spectrum Title",
+                    "spectrum_title",
                     "MGF_title"
                 ]
             ],
             "tag_graph_style_1": [
                 [
-                    "Accuracy (ppm)",
+                    "accuracy_(ppm)",
                     "PPM"
                 ],
                 [
-                    "Calc mass",
+                    "calc_mass",
                     "Theo M+H"
                 ],
                 [
-                    "Charge",
+                    "charge",
                     "Charge"
                 ],
                 [
-                    "Context Mod Variants",
+                    "context_mod_variants",
                     "Context Mod Variants"
                 ],
                 [
-                    "De Novo Peptide",
+                    "de_novo_peptide",
                     "De Novo Peptide"
                 ],
                 [
-                    "De Novo Score",
+                    "de_novo_score",
                     "De Novo Score"
                 ],
                 [
-                    "Exp Mass",
+                    "exp_mass",
                     "Obs M+H"
                 ],
                 [
-                    "Matching Tag Length",
+                    "matching_tag_length",
                     "Matching Tag Length"
                 ],
                 [
-                    "Modifications",
+                    "modifications",
                     "Mods"
                 ],
                 [
-                    "Num DB Matches",
-                    "Num Matches"
-                ],
-                [
-                    "Num Mod Occurrences",
+                    "num mod occurrences",
                     "Num Mod Occurrences"
                 ],
                 [
-                    "Protein ID",
+                    "num_db_matches",
+                    "Num Matches"
+                ],
+                [
+                    "protein_id",
                     "Proteins"
                 ],
                 [
-                    "Retention Time (s)",
+                    "retention_time_(s)",
                     "Retention Time"
                 ],
                 [
-                    "Sequence",
+                    "sequence",
                     "Context"
                 ],
                 [
-                    "Spectrum ID",
+                    "spectrum_id",
                     "ScanF"
                 ],
                 [
-                    "TagGraph: 1-log10 EM",
+                    "taggraph:_1-log10_em",
                     "1-lg10 EM"
                 ],
                 [
-                    "TagGraph:Alignment Score",
+                    "taggraph:alignment_score",
                     "Alignment Score"
                 ],
                 [
-                    "TagGraph:Composite Score",
+                    "taggraph:composite_score",
                     "Composite Score"
                 ],
                 [
-                    "TagGraph:EM Probability",
+                    "taggraph:em_probability",
                     "EM Probability"
                 ],
                 [
-                    "TagGraph:Mod Ambig Edges",
+                    "taggraph:mod_ambig_edges",
                     "Mod Ambig Edges"
                 ],
                 [
-                    "TagGraph:Mod Ranges",
+                    "taggraph:mod_ranges",
                     "Mod Ranges"
                 ],
                 [
-                    "TagGraph:Spectrum Score",
+                    "taggraph:spectrum_score",
                     "Spectrum Score"
                 ],
                 [
-                    "Unique Siblings",
+                    "unique_siblings",
                     "Unique Siblings"
                 ]
             ],
@@ -7700,39 +7700,39 @@
             ],
             "xtandem_style_1": [
                 [
-                    "Charge",
+                    "charge",
                     "z"
                 ],
                 [
-                    "Sequence",
+                    "sequence",
                     "seq"
                 ],
                 [
-                    "X!Tandem:Hyperscore",
-                    "hyperscore"
-                ],
-                [
-                    "X!Tandem:b_ions",
+                    "x!tandem:b_ions",
                     "b_ions"
                 ],
                 [
-                    "X!Tandem:b_score",
+                    "x!tandem:b_score",
                     "b_score"
                 ],
                 [
-                    "X!Tandem:delta",
+                    "x!tandem:delta",
                     "delta"
                 ],
                 [
-                    "X!Tandem:nextscore",
+                    "x!tandem:hyperscore",
+                    "hyperscore"
+                ],
+                [
+                    "x!tandem:nextscore",
                     "nextscore"
                 ],
                 [
-                    "X!Tandem:y_ions",
+                    "x!tandem:y_ions",
                     "y_ions"
                 ],
                 [
-                    "X!Tandem:y_score",
+                    "x!tandem:y_score",
                     "y_score"
                 ]
             ]
