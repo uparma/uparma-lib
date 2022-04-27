@@ -2352,6 +2352,7 @@
         "default_value": 15,
         "description": "number of neighbours",
         "key_translations": {
+            "mx_gsk_style_1": "minScansN",
             "umap_style_1": "n_neighbours",
             "ursgal_style_1": "cluster_n_neighbours"
         },
@@ -8020,6 +8021,7 @@
             "mascot_style_1": "INSTRUMENT",
             "moda_style_1": "Instrument",
             "msgfplus_style_1": "-inst",
+            "mx_gsk_style_1": "INSTR",
             "novor_style_1": "massAnalyzer",
             "ursgal_style_1": "instrument"
         },
@@ -8082,6 +8084,16 @@
                 [
                     "tof",
                     "2"
+                ]
+            ],
+            "mx_gsk_style_1": [
+                [
+                    "q_exactive",
+                    "Thermo"
+                ],
+                [
+                    "tof",
+                    "Bruker"
                 ]
             ],
             "novor_style_1": [
@@ -8213,6 +8225,7 @@
         "default_value": "positive",
         "description": "The ion mode that has been used for acquiring mass spectra (positive or negative)",
         "key_translations": {
+            "mx_gsk_style_1": "POLARITY",
             "mzml2mgf_style_1": "ion_mode",
             "ursgal_style_1": "ion_mode"
         },
@@ -10219,6 +10232,7 @@
         "description": "MS1 are centroided data: True or False",
         "key_translations": {
             "kojak_style_1": "kojak_MS1_centroid",
+            "mx_gsk_style_1": "ms1_is_centroided",
             "ursgal_style_1": "ms1_is_centroided"
         },
         "name": "ms1_is_centroided",
@@ -17602,5 +17616,57 @@
             ]
         },
         "value_type": "bool"
+    },
+    {
+        "default_value": false,
+        "description": "whether to use the separately extracted spectrum table to account for AGC target and actual injection times required to reach that target (NOT RECOMMENDED for typical studies, emphasizes systematic differences). Skipped for non-trap instruments",
+        "key_translations": {
+            "mx_gsk_style_1": "CorrectIT",
+            "ursgal_style_1": "correct_injection_time"
+        },
+        "name": "correct_injection_time",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "bool"
+    },
+    {
+        "default_value": 120,
+        "description": "max injection time, in msec (used for normalization)",
+        "key_translations": {
+            "mx_gsk_style_1": "maxIT",
+            "ursgal_style_1": "max_injection_time"
+        },
+        "name": "max_injection_time",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": 50,
+        "description": "match tolerance in ppm, used to re-calibrate mass axis of full spectrum based on detected lock masses",
+        "key_translations": {
+            "mx_gsk_style_1": "LockTol",
+            "ursgal_style_1": "lock_mass_tolerance"
+        },
+        "name": "lock_mass_tolerance",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": 0.1,
+        "description": "fraction of non-NA data points in which ion was detected in current scan window to compute TIC correlation",
+        "key_translations": {
+            "mx_gsk_style_1": "minScansFr",
+            "ursgal_style_1": "fraction_detected_ions"
+        },
+        "name": "fraction_detected_ions",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "float"
     }
 ]
