@@ -17619,7 +17619,7 @@
         "default_value": false,
         "description": "whether to use the separately extracted spectrum table to account for AGC target and actual injection times required to reach that target (NOT RECOMMENDED for typical studies, emphasizes systematic differences). Skipped for non-trap instruments",
         "key_translations": {
-            "mx_gsk_style_1": "correct_injection_time",
+            "mx_gsk_style_1": "CorrectIT",
             "ursgal_style_1": "correct_injection_time"
         },
         "name": "correct_injection_time",
@@ -17627,5 +17627,18 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "bool"
+    },
+    {
+        "default_value": 120,
+        "description": "max injection time, in msec (used for normalization)",
+        "key_translations": {
+            "mx_gsk_style_1": "maxIT",
+            "ursgal_style_1": "max_injection_time"
+        },
+        "name": "max_injection_time",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
     }
 ]
