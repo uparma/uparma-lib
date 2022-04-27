@@ -2352,6 +2352,7 @@
         "default_value": 15,
         "description": "number of neighbours",
         "key_translations": {
+            "mx_gsk_style_1": "minScansN",
             "umap_style_1": "n_neighbours",
             "ursgal_style_1": "cluster_n_neighbours"
         },
