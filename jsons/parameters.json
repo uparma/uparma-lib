@@ -17640,5 +17640,18 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "int"
+    },
+    {
+        "default_value": 50,
+        "description": "match tolerance in ppm, used to re-calibrate mass axis of full spectrum based on detected lock masses",
+        "key_translations": {
+            "mx_gsk_style_1": "LockTol",
+            "ursgal_style_1": "lock_mass_tolerance"
+        },
+        "name": "lock_mass_tolerance",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
     }
 ]
