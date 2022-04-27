@@ -8224,6 +8224,7 @@
         "default_value": "positive",
         "description": "The ion mode that has been used for acquiring mass spectra (positive or negative)",
         "key_translations": {
+            "mx_gsk_style_1": "POLARITY",
             "mzml2mgf_style_1": "ion_mode",
             "ursgal_style_1": "ion_mode"
         },
