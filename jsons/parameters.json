@@ -17654,5 +17654,18 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "int"
+    },
+    {
+        "default_value": 0.1,
+        "description": "fraction of non-NA data points in which ion was detected in current scan window to compute TIC correlation",
+        "key_translations": {
+            "mx_gsk_style_1": "minScansFr",
+            "ursgal_style_1": "fraction_detected_ions"
+        },
+        "name": "fraction_detected_ions",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "float"
     }
 ]
