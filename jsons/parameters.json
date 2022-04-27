@@ -8020,6 +8020,7 @@
             "mascot_style_1": "INSTRUMENT",
             "moda_style_1": "Instrument",
             "msgfplus_style_1": "-inst",
+            "mx_gsk_style_1": "INSTR",
             "novor_style_1": "massAnalyzer",
             "ursgal_style_1": "instrument"
         },
@@ -8082,6 +8083,16 @@
                 [
                     "tof",
                     "2"
+                ]
+            ],
+            "mx_gsk_style_1": [
+                [
+                    "q_exactive",
+                    "Thermo"
+                ],
+                [
+                    "tof",
+                    "Bruker"
                 ]
             ],
             "novor_style_1": [
