@@ -10219,6 +10219,7 @@
         "description": "MS1 are centroided data: True or False",
         "key_translations": {
             "kojak_style_1": "kojak_MS1_centroid",
+            "mx_gsk_style_1": "ms1_is_centroided",
             "ursgal_style_1": "ms1_is_centroided"
         },
         "name": "ms1_is_centroided",
