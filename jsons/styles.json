@@ -556,5 +556,13 @@
       "1.0.0"
     ],
     "reference": "Ursgal2 Team"
+  },
+  {
+    "style": "normalize_ion_injection_time_style_1",
+    "name": "normalize_ion_injection_time_style_1",
+    "versions": [
+      "1.0.0"
+    ],
+    "reference": "Ursgal2 Team"
   }
 ]

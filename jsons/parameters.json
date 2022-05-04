@@ -17634,7 +17634,7 @@
         "default_value": 120,
         "description": "max injection time, in msec (used for normalization)",
         "key_translations": {
-            "mx_gsk_style_1": "maxIT",
+            "normalize_ion_injection_time_style_1": "maxIT",
             "ursgal_style_1": "max_injection_time"
         },
         "name": "max_injection_time",
