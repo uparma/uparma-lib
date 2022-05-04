@@ -295,6 +295,7 @@
         "description": "Defines if bigger scores are better (or the other way round), for scores that should be validated (see validation_score_field) e.g. by percolator, qvality",
         "key_translations": {
             "add_estimated_fdr_style_1": "bigger_scores_better",
+            "peptide_forest_style_1": "bigger_scores_better",
             "percolator_style_1": "bigger_scores_better",
             "percolator_style_2": "bigger_scores_better",
             "ptminer_style_1": "bigger_scores_better",
@@ -302,8 +303,7 @@
             "sanitize_csv_style_1": "bigger_scores_better",
             "svm_style_1": "bigger_scores_better",
             "unify_csv_style_1": "bigger_scores_better",
-            "ursgal_style_1": "bigger_scores_better",
-            "peptide_forest_style_1": "bigger_scores_better"
+            "ursgal_style_1": "bigger_scores_better"
         },
         "name": "bigger_scores_better",
         "tag": [
@@ -3016,14 +3016,14 @@
             "msgfplus_style_1": "-thread",
             "myrimatch_style_1": "-cpus",
             "omssa_style_1": "-nt",
+            "percolator_style_1": "cpus",
+            "percolator_style_2": "cpus",
             "pglyco_db_style_1": "process",
             "pipi_style_1": "thread_num",
             "pnovo_style_1": "thread",
             "ptmshepherd_style_1": "threads",
             "ucontroller_style_1": "cpus",
             "ursgal_style_1": "cpus",
-            "percolator_style_1": "cpus",
-            "percolator_style_2": "cpus",
             "xtandem_style_1": "spectrum, threads"
         },
         "name": "cpus",
@@ -3187,6 +3187,7 @@
             "msgfplus_style_1": "-d",
             "myrimatch_style_1": "ProteinDatabase",
             "omssa_style_1": "-d",
+            "percolator_style_2": "database",
             "pglyco_db_style_1": "fasta",
             "pipi_style_1": "db",
             "ptminer_style_1": "protein_database",
@@ -3194,8 +3195,7 @@
             "unify_csv_style_1": "database",
             "upeptide_mapper_style_1": "database",
             "ursgal_style_1": "database",
-            "xtandem_style_1": "file URL",
-            "percolator_style_2": "database"
+            "xtandem_style_1": "file URL"
         },
         "name": "database",
         "tag": [
@@ -5691,8 +5691,8 @@
         "default_value": 1,
         "description": "Fraction ID as required by experimental_setup collection.",
         "key_translations": {
-            "pw-stats_style_1": "Fraction",
             "flash_lfq_style_1": "Fraction",
+            "pw-stats_style_1": "Fraction",
             "ursgal_style_1": "exp-setup_fraction"
         },
         "name": "exp-setup_fraction",
@@ -5739,8 +5739,8 @@
         "description": " ",
         "is_parameter_collection": true,
         "key_translations": {
-            "pw-stats_style_1": "experimental_design",
             "flash_lfq_style_1": "experiment_setup\nFormat:\n{\"1\": {\"FileName\": <filename as in identfile>, \"Condition\":<str>, \"Biorep\": <int>, \"Fraction\": <int>, \"Techrep\": <int>},\n\"2\": ....\n}\n",
+            "pw-stats_style_1": "experimental_design",
             "ursgal_style_1": "experiment_setup"
         },
         "name": "experiment_setup",
@@ -5923,8 +5923,8 @@
         "description": "columns containing the features",
         "key_translations": {
             "pw-stats_style_1": "feature_columns",
-            "ursgal_style_1": "feature_columns",
             "umap_style_1": "feature_columns",
+            "ursgal_style_1": "feature_columns",
             "venndiagram_style_1": "feature_columns"
         },
         "name": "feature_columns",
@@ -7131,6 +7131,10 @@
                     "MS-GF:SpecEValue"
                 ],
                 [
+                    "retention_time_seconds",
+                    "scan start time"
+                ],
+                [
                     "sequence",
                     "peptide_ref"
                 ],
@@ -7705,6 +7709,10 @@
                     "z"
                 ],
                 [
+                    "retention_time_seconds",
+                    "rt"
+                ],
+                [
                     "sequence",
                     "seq"
                 ],
@@ -7973,8 +7981,8 @@
         "description": "This param defines which column should be used as the row index for the dataframe. Coming from an initially big dataframe, which e.g. would contain Peptide, Protein, Sequence - this column would define the one to be used as df.index.",
         "key_translations": {
             "pw-stats_style_1": "index_columns",
-            "ursgal_style_1": "index_columns",
-            "umap_style_1": "index_columns"
+            "umap_style_1": "index_columns",
+            "ursgal_style_1": "index_columns"
         },
         "name": "index_columns",
         "tag": [],
@@ -7986,8 +7994,8 @@
         "default_value": false,
         "description": " Use the picked-protein algorithm to infer protein PEP and FDR in Percolator",
         "key_translations": {
-            "ursgal_style_1": "infer_proteins",
-            "percolator_style_2": "--picked-protein"
+            "percolator_style_2": "--picked-protein",
+            "ursgal_style_1": "infer_proteins"
         },
         "name": "infer_proteins",
         "tag": [
@@ -8715,8 +8723,8 @@
         "default_value": 1.0,
         "description": "Fold change Threshold to narrow down significantly regulated identifiers",
         "key_translations": {
-            "volcano_style_1": "log2_fc_threshold",
-            "ursgal_style_1": "log2_foldchange_threshold"
+            "ursgal_style_1": "log2_foldchange_threshold",
+            "volcano_style_1": "log2_fc_threshold"
         },
         "name": "log2_foldchange_threshold",
         "tag": [
@@ -10018,21 +10026,21 @@
         "default_value": [
             {
                 "aa": "M",
-                "type": "opt",
+                "name": "Oxidation",
                 "position": "any",
-                "name": "Oxidation"
+                "type": "opt"
             },
             {
                 "aa": "C",
-                "type": "fix",
+                "name": "Carbamidomethyl",
                 "position": "any",
-                "name": "Carbamidomethyl"
+                "type": "fix"
             },
             {
                 "aa": "*",
-                "type": "opt",
+                "name": "Acetyl",
                 "position": "Prot-N-term",
-                "name": "Acetyl"
+                "type": "opt"
             }
         ],
         "description": "Modifications are given as a list of dictionaries, one for each amino acid. The default keys are: 'amino acid, type, position, name or id'. aa - specify the modified amino acid as a single letter, use '*' if the amino acid is variable. type - specify if it is a fixed (fix) or potential (opt) modification. position - specify the position within the protein/peptide (Prot-N-term, Prot-C-term), use 'any' if the positon is variable. name or id: specify the unimod PSI-MS Name or unimod Accession # (see unimod.org). Additionally, userdefined modifications are supported, where the chemical composition needs to be given under the key 'composition' to be then mapped to unimod name or id using e.g. the package unimod_mapper. When using with a proteomics frameworks such as ursgal2, the modifications are not translated between different search engines. Instead, ursgal2 provides wrapper nodes to each engine containing the logic how modifications have to be processed and passed over to individual engines and nodes.",
@@ -12038,8 +12046,8 @@
         "description": "Defines plot parameters for plotting nodes.",
         "is_parameter_collection": true,
         "key_translations": {
-            "volcano_style_1": "plot_setup",
-            "ursgal_style_1": "plot_setup"
+            "ursgal_style_1": "plot_setup",
+            "volcano_style_1": "plot_setup"
         },
         "name": "plot_setup",
         "tag": [
@@ -12337,8 +12345,8 @@
             "msfragger_style_1": "precursor_mass_lower",
             "msfragger_style_2": "precursor_mass_lower",
             "msfragger_style_3": "precursor_mass_lower",
-            "novor_style_1": "precursorErrorTol_part2",
             "msgfplus_style_1": "-t_minus",
+            "novor_style_1": "precursorErrorTol_part2",
             "omssa_style_1": "-te_part1",
             "unify_csv_style_1": "precursor_mass_tolerance_minus",
             "ursgal_style_1": "precursor_mass_tolerance_minus",
@@ -13101,8 +13109,8 @@
         "default_value": 0.05,
         "description": "pvalue Threshold to be considered as significant",
         "key_translations": {
-            "volcano_style_1": "pval_threshold",
-            "ursgal_style_1": "pvalue_significance_threshold"
+            "ursgal_style_1": "pvalue_significance_threshold",
+            "volcano_style_1": "pval_threshold"
         },
         "name": "pvalue_significance_threshold",
         "tag": [
@@ -13275,8 +13283,8 @@
         "description": "Random seed for random number generators",
         "key_translations": {
             "flash_lfq_style_1": "--rns",
-            "ursgal_style_1": "random_seed",
-            "generate_target_decoy_style_1": "random_seed"
+            "generate_target_decoy_style_1": "random_seed",
+            "ursgal_style_1": "random_seed"
         },
         "name": "random_seed",
         "tag": [
@@ -14009,8 +14017,8 @@
         "default_value": null,
         "description": "Specifies source_path of a file",
         "key_translations": {
-            "ursgal_style_1": "source_path",
-            "copy_files_style_1": "source_path"
+            "copy_files_style_1": "source_path",
+            "ursgal_style_1": "source_path"
         },
         "name": "source_path",
         "tag": [
@@ -14358,8 +14366,8 @@
         "default_value": null,
         "description": "Specifies target_path of a file",
         "key_translations": {
-            "ursgal_style_1": "target_path",
-            "copy_files_style_1": "target_path"
+            "copy_files_style_1": "target_path",
+            "ursgal_style_1": "target_path"
         },
         "name": "target_path",
         "tag": [
@@ -14773,8 +14781,8 @@
         "default_value": true,
         "description": "Should adjusted pvalue be used",
         "key_translations": {
-            "volcano_style_1": "use_pvalue_adj",
-            "ursgal_style_1": "use_pvalue_adj"
+            "ursgal_style_1": "use_pvalue_adj",
+            "volcano_style_1": "use_pvalue_adj"
         },
         "name": "use_pvalue_adj",
         "tag": [
