@@ -566,8 +566,8 @@
     "reference": "Ursgal2 Team"
   },
   {
-    "style": "align_scans_dbscan_1_0_0",
-    "name": "align_scans_dbscan_1_0_0",
+    "style": "align_scans_dbscan_style_1",
+    "name": "align_scans_dbscan_style_1",
     "versions": [
       "1.0.0"
     ],
