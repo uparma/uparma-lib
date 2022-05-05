@@ -2352,7 +2352,7 @@
         "default_value": 15,
         "description": "number of neighbours",
         "key_translations": {
-            "mx_gsk_style_1": "minScansN",
+            "align_scans_dbscan_1_0_0": "minScansN",
             "umap_style_1": "n_neighbours",
             "ursgal_style_1": "cluster_n_neighbours"
         },
@@ -9578,6 +9578,7 @@
         "default_value": 0.1,
         "description": "minimum distance to neighbour",
         "key_translations": {
+            "align_scans_dbscan_1_0_0": "eps",
             "umap_style_1": "min_distance",
             "ursgal_style_1": "min_distance"
         },
@@ -17660,7 +17661,7 @@
         "default_value": 0.1,
         "description": "fraction of non-NA data points in which ion was detected in current scan window to compute TIC correlation",
         "key_translations": {
-            "mx_gsk_style_1": "minScansFr",
+            "align_scans_dbscan_1_0_0": "minScansFr",
             "ursgal_style_1": "fraction_detected_ions"
         },
         "name": "fraction_detected_ions",
