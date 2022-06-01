@@ -2971,6 +2971,19 @@
         "value_type": "bool"
     },
     {
+        "default_value": false,
+        "description": "whether to use the separately extracted spectrum table to account for AGC target and actual injection times required to reach that target (NOT RECOMMENDED for typical studies, emphasizes systematic differences). Skipped for non-trap instruments",
+        "key_translations": {
+            "mx_gsk_style_1": "CorrectIT",
+            "ursgal_style_1": "correct_injection_time"
+        },
+        "name": "correct_injection_time",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "bool"
+    },
+    {
         "default_value": true,
         "description": "the number of unique hits for each identifier is given in separate columns for each raw file (file name as defiened in Spectrum Title)",
         "key_translations": {
@@ -6018,6 +6031,20 @@
         "value_type": "bool"
     },
     {
+        "default_value": 0.1,
+        "description": "fraction of non-NA data points in which ion was detected in current scan window to compute TIC correlation",
+        "key_translations": {
+            "align_files_dbscan_style_1": "min_scans_frac",
+            "align_scans_dbscan_style_1": "min_scans_frac",
+            "ursgal_style_1": "fraction_detected_ions"
+        },
+        "name": "fraction_detected_ions",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "float"
+    },
+    {
         "default_value": [
             0.0,
             0.0
@@ -8724,6 +8751,19 @@
         "value_type": "bool"
     },
     {
+        "default_value": 50,
+        "description": "match tolerance in ppm, used to re-calibrate mass axis of full spectrum based on detected lock masses",
+        "key_translations": {
+            "recalibrate_mz_style_1": "lock_tol",
+            "ursgal_style_1": "lock_mass_tolerance"
+        },
+        "name": "lock_mass_tolerance",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
         "default_value": 1.0,
         "description": "Fold change Threshold to narrow down significantly regulated identifiers",
         "key_translations": {
@@ -9188,6 +9228,19 @@
             "ursgal_style_1": "max_index_runtime"
         },
         "name": "max_index_runtime",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": 120,
+        "description": "max injection time, in msec (used for normalization)",
+        "key_translations": {
+            "normalize_ion_injection_time_style_1": "max_injection_time",
+            "ursgal_style_1": "max_injection_time"
+        },
+        "name": "max_injection_time",
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {},
@@ -17630,58 +17683,5 @@
             ]
         },
         "value_type": "bool"
-    },
-    {
-        "default_value": false,
-        "description": "whether to use the separately extracted spectrum table to account for AGC target and actual injection times required to reach that target (NOT RECOMMENDED for typical studies, emphasizes systematic differences). Skipped for non-trap instruments",
-        "key_translations": {
-            "mx_gsk_style_1": "CorrectIT",
-            "ursgal_style_1": "correct_injection_time"
-        },
-        "name": "correct_injection_time",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "bool"
-    },
-    {
-        "default_value": 120,
-        "description": "max injection time, in msec (used for normalization)",
-        "key_translations": {
-            "normalize_ion_injection_time_style_1": "max_injection_time",
-            "ursgal_style_1": "max_injection_time"
-        },
-        "name": "max_injection_time",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "int"
-    },
-    {
-        "default_value": 50,
-        "description": "match tolerance in ppm, used to re-calibrate mass axis of full spectrum based on detected lock masses",
-        "key_translations": {
-            "recalibrate_mz_style_1": "lock_tol",
-            "ursgal_style_1": "lock_mass_tolerance"
-        },
-        "name": "lock_mass_tolerance",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "int"
-    },
-    {
-        "default_value": 0.1,
-        "description": "fraction of non-NA data points in which ion was detected in current scan window to compute TIC correlation",
-        "key_translations": {
-            "align_files_dbscan_style_1": "min_scans_frac",
-            "align_scans_dbscan_style_1": "min_scans_frac",
-            "ursgal_style_1": "fraction_detected_ions"
-        },
-        "name": "fraction_detected_ions",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "float"
     }
 ]
