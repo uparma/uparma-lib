@@ -2352,7 +2352,8 @@
         "default_value": 15,
         "description": "number of neighbours",
         "key_translations": {
-            "align_scans_dbscan_style_1": "minScansN",
+            "align_files_dbscan_style_1": "min_scans_n",
+            "align_scans_dbscan_style_1": "min_scans_n",
             "umap_style_1": "n_neighbours",
             "ursgal_style_1": "cluster_n_neighbours"
         },
@@ -3814,6 +3815,8 @@
         "default_value": "euclidean",
         "description": "distance metric",
         "key_translations": {
+            "align_files_dbscan_style_1": "metric",
+            "align_scans_dbscan_style_1": "metric",
             "umap_style_1": "linkage",
             "ursgal_style_1": "distance_metric"
         },
@@ -6031,7 +6034,8 @@
         "default_value": 0.1,
         "description": "fraction of non-NA data points in which ion was detected in current scan window to compute TIC correlation",
         "key_translations": {
-            "align_scans_dbscan_style_1": "minScansFr",
+            "align_files_dbscan_style_1": "min_scans_frac",
+            "align_scans_dbscan_style_1": "min_scans_frac",
             "ursgal_style_1": "fraction_detected_ions"
         },
         "name": "fraction_detected_ions",
@@ -8259,8 +8263,9 @@
         "default_value": "positive",
         "description": "The ion mode that has been used for acquiring mass spectra (positive or negative)",
         "key_translations": {
+            "mx_gsk_stage2_qc_style_1": "polarity",
             "mzml2mgf_style_1": "ion_mode",
-            "recalibrate_mz_style_1": "POLARITY",
+            "recalibrate_mz_style_1": "polarity",
             "ursgal_style_1": "ion_mode"
         },
         "name": "ion_mode",
@@ -8749,7 +8754,7 @@
         "default_value": 50,
         "description": "match tolerance in ppm, used to re-calibrate mass axis of full spectrum based on detected lock masses",
         "key_translations": {
-            "recalibrate_mz_style_1": "LockTol",
+            "recalibrate_mz_style_1": "lock_tol",
             "ursgal_style_1": "lock_mass_tolerance"
         },
         "name": "lock_mass_tolerance",
@@ -9232,7 +9237,7 @@
         "default_value": 120,
         "description": "max injection time, in msec (used for normalization)",
         "key_translations": {
-            "normalize_ion_injection_time_style_1": "maxIT",
+            "normalize_ion_injection_time_style_1": "max_injection_time",
             "ursgal_style_1": "max_injection_time"
         },
         "name": "max_injection_time",
@@ -9638,6 +9643,7 @@
         "default_value": 0.1,
         "description": "minimum distance to neighbour",
         "key_translations": {
+            "align_files_dbscan_style_1": "eps",
             "align_scans_dbscan_style_1": "eps",
             "umap_style_1": "min_distance",
             "ursgal_style_1": "min_distance"
