@@ -17616,7 +17616,7 @@
         "description": "write mode",
         "key_translations": {
             "echo_to_file_style_1": "mode",
-            "ursgal_style": "write_mode"
+            "ursgal_style_1": "write_mode"
         },
         "name": "write_mode",
         "tag": [
