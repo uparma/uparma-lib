@@ -1,5 +1,15 @@
 [
   {
+    "style": "echo_to_file_style_1",
+    "name": "echo_to_file",
+    "versions": [
+      "1.0.0"
+    ],
+    "reference": [
+      "Ursgal2 Team"
+    ]
+  },
+  {
     "style": "ursgal_style_1",
     "name": "Ursgal",
     "versions": [
