@@ -12050,6 +12050,19 @@
         "value_type": "str"
     },
     {
+        "default_value": 0.1,
+        "description": "Percentage of allowed NA values",
+        "key_translations": {
+            "merge_exc_gap_ions_style_1": "thr_na_values",
+            "ursgal_style_1": "percentage_allowed_na_values"
+        },
+        "name": "percentage_allowed_na_values",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "float"
+    },
+    {
         "default_value": "tdc",
         "description": " Method to assign FDR and PEP to PSMs",
         "key_translations": {
