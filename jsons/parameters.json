@@ -8751,19 +8751,6 @@
         "value_type": "bool"
     },
     {
-        "default_value": 50,
-        "description": "match tolerance in ppm, used to re-calibrate mass axis of full spectrum based on detected lock masses",
-        "key_translations": {
-            "recalibrate_mz_style_1": "lock_tol",
-            "ursgal_style_1": "lock_mass_tolerance"
-        },
-        "name": "lock_mass_tolerance",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "int"
-    },
-    {
         "default_value": 1.0,
         "description": "Fold change Threshold to narrow down significantly regulated identifiers",
         "key_translations": {
@@ -9167,6 +9154,20 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "float"
+    },
+    {
+        "default_value": 50,
+        "description": "match tolerance in ppm, used to e.g. re-calibrate mass axis of full spectrum based on detected lock masses (recalibrate_mz) or merge correlating ions (merge_exc_gap_ions)",
+        "key_translations": {
+            "merge_exc_gap_ions_style_1": "max_distance",
+            "recalibrate_mz_style_1": "lock_tol",
+            "ursgal_style_1": "match_mass_tolerance"
+        },
+        "name": "match_mass_tolerance",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
     },
     {
         "default_value": 150,
@@ -14665,6 +14666,19 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "dict"
+    },
+    {
+        "default_value": 0.2,
+        "description": "Defines the threshold for ions to be considered mutually exclusive for merging of these gaps",
+        "key_translations": {
+            "merge_exc_gap_ions_style_1": "min_perc_exc_gaps",
+            "ursgal_style_1": "threshold_gap_ions"
+        },
+        "name": "threshold_gap_ions",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "float"
     },
     {
         "default_value": false,
