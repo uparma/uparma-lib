@@ -85,6 +85,19 @@
         "value_type": "dict"
     },
     {
+        "default_value": 0.005,
+        "description": "absolute mass tolerance for post-acquisition mass axis re-calibration",
+        "key_translations": {
+            "recalibrate_mz_global_style_1": "delta_abs_t",
+            "ursgal_style_1": "absolute_mass_tolerance"
+        },
+        "name": "absolute_mass_tolerance",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "float"
+    },
+    {
         "default_value": false,
         "description": "If True, multiple PSMs for one spectrum can be reported if their score difference is below the threshold. If False, all PSMs for one spectrum are removed if the score difference between the best and secondbest PSM is not above the threshold, i.e. if there are conflicting PSMs with similar scores.",
         "key_translations": {
@@ -134,6 +147,21 @@
             ]
         },
         "value_type": "bool"
+    },
+    {
+        "default_value": [
+            "A"
+        ],
+        "description": "empirical adduct confidence; A = stringent, B = acceptable, C = tentative, D = speculative. List of all levels to be considered for mass calibration.",
+        "key_translations": {
+            "recalibrate_mz_global_style_1": "confidence_level",
+            "ursgal_style_1": "adduct_confidence"
+        },
+        "name": "adduct_confidence",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "list"
     },
     {
         "default_value": false,
@@ -3541,6 +3569,19 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "bool"
+    },
+    {
+        "default_value": 2,
+        "description": "Degree of freedom for polynomial fit.",
+        "key_translations": {
+            "recalibrate_mz_global_style_1": "poly_degree",
+            "ursgal_style_1": "degree_of_freedom"
+        },
+        "name": "degree_of_freedom",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
     },
     {
         "default_value": "perform_deisotoping",
@@ -9947,6 +9988,7 @@
         "description": "A floating point number indicating the minimum intensity value for the input peaks.",
         "key_translations": {
             "comet_style_1": "minimum_intensity",
+            "recalibrate_mz_global_style_1": "min_int",
             "ursgal_style_1": "minimum_intensity"
         },
         "name": "minimum_intensity",
@@ -12176,6 +12218,19 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "dict"
+    },
+    {
+        "default_value": 10,
+        "description": "PPM mass tolerance for post-acquisition mass axis re-calibration",
+        "key_translations": {
+            "recalibrate_mz_global_style_1": "delta_ppm_t",
+            "ursgal_style_1": "ppm_mass_tolerance"
+        },
+        "name": "ppm_mass_tolerance",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
     },
     {
         "default_value": "linear",
