@@ -8306,6 +8306,7 @@
         "key_translations": {
             "mx_gsk_stage2_qc_style_1": "polarity",
             "mzml2mgf_style_1": "ion_mode",
+            "recalibrate_mz_global_style_1": "polarity",
             "recalibrate_mz_style_1": "polarity",
             "ursgal_style_1": "ion_mode"
         },
