@@ -3572,12 +3572,12 @@
     },
     {
         "default_value": 2,
-        "description": "Degree of freedom for polynomial fit.",
+        "description": "Degrees of freedom for polynomial fit.",
         "key_translations": {
             "recalibrate_mz_global_style_1": "poly_degree",
-            "ursgal_style_1": "degree_of_freedom"
+            "ursgal_style_1": "degrees_of_freedom"
         },
-        "name": "degree_of_freedom",
+        "name": "degrees_of_freedom",
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {},
