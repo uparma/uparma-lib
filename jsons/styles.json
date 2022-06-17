@@ -622,5 +622,13 @@
       "1.0.0"
     ],
     "reference": "Ursgal2 Team"
+  },
+  {
+    "style": "calculate_ion_charge_state_style_1",
+    "name": "calculate_ion_charge_state_style_1",
+    "versions": [
+      "1.0.0"
+    ],
+    "reference": "Ursgal2 Team"
   }
 ]

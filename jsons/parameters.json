@@ -3012,6 +3012,19 @@
         "value_type": "bool"
     },
     {
+        "default_value": 0.75,
+        "description": "threshold value for correlation analysis to be considered acceptable.",
+        "key_translations": {
+            "calculate_ion_charge_state_style_1": "min_corr",
+            "ursgal_style_1": "correlation_threshold"
+        },
+        "name": "correlation_threshold",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "float"
+    },
+    {
         "default_value": true,
         "description": "the number of unique hits for each identifier is given in separate columns for each raw file (file name as defiened in Spectrum Title)",
         "key_translations": {
@@ -8304,6 +8317,7 @@
         "default_value": "positive",
         "description": "The ion mode that has been used for acquiring mass spectra (positive or negative)",
         "key_translations": {
+            "calculate_ion_charge_state_style_1": "polarity",
             "mx_gsk_stage2_qc_style_1": "polarity",
             "mzml2mgf_style_1": "ion_mode",
             "recalibrate_mz_global_style_1": "polarity",
@@ -8386,6 +8400,19 @@
         "tag": [
             "quantification"
         ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "float"
+    },
+    {
+        "default_value": 0.0025,
+        "description": "m/z tolerance of detecting isotopologue peaks for charge calculation",
+        "key_translations": {
+            "calculate_ion_charge_state_style_1": "tol_iso",
+            "ursgal_style_1": "isotopologue_mass_tolerance"
+        },
+        "name": "isotopologue_mass_tolerance",
+        "tag": [],
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "float"
@@ -9681,6 +9708,19 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "list"
+    },
+    {
+        "default_value": 2,
+        "description": "minimum number of adjacent peaks e.g for charge calculation",
+        "key_translations": {
+            "calculate_ion_charge_state_style_1": "min_zmers",
+            "ursgal_style_1": "min_adj_peaks"
+        },
+        "name": "min_adj_peaks",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
     },
     {
         "default_value": 0.1,
@@ -12767,6 +12807,7 @@
         "default_value": 5,
         "description": "Maximal accepted parent ion charge",
         "key_translations": {
+            "calculate_ion_charge_state_style_1": "max_charge",
             "comet_style_1": "max_precursor_charge",
             "mascot_style_1": "CHARGE_max",
             "msamanda_style_1": "considered_charges_max",
