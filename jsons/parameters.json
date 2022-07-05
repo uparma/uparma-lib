@@ -88,6 +88,7 @@
         "default_value": 0.005,
         "description": "absolute mass tolerance for post-acquisition mass axis re-calibration",
         "key_translations": {
+            "annotate_metabolites_style_1": "delta_abs_t",
             "recalibrate_mz_global_style_1": "delta_abs_t",
             "ursgal_style_1": "absolute_mass_tolerance"
         },
@@ -111,6 +112,22 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "bool"
+    },
+    {
+        "default_value": [
+            0.002,
+            0.0075
+        ],
+        "description": "range in which variable accuracy calculations (either ppm or based on actual resolving power) are being used.",
+        "key_translations": {
+            "annotate_metabolites_style_1": "mz_boundaries",
+            "ursgal_style_1": "accuracy_range"
+        },
+        "name": "accuracy_range",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "list"
     },
     {
         "default_value": false,
@@ -154,6 +171,7 @@
         ],
         "description": "empirical adduct confidence; A = stringent, B = acceptable, C = tentative, D = speculative. List of all levels to be considered for mass calibration.",
         "key_translations": {
+            "annotate_metabolites_style_1": "confidence_level",
             "recalibrate_mz_global_style_1": "confidence_level",
             "ursgal_style_1": "adduct_confidence"
         },
@@ -231,6 +249,32 @@
             ]
         },
         "value_type": "bool"
+    },
+    {
+        "default_value": "polar",
+        "description": "Extraction solvent polarity, applies a logP cutoff of <=2 if \"polar\", or >=-2 if \"unpolar\", or \"none\" if neither (>1% expected solubility in opposite solvent class)",
+        "key_translations": {
+            "ucontroller_style_1": "metabolite_polarity",
+            "ursgal_style_1": "extraction_polarity"
+        },
+        "name": "annotate_metabolites_style_1",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": "dynamic",
+        "description": "Type of accuracy to be used for metabolite annotation. 'dynamic' - dynamic accuracy function based on the local instrument resolving power. 'ppm' - relative mass tolerance for annotation. 'absolute' - absolute mass tolerance for annotation.",
+        "key_translations": {
+            "annotate_metabolites_style_1": "annotation_accuracy",
+            "ursgal_style_1": "annotation_accuracy"
+        },
+        "name": "annotation_accuracy",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
     },
     {
         "default_value": 1000,
@@ -8109,6 +8153,7 @@
         "default_value": "q_exactive",
         "description": "Type of mass spectrometer (used to determine the scoring model)",
         "key_translations": {
+            "annotate_metabolites_style_1": "instrument",
             "kojak_style_1": "instrument",
             "mascot_style_1": "INSTRUMENT",
             "moda_style_1": "Instrument",
@@ -8124,6 +8169,16 @@
         ],
         "triggers_rerun": true,
         "value_translations": {
+            "annotate_metabolites_style_1": [
+                [
+                    "q_exactive",
+                    "Thermo"
+                ],
+                [
+                    "tof",
+                    "Bruker"
+                ]
+            ],
             "kojak_style_1": [
                 [
                     "FTICR",
@@ -8317,6 +8372,7 @@
         "default_value": "positive",
         "description": "The ion mode that has been used for acquiring mass spectra (positive or negative)",
         "key_translations": {
+            "annotate_metabolites_style_1": "polarity",
             "calculate_ion_charge_state_style_1": "polarity",
             "mx_gsk_stage2_qc_style_1": "polarity",
             "mzml2mgf_style_1": "ion_mode",
@@ -10419,6 +10475,7 @@
         "default_value": 30000,
         "description": "MS1 resolution",
         "key_translations": {
+            "annotate_metabolites_style_1": "resolution",
             "kojak_style_1": "kojak_MS1_resolution",
             "ursgal_style_1": "ms1_resolution"
         },
@@ -12264,6 +12321,7 @@
         "default_value": 10,
         "description": "PPM mass tolerance for post-acquisition mass axis re-calibration",
         "key_translations": {
+            "annotate_metabolites_style_1": "delta_ppm_t",
             "recalibrate_mz_global_style_1": "delta_ppm_t",
             "ursgal_style_1": "ppm_mass_tolerance"
         },
@@ -13496,6 +13554,19 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "float"
+    },
+    {
+        "default_value": true,
+        "description": "Defines if charge mismatches should be removed.",
+        "key_translations": {
+            "annotate_metabolites_style_1": "remove_charge_mismatches",
+            "ursgal_style_1": "remove_charge_mismatches"
+        },
+        "name": "remove_charge_mismatches",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "bool"
     },
     {
         "default_value": "off",
