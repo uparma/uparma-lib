@@ -251,19 +251,6 @@
         "value_type": "bool"
     },
     {
-        "default_value": "polar",
-        "description": "Extraction solvent polarity, applies a logP cutoff of <=2 if \"polar\", or >=-2 if \"unpolar\", or \"none\" if neither (>1% expected solubility in opposite solvent class)",
-        "key_translations": {
-            "ucontroller_style_1": "metabolite_polarity",
-            "ursgal_style_1": "extraction_polarity"
-        },
-        "name": "annotate_metabolites_style_1",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "str"
-    },
-    {
         "default_value": "dynamic",
         "description": "Type of accuracy to be used for metabolite annotation. 'dynamic' - dynamic accuracy function based on the local instrument resolving power. 'ppm' - relative mass tolerance for annotation. 'absolute' - absolute mass tolerance for annotation.",
         "key_translations": {
@@ -5971,6 +5958,19 @@
             ]
         },
         "value_type": "bool"
+    },
+    {
+        "default_value": "polar",
+        "description": "Extraction solvent polarity, applies a logP cutoff of <=2 if \"polar\", or >=-2 if \"unpolar\", or \"none\" if neither (>1% expected solubility in opposite solvent class)",
+        "key_translations": {
+            "annotate_metabolites_style_1": "metabolite_polarity",
+            "ursgal_style_1": "extraction_polarity"
+        },
+        "name": "extraction_polarity",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
     },
     {
         "default_value": 0.01,
