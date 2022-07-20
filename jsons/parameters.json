@@ -89,6 +89,7 @@
         "description": "absolute mass tolerance for post-acquisition mass axis re-calibration",
         "key_translations": {
             "annotate_metabolites_style_1": "delta_abs_t",
+            "isotopologue_envelope_matching_style_1": "delta_abs_t",
             "recalibrate_mz_global_style_1": "delta_abs_t",
             "ursgal_style_1": "absolute_mass_tolerance"
         },
@@ -9867,6 +9868,7 @@
         "description": " Min number of matched isotopologues to consider for quantification ",
         "key_translations": {
             "flash_lfq_style_1": "--nis",
+            "isotopologue_envelope_matching_style_1": "min_isotopologues",
             "pyqms_style_1": "MINIMUM_NUMBER_OF_MATCHED_ISOTOPOLOGUES",
             "sugarpy_plot_style_1": "MINIMUM_NUMBER_OF_MATCHED_ISOTOPOLOGUES",
             "sugarpy_run_style_1": "MINIMUM_NUMBER_OF_MATCHED_ISOTOPOLOGUES",
@@ -13564,6 +13566,7 @@
         "description": "Defines if charge mismatches should be removed.",
         "key_translations": {
             "annotate_metabolites_style_1": "remove_charge_mismatches",
+            "isotopologue_envelope_matching_style_1": "remove_charge_mismatches",
             "ursgal_style_1": "remove_charge_mismatches"
         },
         "name": "remove_charge_mismatches",
