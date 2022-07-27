@@ -646,5 +646,13 @@
       "1.0.0"
     ],
     "reference": "Ursgal2 Team"
+  },
+  {
+    "style": "select_ions_style_1",
+    "name": "select_ions_style_1",
+    "versions": [
+      "1.0.0"
+    ],
+    "reference": "Ursgal2 Team"
   }
 ]
