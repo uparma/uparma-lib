@@ -3048,6 +3048,7 @@
         "description": "threshold value for correlation analysis to be considered acceptable.",
         "key_translations": {
             "calculate_ion_charge_state_style_1": "min_corr",
+            "select_ions_style_1": "tic_thr",
             "ursgal_style_1": "correlation_threshold"
         },
         "name": "correlation_threshold",
@@ -8527,6 +8528,32 @@
         "value_type": "list"
     },
     {
+        "default_value": true,
+        "description": "flag whether to keep non-annotated ions.",
+        "key_translations": {
+            "select_ions_style_1": "keep_non_annotated_metabolites",
+            "ursgal_style_1": "keep_non_annotated_metabolites"
+        },
+        "name": "keep_non_annotated_metabolites",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "bool"
+    },
+    {
+        "default_value": true,
+        "description": "flag whether to keep ions without detected charge.",
+        "key_translations": {
+            "select_ions_style_1": "keep_uncharged_ions",
+            "ursgal_style_1": "keep_uncharged_ions"
+        },
+        "name": "keep_uncharged_ions",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "bool"
+    },
+    {
         "default_value": "rbf",
         "description": "The kernel function of the support vector machine used for PSM post-processing ('rbf', 'linear', 'poly' or 'sigmoid')",
         "key_translations": {
@@ -9975,6 +10002,19 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "int"
+    },
+    {
+        "default_value": 0.0,
+        "description": "Minimum percentage of samples in which ion needs to be detected for keeping (0 = keep all ions, 100 = keep only ions detected in all samples).",
+        "key_translations": {
+            "select_ions_style_1": "det_thr",
+            "ursgal_style_1": "min_percentage_detected_ions_samples"
+        },
+        "name": "min_percentage_detected_ions",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "float"
     },
     {
         "default_value": 1,
@@ -14055,6 +14095,19 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "int"
+    },
+    {
+        "default_value": 0.0,
+        "description": "Average fraction of scans above which ion should be detected in order to include (not too stringent to allow for further filtering below).",
+        "key_translations": {
+            "select_ions_style_1": "scan_thr",
+            "ursgal_style_1": "scan_fraction_threshold"
+        },
+        "name": "scan_threshold",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "float"
     },
     {
         "default_value": true,
