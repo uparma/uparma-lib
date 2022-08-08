@@ -5763,6 +5763,7 @@
         "description": "Experimental condition as required by experimental_setup collection.",
         "key_translations": {
             "flash_lfq_style_1": "Condition",
+            "merge_analytical_replicates_style_1": "condition",
             "pw-stats_style_1": "Condition",
             "ursgal_style_1": "exp-setup_condition"
         },
@@ -5779,6 +5780,7 @@
         "description": "File Name as required by experimental_setup collection.",
         "key_translations": {
             "flash_lfq_style_1": "FileName",
+            "merge_analytical_replicates_style_1": "filename",
             "pw-stats_style_1": "FileName",
             "ursgal_style_1": "exp-setup_filename"
         },
@@ -5823,9 +5825,55 @@
     },
     {
         "default_value": 1,
+        "description": "MS run index as required by experimental_setup collection.",
+        "key_translations": {
+            "merge_analytical_replicates_style_1": "ms_run_index",
+            "ursgal_style_1": "exp-setup_ms_run_index"
+        },
+        "name": "exp-setup_ms_run_index",
+        "tag": [
+            "experiment_setup"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": 0,
+        "description": "Sample index as required by experimental_setup collection. Sample Index 0 is typically used by QC samples.",
+        "key_translations": {
+            "merge_analytical_replicates_style_1": "sample_index",
+            "ursgal_style_1": "exp-setup_sample_index"
+        },
+        "name": "exp-setup_sample_index",
+        "tag": [
+            "experiment_setup"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": null,
+        "description": "Sample type as required by experimental_setup collection.",
+        "key_translations": {
+            "merge_analytical_replicates_style_1": "sample_type",
+            "ursgal_style_1": "exp-setup_sample_type"
+        },
+        "name": "exp-setup_sample_type",
+        "tag": [
+            "experiment_setup"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": 1,
         "description": "Technical replicate ID as required by experimental_setup collection.",
         "key_translations": {
             "flash_lfq_style_1": "Techrep",
+            "merge_analytical_replicates_style_1": "analytical_replicate",
             "pw-stats_style_1": "TechnicalReplicate",
             "ursgal_style_1": "exp-setup_technical_replicate"
         },
@@ -5843,6 +5891,7 @@
         "is_parameter_collection": true,
         "key_translations": {
             "flash_lfq_style_1": "experiment_setup\nFormat:\n{\"1\": {\"FileName\": <filename as in identfile>, \"Condition\":<str>, \"Biorep\": <int>, \"Fraction\": <int>, \"Techrep\": <int>},\n\"2\": ....\n}\n",
+            "merge_analytical_replicates_style_1": "metadata",
             "pw-stats_style_1": "experimental_design",
             "ursgal_style_1": "experiment_setup"
         },
