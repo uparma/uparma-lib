@@ -2428,20 +2428,6 @@
         "value_type": "int"
     },
     {
-        "default_value": 5,
-        "description": "absolute number of non-NA data points in which ions were detected",
-        "key_translations": {
-            "correct_instrument_drift_style_1": "min_cmatrix_ions",
-            "filter_nonbiological_ions_style_1": "min_cmatrix_ions",
-            "ursgal_style_1": "abs_number_detected_ions"
-        },
-        "name": "abs_number_detected_ions",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "int"
-    },
-    {
         "default_value": [],
         "description": "columns to use for colouring markers in a plot",
         "key_translations": {
@@ -9959,6 +9945,20 @@
         "tag": [
             "modifications"
         ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": 5,
+        "description": "min absolute number of non-NA data points in which ions were detected",
+        "key_translations": {
+            "correct_instrument_drift_style_1": "min_cmatrix_ions",
+            "filter_nonbiological_ions_style_1": "min_cmatrix_ions",
+            "ursgal_style_1": "min_number_detected_ions"
+        },
+        "name": "min_number_detected_ions",
+        "tag": [],
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "int"
