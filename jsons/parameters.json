@@ -2436,11 +2436,7 @@
             "ursgal_style_1": "abs_number_detected_ions"
         },
         "name": "abs_number_detected_ions",
-        "tag": [
-            "plotting",
-            "embedding",
-            "cluster"
-        ],
+        "tag": [],
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "int"
