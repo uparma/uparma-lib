@@ -662,5 +662,21 @@
       "1.0.0"
     ],
     "reference": "Ursgal2 Team"
+  },
+  {
+    "style": "filter_nonbiological_ions_style_1",
+    "name": "filter_nonbiological_ions_style_1",
+    "versions": [
+      "1.0.0"
+    ],
+    "reference": "Ursgal2 Team"
+  },
+  {
+    "style": "correct_instrument_drift_style_1",
+    "name": "correct_instrument_drift_style_1",
+    "versions": [
+      "1.0.0"
+    ],
+    "reference": "Ursgal2 Team"
   }
 ]
