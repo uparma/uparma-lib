@@ -5762,7 +5762,9 @@
         "default_value": "CTRL",
         "description": "Experimental condition as required by experimental_setup collection.",
         "key_translations": {
+            "filter_nonbiological_ions_style_1": "condition",
             "flash_lfq_style_1": "Condition",
+            "merge_analytical_replicates_style_1": "condition",
             "pw-stats_style_1": "Condition",
             "ursgal_style_1": "exp-setup_condition"
         },
@@ -5778,7 +5780,9 @@
         "default_value": "FileName",
         "description": "File Name as required by experimental_setup collection.",
         "key_translations": {
+            "filter_nonbiological_ions_style_1": "filename",
             "flash_lfq_style_1": "FileName",
+            "merge_analytical_replicates_style_1": "filename",
             "pw-stats_style_1": "FileName",
             "ursgal_style_1": "exp-setup_filename"
         },
@@ -5823,9 +5827,59 @@
     },
     {
         "default_value": 1,
+        "description": "MS run index as required by experimental_setup collection.",
+        "key_translations": {
+            "filter_nonbiological_ions_style_1": "ms_run_index",
+            "merge_analytical_replicates_style_1": "ms_run_index",
+            "ursgal_style_1": "exp-setup_ms_run_index"
+        },
+        "name": "exp-setup_ms_run_index",
+        "tag": [
+            "experiment_setup"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": 0,
+        "description": "Sample index as required by experimental_setup collection. Sample Index 0 is typically used by QC samples.",
+        "key_translations": {
+            "filter_nonbiological_ions_style_1": "sample_index",
+            "merge_analytical_replicates_style_1": "sample_index",
+            "ursgal_style_1": "exp-setup_sample_index"
+        },
+        "name": "exp-setup_sample_index",
+        "tag": [
+            "experiment_setup"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": null,
+        "description": "Sample type as required by experimental_setup collection.",
+        "key_translations": {
+            "filter_nonbiological_ions_style_1": "sample_type",
+            "merge_analytical_replicates_style_1": "sample_type",
+            "ursgal_style_1": "exp-setup_sample_type"
+        },
+        "name": "exp-setup_sample_type",
+        "tag": [
+            "experiment_setup"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": 1,
         "description": "Technical replicate ID as required by experimental_setup collection.",
         "key_translations": {
+            "filter_nonbiological_ions_style_1": "analytical_replicate",
             "flash_lfq_style_1": "Techrep",
+            "merge_analytical_replicates_style_1": "analytical_replicate",
             "pw-stats_style_1": "TechnicalReplicate",
             "ursgal_style_1": "exp-setup_technical_replicate"
         },
@@ -5842,7 +5896,9 @@
         "description": " ",
         "is_parameter_collection": true,
         "key_translations": {
+            "filter_nonbiological_ions_style_1": "metadata",
             "flash_lfq_style_1": "experiment_setup\nFormat:\n{\"1\": {\"FileName\": <filename as in identfile>, \"Condition\":<str>, \"Biorep\": <int>, \"Fraction\": <int>, \"Techrep\": <int>},\n\"2\": ....\n}\n",
+            "merge_analytical_replicates_style_1": "metadata",
             "pw-stats_style_1": "experimental_design",
             "ursgal_style_1": "experiment_setup"
         },
@@ -6073,8 +6129,9 @@
     },
     {
         "default_value": 0.1,
-        "description": "fold-change cutoff for Bayesian protein fold-change analysis",
+        "description": "fold-change cutoff for fold-change analysis",
         "key_translations": {
+            "filter_nonbiological_ions_style_1": "cv_ratio",
             "flash_lfq_style_1": "--fcc",
             "ursgal_style_1": "fold_change_cutoff"
         },
@@ -6132,10 +6189,12 @@
     },
     {
         "default_value": 0.1,
-        "description": "fraction of non-NA data points in which ion was detected in current scan window to compute TIC correlation",
+        "description": "fraction of non-NA data points in which ions were detected",
         "key_translations": {
             "align_files_dbscan_style_1": "min_scans_frac",
             "align_scans_dbscan_style_1": "min_scans_frac",
+            "correct_instrument_drift_style_1": "min_cmatrix_ions_frac",
+            "filter_nonbiological_ions_style_1": "min_cmatrix_ions_frac",
             "ursgal_style_1": "fraction_detected_ions"
         },
         "name": "fraction_detected_ions",
@@ -9886,6 +9945,20 @@
         "tag": [
             "modifications"
         ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": 5,
+        "description": "min absolute number of non-NA data points in which ions were detected",
+        "key_translations": {
+            "correct_instrument_drift_style_1": "min_cmatrix_ions",
+            "filter_nonbiological_ions_style_1": "min_cmatrix_ions",
+            "ursgal_style_1": "min_number_detected_ions"
+        },
+        "name": "min_number_detected_ions",
+        "tag": [],
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "int"
