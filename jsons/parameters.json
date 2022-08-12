@@ -2435,7 +2435,7 @@
             "filter_nonbiological_ions_style_1": "min_cmatrix_ions",
             "ursgal_style_1": "abs_number_detected_ions"
         },
-        "name": "cluster_n_neighbours",
+        "name": "abs_number_detected_ions",
         "tag": [
             "plotting",
             "embedding",
