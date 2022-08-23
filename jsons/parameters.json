@@ -13349,23 +13349,6 @@
         "value_type": "list"
     },
     {
-        "default_value": ";",
-        "description": "This delimiter seperates differing values for merged rows in the unified csv",
-        "key_translations": {
-            "ucontroller_style_1": "psm_merge_delimiter",
-            "unify_csv_style_1": "psm_merge_delimiter",
-            "ursgal_style_1": "psm_merge_delimiter"
-        },
-        "name": "psm_merge_delimiter",
-        "tag": [
-            "output",
-            "protein"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "str"
-    },
-    {
         "default_value": "peptides_entire_dataset",
         "description": "Background of peptides against which localization enrichment scores are calculated",
         "key_translations": {
