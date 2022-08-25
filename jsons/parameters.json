@@ -2949,6 +2949,21 @@
         "value_type": "bool"
     },
     {
+        "default_value": "zip",
+        "description": "Compression format for archives",
+        "key_translations": {
+            "compressor_style_1": "compression_format",
+            "ursgal_style_1": "compression_format"
+        },
+        "name": "compression_format",
+        "tag": [
+            "file_handling"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "string"
+    },
+    {
         "default_value": false,
         "description": "Compute xcorr",
         "key_translations": {
