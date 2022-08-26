@@ -255,7 +255,7 @@
         "default_value": 8,
         "description": "A measurement duration is allowed to exceed median duration (m) before calling it an interruption. This param defines the factor of m, which if exceeded will define a measurement interruption and therefore allow for batch separation. Default value of 8 is based on -> usually m = 2 to 2.5 min, so this is at least 15 min which is less than the minimum time it takes to clean the ion source",
         "key_translations": {
-            "sugarpy_run_style_1": "number_of_medians",
+            "assign_analysis_batch_by_runtime_style_1": "number_of_medians",
             "ursgal_style_1": "allowed_median_runtime_spread"
         },
         "name": "allowed_median_runtime_spread",
