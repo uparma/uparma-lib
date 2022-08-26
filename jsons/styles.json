@@ -678,5 +678,13 @@
       "1.0.0"
     ],
     "reference": "Ursgal2 Team"
+  },
+  {
+    "style": "assign_analysis_batch_by_runtime_style_1",
+    "name": "assign_analysis_batch_by_runtime_style_1",
+    "versions": [
+      "1.0.0"
+    ],
+    "reference": "Ursgal2 Team"
   }
 ]
