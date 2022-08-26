@@ -252,6 +252,19 @@
         "value_type": "bool"
     },
     {
+        "default_value": 8,
+        "description": "Factor that is used to multiply the median delta between MS runs in order to define a time threshold, which is then used to separate batches. A measurement duration is allowed to exceed median duration (m) before calling it an interruption. This param defines the factor of m, which if exceeded will define a measurement interruption and therefore allow for batch separation. Default value of 8 is based on -> usually m = 2 to 2.5 min, so this is at least 15 min which is less than the minimum time it takes to clean the ion source",
+        "key_translations": {
+            "assign_analysis_batch_by_runtime_style_1": "number_of_medians",
+            "ursgal_style_1": "batch_seperation_time_factor"
+        },
+        "name": "batch_seperation_time_factor",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
         "default_value": "dynamic",
         "description": "Type of accuracy to be used for metabolite annotation. 'dynamic' - dynamic accuracy function based on the local instrument resolving power. 'ppm' - relative mass tolerance for annotation. 'absolute' - absolute mass tolerance for annotation.",
         "key_translations": {
@@ -3713,6 +3726,25 @@
         "value_type": "list"
     },
     {
+        "default_value": "<|>",
+        "description": "This delimiter seperates any string objects during node execution",
+        "key_translations": {
+            "merge_analytical_replicates_style_1": "delimiter",
+            "percolator_style_1": "delimiter",
+            "percolator_style_2": "delimiter",
+            "unify_csv_style_1": "delimiter",
+            "upeptide_mapper_style_1": "delimiter",
+            "ursgal_style_1": "delimiter"
+        },
+        "name": "delimiter",
+        "tag": [
+            "output"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
         "default_value": [
             0.0,
             0.0
@@ -5855,6 +5887,22 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "int"
+    },
+    {
+        "default_value": [],
+        "description": "list containing the information of parent samples. E.g. in case of replicates being merged, this list will be appended to the new merged sample, containing inforamiton about the original samples merged into it.",
+        "is_parameter_collection": true,
+        "key_translations": {
+            "merge_analytical_replicates_style_1": "parents",
+            "ursgal_style_1": "exp-setup_parents"
+        },
+        "name": "exp-setup_parents",
+        "tag": [
+            "experimental_setup"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "list"
     },
     {
         "default_value": 0,
@@ -13287,25 +13335,6 @@
         "value_type": "bool"
     },
     {
-        "default_value": "<|>",
-        "description": "This delimiter seperates protein IDs/names in the unified csv",
-        "key_translations": {
-            "percolator_style_1": "protein_delimiter",
-            "percolator_style_2": "protein_delimiter",
-            "unify_csv_style_1": "protein_delimiter",
-            "upeptide_mapper_style_1": "protein_delimiter",
-            "ursgal_style_1": "protein_delimiter"
-        },
-        "name": "protein_delimiter",
-        "tag": [
-            "output",
-            "protein"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "str"
-    },
-    {
         "default_value": {},
         "description": "Defines the column names which should have their different values merged into a single value when merging rows corresponding the same PSM Formatted as a dictionary with keys as the column names and values as a parameter to specify which one of the different values to take Available values:    max_value\n    min_value\n    most_frequent\n    avg_value",
         "key_translations": {
@@ -13346,23 +13375,6 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "list"
-    },
-    {
-        "default_value": ";",
-        "description": "This delimiter seperates differing values for merged rows in the unified csv",
-        "key_translations": {
-            "ucontroller_style_1": "psm_merge_delimiter",
-            "unify_csv_style_1": "psm_merge_delimiter",
-            "ursgal_style_1": "psm_merge_delimiter"
-        },
-        "name": "psm_merge_delimiter",
-        "tag": [
-            "output",
-            "protein"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "str"
     },
     {
         "default_value": "peptides_entire_dataset",
