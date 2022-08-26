@@ -10,6 +10,14 @@
     ]
   },
   {
+    "name": "compressor_style_1",
+    "reference": "Ursgal team 2021",
+    "style": "compressor_style_1",
+    "versions": [
+      "1.0.0"
+    ]
+  },
+  {
     "style": "ursgal_style_1",
     "name": "Ursgal",
     "versions": [
