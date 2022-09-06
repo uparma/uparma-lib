@@ -24,11 +24,13 @@ def dynamic_sort(input, depth=0):
 
 
 if __name__ == "__main__":
-    # Read
-    with open("jsons/parameters.json") as f:
-        j = json.load(f)
-    # Sort
-    sorted_j = dynamic_sort(j)
-    # Write
-    with open("jsons/parameters.json", "w") as f:
-        json.dump(sorted_j, f, indent=4)
+    # Do it for both parameters and styles json
+    for file in ("parameters", "styles"):
+        # Read
+        with open(f"jsons/{file}.json") as f:
+            j = json.load(f)
+        # Sort
+        sorted_j = dynamic_sort(j)
+        # Write
+        with open(f"jsons/{file}.json", "w") as f:
+            json.dump(sorted_j, f, indent=4)
