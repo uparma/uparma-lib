@@ -252,19 +252,6 @@
         "value_type": "bool"
     },
     {
-        "default_value": 8,
-        "description": "Factor that is used to multiply the median delta between MS runs in order to define a time threshold, which is then used to separate batches. A measurement duration is allowed to exceed median duration (m) before calling it an interruption. This param defines the factor of m, which if exceeded will define a measurement interruption and therefore allow for batch separation. Default value of 8 is based on -> usually m = 2 to 2.5 min, so this is at least 15 min which is less than the minimum time it takes to clean the ion source",
-        "key_translations": {
-            "assign_analysis_batch_by_runtime_style_1": "number_of_medians",
-            "ursgal_style_1": "batch_separation_time_factor"
-        },
-        "name": "batch_separation_time_factor",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "int"
-    },
-    {
         "default_value": "dynamic",
         "description": "Type of accuracy to be used for metabolite annotation. 'dynamic' - dynamic accuracy function based on the local instrument resolving power. 'ppm' - relative mass tolerance for annotation. 'absolute' - absolute mass tolerance for annotation.",
         "key_translations": {
@@ -295,6 +282,19 @@
         "tag": [
             "conversion"
         ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": 8,
+        "description": "Factor that is used to multiply the median delta between MS runs in order to define a time threshold, which is then used to separate batches. A measurement duration is allowed to exceed median duration (m) before calling it an interruption. This param defines the factor of m, which if exceeded will define a measurement interruption and therefore allow for batch separation. Default value of 8 is based on -> usually m = 2 to 2.5 min, so this is at least 15 min which is less than the minimum time it takes to clean the ion source",
+        "key_translations": {
+            "assign_analysis_batch_by_runtime_style_1": "number_of_medians",
+            "ursgal_style_1": "batch_separation_time_factor"
+        },
+        "name": "batch_separation_time_factor",
+        "tag": [],
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "int"
