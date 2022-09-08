@@ -291,9 +291,10 @@
         "description": "Factor that is used to multiply the median delta between MS runs in order to define a time threshold, which is then used to separate batches. A measurement duration is allowed to exceed median duration (m) before calling it an interruption. This param defines the factor of m, which if exceeded will define a measurement interruption and therefore allow for batch separation. Default value of 8 is based on -> usually m = 2 to 2.5 min, so this is at least 15 min which is less than the minimum time it takes to clean the ion source",
         "key_translations": {
             "assign_analysis_batch_by_runtime_style_1": "number_of_medians",
-            "ursgal_style_1": "batch_seperation_time_factor"
+            "ursgal_style_1": "batch_separation_time_factor"
         },
-        "name": "batch_seperation_time_factor",
+        "name": "batch_separation_time_factor",
+
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {},
@@ -6041,6 +6042,7 @@
         "default_value": "CTRL",
         "description": "Experimental condition as required by experimental_setup collection.",
         "key_translations": {
+            "correct_instrument_drift_style_1": "condition",
             "filter_nonbiological_ions_style_1": "condition",
             "flash_lfq_style_1": "Condition",
             "merge_analytical_replicates_style_1": "condition",
@@ -6059,6 +6061,7 @@
         "default_value": "FileName",
         "description": "File Name as required by experimental_setup collection.",
         "key_translations": {
+            "correct_instrument_drift_style_1": "filename",
             "filter_nonbiological_ions_style_1": "filename",
             "flash_lfq_style_1": "FileName",
             "merge_analytical_replicates_style_1": "filename",
@@ -6108,6 +6111,7 @@
         "default_value": 1,
         "description": "MS run index as required by experimental_setup collection.",
         "key_translations": {
+            "correct_instrument_drift_style_1": "ms_run_index",
             "filter_nonbiological_ions_style_1": "ms_run_index",
             "merge_analytical_replicates_style_1": "ms_run_index",
             "ursgal_style_1": "exp-setup_ms_run_index"
@@ -6140,6 +6144,7 @@
         "default_value": 0,
         "description": "Sample index as required by experimental_setup collection. Sample Index 0 is typically used by QC samples.",
         "key_translations": {
+            "correct_instrument_drift_style_1": "sample_index",
             "filter_nonbiological_ions_style_1": "sample_index",
             "merge_analytical_replicates_style_1": "sample_index",
             "ursgal_style_1": "exp-setup_sample_index"
@@ -6156,6 +6161,7 @@
         "default_value": null,
         "description": "Sample type as required by experimental_setup collection.",
         "key_translations": {
+            "correct_instrument_drift_style_1": "sample_type",
             "filter_nonbiological_ions_style_1": "sample_type",
             "merge_analytical_replicates_style_1": "sample_type",
             "ursgal_style_1": "exp-setup_sample_type"
@@ -6172,6 +6178,7 @@
         "default_value": 1,
         "description": "Technical replicate ID as required by experimental_setup collection.",
         "key_translations": {
+            "correct_instrument_drift_style_1": "analytical_replicate",
             "filter_nonbiological_ions_style_1": "analytical_replicate",
             "flash_lfq_style_1": "Techrep",
             "merge_analytical_replicates_style_1": "analytical_replicate",
@@ -6191,6 +6198,7 @@
         "description": " ",
         "is_parameter_collection": true,
         "key_translations": {
+            "correct_instrument_drift_style_1": "metadata",
             "filter_nonbiological_ions_style_1": "metadata",
             "flash_lfq_style_1": "experiment_setup\nFormat:\n{\"1\": {\"FileName\": <filename as in identfile>, \"Condition\":<str>, \"Biorep\": <int>, \"Fraction\": <int>, \"Techrep\": <int>},\n\"2\": ....\n}\n",
             "merge_analytical_replicates_style_1": "metadata",
