@@ -1,698 +1,722 @@
 [
-  {
-    "style": "echo_to_file_style_1",
-    "name": "echo_to_file",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": [
-      "Ursgal2 Team"
-    ]
-  },
-  {
-    "name": "compressor_style_1",
-    "reference": "Ursgal team 2021",
-    "style": "compressor_style_1",
-    "versions": [
-      "1.0.0"
-    ]
-  },
-  {
-    "style": "ursgal_style_1",
-    "name": "Ursgal",
-    "versions": [
-      "0.6.0",
-      "0.6.1"
-    ],
-    "reference": [
-      "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794."
-    ]
-  },
-  {
-    "style": "ucontroller_style_1",
-    "name": "Ursgal Controller",
-    "versions": [
-      "0.6.0",
-      "0.6.1"
-    ],
-    "reference": [
-      "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794."
-    ]
-  },
-  {
-    "style": "add_estimated_fdr_style_1",
-    "name": "Add Estimated FDR",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "An implementation of the target/decoy FDR estimation method described in: Lukas Kall, John D. Storey, Michael J. MacCoss and William Stafford Noble (2008) Assigning significance to peptides identified by tandem mass spectrometry using decoy databases."
-  },
-  {
-    "style": "combine_pep_style_1",
-    "name": "Combine PEP",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Combines PEP scores from different search engines."
-  },
-  {
-    "style": "compomics_utilities_style_1",
-    "name": "Compomic Utilities",
-    "versions": [
-      "4.11.5"
-    ],
-    "reference": "Barsnes, H., Vaudel, M., Colaert, N., Helsens, K., Sickmann, A.,Berven, F. S., and Martens, L. (2011) compomics-utilities: an open-source Java library for computational proteomics. BMCBioinformatics 12, 70"
-  },
-  {
-    "style": "csv2counted_results_style_1",
-    "name": "Summarize Results as Tables",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "csv2ssl_style_1",
-    "name": "Convert CSV to SSL",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "deepnovo_style_1",
-    "name": "DeepNovo",
-    "versions": [
-      "0.0.1",
-      "DeepNovo v2"
-    ],
-    "reference": "Tran, N.H.; Zhang, X.; Xin, L.; Shan, B.; Li, M. (2017) De novo peptide sequencing by deep learning. PNAS 114 (31)"
-  },
-  {
-    "style": "filter_csv_style_1",
-    "name": "Filter CSV",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "flash_lfq_style_1",
-    "name": "FlashLFQ",
-    "versions": [
-      "1.1.1"
-    ],
-    "reference": "Millikin RJ, Solntsev SK, Shortreed MR, Smith LM. Ultrafast Peptide Label-Free Quantification with FlashLFQ. J Proteome Res. 2018;17(1):386-391. doi:10.1021/acs.jproteome.7b00608"
-  },
-  {
-    "style": "generate_target_decoy_style_1",
-    "name": "Generate Target Decoy",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "get_ftp_style_1",
-    "name": "Get FTP Files",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794."
-  },
-  {
-    "style": "get_http_style_1",
-    "name": "Get HTTP Files",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794."
-  },
-  {
-    "style": "glycopeptide_fragmentor_style_1",
-    "name": "Glycopeptide Fragmentor",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "kojak_style_1",
-    "name": "Kojak",
-    "versions": [
-      "1.5.3"
-    ],
-    "reference": "Hoopmann MR, Zelter A, Johnson RS, Riffle M, Maccoss MJ, Davis TN, Moritz RL (2015) Kojak: Efficient analysis of chemically cross-linked protein complexes. J Proteome Res 14: 2190-198"
-  },
-  {
-    "style": "kojak_percolator_style_1",
-    "name": "Kojak Percolator",
-    "versions": [
-      "2.08"
-    ],
-    "reference": "K\u30fb\u30fb\uff7d\uff64ll L, Canterbury JD, Weston J, Noble WS, MacCoss MJ. (2007) Semi-supervised learning for peptide identification from shotgun proteomics datasets."
-  },
-  {
-    "style": "merge_csvs_style_1",
-    "name": "Merge CSVs",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794."
-  },
-  {
-    "style": "mgf_to_rt_lookup_style_1",
-    "name": "mgf_to_rt_lookup",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "moda_style_1",
-    "name": "MODa",
-    "versions": [
-      "v1.51",
-      "v1.61",
-      "v1.62"
-    ],
-    "reference": "Na S, Bandeira N, Paek E. (2012) Fast multi-blind modification search through tandem mass spectrometry."
-  },
-  {
-    "style": "msamanda_style_1",
-    "name": "MSAmanda",
-    "versions": [
-      "1.0.0.5242",
-      "1.0.0.5243",
-      "1.0.0.6299",
-      "1.0.0.6300",
-      "1.0.0.7503",
-      "1.0.0.7504",
-      "2.0.0.10695",
-      "2.0.0.11219",
-      "2.0.0.13723",
-      "2.0.0.14665",
-      "2.0.0.9695",
-      "2.0.0.9706"
-    ],
-    "reference": "Dorfer V, Pichler P, Stranzl T, Stadlmann J, Taus T, Winkler S, Mechtler K. (2014) MS Amanda, a universal identification algorithm optimized for high accuracy tandem mass spectra."
-  },
-  {
-    "style": "msfragger_style_1",
-    "name": "MSFragger",
-    "versions": [
-      "20170103",
-      "20171106",
-      "20190222"
-    ],
-    "reference": "Kong, A. T., Leprevost, F. V, Avtonomov, D. M., Mellacheruvu, D., and Nesvizhskii, A. I. (2017) MSFragger: ultrafast and comprehensive peptide identification in mass spectrometry-based proteomics. Nature Methods 14"
-  },
-  {
-    "style": "msfragger_style_2",
-    "name": "MSFragger",
-    "versions": [
-      "20190628"
-    ],
-    "reference": "Kong, A. T., Leprevost, F. V, Avtonomov, D. M., Mellacheruvu, D., and Nesvizhskii, A. I. (2017) MSFragger: ultrafast and comprehensive peptide identification in mass spectrometry-based proteomics. Nature Methods 14"
-  },
-  {
-    "style": "msfragger_style_3",
-    "name": "MSFragger",
-    "versions": [
-      "2.3",
-      "3.0"
-    ],
-    "reference": "Kong, A. T., Leprevost, F. V, Avtonomov, D. M., Mellacheruvu, D., and Nesvizhskii, A. I. (2017) MSFragger: ultrafast and comprehensive peptide identification in mass spectrometry-based proteomics. Nature Methods 14"
-  },
-  {
-    "style": "msgfplus_style_1",
-    "name": "msgfplus_py_mzid2csv",
-    "versions": [
-      "v1.0.0",
-      "v1.2.0",
-      "v1.2.1",
-      "v2016.09.16",
-      "v2017.01.27",
-      "v2017.07.04",
-      "v2016.09.16",
-      "v2017.01.27",
-      "v2018.01.30",
-      "v2018.06.28",
-      "v2018.09.12",
-      "v2019.01.22",
-      "v2019.04.18",
-      "v2019.07.03",
-      "v9979"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "myrimatch_style_1",
-    "name": "Myrimatch",
-    "versions": [
-      "2.1.138",
-      "2.2.140"
-    ],
-    "reference": "Tabb DL, Fernando CG, Chambers MC. (2007) MyriMatch: highly accurate tandem mass spectral peptide identification by multivariate hypergeometric analysis."
-  },
-  {
-    "style": "mzidentml_style_1",
-    "name": "MzidLib",
-    "versions": [
-      "1.6.10",
-      "1.6.11",
-      "1.7"
-    ],
-    "reference": "Reisinger F, Krishna R, Ghali F, Rios D, Hermjakob H, Vizcaino JA, Jones AR. (2012) jmzIdentML API: A Java interface to the mzIdentML standard for peptide and protein identification data."
-  },
-  {
-    "style": "mzml2mgf_style_1",
-    "name": "mzml2mgf",
-    "versions": [
-      "1.0.0",
-      "2.0.0"
-    ],
-    "reference": "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794."
-  },
-  {
-    "style": "novor_style_1",
-    "name": "Novor",
-    "versions": [
-      "1.05",
-      "1.1beta"
-    ],
-    "reference": "Bin Ma (2015) Novor: Real-Time Peptide de Novo Sequencing Software. J Am Soc Mass Spectrom 26 (11)"
-  },
-  {
-    "style": "omssa_style_1",
-    "name": "OMSSA",
-    "versions": [
-      "2.1.9"
-    ],
-    "reference": "Geer LY, Markey SP, Kowalak JA, Wagner L, Xu M, Maynard DM, Yang X, Shi W, Bryant SH (2004) Open Mass Spectrometry Search Algorithm."
-  },
-  {
-    "style": "pepnovo_style_1",
-    "name": "PepNovo",
-    "versions": [
-      "v3.1"
-    ],
-    "reference": "Ari M. Frank, Mikhail M. Savitski, Michael L. Nielsen, Roman A. Zubarev, and Pavel A. Pevzner (2007) De Novo Peptide Sequencing and Identification with Precision Mass Spectrometry, J. Proteome Res. 6:114-123."
-  },
-  {
-    "style": "percolator_style_1",
-    "name": "Percolator",
-    "versions": [
-      "2.0.8"
-    ],
-    "reference": "K\u00e4ll L, Canterbury JD, Weston J, Noble WS, MacCoss MJ. (2007) Semi-supervised learning for peptide identification from shotgun proteomics datasets."
-  },
-  {
-    "style": "percolator_style_2",
-    "name": "Percolator",
-    "versions": [
-      "3.2.0",
-      "3.4.0",
-      "3.5.0"
-    ],
-    "reference": "The, M., MacCoss, M.J., Noble, W.S. et al. Fast and Accurate Protein False Discovery Rates on Large-Scale Proteomics Data Sets with Percolator 3.0. J. Am. Soc. Mass Spectrom. 27, 1719–1727 (2016). https://doi.org/10.1007/s13361-016-1460-7"
-  },
-  {
-    "style": "pglyco_db_style_1",
-    "name": "pGlyco",
-    "versions": [
-      "2.2.0",
-      "2.2.2"
-    ],
-    "reference": "Liu MQ, Zeng WF, Fang P, Cao WQ, Liu C, Yan GQ, Zhang Y, Peng C, Wu JQ,Zhang XJ, Tu HJ, Chi H, Sun RX, Cao Y, Dong MQ, Jiang BY, Huang JM, Shen HL,Wong CCL, He SM, Yang PY. (2017) pGlyco 2.0 enables precision N-glycoproteomics with comprehensive quality control and one-step mass spectrometryfor intact glycopeptide identification.Nat Commun 8(1)"
-  },
-  {
-    "style": "pglyco_fdr_style_1",
-    "name": "pGlycoFDR",
-    "versions": [
-      "2.2.0",
-      "2.2.2"
-    ],
-    "reference": "Liu MQ, Zeng WF,, Fang P, Cao WQ, Liu C, Yan GQ, Zhang Y, Peng C, Wu JQ,Zhang XJ, Tu HJ, Chi H, Sun RX, Cao Y, Dong MQ, Jiang BY, Huang JM, Shen HL,Wong CCL, He SM, Yang PY. (2017) pGlyco 2.0 enables precision N-glycoproteomics with comprehensive quality control and one-step mass spectrometryfor intact glycopeptide identification.Nat Commun 8(1)"
-  },
-  {
-    "style": "pipi_style_1",
-    "name": "PIPI",
-    "versions": [
-      "1.4.5",
-      "1.4.6"
-    ],
-    "reference": "Yu, F., Li, N., Yu, W. (2016) PIPI: PTM-Invariant Peptide Identification Using Coding Method. J Prot Res 15(12)"
-  },
-  {
-    "style": "heatmap_style_1",
-    "name": "Plot pyGCluster Heatmap from CSV",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Jaeger D, Barth J, Niehues A, Fufezan C (2014) pyGCluster, a novel hierarchical clustering approach. Bioinformatics 30 896 898"
-  },
-  {
-    "style": "pnovo_style_1",
-    "name": "pNovo",
-    "versions": [
-      "3.1.3"
-    ],
-    "reference": "Yang, H; Chi, H; Zhou, W; Zeng, WF; He, K; Liu, C; Sun, RX; He, SM. (2017)Open-pNovo: De Novo Peptide Sequencing with Thousands of Protein Modifications.J Proteome Res. 16(2)"
-  },
-  {
-    "style": "pparse_style_1",
-    "name": "pParse",
-    "versions": [
-      "2.0",
-      "2.2.1"
-    ],
-    "reference": "Yuan ZF, Liu C, Wang HP, Sun RX, Fu Y, Zhang JF, Wang LH,Chi H, Li Y, Xiu LY, Wang WP, He SM (2012)pParse: a method for accurate determination of monoisotopic peaks in high-resolution mass spectra. Proteomics 12(2)"
-  },
-  {
-    "style": "ptminer_style_1",
-    "name": "PTMiner",
-    "versions": [
-      "1.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "ptmshepherd_style_1",
-    "name": "PTM-Shepherd",
-    "versions": [
-      "1.0"
-    ],
-    "reference": "Geiszler DJ, Kong AT, Avtonomov DM, Yu F, Leprevost FV, Nesvizhski AI.PTM-Shepherd: analysis and summarization of post-translational and chemical modifications from open search results.doi: https://doi.org/10.1101/2020.07.08.192583."
-  },
-  {
-    "style": "pyqms_style_1",
-    "name": "pyqms",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Leufken J, Niehues A, Sarin LP, Wessel F, Hippler M, Leidel SA, Fufezan C (2017) pyQms enables universal and accurate quantification of mass spectrometry data"
-  },
-  {
-    "style": "qvality_style_1",
-    "name": "QVALITY",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Kall L, Storey JD, Noble WS (2009) QVALITY: non-parametric estimation of q-values and posterior error probabilities."
-  },
-  {
-    "style": "sanitize_csv_style_1",
-    "name": "Sanitize CSV",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "sugarpy_plot_style_1",
-    "name": "SugarPy Plot",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "sugarpy_run_style_1",
-    "name": "SugarPy",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "svm_style_1",
-    "name": "Svm",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "tag_graph_style_1",
-    "name": "TagGraph",
-    "versions": [
-      "1.8.0"
-    ],
-    "reference": "Devabhaktuni, A.; Lin, S.; Zhang, L.; Swaminathan, K.; Gonzalez, CG.; Olsson, N.; Pearlman, SM.; Rawson, K.; Elias, JE.(2019) TagGraph reveals vast protein modification landscapes from large tandem mass spectrometry datasets.Nat Biotechnol. 37(4)"
-  },
-  {
-    "style": "thermo_raw_file_parser_style_1",
-    "name": "ThermoRawFileParser",
-    "versions": [
-      "1.1.2"
-    ],
-    "reference": "Hulstaert N, Sachsenberg T, Walzer M, Barsnes H, Martens L and Perez-Riverol Y (2019) ThermoRawFileParser: modular, scalable and cross-platform RAW file conversion. bioRxiv https://doi.org/10.1101/622852"
-  },
-  {
-    "style": "unify_csv_style_1",
-    "name": "Unify CSV",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794."
-  },
-  {
-    "style": "upeptide_mapper_style_1",
-    "name": "UpeptideMapper",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794."
-  },
-  {
-    "style": "venndiagram_style_1",
-    "name": "Venndiagram",
-    "versions": [
-      "1.0.0",
-      "1.1.0"
-    ],
-    "reference": "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794."
-  },
-  {
-    "style": "xtandem2csv_style_1",
-    "name": "xtandem2csv",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "xtandem_style_1",
-    "name": "X!Tandem",
-    "versions": [
-      "ALANINE",
-      "Cyclone",
-      "Jackhammer",
-      "Piledriver",
-      "Sledgehammer",
-      "Vengeance"
-    ],
-    "reference": "Craig R, Beavis RC. (2004) TANDEM: matching proteins with tandem mass spectra."
-  },
-  {
-    "style": "_test_node_style_1",
-    "name": "test_node_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "copy_files_style_1",
-    "name": "copy_files_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "mascot_style_1",
-    "name": "mascot_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Perkins DN, Pappin DJ, Creasy DM, Cottrell JS. Probability-based protein identification by searching sequence databases using mass spectrometry data. Electrophoresis. 1999 Dec;20(18):3551-67. doi: 10.1002/(SICI)1522-2683(19991201)20:18<3551::AID-ELPS3551>3.0.CO;2-2. PMID: 10612281."
-  },
-  {
-    "style": "peptide_forest_style_1",
-    "name": "peptide_forest_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "M. Dennison, T. Ranff, J. Bédorf, S. Schulze, N, Zinn, M. Bantscheff,  J.J.R.M. van Heugten, C. Fufezan, In review"
-  },
-  {
-    "style": "comet_style_1",
-    "name": "comet_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Eng JK, Jahan TA, Hoopmann MR. Comet: an open-source MS/MS sequence database search tool. Proteomics. 2013 Jan;13(1):22-4. doi: 10.1002/pmic.201200439. Epub 2012 Dec 4. PMID: 23148064."
-  },
-  {
-    "style": "pw-stats_style_1",
-    "name": "pw-stats_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "csv_filter_style_1",
-    "name": "csv_filter_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "volcano_style_1",
-    "name": "volcano_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "umap_style_1",
-    "name": "umap_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "mx_gsk_style_1",
-    "name": "mx_gsk_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "normalize_ion_injection_time_style_1",
-    "name": "normalize_ion_injection_time_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "align_scans_dbscan_style_1",
-    "name": "align_scans_dbscan_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "recalibrate_mz_style_1",
-    "name": "recalibrate_mz_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "align_files_dbscan_style_1",
-    "name": "align_files_dbscan_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "mx_gsk_stage2_qc_style_1",
-    "name": "mx_gsk_stage2_qc_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "merge_exc_gap_ions_style_1",
-    "name": "merge_exc_gap_ions_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "recalibrate_mz_global_style_1",
-    "name": "recalibrate_mz_global_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "calculate_ion_charge_state_style_1",
-    "name": "calculate_ion_charge_state_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "annotate_metabolites_style_1",
-    "name": "annotate_metabolites_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "isotopologue_envelope_matching_style_1",
-    "name": "isotopologue_envelope_matching_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "select_ions_style_1",
-    "name": "select_ions_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "merge_analytical_replicates_style_1",
-    "name": "merge_analytical_replicates_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "filter_nonbiological_ions_style_1",
-    "name": "filter_nonbiological_ions_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "correct_instrument_drift_style_1",
-    "name": "correct_instrument_drift_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  },
-  {
-    "style": "assign_analysis_batch_by_runtime_style_1",
-    "name": "assign_analysis_batch_by_runtime_style_1",
-    "versions": [
-      "1.0.0"
-    ],
-    "reference": "Ursgal2 Team"
-  }
+    {
+        "name": "Add Estimated FDR",
+        "reference": "An implementation of the target/decoy FDR estimation method described in: Lukas Kall, John D. Storey, Michael J. MacCoss and William Stafford Noble (2008) Assigning significance to peptides identified by tandem mass spectrometry using decoy databases.",
+        "style": "add_estimated_fdr_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "Combine PEP",
+        "reference": "Combines PEP scores from different search engines.",
+        "style": "combine_pep_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "Compomic Utilities",
+        "reference": "Barsnes, H., Vaudel, M., Colaert, N., Helsens, K., Sickmann, A.,Berven, F. S., and Martens, L. (2011) compomics-utilities: an open-source Java library for computational proteomics. BMCBioinformatics 12, 70",
+        "style": "compomics_utilities_style_1",
+        "versions": [
+            "4.11.5"
+        ]
+    },
+    {
+        "name": "Convert CSV to SSL",
+        "reference": "Ursgal2 Team",
+        "style": "csv2ssl_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "DeepNovo",
+        "reference": "Tran, N.H.; Zhang, X.; Xin, L.; Shan, B.; Li, M. (2017) De novo peptide sequencing by deep learning. PNAS 114 (31)",
+        "style": "deepnovo_style_1",
+        "versions": [
+            "0.0.1",
+            "DeepNovo v2"
+        ]
+    },
+    {
+        "name": "Determine Offset",
+        "reference": "Ursgal2 Team",
+        "style": "determine_offset_style_1",
+        "versions": [
+            "v1.0.0"
+        ]
+    },
+    {
+        "name": "Filter CSV",
+        "reference": "Ursgal2 Team",
+        "style": "filter_csv_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "FlashLFQ",
+        "reference": "Millikin RJ, Solntsev SK, Shortreed MR, Smith LM. Ultrafast Peptide Label-Free Quantification with FlashLFQ. J Proteome Res. 2018;17(1):386-391. doi:10.1021/acs.jproteome.7b00608",
+        "style": "flash_lfq_style_1",
+        "versions": [
+            "1.1.1"
+        ]
+    },
+    {
+        "name": "Generate Target Decoy",
+        "reference": "Ursgal2 Team",
+        "style": "generate_target_decoy_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "Get FTP Files",
+        "reference": "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794.",
+        "style": "get_ftp_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "Get HTTP Files",
+        "reference": "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794.",
+        "style": "get_http_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "Glycopeptide Fragmentor",
+        "reference": "Ursgal2 Team",
+        "style": "glycopeptide_fragmentor_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "Kojak",
+        "reference": "Hoopmann MR, Zelter A, Johnson RS, Riffle M, Maccoss MJ, Davis TN, Moritz RL (2015) Kojak: Efficient analysis of chemically cross-linked protein complexes. J Proteome Res 14: 2190-198",
+        "style": "kojak_style_1",
+        "versions": [
+            "1.5.3"
+        ]
+    },
+    {
+        "name": "Kojak Percolator",
+        "reference": "K\u30fb\u30fb\uff7d\uff64ll L, Canterbury JD, Weston J, Noble WS, MacCoss MJ. (2007) Semi-supervised learning for peptide identification from shotgun proteomics datasets.",
+        "style": "kojak_percolator_style_1",
+        "versions": [
+            "2.08"
+        ]
+    },
+    {
+        "name": "MODa",
+        "reference": "Na S, Bandeira N, Paek E. (2012) Fast multi-blind modification search through tandem mass spectrometry.",
+        "style": "moda_style_1",
+        "versions": [
+            "v1.51",
+            "v1.61",
+            "v1.62"
+        ]
+    },
+    {
+        "name": "MSAmanda",
+        "reference": "Dorfer V, Pichler P, Stranzl T, Stadlmann J, Taus T, Winkler S, Mechtler K. (2014) MS Amanda, a universal identification algorithm optimized for high accuracy tandem mass spectra.",
+        "style": "msamanda_style_1",
+        "versions": [
+            "1.0.0.5242",
+            "1.0.0.5243",
+            "1.0.0.6299",
+            "1.0.0.6300",
+            "1.0.0.7503",
+            "1.0.0.7504",
+            "2.0.0.10695",
+            "2.0.0.11219",
+            "2.0.0.13723",
+            "2.0.0.14665",
+            "2.0.0.9695",
+            "2.0.0.9706"
+        ]
+    },
+    {
+        "name": "MSFragger",
+        "reference": "Kong, A. T., Leprevost, F. V, Avtonomov, D. M., Mellacheruvu, D., and Nesvizhskii, A. I. (2017) MSFragger: ultrafast and comprehensive peptide identification in mass spectrometry-based proteomics. Nature Methods 14",
+        "style": "msfragger_style_1",
+        "versions": [
+            "20170103",
+            "20171106",
+            "20190222"
+        ]
+    },
+    {
+        "name": "MSFragger",
+        "reference": "Kong, A. T., Leprevost, F. V, Avtonomov, D. M., Mellacheruvu, D., and Nesvizhskii, A. I. (2017) MSFragger: ultrafast and comprehensive peptide identification in mass spectrometry-based proteomics. Nature Methods 14",
+        "style": "msfragger_style_2",
+        "versions": [
+            "20190628"
+        ]
+    },
+    {
+        "name": "MSFragger",
+        "reference": "Kong, A. T., Leprevost, F. V, Avtonomov, D. M., Mellacheruvu, D., and Nesvizhskii, A. I. (2017) MSFragger: ultrafast and comprehensive peptide identification in mass spectrometry-based proteomics. Nature Methods 14",
+        "style": "msfragger_style_3",
+        "versions": [
+            "2.3",
+            "3.0"
+        ]
+    },
+    {
+        "name": "Merge CSVs",
+        "reference": "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794.",
+        "style": "merge_csvs_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "Myrimatch",
+        "reference": "Tabb DL, Fernando CG, Chambers MC. (2007) MyriMatch: highly accurate tandem mass spectral peptide identification by multivariate hypergeometric analysis.",
+        "style": "myrimatch_style_1",
+        "versions": [
+            "2.1.138",
+            "2.2.140"
+        ]
+    },
+    {
+        "name": "MzidLib",
+        "reference": "Reisinger F, Krishna R, Ghali F, Rios D, Hermjakob H, Vizcaino JA, Jones AR. (2012) jmzIdentML API: A Java interface to the mzIdentML standard for peptide and protein identification data.",
+        "style": "mzidentml_style_1",
+        "versions": [
+            "1.6.10",
+            "1.6.11",
+            "1.7"
+        ]
+    },
+    {
+        "name": "Novor",
+        "reference": "Bin Ma (2015) Novor: Real-Time Peptide de Novo Sequencing Software. J Am Soc Mass Spectrom 26 (11)",
+        "style": "novor_style_1",
+        "versions": [
+            "1.05",
+            "1.1beta"
+        ]
+    },
+    {
+        "name": "OMSSA",
+        "reference": "Geer LY, Markey SP, Kowalak JA, Wagner L, Xu M, Maynard DM, Yang X, Shi W, Bryant SH (2004) Open Mass Spectrometry Search Algorithm.",
+        "style": "omssa_style_1",
+        "versions": [
+            "2.1.9"
+        ]
+    },
+    {
+        "name": "PIPI",
+        "reference": "Yu, F., Li, N., Yu, W. (2016) PIPI: PTM-Invariant Peptide Identification Using Coding Method. J Prot Res 15(12)",
+        "style": "pipi_style_1",
+        "versions": [
+            "1.4.5",
+            "1.4.6"
+        ]
+    },
+    {
+        "name": "PTM-Shepherd",
+        "reference": "Geiszler DJ, Kong AT, Avtonomov DM, Yu F, Leprevost FV, Nesvizhski AI.PTM-Shepherd: analysis and summarization of post-translational and chemical modifications from open search results.doi: https://doi.org/10.1101/2020.07.08.192583.",
+        "style": "ptmshepherd_style_1",
+        "versions": [
+            "1.0"
+        ]
+    },
+    {
+        "name": "PTMiner",
+        "reference": "Ursgal2 Team",
+        "style": "ptminer_style_1",
+        "versions": [
+            "1.0"
+        ]
+    },
+    {
+        "name": "PepNovo",
+        "reference": "Ari M. Frank, Mikhail M. Savitski, Michael L. Nielsen, Roman A. Zubarev, and Pavel A. Pevzner (2007) De Novo Peptide Sequencing and Identification with Precision Mass Spectrometry, J. Proteome Res. 6:114-123.",
+        "style": "pepnovo_style_1",
+        "versions": [
+            "v3.1"
+        ]
+    },
+    {
+        "name": "Percolator",
+        "reference": "K\u00e4ll L, Canterbury JD, Weston J, Noble WS, MacCoss MJ. (2007) Semi-supervised learning for peptide identification from shotgun proteomics datasets.",
+        "style": "percolator_style_1",
+        "versions": [
+            "2.0.8"
+        ]
+    },
+    {
+        "name": "Percolator",
+        "reference": "The, M., MacCoss, M.J., Noble, W.S. et al. Fast and Accurate Protein False Discovery Rates on Large-Scale Proteomics Data Sets with Percolator 3.0. J. Am. Soc. Mass Spectrom. 27, 1719\u20131727 (2016). https://doi.org/10.1007/s13361-016-1460-7",
+        "style": "percolator_style_2",
+        "versions": [
+            "3.2.0",
+            "3.4.0",
+            "3.5.0"
+        ]
+    },
+    {
+        "name": "Plot pyGCluster Heatmap from CSV",
+        "reference": "Jaeger D, Barth J, Niehues A, Fufezan C (2014) pyGCluster, a novel hierarchical clustering approach. Bioinformatics 30 896 898",
+        "style": "heatmap_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "Proteomics Quality Control",
+        "reference": "Ursgal2 Team",
+        "style": "proteomics_qc_style_1",
+        "versions": [
+            "v1.0.0"
+        ]
+    },
+    {
+        "name": "Q Value Calculator",
+        "reference": "Ursgal2 Team",
+        "style": "q_value_calculator_style_1",
+        "versions": [
+            "v1.0.0"
+        ]
+    },
+    {
+        "name": "QVALITY",
+        "reference": "Kall L, Storey JD, Noble WS (2009) QVALITY: non-parametric estimation of q-values and posterior error probabilities.",
+        "style": "qvality_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "Sanitize CSV",
+        "reference": "Ursgal2 Team",
+        "style": "sanitize_csv_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "SugarPy",
+        "reference": "Ursgal2 Team",
+        "style": "sugarpy_run_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "SugarPy Plot",
+        "reference": "Ursgal2 Team",
+        "style": "sugarpy_plot_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "Summarize Results as Tables",
+        "reference": "Ursgal2 Team",
+        "style": "csv2counted_results_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "Svm",
+        "reference": "Ursgal2 Team",
+        "style": "svm_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "TagGraph",
+        "reference": "Devabhaktuni, A.; Lin, S.; Zhang, L.; Swaminathan, K.; Gonzalez, CG.; Olsson, N.; Pearlman, SM.; Rawson, K.; Elias, JE.(2019) TagGraph reveals vast protein modification landscapes from large tandem mass spectrometry datasets.Nat Biotechnol. 37(4)",
+        "style": "tag_graph_style_1",
+        "versions": [
+            "1.8.0"
+        ]
+    },
+    {
+        "name": "ThermoRawFileParser",
+        "reference": "Hulstaert N, Sachsenberg T, Walzer M, Barsnes H, Martens L and Perez-Riverol Y (2019) ThermoRawFileParser: modular, scalable and cross-platform RAW file conversion. bioRxiv https://doi.org/10.1101/622852",
+        "style": "thermo_raw_file_parser_style_1",
+        "versions": [
+            "1.1.2"
+        ]
+    },
+    {
+        "name": "Unify CSV",
+        "reference": "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794.",
+        "style": "unify_csv_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "UpeptideMapper",
+        "reference": "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794.",
+        "style": "upeptide_mapper_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "Ursgal",
+        "reference": [
+            "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794."
+        ],
+        "style": "ursgal_style_1",
+        "versions": [
+            "0.6.0",
+            "0.6.1"
+        ]
+    },
+    {
+        "name": "Ursgal Controller",
+        "reference": [
+            "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794."
+        ],
+        "style": "ucontroller_style_1",
+        "versions": [
+            "0.6.0",
+            "0.6.1"
+        ]
+    },
+    {
+        "name": "Venndiagram",
+        "reference": "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794.",
+        "style": "venndiagram_style_1",
+        "versions": [
+            "1.0.0",
+            "1.1.0"
+        ]
+    },
+    {
+        "name": "X!Tandem",
+        "reference": "Craig R, Beavis RC. (2004) TANDEM: matching proteins with tandem mass spectra.",
+        "style": "xtandem_style_1",
+        "versions": [
+            "ALANINE",
+            "Cyclone",
+            "Jackhammer",
+            "Piledriver",
+            "Sledgehammer",
+            "Vengeance"
+        ]
+    },
+    {
+        "name": "align_files_dbscan_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "align_files_dbscan_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "align_scans_dbscan_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "align_scans_dbscan_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "annotate_metabolites_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "annotate_metabolites_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "assign_analysis_batch_by_runtime_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "assign_analysis_batch_by_runtime_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "calculate_ion_charge_state_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "calculate_ion_charge_state_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "comet_style_1",
+        "reference": "Eng JK, Jahan TA, Hoopmann MR. Comet: an open-source MS/MS sequence database search tool. Proteomics. 2013 Jan;13(1):22-4. doi: 10.1002/pmic.201200439. Epub 2012 Dec 4. PMID: 23148064.",
+        "style": "comet_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "compressor_style_1",
+        "reference": "Ursgal team 2021",
+        "style": "compressor_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "copy_files_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "copy_files_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "correct_instrument_drift_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "correct_instrument_drift_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "csv_filter_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "csv_filter_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "echo_to_file",
+        "reference": [
+            "Ursgal2 Team"
+        ],
+        "style": "echo_to_file_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "filter_nonbiological_ions_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "filter_nonbiological_ions_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "isotopologue_envelope_matching_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "isotopologue_envelope_matching_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "mascot_style_1",
+        "reference": "Perkins DN, Pappin DJ, Creasy DM, Cottrell JS. Probability-based protein identification by searching sequence databases using mass spectrometry data. Electrophoresis. 1999 Dec;20(18):3551-67. doi: 10.1002/(SICI)1522-2683(19991201)20:18<3551::AID-ELPS3551>3.0.CO;2-2. PMID: 10612281.",
+        "style": "mascot_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "merge_analytical_replicates_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "merge_analytical_replicates_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "merge_exc_gap_ions_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "merge_exc_gap_ions_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "mgf_to_rt_lookup",
+        "reference": "Ursgal2 Team",
+        "style": "mgf_to_rt_lookup_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "msgfplus_py_mzid2csv",
+        "reference": "Ursgal2 Team",
+        "style": "msgfplus_style_1",
+        "versions": [
+            "v1.0.0",
+            "v1.2.0",
+            "v1.2.1",
+            "v2016.09.16",
+            "v2017.01.27",
+            "v2017.07.04",
+            "v2016.09.16",
+            "v2017.01.27",
+            "v2018.01.30",
+            "v2018.06.28",
+            "v2018.09.12",
+            "v2019.01.22",
+            "v2019.04.18",
+            "v2019.07.03",
+            "v9979"
+        ]
+    },
+    {
+        "name": "mx_gsk_stage2_qc_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "mx_gsk_stage2_qc_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "mx_gsk_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "mx_gsk_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "mzml2mgf",
+        "reference": "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794.",
+        "style": "mzml2mgf_style_1",
+        "versions": [
+            "1.0.0",
+            "2.0.0"
+        ]
+    },
+    {
+        "name": "normalize_ion_injection_time_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "normalize_ion_injection_time_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "pGlyco",
+        "reference": "Liu MQ, Zeng WF, Fang P, Cao WQ, Liu C, Yan GQ, Zhang Y, Peng C, Wu JQ,Zhang XJ, Tu HJ, Chi H, Sun RX, Cao Y, Dong MQ, Jiang BY, Huang JM, Shen HL,Wong CCL, He SM, Yang PY. (2017) pGlyco 2.0 enables precision N-glycoproteomics with comprehensive quality control and one-step mass spectrometryfor intact glycopeptide identification.Nat Commun 8(1)",
+        "style": "pglyco_db_style_1",
+        "versions": [
+            "2.2.0",
+            "2.2.2"
+        ]
+    },
+    {
+        "name": "pGlycoFDR",
+        "reference": "Liu MQ, Zeng WF,, Fang P, Cao WQ, Liu C, Yan GQ, Zhang Y, Peng C, Wu JQ,Zhang XJ, Tu HJ, Chi H, Sun RX, Cao Y, Dong MQ, Jiang BY, Huang JM, Shen HL,Wong CCL, He SM, Yang PY. (2017) pGlyco 2.0 enables precision N-glycoproteomics with comprehensive quality control and one-step mass spectrometryfor intact glycopeptide identification.Nat Commun 8(1)",
+        "style": "pglyco_fdr_style_1",
+        "versions": [
+            "2.2.0",
+            "2.2.2"
+        ]
+    },
+    {
+        "name": "pNovo",
+        "reference": "Yang, H; Chi, H; Zhou, W; Zeng, WF; He, K; Liu, C; Sun, RX; He, SM. (2017)Open-pNovo: De Novo Peptide Sequencing with Thousands of Protein Modifications.J Proteome Res. 16(2)",
+        "style": "pnovo_style_1",
+        "versions": [
+            "3.1.3"
+        ]
+    },
+    {
+        "name": "pParse",
+        "reference": "Yuan ZF, Liu C, Wang HP, Sun RX, Fu Y, Zhang JF, Wang LH,Chi H, Li Y, Xiu LY, Wang WP, He SM (2012)pParse: a method for accurate determination of monoisotopic peaks in high-resolution mass spectra. Proteomics 12(2)",
+        "style": "pparse_style_1",
+        "versions": [
+            "2.0",
+            "2.2.1"
+        ]
+    },
+    {
+        "name": "peptide_forest_style_1",
+        "reference": "M. Dennison, T. Ranff, J. B\u00e9dorf, S. Schulze, N, Zinn, M. Bantscheff,  J.J.R.M. van Heugten, C. Fufezan, In review",
+        "style": "peptide_forest_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "pw-stats_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "pw-stats_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "pyqms",
+        "reference": "Leufken J, Niehues A, Sarin LP, Wessel F, Hippler M, Leidel SA, Fufezan C (2017) pyQms enables universal and accurate quantification of mass spectrometry data",
+        "style": "pyqms_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "recalibrate_mz_global_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "recalibrate_mz_global_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "recalibrate_mz_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "recalibrate_mz_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "select_ions_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "select_ions_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "test_node_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "_test_node_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "umap_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "umap_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "volcano_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "volcano_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "xtandem2csv",
+        "reference": "Ursgal2 Team",
+        "style": "xtandem2csv_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    }
 ]

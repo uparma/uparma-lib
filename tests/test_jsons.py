@@ -234,6 +234,8 @@ def nested_json_is_sorted(rcode, jsons):
                         }.items()
                     )
                 )
+            else:
+                return dict(sorted(input.items()))
         if isinstance(input, list):
             if any([isinstance(v, sortable_types) for v in input]):
                 next_list = [dynamic_sort(v, depth + 1) for v in input]
@@ -273,4 +275,7 @@ def main():
 
 
 if __name__ == "__main__":
-    exit(main())
+    exit_code = main()
+    if exit_code != 0:
+        raise AssertionError("Exit code is not 0. Please check log for details.")
+    exit(exit_code)

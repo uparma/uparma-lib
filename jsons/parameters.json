@@ -294,6 +294,7 @@
             "ursgal_style_1": "batch_separation_time_factor"
         },
         "name": "batch_separation_time_factor",
+
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {},
@@ -372,6 +373,7 @@
             "percolator_style_1": "bigger_scores_better",
             "percolator_style_2": "bigger_scores_better",
             "ptminer_style_1": "bigger_scores_better",
+            "q_value_calculator_style_1": "bigger_scores_better",
             "qvality_style_1": "-r",
             "sanitize_csv_style_1": "bigger_scores_better",
             "svm_style_1": "bigger_scores_better",
@@ -395,7 +397,11 @@
                     true
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    true
+                ],
+                [
+                    "mascot_2_6_2",
                     true
                 ],
                 [
@@ -593,7 +599,11 @@
                     true
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    true
+                ],
+                [
+                    "mascot_2_6_2",
                     true
                 ],
                 [
@@ -795,11 +805,11 @@
                     true
                 ],
                 [
-                    "mascot_2_6_2",
+                    "mascot_2_5_1",
                     true
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_6_2",
                     true
                 ],
                 [
@@ -1005,11 +1015,11 @@
                     true
                 ],
                 [
-                    "mascot_2_6_2",
+                    "mascot_2_5_1",
                     true
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_6_2",
                     true
                 ],
                 [
@@ -1201,6 +1211,208 @@
                     true
                 ]
             ],
+            "q_value_calculator_style_1": [
+                [
+                    "deepnovo_0_0_1",
+                    true
+                ],
+                [
+                    "deepnovo_pointnovo",
+                    true
+                ],
+                [
+                    "mascot_2_5_1",
+                    true
+                ],
+                [
+                    "mascot_2_6_2",
+                    true
+                ],
+                [
+                    "moda_v1_51",
+                    true
+                ],
+                [
+                    "moda_v1_61",
+                    true
+                ],
+                [
+                    "moda_v1_62",
+                    true
+                ],
+                [
+                    "msamanda_1_0_0_5242",
+                    true
+                ],
+                [
+                    "msamanda_1_0_0_5243",
+                    true
+                ],
+                [
+                    "msamanda_1_0_0_6299",
+                    true
+                ],
+                [
+                    "msamanda_1_0_0_6300",
+                    true
+                ],
+                [
+                    "msamanda_1_0_0_7503",
+                    true
+                ],
+                [
+                    "msamanda_1_0_0_7504",
+                    true
+                ],
+                [
+                    "msamanda_2_0_0_10695",
+                    true
+                ],
+                [
+                    "msamanda_2_0_0_11219",
+                    true
+                ],
+                [
+                    "msamanda_2_0_0_13723",
+                    true
+                ],
+                [
+                    "msamanda_2_0_0_14665",
+                    true
+                ],
+                [
+                    "msamanda_2_0_0_9695",
+                    true
+                ],
+                [
+                    "msamanda_2_0_0_9706",
+                    true
+                ],
+                [
+                    "msfragger_20170103",
+                    true
+                ],
+                [
+                    "msfragger_20171106",
+                    true
+                ],
+                [
+                    "msfragger_20190222",
+                    true
+                ],
+                [
+                    "msfragger_20190628",
+                    true
+                ],
+                [
+                    "msfragger_2_3",
+                    true
+                ],
+                [
+                    "msfragger_3_0",
+                    true
+                ],
+                [
+                    "msgfplus_2021_03_22",
+                    false
+                ],
+                [
+                    "msgfplus_v2016_09_16",
+                    false
+                ],
+                [
+                    "msgfplus_v2017_01_27",
+                    false
+                ],
+                [
+                    "msgfplus_v2018_01_30",
+                    false
+                ],
+                [
+                    "msgfplus_v2018_06_28",
+                    false
+                ],
+                [
+                    "msgfplus_v2018_09_12",
+                    false
+                ],
+                [
+                    "msgfplus_v2019_01_22",
+                    false
+                ],
+                [
+                    "msgfplus_v2019_04_18",
+                    false
+                ],
+                [
+                    "msgfplus_v2019_07_03",
+                    false
+                ],
+                [
+                    "msgfplus_v9979",
+                    false
+                ],
+                [
+                    "myrimatch_2_1_138",
+                    true
+                ],
+                [
+                    "myrimatch_2_2_140",
+                    true
+                ],
+                [
+                    "omssa_2_1_9",
+                    false
+                ],
+                [
+                    "pglyco_db_2_2_0",
+                    true
+                ],
+                [
+                    "pglyco_db_2_2_2",
+                    true
+                ],
+                [
+                    "pipi_1_4_5",
+                    true
+                ],
+                [
+                    "pipi_1_4_6",
+                    true
+                ],
+                [
+                    "pnovo_3_1_3",
+                    true
+                ],
+                [
+                    "tag_graph_1_8_0",
+                    true
+                ],
+                [
+                    "xtandem_alanine",
+                    true
+                ],
+                [
+                    "xtandem_cyclone_2010",
+                    true
+                ],
+                [
+                    "xtandem_jackhammer",
+                    true
+                ],
+                [
+                    "xtandem_piledriver",
+                    true
+                ],
+                [
+                    "xtandem_sledgehammer",
+                    true
+                ],
+                [
+                    "xtandem_vengeance",
+                    true
+                ]
+            ],
             "qvality_style_1": [
                 [
                     "deepnovo_0_0_1",
@@ -1211,7 +1423,11 @@
                     true
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    true
+                ],
+                [
+                    "mascot_2_6_2",
                     true
                 ],
                 [
@@ -1409,7 +1625,11 @@
                     true
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    true
+                ],
+                [
+                    "mascot_2_6_2",
                     true
                 ],
                 [
@@ -1607,7 +1827,11 @@
                     true
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    true
+                ],
+                [
+                    "mascot_2_6_2",
                     true
                 ],
                 [
@@ -1809,10 +2033,6 @@
                     true
                 ],
                 [
-                    "mascot_x_x_x",
-                    true
-                ],
-                [
                     "moda_v1_51",
                     true
                 ],
@@ -2011,8 +2231,12 @@
                     "deepnovo_pointnovo"
                 ],
                 [
-                    "mascot_x_x_x",
-                    "mascot_x_x_x"
+                    "mascot_2_5_1",
+                    "mascot_2_5_1"
+                ],
+                [
+                    "mascot_2_6_2",
+                    "mascot_2_6_2"
                 ],
                 [
                     "moda_v1_51",
@@ -2564,7 +2788,11 @@
                     false
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    true
+                ],
+                [
+                    "mascot_2_6_2",
                     true
                 ],
                 [
@@ -2770,8 +2998,12 @@
                     "kojak_1_5_3"
                 ],
                 [
-                    "mascot_x_x_x",
-                    "mascot_x_x_x"
+                    "mascot_2_5_1",
+                    true
+                ],
+                [
+                    "mascot_2_6_2",
+                    true
                 ],
                 [
                     "moda_v1_51",
@@ -3137,6 +3369,7 @@
             "pglyco_db_style_1": "process",
             "pipi_style_1": "thread_num",
             "pnovo_style_1": "thread",
+            "proteomics_qc_style_1": "n_cpus",
             "ptmshepherd_style_1": "threads",
             "ucontroller_style_1": "cpus",
             "ursgal_style_1": "cpus",
@@ -8266,9 +8499,10 @@
     },
     {
         "default_value": null,
-        "description": "Engine used to select 1% q-value PSMs for initial training set",
+        "description": "Engine used to select 1% q-value PSMs for scoring",
         "key_translations": {
             "peptide_forest_style_1": "initial_engine",
+            "q_value_calculator_style_1": "initial_engine",
             "ursgal_style_1": "initial_engine"
         },
         "name": "initial_engine",
@@ -9446,6 +9680,7 @@
         "description": "match tolerance in ppm, used to e.g. re-calibrate mass axis of full spectrum based on detected lock masses (recalibrate_mz) or merge correlating ions (merge_exc_gap_ions)",
         "key_translations": {
             "merge_exc_gap_ions_style_1": "max_distance",
+            "proteomics_qc_style_1": "matching_tolerance_in_ppm",
             "recalibrate_mz_style_1": "lock_tol",
             "ursgal_style_1": "match_mass_tolerance"
         },
@@ -12290,6 +12525,7 @@
         "description": "pandas Query string to be applied to filter a dataframe",
         "key_translations": {
             "csv_filter_style_1": "query_string",
+            "determine_offset_style_1": "pandas_query_string",
             "ursgal_style_1": "pandas_query_string"
         },
         "name": "pandas_query_string",
@@ -15864,6 +16100,7 @@
             "percolator_style_1": "validation_score_field",
             "percolator_style_2": "validation_score_field",
             "ptminer_style_1": "validation_score_field",
+            "q_value_calculator_style_1": "validation_score_field",
             "qvality_style_1": "validation_score_field",
             "sanitize_csv_style_1": "validation_score_field",
             "svm_style_1": "validation_score_field",
@@ -15888,7 +16125,11 @@
                     "deepnovo:score"
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    "mascot:score"
+                ],
+                [
+                    "mascot_2_6_2",
                     "mascot:score"
                 ],
                 [
@@ -16102,7 +16343,11 @@
                     "deepnovo:score"
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    "mascot:score"
+                ],
+                [
+                    "mascot_2_6_2",
                     "mascot:score"
                 ],
                 [
@@ -16312,7 +16557,11 @@
                     "deepnovo:score"
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    "mascot:score"
+                ],
+                [
+                    "mascot_2_6_2",
                     "mascot:score"
                 ],
                 [
@@ -16530,7 +16779,11 @@
                     "deepnovo:score"
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    "mascot:score"
+                ],
+                [
+                    "mascot_2_6_2",
                     "mascot:score"
                 ],
                 [
@@ -16734,6 +16987,220 @@
                     "x!tandem:hyperscore"
                 ]
             ],
+            "q_value_calculator_style_1": [
+                [
+                    "comet_2020_01_4",
+                    "comet:e_value"
+                ],
+                [
+                    "deepnovo_0_0_1",
+                    "deepnovo:score"
+                ],
+                [
+                    "deepnovo_pointnovo",
+                    "deepnovo:score"
+                ],
+                [
+                    "mascot_2_5_1",
+                    "mascot:score"
+                ],
+                [
+                    "mascot_2_6_2",
+                    "mascot:score"
+                ],
+                [
+                    "moda_v1_51",
+                    "moda:probability"
+                ],
+                [
+                    "moda_v1_61",
+                    "moda:probability"
+                ],
+                [
+                    "moda_v1_62",
+                    "moda:probability"
+                ],
+                [
+                    "msamanda_1_0_0_5242",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_1_0_0_5243",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_1_0_0_6299",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_1_0_0_6300",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_1_0_0_7503",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_1_0_0_7504",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_2_0_0_10695",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_2_0_0_11219",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_2_0_0_13723",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_2_0_0_14665",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_2_0_0_17442",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_2_0_0_9695",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_2_0_0_9706",
+                    "amanda:score"
+                ],
+                [
+                    "msfragger_20170103",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_20171106",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_20190222",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_20190628",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_2_3",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_3_0",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msgfplus_2021_03_22",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2016_09_16",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2017_01_27",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2018_01_30",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2018_06_28",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2018_09_12",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2019_01_22",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2019_04_18",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2019_07_03",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v9979",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "myrimatch_2_1_138",
+                    "myrimatch:mvh"
+                ],
+                [
+                    "myrimatch_2_2_140",
+                    "myrimatch:mvh"
+                ],
+                [
+                    "novor_1_05",
+                    "novor:score"
+                ],
+                [
+                    "novor_1_1beta",
+                    "novor:score"
+                ],
+                [
+                    "omssa_2_1_9",
+                    "omssa:pvalue"
+                ],
+                [
+                    "pepnovo_3_1",
+                    "pepnovo:pnv_scr"
+                ],
+                [
+                    "pglyco_db_2_2_0",
+                    "pglyco:total_score"
+                ],
+                [
+                    "pipi_1_4_5",
+                    "pipi:score"
+                ],
+                [
+                    "pipi_1_4_6",
+                    "pipi:score"
+                ],
+                [
+                    "tag_graph_1_8_0",
+                    "taggraph:: 1-log10_em"
+                ],
+                [
+                    "xtandem_alanine",
+                    "x!tandem:hyperscore"
+                ],
+                [
+                    "xtandem_cyclone_2010",
+                    "x!tandem:hyperscore"
+                ],
+                [
+                    "xtandem_jackhammer",
+                    "x!tandem:hyperscore"
+                ],
+                [
+                    "xtandem_piledriver",
+                    "x!tandem:hyperscore"
+                ],
+                [
+                    "xtandem_sledgehammer",
+                    "x!tandem:hyperscore"
+                ],
+                [
+                    "xtandem_vengeance",
+                    "x!tandem:hyperscore"
+                ]
+            ],
             "qvality_style_1": [
                 [
                     "deepnovo_0_0_1",
@@ -16744,7 +17211,11 @@
                     "deepnovo:score"
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    "mascot:score"
+                ],
+                [
+                    "mascot_2_6_2",
                     "mascot:score"
                 ],
                 [
@@ -16954,7 +17425,11 @@
                     "deepnovo:score"
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    "mascot:score"
+                ],
+                [
+                    "mascot_2_6_2",
                     "mascot:score"
                 ],
                 [
@@ -17164,7 +17639,11 @@
                     "deepnovo:score"
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    "mascot:score"
+                ],
+                [
+                    "mascot_2_6_2",
                     "mascot:score"
                 ],
                 [
@@ -17374,7 +17853,11 @@
                     "deepnovo:score"
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    "mascot:score"
+                ],
+                [
+                    "mascot_2_6_2",
                     "mascot:score"
                 ],
                 [
@@ -17597,10 +18080,6 @@
                 ],
                 [
                     "mascot_2_6_2",
-                    "mascot:score"
-                ],
-                [
-                    "mascot_x_x_x",
                     "mascot:score"
                 ],
                 [
