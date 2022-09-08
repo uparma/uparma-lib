@@ -11,6 +11,8 @@ def dynamic_sort(input, depth=0):
                     {k: dynamic_sort(v, depth + 1) for k, v in input.items()}.items()
                 )
             )
+        else:
+            return dict(sorted(input.items()))
     if isinstance(input, list):
         if any([isinstance(v, sortable_types) for v in input]):
             next_list = [dynamic_sort(v, depth + 1) for v in input]
