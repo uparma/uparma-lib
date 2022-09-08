@@ -396,7 +396,11 @@
                     true
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    true
+                ],
+                [
+                    "mascot_2_6_2",
                     true
                 ],
                 [
@@ -800,11 +804,11 @@
                     true
                 ],
                 [
-                    "mascot_2_6_2",
+                    "mascot_2_5_1",
                     true
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_6_2",
                     true
                 ],
                 [
@@ -1010,11 +1014,11 @@
                     true
                 ],
                 [
-                    "mascot_2_6_2",
+                    "mascot_2_5_1",
                     true
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_6_2",
                     true
                 ],
                 [
@@ -1216,7 +1220,11 @@
                     true
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    true
+                ],
+                [
+                    "mascot_2_6_2",
                     true
                 ],
                 [
@@ -1414,7 +1422,11 @@
                     true
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    true
+                ],
+                [
+                    "mascot_2_6_2",
                     true
                 ],
                 [
@@ -1612,7 +1624,11 @@
                     true
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    true
+                ],
+                [
+                    "mascot_2_6_2",
                     true
                 ],
                 [
@@ -1810,7 +1826,11 @@
                     true
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    true
+                ],
+                [
+                    "mascot_2_6_2",
                     true
                 ],
                 [
@@ -2012,10 +2032,6 @@
                     true
                 ],
                 [
-                    "mascot_x_x_x",
-                    true
-                ],
-                [
                     "moda_v1_51",
                     true
                 ],
@@ -2214,8 +2230,12 @@
                     "deepnovo_pointnovo"
                 ],
                 [
-                    "mascot_x_x_x",
-                    "mascot_x_x_x"
+                    "mascot_2_5_1",
+                    "mascot_2_5_1"
+                ],
+                [
+                    "mascot_2_6_2",
+                    "mascot_2_6_2"
                 ],
                 [
                     "moda_v1_51",
@@ -2767,7 +2787,11 @@
                     false
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    true
+                ],
+                [
+                    "mascot_2_6_2",
                     true
                 ],
                 [
@@ -2973,8 +2997,12 @@
                     "kojak_1_5_3"
                 ],
                 [
-                    "mascot_x_x_x",
-                    "mascot_x_x_x"
+                    "mascot_2_5_1",
+                    true
+                ],
+                [
+                    "mascot_2_6_2",
+                    true
                 ],
                 [
                     "moda_v1_51",
@@ -16089,7 +16117,11 @@
                     "deepnovo:score"
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    "mascot:score"
+                ],
+                [
+                    "mascot_2_6_2",
                     "mascot:score"
                 ],
                 [
@@ -16303,7 +16335,11 @@
                     "deepnovo:score"
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    "mascot:score"
+                ],
+                [
+                    "mascot_2_6_2",
                     "mascot:score"
                 ],
                 [
@@ -16513,7 +16549,11 @@
                     "deepnovo:score"
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    "mascot:score"
+                ],
+                [
+                    "mascot_2_6_2",
                     "mascot:score"
                 ],
                 [
@@ -16731,7 +16771,11 @@
                     "deepnovo:score"
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    "mascot:score"
+                ],
+                [
+                    "mascot_2_6_2",
                     "mascot:score"
                 ],
                 [
@@ -16949,7 +16993,11 @@
                     "deepnovo:score"
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    "mascot:score"
+                ],
+                [
+                    "mascot_2_6_2",
                     "mascot:score"
                 ],
                 [
@@ -17155,7 +17203,11 @@
                     "deepnovo:score"
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    "mascot:score"
+                ],
+                [
+                    "mascot_2_6_2",
                     "mascot:score"
                 ],
                 [
@@ -17365,7 +17417,11 @@
                     "deepnovo:score"
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    "mascot:score"
+                ],
+                [
+                    "mascot_2_6_2",
                     "mascot:score"
                 ],
                 [
@@ -17575,7 +17631,11 @@
                     "deepnovo:score"
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    "mascot:score"
+                ],
+                [
+                    "mascot_2_6_2",
                     "mascot:score"
                 ],
                 [
@@ -17785,7 +17845,11 @@
                     "deepnovo:score"
                 ],
                 [
-                    "mascot_x_x_x",
+                    "mascot_2_5_1",
+                    "mascot:score"
+                ],
+                [
+                    "mascot_2_6_2",
                     "mascot:score"
                 ],
                 [
@@ -18008,10 +18072,6 @@
                 ],
                 [
                     "mascot_2_6_2",
-                    "mascot:score"
-                ],
-                [
-                    "mascot_x_x_x",
                     "mascot:score"
                 ],
                 [
