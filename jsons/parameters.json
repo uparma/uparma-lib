@@ -294,7 +294,6 @@
             "ursgal_style_1": "batch_separation_time_factor"
         },
         "name": "batch_separation_time_factor",
-
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {},
@@ -15285,6 +15284,20 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "bool"
+    },
+    {
+        "default_value": "%Y-%m-%d %H:%M:%S",
+        "description": "Time format to be used to convert a datetime object to its equivalent string (e.g. via datetime.strptime()) or vice versa (e.g. via datetime.strftime()).",
+        "key_translations": {
+            "assign_analysis_batch_by_runtime_style_1": "time_format",
+            "spectrum_meta_data_style_1": "time_format",
+            "ursgal_style_1": "time_format"
+        },
+        "name": "time_format",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
     },
     {
         "default_value": 0.01,
