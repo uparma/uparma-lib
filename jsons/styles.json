@@ -718,5 +718,13 @@
         "versions": [
             "1.0.0"
         ]
+    },
+    {
+        "name": "spectrum_meta_data_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "spectrum_meta_data_style_1",
+        "versions": [
+            "1.0.0"
+        ]
     }
 ]
