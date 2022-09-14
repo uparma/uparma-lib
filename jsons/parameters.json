@@ -90,6 +90,7 @@
         "key_translations": {
             "annotate_metabolites_style_1": "delta_abs_t",
             "isotopologue_envelope_matching_style_1": "delta_abs_t",
+            "mx_qc_style_1": "delta_abs_t",
             "recalibrate_mz_global_style_1": "delta_abs_t",
             "ursgal_style_1": "absolute_mass_tolerance"
         },
@@ -122,6 +123,7 @@
         "description": "range in which variable accuracy calculations (either ppm or based on actual resolving power) are being used.",
         "key_translations": {
             "annotate_metabolites_style_1": "mz_boundaries",
+            "mx_qc_style_1": "mz_boundaries",
             "ursgal_style_1": "accuracy_range"
         },
         "name": "accuracy_range",
@@ -256,6 +258,7 @@
         "description": "Type of accuracy to be used for metabolite annotation. 'dynamic' - dynamic accuracy function based on the local instrument resolving power. 'ppm' - relative mass tolerance for annotation. 'absolute' - absolute mass tolerance for annotation.",
         "key_translations": {
             "annotate_metabolites_style_1": "annotation_accuracy",
+            "mx_qc_style_1": "annotation_accuracy",
             "ursgal_style_1": "annotation_accuracy"
         },
         "name": "annotation_accuracy",
@@ -8522,7 +8525,7 @@
             "mascot_style_1": "INSTRUMENT",
             "moda_style_1": "Instrument",
             "msgfplus_style_1": "-inst",
-            "mx_gsk_style_1": "INSTR",
+            "mx_qc_style_1": "INSTR",
             "novor_style_1": "massAnalyzer",
             "ursgal_style_1": "instrument"
         },
@@ -8603,7 +8606,7 @@
                     "2"
                 ]
             ],
-            "mx_gsk_style_1": [
+            "mx_qc_style_1": [
                 [
                     "q_exactive",
                     "Thermo"
@@ -8748,7 +8751,7 @@
         "key_translations": {
             "annotate_metabolites_style_1": "polarity",
             "calculate_ion_charge_state_style_1": "polarity",
-            "mx_gsk_stage2_qc_style_1": "polarity",
+            "mx_qc_style_1": "polarity",
             "mzml2mgf_style_1": "ion_mode",
             "recalibrate_mz_global_style_1": "polarity",
             "recalibrate_mz_style_1": "polarity",
@@ -10868,7 +10871,6 @@
         "description": "MS1 are centroided data: True or False",
         "key_translations": {
             "kojak_style_1": "kojak_MS1_centroid",
-            "mx_gsk_style_1": "ms1_is_centroided",
             "ursgal_style_1": "ms1_is_centroided"
         },
         "name": "ms1_is_centroided",
@@ -10906,6 +10908,7 @@
         "key_translations": {
             "annotate_metabolites_style_1": "resolution",
             "kojak_style_1": "kojak_MS1_resolution",
+            "mx_qc_style_1": "resolution",
             "ursgal_style_1": "ms1_resolution"
         },
         "name": "ms1_resolution",
@@ -12752,6 +12755,7 @@
         "description": "PPM mass tolerance for post-acquisition mass axis re-calibration",
         "key_translations": {
             "annotate_metabolites_style_1": "delta_ppm_t",
+            "mx_qc_style_1": "delta_ppm_t",
             "recalibrate_mz_global_style_1": "delta_ppm_t",
             "ursgal_style_1": "ppm_mass_tolerance"
         },

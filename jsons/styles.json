@@ -572,9 +572,9 @@
         ]
     },
     {
-        "name": "mx_gsk_stage2_qc_style_1",
+        "name": "mx_qc_style_1",
         "reference": "Ursgal2 Team",
-        "style": "mx_gsk_stage2_qc_style_1",
+        "style": "mx_qc_style_1",
         "versions": [
             "1.0.0"
         ]
