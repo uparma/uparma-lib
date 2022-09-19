@@ -6048,6 +6048,7 @@
             "filter_nonbiological_ions_style_1": "condition",
             "flash_lfq_style_1": "Condition",
             "merge_analytical_replicates_style_1": "condition",
+            "mx_qc_style_1": "condition",
             "pw-stats_style_1": "Condition",
             "ursgal_style_1": "exp-setup_condition"
         },
@@ -6067,6 +6068,7 @@
             "filter_nonbiological_ions_style_1": "filename",
             "flash_lfq_style_1": "FileName",
             "merge_analytical_replicates_style_1": "filename",
+            "mx_qc_style_1": "filename",
             "pw-stats_style_1": "FileName",
             "ursgal_style_1": "exp-setup_filename"
         },
@@ -6116,6 +6118,7 @@
             "correct_instrument_drift_style_1": "ms_run_index",
             "filter_nonbiological_ions_style_1": "ms_run_index",
             "merge_analytical_replicates_style_1": "ms_run_index",
+            "mx_qc_style_1": "ms_run_index",
             "ursgal_style_1": "exp-setup_ms_run_index"
         },
         "name": "exp-setup_ms_run_index",
@@ -6149,6 +6152,7 @@
             "correct_instrument_drift_style_1": "sample_index",
             "filter_nonbiological_ions_style_1": "sample_index",
             "merge_analytical_replicates_style_1": "sample_index",
+            "mx_qc_style_1": "sample_index",
             "ursgal_style_1": "exp-setup_sample_index"
         },
         "name": "exp-setup_sample_index",
@@ -6166,6 +6170,7 @@
             "correct_instrument_drift_style_1": "sample_type",
             "filter_nonbiological_ions_style_1": "sample_type",
             "merge_analytical_replicates_style_1": "sample_type",
+            "mx_qc_style_1": "sample_type",
             "ursgal_style_1": "exp-setup_sample_type"
         },
         "name": "exp-setup_sample_type",
@@ -6184,6 +6189,7 @@
             "filter_nonbiological_ions_style_1": "analytical_replicate",
             "flash_lfq_style_1": "Techrep",
             "merge_analytical_replicates_style_1": "analytical_replicate",
+            "mx_qc_style_1": "analytical_replicate",
             "pw-stats_style_1": "TechnicalReplicate",
             "ursgal_style_1": "exp-setup_technical_replicate"
         },
@@ -6204,6 +6210,7 @@
             "filter_nonbiological_ions_style_1": "metadata",
             "flash_lfq_style_1": "experiment_setup\nFormat:\n{\"1\": {\"FileName\": <filename as in identfile>, \"Condition\":<str>, \"Biorep\": <int>, \"Fraction\": <int>, \"Techrep\": <int>},\n\"2\": ....\n}\n",
             "merge_analytical_replicates_style_1": "metadata",
+            "mx_qc_style_1": "metadata",
             "pw-stats_style_1": "experimental_design",
             "ursgal_style_1": "experiment_setup"
         },
