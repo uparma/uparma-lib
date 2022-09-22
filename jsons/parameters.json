@@ -10998,7 +10998,7 @@
         ],
         "triggers_rerun": true,
         "value_translations": {},
-        "value_type": "int or string of ints separated by ,"
+        "value_type": "int"
     },
     {
         "default_value": false,
@@ -14139,7 +14139,8 @@
             "MSn"
         ],
         "triggers_rerun": true,
-        "value_type": "float"
+        "value_translations": {},
+        "value_type": "str"
     },
     {
         "default_value": false,
