@@ -3373,6 +3373,7 @@
             "pnovo_style_1": "thread",
             "proteomics_qc_style_1": "n_cpus",
             "ptmshepherd_style_1": "threads",
+            "reporter_extract_style_1": "cpus",
             "ucontroller_style_1": "cpus",
             "ursgal_style_1": "cpus",
             "xtandem_style_1": "spectrum, threads"
@@ -3465,6 +3466,12 @@
                 [
                     -1,
                     "max - 1"
+                ]
+            ],
+            "reporter_extract_style_1": [
+                [
+                    -1,
+                    -1
                 ]
             ],
             "ucontroller_style_1": [
@@ -10980,6 +10987,7 @@
             "mzml2mgf_style_1": "ms_level",
             "pipi_style_1": "ms_level",
             "pyqms_style_1": "ms_level",
+            "reporter_extract_style_1": "ms_level",
             "sugarpy_plot_style_1": "ms_level",
             "sugarpy_run_style_1": "ms_level",
             "ursgal_style_1": "ms_level"
@@ -10990,7 +10998,7 @@
         ],
         "triggers_rerun": true,
         "value_translations": {},
-        "value_type": "int"
+        "value_type": "int or string of ints separated by ,"
     },
     {
         "default_value": false,
@@ -14117,6 +14125,21 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "bool"
+    },
+    {
+        "default_value": "TMTpro",
+        "description": "Reporter Ion type",
+        "key_translations": {
+            "reporter_extract_style_1": "--quant_method",
+            "ursgal_style_1": "reporter_ion_type"
+        },
+        "name": "reporter_ion_type",
+        "tag": [
+            "quantification",
+            "MSn"
+        ],
+        "triggers_rerun": true,
+        "value_type": "float"
     },
     {
         "default_value": false,

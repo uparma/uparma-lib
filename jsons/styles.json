@@ -296,6 +296,14 @@
         ]
     },
     {
+        "name": "Reporter Extract Style 1",
+        "reference": "Mathieson T., Sweetman, G. and Fufezan, C. (2021)",
+        "style": "reporter_extract_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
         "name": "Sanitize CSV",
         "reference": "Ursgal2 Team",
         "style": "sanitize_csv_style_1",
@@ -572,17 +580,17 @@
         ]
     },
     {
-        "name": "mx_qc_style_1",
+        "name": "mx_gsk_style_1",
         "reference": "Ursgal2 Team",
-        "style": "mx_qc_style_1",
+        "style": "mx_gsk_style_1",
         "versions": [
             "1.0.0"
         ]
     },
     {
-        "name": "mx_gsk_style_1",
+        "name": "mx_qc_style_1",
         "reference": "Ursgal2 Team",
-        "style": "mx_gsk_style_1",
+        "style": "mx_qc_style_1",
         "versions": [
             "1.0.0"
         ]
@@ -688,6 +696,14 @@
         ]
     },
     {
+        "name": "spectrum_meta_data_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "spectrum_meta_data_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
         "name": "test_node_style_1",
         "reference": "Ursgal2 Team",
         "style": "_test_node_style_1",
@@ -715,14 +731,6 @@
         "name": "xtandem2csv",
         "reference": "Ursgal2 Team",
         "style": "xtandem2csv_style_1",
-        "versions": [
-            "1.0.0"
-        ]
-    },
-    {
-        "name": "spectrum_meta_data_style_1",
-        "reference": "Ursgal2 Team",
-        "style": "spectrum_meta_data_style_1",
         "versions": [
             "1.0.0"
         ]
