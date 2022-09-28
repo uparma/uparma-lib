@@ -3368,6 +3368,7 @@
             "omssa_style_1": "-nt",
             "percolator_style_1": "cpus",
             "percolator_style_2": "cpus",
+            "percursor_window_scanner_style_1": "--cpus",
             "pglyco_db_style_1": "process",
             "pipi_style_1": "thread_num",
             "pnovo_style_1": "thread",
@@ -3445,6 +3446,12 @@
                 ]
             ],
             "percolator_style_2": [
+                [
+                    -1,
+                    -1
+                ]
+            ],
+            "percursor_window_scanner_style_1": [
                 [
                     -1,
                     -1

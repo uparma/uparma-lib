@@ -272,6 +272,14 @@
         ]
     },
     {
+        "name": "Precursor Window Scanner Style 1",
+        "reference": "Mathieson T. and Sweetman, G. (2021)",
+        "style": "percursor_window_scanner_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
         "name": "Proteomics Quality Control",
         "reference": "Ursgal2 Team",
         "style": "proteomics_qc_style_1",
