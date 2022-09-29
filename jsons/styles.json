@@ -272,6 +272,14 @@
         ]
     },
     {
+        "name": "Precursor Window Scanner Style 1",
+        "reference": "Mathieson T. and Sweetman, G. (2021)",
+        "style": "precursor_window_scanner_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
         "name": "Proteomics Quality Control",
         "reference": "Ursgal2 Team",
         "style": "proteomics_qc_style_1",
@@ -291,6 +299,14 @@
         "name": "QVALITY",
         "reference": "Kall L, Storey JD, Noble WS (2009) QVALITY: non-parametric estimation of q-values and posterior error probabilities.",
         "style": "qvality_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "Reporter Extract Style 1",
+        "reference": "Mathieson T., Sweetman, G. and Fufezan, C. (2021)",
+        "style": "reporter_extract_style_1",
         "versions": [
             "1.0.0"
         ]
@@ -572,17 +588,17 @@
         ]
     },
     {
-        "name": "mx_qc_style_1",
+        "name": "mx_gsk_style_1",
         "reference": "Ursgal2 Team",
-        "style": "mx_qc_style_1",
+        "style": "mx_gsk_style_1",
         "versions": [
             "1.0.0"
         ]
     },
     {
-        "name": "mx_gsk_style_1",
+        "name": "mx_qc_style_1",
         "reference": "Ursgal2 Team",
-        "style": "mx_gsk_style_1",
+        "style": "mx_qc_style_1",
         "versions": [
             "1.0.0"
         ]
@@ -688,6 +704,14 @@
         ]
     },
     {
+        "name": "spectrum_meta_data_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "spectrum_meta_data_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
         "name": "test_node_style_1",
         "reference": "Ursgal2 Team",
         "style": "_test_node_style_1",
@@ -715,14 +739,6 @@
         "name": "xtandem2csv",
         "reference": "Ursgal2 Team",
         "style": "xtandem2csv_style_1",
-        "versions": [
-            "1.0.0"
-        ]
-    },
-    {
-        "name": "spectrum_meta_data_style_1",
-        "reference": "Ursgal2 Team",
-        "style": "spectrum_meta_data_style_1",
         "versions": [
             "1.0.0"
         ]
