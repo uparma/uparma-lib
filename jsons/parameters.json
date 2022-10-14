@@ -68,11 +68,11 @@
                 "unimod_name": "Methylpyrroline"
             }
         },
-        "description": "Unusual aminoacids that are not accepted (e.g. by unify_csv_1_0_0), but reported by some engines. Given as a dictionary mapping on he original_aa as well as the unimod modification name. U is now accepted as regular amino acid (2017/03/30).In Tag Graph this can be used to define amino acids other thanthe standard 20 to be included in the search.For those, chemical composition, monoisotopic mass and avg massas well as name and 3-letter code need to be given.",
+        "description": "Unusual aminoacids that are not accepted (e.g. by pyProtista), but reported by some engines. Given as a dictionary mapping on he original_aa as well as the unimod modification name. U is now accepted as regular amino acid (2017/03/30).In Tag Graph this can be used to define amino acids other thanthe standard 20 to be included in the search.For those, chemical composition, monoisotopic mass and avg massas well as name and 3-letter code need to be given.",
         "key_translations": {
             "compomics_utilities_style_1": "aa_exception_dict",
+            "pyprotista_style_1": "aa_exception_dict",
             "tag_graph_style_1": "Amino Acids",
-            "unify_csv_style_1": "aa_exception_dict",
             "upeptide_mapper_style_1": "aa_exception_dict",
             "ursgal_style_1": "aa_exception_dict"
         },
@@ -375,11 +375,11 @@
             "percolator_style_1": "bigger_scores_better",
             "percolator_style_2": "bigger_scores_better",
             "ptminer_style_1": "bigger_scores_better",
+            "pyprotista_style_1": "bigger_scores_better",
             "q_value_calculator_style_1": "bigger_scores_better",
             "qvality_style_1": "-r",
             "sanitize_csv_style_1": "bigger_scores_better",
             "svm_style_1": "bigger_scores_better",
-            "unify_csv_style_1": "bigger_scores_better",
             "ursgal_style_1": "bigger_scores_better"
         },
         "name": "bigger_scores_better",
@@ -1004,6 +1004,216 @@
                 ]
             ],
             "percolator_style_2": [
+                [
+                    "comet_2020_01_4",
+                    false
+                ],
+                [
+                    "deepnovo_0_0_1",
+                    true
+                ],
+                [
+                    "deepnovo_pointnovo",
+                    true
+                ],
+                [
+                    "mascot_2_5_1",
+                    true
+                ],
+                [
+                    "mascot_2_6_2",
+                    true
+                ],
+                [
+                    "moda_v1_51",
+                    true
+                ],
+                [
+                    "moda_v1_61",
+                    true
+                ],
+                [
+                    "moda_v1_62",
+                    true
+                ],
+                [
+                    "msamanda_1_0_0_5242",
+                    true
+                ],
+                [
+                    "msamanda_1_0_0_5243",
+                    true
+                ],
+                [
+                    "msamanda_1_0_0_6299",
+                    true
+                ],
+                [
+                    "msamanda_1_0_0_6300",
+                    true
+                ],
+                [
+                    "msamanda_1_0_0_7503",
+                    true
+                ],
+                [
+                    "msamanda_1_0_0_7504",
+                    true
+                ],
+                [
+                    "msamanda_2_0_0_10695",
+                    true
+                ],
+                [
+                    "msamanda_2_0_0_11219",
+                    true
+                ],
+                [
+                    "msamanda_2_0_0_13723",
+                    true
+                ],
+                [
+                    "msamanda_2_0_0_14665",
+                    true
+                ],
+                [
+                    "msamanda_2_0_0_17442",
+                    true
+                ],
+                [
+                    "msamanda_2_0_0_9695",
+                    true
+                ],
+                [
+                    "msamanda_2_0_0_9706",
+                    true
+                ],
+                [
+                    "msfragger_20170103",
+                    true
+                ],
+                [
+                    "msfragger_20171106",
+                    true
+                ],
+                [
+                    "msfragger_20190222",
+                    true
+                ],
+                [
+                    "msfragger_20190628",
+                    true
+                ],
+                [
+                    "msfragger_2_3",
+                    true
+                ],
+                [
+                    "msfragger_3_0",
+                    true
+                ],
+                [
+                    "msgfplus_2021_03_22",
+                    false
+                ],
+                [
+                    "msgfplus_v2016_09_16",
+                    false
+                ],
+                [
+                    "msgfplus_v2017_01_27",
+                    false
+                ],
+                [
+                    "msgfplus_v2018_01_30",
+                    false
+                ],
+                [
+                    "msgfplus_v2018_06_28",
+                    false
+                ],
+                [
+                    "msgfplus_v2018_09_12",
+                    false
+                ],
+                [
+                    "msgfplus_v2019_01_22",
+                    false
+                ],
+                [
+                    "msgfplus_v2019_04_18",
+                    false
+                ],
+                [
+                    "msgfplus_v2019_07_03",
+                    false
+                ],
+                [
+                    "msgfplus_v9979",
+                    false
+                ],
+                [
+                    "myrimatch_2_1_138",
+                    true
+                ],
+                [
+                    "myrimatch_2_2_140",
+                    true
+                ],
+                [
+                    "omssa_2_1_9",
+                    false
+                ],
+                [
+                    "pglyco_db_2_2_0",
+                    true
+                ],
+                [
+                    "pglyco_db_2_2_2",
+                    true
+                ],
+                [
+                    "pipi_1_4_5",
+                    true
+                ],
+                [
+                    "pipi_1_4_6",
+                    true
+                ],
+                [
+                    "pnovo_3_1_3",
+                    true
+                ],
+                [
+                    "tag_graph_1_8_0",
+                    true
+                ],
+                [
+                    "xtandem_alanine",
+                    true
+                ],
+                [
+                    "xtandem_cyclone_2010",
+                    true
+                ],
+                [
+                    "xtandem_jackhammer",
+                    true
+                ],
+                [
+                    "xtandem_piledriver",
+                    true
+                ],
+                [
+                    "xtandem_sledgehammer",
+                    true
+                ],
+                [
+                    "xtandem_vengeance",
+                    true
+                ]
+            ],
+            "pyprotista_style_1": [
                 [
                     "comet_2020_01_4",
                     false
@@ -1982,216 +2192,6 @@
                 ],
                 [
                     "pipi_1_4_6",
-                    true
-                ],
-                [
-                    "tag_graph_1_8_0",
-                    true
-                ],
-                [
-                    "xtandem_alanine",
-                    true
-                ],
-                [
-                    "xtandem_cyclone_2010",
-                    true
-                ],
-                [
-                    "xtandem_jackhammer",
-                    true
-                ],
-                [
-                    "xtandem_piledriver",
-                    true
-                ],
-                [
-                    "xtandem_sledgehammer",
-                    true
-                ],
-                [
-                    "xtandem_vengeance",
-                    true
-                ]
-            ],
-            "unify_csv_style_1": [
-                [
-                    "comet_2020_01_4",
-                    false
-                ],
-                [
-                    "deepnovo_0_0_1",
-                    true
-                ],
-                [
-                    "deepnovo_pointnovo",
-                    true
-                ],
-                [
-                    "mascot_2_5_1",
-                    true
-                ],
-                [
-                    "mascot_2_6_2",
-                    true
-                ],
-                [
-                    "moda_v1_51",
-                    true
-                ],
-                [
-                    "moda_v1_61",
-                    true
-                ],
-                [
-                    "moda_v1_62",
-                    true
-                ],
-                [
-                    "msamanda_1_0_0_5242",
-                    true
-                ],
-                [
-                    "msamanda_1_0_0_5243",
-                    true
-                ],
-                [
-                    "msamanda_1_0_0_6299",
-                    true
-                ],
-                [
-                    "msamanda_1_0_0_6300",
-                    true
-                ],
-                [
-                    "msamanda_1_0_0_7503",
-                    true
-                ],
-                [
-                    "msamanda_1_0_0_7504",
-                    true
-                ],
-                [
-                    "msamanda_2_0_0_10695",
-                    true
-                ],
-                [
-                    "msamanda_2_0_0_11219",
-                    true
-                ],
-                [
-                    "msamanda_2_0_0_13723",
-                    true
-                ],
-                [
-                    "msamanda_2_0_0_14665",
-                    true
-                ],
-                [
-                    "msamanda_2_0_0_17442",
-                    true
-                ],
-                [
-                    "msamanda_2_0_0_9695",
-                    true
-                ],
-                [
-                    "msamanda_2_0_0_9706",
-                    true
-                ],
-                [
-                    "msfragger_20170103",
-                    true
-                ],
-                [
-                    "msfragger_20171106",
-                    true
-                ],
-                [
-                    "msfragger_20190222",
-                    true
-                ],
-                [
-                    "msfragger_20190628",
-                    true
-                ],
-                [
-                    "msfragger_2_3",
-                    true
-                ],
-                [
-                    "msfragger_3_0",
-                    true
-                ],
-                [
-                    "msgfplus_2021_03_22",
-                    false
-                ],
-                [
-                    "msgfplus_v2016_09_16",
-                    false
-                ],
-                [
-                    "msgfplus_v2017_01_27",
-                    false
-                ],
-                [
-                    "msgfplus_v2018_01_30",
-                    false
-                ],
-                [
-                    "msgfplus_v2018_06_28",
-                    false
-                ],
-                [
-                    "msgfplus_v2018_09_12",
-                    false
-                ],
-                [
-                    "msgfplus_v2019_01_22",
-                    false
-                ],
-                [
-                    "msgfplus_v2019_04_18",
-                    false
-                ],
-                [
-                    "msgfplus_v2019_07_03",
-                    false
-                ],
-                [
-                    "msgfplus_v9979",
-                    false
-                ],
-                [
-                    "myrimatch_2_1_138",
-                    true
-                ],
-                [
-                    "myrimatch_2_2_140",
-                    true
-                ],
-                [
-                    "omssa_2_1_9",
-                    false
-                ],
-                [
-                    "pglyco_db_2_2_0",
-                    true
-                ],
-                [
-                    "pglyco_db_2_2_2",
-                    true
-                ],
-                [
-                    "pipi_1_4_5",
-                    true
-                ],
-                [
-                    "pipi_1_4_6",
-                    true
-                ],
-                [
-                    "pnovo_3_1_3",
                     true
                 ],
                 [
@@ -3556,8 +3556,8 @@
             "pglyco_db_style_1": "fasta",
             "pipi_style_1": "db",
             "ptminer_style_1": "protein_database",
+            "pyprotista_style_1": "database",
             "tag_graph_style_1": "fmindex",
-            "unify_csv_style_1": "database",
             "upeptide_mapper_style_1": "database",
             "ursgal_style_1": "database",
             "xtandem_style_1": "file URL"
@@ -3711,7 +3711,7 @@
             "percolator_style_1": "-P",
             "percolator_style_2": "-P",
             "ptminer_style_1": "decoy_tag",
-            "unify_csv_style_1": "decoy_tag",
+            "pyprotista_style_1": "decoy_tag",
             "upeptide_mapper_style_1": "decoy_tag",
             "ursgal_style_1": "decoy_tag",
             "xtandem2csv_style_1": "decoy_tag"
@@ -3981,7 +3981,7 @@
             "merge_analytical_replicates_style_1": "delimiter",
             "percolator_style_1": "delimiter",
             "percolator_style_2": "delimiter",
-            "unify_csv_style_1": "delimiter",
+            "pyprotista_style_1": "delimiter",
             "upeptide_mapper_style_1": "delimiter",
             "ursgal_style_1": "delimiter"
         },
@@ -4339,8 +4339,8 @@
             "pglyco_db_style_1": "enzyme",
             "pipi_style_1": "enzyme",
             "pnovo_style_1": "enzyme",
+            "pyprotista_style_1": "enzyme",
             "tag_graph_style_1": "Enzyme",
-            "unify_csv_style_1": "enzyme",
             "ursgal_style_1": "enzyme",
             "xtandem_style_1": "protein, cleavage site"
         },
@@ -5526,37 +5526,7 @@
                     "Trypsin KR _ C"
                 ]
             ],
-            "tag_graph_style_1": [
-                [
-                    "argc",
-                    "R;[^P].*"
-                ],
-                [
-                    "aspn",
-                    ".*;D"
-                ],
-                [
-                    "formic_acid",
-                    "D;[^P].*"
-                ],
-                [
-                    "gluc",
-                    "D|E;[^P].*"
-                ],
-                [
-                    "lysc",
-                    "K;[^P].*"
-                ],
-                [
-                    "trypsin",
-                    "K|R;[^P].*"
-                ],
-                [
-                    "trypsin_p",
-                    "K|R;.*"
-                ]
-            ],
-            "unify_csv_style_1": [
+            "pyprotista_style_1": [
                 [
                     "argc",
                     "(?<=R)(?![P])"
@@ -5628,6 +5598,36 @@
                 [
                     "trypsin_p",
                     "(?<=[KR])"
+                ]
+            ],
+            "tag_graph_style_1": [
+                [
+                    "argc",
+                    "R;[^P].*"
+                ],
+                [
+                    "aspn",
+                    ".*;D"
+                ],
+                [
+                    "formic_acid",
+                    "D;[^P].*"
+                ],
+                [
+                    "gluc",
+                    "D|E;[^P].*"
+                ],
+                [
+                    "lysc",
+                    "K;[^P].*"
+                ],
+                [
+                    "trypsin",
+                    "K|R;[^P].*"
+                ],
+                [
+                    "trypsin_p",
+                    "K|R;.*"
                 ]
             ],
             "ursgal_style_1": [
@@ -5846,7 +5846,7 @@
             "msgfplus_style_1": "-ntt",
             "myrimatch_style_1": "MinTerminiCleavages",
             "omssa_style_1": "semi_enzyme",
-            "unify_csv_style_1": "semi_enzyme",
+            "pyprotista_style_1": "semi_enzyme",
             "ursgal_style_1": "enzyme_specificity",
             "xtandem_style_1": "protein, cleavage semi"
         },
@@ -7069,7 +7069,7 @@
     },
     {
         "default_value": null,
-        "description": "Translate output headers into Ursgal unify_csv style headers\n    'None' : None",
+        "description": "Translate output headers into Ursgal pyProtista style headers\n    'None' : None",
         "key_translations": {
             "comet_style_1": "header_translations",
             "deepnovo_style_1": "header_translations",
@@ -8888,9 +8888,9 @@
     },
     {
         "default_value": true,
-        "description": "X!tandem searches for peptides broken between Asp (D) and Pro (P) for every enzyme. Therefore, it reports peptides that are not enzymatically cleaved. Specify, if those should be kept during unify_csv or removed.",
+        "description": "X!tandem searches for peptides broken between Asp (D) and Pro (P) for every enzyme. Therefore, it reports peptides that are not enzymatically cleaved. Specify, if those should be kept during pyProtista or removed.",
         "key_translations": {
-            "unify_csv_style_1": "keep_asp_pro_broken_peps",
+            "pyprotista_style_1": "keep_asp_pro_broken_peps",
             "ursgal_style_1": "keep_asp_pro_broken_peps"
         },
         "name": "keep_asp_pro_broken_peps",
@@ -9815,7 +9815,7 @@
             "omssa_style_1": "-v",
             "pglyco_db_style_1": "max_miss_cleave",
             "pipi_style_1": "missed_cleavage",
-            "unify_csv_style_1": "max_missed_cleavages",
+            "pyprotista_style_1": "max_missed_cleavages",
             "upeptide_mapper_style_1": "max_missed_cleavages",
             "ursgal_style_1": "max_missed_cleavages",
             "xtandem_style_1": "scoring, maximum missed cleavage sites"
@@ -10769,9 +10769,9 @@
             "pnovo_style_1": "modifications",
             "ptminer_style_1": "modifications",
             "ptmshepherd_style_1": "varmod_masses",
+            "pyprotista_style_1": "modifications",
             "pyqms_style_1": "modifications",
             "tag_graph_style_1": "modifications",
-            "unify_csv_style_1": "modifications",
             "ursgal_style_1": "modifications",
             "xtandem_style_1": [
                 "residue, modification mass",
@@ -12838,7 +12838,7 @@
             "omssa_style_1": "-ti",
             "pepnovo_style_1": "-correct_pm",
             "ptmshepherd_style_1": "isotope_error",
-            "unify_csv_style_1": "precursor_isotope_range",
+            "pyprotista_style_1": "precursor_isotope_range",
             "ursgal_style_1": "precursor_isotope_range",
             "xtandem_style_1": "spectrum, parent monoisotopic mass isotope error"
         },
@@ -13031,7 +13031,7 @@
             "msgfplus_style_1": "-t_minus",
             "novor_style_1": "precursorErrorTol_part2",
             "omssa_style_1": "-te_part1",
-            "unify_csv_style_1": "precursor_mass_tolerance_minus",
+            "pyprotista_style_1": "precursor_mass_tolerance_minus",
             "ursgal_style_1": "precursor_mass_tolerance_minus",
             "xtandem_style_1": "spectrum, parent monoisotopic mass error minus"
         },
@@ -13058,7 +13058,7 @@
             "msgfplus_style_1": "-t_plus",
             "novor_style_1": "precursorErrorTol_part1",
             "omssa_style_1": "-te_part2",
-            "unify_csv_style_1": " precursor_mass_tolerance_minus",
+            "pyprotista_style_1": " precursor_mass_tolerance_minus",
             "ursgal_style_1": "precursor_mass_tolerance_plus",
             "xtandem_style_1": "spectrum, parent monoisotopic mass error plus"
         },
@@ -13636,9 +13636,9 @@
         "description": "List of column names that are used to define unique PSMs and to merge multiple lines of the same PSM (if specified). The validation_score_field is automatically added to this list. ",
         "key_translations": {
             "combine_pep_style_1": "columns_for_grouping",
+            "pyprotista_style_1": "psm_defining_colnames",
             "sanitize_csv_style_1": "psm_defining_colnames",
             "ucontroller_style_1": "psm_defining_colnames",
-            "unify_csv_style_1": "psm_defining_colnames",
             "ursgal_style_1": "psm_defining_colnames"
         },
         "name": "psm_defining_colnames",
@@ -14228,7 +14228,7 @@
         "default_value": 3,
         "description": "Masses of modifications are rounded in order to match them to their corresponding unimod name. Use this parameter to set the number of decimal places after rounding.",
         "key_translations": {
-            "unify_csv_style_1": "rounded_mass_decimals",
+            "pyprotista_style_1": "rounded_mass_decimals",
             "ursgal_style_1": "rounded_mass_decimals"
         },
         "name": "rounded_mass_decimals",
@@ -14263,10 +14263,10 @@
         "description": "name of the pickle that is used to map the retention time",
         "key_translations": {
             "mgf_to_rt_lookup_style_1": "rt_pickle_name",
+            "pyprotista_style_1": "scan_rt_lookup_path",
             "sugarpy_plot_style_1": "scan_rt_lookup",
             "sugarpy_run_style_1": "scan_rt_lookup",
             "ucontroller_style_1": "rt_pickle_name",
-            "unify_csv_style_1": "scan_rt_lookup_path",
             "ursgal_style_1": "rt_pickle_name"
         },
         "name": "rt_pickle_name",
@@ -14605,7 +14605,7 @@
     },
     {
         "default_value": false,
-        "description": "Search for potential single amino acid polymorphisms. 'True' might cause problems in the downstream processing of th result files (unify_csv, ...)",
+        "description": "Search for potential single amino acid polymorphisms. 'True' might cause problems in the downstream processing of th result files (pyProtista, ...)",
         "key_translations": {
             "ursgal_style_1": "search_for_saps",
             "xtandem_style_1": "protein, saps"
@@ -15072,7 +15072,7 @@
         "default_value": "any",
         "description": "Determines whether 'all' or 'any' found Sequences Pre/Post AA need to be cleaved correctly",
         "key_translations": {
-            "unify_csv_style_1": "terminal_cleavage_site_integrity",
+            "pyprotista_style_1": "terminal_cleavage_site_integrity",
             "ursgal_style_1": "terminal_cleavage_site_integrity"
         },
         "name": "terminal_cleavage_site_integrity",
@@ -15358,21 +15358,6 @@
         "value_type": "float"
     },
     {
-        "default_value": "unify_csv_1_0_0",
-        "description": "unify csv converter version: version name",
-        "key_translations": {
-            "ucontroller_style_1": "unify_csv_converter_version",
-            "ursgal_style_1": "unify_csv_converter_version"
-        },
-        "name": "unify_csv_converter_version",
-        "tag": [
-            "node_versions"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "str"
-    },
-    {
         "default_value": [],
         "description": "list of additional unimod xml files",
         "key_translations": {
@@ -15383,7 +15368,7 @@
             "msfragger_style_3": "unimod_xml_file_list",
             "msgfplus_style_1": "unimod_xml_file_list",
             "omssa_style_1": "unimod_xml_file_list",
-            "unify_csv_style_1": "unimod_xml_file_list",
+            "pyprotista_style_1": "unimod_xml_file_list",
             "ursgal_style_1": "unimod_xml_file_list",
             "xtandem_style_1": "unimod_xml_file_list"
         },
@@ -15520,21 +15505,6 @@
         "name": "use_pvalue_adj",
         "tag": [
             "plot_setup"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "bool"
-    },
-    {
-        "default_value": false,
-        "description": "Use pyQms for accurate calculation of isotopologue m/z. This will affect the accuracy (ppm) calculation as well. If True, unify_csv will be significantly slower. Please note that this does not work for any type of labeling yet.",
-        "key_translations": {
-            "unify_csv_style_1": "use_pyqms_for_mz_calculation",
-            "ursgal_style_1": "use_pyqms_for_mz_calculation"
-        },
-        "name": "use_pyqms_for_mz_calculation",
-        "tag": [
-            "conversion"
         ],
         "triggers_rerun": true,
         "value_translations": {},
@@ -16161,12 +16131,12 @@
             "percolator_style_1": "validation_score_field",
             "percolator_style_2": "validation_score_field",
             "ptminer_style_1": "validation_score_field",
+            "pyprotista_style_1": "validation_score_field",
             "q_value_calculator_style_1": "validation_score_field",
             "qvality_style_1": "validation_score_field",
             "sanitize_csv_style_1": "validation_score_field",
             "svm_style_1": "validation_score_field",
             "ucontroller_style_1": "validation_score_field",
-            "unify_csv_style_1": "validation_score_field",
             "ursgal_style_1": "validation_score_field"
         },
         "name": "validation_score_field",
@@ -17018,6 +16988,220 @@
                 [
                     "pnovo_3_1_3",
                     "pnovo:score"
+                ],
+                [
+                    "tag_graph_1_8_0",
+                    "taggraph:1_log10_em"
+                ],
+                [
+                    "xtandem_alanine",
+                    "x!tandem:hyperscore"
+                ],
+                [
+                    "xtandem_cyclone_2010",
+                    "x!tandem:hyperscore"
+                ],
+                [
+                    "xtandem_jackhammer",
+                    "x!tandem:hyperscore"
+                ],
+                [
+                    "xtandem_piledriver",
+                    "x!tandem:hyperscore"
+                ],
+                [
+                    "xtandem_sledgehammer",
+                    "x!tandem:hyperscore"
+                ],
+                [
+                    "xtandem_vengeance",
+                    "x!tandem:hyperscore"
+                ]
+            ],
+            "pyprotista_style_1": [
+                [
+                    "comet_2020_01_4",
+                    "comet:e_value"
+                ],
+                [
+                    "deepnovo_0_0_1",
+                    "deepnovo:score"
+                ],
+                [
+                    "deepnovo_pointnovo",
+                    "deepnovo:score"
+                ],
+                [
+                    "mascot_2_5_1",
+                    "mascot:score"
+                ],
+                [
+                    "mascot_2_6_2",
+                    "mascot:score"
+                ],
+                [
+                    "moda_v1_51",
+                    "moda:probability"
+                ],
+                [
+                    "moda_v1_61",
+                    "moda:probability"
+                ],
+                [
+                    "moda_v1_62",
+                    "moda:probability"
+                ],
+                [
+                    "msamanda_1_0_0_5242",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_1_0_0_5243",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_1_0_0_6299",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_1_0_0_6300",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_1_0_0_7503",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_1_0_0_7504",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_2_0_0_10695",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_2_0_0_11219",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_2_0_0_13723",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_2_0_0_14665",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_2_0_0_17442",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_2_0_0_9695",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_2_0_0_9706",
+                    "amanda:score"
+                ],
+                [
+                    "msfragger_20170103",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_20171106",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_20190222",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_20190628",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_2_3",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_3_0",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msgfplus_2021_03_22",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2016_09_16",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2017_01_27",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2018_01_30",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2018_06_28",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2018_09_12",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2019_01_22",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2019_04_18",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2019_07_03",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v9979",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "myrimatch_2_1_138",
+                    "myrimatch:mvh"
+                ],
+                [
+                    "myrimatch_2_2_140",
+                    "myrimatch:mvh"
+                ],
+                [
+                    "novor_1_05",
+                    "novor:score"
+                ],
+                [
+                    "novor_1_1beta",
+                    "novor:score"
+                ],
+                [
+                    "omssa_2_1_9",
+                    "omssa:pvalue"
+                ],
+                [
+                    "pepnovo_3_1",
+                    "pepnovo:pnv_scr"
+                ],
+                [
+                    "pglyco_db_2_2_0",
+                    "pglyco:total_score"
+                ],
+                [
+                    "pipi_1_4_5",
+                    "PIPI:score"
+                ],
+                [
+                    "pipi_1_4_6",
+                    "PIPI:score"
                 ],
                 [
                     "tag_graph_1_8_0",
@@ -18121,220 +18305,6 @@
                     "xtandem_vengeance",
                     "x!tandem:hyperscore"
                 ]
-            ],
-            "unify_csv_style_1": [
-                [
-                    "comet_2020_01_4",
-                    "comet:e_value"
-                ],
-                [
-                    "deepnovo_0_0_1",
-                    "deepnovo:score"
-                ],
-                [
-                    "deepnovo_pointnovo",
-                    "deepnovo:score"
-                ],
-                [
-                    "mascot_2_5_1",
-                    "mascot:score"
-                ],
-                [
-                    "mascot_2_6_2",
-                    "mascot:score"
-                ],
-                [
-                    "moda_v1_51",
-                    "moda:probability"
-                ],
-                [
-                    "moda_v1_61",
-                    "moda:probability"
-                ],
-                [
-                    "moda_v1_62",
-                    "moda:probability"
-                ],
-                [
-                    "msamanda_1_0_0_5242",
-                    "amanda:score"
-                ],
-                [
-                    "msamanda_1_0_0_5243",
-                    "amanda:score"
-                ],
-                [
-                    "msamanda_1_0_0_6299",
-                    "amanda:score"
-                ],
-                [
-                    "msamanda_1_0_0_6300",
-                    "amanda:score"
-                ],
-                [
-                    "msamanda_1_0_0_7503",
-                    "amanda:score"
-                ],
-                [
-                    "msamanda_1_0_0_7504",
-                    "amanda:score"
-                ],
-                [
-                    "msamanda_2_0_0_10695",
-                    "amanda:score"
-                ],
-                [
-                    "msamanda_2_0_0_11219",
-                    "amanda:score"
-                ],
-                [
-                    "msamanda_2_0_0_13723",
-                    "amanda:score"
-                ],
-                [
-                    "msamanda_2_0_0_14665",
-                    "amanda:score"
-                ],
-                [
-                    "msamanda_2_0_0_17442",
-                    "amanda:score"
-                ],
-                [
-                    "msamanda_2_0_0_9695",
-                    "amanda:score"
-                ],
-                [
-                    "msamanda_2_0_0_9706",
-                    "amanda:score"
-                ],
-                [
-                    "msfragger_20170103",
-                    "msfragger:hyperscore"
-                ],
-                [
-                    "msfragger_20171106",
-                    "msfragger:hyperscore"
-                ],
-                [
-                    "msfragger_20190222",
-                    "msfragger:hyperscore"
-                ],
-                [
-                    "msfragger_20190628",
-                    "msfragger:hyperscore"
-                ],
-                [
-                    "msfragger_2_3",
-                    "msfragger:hyperscore"
-                ],
-                [
-                    "msfragger_3_0",
-                    "msfragger:hyperscore"
-                ],
-                [
-                    "msgfplus_2021_03_22",
-                    "ms-gf:spec_evalue"
-                ],
-                [
-                    "msgfplus_v2016_09_16",
-                    "ms-gf:spec_evalue"
-                ],
-                [
-                    "msgfplus_v2017_01_27",
-                    "ms-gf:spec_evalue"
-                ],
-                [
-                    "msgfplus_v2018_01_30",
-                    "ms-gf:spec_evalue"
-                ],
-                [
-                    "msgfplus_v2018_06_28",
-                    "ms-gf:spec_evalue"
-                ],
-                [
-                    "msgfplus_v2018_09_12",
-                    "ms-gf:spec_evalue"
-                ],
-                [
-                    "msgfplus_v2019_01_22",
-                    "ms-gf:spec_evalue"
-                ],
-                [
-                    "msgfplus_v2019_04_18",
-                    "ms-gf:spec_evalue"
-                ],
-                [
-                    "msgfplus_v2019_07_03",
-                    "ms-gf:spec_evalue"
-                ],
-                [
-                    "msgfplus_v9979",
-                    "ms-gf:spec_evalue"
-                ],
-                [
-                    "myrimatch_2_1_138",
-                    "myrimatch:mvh"
-                ],
-                [
-                    "myrimatch_2_2_140",
-                    "myrimatch:mvh"
-                ],
-                [
-                    "novor_1_05",
-                    "novor:score"
-                ],
-                [
-                    "novor_1_1beta",
-                    "novor:score"
-                ],
-                [
-                    "omssa_2_1_9",
-                    "omssa:pvalue"
-                ],
-                [
-                    "pepnovo_3_1",
-                    "pepnovo:pnv_scr"
-                ],
-                [
-                    "pglyco_db_2_2_0",
-                    "pglyco:total_score"
-                ],
-                [
-                    "pipi_1_4_5",
-                    "PIPI:score"
-                ],
-                [
-                    "pipi_1_4_6",
-                    "PIPI:score"
-                ],
-                [
-                    "tag_graph_1_8_0",
-                    "taggraph:1_log10_em"
-                ],
-                [
-                    "xtandem_alanine",
-                    "x!tandem:hyperscore"
-                ],
-                [
-                    "xtandem_cyclone_2010",
-                    "x!tandem:hyperscore"
-                ],
-                [
-                    "xtandem_jackhammer",
-                    "x!tandem:hyperscore"
-                ],
-                [
-                    "xtandem_piledriver",
-                    "x!tandem:hyperscore"
-                ],
-                [
-                    "xtandem_sledgehammer",
-                    "x!tandem:hyperscore"
-                ],
-                [
-                    "xtandem_vengeance",
-                    "x!tandem:hyperscore"
-                ]
             ]
         },
         "value_type": "str"
@@ -18471,7 +18441,7 @@
         "default_value": 6,
         "description": "word length used to index peptide mapper, smaller word len requires more memory",
         "key_translations": {
-            "unify_csv_style_1": "word_len",
+            "pyprotista_style_1": "word_len",
             "upeptide_mapper_style_1": "word_len",
             "ursgal_style_1": "word_len"
         },
