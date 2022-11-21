@@ -7178,14 +7178,6 @@
                     "Peak Apex Mass Error (ppm)"
                 ],
                 [
-                    "flashlfq:protein_group",
-                    "Protein Group"
-                ],
-                [
-                    "flashlfq:peptide_monoisotopic_mass",
-                    "Peptide Monoisotopic Mass"
-                ],
-                [
                     "charge",
                     "Precursor Charge"
                 ],
@@ -7222,10 +7214,6 @@
                     "Peak Detection Type"
                 ],
                 [
-                    "quant_value",
-                    "Peak intensity"
-                ],
-                [
                     "flashlfq:peak_mz",
                     "Peak MZ"
                 ],
@@ -7246,12 +7234,24 @@
                     "Peak Split Valley RT"
                 ],
                 [
+                    "flashlfq:peptide_monoisotopic_mass",
+                    "Peptide Monoisotopic Mass"
+                ],
+                [
+                    "flashlfq:protein_group",
+                    "Protein Group"
+                ],
+                [
                     "flashlfq:psms mapped",
                     "PSMs Mapped"
                 ],
                 [
                     "flashlfq:theoretical_mz",
                     "Theoretical MZ"
+                ],
+                [
+                    "quant_value",
+                    "Peak intensity"
                 ],
                 [
                     "raw_filename",
