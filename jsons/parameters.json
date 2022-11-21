@@ -185,6 +185,340 @@
         "value_type": "list"
     },
     {
+        "default_value": 30,
+        "description": "Alignment genome index chunksize",
+        "key_translations": {
+            "kallisto_build_style_1": "-k",
+            "ursgal_style_1": "aligner_chunksize"
+        },
+        "name": "aligner_chunksize",
+        "tag": [
+            "alignment"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": false,
+        "description": "Reduces the number of spurious junctions",
+        "key_translations": {
+            "star_style_1": "--outFilterType",
+            "ursgal_style_1": "aligner_filter_spurious_junctions"
+        },
+        "name": "aligner_filter_spurious_junctions",
+        "tag": [
+            "alignment"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {
+            "star_style_1": [
+                [
+                    false,
+                    "Normal"
+                ],
+                [
+                    true,
+                    "BySJout"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "bool"
+    },
+    {
+        "default_value": 1,
+        "description": "Maximum number of alignments",
+        "key_translations": {
+            "bowtie_style_1": "-m",
+            "star_style_1": "--outFilterMultimapNmax",
+            "ursgal_style_1": "aligner_max_alignments"
+        },
+        "name": "aligner_max_alignments",
+        "tag": [
+            "alignment"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": 1,
+        "description": "Maximum number of allowed mismatches in alignment",
+        "key_translations": {
+            "bowtie_style_1": "-v",
+            "star_style_1": "--outFilterMismatchNMax",
+            "ursgal_style_1": "aligner_max_mismatches"
+        },
+        "name": "aligner_max_mismatches",
+        "tag": [
+            "alignment"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": 0,
+        "description": "Minimum number of matched bases in alignment",
+        "key_translations": {
+            "star_style_1": "--outFilterMatchNmin",
+            "ursgal_style_1": "aligner_min_matched_bases"
+        },
+        "name": "aligner_min_matched_bases",
+        "tag": [
+            "alignment"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": false,
+        "description": "Alignment against reverse-complement reference rna strand",
+        "key_translations": {
+            "ursgal_style_1": "aligner_no_rc"
+        },
+        "name": "aligner_no_rc",
+        "tag": [
+            "alignment"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {
+            "bowtie_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--norc"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "bool"
+    },
+    {
+        "default_value": "",
+        "description": "Type of read quantification",
+        "key_translations": {
+            "star_style_1": "--quantMode",
+            "ursgal_style_1": "aligner_quant_mode"
+        },
+        "name": "aligner_quant_mode",
+        "tag": [
+            "alignment"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {
+            "star_style_1": [
+                [
+                    "",
+                    ""
+                ],
+                [
+                    "gene_counts",
+                    "GeneCounts"
+                ],
+                [
+                    "transcriptome_sam",
+                    "TranscriptomeSAM"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "",
+                    ""
+                ],
+                [
+                    "gene_counts",
+                    "gene_counts"
+                ],
+                [
+                    "transcriptome_sam",
+                    "transcriptome_sam"
+                ]
+            ]
+        },
+        "value_type": "string"
+    },
+    {
+        "default_value": "local",
+        "description": "Type of read ends alignment",
+        "key_translations": {
+            "star_style_1": "--alignEndsType",
+            "ursgal_style_1": "aligner_read_ends_alignment"
+        },
+        "name": "aligner_read_ends_alignment",
+        "tag": [
+            "alignment"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {
+            "star_style_1": [
+                [
+                    "end_to_end",
+                    "EndToEnd"
+                ],
+                [
+                    "extend_5p_of_read_1",
+                    "Extend5pOfRead1"
+                ],
+                [
+                    "extend_5p_of_reads_12",
+                    "Extend5pOfReads12"
+                ],
+                [
+                    "local",
+                    "Local"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "end_to_end",
+                    "end_to_end"
+                ],
+                [
+                    "extend_5p_of_read_1",
+                    "extend_5p_of_read_1"
+                ],
+                [
+                    "extend_5p_of_reads_12",
+                    "extend_5p_of_reads_12"
+                ],
+                [
+                    "local",
+                    "local"
+                ]
+            ]
+        },
+        "value_type": "string"
+    },
+    {
+        "default_value": true,
+        "description": "Report only best alignment as singleton",
+        "key_translations": {
+            "ursgal_style_1": "aligner_report_only_best"
+        },
+        "name": "aligner_report_only_best",
+        "tag": [
+            "alignment"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {
+            "bowtie_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--best --strata"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "bool"
+    },
+    {
+        "default_value": true,
+        "description": "Sort output sam file by index",
+        "key_translations": {
+            "ursgal_style_1": "aligner_sort_output_sam"
+        },
+        "name": "aligner_sort_output_sam",
+        "tag": [
+            "alignment"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {
+            "bowtie_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--reorder"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "bool"
+    },
+    {
+        "default_value": false,
+        "description": "Write none alignable reads to separate file",
+        "key_translations": {
+            "ursgal_style_1": "aligner_write_no_align"
+        },
+        "name": "aligner_write_no_align",
+        "tag": [
+            "alignment"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {
+            "bowtie_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--un"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "bool"
+    },
+    {
         "default_value": false,
         "description": " Static mods are not considered ",
         "key_translations": {
@@ -3357,7 +3691,9 @@
         "description": "Number of used cpus/threads\n\n    -1 : 'max - 1'\n    >0 : cpu num",
         "key_translations": {
             "align_scans_dbscan_style_1": "cpus",
+            "bowtie_style_1": "-p",
             "comet_style_1": "num_threads",
+            "cutadapt_style_1": "-j",
             "flash_lfq_style_1": "--thr",
             "kojak_style_1": "cpus",
             "moda_style_1": "-@",
@@ -3376,6 +3712,8 @@
             "proteomics_qc_style_1": "n_cpus",
             "ptmshepherd_style_1": "threads",
             "reporter_extract_style_1": "--cpus",
+            "star_index_style_1": "--runThreadN",
+            "star_style_1": "--runThreadN",
             "ucontroller_style_1": "cpus",
             "ursgal_style_1": "cpus",
             "xtandem_style_1": "spectrum, threads"
@@ -3391,11 +3729,23 @@
                     -1,
                     "max - 1"
                 ]
+            ],      
+            "bowtie_style_1": [
+                [
+                    -1,
+                    -1
+                ]
             ],
             "comet_style_1": [
                 [
                     -1,
                     -1
+                ]
+            ],
+            "cutadapt_style_1": [
+                [
+                    -1,
+                    0
                 ]
             ],
             "kojak_style_1": [
@@ -3483,6 +3833,18 @@
                 ]
             ],
             "reporter_extract_style_1": [
+                [
+                    -1,
+                    -1
+                ]
+            ],
+            "star_index_style_1": [
+                [
+                    -1,
+                    -1
+                ]
+            ],
+            "star_style_1": [
                 [
                     -1,
                     -1
@@ -8774,6 +9136,41 @@
         "value_type": "float"
     },
     {
+        "default_value": false,
+        "description": "Interpret IUPAC wildcards in rna sequence",
+        "key_translations": {
+            "ursgal_style_1": "interpret_rna_wildcards"
+        },
+        "name": "interpret_rna_wildcards",
+        "tag": [
+            "rnatool"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {
+            "cutadapt_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--match-read-wildcards"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "bool"
+    },
+    {
         "default_value": "positive",
         "description": "The ion mode that has been used for acquiring mass spectra (positive or negative)",
         "key_translations": {
@@ -10120,6 +10517,21 @@
         "value_type": "int"
     },
     {
+        "default_value": null,
+        "description": "Maximal read length. Shorter reads are discarded.",
+        "key_translations": {
+            "cutadapt_style_1": "-M",
+            "ursgal_style_1": "max_rna_read_length"
+        },
+        "name": "max_rna_read_length",
+        "tag": [
+            "rnatool"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
         "default_value": 5,
         "description": " Max number of glycoforms reported per spectrum for each peptide ",
         "key_translations": {
@@ -10481,6 +10893,21 @@
         "tag": [
             "fragment",
             "spectrum"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": 0,
+        "description": "Minimal read length. Longer reads are discarded.",
+        "key_translations": {
+            "cutadapt_style_1": "-m",
+            "ursgal_style_1": "min_rna_read_length"
+        },
+        "name": "min_rna_read_length",
+        "tag": [
+            "rnatool"
         ],
         "triggers_rerun": true,
         "value_translations": {},
@@ -15343,6 +15770,36 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "float"
+    },
+    {
+        "default_value": null,
+        "description": "RNA Adapter sequence to be trimmed from 3' end",
+        "key_translations": {
+            "cutadapt_style_1": "-a",
+            "ursgal_style_1": "trim_rna_adapter_3_prime"
+        },
+        "name": "trim_rna_adapter_3_prime",
+        "tag": [
+            "rnatool"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": null,
+        "description": "RNA Adapter sequence to be trimmed from 5' end",
+        "key_translations": {
+            "cutadapt_style_1": "-g",
+            "ursgal_style_1": "trim_rna_adapter_5_prime"
+        },
+        "name": "trim_rna_adapter_5_prime",
+        "tag": [
+            "rnatool"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
     },
     {
         "default_value": [],

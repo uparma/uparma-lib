@@ -8,6 +8,14 @@
         ]
     },
     {
+        "name": "Bowtie 1.3.1",
+        "reference": "Langmead, B., Trapnell, C., Pop, M. et al. Ultrafast and memory-efficient alignment of short DNA sequences to the human genome.",
+        "style": "bowtie_style_1",
+        "versions": [
+            "1.3.1"
+        ]
+    },
+    {
         "name": "Combine PEP",
         "reference": "Combines PEP scores from different search engines.",
         "style": "combine_pep_style_1",
@@ -29,6 +37,14 @@
         "style": "csv2ssl_style_1",
         "versions": [
             "1.0.0"
+        ]
+    },
+    {
+        "name": "Cutadapt",
+        "reference": "Martin, M. (2011). Cutadapt removes adapter sequences from high-throughput sequencing reads. EMBnet.journal, 17(1), pp. 10-12.",
+        "style": "cutadapt_style_1",
+        "versions": [
+            "4.1"
         ]
     },
     {
@@ -94,6 +110,14 @@
         "style": "glycopeptide_fragmentor_style_1",
         "versions": [
             "1.0.0"
+        ]
+    },
+    {
+        "name": "Kallisto 0.48.0",
+        "reference": "NL Bray, H Pimentel, P Melsted and L Pachter, Near optimal probabilistic RNA-seq quantification. Nature Biotechnology 34, p 525--527 (2016).",
+        "style": "kallisto_build_style_1",
+        "versions": [
+            "0.48.0"
         ]
     },
     {
@@ -309,6 +333,22 @@
         "style": "reporter_extract_style_1",
         "versions": [
             "1.0.0"
+        ]
+    },
+    {
+        "name": "STAR",
+        "reference": "Dobin, A., Davis, C. A., Schlesinger, F., Drenkow, J., Zaleski, C., Jha, S., Batut, P., Chaisson, M., & Gingeras, T. R. (2013). STAR: ultrafast universal RNA-seq aligner.Bioinformatics (Oxford, England), 29(1), 15\u201321.",
+        "style": "star_style_1",
+        "versions": [
+            "2.7.10"
+        ]
+    },
+    {
+        "name": "STAR Indexer",
+        "reference": "Dobin, A., Davis, C. A., Schlesinger, F., Drenkow, J., Zaleski, C., Jha, S., Batut, P., Chaisson, M., & Gingeras, T. R. (2013). STAR: ultrafast universal RNA-seq aligner.Bioinformatics (Oxford, England), 29(1), 15\u201321.",
+        "style": "star_index_style_1",
+        "versions": [
+            "2.7.10"
         ]
     },
     {
