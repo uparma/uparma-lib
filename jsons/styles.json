@@ -336,6 +336,22 @@
         ]
     },
     {
+        "name": "STAR",
+        "reference": "Dobin, A., Davis, C. A., Schlesinger, F., Drenkow, J., Zaleski, C., Jha, S., Batut, P., Chaisson, M., & Gingeras, T. R. (2013). STAR: ultrafast universal RNA-seq aligner.Bioinformatics (Oxford, England), 29(1), 15\u201321.",
+        "style": "star_style_1",
+        "versions": [
+            "2.7.10"
+        ]
+    },
+    {
+        "name": "STAR Indexer",
+        "reference": "Dobin, A., Davis, C. A., Schlesinger, F., Drenkow, J., Zaleski, C., Jha, S., Batut, P., Chaisson, M., & Gingeras, T. R. (2013). STAR: ultrafast universal RNA-seq aligner.Bioinformatics (Oxford, England), 29(1), 15\u201321.",
+        "style": "star_index_style_1",
+        "versions": [
+            "2.7.10"
+        ]
+    },
+    {
         "name": "Sanitize CSV",
         "reference": "Ursgal2 Team",
         "style": "sanitize_csv_style_1",
