@@ -3356,6 +3356,7 @@
         "default_value": -1,
         "description": "Number of used cpus/threads\n\n    -1 : 'max - 1'\n    >0 : cpu num",
         "key_translations": {
+            "align_scans_dbscan_style_1": "cpus",
             "comet_style_1": "num_threads",
             "flash_lfq_style_1": "--thr",
             "kojak_style_1": "cpus",
@@ -3385,6 +3386,12 @@
         ],
         "triggers_rerun": false,
         "value_translations": {
+            "align_scans_dbscan_style_1": [
+                [
+                    -1,
+                    "max - 1"
+                ]
+            ],
             "comet_style_1": [
                 [
                     -1,
@@ -9307,9 +9314,7 @@
             "volcano_style_1": "log2_fc_threshold"
         },
         "name": "log2_foldchange_threshold",
-        "tag": [
-            "plot_setup"
-        ],
+        "tag":[],
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "float"
@@ -12710,22 +12715,6 @@
         "value_type": "float"
     },
     {
-        "default_value": [],
-        "description": "Defines plot parameters for plotting nodes.",
-        "is_parameter_collection": true,
-        "key_translations": {
-            "ursgal_style_1": "plot_setup",
-            "volcano_style_1": "plot_setup"
-        },
-        "name": "plot_setup",
-        "tag": [
-            "plot_setup"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "list"
-    },
-    {
         "default_value": {},
         "description": " The dict defines plotly layout options. Checkout https://plot.ly/python/reference/#layout for all available options ",
         "key_translations": {
@@ -13761,9 +13750,7 @@
             "volcano_style_1": "pval_threshold"
         },
         "name": "pvalue_significance_threshold",
-        "tag": [
-            "plot_setup"
-        ],
+        "tag":[],
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "float"
@@ -15503,9 +15490,7 @@
             "volcano_style_1": "use_pvalue_adj"
         },
         "name": "use_pvalue_adj",
-        "tag": [
-            "plot_setup"
-        ],
+        "tag":[],
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "bool"
