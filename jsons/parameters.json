@@ -7543,12 +7543,8 @@
             ],
             "flash_lfq_style_1": [
                 [
-                    "accuracy_ppm",
+                    "accuracy_mz",
                     "Peak Apex Mass Error (ppm)"
-                ],
-                [
-                    "calc_mass",
-                    "Peptide Monoisotopic Mass"
                 ],
                 [
                     "charge",
@@ -7587,10 +7583,6 @@
                     "Peak Detection Type"
                 ],
                 [
-                    "flashlfq:peak_intensity",
-                    "Peak intensity"
-                ],
-                [
                     "flashlfq:peak_mz",
                     "Peak MZ"
                 ],
@@ -7611,7 +7603,15 @@
                     "Peak Split Valley RT"
                 ],
                 [
-                    "flashlfq:psms mapped",
+                    "flashlfq:peptide_monoisotopic_mass",
+                    "Peptide Monoisotopic Mass"
+                ],
+                [
+                    "flashlfq:protein_group",
+                    "Protein Group"
+                ],
+                [
+                    "flashlfq:psms_mapped",
                     "PSMs Mapped"
                 ],
                 [
@@ -7619,15 +7619,15 @@
                     "Theoretical MZ"
                 ],
                 [
-                    "protein_id",
-                    "Protein Group"
+                    "quant_value",
+                    "Peak intensity"
                 ],
                 [
                     "raw_filename",
                     "File Name"
                 ],
                 [
-                    "sequence",
+                    "trivial_name",
                     "Base Sequence"
                 ]
             ],
