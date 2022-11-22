@@ -256,7 +256,7 @@
         "description": "Maximum number of allowed mismatches in alignment",
         "key_translations": {
             "bowtie_style_1": "-v",
-            "star_style_1": "--outFilterMismatchNMax",
+            "star_style_1": "--outFilterMismatchNmax",
             "ursgal_style_1": "aligner_max_mismatches"
         },
         "name": "aligner_max_mismatches",
