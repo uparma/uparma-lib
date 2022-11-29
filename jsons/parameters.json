@@ -3690,7 +3690,8 @@
         "default_value": -1,
         "description": "Number of used cpus/threads\n\n    -1 : 'max - 1'\n    >0 : cpu num",
         "key_translations": {
-            "align_scans_dbscan_style_1": "cpus",
+            "align_files_dbscan_style_1": "n_jobs",
+            "align_scans_dbscan_style_1": "n_jobs",
             "bowtie_style_1": "-p",
             "comet_style_1": "num_threads",
             "cutadapt_style_1": "-j",
@@ -3724,10 +3725,16 @@
         ],
         "triggers_rerun": false,
         "value_translations": {
+            "align_files_dbscan_style_1": [
+                [
+                    -1,
+                    "max - 1"
+                ]
+            ],
             "align_scans_dbscan_style_1": [
                 [
                     -1,
-                    -1
+                    "max - 1"
                 ]
             ],      
             "bowtie_style_1": [
