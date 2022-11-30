@@ -3725,18 +3725,6 @@
         ],
         "triggers_rerun": false,
         "value_translations": {
-            "align_files_dbscan_style_1": [
-                [
-                    -1,
-                    "max - 1"
-                ]
-            ],
-            "align_scans_dbscan_style_1": [
-                [
-                    -1,
-                    "max - 1"
-                ]
-            ],      
             "bowtie_style_1": [
                 [
                     -1,
