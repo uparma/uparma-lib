@@ -286,6 +286,7 @@
         "default_value": false,
         "description": "Alignment against reverse-complement reference rna strand",
         "key_translations": {
+            "bowtie_style_1": "aligner_no_rc_<REMOVE>",
             "ursgal_style_1": "aligner_no_rc"
         },
         "name": "aligner_no_rc",
@@ -414,9 +415,10 @@
         "value_type": "string"
     },
     {
-        "default_value": true,
+        "default_value": false,
         "description": "Report only best alignment as singleton",
         "key_translations": {
+            "bowtie_style_1": "aligner_report_only_best_<REMOVE>",
             "ursgal_style_1": "aligner_report_only_best"
         },
         "name": "aligner_report_only_best",
@@ -452,6 +454,7 @@
         "default_value": true,
         "description": "Sort output sam file by index",
         "key_translations": {
+            "bowtie_style_1": "aligner_sort_output_sam_<REMOVE>",
             "ursgal_style_1": "aligner_sort_output_sam"
         },
         "name": "aligner_sort_output_sam",
@@ -487,6 +490,7 @@
         "default_value": false,
         "description": "Write none alignable reads to separate file",
         "key_translations": {
+            "bowtie_style_1": "aligner_write_no_align_<REMOVE>",
             "ursgal_style_1": "aligner_write_no_align"
         },
         "name": "aligner_write_no_align",
@@ -9706,7 +9710,7 @@
             "volcano_style_1": "log2_fc_threshold"
         },
         "name": "log2_foldchange_threshold",
-        "tag":[],
+        "tag": [],
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "float"
@@ -14172,7 +14176,7 @@
             "volcano_style_1": "pval_threshold"
         },
         "name": "pvalue_significance_threshold",
-        "tag":[],
+        "tag": [],
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "float"
@@ -15942,7 +15946,7 @@
             "volcano_style_1": "use_pvalue_adj"
         },
         "name": "use_pvalue_adj",
-        "tag":[],
+        "tag": [],
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "bool"
