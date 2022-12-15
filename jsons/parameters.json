@@ -189,7 +189,7 @@
         ],
         "triggers_rerun": true,
         "value_translations": {},
-        "value_type": "list"
+        "value_type": "bool"
     },
     {
         "default_value": [
