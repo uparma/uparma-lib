@@ -169,6 +169,29 @@
         "value_type": "bool"
     },
     {
+        "default_value": true,
+        "description": "add the default unimod file to mapper",
+        "key_translations": {
+            "comet_style_1": "add_unimod_default_file",
+            "flash_lfq_style_1": "add_unimod_default_file",
+            "mascot_style_1": "add_unimod_default_file",
+            "msamanda_style_1": "add_unimod_default_file",
+            "msfragger_style_3": "add_unimod_default_file",
+            "msgfplus_style_1": "add_unimod_default_file",
+            "omssa_style_1": "add_unimod_default_file",
+            "pyprotista_style_1": "add_unimod_default_file",
+            "ursgal_style_1": "add_unimod_default_file",
+            "xtandem_style_1": "add_unimod_default_file"
+        },
+        "name": "add_unimod_default_file",
+        "tag": [
+            "modifications"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "list"
+    },
+    {
         "default_value": [
             "A"
         ],
