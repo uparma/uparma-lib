@@ -181,7 +181,8 @@
             "omssa_style_1": "add_unimod_default_file",
             "pyprotista_style_1": "add_unimod_default_file",
             "ursgal_style_1": "add_unimod_default_file",
-            "xtandem_style_1": "add_unimod_default_file"
+            "xtandem_style_1": "add_unimod_default_file",
+            "novor_style_1": "add_unimod_default_file"
         },
         "name": "add_unimod_default_file",
         "tag": [
@@ -15836,7 +15837,8 @@
             "omssa_style_1": "unimod_xml_file_list",
             "pyprotista_style_1": "unimod_xml_file_list",
             "ursgal_style_1": "unimod_xml_file_list",
-            "xtandem_style_1": "unimod_xml_file_list"
+            "xtandem_style_1": "unimod_xml_file_list",
+            "novor_style_1": "unimod_xml_file_list"
         },
         "name": "unimod_xml_file_list",
         "tag": [
