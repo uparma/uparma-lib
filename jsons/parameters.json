@@ -4592,9 +4592,9 @@
             "align_files_dbscan_style_1": "metric",
             "align_scans_dbscan_style_1": "metric",
             "umap_style_1": "linkage",
-            "ursgal_style_1": "distance_metric"
+            "ursgal_style_1": "cluster_distance_metric"
         },
-        "name": "distance_metric",
+        "name": "cluster_distance_metric",
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {},
@@ -10649,9 +10649,9 @@
             "align_files_dbscan_style_1": "eps",
             "align_scans_dbscan_style_1": "eps",
             "umap_style_1": "min_distance",
-            "ursgal_style_1": "min_distance"
+            "ursgal_style_1": "cluster_min_distance"
         },
-        "name": "min_distance",
+        "name": "cluster_min_distance",
         "tag": [
             "cluster"
         ],
