@@ -2999,7 +2999,7 @@
         "key_translations": {
             "align_files_dbscan_style_1": "metric",
             "align_scans_dbscan_style_1": "metric",
-            "umap_style_1": "linkage",
+            "umap_style_1": "metric",
             "ursgal_style_1": "cluster_distance_metric"
         },
         "name": "cluster_distance_metric",
