@@ -307,6 +307,21 @@
         "value_type": "int"
     },
     {
+        "default_value": 14,
+        "description": "Length of the SA pre-indexing string",
+        "key_translations": {
+            "star_index_style_1": "--genomeSAindexNbases",
+            "ursgal_style_1": "aligner_n_bases_indexing_string"
+        },
+        "name": "aligner_n_bases_indexing_string",
+        "tag": [
+            "alignment"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
         "default_value": false,
         "description": "Alignment against reverse-complement reference rna strand",
         "key_translations": {
@@ -365,6 +380,10 @@
                     "GeneCounts"
                 ],
                 [
+                    "gene_counts_and_transcriptome_sam",
+                    "TranscriptomeSAM GeneCounts"
+                ],
+                [
                     "transcriptome_sam",
                     "TranscriptomeSAM"
                 ]
@@ -377,6 +396,10 @@
                 [
                     "gene_counts",
                     "gene_counts"
+                ],
+                [
+                    "gene_counts_and_transcriptome_sam",
+                    "gene_counts_and_transcriptome_sam"
                 ],
                 [
                     "transcriptome_sam",
