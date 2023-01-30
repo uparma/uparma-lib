@@ -7522,6 +7522,7 @@
             "pglyco_db_style_1": "header_translations",
             "pglyco_fdr_style_1": "header_translations",
             "pipi_style_1": "header_translations",
+            "ptmshepherd_style_1": "header_translations",
             "tag_graph_style_1": "header_translations",
             "ursgal_style_1": "header_translations",
             "xtandem_style_1": "header_translations"
@@ -8528,6 +8529,44 @@
                 [
                     "spectrum_title",
                     "MGF_title"
+                ]
+            ],
+            "ptmshepherd_style_1": [
+                [
+                    "charge",
+                    "Charge"
+                ],
+                [
+                    "exp_mass",
+                    "Calibrated Observed Mass"
+                ],
+                [
+                    "mass_delta",
+                    "Delta Mass"
+                ],
+                [
+                    "modifications",
+                    "Assigned Modifications"
+                ],
+                [
+                    "retention_time_seconds",
+                    "Retention"
+                ],
+                [
+                    "sequence",
+                    "Peptide"
+                ],
+                [
+                    "spectrum_title",
+                    "Spectrum"
+                ],
+                [
+                    "ucalc_mass",
+                    "Calculated Peptide Mass"
+                ],
+                [
+                    "ucalc_mz",
+                    "Calculated M/Z"
                 ]
             ],
             "tag_graph_style_1": [
