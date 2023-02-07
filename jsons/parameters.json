@@ -3084,6 +3084,20 @@
         "value_type": "int"
     },
     {
+        "default_value": 30,
+        "description": "Region around transcript start and stop codons to plot in nt.",
+        "key_translations": {
+            "rp_style_1": "--region"
+        },
+        "name": "codon_surrounding_region",
+        "tag": [
+            "rnatool"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
         "default_value": [],
         "description": "columns to use for colouring markers in a plot",
         "key_translations": {
@@ -3796,6 +3810,7 @@
             "proteomics_qc_style_1": "n_cpus",
             "ptmshepherd_style_1": "threads",
             "reporter_extract_style_1": "--cpus",
+            "rp_style_1": "--threads",
             "star_index_style_1": "--runThreadN",
             "star_style_1": "--runThreadN",
             "ucontroller_style_1": "cpus",
@@ -10627,6 +10642,7 @@
         "description": "Maximal read length. Shorter reads are discarded.",
         "key_translations": {
             "cutadapt_style_1": "-M",
+            "rp_style_1": "--max",
             "ursgal_style_1": "max_rna_read_length"
         },
         "name": "max_rna_read_length",
@@ -10992,6 +11008,7 @@
         "description": "Minimal read length. Longer reads are discarded.",
         "key_translations": {
             "cutadapt_style_1": "-m",
+            "rp_style_1": "--min",
             "ursgal_style_1": "min_rna_read_length"
         },
         "name": "min_rna_read_length",

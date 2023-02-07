@@ -736,6 +736,14 @@
         ]
     },
     {
+        "name": "rp_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "rp_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
         "name": "select_ions_style_1",
         "reference": "Ursgal2 Team",
         "style": "select_ions_style_1",
