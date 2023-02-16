@@ -2895,6 +2895,21 @@
         "value_type": "bool"
     },
     {
+        "default_value": 0,
+        "description": "Extends CDS boundaries on both sides",
+        "key_translations": {
+            "rp_style_1": "--pad",
+            "ursgal_style_1": "cds_padding_nt"
+        },
+        "name": "cds_padding_nt",
+        "tag": [
+            "rnatool"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
         "default_value": 1.007276466621,
         "description": "Charge carrier mass (default is mass of a proton)",
         "key_translations": {
