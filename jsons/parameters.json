@@ -10653,6 +10653,21 @@
         "value_type": "int"
     },
     {
+        "default_value": 31000000000,
+        "description": "Maximum bytes of allowed RAM usage.",
+        "key_translations": {
+            "star_index_style_1": "--limitGenomeGenerateRAM",
+            "ursgal_style_1": "max_ram"
+        },
+        "name": "max_ram",
+        "tag": [
+            "configuration"
+        ],
+        "triggers_rerun": false,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
         "default_value": null,
         "description": "Maximal read length. Shorter reads are discarded.",
         "key_translations": {
