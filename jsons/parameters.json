@@ -3102,7 +3102,8 @@
         "default_value": 30,
         "description": "Region around transcript start and stop codons to plot in nt.",
         "key_translations": {
-            "rp_style_1": "--region"
+            "rp_style_1": "--region",
+            "ursgal_style_1": "codon_surrounding_region"
         },
         "name": "codon_surrounding_region",
         "tag": [
