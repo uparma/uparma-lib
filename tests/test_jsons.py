@@ -256,6 +256,18 @@ def nested_json_is_sorted(rcode, jsons):
     return jsons, rcode
 
 
+def all_entries_have_ursgal_style(rcode, jsons):
+    local_rcode = 0
+    for entry in jsons["parameters.json"]:
+        if not "ursgal_style_1" in entry["key_translations"]:
+            uprint(f"Style {entry['name']} has no ursgal style!", ok=False)
+            local_rcode = 2 ** 9
+    if local_rcode == 0:
+        uprint("All parameters have ursgal style")
+    rcode += local_rcode
+    return jsons, rcode
+
+
 def main():
     """
     Check overall integrity of uparma jsons
@@ -270,6 +282,7 @@ def main():
     jsons, rcode = styles_have_citation(rcode, jsons)
     jsons, rcode = key_translations_are_unique(rcode, jsons)
     jsons, rcode = nested_json_is_sorted(rcode, jsons)
+    jsons, rcode = all_entries_have_ursgal_style(rcode, jsons)
     # jsons, rcode = key_translations_in_list_form_have_single_entries(rcode, jsons)
     return rcode
 
