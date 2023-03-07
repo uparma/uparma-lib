@@ -704,9 +704,9 @@
         ]
     },
     {
-        "name": "pyProtista",
+        "name": "pyiohat",
         "reference": "Ursgal Team (2022)",
-        "style": "pyprotista_style_1",
+        "style": "pyiohat_style_1",
         "versions": [
             "1.7.4"
         ]
