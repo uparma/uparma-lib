@@ -72,6 +72,7 @@
         "key_translations": {
             "compomics_utilities_style_1": "aa_exception_dict",
             "pyiohat_style_1": "aa_exception_dict",
+            "pyprotista_style_1": "aa_exception_dict",
             "tag_graph_style_1": "Amino Acids",
             "upeptide_mapper_style_1": "aa_exception_dict",
             "ursgal_style_1": "aa_exception_dict"
@@ -181,6 +182,7 @@
             "novor_style_1": "add_unimod_default_file",
             "omssa_style_1": "add_unimod_default_file",
             "pyiohat_style_1": "add_unimod_default_file",
+            "pyprotista_style_1": "add_unimod_default_file",
             "ursgal_style_1": "add_unimod_default_file",
             "xtandem_style_1": "add_unimod_default_file"
         },
@@ -761,6 +763,7 @@
             "percolator_style_2": "bigger_scores_better",
             "ptminer_style_1": "bigger_scores_better",
             "pyiohat_style_1": "bigger_scores_better",
+            "pyprotista_style_1": "bigger_scores_better",
             "q_value_calculator_style_1": "bigger_scores_better",
             "qvality_style_1": "-r",
             "sanitize_csv_style_1": "bigger_scores_better",
@@ -1599,6 +1602,216 @@
                 ]
             ],
             "pyiohat_style_1": [
+                [
+                    "comet_2020_01_4",
+                    false
+                ],
+                [
+                    "deepnovo_0_0_1",
+                    true
+                ],
+                [
+                    "deepnovo_pointnovo",
+                    true
+                ],
+                [
+                    "mascot_2_5_1",
+                    true
+                ],
+                [
+                    "mascot_2_6_2",
+                    true
+                ],
+                [
+                    "moda_v1_51",
+                    true
+                ],
+                [
+                    "moda_v1_61",
+                    true
+                ],
+                [
+                    "moda_v1_62",
+                    true
+                ],
+                [
+                    "msamanda_1_0_0_5242",
+                    true
+                ],
+                [
+                    "msamanda_1_0_0_5243",
+                    true
+                ],
+                [
+                    "msamanda_1_0_0_6299",
+                    true
+                ],
+                [
+                    "msamanda_1_0_0_6300",
+                    true
+                ],
+                [
+                    "msamanda_1_0_0_7503",
+                    true
+                ],
+                [
+                    "msamanda_1_0_0_7504",
+                    true
+                ],
+                [
+                    "msamanda_2_0_0_10695",
+                    true
+                ],
+                [
+                    "msamanda_2_0_0_11219",
+                    true
+                ],
+                [
+                    "msamanda_2_0_0_13723",
+                    true
+                ],
+                [
+                    "msamanda_2_0_0_14665",
+                    true
+                ],
+                [
+                    "msamanda_2_0_0_17442",
+                    true
+                ],
+                [
+                    "msamanda_2_0_0_9695",
+                    true
+                ],
+                [
+                    "msamanda_2_0_0_9706",
+                    true
+                ],
+                [
+                    "msfragger_20170103",
+                    true
+                ],
+                [
+                    "msfragger_20171106",
+                    true
+                ],
+                [
+                    "msfragger_20190222",
+                    true
+                ],
+                [
+                    "msfragger_20190628",
+                    true
+                ],
+                [
+                    "msfragger_2_3",
+                    true
+                ],
+                [
+                    "msfragger_3_0",
+                    true
+                ],
+                [
+                    "msgfplus_2021_03_22",
+                    false
+                ],
+                [
+                    "msgfplus_v2016_09_16",
+                    false
+                ],
+                [
+                    "msgfplus_v2017_01_27",
+                    false
+                ],
+                [
+                    "msgfplus_v2018_01_30",
+                    false
+                ],
+                [
+                    "msgfplus_v2018_06_28",
+                    false
+                ],
+                [
+                    "msgfplus_v2018_09_12",
+                    false
+                ],
+                [
+                    "msgfplus_v2019_01_22",
+                    false
+                ],
+                [
+                    "msgfplus_v2019_04_18",
+                    false
+                ],
+                [
+                    "msgfplus_v2019_07_03",
+                    false
+                ],
+                [
+                    "msgfplus_v9979",
+                    false
+                ],
+                [
+                    "myrimatch_2_1_138",
+                    true
+                ],
+                [
+                    "myrimatch_2_2_140",
+                    true
+                ],
+                [
+                    "omssa_2_1_9",
+                    false
+                ],
+                [
+                    "pglyco_db_2_2_0",
+                    true
+                ],
+                [
+                    "pglyco_db_2_2_2",
+                    true
+                ],
+                [
+                    "pipi_1_4_5",
+                    true
+                ],
+                [
+                    "pipi_1_4_6",
+                    true
+                ],
+                [
+                    "pnovo_3_1_3",
+                    true
+                ],
+                [
+                    "tag_graph_1_8_0",
+                    true
+                ],
+                [
+                    "xtandem_alanine",
+                    true
+                ],
+                [
+                    "xtandem_cyclone_2010",
+                    true
+                ],
+                [
+                    "xtandem_jackhammer",
+                    true
+                ],
+                [
+                    "xtandem_piledriver",
+                    true
+                ],
+                [
+                    "xtandem_sledgehammer",
+                    true
+                ],
+                [
+                    "xtandem_vengeance",
+                    true
+                ]
+            ],
+            "pyprotista_style_1": [
                 [
                     "comet_2020_01_4",
                     false
@@ -4035,6 +4248,7 @@
             "pipi_style_1": "db",
             "ptminer_style_1": "protein_database",
             "pyiohat_style_1": "database",
+            "pyprotista_style_1": "database",
             "tag_graph_style_1": "fmindex",
             "upeptide_mapper_style_1": "database",
             "ursgal_style_1": "database",
@@ -4190,6 +4404,7 @@
             "percolator_style_2": "-P",
             "ptminer_style_1": "decoy_tag",
             "pyiohat_style_1": "decoy_tag",
+            "pyprotista_style_1": "decoy_tag",
             "upeptide_mapper_style_1": "decoy_tag",
             "ursgal_style_1": "decoy_tag",
             "xtandem2csv_style_1": "decoy_tag"
@@ -4460,6 +4675,7 @@
             "percolator_style_1": "delimiter",
             "percolator_style_2": "delimiter",
             "pyiohat_style_1": "delimiter",
+            "pyprotista_style_1": "delimiter",
             "upeptide_mapper_style_1": "delimiter",
             "ursgal_style_1": "delimiter"
         },
@@ -4803,6 +5019,7 @@
             "pipi_style_1": "enzyme",
             "pnovo_style_1": "enzyme",
             "pyiohat_style_1": "enzyme",
+            "pyprotista_style_1": "enzyme",
             "tag_graph_style_1": "Enzyme",
             "ursgal_style_1": "enzyme",
             "xtandem_style_1": "protein, cleavage site"
@@ -6063,6 +6280,80 @@
                     "(?<=[KR])"
                 ]
             ],
+            "pyprotista_style_1": [
+                [
+                    "argc",
+                    "(?<=R)(?![P])"
+                ],
+                [
+                    "aspn",
+                    "(?=D)"
+                ],
+                [
+                    "chymotrypsin",
+                    "(?<=[FWLY])(?![P])"
+                ],
+                [
+                    "clostripain",
+                    "(?<=R)"
+                ],
+                [
+                    "cnbr",
+                    "(?<=M)"
+                ],
+                [
+                    "formic_acid",
+                    "(?<=D)"
+                ],
+                [
+                    "gluc",
+                    "(?<=[DE])(?![P])"
+                ],
+                [
+                    "gluc_bicarb",
+                    "(?<=[E])(?![P])"
+                ],
+                [
+                    "iodosobenzoate",
+                    "(?<=W)"
+                ],
+                [
+                    "lysc",
+                    "(?<=K)(?![P])"
+                ],
+                [
+                    "lysc_gluc",
+                    "(?<=[DE])(?![P])|(?<=K)"
+                ],
+                [
+                    "lysn",
+                    "(?=K)"
+                ],
+                [
+                    "nonspecific",
+                    ".^"
+                ],
+                [
+                    "staph_protease",
+                    "(?<=E)"
+                ],
+                [
+                    "trypsin",
+                    "(?<=[KR])(?![P])"
+                ],
+                [
+                    "trypsin_cnbr",
+                    "(?<=[KR])(?![P])|(?<=M)"
+                ],
+                [
+                    "trypsin_gluc",
+                    "(?<=[KRDE])(?![P])"
+                ],
+                [
+                    "trypsin_p",
+                    "(?<=[KR])"
+                ]
+            ],
             "tag_graph_style_1": [
                 [
                     "argc",
@@ -6310,6 +6601,7 @@
             "myrimatch_style_1": "MinTerminiCleavages",
             "omssa_style_1": "semi_enzyme",
             "pyiohat_style_1": "semi_enzyme",
+            "pyprotista_style_1": "semi_enzyme",
             "ursgal_style_1": "enzyme_specificity",
             "xtandem_style_1": "protein, cleavage semi"
         },
@@ -9432,6 +9724,7 @@
         "description": "X!tandem searches for peptides broken between Asp (D) and Pro (P) for every enzyme. Therefore, it reports peptides that are not enzymatically cleaved. Specify, if those should be kept during pyiohat or removed.",
         "key_translations": {
             "pyiohat_style_1": "keep_asp_pro_broken_peps",
+            "pyprotista_style_1": "keep_asp_pro_broken_peps",
             "ursgal_style_1": "keep_asp_pro_broken_peps"
         },
         "name": "keep_asp_pro_broken_peps",
@@ -10355,6 +10648,7 @@
             "pglyco_db_style_1": "max_miss_cleave",
             "pipi_style_1": "missed_cleavage",
             "pyiohat_style_1": "max_missed_cleavages",
+            "pyprotista_style_1": "max_missed_cleavages",
             "upeptide_mapper_style_1": "max_missed_cleavages",
             "ursgal_style_1": "max_missed_cleavages",
             "xtandem_style_1": "scoring, maximum missed cleavage sites"
@@ -11339,6 +11633,7 @@
             "ptminer_style_1": "modifications",
             "ptmshepherd_style_1": "varmod_masses",
             "pyiohat_style_1": "modifications",
+            "pyprotista_style_1": "modifications",
             "pyqms_style_1": "modifications",
             "tag_graph_style_1": "modifications",
             "ursgal_style_1": "modifications",
@@ -13392,6 +13687,7 @@
             "pepnovo_style_1": "-correct_pm",
             "ptmshepherd_style_1": "isotope_error",
             "pyiohat_style_1": "precursor_isotope_range",
+            "pyprotista_style_1": "precursor_isotope_range",
             "ursgal_style_1": "precursor_isotope_range",
             "xtandem_style_1": "spectrum, parent monoisotopic mass isotope error"
         },
@@ -13585,6 +13881,7 @@
             "novor_style_1": "precursorErrorTol_part2",
             "omssa_style_1": "-te_part1",
             "pyiohat_style_1": "precursor_mass_tolerance_minus",
+            "pyprotista_style_1": "precursor_mass_tolerance_minus",
             "ursgal_style_1": "precursor_mass_tolerance_minus",
             "xtandem_style_1": "spectrum, parent monoisotopic mass error minus"
         },
@@ -13612,6 +13909,7 @@
             "novor_style_1": "precursorErrorTol_part1",
             "omssa_style_1": "-te_part2",
             "pyiohat_style_1": " precursor_mass_tolerance_minus",
+            "pyprotista_style_1": " precursor_mass_tolerance_minus",
             "ursgal_style_1": "precursor_mass_tolerance_plus",
             "xtandem_style_1": "spectrum, parent monoisotopic mass error plus"
         },
@@ -14190,6 +14488,7 @@
         "key_translations": {
             "combine_pep_style_1": "columns_for_grouping",
             "pyiohat_style_1": "psm_defining_colnames",
+            "pyprotista_style_1": "psm_defining_colnames",
             "sanitize_csv_style_1": "psm_defining_colnames",
             "ucontroller_style_1": "psm_defining_colnames",
             "ursgal_style_1": "psm_defining_colnames"
@@ -14780,6 +15079,7 @@
         "description": "Masses of modifications are rounded in order to match them to their corresponding unimod name. Use this parameter to set the number of decimal places after rounding.",
         "key_translations": {
             "pyiohat_style_1": "rounded_mass_decimals",
+            "pyprotista_style_1": "rounded_mass_decimals",
             "ursgal_style_1": "rounded_mass_decimals"
         },
         "name": "rounded_mass_decimals",
@@ -14815,6 +15115,7 @@
         "key_translations": {
             "mgf_to_rt_lookup_style_1": "rt_pickle_name",
             "pyiohat_style_1": "scan_rt_lookup_path",
+            "pyprotista_style_1": "scan_rt_lookup_path",
             "sugarpy_plot_style_1": "scan_rt_lookup",
             "sugarpy_run_style_1": "scan_rt_lookup",
             "ucontroller_style_1": "rt_pickle_name",
@@ -15624,6 +15925,7 @@
         "description": "Determines whether 'all' or 'any' found Sequences Pre/Post AA need to be cleaved correctly",
         "key_translations": {
             "pyiohat_style_1": "terminal_cleavage_site_integrity",
+            "pyprotista_style_1": "terminal_cleavage_site_integrity",
             "ursgal_style_1": "terminal_cleavage_site_integrity"
         },
         "name": "terminal_cleavage_site_integrity",
@@ -15951,6 +16253,7 @@
             "novor_style_1": "unimod_xml_file_list",
             "omssa_style_1": "unimod_xml_file_list",
             "pyiohat_style_1": "unimod_xml_file_list",
+            "pyprotista_style_1": "unimod_xml_file_list",
             "ursgal_style_1": "unimod_xml_file_list",
             "xtandem_style_1": "unimod_xml_file_list"
         },
@@ -16712,6 +17015,7 @@
             "percolator_style_2": "validation_score_field",
             "ptminer_style_1": "validation_score_field",
             "pyiohat_style_1": "validation_score_field",
+            "pyprotista_style_1": "validation_score_field",
             "q_value_calculator_style_1": "validation_score_field",
             "qvality_style_1": "validation_score_field",
             "sanitize_csv_style_1": "validation_score_field",
@@ -17599,6 +17903,220 @@
                 ]
             ],
             "pyiohat_style_1": [
+                [
+                    "comet_2020_01_4",
+                    "comet:e_value"
+                ],
+                [
+                    "deepnovo_0_0_1",
+                    "deepnovo:score"
+                ],
+                [
+                    "deepnovo_pointnovo",
+                    "deepnovo:score"
+                ],
+                [
+                    "mascot_2_5_1",
+                    "mascot:score"
+                ],
+                [
+                    "mascot_2_6_2",
+                    "mascot:score"
+                ],
+                [
+                    "moda_v1_51",
+                    "moda:probability"
+                ],
+                [
+                    "moda_v1_61",
+                    "moda:probability"
+                ],
+                [
+                    "moda_v1_62",
+                    "moda:probability"
+                ],
+                [
+                    "msamanda_1_0_0_5242",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_1_0_0_5243",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_1_0_0_6299",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_1_0_0_6300",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_1_0_0_7503",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_1_0_0_7504",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_2_0_0_10695",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_2_0_0_11219",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_2_0_0_13723",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_2_0_0_14665",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_2_0_0_17442",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_2_0_0_9695",
+                    "amanda:score"
+                ],
+                [
+                    "msamanda_2_0_0_9706",
+                    "amanda:score"
+                ],
+                [
+                    "msfragger_20170103",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_20171106",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_20190222",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_20190628",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_2_3",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_3_0",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msgfplus_2021_03_22",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2016_09_16",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2017_01_27",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2018_01_30",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2018_06_28",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2018_09_12",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2019_01_22",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2019_04_18",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v2019_07_03",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "msgfplus_v9979",
+                    "ms-gf:spec_evalue"
+                ],
+                [
+                    "myrimatch_2_1_138",
+                    "myrimatch:mvh"
+                ],
+                [
+                    "myrimatch_2_2_140",
+                    "myrimatch:mvh"
+                ],
+                [
+                    "novor_1_05",
+                    "novor:score"
+                ],
+                [
+                    "novor_1_1beta",
+                    "novor:score"
+                ],
+                [
+                    "omssa_2_1_9",
+                    "omssa:pvalue"
+                ],
+                [
+                    "pepnovo_3_1",
+                    "pepnovo:pnv_scr"
+                ],
+                [
+                    "pglyco_db_2_2_0",
+                    "pglyco:total_score"
+                ],
+                [
+                    "pipi_1_4_5",
+                    "PIPI:score"
+                ],
+                [
+                    "pipi_1_4_6",
+                    "PIPI:score"
+                ],
+                [
+                    "tag_graph_1_8_0",
+                    "taggraph:1_log10_em"
+                ],
+                [
+                    "xtandem_alanine",
+                    "x!tandem:hyperscore"
+                ],
+                [
+                    "xtandem_cyclone_2010",
+                    "x!tandem:hyperscore"
+                ],
+                [
+                    "xtandem_jackhammer",
+                    "x!tandem:hyperscore"
+                ],
+                [
+                    "xtandem_piledriver",
+                    "x!tandem:hyperscore"
+                ],
+                [
+                    "xtandem_sledgehammer",
+                    "x!tandem:hyperscore"
+                ],
+                [
+                    "xtandem_vengeance",
+                    "x!tandem:hyperscore"
+                ]
+            ],
+            "pyprotista_style_1": [
                 [
                     "comet_2020_01_4",
                     "comet:e_value"
@@ -19022,6 +19540,7 @@
         "description": "word length used to index peptide mapper, smaller word len requires more memory",
         "key_translations": {
             "pyiohat_style_1": "word_len",
+            "pyiohat_style_1": "pyprotista_style_1",
             "upeptide_mapper_style_1": "word_len",
             "ursgal_style_1": "word_len"
         },
