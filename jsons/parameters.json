@@ -3172,6 +3172,7 @@
         "description": " Specifies the trimming of a protein N-terminal methionine as a variable modification ",
         "key_translations": {
             "comet_style_1": "clip_nterm_methionine",
+            "diann_style_1": "--met-excision",
             "msfragger_style_1": "clip_nTerm_M",
             "msfragger_style_2": "clip_nTerm_M",
             "msfragger_style_3": "clip_nTerm_M",
@@ -4021,6 +4022,7 @@
             "bowtie_style_1": "-p",
             "comet_style_1": "num_threads",
             "cutadapt_style_1": "-j",
+            "diann_style_1": "--threads",
             "fastqc_style_1": "-t",
             "flash_lfq_style_1": "--thr",
             "kojak_style_1": "cpus",
@@ -5042,6 +5044,7 @@
         "description": "Enzyme: Rule of protein cleavagePossible cleavages are :\n    argc           -> [R]|{P}\n    aspn           -> [X]|[D]\n    aspn_gluc\n    chymotrypsin   -> [FMWY]|{P}\n    chymotrypsin_p -> [FMWY]|[X]\n    cnbr           -> [M]|{P}\n    elastase       -> [AGILV]|{P}\n    formic_acid    -> [D]|{P}\n    gluc\n    lysc\n    lysc_p\n    lysn\n    no_cleavage\n    nonspecific\n    pepsina\n    semi_chymotrypsin\n    semi_gluc\n    semi_tryptic\n    thermolysin_p\n    top_down\n    trypsin\n    trypsin_chymotrypsin\n    trypsin_cnbr\n    trypsin_p\n    lysc_gluc",
         "key_translations": {
             "comet_style_1": "search_enzyme_number",
+            "diann_style_1": "--cut",
             "deepnovo_style_1": "cleavage_rule",
             "generate_target_decoy_style_1": "enzyme",
             "kojak_style_1": "enzyme",
@@ -5119,6 +5122,36 @@
                 [
                     "trypsin_p",
                     "2"
+                ]
+            ],
+            "diann_style_1": [
+                [
+                    "nonspecific",
+                    ""
+                ],
+                [
+                    "trypsin_p",
+                    "K*,R*"
+                ],
+                [
+                    "trypsin",
+                    "K*,R*,!*P"
+                ],
+                [
+                    "lysc",
+                    "K*"
+                ],
+                [
+                    "chymotrypsin",
+                    "F*,Y*,W*,M*,L*,!*P"
+                ],
+                [
+                    "aspn",
+                    ""
+                ],
+                [
+                    "gluc",
+                    ""
                 ]
             ],
             "deepnovo_style_1": [
@@ -19557,6 +19590,7 @@
         "description": "Parameter controlling verbose behavior. In general 0=false, 1=true. For qvality range from 0 = no processing info to 5 = all.",
         "key_translations": {
             "comet_style_1": "peff_verbose_output",
+            "diann_style_1": "--verbose",
             "msgfplus_style_1": "-verbose",
             "mzidentml_style_1": "-verboseOutput",
             "omssa_style_1": "-ni",
