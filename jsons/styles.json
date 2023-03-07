@@ -712,6 +712,14 @@
         ]
     },
     {
+        "name": "pyProtista",
+        "reference": "Ursgal Team (2022)",
+        "style": "pyprotista_style_1",
+        "versions": [
+            "1.7.4"
+        ]
+    },
+    {
         "name": "pyqms",
         "reference": "Leufken J, Niehues A, Sarin LP, Wessel F, Hippler M, Leidel SA, Fufezan C (2017) pyQms enables universal and accurate quantification of mass spectrometry data",
         "style": "pyqms_style_1",
