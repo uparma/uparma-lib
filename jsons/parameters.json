@@ -3172,7 +3172,7 @@
         "description": " Specifies the trimming of a protein N-terminal methionine as a variable modification ",
         "key_translations": {
             "comet_style_1": "clip_nterm_methionine",
-            "diann_style_1": "--met-excision",
+            "diann_style_1": "clip_nterm_methionine",
             "msfragger_style_1": "clip_nTerm_M",
             "msfragger_style_2": "clip_nTerm_M",
             "msfragger_style_3": "clip_nTerm_M",
@@ -3191,6 +3191,16 @@
                 [
                     true,
                     1
+                ]
+            ],
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--met-excision"
                 ]
             ],
             "msfragger_style_1": [
