@@ -5147,11 +5147,11 @@
                 ],
                 [
                     "aspn",
-                    ""
+                    "*D"
                 ],
                 [
                     "gluc",
-                    ""
+                    "E*"
                 ]
             ],
             "deepnovo_style_1": [
@@ -19730,6 +19730,74 @@
         "triggers_rerun": false,
         "value_translations": {},
         "value_type": "int"
+    },
+    {
+        "default_value": false,
+        "description": "Reannotate the spectral library with protein information from the FASTA database, using the specified digest specificity.",
+        "key_translations": {
+            "diann_style_1": "reannotate_spectral_library",
+            "ursgal_style_1": "reannotate_spectral_library"
+        },
+        "name": "reannotate_spectral_library",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--reannotate"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "bool"
+    },
+    {
+        "default_value": true,
+        "description": "Defines if an output matrix containing information about protein groups, gene groups, unique genes and precursors should be generated.",
+        "key_translations": {
+            "diann_style_1": "generate_output_matrix",
+            "ursgal_style_1": "generate_output_matrix"
+        },
+        "name": "generate_output_matrix",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--matrices"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "bool"
     },
     {
         "default_value": false,
