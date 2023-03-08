@@ -409,7 +409,49 @@
                 ]
             ]
         },
-        "value_type": "string"
+        "value_type": "str"
+    },
+    {
+        "default_value": "center",
+        "description": "Quantification strategy of chromatographic peaks for DIA-NN. Available options are center, height and translation.",
+        "key_translations": {
+            "diann_style_1": "quantification_mode",
+            "ursgal_style_1": "quantification_mode"
+        },
+        "name": "quantification_mode",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    "center",
+                    "--peak-center"
+                ],
+                [
+                    "height",
+                    "--peak-height"
+                ],
+                [
+                    "translation",
+                    "--peak-translation"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "center",
+                    "center"
+                ],
+                [
+                    "height",
+                    "height"
+                ],
+                [
+                    "translation",
+                    "translation"
+                ]
+            ]
+        },
+        "value_type": "str"
     },
     {
         "default_value": "local",
@@ -9458,6 +9500,32 @@
         "value_type": "str"
     },
     {
+        "default_value": "smart-profiling",
+        "description": "Algorithm which determines how to extract spectra, when creating a spectral library from DIA data",
+        "key_translations": {
+            "diann_style_1": "spectral_library_extraction_algorithm",
+            "ursgal_style_1": "spectral_library_extraction_algorithm"
+        },
+        "name": "spectral_library_extraction_algorithm",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    "smart-profiling",
+                    "--smart-profiling"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "smart-profiling",
+                    "smart-profiling"
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
         "default_value": "q_exactive",
         "description": "Type of mass spectrometer (used to determine the scoring model)",
         "key_translations": {
@@ -10286,8 +10354,9 @@
     },
     {
         "default_value": 150,
-        "description": " lowest considered mz for quantification ",
+        "description": "Defines the minimum m/z value to be considered by the respective tool.",
         "key_translations": {
+            "diann_style_1": "--min-pr-mz",
             "pyqms_style_1": "LOWER_MZ_LIMIT",
             "sugarpy_plot_style_1": "LOWER_MZ_LIMIT",
             "sugarpy_run_style_1": "LOWER_MZ_LIMIT",
@@ -10756,6 +10825,7 @@
         "description": "Maximum number of missed cleavages per peptide",
         "key_translations": {
             "comet_style_1": "allowed_missed_cleavage",
+            "diann_style_1": "--missed_cleavages",
             "deepnovo_style_1": "num_missed_cleavage",
             "kojak_style_1": "max_missed_cleavages",
             "mascot_style_1": "PFA",
@@ -11014,6 +11084,7 @@
         "description": "Maximal length of a peptide",
         "key_translations": {
             "comet_style_1": "peptide_length_range_max",
+            "diann_style_1": "--max-pep-len",
             "msamanda_style_1": "MaximumPepLength",
             "msfragger_style_1": "digest_max_length",
             "msfragger_style_2": "digest_max_length",
@@ -11359,6 +11430,7 @@
         "description": "Minimal length of a peptide",
         "key_translations": {
             "comet_style_1": "peptide_length_range_min",
+            "diann_style_1": "--min-pep-len",
             "msamanda_style_1": "MinimumPepLength",
             "msfragger_style_1": "digest_min_length",
             "msfragger_style_2": "digest_min_length",
@@ -14296,6 +14368,7 @@
         "key_translations": {
             "calculate_ion_charge_state_style_1": "max_charge",
             "comet_style_1": "max_precursor_charge",
+            "diann_style_1": "--max-pr-charge",
             "mascot_style_1": "CHARGE_max",
             "msamanda_style_1": "considered_charges_max",
             "msfragger_style_1": "precursor_max_charge",
@@ -14346,6 +14419,7 @@
         "description": "Minimal accepted parent ion charge",
         "key_translations": {
             "comet_style_1": "precursor_charge_min",
+            "diann_style_1": "--min-pr-charge",
             "mascot_style_1": "CHARGE_min",
             "msamanda_style_1": "considered_charges_min",
             "msfragger_style_1": "precursor_min_charge",
@@ -16471,8 +16545,9 @@
     },
     {
         "default_value": 2000,
-        "description": " Highest considered mz for quantification ",
+        "description": "Defines the minimum m/z value to be considered by the respective tool.",
         "key_translations": {
+            "diann_style_1": "--max-pr-mz",
             "pyqms_style_1": "UPPER_MZ_LIMIT",
             "sugarpy_plot_style_1": "UPPER_MZ_LIMIT",
             "sugarpy_run_style_1": "UPPER_MZ_LIMIT",
