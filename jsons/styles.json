@@ -65,6 +65,14 @@
         ]
     },
     {
+        "name": "FastQC",
+        "reference": "Babraham Bioinformatics group. https://www.bioinformatics.babraham.ac.uk/publications.html",
+        "style": "fastqc_style_1",
+        "versions": [
+            "0.12.1"
+        ]
+    },
+    {
         "name": "Filter CSV",
         "reference": "Ursgal2 Team",
         "style": "filter_csv_style_1",
@@ -704,17 +712,17 @@
         ]
     },
     {
-        "name": "pyiohat",
+        "name": "pyProtista",
         "reference": "Ursgal Team (2022)",
-        "style": "pyiohat_style_1",
+        "style": "pyprotista_style_1",
         "versions": [
             "1.7.4"
         ]
     },
     {
-        "name": "pyProtista",
+        "name": "pyiohat",
         "reference": "Ursgal Team (2022)",
-        "style": "pyprotista_style_1",
+        "style": "pyiohat_style_1",
         "versions": [
             "1.7.4"
         ]
