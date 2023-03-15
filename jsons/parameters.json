@@ -327,7 +327,7 @@
         "default_value": false,
         "description": "Alignment against reverse-complement reference rna strand",
         "key_translations": {
-            "bowtie_style_1": "aligner_no_rc_<REMOVE>",
+            "bowtie_style_1": "aligner_no_rc_<DROP_KEY>",
             "ursgal_style_1": "aligner_no_rc"
         },
         "name": "aligner_no_rc",
@@ -467,7 +467,7 @@
         "default_value": false,
         "description": "Report only best alignment as singleton",
         "key_translations": {
-            "bowtie_style_1": "aligner_report_only_best_<REMOVE>",
+            "bowtie_style_1": "aligner_report_only_best_<DROP_KEY>",
             "ursgal_style_1": "aligner_report_only_best"
         },
         "name": "aligner_report_only_best",
@@ -503,7 +503,7 @@
         "default_value": true,
         "description": "Sort output sam file by index",
         "key_translations": {
-            "bowtie_style_1": "aligner_sort_output_sam_<REMOVE>",
+            "bowtie_style_1": "aligner_sort_output_sam_<DROP_KEY>",
             "ursgal_style_1": "aligner_sort_output_sam"
         },
         "name": "aligner_sort_output_sam",
@@ -539,7 +539,7 @@
         "default_value": false,
         "description": "Write none alignable reads to separate file",
         "key_translations": {
-            "bowtie_style_1": "aligner_write_no_align_<REMOVE>",
+            "bowtie_style_1": "aligner_write_no_align_<DROP_KEY>",
             "ursgal_style_1": "aligner_write_no_align"
         },
         "name": "aligner_write_no_align",
@@ -4899,7 +4899,7 @@
         "default_value": true,
         "description": "Disable grouping of bases for reads >50bp. All reports will show data for every base in the read.",
         "key_translations": {
-            "fastqc_style_1": "disable_read_grouping_<REMOVE>",
+            "fastqc_style_1": "disable_read_grouping_<DROP_KEY>",
             "ursgal_style_1": "disable_read_grouping"
         },
         "name": "disable_read_grouping",
@@ -7145,7 +7145,7 @@
         "default_value": false,
         "description": "Toggle compression of output files.",
         "key_translations": {
-            "fastqc_style_1": "extract_output_<REMOVE>",
+            "fastqc_style_1": "extract_output_<DROP_KEY>",
             "ursgal_style_1": "extract_output"
         },
         "name": "extract_output",
