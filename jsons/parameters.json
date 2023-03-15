@@ -19618,7 +19618,8 @@
         "default_value": 6,
         "description": "word length used to index peptide mapper, smaller word len requires more memory",
         "key_translations": {
-            "pyiohat_style_1": "pyprotista_style_1",
+            "pyiohat_style_1": "word_len",
+            "pyprotista_style_1": "word_len",
             "upeptide_mapper_style_1": "word_len",
             "ursgal_style_1": "word_len"
         },
