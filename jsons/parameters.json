@@ -4021,6 +4021,7 @@
             "bowtie_style_1": "-p",
             "comet_style_1": "num_threads",
             "cutadapt_style_1": "-j",
+            "fastqc_style_1": "-t",
             "flash_lfq_style_1": "--thr",
             "kojak_style_1": "cpus",
             "moda_style_1": "-@",
@@ -4068,6 +4069,12 @@
                 [
                     -1,
                     0
+                ]
+            ],
+            "fastqc_style_1": [
+                [
+                    -1,
+                    -1
                 ]
             ],
             "kojak_style_1": [
@@ -4887,6 +4894,42 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "dict"
+    },
+    {
+        "default_value": true,
+        "description": "Disable grouping of bases for reads >50bp. All reports will show data for every base in the read.",
+        "key_translations": {
+            "fastqc_style_1": "disable_read_grouping_<REMOVE>",
+            "ursgal_style_1": "disable_read_grouping"
+        },
+        "name": "disable_read_grouping",
+        "tag": [
+            "rnatool"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {
+            "fastqc_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--nogroup"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "bool"
     },
     {
         "default_value": false,
@@ -7083,6 +7126,42 @@
                 [
                     true,
                     1
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "bool"
+    },
+    {
+        "default_value": false,
+        "description": "Toggle compression of output files.",
+        "key_translations": {
+            "fastqc_style_1": "extract_output_<REMOVE>",
+            "ursgal_style_1": "extract_output"
+        },
+        "name": "extract_output",
+        "tag": [
+            "rnatool"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {
+            "fastqc_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--noextract"
                 ]
             ],
             "ursgal_style_1": [
@@ -19606,7 +19685,7 @@
         "description": "word length used to index peptide mapper, smaller word len requires more memory",
         "key_translations": {
             "pyiohat_style_1": "word_len",
-            "pyiohat_style_1": "pyprotista_style_1",
+            "pyprotista_style_1": "word_len",
             "upeptide_mapper_style_1": "word_len",
             "ursgal_style_1": "word_len"
         },
