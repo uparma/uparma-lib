@@ -4899,7 +4899,7 @@
         "default_value": true,
         "description": "Disable grouping of bases for reads >50bp. All reports will show data for every base in the read.",
         "key_translations": {
-            "bowtie_style_1": "disable_read_grouping_<REMOVE>",
+            "fastqc_style_1": "disable_read_grouping_<REMOVE>",
             "ursgal_style_1": "disable_read_grouping"
         },
         "name": "disable_read_grouping",
@@ -7145,7 +7145,7 @@
         "default_value": false,
         "description": "Toggle compression of output files.",
         "key_translations": {
-            "bowtie_style_1": "extract_output_<REMOVE>",
+            "fastqc_style_1": "extract_output_<REMOVE>",
             "ursgal_style_1": "extract_output"
         },
         "name": "extract_output",
