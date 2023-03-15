@@ -15039,7 +15039,7 @@
         "default_value": false,
         "description": "Remove N's from both read ends.",
         "key_translations": {
-            "cutadapt_style_1": "remove_rna_ns_<REMOVE>",
+            "cutadapt_style_1": "remove_rna_ns_<DROP_KEY>",
             "ursgal_style_1": "remove_rna_ns"
         },
         "name": "remove_rna_ns",
