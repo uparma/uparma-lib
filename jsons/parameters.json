@@ -14957,6 +14957,42 @@
         "value_type": "bool"
     },
     {
+        "default_value": false,
+        "description": "Remove N's from both read ends.",
+        "key_translations": {
+            "cutadapt_style_1": "remove_rna_ns_<REMOVE>",
+            "ursgal_style_1": "remove_rna_ns"
+        },
+        "name": "remove_rna_ns",
+        "tag": [
+            "rnatools"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {
+            "cutadapt_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--trim-n"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "bool"
+    },
+    {
         "default_value": true,
         "description": "Remove temporary files: True or False",
         "key_translations": {
@@ -16209,6 +16245,36 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "float"
+    },
+    {
+        "default_value": 0,
+        "description": "Nucleotides to be trimmed from read end",
+        "key_translations": {
+            "cutadapt_style_1": "-u_<part2_read_end>",
+            "ursgal_style_1": "trim_nt_3_prime"
+        },
+        "name": "trim_nt_3_prime",
+        "tag": [
+            "rnatool"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": 0,
+        "description": "Nucleotides to be trimmed from read start",
+        "key_translations": {
+            "cutadapt_style_1": "-u_<part_read_start>",
+            "ursgal_style_1": "trim_nt_5_prime"
+        },
+        "name": "trim_nt_5_prime",
+        "tag": [
+            "rnatool"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
     },
     {
         "default_value": null,
