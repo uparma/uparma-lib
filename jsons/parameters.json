@@ -629,6 +629,32 @@
         "value_type": "str"
     },
     {
+        "default_value": "",
+        "description": "Specifies a path to a 'training library' for the legacy predictor.",
+        "key_translations": {
+            "diann_style_1": "--learn-lib",
+            "ursgal_style_1": "training_library_name"
+        },
+        "name": "training_library_name",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": "",
+        "description": "Specifies the name of the main output report. The names of all other report files will be derived from this one.",
+        "key_translations": {
+            "diann_style_1": "--out",
+            "ursgal_style_1": "output_report_name"
+        },
+        "name": "output_report_name",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
         "default_value": true,
         "description": "Use existing .quant files, if available.",
         "key_translations": {
@@ -647,6 +673,150 @@
                 [
                     true,
                     "--use-quant"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
+        "default_value": "genes",
+        "description": "Controls the protein inference mode, with 0 - isoforms, 1 - protein names (as in UniProt), 2 - genes.",
+        "key_translations": {
+            "diann_style_1": "--pg-level",
+            "ursgal_style_1": "protein_inference_mode"
+        },
+        "name": "use_available_quant_files",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    "isoforms",
+                    0
+                ],
+                [
+                    "protein names",
+                    1
+                ],
+                [
+                    "genes",
+                    2
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "isoforms",
+                    "isoforms"
+                ],
+                [
+                    "protein names",
+                    "protein names"
+                ],
+                [
+                    "genes",
+                    "genes"
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
+        "default_value": false,
+        "description": "Instructs DIA-NN to perform deep learning-based prediction of spectra, retention times and ion mobility values.",
+        "key_translations": {
+            "diann_style_1": "perform_deeplearning_prediction_<DROP_KEY>",
+            "ursgal_style_1": "perform_deeplearning_prediction"
+        },
+        "name": "perform_deeplearning_prediction",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--predictor"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
+        "default_value": false,
+        "description": "Instructs DIA-NN to perform an in silico digest of the sequence database.",
+        "key_translations": {
+            "diann_style_1": "perform_in-silico_digest_<DROP_KEY>",
+            "ursgal_style_1": "perform_in-silico_digest"
+        },
+        "name": "perform_in-silico_digest",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--fasta-search"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
+        "default_value": false,
+        "description": "Either to report qvalues in the report. TODO: this parameter has to be revisited, as it is not available in the github documentation!",
+        "key_translations": {
+            "diann_style_1": "report_qvalues_<DROP_KEY>",
+            "ursgal_style_1": "report_qvalues"
+        },
+        "name": "report_qvalues",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--qvalue"
                 ]
             ],
             "ursgal_style_1": [
@@ -7752,6 +7922,7 @@
         "default_value": 20,
         "description": "Mass tolerance of measured and calculated fragment ions",
         "key_translations": {
+            "diann_style_1": "--mass-acc",
             "glycopeptide_fragmentor_style_1": "frag_mass_tolerance",
             "mascot_style_1": "ITOL",
             "msamanda_style_1": "ms2_tol",
@@ -14376,6 +14547,7 @@
         "description": "Lower precursor mass tolerance; maximum negative deviation of measured from calculated parent ion mass.",
         "key_translations": {
             "comet_style_1": "peptide_mass_tolerance_part1",
+            "diann_style_1": "--mass-acc-ms1_<lower>",
             "flash_lfq_style_1": "--ppm_part1",
             "mascot_style_1": "TOL_part1",
             "msamanda_style_1": "ms1_tol_part1",
@@ -14404,6 +14576,7 @@
         "description": "Upper precursor mass tolerance; maximum positive deviation of measured from calculated parent ion mass.",
         "key_translations": {
             "comet_style_1": "peptide_mass_tolerance_part2",
+            "diann_style_1": "--mass-acc-ms1_<upper>",
             "flash_lfq_style_1": "--ppm_part2",
             "mascot_style_1": "TOL_part2",
             "msamanda_style_1": "ms1_tol_part2",
