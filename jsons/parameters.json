@@ -548,7 +548,7 @@
         "value_type": "str"
     },
     {
-        "default_value": true,
+        "default_value": false,
         "description": "True if timsTOF data is used. TODO: this param has to be revisited once it is clear what it stands for!",
         "key_translations": {
             "diann_style_1": "tims_scan_<DROP_KEY>",
