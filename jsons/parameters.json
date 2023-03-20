@@ -480,7 +480,7 @@
         "value_type": "str"
     },
     {
-        "default_value": true,
+        "default_value": false,
         "description": "Do not produce the main report.",
         "key_translations": {
             "diann_style_1": "drop_main_report_<DROP_KEY>",
