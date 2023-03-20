@@ -412,427 +412,6 @@
         "value_type": "str"
     },
     {
-        "default_value": true,
-        "description": "Instructs DIA-NN to integrate chromatographic peaks only in the vicinity of the apex - equivalent to the \"Robust LC\" quantification mode.",
-        "key_translations": {
-            "diann_style_1": "peak_center_<DROP_KEY>",
-            "ursgal_style_1": "peak_center"
-        },
-        "name": "peak_center",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--peak-center"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ]
-        },
-        "value_type": "str"
-    },
-    {
-        "default_value": true,
-        "description": "Turns off interference subtraction from fragment ion chromatograms - equivalent to the \"high precision\" quantification mode.",
-        "key_translations": {
-            "diann_style_1": "substract_interference_<DROP_KEY>",
-            "ursgal_style_1": "substract_interference"
-        },
-        "name": "peak_center",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--no-ifs-removal"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ]
-        },
-        "value_type": "str"
-    },
-    {
-        "default_value": false,
-        "description": "Do not produce the main report.",
-        "key_translations": {
-            "diann_style_1": "drop_main_report_<DROP_KEY>",
-            "ursgal_style_1": "drop_main_report"
-        },
-        "name": "drop_main_report",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--no-main-report"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ]
-        },
-        "value_type": "str"
-    },
-    {
-        "default_value": true,
-        "description": "Perform RT profiling. TODO: this param has to be revisited once it is clear what it stands for!",
-        "key_translations": {
-            "diann_style_1": "rt_profiling_<DROP_KEY>",
-            "ursgal_style_1": "rt_profiling"
-        },
-        "name": "rt_profiling",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--rt-profiling"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ]
-        },
-        "value_type": "str"
-    },
-    {
-        "default_value": false,
-        "description": "True if timsTOF data is used. TODO: this param has to be revisited once it is clear what it stands for!",
-        "key_translations": {
-            "diann_style_1": "tims_scan_<DROP_KEY>",
-            "ursgal_style_1": "tims_scan"
-        },
-        "name": "tims_scan",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--tims-scan"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ]
-        },
-        "value_type": "str"
-    },
-    {
-        "default_value": true,
-        "description": "instructs DIA-NN to generate a spectral library.",
-        "key_translations": {
-            "diann_style_1": "generate_spectral_library_<DROP_KEY>",
-            "ursgal_style_1": "generate_spectral_library"
-        },
-        "name": "generate_spectral_library",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--gen-spec-lib"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ]
-        },
-        "value_type": "str"
-    },
-    {
-        "default_value": "",
-        "description": "Specifies the name of a spectral library to be generated.",
-        "key_translations": {
-            "diann_style_1": "--out-lib",
-            "ursgal_style_1": "spectral_library_name"
-        },
-        "name": "spectral_library_name",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "str"
-    },
-    {
-        "default_value": "",
-        "description": "Specifies a path to a 'training library' for the legacy predictor.",
-        "key_translations": {
-            "diann_style_1": "--learn-lib",
-            "ursgal_style_1": "training_library_name"
-        },
-        "name": "training_library_name",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "str"
-    },
-    {
-        "default_value": "",
-        "description": "Specifies the name of the main output report. The names of all other report files will be derived from this one.",
-        "key_translations": {
-            "diann_style_1": "--out",
-            "ursgal_style_1": "output_report_name"
-        },
-        "name": "output_report_name",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "str"
-    },
-    {
-        "default_value": true,
-        "description": "Use existing .quant files, if available.",
-        "key_translations": {
-            "diann_style_1": "use_available_quant_files_<DROP_KEY>",
-            "ursgal_style_1": "use_available_quant_files"
-        },
-        "name": "use_available_quant_files",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--use-quant"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ]
-        },
-        "value_type": "str"
-    },
-    {
-        "default_value": "genes",
-        "description": "Controls the protein inference mode, with 0 - isoforms, 1 - protein names (as in UniProt), 2 - genes.",
-        "key_translations": {
-            "diann_style_1": "--pg-level",
-            "ursgal_style_1": "protein_inference_mode"
-        },
-        "name": "use_available_quant_files",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    "isoforms",
-                    0
-                ],
-                [
-                    "protein names",
-                    1
-                ],
-                [
-                    "genes",
-                    2
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    "isoforms",
-                    "isoforms"
-                ],
-                [
-                    "protein names",
-                    "protein names"
-                ],
-                [
-                    "genes",
-                    "genes"
-                ]
-            ]
-        },
-        "value_type": "str"
-    },
-    {
-        "default_value": false,
-        "description": "Instructs DIA-NN to perform deep learning-based prediction of spectra, retention times and ion mobility values.",
-        "key_translations": {
-            "diann_style_1": "perform_deeplearning_prediction_<DROP_KEY>",
-            "ursgal_style_1": "perform_deeplearning_prediction"
-        },
-        "name": "perform_deeplearning_prediction",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--predictor"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ]
-        },
-        "value_type": "str"
-    },
-    {
-        "default_value": false,
-        "description": "Instructs DIA-NN to perform an in silico digest of the sequence database.",
-        "key_translations": {
-            "diann_style_1": "perform_in-silico_digest_<DROP_KEY>",
-            "ursgal_style_1": "perform_in-silico_digest"
-        },
-        "name": "perform_in-silico_digest",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--fasta-search"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ]
-        },
-        "value_type": "str"
-    },
-    {
-        "default_value": false,
-        "description": "Either to report qvalues in the report. TODO: this parameter has to be revisited, as it is not available in the github documentation!",
-        "key_translations": {
-            "diann_style_1": "report_qvalues_<DROP_KEY>",
-            "ursgal_style_1": "report_qvalues"
-        },
-        "name": "report_qvalues",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--qvalue"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ]
-        },
-        "value_type": "str"
-    },
-    {
         "default_value": "local",
         "description": "Type of read ends alignment",
         "key_translations": {
@@ -3821,74 +3400,6 @@
         "value_type": "bool"
     },
     {
-        "default_value": "heuristic",
-        "description": "Protein inference algorithm that DIANN should use.",
-        "key_translations": {
-            "diann_style_1": "protein_inference_algorithm_<DROP_KEY>",
-            "ursgal_style_1": "protein_inference_algorithm"
-        },
-        "name": "protein_inference_algorithm",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    "heuristic",
-                    "--relaxed-prot-inf"
-                ],
-                [
-                    "none",
-                    "--no-prot-inf"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    "heuristic",
-                    "heuristic"
-                ],
-                [
-                    "none",
-                    "none"
-                ]
-            ]
-        },
-        "value_type": "str"
-    },
-    {
-        "default_value": true,
-        "description": "Enables an intelligent algorithm which determines how to extract spectra, when creating a spectral library from DIA data. This is highly recommended and should almost always be enabled",
-        "key_translations": {
-            "diann_style_1": "smart_profiling_<DROP_KEY>",
-            "ursgal_style_1": "smart_profiling"
-        },
-        "name": "smart_profiling",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--smart-profiling"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ]
-        },
-        "value_type": "str"
-    },
-    {
         "default_value": "com.compomics.util.experiment.identification.protein_inference.executable.PeptideMapping",
         "description": "Default value accesses the PeptideMapper tool, other tools are not implemented/covered yet",
         "key_translations": {
@@ -5434,6 +4945,40 @@
     },
     {
         "default_value": false,
+        "description": "Do not produce the main report.",
+        "key_translations": {
+            "diann_style_1": "drop_main_report_<DROP_KEY>",
+            "ursgal_style_1": "drop_main_report"
+        },
+        "name": "drop_main_report",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--no-main-report"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
+        "default_value": false,
         "description": "Engine creates an own decoy database. Not recommended, because a target decoy database should be generated independently from the search engine, e.g. by using the uNode generate_target_decoy_1_0_0",
         "key_translations": {
             "comet_style_1": "decoy_search",
@@ -5543,8 +5088,8 @@
         "description": "Enzyme: Rule of protein cleavagePossible cleavages are :\n    argc           -> [R]|{P}\n    aspn           -> [X]|[D]\n    aspn_gluc\n    chymotrypsin   -> [FMWY]|{P}\n    chymotrypsin_p -> [FMWY]|[X]\n    cnbr           -> [M]|{P}\n    elastase       -> [AGILV]|{P}\n    formic_acid    -> [D]|{P}\n    gluc\n    lysc\n    lysc_p\n    lysn\n    no_cleavage\n    nonspecific\n    pepsina\n    semi_chymotrypsin\n    semi_gluc\n    semi_tryptic\n    thermolysin_p\n    top_down\n    trypsin\n    trypsin_chymotrypsin\n    trypsin_cnbr\n    trypsin_p\n    lysc_gluc",
         "key_translations": {
             "comet_style_1": "search_enzyme_number",
-            "diann_style_1": "--cut",
             "deepnovo_style_1": "cleavage_rule",
+            "diann_style_1": "--cut",
             "generate_target_decoy_style_1": "enzyme",
             "kojak_style_1": "enzyme",
             "mascot_style_1": "CLE",
@@ -5623,36 +5168,6 @@
                     "2"
                 ]
             ],
-            "diann_style_1": [
-                [
-                    "nonspecific",
-                    ""
-                ],
-                [
-                    "trypsin_p",
-                    "K*,R*"
-                ],
-                [
-                    "trypsin",
-                    "K*,R*,!*P"
-                ],
-                [
-                    "lysc",
-                    "K*"
-                ],
-                [
-                    "chymotrypsin",
-                    "F*,Y*,W*,M*,L*,!*P"
-                ],
-                [
-                    "aspn",
-                    "*D"
-                ],
-                [
-                    "gluc",
-                    "E*"
-                ]
-            ],
             "deepnovo_style_1": [
                 [
                     "argc",
@@ -5681,6 +5196,36 @@
                 [
                     "trypsin",
                     "trypsin"
+                ]
+            ],
+            "diann_style_1": [
+                [
+                    "aspn",
+                    "*D"
+                ],
+                [
+                    "chymotrypsin",
+                    "F*,Y*,W*,M*,L*,!*P"
+                ],
+                [
+                    "gluc",
+                    "E*"
+                ],
+                [
+                    "lysc",
+                    "K*"
+                ],
+                [
+                    "nonspecific",
+                    ""
+                ],
+                [
+                    "trypsin",
+                    "K*,R*,!*P"
+                ],
+                [
+                    "trypsin_p",
+                    "K*,R*"
                 ]
             ],
             "generate_target_decoy_style_1": [
@@ -8420,6 +7965,74 @@
         "value_type": "str_password"
     },
     {
+        "default_value": true,
+        "description": "Defines if an output matrix containing information about protein groups, gene groups, unique genes and precursors should be generated.",
+        "key_translations": {
+            "diann_style_1": "generate_output_matrix_<DROP_KEY>",
+            "ursgal_style_1": "generate_output_matrix"
+        },
+        "name": "generate_output_matrix",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--matrices"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "bool"
+    },
+    {
+        "default_value": true,
+        "description": "instructs DIA-NN to generate a spectral library.",
+        "key_translations": {
+            "diann_style_1": "generate_spectral_library_<DROP_KEY>",
+            "ursgal_style_1": "generate_spectral_library"
+        },
+        "name": "generate_spectral_library",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--gen-spec-lib"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
         "default_value": [
             "HexNAc",
             "HexNAc(2)"
@@ -9948,32 +9561,6 @@
         "value_type": "str"
     },
     {
-        "default_value": "smart-profiling",
-        "description": "Algorithm which determines how to extract spectra, when creating a spectral library from DIA data",
-        "key_translations": {
-            "diann_style_1": "spectral_library_extraction_algorithm",
-            "ursgal_style_1": "spectral_library_extraction_algorithm"
-        },
-        "name": "spectral_library_extraction_algorithm",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    "smart-profiling",
-                    "--smart-profiling"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    "smart-profiling",
-                    "smart-profiling"
-                ]
-            ]
-        },
-        "value_type": "str"
-    },
-    {
         "default_value": "q_exactive",
         "description": "Type of mass spectrometer (used to determine the scoring model)",
         "key_translations": {
@@ -10820,40 +10407,6 @@
         "value_type": "float"
     },
     {
-        "default_value": true,
-        "description": "Either to use unimod4. TODO: this param need revisiting, once it is clear what the param stand for!",
-        "key_translations": {
-            "diann_style_1": "use_unimod4_<DROP_KEY>",
-            "ursgal_style_1": "use_unimod4"
-        },
-        "name": "use_unimod4",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--unimod4"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ]
-        },
-        "value_type": "float"
-    },
-    {
         "default_value": 0.7,
         "description": " minimum required pyQms m_score for a quant event to be evaluated ",
         "key_translations": {
@@ -11307,8 +10860,8 @@
         "description": "Maximum number of missed cleavages per peptide",
         "key_translations": {
             "comet_style_1": "allowed_missed_cleavage",
-            "diann_style_1": "--missed_cleavages",
             "deepnovo_style_1": "num_missed_cleavage",
+            "diann_style_1": "--missed_cleavages",
             "kojak_style_1": "max_missed_cleavages",
             "mascot_style_1": "PFA",
             "moda_style_1": "MissedCleavage",
@@ -14075,6 +13628,19 @@
         "value_type": "bool"
     },
     {
+        "default_value": "",
+        "description": "Specifies the name of the main output report. The names of all other report files will be derived from this one.",
+        "key_translations": {
+            "diann_style_1": "--out",
+            "ursgal_style_1": "output_report_name"
+        },
+        "name": "output_report_name",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
         "default_value": false,
         "description": " Override error check and do not fall back on default score vector in case of suspect score vector from SVM.",
         "key_translations": {
@@ -14104,6 +13670,74 @@
         ],
         "triggers_rerun": true,
         "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": true,
+        "description": "Instructs DIA-NN to integrate chromatographic peaks only in the vicinity of the apex - equivalent to the \"Robust LC\" quantification mode.",
+        "key_translations": {
+            "diann_style_1": "peak_center_<DROP_KEY>",
+            "ursgal_style_1": "peak_center"
+        },
+        "name": "peak_center",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--peak-center"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
+        "default_value": true,
+        "description": "Turns off interference subtraction from fragment ion chromatograms - equivalent to the \"high precision\" quantification mode.",
+        "key_translations": {
+            "diann_style_1": "substract_interference_<DROP_KEY>",
+            "ursgal_style_1": "substract_interference"
+        },
+        "name": "peak_center",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--no-ifs-removal"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
         "value_type": "str"
     },
     {
@@ -14233,6 +13867,74 @@
             ]
         },
         "value_type": "select"
+    },
+    {
+        "default_value": false,
+        "description": "Instructs DIA-NN to perform deep learning-based prediction of spectra, retention times and ion mobility values.",
+        "key_translations": {
+            "diann_style_1": "perform_deeplearning_prediction_<DROP_KEY>",
+            "ursgal_style_1": "perform_deeplearning_prediction"
+        },
+        "name": "perform_deeplearning_prediction",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--predictor"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
+        "default_value": false,
+        "description": "Instructs DIA-NN to perform an in silico digest of the sequence database.",
+        "key_translations": {
+            "diann_style_1": "perform_in-silico_digest_<DROP_KEY>",
+            "ursgal_style_1": "perform_in-silico_digest"
+        },
+        "name": "perform_in-silico_digest",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--fasta-search"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "str"
     },
     {
         "default_value": 0.0,
@@ -15140,6 +14842,40 @@
         "value_type": "bool"
     },
     {
+        "default_value": "heuristic",
+        "description": "Protein inference algorithm that DIANN should use.",
+        "key_translations": {
+            "diann_style_1": "protein_inference_algorithm_<DROP_KEY>",
+            "ursgal_style_1": "protein_inference_algorithm"
+        },
+        "name": "protein_inference_algorithm",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    "heuristic",
+                    "--relaxed-prot-inf"
+                ],
+                [
+                    "none",
+                    "--no-prot-inf"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "heuristic",
+                    "heuristic"
+                ],
+                [
+                    "none",
+                    "none"
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
         "default_value": {},
         "description": "Defines the column names which should have their different values merged into a single value when merging rows corresponding the same PSM Formatted as a dictionary with keys as the column names and values as a parameter to specify which one of the different values to take Available values:    max_value\n    min_value\n    most_frequent\n    avg_value",
         "key_translations": {
@@ -15488,6 +15224,40 @@
         "value_type": "str"
     },
     {
+        "default_value": false,
+        "description": "Reannotate the spectral library with protein information from the FASTA database, using the specified digest specificity.",
+        "key_translations": {
+            "diann_style_1": "reannotate_spectral_library_<DROP_KEY>",
+            "ursgal_style_1": "reannotate_spectral_library"
+        },
+        "name": "reannotate_spectral_library",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--reannotate"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "bool"
+    },
+    {
         "default_value": 0.2,
         "description": " Relative intensity error range (for the most intense peak) ",
         "key_translations": {
@@ -15707,6 +15477,40 @@
         "value_type": "bool"
     },
     {
+        "default_value": false,
+        "description": "Either to report qvalues in the report. TODO: this parameter has to be revisited, as it is not available in the github documentation!",
+        "key_translations": {
+            "diann_style_1": "report_qvalues_<DROP_KEY>",
+            "ursgal_style_1": "report_qvalues"
+        },
+        "name": "report_qvalues",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--qvalue"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
         "default_value": "TMTpro",
         "description": "Reporter Ion type",
         "key_translations": {
@@ -15844,6 +15648,40 @@
         ],
         "triggers_rerun": true,
         "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": true,
+        "description": "Perform RT profiling. TODO: this param has to be revisited once it is clear what it stands for!",
+        "key_translations": {
+            "diann_style_1": "rt_profiling_<DROP_KEY>",
+            "ursgal_style_1": "rt_profiling"
+        },
+        "name": "rt_profiling",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--rt-profiling"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
         "value_type": "str"
     },
     {
@@ -16273,6 +16111,40 @@
         "value_type": "list"
     },
     {
+        "default_value": true,
+        "description": "Enables an intelligent algorithm which determines how to extract spectra, when creating a spectral library from DIA data. This is highly recommended and should almost always be enabled",
+        "key_translations": {
+            "diann_style_1": "smart_profiling_<DROP_KEY>",
+            "ursgal_style_1": "smart_profiling"
+        },
+        "name": "smart_profiling",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--smart-profiling"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
         "default_value": null,
         "description": "Specifies source_path of a file",
         "key_translations": {
@@ -16302,6 +16174,45 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "int"
+    },
+    {
+        "default_value": "smart-profiling",
+        "description": "Algorithm which determines how to extract spectra, when creating a spectral library from DIA data",
+        "key_translations": {
+            "diann_style_1": "spectral_library_extraction_algorithm",
+            "ursgal_style_1": "spectral_library_extraction_algorithm"
+        },
+        "name": "spectral_library_extraction_algorithm",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    "smart-profiling",
+                    "--smart-profiling"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "smart-profiling",
+                    "smart-profiling"
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
+        "default_value": "",
+        "description": "Specifies the name of a spectral library to be generated.",
+        "key_translations": {
+            "diann_style_1": "--out-lib",
+            "ursgal_style_1": "spectral_library_name"
+        },
+        "name": "spectral_library_name",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
     },
     {
         "default_value": "q-value",
@@ -16911,6 +16822,40 @@
         "value_type": "str"
     },
     {
+        "default_value": false,
+        "description": "True if timsTOF data is used. TODO: this param has to be revisited once it is clear what it stands for!",
+        "key_translations": {
+            "diann_style_1": "tims_scan_<DROP_KEY>",
+            "ursgal_style_1": "tims_scan"
+        },
+        "name": "tims_scan",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--tims-scan"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
         "default_value": 0.01,
         "description": " False discovery rate threshold to define positive examples in training. Set to testFDR if 0. Default = 0.01",
         "key_translations": {
@@ -16925,6 +16870,19 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "float"
+    },
+    {
+        "default_value": "",
+        "description": "Specifies a path to a 'training library' for the legacy predictor.",
+        "key_translations": {
+            "diann_style_1": "--learn-lib",
+            "ursgal_style_1": "training_library_name"
+        },
+        "name": "training_library_name",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
     },
     {
         "default_value": 0,
@@ -17074,6 +17032,82 @@
         ],
         "triggers_rerun": true,
         "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": true,
+        "description": "Use existing .quant files, if available.",
+        "key_translations": {
+            "diann_style_1": "use_available_quant_files_<DROP_KEY>",
+            "ursgal_style_1": "use_available_quant_files"
+        },
+        "name": "use_available_quant_files",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--use-quant"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
+        "default_value": "genes",
+        "description": "Controls the protein inference mode, with 0 - isoforms, 1 - protein names (as in UniProt), 2 - genes.",
+        "key_translations": {
+            "diann_style_1": "--pg-level",
+            "ursgal_style_1": "protein_inference_mode"
+        },
+        "name": "use_available_quant_files",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    "genes",
+                    2
+                ],
+                [
+                    "isoforms",
+                    0
+                ],
+                [
+                    "protein names",
+                    1
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "genes",
+                    "genes"
+                ],
+                [
+                    "isoforms",
+                    "isoforms"
+                ],
+                [
+                    "protein names",
+                    "protein names"
+                ]
+            ]
+        },
         "value_type": "str"
     },
     {
@@ -17351,6 +17385,40 @@
             ]
         },
         "value_type": "bool"
+    },
+    {
+        "default_value": true,
+        "description": "Either to use unimod4. TODO: this param need revisiting, once it is clear what the param stand for!",
+        "key_translations": {
+            "diann_style_1": "use_unimod4_<DROP_KEY>",
+            "ursgal_style_1": "use_unimod4"
+        },
+        "name": "use_unimod4",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--unimod4"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "float"
     },
     {
         "default_value": "validated.csv",
@@ -20299,74 +20367,6 @@
         "triggers_rerun": false,
         "value_translations": {},
         "value_type": "int"
-    },
-    {
-        "default_value": false,
-        "description": "Reannotate the spectral library with protein information from the FASTA database, using the specified digest specificity.",
-        "key_translations": {
-            "diann_style_1": "reannotate_spectral_library_<DROP_KEY>",
-            "ursgal_style_1": "reannotate_spectral_library"
-        },
-        "name": "reannotate_spectral_library",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--reannotate"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ]
-        },
-        "value_type": "bool"
-    },
-    {
-        "default_value": true,
-        "description": "Defines if an output matrix containing information about protein groups, gene groups, unique genes and precursors should be generated.",
-        "key_translations": {
-            "diann_style_1": "generate_output_matrix_<DROP_KEY>",
-            "ursgal_style_1": "generate_output_matrix"
-        },
-        "name": "generate_output_matrix",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--matrices"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ]
-        },
-        "value_type": "bool"
     },
     {
         "default_value": false,
