@@ -412,42 +412,102 @@
         "value_type": "str"
     },
     {
-        "default_value": "center",
-        "description": "Quantification strategy of chromatographic peaks for DIA-NN. Available options are center, height and translation.",
+        "default_value": true,
+        "description": "Instructs DIA-NN to integrate chromatographic peaks only in the vicinity of the apex - equivalent to the \"Robust LC\" quantification mode.",
         "key_translations": {
-            "diann_style_1": "quantification_mode",
-            "ursgal_style_1": "quantification_mode"
+            "diann_style_1": "peak_center_<DROP_KEY>",
+            "ursgal_style_1": "peak_center"
         },
-        "name": "quantification_mode",
+        "name": "peak_center",
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {
             "diann_style_1": [
                 [
-                    "center",
+                    false,
+                    ""
+                ],
+                [
+                    true,
                     "--peak-center"
-                ],
-                [
-                    "height",
-                    "--peak-height"
-                ],
-                [
-                    "translation",
-                    "--peak-translation"
                 ]
             ],
             "ursgal_style_1": [
                 [
-                    "center",
-                    "center"
+                    false,
+                    false
                 ],
                 [
-                    "height",
-                    "height"
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
+        "default_value": true,
+        "description": "Turns off interference subtraction from fragment ion chromatograms - equivalent to the \"high precision\" quantification mode.",
+        "key_translations": {
+            "diann_style_1": "substract_interference_<DROP_KEY>",
+            "ursgal_style_1": "substract_interference"
+        },
+        "name": "peak_center",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
                 ],
                 [
-                    "translation",
-                    "translation"
+                    true,
+                    "--no-ifs-removal"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
+        "default_value": true,
+        "description": "Do not produce the main report.",
+        "key_translations": {
+            "diann_style_1": "drop_main_report_<DROP_KEY>",
+            "ursgal_style_1": "drop_main_report"
+        },
+        "name": "drop_main_report",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--no-main-report"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
                 ]
             ]
         },
