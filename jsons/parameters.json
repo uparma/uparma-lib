@@ -514,6 +514,40 @@
         "value_type": "str"
     },
     {
+        "default_value": true,
+        "description": "Perform RT profiling. TODO: this param has to be revisited once it is clear what it stands for!",
+        "key_translations": {
+            "diann_style_1": "rt_profiling_<DROP_KEY>",
+            "ursgal_style_1": "rt_profiling"
+        },
+        "name": "rt_profiling",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--rt-profiling"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
         "default_value": "local",
         "description": "Type of read ends alignment",
         "key_translations": {
