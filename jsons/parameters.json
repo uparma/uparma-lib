@@ -582,6 +582,87 @@
         "value_type": "str"
     },
     {
+        "default_value": true,
+        "description": "instructs DIA-NN to generate a spectral library.",
+        "key_translations": {
+            "diann_style_1": "generate_spectral_library_<DROP_KEY>",
+            "ursgal_style_1": "generate_spectral_library"
+        },
+        "name": "generate_spectral_library",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--gen-spec-lib"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
+        "default_value": "",
+        "description": "Specifies the name of a spectral library to be generated.",
+        "key_translations": {
+            "diann_style_1": "--out-lib",
+            "ursgal_style_1": "spectral_library_name"
+        },
+        "name": "spectral_library_name",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": true,
+        "description": "Use existing .quant files, if available.",
+        "key_translations": {
+            "diann_style_1": "use_available_quant_files_<DROP_KEY>",
+            "ursgal_style_1": "use_available_quant_files"
+        },
+        "name": "use_available_quant_files",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--use-quant"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
         "default_value": "local",
         "description": "Type of read ends alignment",
         "key_translations": {
