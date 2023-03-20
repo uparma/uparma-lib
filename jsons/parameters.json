@@ -3442,6 +3442,40 @@
         "value_type": "bool"
     },
     {
+        "default_value": "heuristic",
+        "description": "Protein inference algorithm that DIANN should use.",
+        "key_translations": {
+            "diann_style_1": "protein_inference_algorithm_<DROP_KEY>",
+            "ursgal_style_1": "protein_inference_algorithm",
+        },
+        "name": "protein_inference_algorithm",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            diann_style_1": [
+                [
+                    "heuristic",
+                    "--relaxed-prot-inf"
+                ],
+                [
+                    "none",
+                    "--no-prot-inf"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "heuristic",
+                    "heuristic"
+                ],
+                [
+                    "none",
+                    "none"
+                ]
+            ],
+        },
+        "value_type": "str"
+    },
+    {
         "default_value": "com.compomics.util.experiment.identification.protein_inference.executable.PeptideMapping",
         "description": "Default value accesses the PeptideMapper tool, other tools are not implemented/covered yet",
         "key_translations": {
