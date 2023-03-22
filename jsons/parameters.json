@@ -8054,10 +8054,6 @@
                     "Peak Detection Type"
                 ],
                 [
-                    "reported_mz",
-                    "Peak MZ"
-                ],
-                [
                     "flashlfq:peak_rt_apex",
                     "Peak RT Apex"
                 ],
@@ -8086,16 +8082,20 @@
                     "PSMs Mapped"
                 ],
                 [
-                    "theoretical_mz",
-                    "Theoretical MZ"
-                ],
-                [
                     "quant_value",
                     "Peak intensity"
                 ],
                 [
                     "raw_filename",
                     "File Name"
+                ],
+                [
+                    "reported_mz",
+                    "Peak MZ"
+                ],
+                [
+                    "theoretical_mz",
+                    "Theoretical MZ"
                 ],
                 [
                     "trivial_name",
@@ -9068,20 +9068,28 @@
             ],
             "tmt_quant_style_1": [
                 [
+                    "accuracy_mz",
+                    "accuracy"
+                ],
+                [
                     "lineage_root",
                     "filename"
                 ],
                 [
-                    "accuracy_mz",
-                    "accuracy"
+                    "reported_mz",
+                    "iso_mz"
                 ],
                 [
                     "theoretical_mz",
                     "mz"
                 ],
                 [
-                    "reported_mz",
-                    "iso_mz"
+                    "tmt_quant:isolabel_id",
+                    "isolabel_id"
+                ],
+                [
+                    "tmt_quant:original_quant_value",
+                    "original_quant_value"
                 ],
                 [
                     "tmt_quant:raw_quant_area",
@@ -9092,16 +9100,8 @@
                     "raw_quant_intensity"
                 ],
                 [
-                    "tmt_quant:isolabel_id",
-                    "isolabel_id"
-                ],
-                [
                     "tmt_quant:s2i",
                     "s2i"
-                ],
-                [
-                    "tmt_quant:original_quant_value",
-                    "original_quant_value"
                 ]
             ],
             "ursgal_style_1": [
