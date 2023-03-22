@@ -7926,6 +7926,7 @@
             "pipi_style_1": "header_translations",
             "ptmshepherd_style_1": "header_translations",
             "tag_graph_style_1": "header_translations",
+            "tmt_quant_style_1": "header_translations",
             "ursgal_style_1": "header_translations",
             "xtandem_style_1": "header_translations"
         },
@@ -8053,7 +8054,7 @@
                     "Peak Detection Type"
                 ],
                 [
-                    "flashlfq:peak_mz",
+                    "reported_mz",
                     "Peak MZ"
                 ],
                 [
@@ -8085,7 +8086,7 @@
                     "PSMs Mapped"
                 ],
                 [
-                    "flashlfq:theoretical_mz",
+                    "theoretical_mz",
                     "Theoretical MZ"
                 ],
                 [
@@ -9063,6 +9064,44 @@
                 [
                     "unique_siblings",
                     "Unique Siblings"
+                ]
+            ],
+            "tmt_quant_style_1": [
+                [
+                    "lineage_root",
+                    "filename"
+                ],
+                [
+                    "accuracy_mz",
+                    "accuracy"
+                ],
+                [
+                    "theoretical_mz",
+                    "mz"
+                ],
+                [
+                    "reported_mz",
+                    "iso_mz"
+                ],
+                [
+                    "tmt_quant:raw_quant_area",
+                    "raw_quant_area"
+                ],
+                [
+                    "tmt_quant:raw_quant_intensity",
+                    "raw_quant_intensity"
+                ],
+                [
+                    "tmt_quant:isolabel_id",
+                    "isolabel_id"
+                ],
+                [
+                    "tmt_quant:s2i",
+                    "s2i"
+                ],
+                [
+                    "tmt_quant:original_quant_value",
+                    "original_quant_value"
                 ]
             ],
             "ursgal_style_1": [

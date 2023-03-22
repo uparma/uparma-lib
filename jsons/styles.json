@@ -784,6 +784,14 @@
         ]
     },
     {
+        "name": "tmt_quant_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "tmt_quant_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
         "name": "umap_style_1",
         "reference": "Ursgal2 Team",
         "style": "umap_style_1",
