@@ -4975,7 +4975,7 @@
                 ]
             ]
         },
-        "value_type": "str"
+        "value_type": "bool"
     },
     {
         "default_value": false,
@@ -8030,7 +8030,7 @@
                 ]
             ]
         },
-        "value_type": "str"
+        "value_type": "bool"
     },
     {
         "default_value": [
@@ -13704,7 +13704,7 @@
                 ]
             ]
         },
-        "value_type": "str"
+        "value_type": "bool"
     },
     {
         "default_value": true,
@@ -13738,7 +13738,7 @@
                 ]
             ]
         },
-        "value_type": "str"
+        "value_type": "bool"
     },
     {
         "default_value": {
@@ -13900,7 +13900,7 @@
                 ]
             ]
         },
-        "value_type": "str"
+        "value_type": "bool"
     },
     {
         "default_value": false,
@@ -13934,7 +13934,7 @@
                 ]
             ]
         },
-        "value_type": "str"
+        "value_type": "bool"
     },
     {
         "default_value": 0.0,
@@ -15508,7 +15508,7 @@
                 ]
             ]
         },
-        "value_type": "str"
+        "value_type": "bool"
     },
     {
         "default_value": "TMTpro",
@@ -15682,7 +15682,7 @@
                 ]
             ]
         },
-        "value_type": "str"
+        "value_type": "bool"
     },
     {
         "default_value": "None",
@@ -16142,7 +16142,7 @@
                 ]
             ]
         },
-        "value_type": "str"
+        "value_type": "bool"
     },
     {
         "default_value": null,
@@ -16179,7 +16179,7 @@
         "default_value": "smart-profiling",
         "description": "Algorithm which determines how to extract spectra, when creating a spectral library from DIA data",
         "key_translations": {
-            "diann_style_1": "spectral_library_extraction_algorithm",
+            "diann_style_1": "spectral_library_extraction_algorithm_<DROP_KEY>",
             "ursgal_style_1": "spectral_library_extraction_algorithm"
         },
         "name": "spectral_library_extraction_algorithm",
@@ -16853,7 +16853,7 @@
                 ]
             ]
         },
-        "value_type": "str"
+        "value_type": "bool"
     },
     {
         "default_value": 0.01,
@@ -17066,7 +17066,7 @@
                 ]
             ]
         },
-        "value_type": "str"
+        "value_type": "bool"
     },
     {
         "default_value": "genes",
@@ -17418,7 +17418,7 @@
                 ]
             ]
         },
-        "value_type": "float"
+        "value_type": "bool"
     },
     {
         "default_value": "validated.csv",
