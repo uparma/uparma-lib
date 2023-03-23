@@ -15259,6 +15259,40 @@
         "value_type": "bool"
     },
     {
+        "default_value": false,
+        "description": "Reanalyse a set of datasets after performing identification on each one (perform Match Between Runs).",
+        "key_translations": {
+            "diann_style_1": "enable_dataset_reanalysis_<DROP_KEY>",
+            "ursgal_style_1": "enable_dataset_reanalysis"
+        },
+        "name": "enable_dataset_reanalysis",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--reanalyse"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "bool"
+    },
+    {
         "default_value": 0.2,
         "description": " Relative intensity error range (for the most intense peak) ",
         "key_translations": {
