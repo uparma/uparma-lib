@@ -7926,7 +7926,7 @@
             "pipi_style_1": "header_translations",
             "ptmshepherd_style_1": "header_translations",
             "tag_graph_style_1": "header_translations",
-            "tmt_quant_style_1": "header_translations",
+            "cz_tmt_quant_style_1": "header_translations",
             "ursgal_style_1": "header_translations",
             "xtandem_style_1": "header_translations"
         },
@@ -9066,7 +9066,7 @@
                     "Unique Siblings"
                 ]
             ],
-            "tmt_quant_style_1": [
+            "cz_tmt_quant_style_1": [
                 [
                     "accuracy_mz",
                     "accuracy"
