@@ -548,6 +548,14 @@
         ]
     },
     {
+        "name": "cz_tmt_quant_style_1",
+        "reference": "Mathieson, T., Sweetman G. and Fufezan. C",
+        "style": "tmt_quant_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
         "name": "echo_to_file",
         "reference": [
             "Ursgal2 Team"
@@ -779,14 +787,6 @@
         "name": "test_node_style_1",
         "reference": "Ursgal2 Team",
         "style": "_test_node_style_1",
-        "versions": [
-            "1.0.0"
-        ]
-    },
-    {
-        "name": "cz_tmt_quant_style_1",
-        "reference": "Mathieson, T., Sweetman G. and Fufezan. C",
-        "style": "tmt_quant_style_1",
         "versions": [
             "1.0.0"
         ]

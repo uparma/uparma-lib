@@ -7910,6 +7910,7 @@
         "description": "Translate output headers into Ursgal pyiohat style headers\n    'None' : None",
         "key_translations": {
             "comet_style_1": "header_translations",
+            "cz_tmt_quant_style_1": "header_translations",
             "deepnovo_style_1": "header_translations",
             "flash_lfq_style_1": "header_translations",
             "kojak_percolator_style_1": "header_translations",
@@ -7926,7 +7927,6 @@
             "pipi_style_1": "header_translations",
             "ptmshepherd_style_1": "header_translations",
             "tag_graph_style_1": "header_translations",
-            "cz_tmt_quant_style_1": "header_translations",
             "ursgal_style_1": "header_translations",
             "xtandem_style_1": "header_translations"
         },
@@ -7980,6 +7980,44 @@
                 [
                     "sequence",
                     "peptide_ref"
+                ]
+            ],
+            "cz_tmt_quant_style_1": [
+                [
+                    "accuracy_mz",
+                    "accuracy"
+                ],
+                [
+                    "raw_data_location",
+                    "filename"
+                ],
+                [
+                    "reported_mz",
+                    "mz"
+                ],
+                [
+                    "theoretical_mz",
+                    "iso_mz"
+                ],
+                [
+                    "tmt_quant:isolabel_id",
+                    "isolabel_id"
+                ],
+                [
+                    "tmt_quant:original_quant_value",
+                    "original_quant_value"
+                ],
+                [
+                    "tmt_quant:raw_quant_area",
+                    "raw_quant_area"
+                ],
+                [
+                    "tmt_quant:raw_quant_intensity",
+                    "raw_quant_intensity"
+                ],
+                [
+                    "tmt_quant:s2i",
+                    "s2i"
                 ]
             ],
             "deepnovo_style_1": [
@@ -9064,44 +9102,6 @@
                 [
                     "unique_siblings",
                     "Unique Siblings"
-                ]
-            ],
-            "cz_tmt_quant_style_1": [
-                [
-                    "accuracy_mz",
-                    "accuracy"
-                ],
-                [
-                    "raw_data_location",
-                    "filename"
-                ],
-                [
-                    "reported_mz",
-                    "mz"
-                ],
-                [
-                    "theoretical_mz",
-                    "iso_mz"
-                ],
-                [
-                    "tmt_quant:isolabel_id",
-                    "isolabel_id"
-                ],
-                [
-                    "tmt_quant:original_quant_value",
-                    "original_quant_value"
-                ],
-                [
-                    "tmt_quant:raw_quant_area",
-                    "raw_quant_area"
-                ],
-                [
-                    "tmt_quant:raw_quant_intensity",
-                    "raw_quant_intensity"
-                ],
-                [
-                    "tmt_quant:s2i",
-                    "s2i"
                 ]
             ],
             "ursgal_style_1": [
