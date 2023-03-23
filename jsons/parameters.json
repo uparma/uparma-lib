@@ -10861,7 +10861,7 @@
         "key_translations": {
             "comet_style_1": "allowed_missed_cleavage",
             "deepnovo_style_1": "num_missed_cleavage",
-            "diann_style_1": "--missed_cleavages",
+            "diann_style_1": "--missed-cleavages",
             "kojak_style_1": "max_missed_cleavages",
             "mascot_style_1": "PFA",
             "moda_style_1": "MissedCleavage",
