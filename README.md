@@ -98,7 +98,7 @@ To add/update a value translation you have to add a list of translations into th
     }
 ```
 
-the value translations are a list of lists for your desired style. Each individual value translation is a list of two elements: `[ursgal_param_value, tool_param_value]`.
+the value translations are a list of lists for your desired style. Each individual value translation is a list of two elements: `[uparma_param_value, tool_param_value]`.
 **Note:** to make the whole translation logic work in any direction, the value translations **MUST** also be provided for `ursgal_style_1`. As you can see in the example, the value is simply mapped to itself. 
 
 
@@ -114,7 +114,7 @@ These parameters require further tool specific processing, prior being injected 
 
 the tool cutadapt expects two values following the **-u** parameter. For matter of harmonization, as other tools might expect it in a different format, these two parameters are separated and flagged as `<part1>` and `<part2>`. During command line preparation for cutadapt, these parameters will be caught and formatted to the expected format.
 
-A special case bulid the parameters ending with a **\<DROP_KEY\>** tag. 
+A special case are the parameters ending with a **\<DROP_KEY\>** key_translation. 
 
 ```
 {
