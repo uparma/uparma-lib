@@ -15479,37 +15479,16 @@
     },
     {
         "default_value": false,
-        "description": "Either to report qvalues in the report. TODO: this parameter has to be revisited, as it is not available in the github documentation!",
+        "description": "Filter protein level qvalues",
         "key_translations": {
-            "diann_style_1": "report_qvalues_<DROP_KEY>",
+            "diann_style_1": "qvalue",
             "ursgal_style_1": "report_qvalues"
         },
-        "name": "report_qvalues",
+        "name": "filter_qvalues",
         "tag": [],
         "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--qvalue"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ]
-        },
-        "value_type": "bool"
+        "value_translations": {},
+        "value_type": "float"
     },
     {
         "default_value": "TMTpro",
