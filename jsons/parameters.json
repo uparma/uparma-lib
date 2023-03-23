@@ -3261,11 +3261,25 @@
         "value_type": "str"
     },
     {
-        "default_value": 0.1,
-        "description": "minimum distance to neighbour",
+        "default_value": 0.5,
+        "description": "The maximum distance between two samples for one to be considered as in the neighborhood of the other",
         "key_translations": {
             "align_files_dbscan_style_1": "eps",
             "align_scans_dbscan_style_1": "eps",
+            "ursgal_style_1": "cluster_max_distance"
+        },
+        "name": "cluster_max_distance",
+        "tag": [
+            "cluster"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "float"
+    },
+    {
+        "default_value": 0.1,
+        "description": "minimum distance to neighbour",
+        "key_translations": {
             "umap_style_1": "min_distance",
             "ursgal_style_1": "cluster_min_distance"
         },
@@ -3275,7 +3289,7 @@
         ],
         "triggers_rerun": true,
         "value_translations": {},
-        "value_type": "int"
+        "value_type": "float"
     },
     {
         "default_value": 2,
