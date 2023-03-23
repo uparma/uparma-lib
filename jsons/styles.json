@@ -784,8 +784,8 @@
         ]
     },
     {
-        "name": "tmt_quant_style_1",
-        "reference": "Ursgal2 Team",
+        "name": "cz_tmt_quant_style_1",
+        "reference": "Mathieson, T., Sweetman G. and Fufezan. C",
         "style": "tmt_quant_style_1",
         "versions": [
             "1.0.0"
