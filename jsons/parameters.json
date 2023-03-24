@@ -7031,7 +7031,7 @@
         "default_value": null,
         "description": "Engines specific translation of experimental design file headers",
         "key_translations": {
-            "flash_lfq_style": "experimental_design_header_translation"
+            "flash_lfq_style_1": "experimental_design_header_translation"
         },
         "name": "experiment_design_header_translations",
         "tag": [
