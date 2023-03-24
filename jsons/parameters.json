@@ -15513,12 +15513,12 @@
     },
     {
         "default_value": false,
-        "description": "",
+        "description": "Enable qvalue filtering.",
         "key_translations": {
-            "diann_style_1": "qvalue",
-            "ursgal_style_1": "report_qvalues"
+            "diann_style_1": "filter_qvalues",
+            "ursgal_style_1": "filter_qvalues"
         },
-        "name": "report_qvalues",
+        "name": "filter_qvalues",
         "tag": [
             "validation"
         ],
