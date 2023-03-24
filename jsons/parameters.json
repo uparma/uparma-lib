@@ -13711,10 +13711,10 @@
         "default_value": true,
         "description": "Turns off interference subtraction from fragment ion chromatograms - equivalent to the \"high precision\" quantification mode.",
         "key_translations": {
-            "diann_style_1": "substract_interference_<DROP_KEY>",
-            "ursgal_style_1": "substract_interference"
+            "diann_style_1": "subtract_interference_<DROP_KEY>",
+            "ursgal_style_1": "subtract_interference"
         },
-        "name": "peak_center",
+        "name": "subtract_interference",
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {
