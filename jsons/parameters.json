@@ -7064,6 +7064,10 @@
             ],
             "ursgal_style_1": [
                 [
+                    "Techrep",
+                    "tech_rep"
+                ],
+                [
                     "bio_rep",
                     "bio_rep"
                 ],
@@ -7074,10 +7078,6 @@
                 [
                     "filename",
                     "filename"
-                ],
-                [
-                    "Techrep",
-                    "tech_rep"
                 ],
                 [
                     "sample_type",
