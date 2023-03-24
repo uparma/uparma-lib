@@ -16125,40 +16125,6 @@
         "value_type": "list"
     },
     {
-        "default_value": true,
-        "description": "Enables an intelligent algorithm which determines how to extract spectra, when creating a spectral library from DIA data. This is highly recommended and should almost always be enabled",
-        "key_translations": {
-            "diann_style_1": "smart_profiling_<DROP_KEY>",
-            "ursgal_style_1": "smart_profiling"
-        },
-        "name": "smart_profiling",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--smart-profiling"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ]
-        },
-        "value_type": "bool"
-    },
-    {
         "default_value": null,
         "description": "Specifies source_path of a file",
         "key_translations": {
