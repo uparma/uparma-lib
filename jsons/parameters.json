@@ -15530,7 +15530,7 @@
         "default_value": 0.01,
         "description": "Upper value for qvalue filter",
         "key_translations": {
-            "diann_style_1": "qvalue",
+            "diann_style_1": "--qvalue",
             "ursgal_style_1": "qvalue_filter_threshold_upper"
         },
         "name": "qvalue_filter_threshold_upper",
