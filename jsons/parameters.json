@@ -7031,7 +7031,8 @@
         "default_value": null,
         "description": "Engines specific translation of experimental design file headers",
         "key_translations": {
-            "flash_lfq_style_1": "experimental_design_header_translation"
+            "flash_lfq_style_1": "experimental_design_header_translation",
+            "ursgal_style_1": "experimental_design_header_translation"
         },
         "name": "experiment_design_header_translations",
         "tag": [
@@ -7058,7 +7059,29 @@
                 ],
                 [
                     "Techrep",
-                    "tech_replicate"
+                    "tech_rep"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "bio_rep",
+                    "bio_rep"
+                ],
+                [
+                    "conditon",
+                    "conditon"
+                ],
+                [
+                    "filename",
+                    "filename"
+                ],
+                [
+                    "Techrep",
+                    "tech_rep"
+                ],
+                [
+                    "sample_type",
+                    "sample_type"
                 ]
             ]
         },
