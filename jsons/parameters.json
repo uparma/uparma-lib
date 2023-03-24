@@ -15512,22 +15512,7 @@
         "value_type": "bool"
     },
     {
-        "default_value": false,
-        "description": "Enable qvalue filtering.",
-        "key_translations": {
-            "diann_style_1": "filter_qvalues",
-            "ursgal_style_1": "filter_qvalues"
-        },
-        "name": "filter_qvalues",
-        "tag": [
-            "validation"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "bool"
-    },
-    {
-        "default_value": 0.01,
+        "default_value": 1,
         "description": "Upper value for qvalue filter",
         "key_translations": {
             "diann_style_1": "--qvalue",
