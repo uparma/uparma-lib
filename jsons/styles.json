@@ -548,6 +548,14 @@
         ]
     },
     {
+        "name": "cz_tmt_quant_style_1",
+        "reference": "Mathieson, T., Sweetman G. and Fufezan. C",
+        "style": "cz_tmt_quant_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
         "name": "DIA-NN",
         "reference": "Demichev, V., Messner, C.B., Vernardis, S.I. et al. DIA-NN: neural networks and interference correction enable deep proteome coverage in high throughput. Nat Methods 17, 41–44 (2020)",
         "style": "diann_style_1",

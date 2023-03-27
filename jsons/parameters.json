@@ -3273,11 +3273,25 @@
         "value_type": "str"
     },
     {
-        "default_value": 0.1,
-        "description": "minimum distance to neighbour",
+        "default_value": 0.5,
+        "description": "The maximum distance between two samples for one to be considered as in the neighborhood of the other",
         "key_translations": {
             "align_files_dbscan_style_1": "eps",
             "align_scans_dbscan_style_1": "eps",
+            "ursgal_style_1": "cluster_max_distance"
+        },
+        "name": "cluster_max_distance",
+        "tag": [
+            "cluster"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "float"
+    },
+    {
+        "default_value": 0.1,
+        "description": "minimum distance to neighbour",
+        "key_translations": {
             "umap_style_1": "min_distance",
             "ursgal_style_1": "cluster_min_distance"
         },
@@ -3287,7 +3301,7 @@
         ],
         "triggers_rerun": true,
         "value_translations": {},
-        "value_type": "int"
+        "value_type": "float"
     },
     {
         "default_value": 2,
@@ -7092,6 +7106,66 @@
         "value_type": "int"
     },
     {
+        "default_value": null,
+        "description": "Engines specific translation of experimental design file headers",
+        "key_translations": {
+            "flash_lfq_style_1": "experimental_design_header_translation",
+            "ursgal_style_1": "experimental_design_header_translation"
+        },
+        "name": "experiment_design_header_translations",
+        "tag": [
+            "experimental_design"
+        ],
+        "triggers_rerun": false,
+        "value_translations": {
+            "flash_lfq_style_1": [
+                [
+                    "Biorep",
+                    "bio_rep"
+                ],
+                [
+                    "Condition",
+                    "condition"
+                ],
+                [
+                    "FileName",
+                    "filename"
+                ],
+                [
+                    "Fraction",
+                    "fraction"
+                ],
+                [
+                    "Techrep",
+                    "tech_rep"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "Techrep",
+                    "tech_rep"
+                ],
+                [
+                    "bio_rep",
+                    "bio_rep"
+                ],
+                [
+                    "conditon",
+                    "conditon"
+                ],
+                [
+                    "filename",
+                    "filename"
+                ],
+                [
+                    "sample_type",
+                    "sample_type"
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
         "default_value": [],
         "description": " ",
         "is_parameter_collection": true,
@@ -8057,6 +8131,7 @@
         "description": "Translate output headers into Ursgal pyiohat style headers\n    'None' : None",
         "key_translations": {
             "comet_style_1": "header_translations",
+            "cz_tmt_quant_style_1": "header_translations",
             "deepnovo_style_1": "header_translations",
             "flash_lfq_style_1": "header_translations",
             "kojak_percolator_style_1": "header_translations",
@@ -8126,6 +8201,44 @@
                 [
                     "sequence",
                     "peptide_ref"
+                ]
+            ],
+            "cz_tmt_quant_style_1": [
+                [
+                    "accuracy_mz",
+                    "accuracy"
+                ],
+                [
+                    "raw_data_location",
+                    "filename"
+                ],
+                [
+                    "reported_mz",
+                    "mz"
+                ],
+                [
+                    "theoretical_mz",
+                    "iso_mz"
+                ],
+                [
+                    "tmt_quant:isolabel_id",
+                    "isolabel_id"
+                ],
+                [
+                    "tmt_quant:original_quant_value",
+                    "original_quant_value"
+                ],
+                [
+                    "tmt_quant:raw_quant_area",
+                    "raw_quant_area"
+                ],
+                [
+                    "tmt_quant:raw_quant_intensity",
+                    "raw_quant_intensity"
+                ],
+                [
+                    "tmt_quant:s2i",
+                    "s2i"
                 ]
             ],
             "deepnovo_style_1": [
@@ -8200,10 +8313,6 @@
                     "Peak Detection Type"
                 ],
                 [
-                    "flashlfq:peak_mz",
-                    "Peak MZ"
-                ],
-                [
                     "flashlfq:peak_rt_apex",
                     "Peak RT Apex"
                 ],
@@ -8232,16 +8341,20 @@
                     "PSMs Mapped"
                 ],
                 [
-                    "flashlfq:theoretical_mz",
-                    "Theoretical MZ"
-                ],
-                [
                     "quant_value",
                     "Peak intensity"
                 ],
                 [
                     "raw_filename",
                     "File Name"
+                ],
+                [
+                    "reported_mz",
+                    "Peak MZ"
+                ],
+                [
+                    "theoretical_mz",
+                    "Theoretical MZ"
                 ],
                 [
                     "trivial_name",
