@@ -173,8 +173,8 @@
         "default_value": true,
         "description": "add the default unimod file to mapper",
         "key_translations": {
-            "diann_style_1": "add_unimod_default_file",
             "comet_style_1": "add_unimod_default_file",
+            "diann_style_1": "add_unimod_default_file",
             "flash_lfq_style_1": "add_unimod_default_file",
             "mascot_style_1": "add_unimod_default_file",
             "msamanda_style_1": "add_unimod_default_file",
@@ -4977,6 +4977,40 @@
                 [
                     true,
                     "--no-main-report"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "bool"
+    },
+    {
+        "default_value": false,
+        "description": "Reanalyse a set of datasets after performing identification on each one (perform Match Between Runs).",
+        "key_translations": {
+            "diann_style_1": "enable_dataset_reanalysis_<DROP_KEY>",
+            "ursgal_style_1": "enable_dataset_reanalysis"
+        },
+        "name": "enable_dataset_reanalysis",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--reanalyse"
                 ]
             ],
             "ursgal_style_1": [
@@ -13822,40 +13856,6 @@
         "value_type": "bool"
     },
     {
-        "default_value": true,
-        "description": "Turns off interference subtraction from fragment ion chromatograms - equivalent to the \"high precision\" quantification mode.",
-        "key_translations": {
-            "diann_style_1": "subtract_interference_<DROP_KEY>",
-            "ursgal_style_1": "subtract_interference"
-        },
-        "name": "subtract_interference",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--no-ifs-removal"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ]
-        },
-        "value_type": "bool"
-    },
-    {
         "default_value": {
             "labels": "rgb(0, 0, 200)",
             "matched": "rgb(0, 200, 0)",
@@ -15308,6 +15308,19 @@
         "value_type": "int"
     },
     {
+        "default_value": 1,
+        "description": "Upper value for qvalue filter. The default value of one effecitvely decativates filtering.",
+        "key_translations": {
+            "diann_style_1": "--qvalue",
+            "ursgal_style_1": "qvalue_filter_threshold_upper"
+        },
+        "name": "qvalue_filter_threshold_upper",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "float"
+    },
+    {
         "default_value": 10,
         "description": "Random seed for random number generators",
         "key_translations": {
@@ -15357,40 +15370,6 @@
                 [
                     true,
                     "--reannotate"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ]
-        },
-        "value_type": "bool"
-    },
-    {
-        "default_value": false,
-        "description": "Reanalyse a set of datasets after performing identification on each one (perform Match Between Runs).",
-        "key_translations": {
-            "diann_style_1": "enable_dataset_reanalysis_<DROP_KEY>",
-            "ursgal_style_1": "enable_dataset_reanalysis"
-        },
-        "name": "enable_dataset_reanalysis",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--reanalyse"
                 ]
             ],
             "ursgal_style_1": [
@@ -15624,19 +15603,6 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "bool"
-    },
-    {
-        "default_value": 1,
-        "description": "Upper value for qvalue filter. The default value of one effecitvely decativates filtering.",
-        "key_translations": {
-            "diann_style_1": "--qvalue",
-            "ursgal_style_1": "qvalue_filter_threshold_upper"
-        },
-        "name": "qvalue_filter_threshold_upper",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "float"
     },
     {
         "default_value": "TMTpro",
@@ -16354,6 +16320,40 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "int"
+    },
+    {
+        "default_value": true,
+        "description": "Turns off interference subtraction from fragment ion chromatograms - equivalent to the \"high precision\" quantification mode.",
+        "key_translations": {
+            "diann_style_1": "subtract_interference_<DROP_KEY>",
+            "ursgal_style_1": "subtract_interference"
+        },
+        "name": "subtract_interference",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--no-ifs-removal"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "bool"
     },
     {
         "default_value": "End(HexNAc)Hex(5)HexNAc(3)NeuAc(1)dHex(1)",
