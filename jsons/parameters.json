@@ -462,7 +462,7 @@
                 ]
             ]
         },
-        "value_type": "string"
+        "value_type": "str"
     },
     {
         "default_value": false,
@@ -3894,7 +3894,7 @@
         ],
         "triggers_rerun": true,
         "value_translations": {},
-        "value_type": "string"
+        "value_type": "str"
     },
     {
         "default_value": false,
