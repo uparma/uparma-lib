@@ -7028,6 +7028,66 @@
         "value_type": "int"
     },
     {
+        "default_value": null,
+        "description": "Engines specific translation of experimental design file headers",
+        "key_translations": {
+            "flash_lfq_style_1": "experimental_design_header_translation",
+            "ursgal_style_1": "experimental_design_header_translation"
+        },
+        "name": "experiment_design_header_translations",
+        "tag": [
+            "experimental_design"
+        ],
+        "triggers_rerun": false,
+        "value_translations": {
+            "flash_lfq_style_1": [
+                [
+                    "Biorep",
+                    "bio_rep"
+                ],
+                [
+                    "Condition",
+                    "condition"
+                ],
+                [
+                    "FileName",
+                    "filename"
+                ],
+                [
+                    "Fraction",
+                    "fraction"
+                ],
+                [
+                    "Techrep",
+                    "tech_rep"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "Techrep",
+                    "tech_rep"
+                ],
+                [
+                    "bio_rep",
+                    "bio_rep"
+                ],
+                [
+                    "conditon",
+                    "conditon"
+                ],
+                [
+                    "filename",
+                    "filename"
+                ],
+                [
+                    "sample_type",
+                    "sample_type"
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
         "default_value": [],
         "description": " ",
         "is_parameter_collection": true,
