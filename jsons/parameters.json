@@ -173,6 +173,7 @@
         "default_value": true,
         "description": "add the default unimod file to mapper",
         "key_translations": {
+            "diann_style_1": "add_unimod_default_file",
             "comet_style_1": "add_unimod_default_file",
             "flash_lfq_style_1": "add_unimod_default_file",
             "mascot_style_1": "add_unimod_default_file",
@@ -10861,7 +10862,7 @@
         "key_translations": {
             "comet_style_1": "allowed_missed_cleavage",
             "deepnovo_style_1": "num_missed_cleavage",
-            "diann_style_1": "--missed_cleavages",
+            "diann_style_1": "--missed-cleavages",
             "kojak_style_1": "max_missed_cleavages",
             "mascot_style_1": "PFA",
             "moda_style_1": "MissedCleavage",
@@ -11831,6 +11832,7 @@
                 "add_Z_user_amino_acid"
             ],
             "deepnovo_style_1": "modifications",
+            "diann_style_1": "--mod",
             "flash_lfq_style_1": "modifications",
             "kojak_style_1": "modifications",
             "mascot_style_1": [
@@ -13710,10 +13712,10 @@
         "default_value": true,
         "description": "Turns off interference subtraction from fragment ion chromatograms - equivalent to the \"high precision\" quantification mode.",
         "key_translations": {
-            "diann_style_1": "substract_interference_<DROP_KEY>",
-            "ursgal_style_1": "substract_interference"
+            "diann_style_1": "subtract_interference_<DROP_KEY>",
+            "ursgal_style_1": "subtract_interference"
         },
-        "name": "peak_center",
+        "name": "subtract_interference",
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {
@@ -15258,6 +15260,40 @@
         "value_type": "bool"
     },
     {
+        "default_value": false,
+        "description": "Reanalyse a set of datasets after performing identification on each one (perform Match Between Runs).",
+        "key_translations": {
+            "diann_style_1": "enable_dataset_reanalysis_<DROP_KEY>",
+            "ursgal_style_1": "enable_dataset_reanalysis"
+        },
+        "name": "enable_dataset_reanalysis",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--reanalyse"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "bool"
+    },
+    {
         "default_value": 0.2,
         "description": " Relative intensity error range (for the most intense peak) ",
         "key_translations": {
@@ -15477,38 +15513,17 @@
         "value_type": "bool"
     },
     {
-        "default_value": false,
-        "description": "Either to report qvalues in the report. TODO: this parameter has to be revisited, as it is not available in the github documentation!",
+        "default_value": 1,
+        "description": "Upper value for qvalue filter. The default value of one effecitvely decativates filtering.",
         "key_translations": {
-            "diann_style_1": "report_qvalues_<DROP_KEY>",
-            "ursgal_style_1": "report_qvalues"
+            "diann_style_1": "--qvalue",
+            "ursgal_style_1": "qvalue_filter_threshold_upper"
         },
-        "name": "report_qvalues",
+        "name": "qvalue_filter_threshold_upper",
         "tag": [],
         "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--qvalue"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ]
-        },
-        "value_type": "bool"
+        "value_translations": {},
+        "value_type": "float"
     },
     {
         "default_value": "TMTpro",
@@ -16109,40 +16124,6 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "list"
-    },
-    {
-        "default_value": true,
-        "description": "Enables an intelligent algorithm which determines how to extract spectra, when creating a spectral library from DIA data. This is highly recommended and should almost always be enabled",
-        "key_translations": {
-            "diann_style_1": "smart_profiling_<DROP_KEY>",
-            "ursgal_style_1": "smart_profiling"
-        },
-        "name": "smart_profiling",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--smart-profiling"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ]
-        },
-        "value_type": "bool"
     },
     {
         "default_value": null,
@@ -17371,40 +17352,6 @@
                 [
                     true,
                     "0"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ]
-        },
-        "value_type": "bool"
-    },
-    {
-        "default_value": true,
-        "description": "Either to use unimod4. TODO: this param need revisiting, once it is clear what the param stand for!",
-        "key_translations": {
-            "diann_style_1": "use_unimod4_<DROP_KEY>",
-            "ursgal_style_1": "use_unimod4"
-        },
-        "name": "use_unimod4",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--unimod4"
                 ]
             ],
             "ursgal_style_1": [
