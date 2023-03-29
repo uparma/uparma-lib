@@ -11979,7 +11979,7 @@
                 "add_Z_user_amino_acid"
             ],
             "deepnovo_style_1": "modifications",
-            "diann_style_1": "--mod",
+            "diann_style_1": "--fixed-mod",
             "flash_lfq_style_1": "modifications",
             "kojak_style_1": "modifications",
             "mascot_style_1": [
