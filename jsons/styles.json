@@ -574,6 +574,16 @@
         ]
     },
     {
+        "name": "exp_design_generator",
+        "reference": [
+            "Ursgal2 Team"
+        ],
+        "style": "exp_design_generator_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
         "name": "filter_nonbiological_ions_style_1",
         "reference": "Ursgal2 Team",
         "style": "filter_nonbiological_ions_style_1",
