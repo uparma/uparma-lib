@@ -8200,10 +8200,35 @@
         "default_value": 150,
         "description": "Minimal considered fragment ion m/z",
         "key_translations": {
+            "diann_style_1": "--min-fr-mz",
+            "diann_library_prediction_style_1": "--min-fr-mz",
+            "diann_quantification_style_1": "--min-fr-mz",
+            "diann_library_empirical_style_1": "--min-fr-mz",
+            "diann_report_generation_style_1": "--min-fr-mz",
             "ursgal_style_1": "frag_min_mz",
             "xtandem_style_1": "spectrum, minimum fragment mz"
         },
         "name": "frag_min_mz",
+        "tag": [
+            "fragment",
+            "spectrum"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": 1800,
+        "description": "Maximal considered fragment ion m/z",
+        "key_translations": {
+            "diann_style_1": "--max-fr-mz",
+            "diann_library_prediction_style_1": "--max-fr-mz",
+            "diann_quantification_style_1": "--max-fr-mz",
+            "diann_library_empirical_style_1": "--max-fr-mz",
+            "diann_report_generation_style_1": "--max-fr-mz",
+            "ursgal_style_1": "frag_max_mz",
+        },
+        "name": "frag_max_mz",
         "tag": [
             "fragment",
             "spectrum"
