@@ -8226,7 +8226,7 @@
             "diann_quantification_style_1": "--max-fr-mz",
             "diann_library_empirical_style_1": "--max-fr-mz",
             "diann_report_generation_style_1": "--max-fr-mz",
-            "ursgal_style_1": "frag_max_mz",
+            "ursgal_style_1": "frag_max_mz"
         },
         "name": "frag_max_mz",
         "tag": [
