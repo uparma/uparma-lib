@@ -5093,9 +5093,6 @@
         "description": "Reanalyse a set of datasets after performing identification on each one (perform Match Between Runs).",
         "key_translations": {
             "diann_style_1": "enable_dataset_reanalysis_<DROP_KEY>",
-            "diann_library_prediction_style_1": "enable_dataset_reanalysis_<DROP_KEY>",
-            "diann_quantification_style_1": "enable_dataset_reanalysis_<DROP_KEY>",
-            "diann_library_empirical_style_1": "enable_dataset_reanalysis_<DROP_KEY>",
             "diann_report_generation_style_1": "enable_dataset_reanalysis_<DROP_KEY>",
             "ursgal_style_1": "enable_dataset_reanalysis"
         },
@@ -5104,36 +5101,6 @@
         "triggers_rerun": true,
         "value_translations": {
             "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--reanalyse"
-                ]
-            ],
-            "diann_library_prediction_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--reanalyse"
-                ]
-            ],
-            "diann_quantification_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--reanalyse"
-                ]
-            ],
-            "diann_library_empirical_style_1": [
                 [
                     false,
                     ""
@@ -8371,9 +8338,6 @@
         "description": "Defines if an output matrix containing information about protein groups, gene groups, unique genes and precursors should be generated.",
         "key_translations": {
             "diann_style_1": "generate_output_matrix_<DROP_KEY>",
-            "diann_library_prediction_style_1": "generate_output_matrix_<DROP_KEY>",
-            "diann_quantification_style_1": "generate_output_matrix_<DROP_KEY>",
-            "diann_library_empirical_style_1": "generate_output_matrix_<DROP_KEY>",
             "diann_report_generation_style_1": "generate_output_matrix_<DROP_KEY>",
             "ursgal_style_1": "generate_output_matrix"
         },
@@ -8382,36 +8346,6 @@
         "triggers_rerun": true,
         "value_translations": {
             "diann_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--matrices"
-                ]
-            ],
-            "diann_library_prediction_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--matrices"
-                ]
-            ],
-            "diann_quantification_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--matrices"
-                ]
-            ],
-            "diann_library_empirical_style_1": [
                 [
                     false,
                     ""
@@ -8450,9 +8384,7 @@
         "key_translations": {
             "diann_style_1": "generate_spectral_library_<DROP_KEY>",
             "diann_library_prediction_style_1": "generate_spectral_library_<DROP_KEY>",
-            "diann_quantification_style_1": "generate_spectral_library_<DROP_KEY>",
             "diann_library_empirical_style_1": "generate_spectral_library_<DROP_KEY>",
-            "diann_report_generation_style_1": "generate_spectral_library_<DROP_KEY>",
             "ursgal_style_1": "generate_spectral_library"
         },
         "name": "generate_spectral_library",
@@ -8479,27 +8411,7 @@
                     "--gen-spec-lib"
                 ]
             ],
-            "diann_quantification_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--gen-spec-lib"
-                ]
-            ],
             "diann_library_empirical_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--gen-spec-lib"
-                ]
-            ],
-            "diann_report_generation_style_1": [
                 [
                     false,
                     ""
@@ -14438,9 +14350,6 @@
         "key_translations": {
             "diann_style_1": "perform_deeplearning_prediction_<DROP_KEY>",
             "diann_library_prediction_style_1": "perform_deeplearning_prediction_<DROP_KEY>",
-            "diann_quantification_style_1": "perform_deeplearning_prediction_<DROP_KEY>",
-            "diann_library_empirical_style_1": "perform_deeplearning_prediction_<DROP_KEY>",
-            "diann_report_generation_style_1": "perform_deeplearning_prediction_<DROP_KEY>",
             "ursgal_style_1": "perform_deeplearning_prediction"
         },
         "name": "perform_deeplearning_prediction",
@@ -14457,10 +14366,16 @@
                     "--predictor"
                 ]
             ],
-            "diann_library_prediction_style_1": [],
-            "diann_quantification_style_1": [],
-            "diann_library_empirical_style_1": [],
-            "diann_report_generation_style_1": [],
+            "diann_library_prediction_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--predictor"
+                ]
+            ],
             "ursgal_style_1": [
                 [
                     false,
@@ -14481,7 +14396,6 @@
             "diann_style_1": "perform_in-silico_digest_<DROP_KEY>",
             "diann_library_prediction_style_1": "perform_in-silico_digest_<DROP_KEY>",
             "diann_quantification_style_1": "perform_in-silico_digest_<DROP_KEY>",
-            "diann_library_empirical_style_1": "perform_in-silico_digest_<DROP_KEY>",
             "diann_report_generation_style_1": "perform_in-silico_digest_<DROP_KEY>",
             "ursgal_style_1": "perform_in-silico_digest"
         },
@@ -14500,26 +14414,6 @@
                 ]
             ],
             "diann_library_prediction_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--fasta-search"
-                ]
-            ],
-            "diann_quantification_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--fasta-search"
-                ]
-            ],
-            "diann_library_empirical_style_1": [
                 [
                     false,
                     ""
@@ -15873,9 +15767,7 @@
         "description": "Upper value for qvalue filter. The default value of one effecitvely decativates filtering.",
         "key_translations": {
             "diann_style_1": "--qvalue",
-            "diann_library_prediction_style_1": "--qvalue",
             "diann_quantification_style_1": "--qvalue",
-            "diann_library_empirical_style_1": "--qvalue",
             "diann_report_generation_style_1": "--qvalue",
             "ursgal_style_1": "qvalue_filter_threshold_upper"
         },
@@ -15922,8 +15814,6 @@
         "key_translations": {
             "diann_style_1": "reannotate_spectral_library_<DROP_KEY>",
             "diann_library_prediction_style_1": "reannotate_spectral_library_<DROP_KEY>",
-            "diann_quantification_style_1": "reannotate_spectral_library_<DROP_KEY>",
-            "diann_library_empirical_style_1": "reannotate_spectral_library_<DROP_KEY>",
             "diann_report_generation_style_1": "reannotate_spectral_library_<DROP_KEY>",
             "ursgal_style_1": "reannotate_spectral_library"
         },
@@ -15942,26 +15832,6 @@
                 ]
             ],
             "diann_library_prediction_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--reannotate"
-                ]
-            ],
-            "diann_quantification_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--reannotate"
-                ]
-            ],
-            "diann_library_empirical_style_1": [
                 [
                     false,
                     ""
@@ -16359,7 +16229,6 @@
         "key_translations": {
             "diann_style_1": "rt_profiling_<DROP_KEY>",
             "diann_library_prediction_style_1": "rt_profiling_<DROP_KEY>",
-            "diann_quantification_style_1": "rt_profiling_<DROP_KEY>",
             "diann_library_empirical_style_1": "rt_profiling_<DROP_KEY>",
             "diann_report_generation_style_1": "rt_profiling_<DROP_KEY>",
             "ursgal_style_1": "rt_profiling"
@@ -16379,16 +16248,6 @@
                 ]
             ],
             "diann_library_prediction_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--rt-profiling"
-                ]
-            ],
-            "diann_quantification_style_1": [
                 [
                     false,
                     ""
@@ -17972,10 +17831,6 @@
         "description": "Controls the protein inference mode, with 0 - isoforms, 1 - protein names (as in UniProt), 2 - genes.",
         "key_translations": {
             "diann_style_1": "--pg-level",
-            "diann_library_prediction_style_1": "--pg-level",
-            "diann_quantification_style_1": "--pg-level",
-            "diann_library_empirical_style_1": "--pg-level",
-            "diann_report_generation_style_1": "--pg-level",
             "ursgal_style_1": "protein_inference_mode"
         },
         "name": "use_available_quant_files",
@@ -18011,20 +17866,6 @@
                 ]
             ],
             "diann_quantification_style_1": [
-                [
-                    "genes",
-                    2
-                ],
-                [
-                    "isoforms",
-                    0
-                ],
-                [
-                    "protein names",
-                    1
-                ]
-            ],
-            "diann_library_empirical_style_1": [
                 [
                     "genes",
                     2
