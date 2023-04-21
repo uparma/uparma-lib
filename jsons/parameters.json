@@ -16761,10 +16761,18 @@
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {
-            "diann_library_empirical_style_1": [],
-            "diann_library_prediction_style_1": [],
-            "diann_quantification_style_1": [],
-            "diann_report_generation_style_1": [],
+            "diann_library_empirical_style_1": [
+                [
+                    "smart-profiling",
+                    "--smart-profiling"
+                ]
+            ],
+            "diann_library_prediction_style_1": [
+                [
+                    "smart-profiling",
+                    "--smart-profiling"
+                ]
+            ],
             "diann_style_1": [
                 [
                     "smart-profiling",
