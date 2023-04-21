@@ -5100,16 +5100,6 @@
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {
-            "diann_report_generation_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--reanalyse"
-                ]
-            ],
             "diann_style_1": [
                 [
                     false,
