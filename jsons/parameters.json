@@ -15767,21 +15767,6 @@
         "value_type": "float"
     },
     {
-        "default_value": 0,
-        "description": "Set retention window with as scan count (see also rt_border_tolerance).",
-        "key_translations": {
-            "diann_quantification_style_1": "--window",
-            "diann_report_generation_style_1": "--window",
-            "diann_style_1": "--window",
-            "ursgal_style_1": "rt_peak_width_scans"
-        },
-        "name": "rt_peak_width_scans",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "int"
-    },
-    {
         "default_value": 10,
         "description": "Random seed for random number generators",
         "key_translations": {
@@ -16205,6 +16190,21 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "float"
+    },
+    {
+        "default_value": 0,
+        "description": "Set retention window with as scan count (see also rt_border_tolerance).",
+        "key_translations": {
+            "diann_quantification_style_1": "--window",
+            "diann_report_generation_style_1": "--window",
+            "diann_style_1": "--window",
+            "ursgal_style_1": "rt_peak_width_scans"
+        },
+        "name": "rt_peak_width_scans",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
     },
     {
         "default_value": null,
