@@ -15767,6 +15767,21 @@
         "value_type": "float"
     },
     {
+        "default_value": 0,
+        "description": "Set retention window with as scan count (see also rt_border_tolerance).",
+        "key_translations": {
+            "diann_quantification_style_1": "--window",
+            "diann_report_generation_style_1": "--window",
+            "diann_style_1": "--window",
+            "ursgal_style_1": "rt_peak_width_scans"
+        },
+        "name": "rt_peak_width_scans",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
         "default_value": 10,
         "description": "Random seed for random number generators",
         "key_translations": {
@@ -16211,6 +16226,73 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "str"
+    },
+    {
+        "default_value": true,
+        "description": "Perform RT profiling. TODO: this param has to be revisited once it is clear what it stands for!",
+        "key_translations": {
+            "diann_library_empirical_style_1": "rt_profiling_<DROP_KEY>",
+            "diann_library_prediction_style_1": "rt_profiling_<DROP_KEY>",
+            "diann_report_generation_style_1": "rt_profiling_<DROP_KEY>",
+            "diann_style_1": "rt_profiling_<DROP_KEY>",
+            "ursgal_style_1": "rt_profiling"
+        },
+        "name": "rt_profiling",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "diann_library_empirical_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--rt-profiling"
+                ]
+            ],
+            "diann_library_prediction_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--rt-profiling"
+                ]
+            ],
+            "diann_report_generation_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--rt-profiling"
+                ]
+            ],
+            "diann_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--rt-profiling"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "bool"
     },
     {
         "default_value": true,
