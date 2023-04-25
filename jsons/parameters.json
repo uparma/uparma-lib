@@ -16742,7 +16742,6 @@
         "key_translations": {
             "diann_library_empirical_style_1": "spectral_library_extraction_algorithm_<DROP_KEY>",
             "diann_library_prediction_style_1": "spectral_library_extraction_algorithm_<DROP_KEY>",
-            "diann_quantification_style_1": "spectral_library_extraction_algorithm_<DROP_KEY>",
             "diann_report_generation_style_1": "spectral_library_extraction_algorithm_<DROP_KEY>",
             "diann_style_1": "spectral_library_extraction_algorithm_<DROP_KEY>",
             "ursgal_style_1": "spectral_library_extraction_algorithm"
