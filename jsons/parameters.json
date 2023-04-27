@@ -17764,8 +17764,6 @@
         "description": "Use existing .quant files, if available.",
         "key_translations": {
             "diann_library_empirical_style_1": "use_available_quant_files_<DROP_KEY>",
-            "diann_library_prediction_style_1": "use_available_quant_files_<DROP_KEY>",
-            "diann_quantification_style_1": "use_available_quant_files_<DROP_KEY>",
             "diann_report_generation_style_1": "use_available_quant_files_<DROP_KEY>",
             "diann_style_1": "use_available_quant_files_<DROP_KEY>",
             "ursgal_style_1": "use_available_quant_files"
@@ -17785,16 +17783,6 @@
                 ]
             ],
             "diann_library_prediction_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--use-quant"
-                ]
-            ],
-            "diann_quantification_style_1": [
                 [
                     false,
                     ""
