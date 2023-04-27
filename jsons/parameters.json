@@ -502,27 +502,16 @@
     },
     {
         "default_value": true,
-        "description": "Sort output sam file by index",
+        "description": "Sort output file by index/coordinate.",
         "key_translations": {
-            "bowtie_style_1": "aligner_sort_output_sam_<DROP_KEY>",
-            "ursgal_style_1": "aligner_sort_output_sam"
+            "ursgal_style_1": "aligner_sort_output_file"
         },
-        "name": "aligner_sort_output_sam",
+        "name": "aligner_sort_output_file",
         "tag": [
             "alignment"
         ],
         "triggers_rerun": true,
         "value_translations": {
-            "bowtie_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--reorder"
-                ]
-            ],
             "ursgal_style_1": [
                 [
                     false,
@@ -650,6 +639,32 @@
             "ursgal_style_1": "annotation_accuracy"
         },
         "name": "annotation_accuracy",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": "regex",
+        "description": "Extraction method for barcodes. Can be either 'regex' or 'string'.",
+        "key_translations": {
+            "umi_tools_extract_style_1": "--extract-method",
+            "ursgal_style_1": "barcode_extract_method"
+        },
+        "name": "barcode_extract_method",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": "",
+        "description": "Extraction pattern for barcode(s) on read 1",
+        "key_translations": {
+            "umi_tools_extract_style_1": "--bc-pattern",
+            "ursgal_style_1": "barcode_pattern_read_1"
+        },
+        "name": "barcode_pattern_read_1",
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {},
