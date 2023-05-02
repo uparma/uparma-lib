@@ -5237,7 +5237,6 @@
             "deepnovo_style_1": "cleavage_rule",
             "diann_library_empirical_style_1": "--cut",
             "diann_library_prediction_style_1": "--cut",
-            "diann_quantification_style_1": "--cut",
             "diann_report_generation_style_1": "--cut",
             "diann_style_1": "--cut",
             "generate_target_decoy_style_1": "enzyme",
@@ -5379,36 +5378,6 @@
                 ]
             ],
             "diann_library_prediction_style_1": [
-                [
-                    "aspn",
-                    "*D"
-                ],
-                [
-                    "chymotrypsin",
-                    "F*,Y*,W*,M*,L*,!*P"
-                ],
-                [
-                    "gluc",
-                    "E*"
-                ],
-                [
-                    "lysc",
-                    "K*"
-                ],
-                [
-                    "nonspecific",
-                    ""
-                ],
-                [
-                    "trypsin",
-                    "K*,R*,!*P"
-                ],
-                [
-                    "trypsin_p",
-                    "K*,R*"
-                ]
-            ],
-            "diann_quantification_style_1": [
                 [
                     "aspn",
                     "*D"
@@ -8024,7 +7993,6 @@
         "key_translations": {
             "diann_library_empirical_style_1": "--max-fr-mz",
             "diann_library_prediction_style_1": "--max-fr-mz",
-            "diann_quantification_style_1": "--max-fr-mz",
             "diann_report_generation_style_1": "--max-fr-mz",
             "diann_style_1": "--max-fr-mz",
             "ursgal_style_1": "frag_max_mz"
@@ -8179,7 +8147,6 @@
         "key_translations": {
             "diann_library_empirical_style_1": "--min-fr-mz",
             "diann_library_prediction_style_1": "--min-fr-mz",
-            "diann_quantification_style_1": "--min-fr-mz",
             "diann_report_generation_style_1": "--min-fr-mz",
             "diann_style_1": "--min-fr-mz",
             "ursgal_style_1": "frag_min_mz",
@@ -11298,7 +11265,6 @@
             "deepnovo_style_1": "num_missed_cleavage",
             "diann_library_empirical_style_1": "--missed-cleavages",
             "diann_library_prediction_style_1": "--missed-cleavages",
-            "diann_quantification_style_1": "--missed-cleavages",
             "diann_report_generation_style_1": "--missed-cleavages",
             "diann_style_1": "--missed-cleavages",
             "kojak_style_1": "max_missed_cleavages",
@@ -11560,7 +11526,6 @@
             "comet_style_1": "peptide_length_range_max",
             "diann_library_empirical_style_1": "--max-pep-len",
             "diann_library_prediction_style_1": "--max-pep-len",
-            "diann_quantification_style_1": "--max-pep-len",
             "diann_report_generation_style_1": "--max-pep-len",
             "diann_style_1": "--max-pep-len",
             "msamanda_style_1": "MaximumPepLength",
@@ -11910,7 +11875,6 @@
             "comet_style_1": "peptide_length_range_min",
             "diann_library_empirical_style_1": "--min-pep-len",
             "diann_library_prediction_style_1": "--min-pep-len",
-            "diann_quantification_style_1": "--min-pep-len",
             "diann_report_generation_style_1": "--min-pep-len",
             "diann_style_1": "--min-pep-len",
             "msamanda_style_1": "MinimumPepLength",
@@ -12280,7 +12244,6 @@
             "deepnovo_style_1": "modifications",
             "diann_library_empirical_style_1": "--fixed-mod",
             "diann_library_prediction_style_1": "--fixed-mod",
-            "diann_quantification_style_1": "--fixed-mod",
             "diann_report_generation_style_1": "--fixed-mod",
             "diann_style_1": "--fixed-mod",
             "flash_lfq_style_1": "modifications",
@@ -15063,7 +15026,6 @@
             "comet_style_1": "max_precursor_charge",
             "diann_library_empirical_style_1": "--max-pr-charge",
             "diann_library_prediction_style_1": "--max-pr-charge",
-            "diann_quantification_style_1": "--max-pr-charge",
             "diann_report_generation_style_1": "--max-pr-charge",
             "diann_style_1": "--max-pr-charge",
             "mascot_style_1": "CHARGE_max",
@@ -15118,7 +15080,6 @@
             "comet_style_1": "precursor_charge_min",
             "diann_library_empirical_style_1": "--min-pr-charge",
             "diann_library_prediction_style_1": "--min-pr-charge",
-            "diann_quantification_style_1": "--min-pr-charge",
             "diann_report_generation_style_1": "--min-pr-charge",
             "diann_style_1": "--min-pr-charge",
             "mascot_style_1": "CHARGE_min",
