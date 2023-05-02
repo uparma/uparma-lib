@@ -176,7 +176,6 @@
             "comet_style_1": "add_unimod_default_file",
             "diann_library_empirical_style_1": "add_unimod_default_file",
             "diann_library_prediction_style_1": "add_unimod_default_file",
-            "diann_quantification_style_1": "add_unimod_default_file",
             "diann_report_generation_style_1": "add_unimod_default_file",
             "diann_style_1": "add_unimod_default_file",
             "flash_lfq_style_1": "add_unimod_default_file",
@@ -3179,7 +3178,6 @@
             "comet_style_1": "clip_nterm_methionine",
             "diann_library_empirical_style_1": "clip_nterm_methionine_<DROP_KEY>",
             "diann_library_prediction_style_1": "clip_nterm_methionine_<DROP_KEY>",
-            "diann_quantification_style_1": "clip_nterm_methionine_<DROP_KEY>",
             "diann_report_generation_style_1": "clip_nterm_methionine_<DROP_KEY>",
             "diann_style_1": "clip_nterm_methionine_<DROP_KEY>",
             "msfragger_style_1": "clip_nTerm_M",
@@ -3213,16 +3211,6 @@
                 ]
             ],
             "diann_library_prediction_style_1": [
-                [
-                    false,
-                    ""
-                ],
-                [
-                    true,
-                    "--met-excision"
-                ]
-            ],
-            "diann_quantification_style_1": [
                 [
                     false,
                     ""
@@ -10791,7 +10779,6 @@
         "key_translations": {
             "diann_library_empirical_style_1": "--min-pr-mz",
             "diann_library_prediction_style_1": "--min-pr-mz",
-            "diann_quantification_style_1": "--min-pr-mz",
             "diann_report_generation_style_1": "--min-pr-mz",
             "diann_style_1": "--min-pr-mz",
             "pyqms_style_1": "LOWER_MZ_LIMIT",
@@ -16759,7 +16746,6 @@
         "key_translations": {
             "diann_library_empirical_style_1": "--out-lib",
             "diann_library_prediction_style_1": "--out-lib",
-            "diann_quantification_style_1": "--out-lib",
             "diann_report_generation_style_1": "--out-lib",
             "diann_style_1": "--out-lib",
             "ursgal_style_1": "spectral_library_name"
@@ -17555,7 +17541,6 @@
         "key_translations": {
             "diann_library_empirical_style_1": "--learn-lib",
             "diann_library_prediction_style_1": "--learn-lib",
-            "diann_quantification_style_1": "--learn-lib",
             "diann_report_generation_style_1": "--learn-lib",
             "diann_style_1": "--learn-lib",
             "ursgal_style_1": "training_library_name"
@@ -17673,7 +17658,6 @@
         "key_translations": {
             "diann_library_empirical_style_1": "--max-pr-mz",
             "diann_library_prediction_style_1": "--max-pr-mz",
-            "diann_quantification_style_1": "--max-pr-mz",
             "diann_report_generation_style_1": "--max-pr-mz",
             "diann_style_1": "--max-pr-mz",
             "pyqms_style_1": "UPPER_MZ_LIMIT",
