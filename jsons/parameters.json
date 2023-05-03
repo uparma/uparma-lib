@@ -16169,20 +16169,6 @@
         "value_type": "float"
     },
     {
-        "default_value": 0.5,
-        "description": "Set retention time window (maybe join with also rt_border_tolerance).",
-        "key_translations": {
-            "diann_quantification_style_1": "--rt-window",
-            "diann_style_1": "--rt-window",
-            "ursgal_style_1": "rt_peak_width"
-        },
-        "name": "rt_peak_width",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "float"
-    },
-    {
         "default_value": null,
         "description": "name of the pickle that is used to map the retention time",
         "key_translations": {
@@ -16733,7 +16719,6 @@
         "key_translations": {
             "diann_library_empirical_style_1": "spectral_library_extraction_algorithm_<DROP_KEY>",
             "diann_library_prediction_style_1": "spectral_library_extraction_algorithm_<DROP_KEY>",
-            "diann_report_generation_style_1": "spectral_library_extraction_algorithm_<DROP_KEY>",
             "diann_style_1": "spectral_library_extraction_algorithm_<DROP_KEY>",
             "ursgal_style_1": "spectral_library_extraction_algorithm"
         },
