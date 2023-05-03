@@ -9901,6 +9901,20 @@
         "value_type": "str"
     },
     {
+        "default_value": 0.05,
+        "description": "Set ion mobility  window width.",
+        "key_translations": {
+            "diann_quantification_style_1": "--im-window",
+            "diann_style_1": "--im-window",
+            "ursgal_style_1": "im_window_width"
+        },
+        "name": "im_window_width",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "float"
+    },
+    {
         "default_value": "Index",
         "description": "This param defines which column should be used as the row index for the dataframe. Coming from an initially big dataframe, which e.g. would contain Peptide, Protein, Sequence - this column would define the one to be used as df.index.",
         "key_translations": {
@@ -16153,20 +16167,6 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "int"
-    },
-    {
-        "default_value": 0.05,
-        "description": "Set ion mobility  window width.",
-        "key_translations": {
-            "diann_quantification_style_1": "--im-window",
-            "diann_style_1": "--im-window",
-            "ursgal_style_1": "im_window_width"
-        },
-        "name": "im_window_width",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "float"
     },
     {
         "default_value": null,
