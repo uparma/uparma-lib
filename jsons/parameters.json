@@ -10863,6 +10863,19 @@
         "value_type": "float"
     },
     {
+        "default_value": "filename",
+        "description": "Column name based on which object_identifier should be mapped when generating the experimental design.",
+        "key_translations": {
+            "exp_design_generator_style_1": "mapping_column",
+            "ursgal_style_1": "mapping_column"
+        },
+        "name": "mapping_column",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
         "default_value": [],
         "description": "columns to use for selecting different markers in a plot.",
         "key_translations": {
