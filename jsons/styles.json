@@ -56,6 +56,38 @@
         ]
     },
     {
+        "name": "DIA-NN",
+        "reference": "Demichev, V., Messner, C.B., Vernardis, S.I. et al. DIA-NN: neural networks and interference correction enable deep proteome coverage in high throughput. Nat Methods 17, 41\u201344 (2020)",
+        "style": "diann_library_empirical_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "DIA-NN",
+        "reference": "Demichev, V., Messner, C.B., Vernardis, S.I. et al. DIA-NN: neural networks and interference correction enable deep proteome coverage in high throughput. Nat Methods 17, 41\u201344 (2020)",
+        "style": "diann_library_prediction_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "DIA-NN",
+        "reference": "Demichev, V., Messner, C.B., Vernardis, S.I. et al. DIA-NN: neural networks and interference correction enable deep proteome coverage in high throughput. Nat Methods 17, 41\u201344 (2020)",
+        "style": "diann_quantification_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "name": "DIA-NN",
+        "reference": "Demichev, V., Messner, C.B., Vernardis, S.I. et al. DIA-NN: neural networks and interference correction enable deep proteome coverage in high throughput. Nat Methods 17, 41\u201344 (2020)",
+        "style": "diann_report_generation_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
         "name": "DeepNovo",
         "reference": "Tran, N.H.; Zhang, X.; Xin, L.; Shan, B.; Li, M. (2017) De novo peptide sequencing by deep learning. PNAS 114 (31)",
         "style": "deepnovo_style_1",

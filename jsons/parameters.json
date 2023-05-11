@@ -174,6 +174,9 @@
         "description": "add the default unimod file to mapper",
         "key_translations": {
             "comet_style_1": "add_unimod_default_file",
+            "diann_library_empirical_style_1": "add_unimod_default_file",
+            "diann_library_prediction_style_1": "add_unimod_default_file",
+            "diann_report_generation_style_1": "add_unimod_default_file",
             "diann_style_1": "add_unimod_default_file",
             "flash_lfq_style_1": "add_unimod_default_file",
             "mascot_style_1": "add_unimod_default_file",
@@ -3188,6 +3191,9 @@
         "description": " Specifies the trimming of a protein N-terminal methionine as a variable modification ",
         "key_translations": {
             "comet_style_1": "clip_nterm_methionine",
+            "diann_library_empirical_style_1": "clip_nterm_methionine_<DROP_KEY>",
+            "diann_library_prediction_style_1": "clip_nterm_methionine_<DROP_KEY>",
+            "diann_report_generation_style_1": "clip_nterm_methionine_<DROP_KEY>",
             "diann_style_1": "clip_nterm_methionine_<DROP_KEY>",
             "msfragger_style_1": "clip_nTerm_M",
             "msfragger_style_2": "clip_nTerm_M",
@@ -3207,6 +3213,36 @@
                 [
                     true,
                     1
+                ]
+            ],
+            "diann_library_empirical_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--met-excision"
+                ]
+            ],
+            "diann_library_prediction_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--met-excision"
+                ]
+            ],
+            "diann_report_generation_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--met-excision"
                 ]
             ],
             "diann_style_1": [
@@ -4062,6 +4098,10 @@
             "bowtie_style_1": "-p",
             "comet_style_1": "num_threads",
             "cutadapt_style_1": "-j",
+            "diann_library_empirical_style_1": "--threads",
+            "diann_library_prediction_style_1": "--threads",
+            "diann_quantification_style_1": "--threads",
+            "diann_report_generation_style_1": "--threads",
             "diann_style_1": "--threads",
             "fastqc_style_1": "-t",
             "flash_lfq_style_1": "--thr",
@@ -4977,6 +5017,10 @@
         "default_value": false,
         "description": "Do not produce the main report.",
         "key_translations": {
+            "diann_library_empirical_style_1": "drop_main_report_<DROP_KEY>",
+            "diann_library_prediction_style_1": "drop_main_report_<DROP_KEY>",
+            "diann_quantification_style_1": "drop_main_report_<DROP_KEY>",
+            "diann_report_generation_style_1": "drop_main_report_<DROP_KEY>",
             "diann_style_1": "drop_main_report_<DROP_KEY>",
             "ursgal_style_1": "drop_main_report"
         },
@@ -4984,6 +5028,46 @@
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {
+            "diann_library_empirical_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--no-main-report"
+                ]
+            ],
+            "diann_library_prediction_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--no-main-report"
+                ]
+            ],
+            "diann_quantification_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--no-main-report"
+                ]
+            ],
+            "diann_report_generation_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--no-main-report"
+                ]
+            ],
             "diann_style_1": [
                 [
                     false,
@@ -5011,6 +5095,7 @@
         "default_value": false,
         "description": "Reanalyse a set of datasets after performing identification on each one (perform Match Between Runs).",
         "key_translations": {
+            "diann_report_generation_style_1": "enable_dataset_reanalysis_<DROP_KEY>",
             "diann_style_1": "enable_dataset_reanalysis_<DROP_KEY>",
             "ursgal_style_1": "enable_dataset_reanalysis"
         },
@@ -5153,6 +5238,9 @@
         "key_translations": {
             "comet_style_1": "search_enzyme_number",
             "deepnovo_style_1": "cleavage_rule",
+            "diann_library_empirical_style_1": "--cut",
+            "diann_library_prediction_style_1": "--cut",
+            "diann_report_generation_style_1": "--cut",
             "diann_style_1": "--cut",
             "generate_target_decoy_style_1": "enzyme",
             "kojak_style_1": "enzyme",
@@ -5260,6 +5348,96 @@
                 [
                     "trypsin",
                     "trypsin"
+                ]
+            ],
+            "diann_library_empirical_style_1": [
+                [
+                    "aspn",
+                    "*D"
+                ],
+                [
+                    "chymotrypsin",
+                    "F*,Y*,W*,M*,L*,!*P"
+                ],
+                [
+                    "gluc",
+                    "E*"
+                ],
+                [
+                    "lysc",
+                    "K*"
+                ],
+                [
+                    "nonspecific",
+                    ""
+                ],
+                [
+                    "trypsin",
+                    "K*,R*,!*P"
+                ],
+                [
+                    "trypsin_p",
+                    "K*,R*"
+                ]
+            ],
+            "diann_library_prediction_style_1": [
+                [
+                    "aspn",
+                    "*D"
+                ],
+                [
+                    "chymotrypsin",
+                    "F*,Y*,W*,M*,L*,!*P"
+                ],
+                [
+                    "gluc",
+                    "E*"
+                ],
+                [
+                    "lysc",
+                    "K*"
+                ],
+                [
+                    "nonspecific",
+                    ""
+                ],
+                [
+                    "trypsin",
+                    "K*,R*,!*P"
+                ],
+                [
+                    "trypsin_p",
+                    "K*,R*"
+                ]
+            ],
+            "diann_report_generation_style_1": [
+                [
+                    "aspn",
+                    "*D"
+                ],
+                [
+                    "chymotrypsin",
+                    "F*,Y*,W*,M*,L*,!*P"
+                ],
+                [
+                    "gluc",
+                    "E*"
+                ],
+                [
+                    "lysc",
+                    "K*"
+                ],
+                [
+                    "nonspecific",
+                    ""
+                ],
+                [
+                    "trypsin",
+                    "K*,R*,!*P"
+                ],
+                [
+                    "trypsin_p",
+                    "K*,R*"
                 ]
             ],
             "diann_style_1": [
@@ -7591,6 +7769,10 @@
         "default_value": 20,
         "description": "Mass tolerance of measured and calculated fragment ions",
         "key_translations": {
+            "diann_library_empirical_style_1": "--mass-acc",
+            "diann_library_prediction_style_1": "--mass-acc",
+            "diann_quantification_style_1": "--mass-acc",
+            "diann_report_generation_style_1": "--mass-acc",
             "diann_style_1": "--mass-acc",
             "glycopeptide_fragmentor_style_1": "frag_mass_tolerance",
             "mascot_style_1": "ITOL",
@@ -7809,6 +7991,25 @@
         "value_type": "int"
     },
     {
+        "default_value": 1800,
+        "description": "Maximal considered fragment ion m/z",
+        "key_translations": {
+            "diann_library_empirical_style_1": "--max-fr-mz",
+            "diann_library_prediction_style_1": "--max-fr-mz",
+            "diann_report_generation_style_1": "--max-fr-mz",
+            "diann_style_1": "--max-fr-mz",
+            "ursgal_style_1": "frag_max_mz"
+        },
+        "name": "frag_max_mz",
+        "tag": [
+            "fragment",
+            "spectrum"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
         "default_value": "hcd",
         "description": "Used fragmentation method, e.g. collision-induced dissociation (cid), electron-capture dissociation (ecd), electron-transfer dissociation (etd), Higher-energy C-trap dissociation (hcd)",
         "key_translations": {
@@ -7947,6 +8148,10 @@
         "default_value": 150,
         "description": "Minimal considered fragment ion m/z",
         "key_translations": {
+            "diann_library_empirical_style_1": "--min-fr-mz",
+            "diann_library_prediction_style_1": "--min-fr-mz",
+            "diann_report_generation_style_1": "--min-fr-mz",
+            "diann_style_1": "--min-fr-mz",
             "ursgal_style_1": "frag_min_mz",
             "xtandem_style_1": "spectrum, minimum fragment mz"
         },
@@ -8092,6 +8297,7 @@
         "default_value": true,
         "description": "Defines if an output matrix containing information about protein groups, gene groups, unique genes and precursors should be generated.",
         "key_translations": {
+            "diann_report_generation_style_1": "generate_output_matrix_<DROP_KEY>",
             "diann_style_1": "generate_output_matrix_<DROP_KEY>",
             "ursgal_style_1": "generate_output_matrix"
         },
@@ -8099,6 +8305,16 @@
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {
+            "diann_report_generation_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--matrices"
+                ]
+            ],
             "diann_style_1": [
                 [
                     false,
@@ -8126,6 +8342,8 @@
         "default_value": true,
         "description": "instructs DIA-NN to generate a spectral library.",
         "key_translations": {
+            "diann_library_empirical_style_1": "generate_spectral_library_<DROP_KEY>",
+            "diann_library_prediction_style_1": "generate_spectral_library_<DROP_KEY>",
             "diann_style_1": "generate_spectral_library_<DROP_KEY>",
             "ursgal_style_1": "generate_spectral_library"
         },
@@ -8133,6 +8351,26 @@
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {
+            "diann_library_empirical_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--gen-spec-lib"
+                ]
+            ],
+            "diann_library_prediction_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--gen-spec-lib"
+                ]
+            ],
             "diann_style_1": [
                 [
                     false,
@@ -8394,7 +8632,7 @@
                     "Peak intensity"
                 ],
                 [
-                    "raw_data_location",
+                    "raw_filename",
                     "File Name"
                 ],
                 [
@@ -9678,6 +9916,20 @@
         "value_type": "str"
     },
     {
+        "default_value": 0.05,
+        "description": "Set ion mobility  window width.",
+        "key_translations": {
+            "diann_quantification_style_1": "--im-window",
+            "diann_style_1": "--im-window",
+            "ursgal_style_1": "im_window_width"
+        },
+        "name": "im_window_width",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "float"
+    },
+    {
         "default_value": "Index",
         "description": "This param defines which column should be used as the row index for the dataframe. Coming from an initially big dataframe, which e.g. would contain Peptide, Protein, Sequence - this column would define the one to be used as df.index.",
         "key_translations": {
@@ -10554,6 +10806,9 @@
         "default_value": 150,
         "description": "Defines the minimum m/z value to be considered by the respective tool.",
         "key_translations": {
+            "diann_library_empirical_style_1": "--min-pr-mz",
+            "diann_library_prediction_style_1": "--min-pr-mz",
+            "diann_report_generation_style_1": "--min-pr-mz",
             "diann_style_1": "--min-pr-mz",
             "pyqms_style_1": "LOWER_MZ_LIMIT",
             "sugarpy_plot_style_1": "LOWER_MZ_LIMIT",
@@ -10606,19 +10861,6 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "float"
-    },
-    {
-        "default_value": "filename",
-        "description": "Column name based on which object_identifier should be mapped when generating the experimental design.",
-        "key_translations": {
-            "exp_design_generator_style_1": "mapping_column",
-            "ursgal_style_1": "mapping_column"
-        },
-        "name": "mapping_column",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "str"
     },
     {
         "default_value": [],
@@ -11037,6 +11279,9 @@
         "key_translations": {
             "comet_style_1": "allowed_missed_cleavage",
             "deepnovo_style_1": "num_missed_cleavage",
+            "diann_library_empirical_style_1": "--missed-cleavages",
+            "diann_library_prediction_style_1": "--missed-cleavages",
+            "diann_report_generation_style_1": "--missed-cleavages",
             "diann_style_1": "--missed-cleavages",
             "kojak_style_1": "max_missed_cleavages",
             "mascot_style_1": "PFA",
@@ -11295,6 +11540,9 @@
         "description": "Maximal length of a peptide",
         "key_translations": {
             "comet_style_1": "peptide_length_range_max",
+            "diann_library_empirical_style_1": "--max-pep-len",
+            "diann_library_prediction_style_1": "--max-pep-len",
+            "diann_report_generation_style_1": "--max-pep-len",
             "diann_style_1": "--max-pep-len",
             "msamanda_style_1": "MaximumPepLength",
             "msfragger_style_1": "digest_max_length",
@@ -11641,6 +11889,9 @@
         "description": "Minimal length of a peptide",
         "key_translations": {
             "comet_style_1": "peptide_length_range_min",
+            "diann_library_empirical_style_1": "--min-pep-len",
+            "diann_library_prediction_style_1": "--min-pep-len",
+            "diann_report_generation_style_1": "--min-pep-len",
             "diann_style_1": "--min-pep-len",
             "msamanda_style_1": "MinimumPepLength",
             "msfragger_style_1": "digest_min_length",
@@ -12007,7 +12258,10 @@
                 "add_Z_user_amino_acid"
             ],
             "deepnovo_style_1": "modifications",
-            "diann_style_1": "--mod",
+            "diann_library_empirical_style_1": "--fixed-mod",
+            "diann_library_prediction_style_1": "--fixed-mod",
+            "diann_report_generation_style_1": "--fixed-mod",
+            "diann_style_1": "--fixed-mod",
             "flash_lfq_style_1": "modifications",
             "kojak_style_1": "modifications",
             "mascot_style_1": [
@@ -13808,6 +14062,10 @@
         "default_value": "",
         "description": "Specifies the name of the main output report. The names of all other report files will be derived from this one.",
         "key_translations": {
+            "diann_library_empirical_style_1": "--out",
+            "diann_library_prediction_style_1": "--out",
+            "diann_quantification_style_1": "--out",
+            "diann_report_generation_style_1": "--out",
             "diann_style_1": "--out",
             "ursgal_style_1": "output_report_name"
         },
@@ -13853,6 +14111,10 @@
         "default_value": true,
         "description": "Instructs DIA-NN to integrate chromatographic peaks only in the vicinity of the apex - equivalent to the \"Robust LC\" quantification mode.",
         "key_translations": {
+            "diann_library_empirical_style_1": "peak_center_<DROP_KEY>",
+            "diann_library_prediction_style_1": "peak_center_<DROP_KEY>",
+            "diann_quantification_style_1": "peak_center_<DROP_KEY>",
+            "diann_report_generation_style_1": "peak_center_<DROP_KEY>",
             "diann_style_1": "peak_center_<DROP_KEY>",
             "ursgal_style_1": "peak_center"
         },
@@ -13860,6 +14122,46 @@
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {
+            "diann_library_empirical_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--peak-center"
+                ]
+            ],
+            "diann_library_prediction_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--peak-center"
+                ]
+            ],
+            "diann_quantification_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--peak-center"
+                ]
+            ],
+            "diann_report_generation_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--peak-center"
+                ]
+            ],
             "diann_style_1": [
                 [
                     false,
@@ -14015,6 +14317,7 @@
         "default_value": false,
         "description": "Instructs DIA-NN to perform deep learning-based prediction of spectra, retention times and ion mobility values.",
         "key_translations": {
+            "diann_library_prediction_style_1": "perform_deeplearning_prediction_<DROP_KEY>",
             "diann_style_1": "perform_deeplearning_prediction_<DROP_KEY>",
             "ursgal_style_1": "perform_deeplearning_prediction"
         },
@@ -14022,6 +14325,16 @@
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {
+            "diann_library_prediction_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--predictor"
+                ]
+            ],
             "diann_style_1": [
                 [
                     false,
@@ -14049,6 +14362,8 @@
         "default_value": false,
         "description": "Instructs DIA-NN to perform an in silico digest of the sequence database.",
         "key_translations": {
+            "diann_library_prediction_style_1": "perform_in-silico_digest_<DROP_KEY>",
+            "diann_report_generation_style_1": "perform_in-silico_digest_<DROP_KEY>",
             "diann_style_1": "perform_in-silico_digest_<DROP_KEY>",
             "ursgal_style_1": "perform_in-silico_digest"
         },
@@ -14056,6 +14371,26 @@
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {
+            "diann_library_prediction_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--fasta-search"
+                ]
+            ],
+            "diann_report_generation_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--fasta-search"
+                ]
+            ],
             "diann_style_1": [
                 [
                     false,
@@ -14392,6 +14727,10 @@
         "description": "Lower precursor mass tolerance; maximum negative deviation of measured from calculated parent ion mass.",
         "key_translations": {
             "comet_style_1": "peptide_mass_tolerance_part1",
+            "diann_library_empirical_style_1": "--mass-acc-ms1_<lower>",
+            "diann_library_prediction_style_1": "--mass-acc-ms1_<lower>",
+            "diann_quantification_style_1": "--mass-acc-ms1_<lower>",
+            "diann_report_generation_style_1": "--mass-acc-ms1_<lower>",
             "diann_style_1": "--mass-acc-ms1_<lower>",
             "flash_lfq_style_1": "--ppm_part1",
             "mascot_style_1": "TOL_part1",
@@ -14421,6 +14760,10 @@
         "description": "Upper precursor mass tolerance; maximum positive deviation of measured from calculated parent ion mass.",
         "key_translations": {
             "comet_style_1": "peptide_mass_tolerance_part2",
+            "diann_library_empirical_style_1": "--mass-acc-ms1_<upper>",
+            "diann_library_prediction_style_1": "--mass-acc-ms1_<upper>",
+            "diann_quantification_style_1": "--mass-acc-ms1_<upper>",
+            "diann_report_generation_style_1": "--mass-acc-ms1_<upper>",
             "diann_style_1": "--mass-acc-ms1_<upper>",
             "flash_lfq_style_1": "--ppm_part2",
             "mascot_style_1": "TOL_part2",
@@ -14697,6 +15040,9 @@
         "key_translations": {
             "calculate_ion_charge_state_style_1": "max_charge",
             "comet_style_1": "max_precursor_charge",
+            "diann_library_empirical_style_1": "--max-pr-charge",
+            "diann_library_prediction_style_1": "--max-pr-charge",
+            "diann_report_generation_style_1": "--max-pr-charge",
             "diann_style_1": "--max-pr-charge",
             "mascot_style_1": "CHARGE_max",
             "msamanda_style_1": "considered_charges_max",
@@ -14748,6 +15094,9 @@
         "description": "Minimal accepted parent ion charge",
         "key_translations": {
             "comet_style_1": "precursor_charge_min",
+            "diann_library_empirical_style_1": "--min-pr-charge",
+            "diann_library_prediction_style_1": "--min-pr-charge",
+            "diann_report_generation_style_1": "--min-pr-charge",
             "diann_style_1": "--min-pr-charge",
             "mascot_style_1": "CHARGE_min",
             "msamanda_style_1": "considered_charges_min",
@@ -14988,6 +15337,10 @@
         "default_value": "heuristic",
         "description": "Protein inference algorithm to be used.",
         "key_translations": {
+            "diann_library_empirical_style_1": "protein_inference_algorithm_<DROP_KEY>",
+            "diann_library_prediction_style_1": "protein_inference_algorithm_<DROP_KEY>",
+            "diann_quantification_style_1": "protein_inference_algorithm_<DROP_KEY>",
+            "diann_report_generation_style_1": "protein_inference_algorithm_<DROP_KEY>",
             "diann_style_1": "protein_inference_algorithm_<DROP_KEY>",
             "ursgal_style_1": "protein_inference_algorithm"
         },
@@ -14995,6 +15348,46 @@
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {
+            "diann_library_empirical_style_1": [
+                [
+                    "heuristic",
+                    "--relaxed-prot-inf"
+                ],
+                [
+                    "none",
+                    "--no-prot-inf"
+                ]
+            ],
+            "diann_library_prediction_style_1": [
+                [
+                    "heuristic",
+                    "--relaxed-prot-inf"
+                ],
+                [
+                    "none",
+                    "--no-prot-inf"
+                ]
+            ],
+            "diann_quantification_style_1": [
+                [
+                    "heuristic",
+                    "--relaxed-prot-inf"
+                ],
+                [
+                    "none",
+                    "--no-prot-inf"
+                ]
+            ],
+            "diann_report_generation_style_1": [
+                [
+                    "heuristic",
+                    "--relaxed-prot-inf"
+                ],
+                [
+                    "none",
+                    "--no-prot-inf"
+                ]
+            ],
             "diann_style_1": [
                 [
                     "heuristic",
@@ -15339,6 +15732,8 @@
         "default_value": 1,
         "description": "Upper value for qvalue filter. The default value of one effecitvely decativates filtering.",
         "key_translations": {
+            "diann_quantification_style_1": "--qvalue",
+            "diann_report_generation_style_1": "--qvalue",
             "diann_style_1": "--qvalue",
             "ursgal_style_1": "qvalue_filter_threshold_upper"
         },
@@ -15383,6 +15778,8 @@
         "default_value": false,
         "description": "Reannotate the spectral library with protein information from the FASTA database, using the specified digest specificity.",
         "key_translations": {
+            "diann_library_prediction_style_1": "reannotate_spectral_library_<DROP_KEY>",
+            "diann_report_generation_style_1": "reannotate_spectral_library_<DROP_KEY>",
             "diann_style_1": "reannotate_spectral_library_<DROP_KEY>",
             "ursgal_style_1": "reannotate_spectral_library"
         },
@@ -15390,6 +15787,26 @@
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {
+            "diann_library_prediction_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--reannotate"
+                ]
+            ],
+            "diann_report_generation_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--reannotate"
+                ]
+            ],
             "diann_style_1": [
                 [
                     false,
@@ -15752,6 +16169,21 @@
         "value_type": "float"
     },
     {
+        "default_value": 0,
+        "description": "Set retention window with as scan count (see also rt_border_tolerance).",
+        "key_translations": {
+            "diann_quantification_style_1": "--window",
+            "diann_report_generation_style_1": "--window",
+            "diann_style_1": "--window",
+            "ursgal_style_1": "rt_peak_width_scans"
+        },
+        "name": "rt_peak_width_scans",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
         "default_value": null,
         "description": "name of the pickle that is used to map the retention time",
         "key_translations": {
@@ -15776,6 +16208,9 @@
         "default_value": true,
         "description": "Perform RT profiling. TODO: this param has to be revisited once it is clear what it stands for!",
         "key_translations": {
+            "diann_library_empirical_style_1": "rt_profiling_<DROP_KEY>",
+            "diann_library_prediction_style_1": "rt_profiling_<DROP_KEY>",
+            "diann_report_generation_style_1": "rt_profiling_<DROP_KEY>",
             "diann_style_1": "rt_profiling_<DROP_KEY>",
             "ursgal_style_1": "rt_profiling"
         },
@@ -15783,6 +16218,36 @@
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {
+            "diann_library_empirical_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--rt-profiling"
+                ]
+            ],
+            "diann_library_prediction_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--rt-profiling"
+                ]
+            ],
+            "diann_report_generation_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--rt-profiling"
+                ]
+            ],
             "diann_style_1": [
                 [
                     false,
@@ -16267,6 +16732,8 @@
         "default_value": "smart-profiling",
         "description": "Algorithm which determines how to extract spectra, when creating a spectral library from DIA data",
         "key_translations": {
+            "diann_library_empirical_style_1": "spectral_library_extraction_algorithm_<DROP_KEY>",
+            "diann_library_prediction_style_1": "spectral_library_extraction_algorithm_<DROP_KEY>",
             "diann_style_1": "spectral_library_extraction_algorithm_<DROP_KEY>",
             "ursgal_style_1": "spectral_library_extraction_algorithm"
         },
@@ -16274,6 +16741,18 @@
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {
+            "diann_library_empirical_style_1": [
+                [
+                    "smart-profiling",
+                    "--smart-profiling"
+                ]
+            ],
+            "diann_library_prediction_style_1": [
+                [
+                    "smart-profiling",
+                    "--smart-profiling"
+                ]
+            ],
             "diann_style_1": [
                 [
                     "smart-profiling",
@@ -16293,6 +16772,9 @@
         "default_value": "",
         "description": "Specifies the name of a spectral library to be generated.",
         "key_translations": {
+            "diann_library_empirical_style_1": "--out-lib",
+            "diann_library_prediction_style_1": "--out-lib",
+            "diann_report_generation_style_1": "--out-lib",
             "diann_style_1": "--out-lib",
             "ursgal_style_1": "spectral_library_name"
         },
@@ -16353,6 +16835,10 @@
         "default_value": true,
         "description": "Turns off interference subtraction from fragment ion chromatograms - equivalent to the \"high precision\" quantification mode.",
         "key_translations": {
+            "diann_library_empirical_style_1": "subtract_interference_<DROP_KEY>",
+            "diann_library_prediction_style_1": "subtract_interference_<DROP_KEY>",
+            "diann_quantification_style_1": "subtract_interference_<DROP_KEY>",
+            "diann_report_generation_style_1": "subtract_interference_<DROP_KEY>",
             "diann_style_1": "subtract_interference_<DROP_KEY>",
             "ursgal_style_1": "subtract_interference"
         },
@@ -16360,6 +16846,46 @@
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {
+            "diann_library_empirical_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--no-ifs-removal"
+                ]
+            ],
+            "diann_library_prediction_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--no-ifs-removal"
+                ]
+            ],
+            "diann_quantification_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--no-ifs-removal"
+                ]
+            ],
+            "diann_report_generation_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--no-ifs-removal"
+                ]
+            ],
             "diann_style_1": [
                 [
                     false,
@@ -16947,6 +17473,10 @@
         "default_value": false,
         "description": "True if timsTOF data is used. TODO: this param has to be revisited once it is clear what it stands for!",
         "key_translations": {
+            "diann_library_empirical_style_1": "tims_scan_<DROP_KEY>",
+            "diann_library_prediction_style_1": "tims_scan_<DROP_KEY>",
+            "diann_quantification_style_1": "tims_scan_<DROP_KEY>",
+            "diann_report_generation_style_1": "tims_scan_<DROP_KEY>",
             "diann_style_1": "tims_scan_<DROP_KEY>",
             "ursgal_style_1": "tims_scan"
         },
@@ -16954,6 +17484,46 @@
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {
+            "diann_library_empirical_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--tims-scan"
+                ]
+            ],
+            "diann_library_prediction_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--tims-scan"
+                ]
+            ],
+            "diann_quantification_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--tims-scan"
+                ]
+            ],
+            "diann_report_generation_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--tims-scan"
+                ]
+            ],
             "diann_style_1": [
                 [
                     false,
@@ -16997,6 +17567,9 @@
         "default_value": "",
         "description": "Specifies a path to a 'training library' for the legacy predictor.",
         "key_translations": {
+            "diann_library_empirical_style_1": "--learn-lib",
+            "diann_library_prediction_style_1": "--learn-lib",
+            "diann_report_generation_style_1": "--learn-lib",
             "diann_style_1": "--learn-lib",
             "ursgal_style_1": "training_library_name"
         },
@@ -17111,6 +17684,9 @@
         "default_value": 2000,
         "description": "Defines the minimum m/z value to be considered by the respective tool.",
         "key_translations": {
+            "diann_library_empirical_style_1": "--max-pr-mz",
+            "diann_library_prediction_style_1": "--max-pr-mz",
+            "diann_report_generation_style_1": "--max-pr-mz",
             "diann_style_1": "--max-pr-mz",
             "pyqms_style_1": "UPPER_MZ_LIMIT",
             "sugarpy_plot_style_1": "UPPER_MZ_LIMIT",
@@ -17160,6 +17736,8 @@
         "default_value": true,
         "description": "Use existing .quant files, if available.",
         "key_translations": {
+            "diann_library_empirical_style_1": "use_available_quant_files_<DROP_KEY>",
+            "diann_report_generation_style_1": "use_available_quant_files_<DROP_KEY>",
             "diann_style_1": "use_available_quant_files_<DROP_KEY>",
             "ursgal_style_1": "use_available_quant_files"
         },
@@ -17167,6 +17745,36 @@
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {
+            "diann_library_empirical_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--use-quant"
+                ]
+            ],
+            "diann_library_prediction_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--use-quant"
+                ]
+            ],
+            "diann_report_generation_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--use-quant"
+                ]
+            ],
             "diann_style_1": [
                 [
                     false,
@@ -17201,6 +17809,48 @@
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {
+            "diann_library_prediction_style_1": [
+                [
+                    "genes",
+                    2
+                ],
+                [
+                    "isoforms",
+                    0
+                ],
+                [
+                    "protein names",
+                    1
+                ]
+            ],
+            "diann_quantification_style_1": [
+                [
+                    "genes",
+                    2
+                ],
+                [
+                    "isoforms",
+                    0
+                ],
+                [
+                    "protein names",
+                    1
+                ]
+            ],
+            "diann_report_generation_style_1": [
+                [
+                    "genes",
+                    2
+                ],
+                [
+                    "isoforms",
+                    0
+                ],
+                [
+                    "protein names",
+                    1
+                ]
+            ],
             "diann_style_1": [
                 [
                     "genes",
@@ -20315,6 +20965,10 @@
         "description": "Parameter controlling verbose behavior. In general 0=false, 1=true. For qvality range from 0 = no processing info to 5 = all.",
         "key_translations": {
             "comet_style_1": "peff_verbose_output",
+            "diann_library_empirical_style_1": "--verbose",
+            "diann_library_prediction_style_1": "--verbose",
+            "diann_quantification_style_1": "--verbose",
+            "diann_report_generation_style_1": "--verbose",
             "diann_style_1": "--verbose",
             "msgfplus_style_1": "-verbose",
             "mzidentml_style_1": "-verboseOutput",
