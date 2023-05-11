@@ -17025,7 +17025,7 @@
         "default_value": 0,
         "description": "Nucleotides to be trimmed from read start",
         "key_translations": {
-            "cutadapt_style_1": "-u_<part_read_start>",
+            "cutadapt_style_1": "-u_<part1_read_start>",
             "ursgal_style_1": "trim_nt_5_prime"
         },
         "name": "trim_nt_5_prime",
