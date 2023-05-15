@@ -3142,6 +3142,21 @@
         "value_type": "int"
     },
     {
+        "default_value": null,
+        "description": "Regex expression to filter CDSs using GTF file's attributes column",
+        "key_translations": {
+            "rp_style_1": "--filter",
+            "ursgal_style_1": "cds_regex_filter"
+        },
+        "name": "cds_regex_filter",
+        "tag": [
+            "rnatool"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
         "default_value": 1.007276466621,
         "description": "Charge carrier mass (default is mass of a proton)",
         "key_translations": {
