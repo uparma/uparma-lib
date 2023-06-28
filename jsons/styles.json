@@ -160,6 +160,14 @@
             "1.0.0"
         ]
     },
+     {
+        "name": "pymzML",
+        "reference": " Kösters, M., Leufken, J., Schulze, S., Sugimoto, K., Klein, J., Zahedi, R. P., Hippler, M., Leidel, S. A., & Fufezan, C. (2018).pymzML v2.0: introducing a highly compressed and seekable gzip format.   In J. Wren (Ed.), Bioinformatics (Vol. 34, Issue 14, pp. 2513–2514). Oxford University Press (OUP). https://doi.org/10.1093/bioinformatics/bty046",
+        "style": "mzml2idxgz_style_1",
+        "versions": [
+            "2.5.2"
+        ]
+    },
     {
         "name": "Kallisto 0.48.0",
         "reference": "NL Bray, H Pimentel, P Melsted and L Pachter, Near optimal probabilistic RNA-seq quantification. Nature Biotechnology 34, p 525--527 (2016).",
