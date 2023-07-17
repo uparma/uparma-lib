@@ -729,6 +729,7 @@
         "default_value": 2000,
         "description": "sets the number of spectra loaded into memory as a batch",
         "key_translations": {
+            "casanovo_style_1": "predict_batch_size",
             "comet_style_1": "spectrum_batch_size",
             "deepnovo_style_1": "buffer_size",
             "msamanda_style_1": "LoadedSpectraAtOnce",
@@ -771,6 +772,20 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "bool"
+    },
+    {
+        "default_value": 5,
+        "description": " Number of beams used in beam search ",
+        "key_translations": {
+            "casanovo_style_1": "n_beams"
+        },
+        "name": "beam_size",
+        "tag": [
+            "de_novo"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
     },
     {
         "default_value": null,
@@ -11916,6 +11931,7 @@
         "default_value": 6,
         "description": "Minimal length of a peptide",
         "key_translations": {
+            "casanovo_style_1": "min_peptide_len",
             "comet_style_1": "peptide_length_range_min",
             "diann_library_empirical_style_1": "--min-pep-len",
             "diann_library_prediction_style_1": "--min-pep-len",
@@ -14559,6 +14575,7 @@
         "default_value": "0,1",
         "description": "Error range for incorrect carbon isotope parent ion assignment (13C)",
         "key_translations": {
+            "casanovo_style_1": "isotope_error_range",
             "comet_style_1": "isotope_error",
             "kojak_style_1": "precursor_isotope_range",
             "mascot_style_1": "PEP_ISOTOPE_ERROR",
@@ -15095,6 +15112,21 @@
         "value_type": "int"
     },
     {
+        "default_value": 50,
+        "description": "Max absolute difference allowed with respect to observed precursor m/z. Predictions outside the tolerance range are assinged a negative peptide score. (ppm)",
+        "key_translations": {
+            "casanovo_style_1": "precursor_mass_tol"
+        },
+        "name": "precursor_max_difference",
+        "tag": [
+            "accuracy",
+            "precursor"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
         "default_value": 7000,
         "description": "Maximal parent ion mass in Da. Adjusted to default used by MSFragger",
         "key_translations": {
@@ -15481,6 +15513,20 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "list"
+    },
+    {
+        "default_value": 1,
+        "description": "Number of PSMs for each spectrum",
+        "key_translations": {
+            "casanovo_style_1": "top_match"
+        },
+        "name": "psms_per_spectrum",
+        "tag": [
+            "scoring"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
     },
     {
         "default_value": "peptides_entire_dataset",

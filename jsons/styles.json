@@ -16,6 +16,14 @@
         ]
     },
     {
+        "name": "Casanovo",
+        "reference": "Yilmaz, M., Fondrie, W. E., Bittremieux, W., Nelson, R., Ananth, V., Oh, S. & Noble, W. S. Sequence-to-sequence translation from mass spectra to peptides with a transformer model.(2023)",
+        "style": "casanovo_style_1",
+        "versions": [
+            "3.4.0"
+        ]
+    },
+    {
         "name": "Combine PEP",
         "reference": "Combines PEP scores from different search engines.",
         "style": "combine_pep_style_1",
