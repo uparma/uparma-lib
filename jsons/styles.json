@@ -105,6 +105,14 @@
         ]
     },
     {
+        "name": "FCS Filter",
+        "reference": "Ursgal Team 2023",
+        "style": "fcs_filter_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
         "name": "FastQC",
         "reference": "Babraham Bioinformatics group. https://www.bioinformatics.babraham.ac.uk/publications.html",
         "style": "fastqc_style_1",
