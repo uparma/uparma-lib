@@ -21143,10 +21143,10 @@
         "default_value": false,
         "description": " Write an MGF with spectra corrected by the calibrated masses ",
         "key_translations": {
-            "msfragger_style_3": "write_calibrated_mgf",
+            "msfragger_style_3": "write_calibrated_mzml",
             "ursgal_style_1": "write_calibrated_mgf"
         },
-        "name": "write_calibrated_mgf",
+        "name": "write_calibrated_ms_file",
         "tag": [
             "spectrum"
         ],
@@ -21292,5 +21292,145 @@
             ]
         },
         "value_type": "bool"
+    },
+    {
+        "default_value": 0,
+        "description": "Use all variable modifications in first search",
+        "key_translations": {
+
+            "msfragger_style_1": "use_all_mods_in_first_search",
+            "msfragger_style_2": "use_all_mods_in_first_search",
+            "msfragger_style_3": "use_all_mods_in_first_search"
+        },
+        "name": "use_all_mods_in_first_search",
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": "all",
+        "description": " Specify amino acids on which delta masses (mass offsets or search modifications) can occur. Allowed values are single letter codes (e.g. ACD), must be capitalized.",
+        "key_translations": {
+
+            "msfragger_style_1": "restrict_deltamass_to",
+            "msfragger_style_2": "restrict_deltamass_to",
+            "msfragger_style_3": "restrict_deltamass_to"
+        },
+        "name": "restrict_deltamass_to",
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": "corrected",
+        "description": " One of isolated/selected/corrected.",
+        "key_translations": {
+
+            "msfragger_style_1": "precursor_mass_mode",
+            "msfragger_style_2": "precursor_mass_mode",
+            "msfragger_style_3": "precursor_mass_mode"
+        },
+        "name": "precursor_mass_mode",
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": "",
+        "description": " masses for b~/y~ ions (multiple values separated by /). Only used if b~/y~ are specified in the fragment_ion_series list.",
+        "key_translations": {
+
+            "msfragger_style_1": "remainder_fragment_masses",
+            "msfragger_style_2": "remainder_fragment_masses",
+            "msfragger_style_3": "remainder_fragment_masses"
+        },
+        "name": "remainder_fragment_masses",
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": 2,
+        "description": " [labile/glyco search only] Minimum number of sequence-specific (not Y) ions to record a match.",
+        "key_translations": {
+
+            "msfragger_style_1": "min_sequence_matches",
+            "msfragger_style_2": "min_sequence_matches",
+            "msfragger_style_3": "min_sequence_matches"
+        },
+        "name": "min_sequence_matches",
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": 0,
+        "description": " Put mass difference as a variable modification.",
+        "key_translations": {
+
+            "msfragger_style_1": "mass_diff_to_variable_mod ",
+            "msfragger_style_2": "mass_diff_to_variable_mod ",
+            "msfragger_style_3": "mass_diff_to_variable_mod "
+        },
+        "name": "mass_diff_to_variable_mod ",
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": 1,
+        "description": " Perform deneutrallossing or not.",
+        "key_translations": {
+
+            "msfragger_style_1": "deneutralloss ",
+            "msfragger_style_2": "deneutralloss ",
+            "msfragger_style_3": "deneutralloss "
+        },
+        "name": "deneutralloss ",
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": "",
+        "description": " Filter to only search scans of provided activation type(s).",
+        "key_translations": {
+
+            "msfragger_style_1": "activation_types ",
+            "msfragger_style_2": "activation_types ",
+            "msfragger_style_3": "activation_types "
+        },
+        "name": "activation_types ",
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": 0,
+        "description": " If required, PSMs with no precursor peaks will be discarded. For DIA data type only.",
+        "key_translations": {
+
+            "msfragger_style_1": "require_precursor ",
+            "msfragger_style_2": "require_precursor ",
+            "msfragger_style_3": "require_precursor "
+        },
+        "name": "require_precursor ",
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": 0,
+        "description": " Allow the same peak matches to multiple peptides. For DIA data type only.",
+        "key_translations": {
+
+            "msfragger_style_1": "reuse_dia_fragment_peaks ",
+            "msfragger_style_2": "reuse_dia_fragment_peaks ",
+            "msfragger_style_3": "reuse_dia_fragment_peaks "
+        },
+        "name": "reuse_dia_fragment_peaks ",
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
     }
 ]
