@@ -7536,6 +7536,36 @@
         "value_type": "bool"
     },
     {
+        "default_value": 0,
+        "description": "Extends 5' codons with reference to RPFs",
+        "key_translations": {
+            "rp_style_1": "--extend-five-prime-codons",
+            "ursgal_style_1": "extend_five_prime_codons"
+        },
+        "name": "extend_five_prime_codons",
+        "tag": [
+            "rnatool"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
+        "default_value": 0,
+        "description": "Extends 3' codons with reference to RPFs",
+        "key_translations": {
+            "rp_style_1": "--extend-three-prime-codons",
+            "ursgal_style_1": "extend_three_prime_codons"
+        },
+        "name": "extend_three_prime_codons",
+        "tag": [
+            "rnatool"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
         "default_value": false,
         "description": "Toggle compression of output files.",
         "key_translations": {
