@@ -12018,8 +12018,8 @@
         "default_value": 2,
         "description": " [labile/glyco search only] Minimum number of sequence-specific (not Y) ions to record a match.",
         "key_translations": {
-            "msfragger_style_3": " min_sequence_matches",
-            "ursgal_style_1": " min_sequence_matches"
+            "msfragger_style_3": "min_sequence_matches",
+            "ursgal_style_1": "min_required_matched_peptide_ions"
         },
         "name": "min_required_matched_peptide_ions",
         "tag": [],
@@ -14428,9 +14428,9 @@
         "description": " Perform deneutrallossing or not.",
         "key_translations": {
             "msfragger_style_3": "deneutralloss",
-            "ursgal_style_1": "deneutralloss"
+            "ursgal_style_1": "perform_deneutralloss"
         },
-        "name": "perform_deneutralloss ",
+        "name": "perform_deneutralloss",
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {
