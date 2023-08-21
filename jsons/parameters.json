@@ -4839,30 +4839,6 @@
         "value_type": "str"
     },
     {
-        "default_value": true,
-        "description": " Perform deneutrallossing or not.",
-        "key_translations": {
-            "msfragger_style_3": "deneutralloss",
-            "ursgal_style_1": "deneutralloss"
-        },
-        "name": "perform_deneutralloss ",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "msfragger_style_3": [
-                [
-                    false,
-                    0
-                ],
-                [
-                    true,
-                    1
-                ]
-            ]
-        },
-        "value_type": "bool"
-    },
-    {
         "default_value": "cid_trypsin",
         "description": "PepNovo model used for de novo sequencing. Based on the enzyme and fragmentation type. Currently only CID_IT_TRYP available.",
         "key_translations": {
@@ -11210,30 +11186,6 @@
         "value_type": "int"
     },
     {
-        "default_value": false,
-        "description": " Put mass difference as a variable modification.",
-        "key_translations": {
-            "msfragger_style_3": "mass_diff_to_variable_mod",
-            "ursgal_style_1": "mass_diff_to_variable_mod"
-        },
-        "name": "write_mass_diff_to_variable_mod",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "msfragger_style_3": [
-                [
-                    false,
-                    0
-                ],
-                [
-                    true,
-                    1
-                ]
-            ]
-        },
-        "value_type": "bool"
-    },
-    {
         "default_value": [],
         "description": "List of mass offsets at which modification peaks will be checked for (e.g. [0, 79.9663])",
         "key_translations": {
@@ -14466,6 +14418,30 @@
                 [
                     true,
                     true
+                ]
+            ]
+        },
+        "value_type": "bool"
+    },
+    {
+        "default_value": true,
+        "description": " Perform deneutrallossing or not.",
+        "key_translations": {
+            "msfragger_style_3": "deneutralloss",
+            "ursgal_style_1": "deneutralloss"
+        },
+        "name": "perform_deneutralloss ",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "msfragger_style_3": [
+                [
+                    false,
+                    0
+                ],
+                [
+                    true,
+                    1
                 ]
             ]
         },
@@ -21350,6 +21326,30 @@
                 [
                     true,
                     true
+                ]
+            ]
+        },
+        "value_type": "bool"
+    },
+    {
+        "default_value": false,
+        "description": " Put mass difference as a variable modification.",
+        "key_translations": {
+            "msfragger_style_3": "mass_diff_to_variable_mod",
+            "ursgal_style_1": "mass_diff_to_variable_mod"
+        },
+        "name": "write_mass_diff_to_variable_mod",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "msfragger_style_3": [
+                [
+                    false,
+                    0
+                ],
+                [
+                    true,
+                    1
                 ]
             ]
         },
