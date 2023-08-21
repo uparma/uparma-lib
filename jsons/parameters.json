@@ -4845,7 +4845,7 @@
             "msfragger_style_3": "deneutralloss",
             "ursgal_style_1": "deneutralloss"
         },
-        "name": "deneutralloss ",
+        "name": "perform_deneutralloss ",
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {
@@ -11216,7 +11216,7 @@
             "msfragger_style_3": "mass_diff_to_variable_mod",
             "ursgal_style_1": "mass_diff_to_variable_mod"
         },
-        "name": "mass_diff_to_variable_mod",
+        "name": "write_mass_diff_to_variable_mod",
         "tag": [],
         "triggers_rerun": true,
         "value_translations": {
@@ -12066,8 +12066,8 @@
         "default_value": 2,
         "description": " [labile/glyco search only] Minimum number of sequence-specific (not Y) ions to record a match.",
         "key_translations": {
-            "msfragger_style_3": " min_required_matched_peptide_ions",
-            "ursgal_style_1": " min_required_matched_peptide_ions"
+            "msfragger_style_3": " min_sequence_matches",
+            "ursgal_style_1": " min_sequence_matches"
         },
         "name": "min_required_matched_peptide_ions",
         "tag": [],
@@ -15201,7 +15201,6 @@
             "kojak_style_1": "precursor_max_mass",
             "msfragger_style_1": "precursor_max_mass",
             "msfragger_style_2": "precursor_max_mass",
-            "msfragger_style_3": "precursor_max_mass",
             "myrimatch_style_1": "MaxPeptideMass",
             "pglyco_db_style_1": "max_peptide_weight",
             "pnovo_style_1": "mass_upper_bound",
@@ -15253,7 +15252,6 @@
             "kojak_style_1": "precursor_min_mass",
             "msfragger_style_1": "precursor_min_mass",
             "msfragger_style_2": "precursor_min_mass",
-            "msfragger_style_3": "precursor_min_mass",
             "myrimatch_style_1": "MinPeptideMass",
             "pglyco_db_style_1": "min_peptide_weight",
             "pnovo_style_1": "mass_lower_bound",
