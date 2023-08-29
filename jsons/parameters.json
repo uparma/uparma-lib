@@ -8029,6 +8029,7 @@
         "description": "Used fragmentation method, e.g. collision-induced dissociation (cid), electron-capture dissociation (ecd), electron-transfer dissociation (etd), Higher-energy C-trap dissociation (hcd)",
         "key_translations": {
             "comet_style_1": "activation_method",
+            "msfragger_style_3": "activation_types",
             "msgfplus_style_1": "-m",
             "novor_style_1": "fragmentation",
             "pnovo_style_1": "activation_type",
@@ -8078,6 +8079,28 @@
                 [
                     "sid",
                     "SID"
+                ]
+            ],
+            "msfragger_style_3": [
+                [
+                    "all",
+                    "all"
+                ],
+                [
+                    "cid",
+                    "CID"
+                ],
+                [
+                    "ecd",
+                    "ECD"
+                ],
+                [
+                    "etd",
+                    "ETD"
+                ],
+                [
+                    "hcd",
+                    "HCD"
                 ]
             ],
             "msgfplus_style_1": [
@@ -11992,6 +12015,19 @@
         "value_type": "int"
     },
     {
+        "default_value": 2,
+        "description": " [labile/glyco search only] Minimum number of sequence-specific (not Y) ions to record a match.",
+        "key_translations": {
+            "msfragger_style_3": "min_sequence_matches",
+            "ursgal_style_1": "min_required_matched_peptide_ions"
+        },
+        "name": "min_required_matched_peptide_ions",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
         "default_value": 5,
         "description": "Mimimum number of peaks in the spectrum to be considered. MSFragger default: 15",
         "key_translations": {
@@ -14388,6 +14424,30 @@
         "value_type": "bool"
     },
     {
+        "default_value": true,
+        "description": " Perform deneutrallossing or not.",
+        "key_translations": {
+            "msfragger_style_3": "deneutralloss",
+            "ursgal_style_1": "perform_deneutralloss"
+        },
+        "name": "perform_deneutralloss",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "msfragger_style_3": [
+                [
+                    false,
+                    0
+                ],
+                [
+                    true,
+                    1
+                ]
+            ]
+        },
+        "value_type": "bool"
+    },
+    {
         "default_value": false,
         "description": "Instructs DIA-NN to perform an in silico digest of the sequence database.",
         "key_translations": {
@@ -14752,6 +14812,19 @@
         "value_type": "select"
     },
     {
+        "default_value": "corrected",
+        "description": " One of isolated/selected/corrected.",
+        "key_translations": {
+            "msfragger_style_3": "precursor_mass_mode",
+            "ursgal_style_1": "precursor_mass_mode"
+        },
+        "name": "precursor_mass_mode",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "select"
+    },
+    {
         "default_value": 5,
         "description": "Lower precursor mass tolerance; maximum negative deviation of measured from calculated parent ion mass.",
         "key_translations": {
@@ -15104,7 +15177,6 @@
             "kojak_style_1": "precursor_max_mass",
             "msfragger_style_1": "precursor_max_mass",
             "msfragger_style_2": "precursor_max_mass",
-            "msfragger_style_3": "precursor_max_mass",
             "myrimatch_style_1": "MaxPeptideMass",
             "pglyco_db_style_1": "max_peptide_weight",
             "pnovo_style_1": "mass_upper_bound",
@@ -15156,7 +15228,6 @@
             "kojak_style_1": "precursor_min_mass",
             "msfragger_style_1": "precursor_min_mass",
             "msfragger_style_2": "precursor_min_mass",
-            "msfragger_style_3": "precursor_min_mass",
             "myrimatch_style_1": "MinPeptideMass",
             "pglyco_db_style_1": "min_peptide_weight",
             "pnovo_style_1": "mass_lower_bound",
@@ -16111,6 +16182,30 @@
     },
     {
         "default_value": false,
+        "description": " If required, PSMs with no precursor peaks will be discarded. For DIA data type only.",
+        "key_translations": {
+            "msfragger_style_3": "require_precursor",
+            "ursgal_style_1": "require_precursor"
+        },
+        "name": "require_precursor ",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "msfragger_style_3": [
+                [
+                    false,
+                    0
+                ],
+                [
+                    true,
+                    1
+                ]
+            ]
+        },
+        "value_type": "bool"
+    },
+    {
+        "default_value": false,
         "description": "Controls whether the analyzed peptides must contain at least one variable modification. If True only modified peptides will be considered. Default is false, thus both modified and unmodified will be analyzed.",
         "key_translations": {
             "comet_style_1": "require_variable_mod",
@@ -16161,6 +16256,43 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "float"
+    },
+    {
+        "default_value": "all",
+        "description": " Specify amino acids on which delta masses (mass offsets or search modifications) can occur. Allowed values are single letter codes (e.g. ACD), must be capitalized.",
+        "key_translations": {
+            "msfragger_style_3": "restrict_deltamass_to",
+            "ursgal_style_1": "restrict_deltamass_to"
+        },
+        "name": "restrict_deltamass_to",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": false,
+        "description": " Allow the same peak matches to multiple peptides. For DIA data type only.",
+        "key_translations": {
+            "msfragger_style_3": "reuse_dia_fragment_peaks",
+            "ursgal_style_1": "reuse_dia_fragment_peaks"
+        },
+        "name": "reuse_dia_fragment_peaks ",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "msfragger_style_3": [
+                [
+                    false,
+                    0
+                ],
+                [
+                    true,
+                    1
+                ]
+            ]
+        },
+        "value_type": "bool"
     },
     {
         "default_value": 3,
@@ -17760,6 +17892,30 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "str"
+    },
+    {
+        "default_value": false,
+        "description": "Use all variable modifications in first search",
+        "key_translations": {
+            "msfragger_style_3": "use_all_mods_in_first_search",
+            "ursgal_style_1": "use_all_mods_in_first_search"
+        },
+        "name": "use_all_mods_in_first_search",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "msfragger_style_3": [
+                [
+                    false,
+                    0
+                ],
+                [
+                    true,
+                    1
+                ]
+            ]
+        },
+        "value_type": "bool"
     },
     {
         "default_value": true,
@@ -21143,10 +21299,10 @@
         "default_value": false,
         "description": " Write an MGF with spectra corrected by the calibrated masses ",
         "key_translations": {
-            "msfragger_style_3": "write_calibrated_mgf",
+            "msfragger_style_3": "write_calibrated_mzml",
             "ursgal_style_1": "write_calibrated_mgf"
         },
-        "name": "write_calibrated_mgf",
+        "name": "write_calibrated_ms_file",
         "tag": [
             "spectrum"
         ],
@@ -21170,6 +21326,30 @@
                 [
                     true,
                     true
+                ]
+            ]
+        },
+        "value_type": "bool"
+    },
+    {
+        "default_value": false,
+        "description": " Put mass difference as a variable modification.",
+        "key_translations": {
+            "msfragger_style_3": "mass_diff_to_variable_mod",
+            "ursgal_style_1": "mass_diff_to_variable_mod"
+        },
+        "name": "write_mass_diff_to_variable_mod",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "msfragger_style_3": [
+                [
+                    false,
+                    0
+                ],
+                [
+                    true,
+                    1
                 ]
             ]
         },
