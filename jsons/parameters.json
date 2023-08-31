@@ -14842,8 +14842,8 @@
         "value_type": "select"
     },
     {
-        "default_value": "corrected",
-        "description": " One of isolated/selected/corrected.",
+        "default_value": "selected",
+        "description": " One of isolated/selected/recalculated.",
         "key_translations": {
             "msfragger_style_3": "precursor_mass_mode",
             "ursgal_style_1": "precursor_mass_mode"
