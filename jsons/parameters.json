@@ -21502,5 +21502,83 @@
             ]
         },
         "value_type": "bool"
+    },
+    {
+        "description": "FCS file to be preprocessed",
+        "default_value": "",
+        "key_translations": {
+            "cytocluster_style_1": "--fcs",
+            "ursgal_style_1": "fcs_file"
+        },
+        "name": "fcs_file",
+        "tag": [
+            "cytocluster_qc"
+        ],
+        "value_type": "str"
+    },
+    {
+        "description": "Is the compensation required? Is the FCS pre-compensated? [TRUE, FALSE]",
+        "default_value": "FALSE",
+        "key_translations": {
+            "cytocluster_style_1": "--compensationRequired",
+            "ursgal_style_1": "compensation_required"
+        },
+        "name": "compensation_required",
+        "tag": [
+            "cytocluster_qc"
+        ],
+        "value_type": "str"
+    },
+    {
+        "description": "Directory containing compensation files",
+        "default_value": "FALSE",
+        "key_translations": {
+            "cytocluster_style_1": "--compensationDir",
+            "ursgal_style_1": "compensation_dir"
+        },
+        "name": "compensation_dir",
+        "tag": [
+            "cytocluster_qc"
+        ],
+        "value_type": "str"
+    },
+    {
+        "description": "Comma separated list of compensation files",
+        "default_value": "FALSE",
+        "key_translations": {
+            "cytocluster_style_1": "--compensationFiles",
+            "ursgal_style_1": "compensation_files"
+        },
+        "name": "compensation_files",
+        "tag": [
+            "cytocluster_qc"
+        ],
+        "value_type": "str"
+    },
+    {
+        "description": "Which QC methods you want to apply on the FCS file",
+        "default_value": "c('flowAI', 'peacoQC', 'flowCut')",
+        "key_translations": {
+            "cytocluster_style_1": "--qcMethod",
+            "ursgal_style_1": "qc_method"
+        },
+        "name": "qc_method",
+        "tag": [
+            "cytocluster_qc"
+        ],
+        "value_type": "str"
+    },
+    {
+        "description": "Output directory",
+        "default_value": "",
+        "key_translations": {
+            "cytocluster_style_1": "--outDir",
+            "ursgal_style_1": "out_dir"
+        },
+        "name": "out_dir",
+        "tag": [
+            "cytocluster_qc"
+        ],
+        "value_type": "str"
     }
 ]
