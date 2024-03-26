@@ -21580,5 +21580,96 @@
             "cytocluster_qc"
         ],
         "value_type": "str"
+    },
+    {
+        "description": "Directory with QC to plot",
+        "default_value": "",
+        "key_translations": {
+            "cytocluster_style_1": "--inputDir",
+            "ursgal_style_1": "input_dir"
+        },
+        "name": "input_dir",
+        "tag": [
+            "cytocluster_qc_summary"
+        ],
+        "value_type": "str"
+    },
+    {
+        "description": "Output directory",
+        "default_value": "",
+        "key_translations": {
+            "cytocluster_style_1": "--outDir",
+            "ursgal_style_1": "out_dir"
+        },
+        "name": "out_dir",
+        "tag": [
+            "cytocluster_qc_summary"
+        ],
+        "value_type": "str"
+    },
+    {
+        "description": "FCS file to be preprocessed",
+        "default_value": "",
+        "key_translations": {
+            "cytocluster_style_1": "--fcs",
+            "ursgal_style_1": "fcs_file"
+        },
+        "name": "fcs_file",
+        "tag": [
+            "cytocluster_routine_gating"
+        ],
+        "value_type": "str"
+    },
+    {
+        "description": "Gating strategy into a CSV file",
+        "default_value": "",
+        "key_translations": {
+            "cytocluster_style_1": "--gatingStrategy",
+            "ursgal_style_1": "gating_strategy"
+        },
+        "name": "gating_strategy",
+        "tag": [
+            "cytocluster_routine_gating"
+        ],
+        "value_type": "str"
+    },
+    {
+        "description": "Output directory",
+        "default_value": "",
+        "key_translations": {
+            "cytocluster_style_1": "--outDir",
+            "ursgal_style_1": "out_dir"
+        },
+        "name": "out_dir",
+        "tag": [
+            "cytocluster_routine_gating"
+        ],
+        "value_type": "str"
+    },
+    {
+        "description": "Directory with QC to plot",
+        "default_value": "",
+        "key_translations": {
+            "cytocluster_style_1": "--inputDir",
+            "ursgal_style_1": "input_dir"
+        },
+        "name": "input_dir",
+        "tag": [
+            "cytocluster_routine_gating_summary"
+        ],
+        "value_type": "str"
+    },
+    {
+        "description": "Output directory",
+        "default_value": "",
+        "key_translations": {
+            "cytocluster_style_1": "--outDir",
+            "ursgal_style_1": "out_dir"
+        },
+        "name": "out_dir",
+        "tag": [
+            "cytocluster_routine_gating_summary"
+        ],
+        "value_type": "str"
     }
 ]

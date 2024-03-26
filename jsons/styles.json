@@ -48,6 +48,14 @@
         ]
     },
     {
+        "name": "cytocluster",
+        "reference": "Ursgal2 Team",
+        "style": "cytocluster_style_1",
+        "versions": [
+            "1.2.8"
+        ]
+    },
+    {
         "name": "DIA-NN",
         "reference": "Demichev, V., Messner, C.B., Vernardis, S.I. et al. DIA-NN: neural networks and interference correction enable deep proteome coverage in high throughput. Nat Methods 17, 41\u201344 (2020)",
         "style": "diann_style_1",
