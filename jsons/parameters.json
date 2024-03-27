@@ -21514,6 +21514,20 @@
         "tag": [
             "cytocluster_qc"
         ],
+        "value_translations": {
+            "cytocluster_style_1": [
+                [
+                    "fcs",
+                    "--fcs"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "--fcs",
+                    "--fcs"
+                ]
+            ]
+        },
         "value_type": "str"
     },
     {
@@ -21527,6 +21541,20 @@
         "tag": [
             "cytocluster_qc"
         ],
+        "value_translations": {
+            "cytocluster_style_1": [
+                [
+                    "comp_req",
+                    "--compensationRequired"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "--compensationRequired",
+                    "--compensationRequired"
+                ]
+            ]
+        },
         "value_type": "str"
     },
     {
@@ -21540,6 +21568,20 @@
         "tag": [
             "cytocluster_qc"
         ],
+        "value_translations": {
+            "cytocluster_style_1": [
+                [
+                    "comp_dir",
+                    "--compensationDir"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "--compensationDir",
+                    "--compensationDir"
+                ]
+            ]
+        },
         "value_type": "str"
     },
     {
@@ -21553,6 +21595,20 @@
         "tag": [
             "cytocluster_qc"
         ],
+        "value_translations": {
+            "cytocluster_style_1": [
+                [
+                    "comp_files",
+                    "--compensationFiles"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "--compensationFiles",
+                    "--compensationFiles"
+                ]
+            ]
+        },
         "value_type": "str"
     },
     {
@@ -21566,6 +21622,20 @@
         "tag": [
             "cytocluster_qc"
         ],
+        "value_translations": {
+            "cytocluster_style_1": [
+                [
+                    "qc_method",
+                    "--qcMethod"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "--qcMethod",
+                    "--qcMethod"
+                ]
+            ]
+        },
         "value_type": "str"
     },
     {
@@ -21579,6 +21649,20 @@
         "tag": [
             "cytocluster_qc"
         ],
+        "value_translations": {
+            "cytocluster_style_1": [
+                [
+                    "out_dir",
+                    "--outDir"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "--outDir",
+                    "--outDir"
+                ]
+            ]
+        },
         "value_type": "str"
     },
     {
@@ -21592,6 +21676,20 @@
         "tag": [
             "cytocluster_qc_summary"
         ],
+        "value_translations": {
+            "cytocluster_style_1": [
+                [
+                    "input_dir",
+                    "--inputDir"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "--inputDir",
+                    "--inputDir"
+                ]
+            ]
+        },
         "value_type": "str"
     },
     {
@@ -21605,6 +21703,20 @@
         "tag": [
             "cytocluster_qc_summary"
         ],
+        "value_translations": {
+            "cytocluster_style_1": [
+                [
+                    "out_dir",
+                    "--outDir"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "--outDir",
+                    "--outDir"
+                ]
+            ]
+        },
         "value_type": "str"
     },
     {
@@ -21618,6 +21730,20 @@
         "tag": [
             "cytocluster_routine_gating"
         ],
+        "value_translations": {
+            "cytocluster_style_1": [
+                [
+                    "fcs",
+                    "--fcs"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "--fcs",
+                    "--fcs"
+                ]
+            ]
+        },
         "value_type": "str"
     },
     {
@@ -21631,6 +21757,20 @@
         "tag": [
             "cytocluster_routine_gating"
         ],
+        "value_translations": {
+            "cytocluster_style_1": [
+                [
+                    "gating_strategy",
+                    "--gatingStrategy"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "--gatingStrategy",
+                    "--gatingStrategy"
+                ]
+            ]
+        },
         "value_type": "str"
     },
     {
@@ -21644,6 +21784,20 @@
         "tag": [
             "cytocluster_routine_gating"
         ],
+        "value_translations": {
+            "cytocluster_style_1": [
+                [
+                    "out_dir",
+                    "--outDir"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "--outDir",
+                    "--outDir"
+                ]
+            ]
+        },
         "value_type": "str"
     },
     {
@@ -21657,6 +21811,20 @@
         "tag": [
             "cytocluster_routine_gating_summary"
         ],
+        "value_translations": {
+            "cytocluster_style_1": [
+                [
+                    "input_dir",
+                    "--inputDir"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "--inputDir",
+                    "--inputDir"
+                ]
+            ]
+        },
         "value_type": "str"
     },
     {
@@ -21670,6 +21838,20 @@
         "tag": [
             "cytocluster_routine_gating_summary"
         ],
+        "value_translations": {
+            "cytocluster_style_1": [
+                [
+                    "out_dir",
+                    "--outDir"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    "--outDir",
+                    "--outDir"
+                ]
+            ]
+        },
         "value_type": "str"
     }
 ]
