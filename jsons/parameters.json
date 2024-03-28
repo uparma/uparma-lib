@@ -3481,6 +3481,70 @@
         "value_type": "bool"
     },
     {
+        "default_value": false,
+        "description": "Comma separated list of compensation files",
+        "key_translations": {
+            "cytocluster_style_1": "--compensationFiles",
+            "ursgal_style_1": "compensation_files"
+        },
+        "name": "compensation_files",
+        "tag": [
+            "cytocluster"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {
+            "cytocluster_style_1": [
+                [
+                    false,
+                    "FALSE"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ]
+            ]
+        },
+        "value_type": "str"
+    },
+    {
+        "default_value": false,
+        "description": "Is the compensation required? Is the FCS pre-compensated? [TRUE, FALSE]",
+        "key_translations": {
+            "cytocluster_style_1": "--compensationRequired",
+            "ursgal_style_1": "compensation_required"
+        },
+        "name": "compensation_required",
+        "tag": [
+            "cytocluster"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {
+            "cytocluster_style_1": [
+                [
+                    false,
+                    "FALSE"
+                ],
+                [
+                    true,
+                    "TRUE"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "bool"
+    },
+    {
         "default_value": "com.compomics.util.experiment.identification.protein_inference.executable.PeptideMapping",
         "description": "Default value accesses the PeptideMapper tool, other tools are not implemented/covered yet",
         "key_translations": {
@@ -7615,6 +7679,21 @@
         "value_type": "str"
     },
     {
+        "default_value": "",
+        "description": "FCS file to be preprocessed",
+        "key_translations": {
+            "cytocluster_style_1": "--fcs",
+            "ursgal_style_1": "fcs_file"
+        },
+        "name": "fcs_file",
+        "tag": [
+            "cytocluster"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
         "default_value": 0.01,
         "description": "Target PSMs with a lower FDR than this threshold will be used as a positive training set for SVM post-processing",
         "key_translations": {
@@ -8360,6 +8439,21 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "str_password"
+    },
+    {
+        "default_value": "",
+        "description": "Gating strategy into a CSV file",
+        "key_translations": {
+            "cytocluster_style_1": "--gatingStrategy",
+            "ursgal_style_1": "gating_strategy"
+        },
+        "name": "gating_strategy",
+        "tag": [
+            "cytocluster"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
     },
     {
         "default_value": true,
@@ -10038,6 +10132,21 @@
         "tag": [
             "validation",
             "peptide_forest"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": "",
+        "description": "Directory with QC to plot",
+        "key_translations": {
+            "cytocluster_style_1": "--inputDir",
+            "ursgal_style_1": "input_dir"
+        },
+        "name": "input_dir",
+        "tag": [
+            "cytocluster"
         ],
         "triggers_rerun": true,
         "value_translations": {},
@@ -13874,6 +13983,21 @@
         "value_type": "bool"
     },
     {
+        "default_value": "",
+        "description": "Output directory",
+        "key_translations": {
+            "cytocluster_style_1": "--outDir",
+            "ursgal_style_1": "out_dir"
+        },
+        "name": "out_dir",
+        "tag": [
+            "cytocluster"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
         "default_value": true,
         "description": "Output probabilities for each amino acid.",
         "key_translations": {
@@ -15796,6 +15920,21 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "float"
+    },
+    {
+        "default_value": "",
+        "description": "Which QC methods you want to apply on the FCS file",
+        "key_translations": {
+            "cytocluster_style_1": "--qcMethod",
+            "ursgal_style_1": "qc_method"
+        },
+        "name": "qc_method",
+        "tag": [
+            "cytocluster"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
     },
     {
         "default_value": null,
@@ -21502,144 +21641,5 @@
             ]
         },
         "value_type": "bool"
-    },
-    {
-        "description": "FCS file to be preprocessed",
-        "default_value": "",
-        "key_translations": {
-            "cytocluster_style_1": "--fcs",
-            "ursgal_style_1": "fcs_file"
-        },
-        "name": "fcs_file",
-        "tag": [
-            "cytocluster"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "str"
-    },
-    {
-        "description": "Is the compensation required? Is the FCS pre-compensated? [TRUE, FALSE]",
-        "default_value": false,
-        "key_translations": {
-            "cytocluster_style_1": "--compensationRequired",
-            "ursgal_style_1": "compensation_required"
-        },
-        "name": "compensation_required",
-        "tag": [
-            "cytocluster"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {
-            "cytocluster_style_1": [
-                [
-                    false,
-                    "FALSE"
-                ],
-                [
-                    true,
-                    "TRUE"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    true,
-                    true
-                ],
-                [
-                    false,
-                    false
-                ]
-            ]
-        },
-        "value_type": "bool"
-    },
-    {
-        "description": "Comma separated list of compensation files",
-        "default_value": false,
-        "key_translations": {
-            "cytocluster_style_1": "--compensationFiles",
-            "ursgal_style_1": "compensation_files"
-        },
-        "name": "compensation_files",
-        "tag": [
-            "cytocluster"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {
-            "cytocluster_style_1": [
-                [
-                    false,
-                    "FALSE"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ]
-            ]
-        },
-        "value_type": "str"
-    },
-    {
-        "description": "Which QC methods you want to apply on the FCS file",
-        "default_value": "",
-        "key_translations": {
-            "cytocluster_style_1": "--qcMethod",
-            "ursgal_style_1": "qc_method"
-        },
-        "name": "qc_method",
-        "tag": [
-            "cytocluster"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "str"
-    },
-    {
-        "description": "Output directory",
-        "default_value": "",
-        "key_translations": {
-            "cytocluster_style_1": "--outDir",
-            "ursgal_style_1": "out_dir"
-        },
-        "name": "out_dir",
-        "tag": [
-            "cytocluster"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "str"
-    },
-    {
-        "description": "Directory with QC to plot",
-        "default_value": "",
-        "key_translations": {
-            "cytocluster_style_1": "--inputDir",
-            "ursgal_style_1": "input_dir"
-        },
-        "name": "input_dir",
-        "tag": [
-            "cytocluster"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "str"
-    },
-    {
-        "description": "Gating strategy into a CSV file",
-        "default_value": "",
-        "key_translations": {
-            "cytocluster_style_1": "--gatingStrategy",
-            "ursgal_style_1": "gating_strategy"
-        },
-        "name": "gating_strategy",
-        "tag": [
-            "cytocluster"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "str"
     }
 ]
