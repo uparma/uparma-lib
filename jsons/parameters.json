@@ -21512,7 +21512,7 @@
         },
         "name": "fcs_file",
         "tag": [
-            "cytocluster_qc"
+            "cytocluster"
         ],
         "value_translations": {
             "cytocluster_style_1": [
@@ -21539,7 +21539,7 @@
         },
         "name": "compensation_required",
         "tag": [
-            "cytocluster_qc"
+            "cytocluster"
         ],
         "value_translations": {
             "cytocluster_style_1": [
@@ -21566,7 +21566,7 @@
         },
         "name": "compensation_dir",
         "tag": [
-            "cytocluster_qc"
+            "cytocluster"
         ],
         "value_translations": {
             "cytocluster_style_1": [
@@ -21593,7 +21593,7 @@
         },
         "name": "compensation_files",
         "tag": [
-            "cytocluster_qc"
+            "cytocluster"
         ],
         "value_translations": {
             "cytocluster_style_1": [
@@ -21620,7 +21620,7 @@
         },
         "name": "qc_method",
         "tag": [
-            "cytocluster_qc"
+            "cytocluster"
         ],
         "value_translations": {
             "cytocluster_style_1": [
@@ -21647,7 +21647,7 @@
         },
         "name": "out_dir",
         "tag": [
-            "cytocluster_qc"
+            "cytocluster"
         ],
         "value_translations": {
             "cytocluster_style_1": [
@@ -21674,7 +21674,7 @@
         },
         "name": "input_dir",
         "tag": [
-            "cytocluster_qc_summary"
+            "cytocluster"
         ],
         "value_translations": {
             "cytocluster_style_1": [
@@ -21687,60 +21687,6 @@
                 [
                     "--inputDir",
                     "--inputDir"
-                ]
-            ]
-        },
-        "value_type": "str"
-    },
-    {
-        "description": "Output directory",
-        "default_value": "",
-        "key_translations": {
-            "cytocluster_style_1": "--outDir",
-            "ursgal_style_1": "out_dir"
-        },
-        "name": "out_dir",
-        "tag": [
-            "cytocluster_qc_summary"
-        ],
-        "value_translations": {
-            "cytocluster_style_1": [
-                [
-                    "out_dir",
-                    "--outDir"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    "--outDir",
-                    "--outDir"
-                ]
-            ]
-        },
-        "value_type": "str"
-    },
-    {
-        "description": "FCS file to be preprocessed",
-        "default_value": "",
-        "key_translations": {
-            "cytocluster_style_1": "--fcs",
-            "ursgal_style_1": "fcs_file"
-        },
-        "name": "fcs_file",
-        "tag": [
-            "cytocluster_routine_gating"
-        ],
-        "value_translations": {
-            "cytocluster_style_1": [
-                [
-                    "fcs",
-                    "--fcs"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    "--fcs",
-                    "--fcs"
                 ]
             ]
         },
@@ -21755,7 +21701,7 @@
         },
         "name": "gating_strategy",
         "tag": [
-            "cytocluster_routine_gating"
+            "cytocluster"
         ],
         "value_translations": {
             "cytocluster_style_1": [
@@ -21768,87 +21714,6 @@
                 [
                     "--gatingStrategy",
                     "--gatingStrategy"
-                ]
-            ]
-        },
-        "value_type": "str"
-    },
-    {
-        "description": "Output directory",
-        "default_value": "",
-        "key_translations": {
-            "cytocluster_style_1": "--outDir",
-            "ursgal_style_1": "out_dir"
-        },
-        "name": "out_dir",
-        "tag": [
-            "cytocluster_routine_gating"
-        ],
-        "value_translations": {
-            "cytocluster_style_1": [
-                [
-                    "out_dir",
-                    "--outDir"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    "--outDir",
-                    "--outDir"
-                ]
-            ]
-        },
-        "value_type": "str"
-    },
-    {
-        "description": "Directory with QC to plot",
-        "default_value": "",
-        "key_translations": {
-            "cytocluster_style_1": "--inputDir",
-            "ursgal_style_1": "input_dir"
-        },
-        "name": "input_dir",
-        "tag": [
-            "cytocluster_routine_gating_summary"
-        ],
-        "value_translations": {
-            "cytocluster_style_1": [
-                [
-                    "input_dir",
-                    "--inputDir"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    "--inputDir",
-                    "--inputDir"
-                ]
-            ]
-        },
-        "value_type": "str"
-    },
-    {
-        "description": "Output directory",
-        "default_value": "",
-        "key_translations": {
-            "cytocluster_style_1": "--outDir",
-            "ursgal_style_1": "out_dir"
-        },
-        "name": "out_dir",
-        "tag": [
-            "cytocluster_routine_gating_summary"
-        ],
-        "value_translations": {
-            "cytocluster_style_1": [
-                [
-                    "out_dir",
-                    "--outDir"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    "--outDir",
-                    "--outDir"
                 ]
             ]
         },
