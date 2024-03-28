@@ -21514,25 +21514,13 @@
         "tag": [
             "cytocluster"
         ],
-        "value_translations": {
-            "cytocluster_style_1": [
-                [
-                    "fcs",
-                    "--fcs"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    "--fcs",
-                    "--fcs"
-                ]
-            ]
-        },
+        "triggers_rerun": true,
+        "value_translations": {},
         "value_type": "str"
     },
     {
         "description": "Is the compensation required? Is the FCS pre-compensated? [TRUE, FALSE]",
-        "default_value": "FALSE",
+        "default_value": false,
         "key_translations": {
             "cytocluster_style_1": "--compensationRequired",
             "ursgal_style_1": "compensation_required"
@@ -21541,52 +21529,34 @@
         "tag": [
             "cytocluster"
         ],
+        "triggers_rerun": true,
         "value_translations": {
             "cytocluster_style_1": [
                 [
-                    "comp_req",
-                    "--compensationRequired"
+                    false,
+                    "FALSE"
+                ],
+                [
+                    true,
+                    "TRUE"
                 ]
             ],
             "ursgal_style_1": [
                 [
-                    "--compensationRequired",
-                    "--compensationRequired"
+                    true,
+                    true
+                ],
+                [
+                    false,
+                    false
                 ]
             ]
         },
-        "value_type": "str"
-    },
-    {
-        "description": "Directory containing compensation files",
-        "default_value": "FALSE",
-        "key_translations": {
-            "cytocluster_style_1": "--compensationDir",
-            "ursgal_style_1": "compensation_dir"
-        },
-        "name": "compensation_dir",
-        "tag": [
-            "cytocluster"
-        ],
-        "value_translations": {
-            "cytocluster_style_1": [
-                [
-                    "comp_dir",
-                    "--compensationDir"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    "--compensationDir",
-                    "--compensationDir"
-                ]
-            ]
-        },
-        "value_type": "str"
+        "value_type": "bool"
     },
     {
         "description": "Comma separated list of compensation files",
-        "default_value": "FALSE",
+        "default_value": false,
         "key_translations": {
             "cytocluster_style_1": "--compensationFiles",
             "ursgal_style_1": "compensation_files"
@@ -21595,17 +21565,18 @@
         "tag": [
             "cytocluster"
         ],
+        "triggers_rerun": true,
         "value_translations": {
             "cytocluster_style_1": [
                 [
-                    "comp_files",
-                    "--compensationFiles"
+                    false,
+                    "FALSE"
                 ]
             ],
             "ursgal_style_1": [
                 [
-                    "--compensationFiles",
-                    "--compensationFiles"
+                    false,
+                    false
                 ]
             ]
         },
@@ -21613,7 +21584,7 @@
     },
     {
         "description": "Which QC methods you want to apply on the FCS file",
-        "default_value": "c('flowAI', 'peacoQC', 'flowCut')",
+        "default_value": "",
         "key_translations": {
             "cytocluster_style_1": "--qcMethod",
             "ursgal_style_1": "qc_method"
@@ -21622,20 +21593,8 @@
         "tag": [
             "cytocluster"
         ],
-        "value_translations": {
-            "cytocluster_style_1": [
-                [
-                    "qc_method",
-                    "--qcMethod"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    "--qcMethod",
-                    "--qcMethod"
-                ]
-            ]
-        },
+        "triggers_rerun": true,
+        "value_translations": {},
         "value_type": "str"
     },
     {
@@ -21649,20 +21608,8 @@
         "tag": [
             "cytocluster"
         ],
-        "value_translations": {
-            "cytocluster_style_1": [
-                [
-                    "out_dir",
-                    "--outDir"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    "--outDir",
-                    "--outDir"
-                ]
-            ]
-        },
+        "triggers_rerun": true,
+        "value_translations": {},
         "value_type": "str"
     },
     {
@@ -21676,20 +21623,8 @@
         "tag": [
             "cytocluster"
         ],
-        "value_translations": {
-            "cytocluster_style_1": [
-                [
-                    "input_dir",
-                    "--inputDir"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    "--inputDir",
-                    "--inputDir"
-                ]
-            ]
-        },
+        "triggers_rerun": true,
+        "value_translations": {},
         "value_type": "str"
     },
     {
@@ -21703,20 +21638,8 @@
         "tag": [
             "cytocluster"
         ],
-        "value_translations": {
-            "cytocluster_style_1": [
-                [
-                    "gating_strategy",
-                    "--gatingStrategy"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    "--gatingStrategy",
-                    "--gatingStrategy"
-                ]
-            ]
-        },
+        "triggers_rerun": true,
+        "value_translations": {},
         "value_type": "str"
     }
 ]
