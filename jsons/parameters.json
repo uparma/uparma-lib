@@ -3481,7 +3481,7 @@
         "value_type": "bool"
     },
     {
-        "default_value": false,
+        "default_value": [],
         "description": "Comma separated list of compensation files",
         "key_translations": {
             "cytocluster_style_1": "--compensationFiles",
@@ -3492,24 +3492,11 @@
             "cytocluster"
         ],
         "triggers_rerun": true,
-        "value_translations": {
-            "cytocluster_style_1": [
-                [
-                    false,
-                    "FALSE"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ]
-            ]
-        },
-        "value_type": "str"
+        "value_translations": {},
+        "value_type": "list"
     },
     {
-        "default_value": false,
+        "default_value": "",
         "description": "Is the compensation required? Is the FCS pre-compensated? [TRUE, FALSE]",
         "key_translations": {
             "cytocluster_style_1": "--compensationRequired",
@@ -3520,28 +3507,7 @@
             "cytocluster"
         ],
         "triggers_rerun": true,
-        "value_translations": {
-            "cytocluster_style_1": [
-                [
-                    false,
-                    "FALSE"
-                ],
-                [
-                    true,
-                    "TRUE"
-                ]
-            ],
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ]
-        },
+        "value_translations": {},
         "value_type": "bool"
     },
     {
