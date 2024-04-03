@@ -3496,10 +3496,10 @@
         "value_type": "list"
     },
     {
-        "default_value": "",
+        "default_value": false,
         "description": "Is the compensation required? Is the FCS pre-compensated? [TRUE, FALSE]",
         "key_translations": {
-            "cytocluster_style_1": "--compensationRequired",
+            "cytocluster_style_1": "--compensationRequired_<DROP_KEY>",
             "ursgal_style_1": "compensation_required"
         },
         "name": "compensation_required",
@@ -3507,7 +3507,28 @@
             "cytocluster"
         ],
         "triggers_rerun": true,
-        "value_translations": {},
+        "value_translations": {
+            "cytocluster_style_1": [
+                [
+                    false,
+                    ""
+                ],
+                [
+                    true,
+                    "--compensationRequired"
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
         "value_type": "bool"
     },
     {
@@ -10108,9 +10129,9 @@
         "description": "Directory with QC to plot",
         "key_translations": {
             "cytocluster_style_1": "--inputDir",
-            "ursgal_style_1": "input_dir"
+            "ursgal_style_1": "qc_dir"
         },
-        "name": "input_dir",
+        "name": "qc_dir",
         "tag": [
             "cytocluster"
         ],
@@ -13953,9 +13974,9 @@
         "description": "Output directory",
         "key_translations": {
             "cytocluster_style_1": "--outDir",
-            "ursgal_style_1": "out_dir"
+            "ursgal_style_1": "output_dir"
         },
-        "name": "out_dir",
+        "name": "output_dir",
         "tag": [
             "cytocluster"
         ],
@@ -15888,19 +15909,19 @@
         "value_type": "float"
     },
     {
-        "default_value": "",
+        "default_value": [],
         "description": "Which QC methods you want to apply on the FCS file",
         "key_translations": {
             "cytocluster_style_1": "--qcMethod",
-            "ursgal_style_1": "qc_method"
+            "ursgal_style_1": "qc_methods"
         },
-        "name": "qc_method",
+        "name": "qc_methods",
         "tag": [
             "cytocluster"
         ],
         "triggers_rerun": true,
         "value_translations": {},
-        "value_type": "str"
+        "value_type": "list"
     },
     {
         "default_value": null,

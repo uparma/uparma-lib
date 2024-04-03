@@ -49,13 +49,15 @@
     },
     {
         "name": "Cytocluster",
-        "reference": "Pirro, S., Ranff, T. CytoCluster is a framework for the analysis of flow cytometry data.",
+        "reference": "Pirro, S. CytoCluster is a framework for the analysis of flow cytometry data.",
         "style": "cytocluster_style_1",
         "versions": [
             "1.2.5",
             "1.2.6",
             "1.2.7",
-            "1.2.8"
+            "1.2.8",
+            "1.2.9",
+            "1.2.10"
         ]
     },
     {
