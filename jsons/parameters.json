@@ -10125,21 +10125,6 @@
         "value_type": "str"
     },
     {
-        "default_value": "",
-        "description": "Directory with QC to plot",
-        "key_translations": {
-            "cytocluster_style_1": "--inputDir",
-            "ursgal_style_1": "qc_dir"
-        },
-        "name": "qc_dir",
-        "tag": [
-            "cytocluster"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "str"
-    },
-    {
         "default_value": "q_exactive",
         "description": "Type of mass spectrometer (used to determine the scoring model)",
         "key_translations": {
@@ -13970,21 +13955,6 @@
         "value_type": "bool"
     },
     {
-        "default_value": "",
-        "description": "Output directory",
-        "key_translations": {
-            "cytocluster_style_1": "--outDir",
-            "ursgal_style_1": "output_dir"
-        },
-        "name": "output_dir",
-        "tag": [
-            "cytocluster"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "str"
-    },
-    {
         "default_value": true,
         "description": "Output probabilities for each amino acid.",
         "key_translations": {
@@ -14049,6 +14019,21 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "bool"
+    },
+    {
+        "default_value": "",
+        "description": "Output directory",
+        "key_translations": {
+            "cytocluster_style_1": "--outDir",
+            "ursgal_style_1": "output_dir"
+        },
+        "name": "output_dir",
+        "tag": [
+            "cytocluster"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
     },
     {
         "default_value": null,
@@ -15907,6 +15892,21 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "float"
+    },
+    {
+        "default_value": "",
+        "description": "Directory with QC to plot",
+        "key_translations": {
+            "cytocluster_style_1": "--inputDir",
+            "ursgal_style_1": "qc_dir"
+        },
+        "name": "qc_dir",
+        "tag": [
+            "cytocluster"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
     },
     {
         "default_value": [],
