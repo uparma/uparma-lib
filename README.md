@@ -1,14 +1,13 @@
-uparma-lib: Lookup library for parameters used in Proteomics tools
-==================================================================
+uparma-lib: Lookup library for parameters for bioinformatic tools
+=================================================================
 
 [![image](https://github.com/uparma/uparma-lib/actions/workflows/json_integrity.yml/badge.svg)](https://github.com/uparma/uparma-lib/actions/workflows/json_integrity.yml)
 
-Proteomics is supported by a wide variety of tools. Unfortunately there is
-no standardized parameter set, thus evaluating a group of tools that tackle the
-same problem becomes cumbersome as the parameters have to be translated.
+Frequently, we encounter bioinformatics tools designed for identical functions. However, the absence of a 
+unified set of parameters complicates the process of assessing a collection of tools addressing the same 
+issue, as it requires the translation of parameters.
 
-The Universal Parameter Mapper Project addresses this problem by offering a
-standard independent mapping between different styles.
+The Universal Parameter Mapper Project tackles this issue by providing a standard, independent framework for mapping between diverse styles.
 
 
 APIs
