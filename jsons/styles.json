@@ -48,6 +48,19 @@
         ]
     },
     {
+        "name": "Cytocluster",
+        "reference": "Pirro, S. CytoCluster is a framework for the analysis of flow cytometry data.",
+        "style": "cytocluster_style_1",
+        "versions": [
+            "1.2.5",
+            "1.2.6",
+            "1.2.7",
+            "1.2.8",
+            "1.2.9",
+            "1.2.10"
+        ]
+    },
+    {
         "name": "DIA-NN",
         "reference": "Demichev, V., Messner, C.B., Vernardis, S.I. et al. DIA-NN: neural networks and interference correction enable deep proteome coverage in high throughput. Nat Methods 17, 41\u201344 (2020)",
         "style": "diann_style_1",
@@ -166,14 +179,6 @@
         "style": "glycopeptide_fragmentor_style_1",
         "versions": [
             "1.0.0"
-        ]
-    },
-     {
-        "name": "pymzML",
-        "reference": " Kösters, M., Leufken, J., Schulze, S., Sugimoto, K., Klein, J., Zahedi, R. P., Hippler, M., Leidel, S. A., & Fufezan, C. (2018).pymzML v2.0: introducing a highly compressed and seekable gzip format.   In J. Wren (Ed.), Bioinformatics (Vol. 34, Issue 14, pp. 2513–2514). Oxford University Press (OUP). https://doi.org/10.1093/bioinformatics/bty046",
-        "style": "mzml2idxgz_style_1",
-        "versions": [
-            "2.5.2"
         ]
     },
     {
@@ -815,6 +820,14 @@
         "style": "pyiohat_style_1",
         "versions": [
             "1.7.4"
+        ]
+    },
+    {
+        "name": "pymzML",
+        "reference": " K\u00f6sters, M., Leufken, J., Schulze, S., Sugimoto, K., Klein, J., Zahedi, R. P., Hippler, M., Leidel, S. A., & Fufezan, C. (2018).pymzML v2.0: introducing a highly compressed and seekable gzip format.   In J. Wren (Ed.), Bioinformatics (Vol. 34, Issue 14, pp. 2513\u20132514). Oxford University Press (OUP). https://doi.org/10.1093/bioinformatics/bty046",
+        "style": "mzml2idxgz_style_1",
+        "versions": [
+            "2.5.2"
         ]
     },
     {
