@@ -7459,8 +7459,8 @@
         "value_type": "str"
     },
     {
-        "default_value": [],
-        "description": " ",
+        "default_value": null,
+        "description": "experimental setup",
         "is_parameter_collection": true,
         "key_translations": {
             "correct_instrument_drift_style_1": "metadata",
@@ -7469,7 +7469,8 @@
             "merge_analytical_replicates_style_1": "metadata",
             "mx_qc_style_1": "metadata",
             "pw-stats_style_1": "experimental_design",
-            "ursgal_style_1": "experiment_setup"
+            "ursgal_style_1": "experiment_setup",
+            "fpreppy_style_1": "-x"
         },
         "name": "experiment_setup",
         "tag": [
@@ -7477,7 +7478,7 @@
         ],
         "triggers_rerun": true,
         "value_translations": {},
-        "value_type": "list"
+        "value_type": "str"
     },
     {
         "default_value": 0,
@@ -7777,21 +7778,6 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "dict"
-    },
-    {
-        "default_value": null,
-        "description": "experimental meta data xlsx file",
-        "key_translations": {
-            "fpreppy_style_1": "-x",
-            "ursgal_style_1": "flowcyto_exp_meta_data_xlsx"
-        },
-        "name": "flowcyto_exp_meta_data_xlsx",
-        "tag": [
-            "input"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "str"
     },
     {
         "default_value": null,
