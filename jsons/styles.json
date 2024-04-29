@@ -150,6 +150,14 @@
         ]
     },
     {
+        "name": "Fpreppy",
+        "reference": "Ursgal Team (2024)",
+        "style": "fpreppy_style_1",
+        "versions": [
+            "0.1.0"
+        ]
+    },
+    {
         "name": "Generate Target Decoy",
         "reference": "Ursgal2 Team",
         "style": "generate_target_decoy_style_1",

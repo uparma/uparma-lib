@@ -7670,6 +7670,7 @@
         "description": "FCS file to be preprocessed",
         "key_translations": {
             "cytocluster_style_1": "--fcs",
+            "fpreppy_style_1": "-f",
             "ursgal_style_1": "fcs_file"
         },
         "name": "fcs_file",
@@ -7778,6 +7779,66 @@
         "value_type": "dict"
     },
     {
+        "default_value": null,
+        "description": "experimental meta data xlsx file",
+        "key_translations": {
+            "fpreppy_style_1": "-x",
+            "ursgal_style_1": "flowcyto_exp_meta_data_xlsx"
+        },
+        "name": "flowcyto_exp_meta_data_xlsx",
+        "tag": [
+            "input"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": null,
+        "description": "flow cytometry gating file",
+        "key_translations": {
+            "fpreppy_style_1": "-g",
+            "ursgal_style_1": "flowcyto_gating_file"
+        },
+        "name": "flowcyto_gating_file",
+        "tag": [
+            "input"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": null,
+        "description": "flow cytometry marker mapping dictionary json",
+        "key_translations": {
+            "fpreppy_style_1": "-j",
+            "ursgal_style_1": "flowcyto_marker_mapping_json"
+        },
+        "name": "flowcyto_marker_mapping_json",
+        "tag": [
+            "input"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": null,
+        "description": "meta data plate csv",
+        "key_translations": {
+            "fpreppy_style_1": "-c",
+            "ursgal_style_1": "flowcyto_plate_meta_data_csv"
+        },
+        "name": "flowcyto_plate_meta_data_csv",
+        "tag": [
+            "input"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
         "default_value": 0.1,
         "description": "fold-change cutoff for fold-change analysis",
         "key_translations": {
@@ -7836,6 +7897,21 @@
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "bool"
+    },
+    {
+        "default_value": null,
+        "description": "fpreppy exporter mode",
+        "key_translations": {
+            "fpreppy_style_1": "-m",
+            "ursgal_style_1": "fpreppy_exporter_mode"
+        },
+        "name": "fpreppy_exporter_mode",
+        "tag": [
+            "output"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
     },
     {
         "default_value": 0.1,
@@ -14025,6 +14101,7 @@
         "description": "Output directory",
         "key_translations": {
             "cytocluster_style_1": "--outDir",
+            "fpreppy_style_1": "-o",
             "ursgal_style_1": "output_dir"
         },
         "name": "output_dir",
@@ -14288,6 +14365,7 @@
             "csv_filter_style_1": "query_string",
             "determine_offset_style_1": "pandas_query_string",
             "fcs_filter_style_1": "query_string",
+            "fpreppy_style_1": "-q",
             "ursgal_style_1": "pandas_query_string"
         },
         "name": "pandas_query_string",
