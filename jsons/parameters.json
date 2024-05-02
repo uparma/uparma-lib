@@ -15909,7 +15909,7 @@
         "value_type": "str"
     },
     {
-        "default_value": [],
+        "default_value": ["flowAI", "peacoQC", "flowCut"],
         "description": "Which QC methods you want to apply on the FCS file",
         "key_translations": {
             "cytocluster_style_1": "--qcMethod",
