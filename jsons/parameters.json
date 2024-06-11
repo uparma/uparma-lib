@@ -7811,6 +7811,21 @@
     },
     {
         "default_value": null,
+        "description": "flow cytometry gating strategy notes txt file",
+        "key_translations": {
+            "fpreppy_style_1": "-n",
+            "ursgal_style_1": "gating_strategy_notes_txt"
+        },
+        "name": "gating_strategy_notes_txt",
+        "tag": [
+            "input"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": null,
         "description": "meta data plate csv",
         "key_translations": {
             "fpreppy_style_1": "-c",
