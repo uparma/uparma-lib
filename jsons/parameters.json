@@ -7781,6 +7781,36 @@
     },
     {
         "default_value": null,
+        "description": "flow cytometry json with additional mapping",
+        "key_translations": {
+            "fpreppy_style_1": "-a",
+            "ursgal_style_1": "flowcyto_additional_mapping_json"
+        },
+        "name": "flowcyto_additional_mapping_json",
+        "tag": [
+            "input"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": null,
+        "description": "flow cytometry json with gate mapping",
+        "key_translations": {
+            "fpreppy_style_1": "-t",
+            "ursgal_style_1": "flowcyto_gate_mapping_json"
+        },
+        "name": "flowcyto_gate_mapping_json",
+        "tag": [
+            "input"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
+        "default_value": null,
         "description": "flow cytometry gating file",
         "key_translations": {
             "fpreppy_style_1": "-g",
@@ -7796,7 +7826,7 @@
     },
     {
         "default_value": null,
-        "description": "flow cytometry marker mapping dictionary json",
+        "description": "flow cytometry json with marker mapping",
         "key_translations": {
             "fpreppy_style_1": "-j",
             "ursgal_style_1": "flowcyto_marker_mapping_json"
@@ -8499,21 +8529,6 @@
         "name": "gating_strategy",
         "tag": [
             "cytocluster"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "str"
-    },
-    {
-        "default_value": null,
-        "description": "flow cytometry gating strategy notes txt file",
-        "key_translations": {
-            "fpreppy_style_1": "-n",
-            "ursgal_style_1": "gating_strategy_notes_txt"
-        },
-        "name": "gating_strategy_notes_txt",
-        "tag": [
-            "input"
         ],
         "triggers_rerun": true,
         "value_translations": {},
