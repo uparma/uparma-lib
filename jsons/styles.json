@@ -799,6 +799,14 @@
         ]
     },
     {
+        "name": "parquet_filter_style_1",
+        "reference": "Ursgal2 Team",
+        "style": "parquet_filter_style_1",
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
         "name": "peptide_forest_style_1",
         "reference": "M. Dennison, T. Ranff, J. B\u00e9dorf, S. Schulze, N, Zinn, M. Bantscheff,  J.J.R.M. van Heugten, C. Fufezan, In review",
         "style": "peptide_forest_style_1",

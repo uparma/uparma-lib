@@ -14382,6 +14382,7 @@
             "determine_offset_style_1": "pandas_query_string",
             "fcs_filter_style_1": "query_string",
             "fpreppy_style_1": "-q",
+            "parquet_filter_style_1": "query_string",
             "ursgal_style_1": "pandas_query_string"
         },
         "name": "pandas_query_string",
