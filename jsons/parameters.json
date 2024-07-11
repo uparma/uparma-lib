@@ -4162,6 +4162,7 @@
             "align_files_dbscan_style_1": "n_jobs",
             "align_scans_dbscan_style_1": "n_jobs",
             "bowtie_style_1": "-p",
+            "cellranger_mkfastq_style_1": "--localcores",
             "comet_style_1": "num_threads",
             "cutadapt_style_1": "-j",
             "diann_library_empirical_style_1": "--threads",
@@ -4205,6 +4206,12 @@
                 [
                     -1,
                     -1
+                ]
+            ],
+            "cellranger_mkfastq_style_1": [
+                [
+                    -1,
+                    8
                 ]
             ],
             "comet_style_1": [
@@ -10971,21 +10978,6 @@
         "value_type": "str"
     },
     {
-        "default_value": 8,
-        "description": "max cores the pipeline may request at one time. Only applies to local jobs",
-        "key_translations": {
-            "cellranger_mkfastq_style_1": "--localcores",
-            "ursgal_style_1": "localcores"
-        },
-        "name": "localcores",
-        "tag": [
-            "cellranger_mkfastq"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "int"
-    },
-    {
         "default_value": true,
         "description": " Generate and use mass difference fragment index in addition to the regular fragment index for search. This allows shifted fragment ions - fragment ions with mass increased by the calculated mass difference, to be included in scoring. ",
         "key_translations": {
@@ -11043,21 +11035,6 @@
             ]
         },
         "value_type": "bool"
-    },
-    {
-        "default_value": 57,
-        "description": "max GB the pipeline may request at one time. Only applies to local jobs",
-        "key_translations": {
-            "cellranger_mkfastq_style_1": "--localmem",
-            "ursgal_style_1": "localmem"
-        },
-        "name": "localmem",
-        "tag": [
-            "cellranger_mkfastq"
-        ],
-        "triggers_rerun": true,
-        "value_translations": {},
-        "value_type": "int"
     },
     {
         "default_value": 1.0,
@@ -11902,6 +11879,7 @@
         "default_value": 31000000000,
         "description": "Maximum bytes of allowed RAM usage.",
         "key_translations": {
+            "cellranger_mkfastq_style_1": "--localmem",
             "star_index_style_1": "--limitGenomeGenerateRAM",
             "ursgal_style_1": "max_ram"
         },
@@ -11910,7 +11888,14 @@
             "configuration"
         ],
         "triggers_rerun": false,
-        "value_translations": {},
+        "value_translations": {
+            "cellranger_mkfastq_style_1": [
+                [
+                    31000000000,
+                    57
+                ]
+            ]
+        },
         "value_type": "int"
     },
     {
@@ -16756,7 +16741,8 @@
         },
         "name": "run",
         "tag": [
-            "cellranger_mkfastq"
+            "cellranger_mkfastq",
+            "input_file"
         ],
         "triggers_rerun": true,
         "value_translations": {},
