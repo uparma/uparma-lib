@@ -10586,6 +10586,21 @@
         "value_type": "float"
     },
     {
+        "default_value": "local",
+        "description": "Job manager to use. Options are: local (default), a cluster job mode (i.e., sge, lsf, slurm), or the path to a <jobmode>.template file",
+        "key_translations": {
+            "cellranger_mkfastq_style_1": "--jobmode",
+            "ursgal_style_1": "jobmode"
+        },
+        "name": "jobmode",
+        "tag": [
+            "cellranger_mkfastq"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
         "default_value": ".u.json",
         "description": "Exension for .json files",
         "key_translations": {
@@ -10956,6 +10971,21 @@
         "value_type": "str"
     },
     {
+        "default_value": 8,
+        "description": "max cores the pipeline may request at one time. Only applies to local jobs",
+        "key_translations": {
+            "cellranger_mkfastq_style_1": "--localcores",
+            "ursgal_style_1": "localcores"
+        },
+        "name": "localcores",
+        "tag": [
+            "cellranger_mkfastq"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
+    },
+    {
         "default_value": true,
         "description": " Generate and use mass difference fragment index in addition to the regular fragment index for search. This allows shifted fragment ions - fragment ions with mass increased by the calculated mass difference, to be included in scoring. ",
         "key_translations": {
@@ -11013,6 +11043,21 @@
             ]
         },
         "value_type": "bool"
+    },
+    {
+        "default_value": 57,
+        "description": "max GB the pipeline may request at one time. Only applies to local jobs",
+        "key_translations": {
+            "cellranger_mkfastq_style_1": "--localmem",
+            "ursgal_style_1": "localmem"
+        },
+        "name": "localmem",
+        "tag": [
+            "cellranger_mkfastq"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "int"
     },
     {
         "default_value": 1.0,
@@ -15655,6 +15700,21 @@
         "value_type": "bool"
     },
     {
+        "default_value": "$projectId",
+        "description": "Custom project name,",
+        "key_translations": {
+            "cellranger_mkfastq_style_1": "--project",
+            "ursgal_style_1": "project"
+        },
+        "name": "project",
+        "tag": [
+            "cellranger_mkfastq"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
         "default_value": "heuristic",
         "description": "Protein inference algorithm to be used.",
         "key_translations": {
@@ -16688,6 +16748,21 @@
         "value_type": "bool"
     },
     {
+        "default_value": "",
+        "description": "Path to the Illumina BCL run folder",
+        "key_translations": {
+            "cellranger_mkfastq_style_1": "--run",
+            "ursgal_style_1": "run"
+        },
+        "name": "run",
+        "tag": [
+            "cellranger_mkfastq"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
         "default_value": "None",
         "description": "This parameter is only relevant for pepXML output and is used solely to annotate additional information in the output. It does not influence the search. The sample enzyme could be different from the search enzyme i.e. the sample enzyme is 'trypsin' yet the search enzyme is 'No-enzyme' for a non-specific search. Hence the need for this separate parameter.Default value is 'None', which is translated to 0.",
         "key_translations": {
@@ -16847,6 +16922,21 @@
                 ]
             ]
         },
+        "value_type": "str"
+    },
+    {
+        "default_value": "",
+        "description": "Path to sample sheet",
+        "key_translations": {
+            "cellranger_mkfastq_style_1": "--samplesheet",
+            "ursgal_style_1": "samplesheet"
+        },
+        "name": "samplesheet",
+        "tag": [
+            "cellranger_mkfastq"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
         "value_type": "str"
     },
     {
