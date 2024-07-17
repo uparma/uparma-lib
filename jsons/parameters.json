@@ -4162,7 +4162,7 @@
             "align_files_dbscan_style_1": "n_jobs",
             "align_scans_dbscan_style_1": "n_jobs",
             "bowtie_style_1": "-p",
-            "cellranger_mkfastq_style_1": "--localcores",
+            "cellranger_style_1": "--localcores",
             "comet_style_1": "num_threads",
             "cutadapt_style_1": "-j",
             "diann_library_empirical_style_1": "--threads",
@@ -4208,7 +4208,7 @@
                     -1
                 ]
             ],
-            "cellranger_mkfastq_style_1": [
+            "cellranger_style_1": [
                 [
                     -1,
                     8
@@ -10596,7 +10596,7 @@
         "default_value": "local",
         "description": "Job manager to use. Options are: local (default), a cluster job mode (i.e., sge, lsf, slurm), or the path to a <jobmode>.template file",
         "key_translations": {
-            "cellranger_mkfastq_style_1": "--jobmode",
+            "cellranger_style_1": "--jobmode",
             "ursgal_style_1": "jobmode"
         },
         "name": "jobmode",
@@ -11879,7 +11879,7 @@
         "default_value": 31000000000,
         "description": "Maximum bytes of allowed RAM usage.",
         "key_translations": {
-            "cellranger_mkfastq_style_1": "--localmem",
+            "cellranger_style_1": "--localmem",
             "star_index_style_1": "--limitGenomeGenerateRAM",
             "ursgal_style_1": "max_ram"
         },
@@ -11889,7 +11889,7 @@
         ],
         "triggers_rerun": false,
         "value_translations": {
-            "cellranger_mkfastq_style_1": [
+            "cellranger_style_1": [
                 [
                     31000000000,
                     57
@@ -15688,7 +15688,7 @@
         "default_value": "$projectId",
         "description": "Custom project name,",
         "key_translations": {
-            "cellranger_mkfastq_style_1": "--project",
+            "cellranger_style_1": "--project",
             "ursgal_style_1": "project"
         },
         "name": "project",
@@ -16736,7 +16736,7 @@
         "default_value": "",
         "description": "Path to the Illumina BCL run folder",
         "key_translations": {
-            "cellranger_mkfastq_style_1": "--run",
+            "cellranger_style_1": "--run",
             "ursgal_style_1": "run"
         },
         "name": "run",
@@ -16914,7 +16914,7 @@
         "default_value": "",
         "description": "Path to sample sheet",
         "key_translations": {
-            "cellranger_mkfastq_style_1": "--samplesheet",
+            "cellranger_style_1": "--samplesheet",
             "ursgal_style_1": "samplesheet"
         },
         "name": "samplesheet",
