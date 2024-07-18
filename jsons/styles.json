@@ -18,9 +18,9 @@
     {
         "name": "Cellranger mkfastq",
         "reference": "Zheng, G. X. Y. et al. (2017). Massively parallel digital transcriptional profiling of single cells. Nature Communications 8: 1-12, doi:10.1038/ncomms14049",
-        "style": "cellranger_mkfastq_style_1",
+        "style": "cellranger_style_1",
         "versions": [
-            "1.0.0"
+            "8.0.1"
         ]
     },
     {

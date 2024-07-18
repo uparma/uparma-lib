@@ -4211,7 +4211,7 @@
             "cellranger_style_1": [
                 [
                     -1,
-                    8
+                    2
                 ]
             ],
             "comet_style_1": [
@@ -10600,9 +10600,7 @@
             "ursgal_style_1": "jobmode"
         },
         "name": "jobmode",
-        "tag": [
-            "cellranger_mkfastq"
-        ],
+        "tag": ["transcriptomics", "cellranger"],
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "str"
@@ -11892,7 +11890,7 @@
             "cellranger_style_1": [
                 [
                     31000000000,
-                    57
+                    4
                 ]
             ]
         },
@@ -15693,7 +15691,7 @@
         },
         "name": "project",
         "tag": [
-            "cellranger_mkfastq"
+            "transcriptomics", "cellranger"
         ],
         "triggers_rerun": true,
         "value_translations": {},
@@ -16740,10 +16738,7 @@
             "ursgal_style_1": "run"
         },
         "name": "run",
-        "tag": [
-            "cellranger_mkfastq",
-            "input_file"
-        ],
+        "tag": ["transcriptomics", "cellranger"],
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "str"
@@ -16918,9 +16913,7 @@
             "ursgal_style_1": "samplesheet"
         },
         "name": "samplesheet",
-        "tag": [
-            "cellranger_mkfastq"
-        ],
+        "tag": ["transcriptomics", "cellranger"],
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "str"
