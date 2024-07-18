@@ -16,6 +16,14 @@
         ]
     },
     {
+        "name": "Cellranger mkfastq",
+        "reference": "Zheng, G. X. Y. et al. (2017). Massively parallel digital transcriptional profiling of single cells. Nature Communications 8: 1-12, doi:10.1038/ncomms14049",
+        "style": "cellranger_style_1",
+        "versions": [
+            "8.0.1"
+        ]
+    },
+    {
         "name": "Combine PEP",
         "reference": "Combines PEP scores from different search engines.",
         "style": "combine_pep_style_1",

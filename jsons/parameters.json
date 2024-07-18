@@ -4162,6 +4162,7 @@
             "align_files_dbscan_style_1": "n_jobs",
             "align_scans_dbscan_style_1": "n_jobs",
             "bowtie_style_1": "-p",
+            "cellranger_style_1": "--localcores",
             "comet_style_1": "num_threads",
             "cutadapt_style_1": "-j",
             "diann_library_empirical_style_1": "--threads",
@@ -4205,6 +4206,12 @@
                 [
                     -1,
                     -1
+                ]
+            ],
+            "cellranger_style_1": [
+                [
+                    -1,
+                    2
                 ]
             ],
             "comet_style_1": [
@@ -10586,6 +10593,19 @@
         "value_type": "float"
     },
     {
+        "default_value": "local",
+        "description": "Job manager to use. Options are: local (default), a cluster job mode (i.e., sge, lsf, slurm), or the path to a <jobmode>.template file",
+        "key_translations": {
+            "cellranger_style_1": "--jobmode",
+            "ursgal_style_1": "jobmode"
+        },
+        "name": "jobmode",
+        "tag": ["transcriptomics", "cellranger"],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
         "default_value": ".u.json",
         "description": "Exension for .json files",
         "key_translations": {
@@ -11857,6 +11877,7 @@
         "default_value": 31000000000,
         "description": "Maximum bytes of allowed RAM usage.",
         "key_translations": {
+            "cellranger_style_1": "--localmem",
             "star_index_style_1": "--limitGenomeGenerateRAM",
             "ursgal_style_1": "max_ram"
         },
@@ -11865,7 +11886,14 @@
             "configuration"
         ],
         "triggers_rerun": false,
-        "value_translations": {},
+        "value_translations": {
+            "cellranger_style_1": [
+                [
+                    31000000000,
+                    4
+                ]
+            ]
+        },
         "value_type": "int"
     },
     {
@@ -15655,6 +15683,21 @@
         "value_type": "bool"
     },
     {
+        "default_value": "$projectId",
+        "description": "Custom project name,",
+        "key_translations": {
+            "cellranger_style_1": "--project",
+            "ursgal_style_1": "project"
+        },
+        "name": "project",
+        "tag": [
+            "transcriptomics", "cellranger"
+        ],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
         "default_value": "heuristic",
         "description": "Protein inference algorithm to be used.",
         "key_translations": {
@@ -16688,6 +16731,19 @@
         "value_type": "bool"
     },
     {
+        "default_value": "",
+        "description": "Path to the Illumina BCL run folder",
+        "key_translations": {
+            "cellranger_style_1": "--run",
+            "ursgal_style_1": "run"
+        },
+        "name": "run",
+        "tag": ["transcriptomics", "cellranger"],
+        "triggers_rerun": true,
+        "value_translations": {},
+        "value_type": "str"
+    },
+    {
         "default_value": "None",
         "description": "This parameter is only relevant for pepXML output and is used solely to annotate additional information in the output. It does not influence the search. The sample enzyme could be different from the search enzyme i.e. the sample enzyme is 'trypsin' yet the search enzyme is 'No-enzyme' for a non-specific search. Hence the need for this separate parameter.Default value is 'None', which is translated to 0.",
         "key_translations": {
@@ -16847,6 +16903,19 @@
                 ]
             ]
         },
+        "value_type": "str"
+    },
+    {
+        "default_value": "",
+        "description": "Path to sample sheet",
+        "key_translations": {
+            "cellranger_style_1": "--samplesheet",
+            "ursgal_style_1": "samplesheet"
+        },
+        "name": "samplesheet",
+        "tag": ["transcriptomics", "cellranger"],
+        "triggers_rerun": true,
+        "value_translations": {},
         "value_type": "str"
     },
     {
