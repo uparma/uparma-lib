@@ -278,6 +278,14 @@
         ]
     },
     {
+        "name": "MSFragger",
+        "reference": "Kong, A. T., Leprevost, F. V, Avtonomov, D. M., Mellacheruvu, D., and Nesvizhskii, A. I. (2017) MSFragger: ultrafast and comprehensive peptide identification in mass spectrometry-based proteomics. Nature Methods 14",
+        "style": "msfragger_style_4",
+        "versions": [
+            "4.2"
+        ]
+    },
+    {
         "name": "Merge CSVs",
         "reference": "Kremer, L. P. M., Leufken, J., Oyunchimeg, P., Schulze, S. & Fufezan, C. (2016) Ursgal, Universal Python Module Combining Common Bottom-Up Proteomics Tools for Large-Scale Analysis. J. Proteome res. 15, 788-794.",
         "style": "merge_csvs_style_1",
