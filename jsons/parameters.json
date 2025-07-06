@@ -911,6 +911,14 @@
                     true
                 ],
                 [
+                    "msfragger_4_1",
+                    true
+                ],
+                [
+                    "msfragger_4_2",
+                    true
+                ],
+                [
                     "msgfplus_2021_03_22",
                     false
                 ],
@@ -1110,6 +1118,14 @@
                 ],
                 [
                     "msfragger_3_0",
+                    true
+                ],
+                [
+                    "msfragger_4_1",
+                    true
+                ],
+                [
+                    "msfragger_4_2",
                     true
                 ],
                 [
@@ -1323,6 +1339,14 @@
                     true
                 ],
                 [
+                    "msfragger_4_1",
+                    true
+                ],
+                [
+                    "msfragger_4_2",
+                    true
+                ],
+                [
                     "msgfplus_2021_03_22",
                     false
                 ],
@@ -1530,6 +1554,14 @@
                 ],
                 [
                     "msfragger_3_0",
+                    true
+                ],
+                [
+                    "msfragger_4_1",
+                    true
+                ],
+                [
+                    "msfragger_4_2",
                     true
                 ],
                 [
@@ -1743,6 +1775,14 @@
                     true
                 ],
                 [
+                    "msfragger_4_1",
+                    true
+                ],
+                [
+                    "msfragger_4_2",
+                    true
+                ],
+                [
                     "msgfplus_2021_03_22",
                     false
                 ],
@@ -1953,6 +1993,14 @@
                     true
                 ],
                 [
+                    "msfragger_4_1",
+                    true
+                ],
+                [
+                    "msfragger_4_2",
+                    true
+                ],
+                [
                     "msgfplus_2021_03_22",
                     false
                 ],
@@ -2152,6 +2200,14 @@
                 ],
                 [
                     "msfragger_3_0",
+                    true
+                ],
+                [
+                    "msfragger_4_1",
+                    true
+                ],
+                [
+                    "msfragger_4_2",
                     true
                 ],
                 [
@@ -2357,6 +2413,14 @@
                     true
                 ],
                 [
+                    "msfragger_4_1",
+                    true
+                ],
+                [
+                    "msfragger_4_2",
+                    true
+                ],
+                [
                     "msgfplus_2021_03_22",
                     false
                 ],
@@ -2556,6 +2620,14 @@
                 ],
                 [
                     "msfragger_3_0",
+                    true
+                ],
+                [
+                    "msfragger_4_1",
+                    true
+                ],
+                [
+                    "msfragger_4_2",
                     true
                 ],
                 [
@@ -2761,6 +2833,14 @@
                     true
                 ],
                 [
+                    "msfragger_4_1",
+                    true
+                ],
+                [
+                    "msfragger_4_2",
+                    true
+                ],
+                [
                     "msgfplus_2021_03_22",
                     false
                 ],
@@ -2953,6 +3033,14 @@
                 [
                     "msfragger_3_0",
                     "msfragger_3_0"
+                ],
+                [
+                    "msfragger_4_1",
+                    "msfragger_4_1"
+                ],
+                [
+                    "msfragger_4_2",
+                    "msfragger_4_1"
                 ],
                 [
                     "msgfplus_2021_03_22",
@@ -3736,6 +3824,14 @@
                     false
                 ],
                 [
+                    "msfragger_4_1",
+                    false
+                ],
+                [
+                    "msfragger_4_2",
+                    false
+                ],
+                [
                     "msgfplus_v2016_09_16",
                     true
                 ],
@@ -3944,6 +4040,14 @@
                 [
                     "msfragger_3_0",
                     "msfragger_3_0"
+                ],
+                [
+                    "msfragger_4_1",
+                    "msfragger_4_1"
+                ],
+                [
+                    "msfragger_4_2",
+                    "msfragger_4_2"
                 ],
                 [
                     "msgfplus_v2016_09_16",
@@ -9574,6 +9678,10 @@
                 [
                     "spectrum_id",
                     "scannum"
+                ],
+                [
+                    "annotated_delta_mass",
+                    "annotated_delta_mass"
                 ]
             ],
             "msgfplus_style_1": [
@@ -15531,8 +15639,8 @@
             "msgfplus_style_1": "-t_plus",
             "novor_style_1": "precursorErrorTol_part1",
             "omssa_style_1": "-te_part2",
-            "pyiohat_style_1": " precursor_mass_tolerance_minus",
-            "pyprotista_style_1": " precursor_mass_tolerance_minus",
+            "pyiohat_style_1": "precursor_mass_tolerance_plus",
+            "pyprotista_style_1": "precursor_mass_tolerance_plus",
             "ursgal_style_1": "precursor_mass_tolerance_plus",
             "xtandem_style_1": "spectrum, parent monoisotopic mass error plus"
         },
@@ -15565,6 +15673,7 @@
             "pnovo_style_1": "pep_tol_type_ppm",
             "ptminer_style_1": "precursor_tol_type",
             "ptmshepherd_style_1": "precursor_mass_units",
+            "pyiohat_style_1": "precursor_mass_tolerance_unit",
             "ursgal_style_1": "precursor_mass_tolerance_unit",
             "xtandem_style_1": "spectrum, parent monoisotopic mass error units"
         },
@@ -19319,6 +19428,14 @@
                     0
                 ],
                 [
+                    "msfragger_4_1",
+                    0
+                ],
+                [
+                    "msfragger_4_2",
+                    0
+                ],
+                [
                     "msgfplus_v2016_09_16",
                     1e-100
                 ],
@@ -19483,6 +19600,14 @@
                 [
                     "msfragger_3_0",
                     "msfragger_3_0"
+                ],
+                [
+                    "msfragger_4_1",
+                    "msfragger_4_1"
+                ],
+                [
+                    "msfragger_4_2",
+                    "msfragger_4_2"
                 ],
                 [
                     "msgfplus_v2016_09_16",
@@ -19692,6 +19817,14 @@
                 ],
                 [
                     "msfragger_3_0",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_1",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_2",
                     "msfragger:hyperscore"
                 ],
                 [
@@ -19917,6 +20050,14 @@
                     "msfragger:hyperscore"
                 ],
                 [
+                    "msfragger_4_1",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_2",
+                    "msfragger:hyperscore"
+                ],
+                [
                     "msgfplus_2021_03_22",
                     "ms-gf:spec_evalue"
                 ],
@@ -20128,6 +20269,14 @@
                 ],
                 [
                     "msfragger_3_0",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_1",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_2",
                     "msfragger:hyperscore"
                 ],
                 [
@@ -20353,6 +20502,14 @@
                     "msfragger:hyperscore"
                 ],
                 [
+                    "msfragger_4_1",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_2",
+                    "msfragger:hyperscore"
+                ],
+                [
                     "msgfplus_2021_03_22",
                     "ms-gf:spec_evalue"
                 ],
@@ -20575,6 +20732,14 @@
                     "msfragger:hyperscore"
                 ],
                 [
+                    "msfragger_4_1",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_2",
+                    "msfragger:hyperscore"
+                ],
+                [
                     "msgfplus_2021_03_22",
                     "ms-gf:spec_evalue"
                 ],
@@ -20786,6 +20951,14 @@
                 ],
                 [
                     "msfragger_3_0",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_1",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_2",
                     "msfragger:hyperscore"
                 ],
                 [
@@ -21003,6 +21176,14 @@
                     "msfragger:hyperscore"
                 ],
                 [
+                    "msfragger_4_1",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_2",
+                    "msfragger:hyperscore"
+                ],
+                [
                     "msgfplus_2021_03_22",
                     "ms-gf:spec_evalue"
                 ],
@@ -21206,6 +21387,14 @@
                 ],
                 [
                     "msfragger_3_0",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_1",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_2",
                     "msfragger:hyperscore"
                 ],
                 [
@@ -21423,6 +21612,14 @@
                     "msfragger:hyperscore"
                 ],
                 [
+                    "msfragger_4_1",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_2",
+                    "msfragger:hyperscore"
+                ],
+                [
                     "msgfplus_2021_03_22",
                     "ms-gf:spec_evalue"
                 ],
@@ -21637,6 +21834,14 @@
                     "msfragger:hyperscore"
                 ],
                 [
+                    "msfragger_4_1",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_2",
+                    "msfragger:hyperscore"
+                ],
+                [
                     "msgfplus_2021_03_22",
                     "ms-gf:spec_evalue"
                 ],
@@ -21848,6 +22053,14 @@
                 ],
                 [
                     "msfragger_3_0",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_1",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_2",
                     "msfragger:hyperscore"
                 ],
                 [
@@ -22341,7 +22554,7 @@
                     true
                 ]
             ],
-            "xtandem_style_1": [
+            "msfragger_style_4": [
                 [
                     false,
                     0
