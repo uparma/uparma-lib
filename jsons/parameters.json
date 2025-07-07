@@ -9584,6 +9584,10 @@
             ],
             "msfragger_style_4": [
                 [
+                    "annotated_delta_mass",
+                    "annotated_delta_mass"
+                ],
+                [
                     "charge",
                     "charge"
                 ],
@@ -9678,10 +9682,6 @@
                 [
                     "spectrum_id",
                     "scannum"
-                ],
-                [
-                    "annotated_delta_mass",
-                    "annotated_delta_mass"
                 ]
             ],
             "msgfplus_style_1": [
@@ -22453,6 +22453,40 @@
     },
     {
         "default_value": false,
+        "description": "Write uncalibrated MS2 scan to a MZML file. Only for .raw and .d formats.",
+        "key_translations": {
+            "msfragger_style_4": "write_uncalibrated_mzml",
+            "ursgal_style_1": "write_uncalibrated_mzml"
+        },
+        "name": "write_uncalibrated_mzml",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "msfragger_style_4": [
+                [
+                    false,
+                    0
+                ],
+                [
+                    true,
+                    1
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "bool"
+    },
+    {
+        "default_value": false,
         "description": "Writes rejected results if True",
         "key_translations": {
             "filter_csv_style_1": "write_unfiltered_results",
@@ -22528,40 +22562,6 @@
                 [
                     true,
                     "yes"
-                ]
-            ]
-        },
-        "value_type": "bool"
-    },
-    {
-        "default_value": false,
-        "description": "Write uncalibrated MS2 scan to a MZML file. Only for .raw and .d formats.",
-        "key_translations": {
-            "ursgal_style_1": "write_uncalibrated_mzml",
-            "msfragger_style_4": "write_uncalibrated_mzml"
-        },
-        "name": "write_uncalibrated_mzml",
-        "tag": [],
-        "triggers_rerun": true,
-        "value_translations": {
-            "ursgal_style_1": [
-                [
-                    false,
-                    false
-                ],
-                [
-                    true,
-                    true
-                ]
-            ],
-            "msfragger_style_4": [
-                [
-                    false,
-                    0
-                ],
-                [
-                    true,
-                    1
                 ]
             ]
         },
