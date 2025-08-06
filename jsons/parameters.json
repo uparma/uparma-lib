@@ -6,6 +6,7 @@
             "msfragger_style_1": "-Xmx",
             "msfragger_style_2": "-Xmx",
             "msfragger_style_3": "-Xmx",
+            "msfragger_style_4": "-Xmx",
             "msgfplus_style_1": "-Xmx",
             "mzidentml_style_1": "-Xmx",
             "pipi_style_1": "-Xmx",
@@ -182,6 +183,7 @@
             "mascot_style_1": "add_unimod_default_file",
             "msamanda_style_1": "add_unimod_default_file",
             "msfragger_style_3": "add_unimod_default_file",
+            "msfragger_style_4": "add_unimod_default_file",
             "msgfplus_style_1": "add_unimod_default_file",
             "novor_style_1": "add_unimod_default_file",
             "omssa_style_1": "add_unimod_default_file",
@@ -572,6 +574,7 @@
             "msfragger_style_1": "allow_multiple_variable_mods_on_residue",
             "msfragger_style_2": "allow_multiple_variable_mods_on_residue",
             "msfragger_style_3": "allow_multiple_variable_mods_on_residue",
+            "msfragger_style_4": "allow_multiple_variable_mods_on_residue",
             "ursgal_style_1": "allow_multiple_variable_mods_on_residue"
         },
         "name": "allow_multiple_variable_mods_on_residue",
@@ -611,6 +614,16 @@
                 ]
             ],
             "msfragger_style_3": [
+                [
+                    false,
+                    0
+                ],
+                [
+                    true,
+                    1
+                ]
+            ],
+            "msfragger_style_4": [
                 [
                     false,
                     0
@@ -898,6 +911,14 @@
                     true
                 ],
                 [
+                    "msfragger_4_1",
+                    true
+                ],
+                [
+                    "msfragger_4_2",
+                    true
+                ],
+                [
                     "msgfplus_2021_03_22",
                     false
                 ],
@@ -1097,6 +1118,14 @@
                 ],
                 [
                     "msfragger_3_0",
+                    true
+                ],
+                [
+                    "msfragger_4_1",
+                    true
+                ],
+                [
+                    "msfragger_4_2",
                     true
                 ],
                 [
@@ -1310,6 +1339,14 @@
                     true
                 ],
                 [
+                    "msfragger_4_1",
+                    true
+                ],
+                [
+                    "msfragger_4_2",
+                    true
+                ],
+                [
                     "msgfplus_2021_03_22",
                     false
                 ],
@@ -1517,6 +1554,14 @@
                 ],
                 [
                     "msfragger_3_0",
+                    true
+                ],
+                [
+                    "msfragger_4_1",
+                    true
+                ],
+                [
+                    "msfragger_4_2",
                     true
                 ],
                 [
@@ -1730,6 +1775,14 @@
                     true
                 ],
                 [
+                    "msfragger_4_1",
+                    true
+                ],
+                [
+                    "msfragger_4_2",
+                    true
+                ],
+                [
                     "msgfplus_2021_03_22",
                     false
                 ],
@@ -1940,6 +1993,14 @@
                     true
                 ],
                 [
+                    "msfragger_4_1",
+                    true
+                ],
+                [
+                    "msfragger_4_2",
+                    true
+                ],
+                [
                     "msgfplus_2021_03_22",
                     false
                 ],
@@ -2139,6 +2200,14 @@
                 ],
                 [
                     "msfragger_3_0",
+                    true
+                ],
+                [
+                    "msfragger_4_1",
+                    true
+                ],
+                [
+                    "msfragger_4_2",
                     true
                 ],
                 [
@@ -2344,6 +2413,14 @@
                     true
                 ],
                 [
+                    "msfragger_4_1",
+                    true
+                ],
+                [
+                    "msfragger_4_2",
+                    true
+                ],
+                [
                     "msgfplus_2021_03_22",
                     false
                 ],
@@ -2543,6 +2620,14 @@
                 ],
                 [
                     "msfragger_3_0",
+                    true
+                ],
+                [
+                    "msfragger_4_1",
+                    true
+                ],
+                [
+                    "msfragger_4_2",
                     true
                 ],
                 [
@@ -2748,6 +2833,14 @@
                     true
                 ],
                 [
+                    "msfragger_4_1",
+                    true
+                ],
+                [
+                    "msfragger_4_2",
+                    true
+                ],
+                [
                     "msgfplus_2021_03_22",
                     false
                 ],
@@ -2942,6 +3035,14 @@
                     "msfragger_3_0"
                 ],
                 [
+                    "msfragger_4_1",
+                    "msfragger_4_1"
+                ],
+                [
+                    "msfragger_4_2",
+                    "msfragger_4_1"
+                ],
+                [
                     "msgfplus_2021_03_22",
                     "msgfplus_2021_03_22"
                 ],
@@ -3079,11 +3180,12 @@
         "value_type": "bool"
     },
     {
-        "default_value": false,
-        "description": " Perform mass calibration ",
+        "default_value": "off",
+        "description": " Perform mass calibration; select one of: 'off', 'on', 'on and find optimal parameters', 'on and find the optimal fragment mass tolerance'",
         "key_translations": {
             "msfragger_style_2": "calibrate_mass",
             "msfragger_style_3": "calibrate_mass",
+            "msfragger_style_4": "calibrate_mass",
             "ursgal_style_1": "calibrate_mass"
         },
         "name": "calibrate_mass",
@@ -3095,36 +3197,62 @@
         "value_translations": {
             "msfragger_style_2": [
                 [
-                    false,
+                    "off",
                     0
                 ],
                 [
-                    true,
+                    "on",
                     1
                 ]
             ],
             "msfragger_style_3": [
                 [
-                    false,
+                    "off",
                     0
                 ],
                 [
-                    true,
+                    "on",
                     1
+                ]
+            ],
+            "msfragger_style_4": [
+                [
+                    "off",
+                    0
+                ],
+                [
+                    "on",
+                    1
+                ],
+                [
+                    "on and find optimal parameters",
+                    2
+                ],
+                [
+                    "on and find the optimal fragment mass tolerance",
+                    4
                 ]
             ],
             "ursgal_style_1": [
                 [
-                    false,
-                    false
+                    "off",
+                    "off"
                 ],
                 [
-                    true,
-                    true
+                    "on",
+                    "on"
+                ],
+                [
+                    "on and find optimal parameters",
+                    "on and find optimal parameters"
+                ],
+                [
+                    "on and find the optimal fragment mass tolerance",
+                    "on and find the optimal fragment mass tolerance"
                 ]
             ]
         },
-        "value_type": "bool"
+        "value_type": "select"
     },
     {
         "default_value": 0,
@@ -3213,6 +3341,7 @@
             "msfragger_style_1": "clip_nTerm_M",
             "msfragger_style_2": "clip_nTerm_M",
             "msfragger_style_3": "clip_nTerm_M",
+            "msfragger_style_4": "clip_nTerm_M",
             "msgfplus_style_1": "-ignoreMetCleavage",
             "ursgal_style_1": "clip_nterm_m"
         },
@@ -3291,6 +3420,16 @@
                 ]
             ],
             "msfragger_style_3": [
+                [
+                    false,
+                    0
+                ],
+                [
+                    true,
+                    1
+                ]
+            ],
+            "msfragger_style_4": [
                 [
                     false,
                     0
@@ -3685,6 +3824,14 @@
                     false
                 ],
                 [
+                    "msfragger_4_1",
+                    false
+                ],
+                [
+                    "msfragger_4_2",
+                    false
+                ],
+                [
                     "msgfplus_v2016_09_16",
                     true
                 ],
@@ -3893,6 +4040,14 @@
                 [
                     "msfragger_3_0",
                     "msfragger_3_0"
+                ],
+                [
+                    "msfragger_4_1",
+                    "msfragger_4_1"
+                ],
+                [
+                    "msfragger_4_2",
+                    "msfragger_4_2"
                 ],
                 [
                     "msgfplus_v2016_09_16",
@@ -4177,6 +4332,7 @@
             "msfragger_style_1": "num_threads",
             "msfragger_style_2": "num_threads",
             "msfragger_style_3": "num_threads",
+            "msfragger_style_4": "num_threads",
             "msgfplus_style_1": "-thread",
             "myrimatch_style_1": "-cpus",
             "omssa_style_1": "-nt",
@@ -4257,6 +4413,12 @@
                 ]
             ],
             "msfragger_style_3": [
+                [
+                    -1,
+                    "max - 1"
+                ]
+            ],
+            "msfragger_style_4": [
                 [
                     -1,
                     "max - 1"
@@ -4402,6 +4564,7 @@
             "msfragger_style_1": "database_name",
             "msfragger_style_2": "database_name",
             "msfragger_style_3": "database_name",
+            "msfragger_style_4": "database_name",
             "msgfplus_style_1": "-d",
             "myrimatch_style_1": "ProteinDatabase",
             "omssa_style_1": "-d",
@@ -4559,6 +4722,7 @@
             "kojak_style_1": "decoy_tag",
             "msfragger_style_2": "decoy_prefix",
             "msfragger_style_3": "decoy_prefix",
+            "msfragger_style_4": "decoy_prefix",
             "msgfplus_style_1": "-decoy",
             "myrimatch_style_1": "DecoyPrefix",
             "mzidentml_style_1": "-decoyRegex",
@@ -4767,6 +4931,7 @@
         "key_translations": {
             "msamanda_style_1": "PerformDeisotoping",
             "msfragger_style_3": "deisotope",
+            "msfragger_style_4": "deisotope",
             "ursgal_style_1": "deisotope_spec"
         },
         "name": "deisotope_spec",
@@ -4786,6 +4951,20 @@
                 ]
             ],
             "msfragger_style_3": [
+                [
+                    "deisotope_with_singleton_charge_one",
+                    1
+                ],
+                [
+                    "none",
+                    0
+                ],
+                [
+                    "perform_deisotoping",
+                    2
+                ]
+            ],
+            "msfragger_style_4": [
                 [
                     "deisotope_with_singleton_charge_one",
                     1
@@ -4857,6 +5036,7 @@
         "description": " The given mass range is excluded from searching for shifted ions. ",
         "key_translations": {
             "msfragger_style_3": "delta_mass_exclude_ranges",
+            "msfragger_style_4": "delta_mass_exclude_ranges",
             "ursgal_style_1": "delta_mass_exclude_range"
         },
         "name": "delta_mass_exclude_range",
@@ -4873,6 +5053,7 @@
         "description": "Only used in MSFragger labile mode, specifies which amino acids are allowed to contain a labile modification",
         "key_translations": {
             "msfragger_style_3": "deltamass_allowed_residues",
+            "msfragger_style_4": "deltamass_allowed_residues",
             "ursgal_style_1": "deltamass_allowed_residues"
         },
         "name": "deltamass_allowed_residues",
@@ -4882,6 +5063,12 @@
         "triggers_rerun": true,
         "value_translations": {
             "msfragger_style_3": [
+                [
+                    "",
+                    0
+                ]
+            ],
+            "msfragger_style_4": [
                 [
                     "",
                     0
@@ -5040,6 +5227,7 @@
         "description": "Specify molecules (or masses) that will be used as diagnostic fragments in the search. Assuming a charge of 1, the mass of a proton is added to all molecules (and masses). Specify as a dictionary with the keys \"chemical_formulas\", \"unimods\", \"glycans\", \"masses\", and lists with the corresponding molecules as values.",
         "key_translations": {
             "msfragger_style_3": "diagnostic_fragments",
+            "msfragger_style_4": "diagnostic_fragments",
             "ursgal_style_1": "diagnostic_fragments"
         },
         "name": "diagnostic_fragments",
@@ -5323,6 +5511,7 @@
             "msfragger_style_1": "enzyme",
             "msfragger_style_2": "enzyme",
             "msfragger_style_3": "enzyme",
+            "msfragger_style_4": "enzyme",
             "msgfplus_style_1": "-e",
             "myrimatch_style_1": "CleavageRules",
             "novor_style_1": "enzyme",
@@ -6028,6 +6217,104 @@
                 ]
             ],
             "msfragger_style_3": [
+                [
+                    "argc",
+                    "R;C;P"
+                ],
+                [
+                    "aspn",
+                    "D;N;"
+                ],
+                [
+                    "chymotrypsin",
+                    "FMWY;C;P"
+                ],
+                [
+                    "chymotrypsin_p",
+                    "FMWY;C;"
+                ],
+                [
+                    "clostripain",
+                    "R;C;"
+                ],
+                [
+                    "cnbr",
+                    "M;C;P"
+                ],
+                [
+                    "elastase",
+                    "AGILV;C;P"
+                ],
+                [
+                    "formic_acid",
+                    "D;C;P"
+                ],
+                [
+                    "gluc",
+                    "DE;C;P"
+                ],
+                [
+                    "gluc_bicarb",
+                    "E;C;P"
+                ],
+                [
+                    "iodosobenzoate",
+                    "W;C;"
+                ],
+                [
+                    "lysc",
+                    "K;C;P"
+                ],
+                [
+                    "lysc_gluc",
+                    "DEK;C;P"
+                ],
+                [
+                    "lysc_p",
+                    "K;C;"
+                ],
+                [
+                    "lysn",
+                    "K;N;"
+                ],
+                [
+                    "lysn_promisc",
+                    "AKRS;N;"
+                ],
+                [
+                    "nonspecific",
+                    "ACDEFGHIKLMNPQRSTVWY;C;"
+                ],
+                [
+                    "pepsina",
+                    "FL;C;"
+                ],
+                [
+                    "protein_endopeptidase",
+                    "P;C;"
+                ],
+                [
+                    "staph_protease",
+                    "E;C;"
+                ],
+                [
+                    "trypsin",
+                    "KR;C;P"
+                ],
+                [
+                    "trypsin_cnbr",
+                    "KRM;C;P"
+                ],
+                [
+                    "trypsin_gluc",
+                    "DEKR;C;P"
+                ],
+                [
+                    "trypsin_p",
+                    "KR;C;"
+                ]
+            ],
+            "msfragger_style_4": [
                 [
                     "argc",
                     "R;C;P"
@@ -7032,6 +7319,7 @@
             "msfragger_style_1": "num_enzyme_termini",
             "msfragger_style_2": "num_enzyme_termini",
             "msfragger_style_3": "num_enzyme_termini",
+            "msfragger_style_4": "num_enzyme_termini",
             "msgfplus_style_1": "-ntt",
             "myrimatch_style_1": "MinTerminiCleavages",
             "omssa_style_1": "semi_enzyme",
@@ -7106,6 +7394,16 @@
                 ]
             ],
             "msfragger_style_3": [
+                [
+                    "full",
+                    2
+                ],
+                [
+                    "semi",
+                    1
+                ]
+            ],
+            "msfragger_style_4": [
                 [
                     "full",
                     2
@@ -7963,6 +8261,7 @@
             "msfragger_style_1": "clear_mz_range",
             "msfragger_style_2": "clear_mz_range",
             "msfragger_style_3": "clear_mz_range",
+            "msfragger_style_4": "clear_mz_range",
             "pipi_style_1": "frag_clear_mz_range",
             "ursgal_style_1": "frag_clear_mz_range"
         },
@@ -7990,6 +8289,7 @@
             "msfragger_style_1": "fragment_mass_tolerance",
             "msfragger_style_2": "fragment_mass_tolerance",
             "msfragger_style_3": "fragment_mass_tolerance",
+            "msfragger_style_4": "fragment_mass_tolerance",
             "novor_style_1": "fragmentIonErrorTol_part1",
             "omssa_style_1": "-to",
             "pepnovo_style_1": "-fragment_tolerance",
@@ -8020,6 +8320,7 @@
             "msfragger_style_1": "fragment_mass_units",
             "msfragger_style_2": "fragment_mass_units",
             "msfragger_style_3": "fragment_mass_units",
+            "msfragger_style_4": "fragment_mass_units",
             "novor_style_1": "fragmentIonErrorTol_part2",
             "omssa_style_1": "frag_mass_tolerance_unit",
             "pepnovo_style_1": "frag_mass_tolerance_unit",
@@ -8071,6 +8372,16 @@
                 ]
             ],
             "msfragger_style_3": [
+                [
+                    "da",
+                    0
+                ],
+                [
+                    "ppm",
+                    1
+                ]
+            ],
+            "msfragger_style_4": [
                 [
                     "da",
                     0
@@ -8188,6 +8499,7 @@
             "msfragger_style_1": "max_fragment_charge",
             "msfragger_style_2": "max_fragment_charge",
             "msfragger_style_3": "max_fragment_charge",
+            "msfragger_style_4": "max_fragment_charge",
             "omssa_style_1": "-zoh",
             "ursgal_style_1": "frag_max_charge"
         },
@@ -8225,6 +8537,7 @@
         "key_translations": {
             "comet_style_1": "activation_method",
             "msfragger_style_3": "activation_types",
+            "msfragger_style_4": "activation_types",
             "msgfplus_style_1": "-m",
             "novor_style_1": "fragmentation",
             "pnovo_style_1": "activation_type",
@@ -8277,6 +8590,28 @@
                 ]
             ],
             "msfragger_style_3": [
+                [
+                    "all",
+                    "all"
+                ],
+                [
+                    "cid",
+                    "CID"
+                ],
+                [
+                    "ecd",
+                    "ECD"
+                ],
+                [
+                    "etd",
+                    "ETD"
+                ],
+                [
+                    "hcd",
+                    "HCD"
+                ]
+            ],
+            "msfragger_style_4": [
                 [
                     "all",
                     "all"
@@ -8674,6 +9009,7 @@
             "msfragger_style_1": "header_translations",
             "msfragger_style_2": "header_translations",
             "msfragger_style_3": "header_translations",
+            "msfragger_style_4": "header_translations",
             "msgfplus_style_1": "header_translations",
             "novor_style_1": "header_translations",
             "omssa_style_1": "header_translations",
@@ -9149,6 +9485,108 @@
                 ]
             ],
             "msfragger_style_3": [
+                [
+                    "charge",
+                    "charge"
+                ],
+                [
+                    "mass_difference",
+                    "massdiff"
+                ],
+                [
+                    "modifications",
+                    "modification_info"
+                ],
+                [
+                    "msfragger:best_locs",
+                    "best_locs"
+                ],
+                [
+                    "msfragger:best_score_with_delta_mass",
+                    "best_score_with_delta_mass"
+                ],
+                [
+                    "msfragger:delta_score",
+                    "delta_score"
+                ],
+                [
+                    "msfragger:expect_score",
+                    "expectscore"
+                ],
+                [
+                    "msfragger:hyperscore",
+                    "hyperscore"
+                ],
+                [
+                    "msfragger:matched_fragment_ions",
+                    "num_matched_ions"
+                ],
+                [
+                    "msfragger:neutral_mass_of_peptide",
+                    "calc_neutral_pep_mass"
+                ],
+                [
+                    "msfragger:next_score",
+                    "nextscore"
+                ],
+                [
+                    "msfragger:number_of_missed_cleavages",
+                    "num_missed_cleavages"
+                ],
+                [
+                    "msfragger:number_of_tryptic_termini",
+                    "num_tol_term"
+                ],
+                [
+                    "msfragger:precursor_neutral_mass_da",
+                    "precursor_neutral_mass"
+                ],
+                [
+                    "msfragger:score_without_delta_mass",
+                    "score_without_delta_mass"
+                ],
+                [
+                    "msfragger:second_best_score_with_delta_mass",
+                    "second_best_score_with_delta_mass"
+                ],
+                [
+                    "msfragger:total_possible_number_of_matched_theoretical_fragment_ions",
+                    "tot_num_ions"
+                ],
+                [
+                    "protein_id",
+                    "protein"
+                ],
+                [
+                    "rank",
+                    "hit_rank"
+                ],
+                [
+                    "retention_time_seconds",
+                    "retention_time"
+                ],
+                [
+                    "sequence",
+                    "peptide"
+                ],
+                [
+                    "sequence_post_aa",
+                    "peptide_next_aa"
+                ],
+                [
+                    "sequence_pre_aa",
+                    "peptide_prev_aa"
+                ],
+                [
+                    "spectrum_id",
+                    "scannum"
+                ]
+            ],
+            "msfragger_style_4": [
+                [
+                    "annotated_delta_mass",
+                    "annotated_delta_mass"
+                ],
                 [
                     "charge",
                     "charge"
@@ -10388,6 +10826,7 @@
             "msfragger_style_1": "minimum_ratio",
             "msfragger_style_2": "minimum_ratio",
             "msfragger_style_3": "minimum_ratio",
+            "msfragger_style_4": "minimum_ratio",
             "omssa_style_1": "-cl",
             "ptmshepherd_style_1": "spectra_condRatio",
             "ursgal_style_1": "intensity_cutoff"
@@ -10405,6 +10844,7 @@
         "description": "Minimum relative intensity (relative to base peak height) for the sum of all diagnostic fragment ion intensities",
         "key_translations": {
             "msfragger_style_3": "diagnostic_intensity_filter",
+            "msfragger_style_4": "diagnostic_intensity_filter",
             "ursgal_style_1": "intensity_cutoff_diagnostic_ions"
         },
         "name": "intensity_cutoff_diagnostic_ions",
@@ -10600,7 +11040,10 @@
             "ursgal_style_1": "jobmode"
         },
         "name": "jobmode",
-        "tag": ["transcriptomics", "cellranger"],
+        "tag": [
+            "transcriptomics",
+            "cellranger"
+        ],
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "str"
@@ -10898,6 +11341,7 @@
             "msfragger_style_1": "label",
             "msfragger_style_2": "label",
             "msfragger_style_3": "label",
+            "msfragger_style_4": "label",
             "msgfplus_style_1": "label",
             "myrimatch_style_1": "label",
             "omssa_style_1": [
@@ -10982,6 +11426,7 @@
             "msfragger_style_1": "localize_delta_mass",
             "msfragger_style_2": "localize_delta_mass",
             "msfragger_style_3": "localize_delta_mass",
+            "msfragger_style_4": "localize_delta_mass",
             "ursgal_style_1": "localize_delta_mass"
         },
         "name": "localize_delta_mass",
@@ -11012,6 +11457,16 @@
                 ]
             ],
             "msfragger_style_3": [
+                [
+                    false,
+                    0
+                ],
+                [
+                    true,
+                    1
+                ]
+            ],
+            "msfragger_style_4": [
                 [
                     false,
                     0
@@ -11478,6 +11933,7 @@
             "msfragger_style_1": "use_topN_peaks",
             "msfragger_style_2": "use_topN_peaks",
             "msfragger_style_3": "use_topN_peaks",
+            "msfragger_style_4": "use_topN_peaks",
             "myrimatch_style_1": "MaxPeakCount",
             "ptmshepherd_style_1": "spectra_condPeaks",
             "ursgal_style_1": "max_accounted_observed_peaks",
@@ -11564,6 +12020,7 @@
             "msfragger_style_1": "allowed_missed_cleavage",
             "msfragger_style_2": "allowed_missed_cleavage",
             "msfragger_style_3": "allowed_missed_cleavage",
+            "msfragger_style_4": "allowed_missed_cleavage",
             "msgfplus_style_1": "-maxMissedCleavages",
             "myrimatch_style_1": "MaxMissedCleavages",
             "omssa_style_1": "-v",
@@ -11721,6 +12178,7 @@
             "msfragger_style_1": "max_variable_mods_per_mod",
             "msfragger_style_2": "max_variable_mods_per_mod",
             "msfragger_style_3": "max_variable_mods_per_peptide",
+            "msfragger_style_4": "max_variable_mods_per_peptide",
             "ursgal_style_1": "max_num_per_mod"
         },
         "name": "max_num_per_mod",
@@ -11822,6 +12280,7 @@
             "msfragger_style_1": "digest_max_length",
             "msfragger_style_2": "digest_max_length",
             "msfragger_style_3": "digest_max_length",
+            "msfragger_style_4": "digest_max_length",
             "msgfplus_style_1": "-maxLength",
             "myrimatch_style_1": "MaxPeptideLength",
             "omssa_style_1": "-nox",
@@ -11845,6 +12304,7 @@
             "msfragger_style_1": "max_variable_mods_combinations",
             "msfragger_style_2": "max_variable_mods_combinations",
             "msfragger_style_3": "max_variable_mods_combinations",
+            "msfragger_style_4": "max_variable_mods_combinations",
             "myrimatch_style_1": "MaxPeptideVariants",
             "ursgal_style_1": "max_pep_var"
         },
@@ -12179,6 +12639,7 @@
             "msfragger_style_1": "digest_min_length",
             "msfragger_style_2": "digest_min_length",
             "msfragger_style_3": "digest_min_length",
+            "msfragger_style_4": "digest_min_length",
             "msgfplus_style_1": "-minLength",
             "myrimatch_style_1": "MinPeptideLength",
             "omssa_style_1": "-no",
@@ -12231,6 +12692,7 @@
             "msfragger_style_1": "min_matched_fragments",
             "msfragger_style_2": "min_matched_fragments",
             "msfragger_style_3": "min_matched_fragments",
+            "msfragger_style_4": "min_matched_fragments",
             "myrimatch_style_1": "MinMatchedFragments",
             "omssa_style_1": "-hm",
             "ursgal_style_1": "min_required_matched_peaks",
@@ -12250,6 +12712,7 @@
         "description": " [labile/glyco search only] Minimum number of sequence-specific (not Y) ions to record a match.",
         "key_translations": {
             "msfragger_style_3": "min_sequence_matches",
+            "msfragger_style_4": "min_sequence_matches",
             "ursgal_style_1": "min_required_matched_peptide_ions"
         },
         "name": "min_required_matched_peptide_ions",
@@ -12266,6 +12729,7 @@
             "msfragger_style_1": "minimum_peaks",
             "msfragger_style_2": "minimum_peaks",
             "msfragger_style_3": "minimum_peaks",
+            "msfragger_style_4": "minimum_peaks",
             "omssa_style_1": "-hs",
             "ursgal_style_1": "min_required_observed_peaks",
             "xtandem_style_1": "spectrum, minimum peaks"
@@ -12568,6 +13032,7 @@
             "msfragger_style_1": "modifications",
             "msfragger_style_2": "modifications",
             "msfragger_style_3": "modifications",
+            "msfragger_style_4": "modifications",
             "msgfplus_style_1": "-mod",
             "myrimatch_style_1": [
                 "DynamicMods",
@@ -12622,6 +13087,7 @@
         "description": "Specify molecules (or masses) that will be used as mass offsets in the search. Specify as a dictionary with the keys \"chemical_formulas\", \"unimods\", \"glycans\", \"masses\", and lists with the corresponding molecules as values.",
         "key_translations": {
             "msfragger_style_3": "mass_offsets",
+            "msfragger_style_4": "mass_offsets",
             "ursgal_style_1": "modifications_offsets"
         },
         "name": "modifications_offsets",
@@ -12644,6 +13110,7 @@
         "description": "Specify molecules (or masses) that will be used as mass offsets for Y-ions in the search. Specify as a dictionary with the keys \"chemical_formulas\", \"unimods\", \"glycans\", \"masses\", and lists with the corresponding molecules as values.",
         "key_translations": {
             "msfragger_style_3": "Y_type_masses",
+            "msfragger_style_4": "Y_type_masses",
             "ursgal_style_1": "modifications_y_ion_offsets"
         },
         "name": "modifications_y_ion_offsets",
@@ -12840,6 +13307,7 @@
             "msfragger_style_1": "add_topN_complementary",
             "msfragger_style_2": "add_topN_complementary",
             "msfragger_style_3": "add_topN_complementary",
+            "msfragger_style_4": "add_topN_complementary",
             "ursgal_style_1": "msfragger_add_topN_complementary"
         },
         "name": "msfragger_add_topN_complementary",
@@ -12879,6 +13347,16 @@
                     1
                 ]
             ],
+            "msfragger_style_4": [
+                [
+                    false,
+                    0
+                ],
+                [
+                    true,
+                    1
+                ]
+            ],
             "ursgal_style_1": [
                 [
                     false,
@@ -12897,6 +13375,7 @@
         "description": "\"off\" corresponds to a standard MSFragger search, \"labile\" allows to specify delta masses that are searched for, and \"nglycan\" additionally checks for N-glycosylation motifs",
         "key_translations": {
             "msfragger_style_3": "labile_search_mode",
+            "msfragger_style_4": "labile_search_mode",
             "ursgal_style_1": "msfragger_labile_mode"
         },
         "name": "msfragger_labile_mode",
@@ -12914,6 +13393,7 @@
             "msfragger_style_1": "min_fragments_modelling",
             "msfragger_style_2": "min_fragments_modelling",
             "msfragger_style_3": "min_fragments_modelling",
+            "msfragger_style_4": "min_fragments_modelling",
             "ursgal_style_1": "msfragger_min_fragments_modelling"
         },
         "name": "msfragger_min_fragments_modelling",
@@ -12932,6 +13412,7 @@
             "msfragger_style_1": "output_max_expect",
             "msfragger_style_2": "output_max_expect",
             "msfragger_style_3": "output_max_expect",
+            "msfragger_style_4": "output_max_expect",
             "ursgal_style_1": "msfragger_output_max_expect"
         },
         "name": "msfragger_output_max_expect",
@@ -12950,6 +13431,7 @@
             "msfragger_style_1": "track_zero_topN",
             "msfragger_style_2": "track_zero_topN",
             "msfragger_style_3": "track_zero_topN",
+            "msfragger_style_4": "track_zero_topN",
             "ursgal_style_1": "msfragger_track_zero_topN"
         },
         "name": "msfragger_track_zero_topN",
@@ -12968,6 +13450,7 @@
             "msfragger_style_1": "zero_bin_accept_expect",
             "msfragger_style_2": "zero_bin_accept_expect",
             "msfragger_style_3": "zero_bin_accept_expect",
+            "msfragger_style_4": "zero_bin_accept_expect",
             "ursgal_style_1": "msfragger_zero_bin_accept_expect"
         },
         "name": "msfragger_zero_bin_accept_expect",
@@ -12985,6 +13468,7 @@
             "msfragger_style_1": "zero_bin_mult_expect",
             "msfragger_style_2": "zero_bin_mult_expect",
             "msfragger_style_3": "zero_bin_mult_expect",
+            "msfragger_style_4": "zero_bin_mult_expect",
             "ursgal_style_1": "msfragger_zero_bin_mult_expect"
         },
         "name": "msfragger_zero_bin_mult_expect",
@@ -13762,6 +14246,7 @@
             "msfragger_style_1": "output_report_topN",
             "msfragger_style_2": "output_report_topN",
             "msfragger_style_3": "output_report_topN",
+            "msfragger_style_4": "output_report_topN",
             "msgfplus_style_1": "-n",
             "myrimatch_style_1": "MaxResultRank",
             "omssa_style_1": "-hc",
@@ -14677,6 +15162,7 @@
         "description": " Perform deneutrallossing or not.",
         "key_translations": {
             "msfragger_style_3": "deneutralloss",
+            "msfragger_style_4": "deneutralloss",
             "ursgal_style_1": "perform_deneutralloss"
         },
         "name": "perform_deneutralloss",
@@ -14684,6 +15170,16 @@
         "triggers_rerun": true,
         "value_translations": {
             "msfragger_style_3": [
+                [
+                    false,
+                    0
+                ],
+                [
+                    true,
+                    1
+                ]
+            ],
+            "msfragger_style_4": [
                 [
                     false,
                     0
@@ -14875,6 +15371,7 @@
             "msfragger_style_1": "isotope_error",
             "msfragger_style_2": "isotope_error",
             "msfragger_style_3": "isotope_error",
+            "msfragger_style_4": "isotope_error",
             "msgfplus_style_1": "-ti",
             "myrimatch_style_1": "MonoisotopeAdjustmentSet",
             "omssa_style_1": "-ti",
@@ -14987,6 +15484,20 @@
                     "0/1/2"
                 ]
             ],
+            "msfragger_style_4": [
+                [
+                    "0",
+                    "0"
+                ],
+                [
+                    "0,1",
+                    "0/1"
+                ],
+                [
+                    "0,2",
+                    "0/1/2"
+                ]
+            ],
             "myrimatch_style_1": [
                 [
                     "0",
@@ -15065,6 +15576,7 @@
         "description": " One of isolated/selected/recalculated.",
         "key_translations": {
             "msfragger_style_3": "precursor_mass_mode",
+            "msfragger_style_4": "precursor_mass_mode",
             "ursgal_style_1": "precursor_mass_mode"
         },
         "name": "precursor_mass_mode",
@@ -15089,6 +15601,7 @@
             "msfragger_style_1": "precursor_mass_lower",
             "msfragger_style_2": "precursor_mass_lower",
             "msfragger_style_3": "precursor_mass_lower",
+            "msfragger_style_4": "precursor_mass_lower",
             "msgfplus_style_1": "-t_minus",
             "novor_style_1": "precursorErrorTol_part2",
             "omssa_style_1": "-te_part1",
@@ -15122,11 +15635,12 @@
             "msfragger_style_1": "precursor_mass_upper",
             "msfragger_style_2": "precursor_mass_upper",
             "msfragger_style_3": "precursor_mass_upper",
+            "msfragger_style_4": "precursor_mass_upper",
             "msgfplus_style_1": "-t_plus",
             "novor_style_1": "precursorErrorTol_part1",
             "omssa_style_1": "-te_part2",
-            "pyiohat_style_1": " precursor_mass_tolerance_minus",
-            "pyprotista_style_1": " precursor_mass_tolerance_minus",
+            "pyiohat_style_1": "precursor_mass_tolerance_plus",
+            "pyprotista_style_1": "precursor_mass_tolerance_plus",
             "ursgal_style_1": "precursor_mass_tolerance_plus",
             "xtandem_style_1": "spectrum, parent monoisotopic mass error plus"
         },
@@ -15149,6 +15663,7 @@
             "msfragger_style_1": "precursor_mass_units",
             "msfragger_style_2": "precursor_mass_units",
             "msfragger_style_3": "precursor_mass_units",
+            "msfragger_style_4": "precursor_mass_units",
             "msgfplus_style_1": "-t_unit",
             "novor_style_1": "precursorErrorTol_part3",
             "omssa_style_1": "-teppm",
@@ -15158,6 +15673,7 @@
             "pnovo_style_1": "pep_tol_type_ppm",
             "ptminer_style_1": "precursor_tol_type",
             "ptmshepherd_style_1": "precursor_mass_units",
+            "pyiohat_style_1": "precursor_mass_tolerance_unit",
             "ursgal_style_1": "precursor_mass_tolerance_unit",
             "xtandem_style_1": "spectrum, parent monoisotopic mass error units"
         },
@@ -15215,6 +15731,16 @@
                 ]
             ],
             "msfragger_style_3": [
+                [
+                    "da",
+                    0
+                ],
+                [
+                    "ppm",
+                    1
+                ]
+            ],
+            "msfragger_style_4": [
                 [
                     "da",
                     0
@@ -15400,6 +15926,7 @@
             "msfragger_style_1": "precursor_max_charge",
             "msfragger_style_2": "precursor_max_charge",
             "msfragger_style_3": "precursor_max_charge",
+            "msfragger_style_4": "precursor_max_charge",
             "msgfplus_style_1": "-maxCharge",
             "myrimatch_style_1": "NumChargeStates",
             "mzml2mgf_style_1": "precursor_max_charge",
@@ -15453,6 +15980,7 @@
             "msfragger_style_1": "precursor_min_charge",
             "msfragger_style_2": "precursor_min_charge",
             "msfragger_style_3": "precursor_min_charge",
+            "msfragger_style_4": "precursor_min_charge",
             "msgfplus_style_1": "-minCharge",
             "mzml2mgf_style_1": "precursor_min_charge",
             "omssa_style_1": "-zl",
@@ -15545,6 +16073,7 @@
             "msfragger_style_1": "precursor_true_tolerance",
             "msfragger_style_2": "precursor_true_tolerance",
             "msfragger_style_3": "precursor_true_tolerance",
+            "msfragger_style_4": "precursor_true_tolerance",
             "ursgal_style_1": "precursor_true_tolerance"
         },
         "name": "precursor_true_tolerance",
@@ -15563,6 +16092,7 @@
             "msfragger_style_1": "precursor_true_units",
             "msfragger_style_2": "precursor_true_units",
             "msfragger_style_3": "precursor_true_units",
+            "msfragger_style_4": "precursor_true_units",
             "ursgal_style_1": "precursor_true_units"
         },
         "name": "precursor_true_units",
@@ -15593,6 +16123,16 @@
                 ]
             ],
             "msfragger_style_3": [
+                [
+                    "da",
+                    0
+                ],
+                [
+                    "ppm",
+                    1
+                ]
+            ],
+            "msfragger_style_4": [
                 [
                     "da",
                     0
@@ -15691,7 +16231,8 @@
         },
         "name": "project",
         "tag": [
-            "transcriptomics", "cellranger"
+            "transcriptomics",
+            "cellranger"
         ],
         "triggers_rerun": true,
         "value_translations": {},
@@ -16266,6 +16807,7 @@
         "key_translations": {
             "comet_style_1": "remove_precursor_peak",
             "msfragger_style_3": "remove_precursor_peak",
+            "msfragger_style_4": "remove_precursor_peak",
             "ursgal_style_1": "remove_precursor_peak"
         },
         "name": "remove_precursor_peak",
@@ -16293,6 +16835,20 @@
                 ]
             ],
             "msfragger_style_3": [
+                [
+                    "off",
+                    0
+                ],
+                [
+                    "remove_all_charges",
+                    2
+                ],
+                [
+                    "remove_precursor_charge",
+                    1
+                ]
+            ],
+            "msfragger_style_4": [
                 [
                     "off",
                     0
@@ -16336,6 +16892,7 @@
         "key_translations": {
             "mascot_style_1": "CUTOUT",
             "msfragger_style_3": "remove_precursor_range",
+            "msfragger_style_4": "remove_precursor_range",
             "ursgal_style_1": "remove_precursor_range"
         },
         "name": "remove_precursor_range",
@@ -16483,6 +17040,7 @@
         "description": " If required, PSMs with no precursor peaks will be discarded. For DIA data type only.",
         "key_translations": {
             "msfragger_style_3": "require_precursor",
+            "msfragger_style_4": "require_precursor",
             "ursgal_style_1": "require_precursor"
         },
         "name": "require_precursor ",
@@ -16490,6 +17048,16 @@
         "triggers_rerun": true,
         "value_translations": {
             "msfragger_style_3": [
+                [
+                    false,
+                    0
+                ],
+                [
+                    true,
+                    1
+                ]
+            ],
+            "msfragger_style_4": [
                 [
                     false,
                     0
@@ -16560,6 +17128,7 @@
         "description": " Specify amino acids on which delta masses (mass offsets or search modifications) can occur. Allowed values are single letter codes (e.g. ACD), must be capitalized.",
         "key_translations": {
             "msfragger_style_3": "restrict_deltamass_to",
+            "msfragger_style_4": "restrict_deltamass_to",
             "ursgal_style_1": "restrict_deltamass_to"
         },
         "name": "restrict_deltamass_to",
@@ -16573,6 +17142,7 @@
         "description": " Allow the same peak matches to multiple peptides. For DIA data type only.",
         "key_translations": {
             "msfragger_style_3": "reuse_dia_fragment_peaks",
+            "msfragger_style_4": "reuse_dia_fragment_peaks",
             "ursgal_style_1": "reuse_dia_fragment_peaks"
         },
         "name": "reuse_dia_fragment_peaks ",
@@ -16580,6 +17150,16 @@
         "triggers_rerun": true,
         "value_translations": {
             "msfragger_style_3": [
+                [
+                    false,
+                    0
+                ],
+                [
+                    true,
+                    1
+                ]
+            ],
+            "msfragger_style_4": [
                 [
                     false,
                     0
@@ -16738,7 +17318,10 @@
             "ursgal_style_1": "run"
         },
         "name": "run",
-        "tag": ["transcriptomics", "cellranger"],
+        "tag": [
+            "transcriptomics",
+            "cellranger"
+        ],
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "str"
@@ -16913,7 +17496,10 @@
             "ursgal_style_1": "samplesheet"
         },
         "name": "samplesheet",
-        "tag": ["transcriptomics", "cellranger"],
+        "tag": [
+            "transcriptomics",
+            "cellranger"
+        ],
         "triggers_rerun": true,
         "value_translations": {},
         "value_type": "str"
@@ -17056,6 +17642,7 @@
             ],
             "msamanda_style_1": "series",
             "msfragger_style_3": "fragment_ion_series",
+            "msfragger_style_4": "fragment_ion_series",
             "myrimatch_style_1": "FragmentationRule",
             "omssa_style_1": [
                 "-i",
@@ -18133,6 +18720,7 @@
             "mascot_style_1": "unimod_xml_file_list",
             "msamanda_style_1": "unimod_xml_file_list",
             "msfragger_style_3": "unimod_xml_file_list",
+            "msfragger_style_4": "unimod_xml_file_list",
             "msgfplus_style_1": "unimod_xml_file_list",
             "novor_style_1": "unimod_xml_file_list",
             "omssa_style_1": "unimod_xml_file_list",
@@ -18222,6 +18810,7 @@
         "description": "Use all variable modifications in first search",
         "key_translations": {
             "msfragger_style_3": "use_all_mods_in_first_search",
+            "msfragger_style_4": "use_all_mods_in_first_search",
             "ursgal_style_1": "use_all_mods_in_first_search"
         },
         "name": "use_all_mods_in_first_search",
@@ -18229,6 +18818,16 @@
         "triggers_rerun": true,
         "value_translations": {
             "msfragger_style_3": [
+                [
+                    false,
+                    0
+                ],
+                [
+                    true,
+                    1
+                ]
+            ],
+            "msfragger_style_4": [
                 [
                     false,
                     0
@@ -18550,6 +19149,7 @@
             "msfragger_style_1": "override_charge",
             "msfragger_style_2": "override_charge",
             "msfragger_style_3": "override_charge",
+            "msfragger_style_4": "override_charge",
             "pepnovo_style_1": "-use_spectrum_charge",
             "ursgal_style_1": "use_spectrum_charge"
         },
@@ -18599,6 +19199,16 @@
                 ]
             ],
             "msfragger_style_3": [
+                [
+                    "no",
+                    1
+                ],
+                [
+                    "yes",
+                    0
+                ]
+            ],
+            "msfragger_style_4": [
                 [
                     "no",
                     1
@@ -18818,6 +19428,14 @@
                     0
                 ],
                 [
+                    "msfragger_4_1",
+                    0
+                ],
+                [
+                    "msfragger_4_2",
+                    0
+                ],
+                [
                     "msgfplus_v2016_09_16",
                     1e-100
                 ],
@@ -18982,6 +19600,14 @@
                 [
                     "msfragger_3_0",
                     "msfragger_3_0"
+                ],
+                [
+                    "msfragger_4_1",
+                    "msfragger_4_1"
+                ],
+                [
+                    "msfragger_4_2",
+                    "msfragger_4_2"
                 ],
                 [
                     "msgfplus_v2016_09_16",
@@ -19191,6 +19817,14 @@
                 ],
                 [
                     "msfragger_3_0",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_1",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_2",
                     "msfragger:hyperscore"
                 ],
                 [
@@ -19416,6 +20050,14 @@
                     "msfragger:hyperscore"
                 ],
                 [
+                    "msfragger_4_1",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_2",
+                    "msfragger:hyperscore"
+                ],
+                [
                     "msgfplus_2021_03_22",
                     "ms-gf:spec_evalue"
                 ],
@@ -19627,6 +20269,14 @@
                 ],
                 [
                     "msfragger_3_0",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_1",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_2",
                     "msfragger:hyperscore"
                 ],
                 [
@@ -19852,6 +20502,14 @@
                     "msfragger:hyperscore"
                 ],
                 [
+                    "msfragger_4_1",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_2",
+                    "msfragger:hyperscore"
+                ],
+                [
                     "msgfplus_2021_03_22",
                     "ms-gf:spec_evalue"
                 ],
@@ -20074,6 +20732,14 @@
                     "msfragger:hyperscore"
                 ],
                 [
+                    "msfragger_4_1",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_2",
+                    "msfragger:hyperscore"
+                ],
+                [
                     "msgfplus_2021_03_22",
                     "ms-gf:spec_evalue"
                 ],
@@ -20285,6 +20951,14 @@
                 ],
                 [
                     "msfragger_3_0",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_1",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_2",
                     "msfragger:hyperscore"
                 ],
                 [
@@ -20502,6 +21176,14 @@
                     "msfragger:hyperscore"
                 ],
                 [
+                    "msfragger_4_1",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_2",
+                    "msfragger:hyperscore"
+                ],
+                [
                     "msgfplus_2021_03_22",
                     "ms-gf:spec_evalue"
                 ],
@@ -20705,6 +21387,14 @@
                 ],
                 [
                     "msfragger_3_0",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_1",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_2",
                     "msfragger:hyperscore"
                 ],
                 [
@@ -20922,6 +21612,14 @@
                     "msfragger:hyperscore"
                 ],
                 [
+                    "msfragger_4_1",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_2",
+                    "msfragger:hyperscore"
+                ],
+                [
                     "msgfplus_2021_03_22",
                     "ms-gf:spec_evalue"
                 ],
@@ -21136,6 +21834,14 @@
                     "msfragger:hyperscore"
                 ],
                 [
+                    "msfragger_4_1",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_2",
+                    "msfragger:hyperscore"
+                ],
+                [
                     "msgfplus_2021_03_22",
                     "ms-gf:spec_evalue"
                 ],
@@ -21347,6 +22053,14 @@
                 ],
                 [
                     "msfragger_3_0",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_1",
+                    "msfragger:hyperscore"
+                ],
+                [
+                    "msfragger_4_2",
                     "msfragger:hyperscore"
                 ],
                 [
@@ -21624,6 +22338,7 @@
         "description": " Write an MGF with spectra corrected by the calibrated masses ",
         "key_translations": {
             "msfragger_style_3": "write_calibrated_mzml",
+            "msfragger_style_4": "write_calibrated_mzml",
             "ursgal_style_1": "write_calibrated_mgf"
         },
         "name": "write_calibrated_ms_file",
@@ -21633,6 +22348,16 @@
         "triggers_rerun": true,
         "value_translations": {
             "msfragger_style_3": [
+                [
+                    false,
+                    0
+                ],
+                [
+                    true,
+                    1
+                ]
+            ],
+            "msfragger_style_4": [
                 [
                     false,
                     0
@@ -21660,6 +22385,7 @@
         "description": " Put mass difference as a variable modification.",
         "key_translations": {
             "msfragger_style_3": "mass_diff_to_variable_mod",
+            "msfragger_style_4": "mass_diff_to_variable_mod",
             "ursgal_style_1": "mass_diff_to_variable_mod"
         },
         "name": "write_mass_diff_to_variable_mod",
@@ -21667,6 +22393,16 @@
         "triggers_rerun": true,
         "value_translations": {
             "msfragger_style_3": [
+                [
+                    false,
+                    0
+                ],
+                [
+                    true,
+                    1
+                ]
+            ],
+            "msfragger_style_4": [
                 [
                     false,
                     0
@@ -21714,6 +22450,40 @@
             ]
         },
         "value_type": "str"
+    },
+    {
+        "default_value": false,
+        "description": "Write uncalibrated MS2 scan to a MZML file. Only for .raw and .d formats.",
+        "key_translations": {
+            "msfragger_style_4": "write_uncalibrated_mzml",
+            "ursgal_style_1": "write_uncalibrated_mzml"
+        },
+        "name": "write_uncalibrated_mzml",
+        "tag": [],
+        "triggers_rerun": true,
+        "value_translations": {
+            "msfragger_style_4": [
+                [
+                    false,
+                    0
+                ],
+                [
+                    true,
+                    1
+                ]
+            ],
+            "ursgal_style_1": [
+                [
+                    false,
+                    false
+                ],
+                [
+                    true,
+                    true
+                ]
+            ]
+        },
+        "value_type": "bool"
     },
     {
         "default_value": false,
